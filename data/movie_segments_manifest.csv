@@ -1,0 +1,5 @@
+segment_id,film,local_source_file,start_time,end_time,duration,generated_clip,repository_status
+alien_013900_014100,Alien,data/Alien local movie file,01:39:00,01:41:00,00:02:00,data/missing_files_v1-2_test/movie_segments/alien_013900_014100.mp4,not distributed
+prometheus_000115_000315,Prometheus,data/Prometheus local movie file,00:01:15,00:03:15,00:02:00,data/missing_files_v1-2_test/movie_segments/prometheus_000115_000315.mp4,not distributed
+mr_mrs_smith_004655_004702,Mr. and Mrs. Smith,data/Mr. and Mrs. Smith local movie file,00:46:55,00:47:02,00:00:07,data/missing_files_v1-2_test/movie_segments/mr_mrs_smith_004655_004702.mp4,not distributed
+star_trek_into_darkness_015448_015500,Star Trek Into Darkness,data/Star Trek Into Darkness local movie file,01:54:48,01:55:00,00:00:12,data/missing_files_v1-2_test/movie_segments/star_trek_into_darkness_015448_015500.mp4,not distributed

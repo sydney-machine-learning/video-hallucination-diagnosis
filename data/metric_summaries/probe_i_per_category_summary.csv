@@ -1,0 +1,31 @@
+category_label,model_key,pdi_simple
+Falling objects,qwen2_vl_2b,0.1875
+Falling objects,llava_1_6_7b,0.2500
+Falling objects,qwen2_vl_7b,0.4375
+Falling objects,gemini_1_5_flash,0.3750
+Falling objects,internvl2_26b,0.5625
+Falling objects,gpt_4o,0.6250
+Fire / burning,qwen2_vl_2b,0.5000
+Fire / burning,llava_1_6_7b,0.5625
+Fire / burning,qwen2_vl_7b,0.6250
+Fire / burning,gemini_1_5_flash,0.7500
+Fire / burning,internvl2_26b,0.6875
+Fire / burning,gpt_4o,0.8125
+Glass breaking,qwen2_vl_2b,0.3750
+Glass breaking,llava_1_6_7b,0.4375
+Glass breaking,qwen2_vl_7b,0.5000
+Glass breaking,gemini_1_5_flash,0.6250
+Glass breaking,internvl2_26b,0.5625
+Glass breaking,gpt_4o,0.7500
+Pouring liquid,qwen2_vl_2b,0.2500
+Pouring liquid,llava_1_6_7b,0.3125
+Pouring liquid,qwen2_vl_7b,0.3750
+Pouring liquid,gemini_1_5_flash,0.5000
+Pouring liquid,internvl2_26b,0.5000
+Pouring liquid,gpt_4o,0.6250
+Water splashing,qwen2_vl_2b,0.3750
+Water splashing,llava_1_6_7b,0.4375
+Water splashing,qwen2_vl_7b,0.5625
+Water splashing,gemini_1_5_flash,0.6875
+Water splashing,internvl2_26b,0.6250
+Water splashing,gpt_4o,0.7500

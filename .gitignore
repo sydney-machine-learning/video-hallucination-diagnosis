@@ -1,0 +1,25 @@
+__pycache__/
+*.py[cod]
+
+# Large/local media should be archived separately, for example on Zenodo.
+*.mp4
+*.mkv
+*.mov
+*.avi
+*.wav
+
+# Local duplicate/raw media directories.
+data/missing_files_v1-2_test/
+data/results saved/
+data/summaries/
+
+# Local TeX build artefacts.
+*.aux
+*.bbl
+*.blg
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+*.synctex.gz
+*.toc

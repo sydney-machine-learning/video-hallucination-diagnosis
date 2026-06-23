@@ -1,0 +1,7 @@
+model_key,model_label,mcqa_accuracy_pct,colour,result_source
+qwen2_vl_2b,Qwen2-VL-2B,64.0,#EDB12F,projected
+llava_1_6_7b,LLaVA-1.6-7B,66.0,#4C72B0,projected
+qwen2_vl_7b,Qwen2-VL-7B,71.4,#55A868,reported
+gemini_1_5_flash,Gemini 1.5 Flash,84.4,#C44E52,reported
+internvl2_26b,InternVL2-26B,69.0,#DD8452,projected
+gpt_4o,GPT-4o,79.7,#8172B3,reported
