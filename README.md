@@ -16,7 +16,7 @@ VH-Probe is designed to evaluate whether video-language models rely on visual ev
 |   |-- compute_experiment_metrics.py
 |   |-- plot_paper_figures.py
 |   |-- plot_ipv_bench_mcqa.py
-|   |-- generate_ablation_figures.py
+|   |-- generate_paper_figures.py
 |   `-- extract_movie_segments.py
 |-- *.png                      # Generated analysis figures
 |-- main.tex                   # Manuscript source included for reference
@@ -44,7 +44,7 @@ scipy
 To regenerate the main analysis figures, run:
 
 ```bash
-python scripts/generate_ablation_figures.py
+python scripts/generate_paper_figures.py
 ```
 
 This script calls the plotting utilities and writes the generated figures to the repository root.

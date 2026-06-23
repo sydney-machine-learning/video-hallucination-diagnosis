@@ -1,4 +1,4 @@
-"""Generate all experiment figures from the row-level CSV pipeline.
+"""Generate all paper figures from the row-level CSV pipeline.
 
 Workflow:
 1. Run compute_experiment_metrics.py to derive summaries from sample-level CSV files.
