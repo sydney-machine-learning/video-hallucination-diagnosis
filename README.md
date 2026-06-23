@@ -59,6 +59,12 @@ The repository includes lightweight CSV files only:
 
 Large video files are not included in this repository.
 
+The archived data package is available on Zenodo:
+
+```text
+https://doi.org/10.5281/zenodo.20806194
+```
+
 ## Movie Segment Extraction
 
 The script below can recreate local movie snippets if the corresponding source videos are available locally:
