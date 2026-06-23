@@ -1,15 +1,15 @@
 # Video Hallucination Diagnosis
 
-This repository contains the paper source, plotting scripts, and lightweight CSV experiment logs/summaries for the VH-Probe video hallucination diagnosis study.
+This repository contains the analysis code, plotting scripts, and lightweight CSV experiment logs/summaries for the VH-Probe video hallucination diagnosis study.
 
 ## Contents
 
-- `main.tex`: paper source.
+- `main.tex`: manuscript source included for context.
 - `scripts/`: metric aggregation and figure-generation scripts.
 - `data/experiment_logs/`: lightweight model-response logs used by the scripts.
 - `data/metric_summaries/`: CSV summaries used for paper tables and plots.
 - `data/movie_segments_manifest.csv`: local timestamp manifest for the four movie examples.
-- `*.png`: paper figures currently referenced by `main.tex`.
+- `*.png`: generated figures used by the analysis and manuscript.
 
 Large video files are intentionally excluded from the GitHub repository and should be archived separately, for example through Zenodo.
 
