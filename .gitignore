@@ -1,17 +1,21 @@
 __pycache__/
 *.py[cod]
 
-# Large/local media should be archived separately, for example on Zenodo.
+# Videos are distributed through Kaggle.
 *.mp4
 *.mkv
 *.mov
 *.avi
+*.webm
 *.wav
+*.zip
 
-# Local duplicate/raw media directories.
-data/missing_files_v1-2_test/
-data/results saved/
-data/summaries/
+# The labelled manifest is downloaded from Kaggle for local scoring.
+data/manifest/*.csv
+
+# Duplicate or transient model output formats.
+*.jsonl
+outputs/
 
 # Local TeX build artefacts.
 *.aux
