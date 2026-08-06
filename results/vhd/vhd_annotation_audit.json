@@ -1,0 +1,128 @@
+{
+  "adjudication_queue_questions": 171,
+  "adjudication_rate_percent": 14.805194805194805,
+  "by_source": [
+    {
+      "agreement": {
+        "final_A_language_prior": {
+          "cohen_kappa": 0.7872821604363442,
+          "n_pairs": 123,
+          "percent_agreement": 89.4308943089431
+        },
+        "final_A_vision": {
+          "cohen_kappa": 0.7872821604363442,
+          "n_pairs": 123,
+          "percent_agreement": 89.4308943089431
+        },
+        "final_correct_answer": {
+          "cohen_kappa": 0.7841602047730181,
+          "n_pairs": 564,
+          "percent_agreement": 89.18439716312056
+        },
+        "final_uncertainty_label": {
+          "cohen_kappa": 0.794166865885728,
+          "n_pairs": 205,
+          "percent_agreement": 89.7560975609756
+        },
+        "question_valid": {
+          "cohen_kappa": 0.956582895392521,
+          "n_pairs": 819,
+          "percent_agreement": 98.16849816849818
+        }
+      },
+      "double_reviewed_questions": 819,
+      "incomplete_applicable_label_pairs": 0,
+      "questions_with_any_pre_adjudication_disagreement": 118,
+      "source": "real",
+      "task_counts": {
+        "accuracy": 273,
+        "vhd_i_pdi": 273,
+        "vhd_ii_hce": 273
+      }
+    },
+    {
+      "agreement": {
+        "final_A_language_prior": {
+          "cohen_kappa": 0.78625,
+          "n_pairs": 57,
+          "percent_agreement": 89.47368421052632
+        },
+        "final_A_vision": {
+          "cohen_kappa": 0.78625,
+          "n_pairs": 57,
+          "percent_agreement": 89.47368421052632
+        },
+        "final_correct_answer": {
+          "cohen_kappa": 0.7868645405746764,
+          "n_pairs": 225,
+          "percent_agreement": 89.33333333333333
+        },
+        "final_uncertainty_label": {
+          "cohen_kappa": 0.7877116975187081,
+          "n_pairs": 77,
+          "percent_agreement": 90.9090909090909
+        },
+        "question_valid": {
+          "cohen_kappa": 0.91688654353562,
+          "n_pairs": 336,
+          "percent_agreement": 96.42857142857143
+        }
+      },
+      "double_reviewed_questions": 336,
+      "incomplete_applicable_label_pairs": 0,
+      "questions_with_any_pre_adjudication_disagreement": 53,
+      "source": "ai_generated",
+      "task_counts": {
+        "accuracy": 112,
+        "vhd_i_pdi": 112,
+        "vhd_ii_hce": 112
+      }
+    }
+  ],
+  "double_reviewed_questions": 1155,
+  "final_inventory": {
+    "accepted_by_source": {
+      "ai_generated": 229,
+      "real": 572
+    },
+    "accepted_by_task": {
+      "accuracy": 333,
+      "vhd_i_pdi": 178,
+      "vhd_ii_hce": 290
+    },
+    "accepted_questions": 801,
+    "candidate_questions": 1155,
+    "rejected_questions": 354,
+    "retention_percent": 69.35064935064935,
+    "unresolved_question_ids": []
+  },
+  "overall_agreement": {
+    "final_A_language_prior": {
+      "cohen_kappa": 0.7890451517394523,
+      "n_pairs": 180,
+      "percent_agreement": 89.44444444444444
+    },
+    "final_A_vision": {
+      "cohen_kappa": 0.7890451517394523,
+      "n_pairs": 180,
+      "percent_agreement": 89.44444444444444
+    },
+    "final_correct_answer": {
+      "cohen_kappa": 0.784656731945555,
+      "n_pairs": 789,
+      "percent_agreement": 89.22686945500634
+    },
+    "final_uncertainty_label": {
+      "cohen_kappa": 0.7959584474649852,
+      "n_pairs": 282,
+      "percent_agreement": 90.0709219858156
+    },
+    "question_valid": {
+      "cohen_kappa": 0.9448836432468545,
+      "n_pairs": 1155,
+      "percent_agreement": 97.66233766233766
+    }
+  },
+  "review_policy": "Two independent reviews per candidate question; agreement is evaluated only for task-applicable labels, and disagreements are resolved in the recorded queue.",
+  "schema_version": "vhd-annotation-audit-1.0"
+}

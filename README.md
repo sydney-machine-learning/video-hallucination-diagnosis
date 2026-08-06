@@ -1,76 +1,108 @@
-# Video Hallucination Diagnosis
+# TRACE-RC
 
-This repository contains the evaluation outputs, metric implementation, and
-paper figures for the Video Hallucination Diagnostics (VHD) pilot benchmark.
-VHD evaluates four video-language models with three measures:
+This repository is the reproducibility package for **TRACE-RC: Target-Checked
+Confidence Ranking from Temporal Response Graphs for Video Question Answering**.
+TRACE-RC keeps a VideoLLM's base answer fixed and changes only the reliability
+score used to rank or defer that answer.  A labeled target pilot decides whether
+a learned response-graph score is safe to promote; otherwise the implementation
+returns raw confidence exactly.
 
-- **Accuracy** on the original video questions.
-- **Prior Dominance Index (PDI)** on temporally reversed videos.
-- **Hallucination Calibration Error (HCE)** on masked-evidence videos.
+The current release contains the two sealed confirmation archives used in the
+paper:
 
-The evaluated models are Qwen2.5-Omni-3B, GPT-5.4, GPT-5.5, and GPT-5.6.
+| Confirmation | Final-test questions | Final-test videos | Macro relative AURC reduction | Grouped 95% interval |
+|---|---:|---:|---:|---:|
+| HERBench Lite-v2 | 963 | 34 | 16.64% | [12.12%, 22.61%] |
+| Perception Test | 911 | 250 | 18.87% | [15.43%, 22.14%] |
 
-## Related resources
+These effects are reported separately rather than pooled.  The archived gates
+also verify that every rejected model environment used the exact raw-confidence
+fallback.
 
-- [VHD dataset on Kaggle](https://www.kaggle.com/datasets/mlopssss/video-hallucination-diagnosis): videos, question sets, human-verified labels, and the labelled evaluation manifest.
-- [Dataset and annotation tools](https://github.com/transitional-ai/hallucinationdataset): dataset download, human-in-the-loop review, and model-response collection.
-
-Videos and annotation utilities are not duplicated in this repository. The
-manuscript source is maintained separately in Overleaf while the paper is under
-revision.
-
-## Repository structure
+## Repository map
 
 ```text
-.
-|-- data/
-|   `-- model_responses/       # One response CSV per evaluated model
-|-- results/
-|   |-- figures/               # Main, source-split, and category plots
-|   |-- tables/                # Item-, clip-, and aggregate-level results
-|   `-- case_examples/         # Real and AI-generated fire examples
-|-- scripts/
-|   |-- generate_all_results.py
-|   |-- make_main_results_figure.py
-|   |-- make_source_split_figures.py
-|   `-- make_category_heatmaps.py
-`-- requirements.txt
+src/                    TRACE-RC analysis, audit, and plotting code
+tests/                  lightweight integrity and unit tests
+katana/                 frozen inference runners and PBS wrappers
+protocols/              pre-inference seals
+input/                  frozen manifests and separated pilot/test labels
+results/
+  herbench_confirmation/    sealed HERBench result archive
+  perception_confirmation/  sealed Perception Test result archive
+  posthoc_robustness/        fixed-test robustness and compute audits
+  vhd/                       annotation agreement audit for VHD
+docs/                   execution notes
+legacy/vhd_pilot/       superseded first-version VHD experiments
 ```
 
-## Reproduce the results
+The `legacy/vhd_pilot/` directory is retained for provenance.  Its four-model
+Accuracy/PDI/HCE experiment is not evidence for the current TRACE-RC claims.
 
-Create an environment and install the plotting dependencies:
+## Verify the published confirmation archives
+
+Create a Python environment and install the analysis dependencies:
 
 ```bash
 python -m pip install -r requirements.txt
+python -m pytest -q
 ```
 
-Download and extract the Kaggle dataset, then pass its labelled
-`evaluation_manifest.csv` to the driver script:
+Then verify both archive manifests and rebuild the non-pooled summary:
 
 ```bash
-python scripts/generate_all_results.py \
-  --manifest /path/to/evaluation_manifest.csv \
-  --bootstrap-repeats 1000
+python src/summarize_two_confirmations.py \
+  --herbench-dir results/herbench_confirmation/8918264.kman.restech.unsw.edu.au \
+  --perception-dir results/perception_confirmation/8919110.kman.restech.unsw.edu.au \
+  --output-dir reproduced/two_confirmations
 ```
 
-The script regenerates all aggregate CSV files in `results/tables/` and all
-quantitative plots in `results/figures/`. Progress is printed every 100
-bootstrap samples.
+The command stops if a required file is absent, an SHA-256 digest differs, or a
+reported gate value cannot be reconstructed from the archived model metrics.
 
-## Evaluation details
+## Audit the VHD annotations
 
-All four response files contain 807 completed responses covering 340 short
-video clips. The repository stores model predictions and confidence values,
-but not the gold labels. During scoring, predictions are joined to the
-human-verified Kaggle manifest by `question_id`.
+VHD is a controlled mechanism-diagnostic dataset used in source development;
+it is not one of the two final confirmation sets.  After downloading the VHD
+dataset and reviewer exports, reproduce the double-review audit with:
 
-Scores are first computed at short-clip level. Accuracy and PDI uncertainty is
-reported with 95% percentile bootstrap confidence intervals over clips. HCE is
-recomputed after each clip-level bootstrap sample using five confidence bins.
-The real-versus-AI analysis uses the same procedure within each video source.
+```bash
+python src/audit_vhd_annotations.py \
+  --dataset-root /path/to/VHD/Dataset \
+  --output-dir results/vhd
+```
 
-## Citation
+The final v1.1.2 bank retains 801 of 1,155 candidate questions after two
+independent reviews and adjudication.  The audit reports task-appropriate
+agreement only; it does not treat intentionally blank labels as missing data.
 
-Please cite the associated VHD paper when using these results or scripts. A
-formal citation entry will be added after publication.
+## Data and linked resources
+
+- [VHD v1.1.2 on Kaggle](https://www.kaggle.com/datasets/mlopssss/video-hallucination-diagnosis)
+- [VHD dataset and annotation tools](https://github.com/transitional-ai/hallucinationdataset)
+- HERBench and Perception Test remain subject to their upstream licenses and
+  distribution terms.  This repository stores derived scores and hashes, not
+  copies of their videos.
+
+The raw JSONL response archives are omitted because they are large and contain
+upstream media metadata.  Their SHA-256 digests are retained in the sealed
+archives and post-hoc analysis manifest.  The included scored predictions are
+sufficient to verify the reported confirmation tables and promotion outcomes.
+
+## Inference scope
+
+The registered full panel evaluates three model families under four temporal
+views, giving 12 calls and 168 input frames per question.  The `katana/`
+directory records the exact model revisions, deterministic frame samplers,
+checkpointing, and job wrappers used on the UNSW Katana cluster.  Model weights
+are not redistributed here.
+
+## License and citation
+
+The source code in this repository is released under the
+[MIT License](LICENSE).  Dataset media, benchmark files, model weights, and
+other third-party material remain subject to their respective upstream terms.
+The final article citation will be added after publication.  Katana should be
+cited as:
+
+> Katana. (2010). https://doi.org/10.26190/669X-A286

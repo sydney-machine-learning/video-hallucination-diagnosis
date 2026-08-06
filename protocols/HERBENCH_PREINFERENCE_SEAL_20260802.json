@@ -1,0 +1,91 @@
+{
+  "confirmation_gate": {
+    "at_least_one_environment_promoted": true,
+    "bootstrap_seed": 20260802,
+    "final_bootstrap_iterations": 10000,
+    "macro_relative_aurc_gain_percent_at_least": 1.0,
+    "video_grouped_95ci_lower_above_zero": true,
+    "worst_model_gain_percent_at_least": -1.0
+  },
+  "created_date": "2026-08-02",
+  "dataset": "HERBench Lite-v2",
+  "dataset_revision": "DanBenAmi/HERBench@30b42e97180f2c7c0fdc3f2aed412ae04f0366ca",
+  "development_authorization": {
+    "candidate_library": "robust_safe",
+    "mean_test_gain_threshold": 0.5,
+    "path": "results/v2_pilot_robust_safe_stability/development_gate.json",
+    "selected_pilot_fraction": 0.5,
+    "sha256": "5f702d284929b3ab67d52ca2ccbe791a082aa71d302aa47e86d881ad1836c347"
+  },
+  "execution": {
+    "checkpointed": true,
+    "in_memory_work_order": "group identical video segments; preserve sealed ordinals and record keys",
+    "gpu_model": "H200",
+    "gpus": 2,
+    "pilot_and_final_analysis_inside_same_allocation": true,
+    "schedule": "Qwen and InternVL run concurrently; LLaVA runs second on GPU 0 in the same allocation",
+    "single_pbs_allocation": true,
+    "walltime": "05:58:00"
+  },
+  "failed_gate_must_be_retained": true,
+  "manifest_sha256": "c889297f86d764f762de9abe4323a108f2350cc079f0f28e311a4f7df6286c90",
+  "model_panel": {
+    "internvl": [
+      "OpenGVLab/InternVL3_5-14B-Instruct",
+      "72c82460a2c05a3bc2b47be230c44edc88e86ed4"
+    ],
+    "llava": [
+      "lmms-lab-encoder/LLaVA-OneVision-2-8B-Instruct",
+      "802f16c8346a062fef7ddf92b2bd64a770a50a1a"
+    ],
+    "qwen": [
+      "Qwen/Qwen3-VL-8B-Instruct",
+      "0c351dd01ed87e9c1b53cbc748cba10e6187ff3b"
+    ]
+  },
+  "pilot_labels_sha256": "318635c71b52dcbd298112ad20e94af6366d0d01257874e9f9ae4ec22162d212",
+  "promotion": {
+    "candidate_lower_bound_margins_percent": {
+      "source_trace_hgb": 0.5,
+      "target_logistic": 0.0
+    },
+    "candidates": [
+      "source_trace_hgb",
+      "target_logistic"
+    ],
+    "familywise_alpha": 0.05,
+    "grouped_bootstrap_iterations": 2000,
+    "rejection_action": "pointwise raw-confidence fallback",
+    "strictly_positive_adjusted_lower_bound_required": true
+  },
+  "schema_version": "trace-rc-herbench-preinference-seal-1.0",
+  "sealed_test_labels_sha256": "de8d2fe41b29697956341c114ff0243a76725293c43c5877a9752c9496367c34",
+  "source_hashes": {
+    "METHOD_SPEC.md": "47ccb5753fbea18e6cadba06fc8133870af12ccfa48472d24e060d30b12db995",
+    "input/herbench_lite_v2_inference.jsonl": "c889297f86d764f762de9abe4323a108f2350cc079f0f28e311a4f7df6286c90",
+    "input/preinference_split_lock.json": "688d523ddc75f53dccf28dcfbc8b1cb2242fe5c805fc47ef775b0dc7abb1a63a",
+    "katana/herbench_multimodel_runner.py": "d768649e14b5470ceee10ad119f175f35ee836a0784f8a3867eeab166dbdf641",
+    "katana/herbench_persistent_worker.py": "0f029f9d1891670daf0da8e512433b161e2ef3446a6134364df6efe873c3b228",
+    "katana/prepare_herbench_assets.pbs": "64723556bcdd510f979160909a73f3a93c07af2ae071220947f6bc9854e4e54d",
+    "katana/run_herbench_consolidated.pbs": "993cd240ce1628982303dd0ca3545b593a97b94ea37f3de9fe3b9ced2d40205c",
+    "src/analyze_herbench_trace_rc.py": "b44a3de8d9d58350b66712f6a476b5bc5f3c852e40e845605c735720250e5593",
+    "src/build_herbench_manifest.py": "94c6eee1e858954386ef49d6e17d1b2dcf8b8b76e080b961cd5065d8879c1852",
+    "src/evaluate_v2_target_pilot.py": "7bfb3c932ceec54b0e71bc5a3dd3b8385cb3a56ade3d3c861db5c180ec403730"
+  },
+  "split": {
+    "grouping_unit": "source video",
+    "pilot_fraction": 0.5,
+    "pilot_questions": 1008,
+    "pilot_videos": 34,
+    "salt": "trace-rc-herbench-lite-v2-video-split-20260802",
+    "test_questions": 963,
+    "test_videos": 34
+  },
+  "test_labels_must_not_be_passed_to_pilot_phase": true,
+  "views": {
+    "base": 16,
+    "dense_acquisition": 24,
+    "invariant_nuisance": 8,
+    "temporal_order_destruction": 8
+  }
+}

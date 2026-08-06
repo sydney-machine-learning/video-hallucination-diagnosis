@@ -1,0 +1,155 @@
+#!/bin/bash
+#PBS -N trc_pt1fill
+#PBS -l select=1:ncpus=8:ngpus=1:mem=96gb:gpu_model=H200
+#PBS -l walltime=01:28:00
+#PBS -j oe
+#PBS -m n
+
+set -Eeuo pipefail
+umask 077
+
+PROJECT="/home/${USER}/trace_rc_route"
+SCRATCH="/srv/scratch/${USER}/sicr"
+INPUT="${PROJECT}/input/perception_test/frozen"
+DATA_ROOT="${SCRATCH}/data/perception_test_valid500"
+RUN_ROOT="${SCRATCH}/trace_rc_perception_valid500"
+RESULT_ROOT="${RUN_ROOT}/results"
+LOG_ROOT="${RUN_ROOT}/logs"
+PREFILL_ROOT="${RUN_ROOT}/prefill/${PBS_JOBID:-manual}"
+PREFILL_RESULTS="${PREFILL_ROOT}/results"
+PREFILL_STATE="${PREFILL_ROOT}/state"
+PREFILL_STOP="${PREFILL_ROOT}/GRACEFUL_STOP_REQUESTED"
+MANIFEST="${INPUT}/perception_test_valid500_inference.jsonl"
+PRELOCK="${INPUT}/preinference_split_lock.json"
+SEAL="${PROJECT}/PERCEPTION_TEST_PREINFERENCE_SEAL_20260803.json"
+QWEN_ENV="${SCRATCH}/envs/qwen-smoke"
+MAIN_JOB="8919110"
+EXPECTED=7552
+MAIN_HELD_BY_PREFILL=0
+
+mkdir -p "${RESULT_ROOT}" "${LOG_ROOT}" "${PREFILL_RESULTS}" "${PREFILL_STATE}"
+rm -f "${PREFILL_STOP}"
+exec > >(tee -a "${LOG_ROOT}/prefill.${PBS_JOBID:-manual}.log") 2>&1
+
+progress() {
+  printf '%s\tprefill-1gpu\t%s\n' "$(date -u +%Y-%m-%dT%H:%M:%SZ)" "$1" | \
+    tee -a "${LOG_ROOT}/progress.${PBS_JOBID:-manual}.tsv"
+}
+
+release_main() {
+  if (( MAIN_HELD_BY_PREFILL == 1 )); then
+    qrls "${MAIN_JOB}" 2>/dev/null || true
+    progress "MAIN_RELEASED job=${MAIN_JOB}"
+    MAIN_HELD_BY_PREFILL=0
+  fi
+}
+
+cleanup() {
+  if [[ -n "${WATCHDOG_PID:-}" ]]; then
+    kill "${WATCHDOG_PID}" 2>/dev/null || true
+  fi
+  release_main
+  sync
+}
+trap cleanup EXIT
+trap 'exit 143' TERM INT
+
+# Start only while the original four-GPU job is queued, and reserve a
+# 15-minute hand-back margin before its current estimated start.
+main_state=$(qstat -fx "${MAIN_JOB}" 2>/dev/null | awk -F'= ' '/job_state =/{print $2; exit}')
+main_estimate=$(qstat -fx "${MAIN_JOB}" 2>/dev/null | sed -n 's/^[[:space:]]*estimated.start_time = //p' | head -1)
+if [[ "${main_state}" != "Q" || -z "${main_estimate}" ]]; then
+  progress "SKIP main_state=${main_state:-missing} estimate=${main_estimate:-missing}"
+  exit 0
+fi
+main_estimate_epoch=$(date -d "${main_estimate}" +%s)
+now_epoch=$(date +%s)
+run_seconds=$((main_estimate_epoch - now_epoch - 15 * 60))
+(( run_seconds > 65 * 60 )) && run_seconds=$((65 * 60))
+if (( run_seconds < 30 * 60 )); then
+  progress "SKIP insufficient_safe_window_seconds=${run_seconds}"
+  exit 0
+fi
+
+qhold "${MAIN_JOB}"
+MAIN_HELD_BY_PREFILL=1
+sleep 2
+main_state=$(qstat -fx "${MAIN_JOB}" 2>/dev/null | awk -F'= ' '/job_state =/{print $2; exit}')
+[[ "${main_state}" == "H" ]] || { progress "ABORT hold_failed state=${main_state}"; exit 75; }
+progress "MAIN_HELD job=${MAIN_JOB} safe_run_seconds=${run_seconds}"
+
+( sleep "${run_seconds}"; echo "reason=single_gpu_backfill_guard" > "${PREFILL_STOP}" ) &
+WATCHDOG_PID=$!
+
+module purge
+module load python/3.10.8
+module load cuda/12.8.0
+export HF_HOME="${SCRATCH}/huggingface"
+export HF_HUB_CACHE="${HF_HOME}/hub"
+export TOKENIZERS_PARALLELISM=false PYTHONUNBUFFERED=1 PYTHONDONTWRITEBYTECODE=1
+export OMP_NUM_THREADS=4
+
+progress PREFLIGHT_START
+test -s "${DATA_ROOT}/PREP_COMPLETE.json" && test -s "${MANIFEST}" && test -s "${PRELOCK}" && test -s "${SEAL}"
+source "${QWEN_ENV}/bin/activate"
+python - "${MANIFEST}" "${PRELOCK}" "${SEAL}" "${DATA_ROOT}/PREP_COMPLETE.json" "${PROJECT}" <<'PY'
+import hashlib, json, sys
+from pathlib import Path
+manifest, prelock_path, seal_path, prep_path, project = map(Path, sys.argv[1:])
+rows = [json.loads(line) for line in manifest.read_text(encoding="utf-8").splitlines() if line.strip()]
+prelock = json.loads(prelock_path.read_text(encoding="utf-8"))
+seal = json.loads(seal_path.read_text(encoding="utf-8"))
+prep = json.loads(prep_path.read_text(encoding="utf-8"))
+digest = hashlib.sha256(manifest.read_bytes()).hexdigest()
+assert len(rows) == 1888 and len({row["video_id"] for row in rows}) == 500
+assert all(not ({"answer", "answer_id", "gold"} & set(row)) for row in rows)
+assert all(Path(row["video_path"]).is_file() for row in rows)
+assert digest == prelock["manifest_sha256"] == seal["manifest_sha256"] == prep["manifest_sha256"]
+for relative, expected in seal["source_hashes"].items():
+    path = project / relative
+    assert path.is_file() and hashlib.sha256(path.read_bytes()).hexdigest() == expected, path
+print("TRACE_RC_PERCEPTION_1GPU_PREFILL_PREFLIGHT_PASS", len(rows), digest)
+PY
+deactivate
+progress PREFLIGHT_PASS
+
+set +e
+( source "${QWEN_ENV}/bin/activate"; CUDA_VISIBLE_DEVICES=0 python -u \
+    "${PROJECT}/katana/perception_multimodel_runner.py" --backend internvl --manifest "${MANIFEST}" \
+    --output "${PREFILL_RESULTS}/internvl_predictions.jsonl" \
+    --state-dir "${PREFILL_STATE}/internvl" --output-prefix prefill-internvl \
+    --resume --checkpoint-every 10 --stop-file "${PREFILL_STOP}" ) \
+    > "${LOG_ROOT}/prefill_internvl.${PBS_JOBID}.log" 2>&1 &
+IPID=$!
+set -e
+progress "INFERENCE_START internvl_gpu=0"
+
+while kill -0 "${IPID}" 2>/dev/null; do
+  count=0
+  [[ -s "${PREFILL_RESULTS}/internvl_predictions.jsonl" ]] && count=$(wc -l < "${PREFILL_RESULTS}/internvl_predictions.jsonl")
+  progress "RUNNING internvl=${count}/${EXPECTED}"
+  sleep 60
+done
+
+set +e
+wait "${IPID}"; IRC=$?
+set -e
+progress "INFERENCE_STOP internvl_rc=${IRC}"
+if [[ "${IRC}" -ne 0 && "${IRC}" -ne 75 ]]; then
+  progress "ABORT runner_failure rc=${IRC}"
+  exit "${IRC}"
+fi
+
+source "${QWEN_ENV}/bin/activate"
+if [[ -s "${PREFILL_RESULTS}/internvl_predictions.jsonl" ]]; then
+  python -u "${PROJECT}/katana/merge_perception_prefill.py" \
+    --source "${PREFILL_RESULTS}/internvl_predictions.jsonl" \
+    --destination "${RESULT_ROOT}/internvl_predictions.jsonl" --expected-max "${EXPECTED}"
+fi
+deactivate
+
+sha256sum "${RESULT_ROOT}"/*predictions.jsonl 2>/dev/null > "${PREFILL_ROOT}/canonical_after_prefill.sha256" || true
+kill "${WATCHDOG_PID}" 2>/dev/null || true
+release_main
+progress PREFILL_PASS
+echo "TRACE_RC_PERCEPTION_1GPU_PREFILL_PASS ${PREFILL_ROOT}"

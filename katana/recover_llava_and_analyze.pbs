@@ -1,0 +1,102 @@
+#!/bin/bash
+#PBS -N trc_llava_rec
+#PBS -l select=1:ncpus=14:ngpus=2:mem=160gb:gpu_model=H200
+#PBS -l walltime=05:58:00
+#PBS -j oe
+#PBS -m n
+
+set -Eeuo pipefail
+umask 077
+
+PROJECT="/home/${USER}/trace_rc_route"
+PROBE="/home/${USER}/probe_route"
+SICR="/home/${USER}/sicr_route"
+CAVER="/home/${USER}/caver_route"
+SCRATCH="/srv/scratch/${USER}/sicr"
+RUN_ROOT="${SCRATCH}/trace_rc_herbench"
+RESULT_ROOT="${RUN_ROOT}/results"
+MANIFEST="${PROJECT}/input/herbench_lite_v2_inference.jsonl"
+PILOT_LABELS="${PROJECT}/input/pilot_labels.csv"
+TEST_LABELS="${PROJECT}/input/sealed_test_labels.csv"
+PRELOCK="${PROJECT}/input/preinference_split_lock.json"
+SEAL="${PROJECT}/HERBENCH_PREINFERENCE_SEAL_20260802.json"
+ENV_ROOT="${SCRATCH}/envs/llava-ov2"
+ANALYSIS_ROOT="${PROJECT}/results_fresh/herbench_confirmation/${PBS_JOBID}"
+LOG_ROOT="${RUN_ROOT}/logs"
+mkdir -p "${ANALYSIS_ROOT}" "${LOG_ROOT}"
+rm -f "${RUN_ROOT}/state/GRACEFUL_STOP_REQUESTED"
+exec > >(tee -a "${LOG_ROOT}/recovery.${PBS_JOBID}.log") 2>&1
+
+module purge
+module load python/3.10.8
+module load cuda/12.8.0
+export HF_HOME="${SCRATCH}/huggingface"
+export HF_HUB_CACHE="${HF_HOME}/hub"
+export TOKENIZERS_PARALLELISM=false PYTHONUNBUFFERED=1 PYTHONDONTWRITEBYTECODE=1
+export OMP_NUM_THREADS=4
+
+source "${ENV_ROOT}/bin/activate"
+CUDA_VISIBLE_DEVICES=0 python -u "${PROJECT}/katana/herbench_head_half_runner.py" \
+  --backend llava --manifest "${MANIFEST}" \
+  --output "${RESULT_ROOT}/llava_predictions.jsonl" \
+  --state-dir "${RUN_ROOT}/state/llava" --output-prefix herbench-llava \
+  --resume --checkpoint-every 10 > "${LOG_ROOT}/llava_head.${PBS_JOBID}.log" 2>&1 &
+HEAD_PID=$!
+CUDA_VISIBLE_DEVICES=1 python -u "${PROJECT}/katana/herbench_tail_half_runner.py" \
+  --backend llava --manifest "${MANIFEST}" \
+  --output "${RESULT_ROOT}/llava_tail_predictions.jsonl" \
+  --state-dir "${RUN_ROOT}/state/llava_tail" --output-prefix herbench-llava-tail \
+  --resume --checkpoint-every 10 > "${LOG_ROOT}/llava_tail.${PBS_JOBID}.log" 2>&1 &
+TAIL_PID=$!
+wait "${HEAD_PID}"
+wait "${TAIL_PID}"
+
+python -u "${PROJECT}/katana/merge_llava_halves.py" \
+  --manifest "${MANIFEST}" \
+  --head "${RESULT_ROOT}/llava_predictions.jsonl" \
+  --tail "${RESULT_ROOT}/llava_tail_predictions.jsonl" \
+  --output "${RESULT_ROOT}/llava_merged_predictions.jsonl"
+mv -f "${RESULT_ROOT}/llava_merged_predictions.jsonl" "${RESULT_ROOT}/llava_predictions.jsonl"
+deactivate
+
+source "${SCRATCH}/envs/qwen-smoke/bin/activate"
+cd "${PROJECT}/src"
+COMMON_ARGS=(
+  --feature "${SICR}/results_fresh/safe_sirc_confirmation/8901064.kman.restech.unsw.edu.au/multidataset_features.csv"
+  --feature "${CAVER}/results_fresh/mvbench_confirmation/8904763.kman.restech.unsw.edu.au/mvbench_caver_features.csv"
+  --development-result "${SICR}/results/katana_phase2/qwen3_vl_4b_predictions.jsonl"
+  --development-result "${SICR}/results/katana_phase2/internvl3_5_4b_predictions.jsonl"
+  --development-result "${SICR}/results_fresh/public_inference/8900849.kman.restech.unsw.edu.au/nextgqa_llava/llava_ov2_8b_predictions.jsonl"
+  --development-result "${SICR}/results_fresh/public_inference/8900849.kman.restech.unsw.edu.au/star_three_model/qwen_predictions.jsonl"
+  --development-result "${SICR}/results_fresh/public_inference/8900849.kman.restech.unsw.edu.au/star_three_model/internvl_predictions.jsonl"
+  --development-result "${SICR}/results_fresh/public_inference/8900849.kman.restech.unsw.edu.au/star_three_model/llava_predictions.jsonl"
+  --development-result "${CAVER}/results_fresh/mvbench_inference/8904762.kman.restech.unsw.edu.au/qwen_predictions.jsonl"
+  --development-result "${CAVER}/results_fresh/mvbench_inference/8904762.kman.restech.unsw.edu.au/internvl_predictions.jsonl"
+  --development-result "${CAVER}/results_fresh/mvbench_inference/8904762.kman.restech.unsw.edu.au/llava_predictions.jsonl"
+  --development-result "${SICR}/results_fresh/rava_vhd_confirmation/8905351.kman.restech.unsw.edu.au/qwen_predictions.jsonl"
+  --development-result "${SICR}/results_fresh/rava_vhd_confirmation/8905351.kman.restech.unsw.edu.au/internvl_predictions.jsonl"
+  --development-result "${SICR}/results_fresh/rava_vhd_confirmation/8905351.kman.restech.unsw.edu.au/llava_predictions.jsonl"
+  --development-result "${SICR}/results_fresh/prave_tempcompass_confirmation/8905479.kman.restech.unsw.edu.au/qwen_predictions.jsonl"
+  --development-result "${SICR}/results_fresh/prave_tempcompass_confirmation/8905479.kman.restech.unsw.edu.au/internvl_predictions.jsonl"
+  --development-result "${SICR}/results_fresh/prave_tempcompass_confirmation/8905479.kman.restech.unsw.edu.au/llava_predictions.jsonl"
+  --target-result "${RESULT_ROOT}/qwen_predictions.jsonl"
+  --target-result "${RESULT_ROOT}/internvl_predictions.jsonl"
+  --target-result "${RESULT_ROOT}/llava_predictions.jsonl"
+  --vhd-scored "${PROBE}/input/development_scored/vhd_scored_predictions.csv"
+  --temp-scored "${PROBE}/input/development_scored/tempcompass_scored_predictions.csv"
+  --manifest "${MANIFEST}" --preinference-lock "${PRELOCK}"
+  --output-dir "${ANALYSIS_ROOT}"
+)
+python -u analyze_herbench_trace_rc.py pilot "${COMMON_ARGS[@]}" \
+  --pilot-labels "${PILOT_LABELS}" --bootstrap-iterations 2000 --alpha 0.05
+python -u analyze_herbench_trace_rc.py final "${COMMON_ARGS[@]}" \
+  --test-labels "${TEST_LABELS}" --final-iterations 10000
+deactivate
+
+sha256sum "${RESULT_ROOT}"/qwen_predictions.jsonl \
+  "${RESULT_ROOT}"/internvl_predictions.jsonl \
+  "${RESULT_ROOT}"/llava_predictions.jsonl > "${ANALYSIS_ROOT}/raw_predictions.sha256"
+cp -p "${PRELOCK}" "${SEAL}" "${ANALYSIS_ROOT}/"
+find "${ANALYSIS_ROOT}" -type f ! -name archive.sha256 -print0 | sort -z | \
+  xargs -0 sha256sum > "${ANALYSIS_ROOT}/archive.sha256"
+echo "TRACE_RC_HERBENCH_RECOVERY_PASS ${ANALYSIS_ROOT}"

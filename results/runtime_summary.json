@@ -1,0 +1,56 @@
+[
+  {
+    "dataset": "HERBench Lite-v2",
+    "input_frames": 110376,
+    "median_call_latency_seconds": 0.7489911667071283,
+    "model_id": "OpenGVLab/InternVL3_5-14B-Instruct",
+    "p95_call_latency_seconds": 2.1890317972749473,
+    "successful_calls": 7884,
+    "sum_recorded_latency_hours": 2.265348622100169
+  },
+  {
+    "dataset": "HERBench Lite-v2",
+    "input_frames": 110376,
+    "median_call_latency_seconds": 0.2908342009759508,
+    "model_id": "Qwen/Qwen3-VL-8B-Instruct",
+    "p95_call_latency_seconds": 0.2979952070250874,
+    "successful_calls": 7884,
+    "sum_recorded_latency_hours": 0.5820297185555844
+  },
+  {
+    "dataset": "HERBench Lite-v2",
+    "input_frames": 110376,
+    "median_call_latency_seconds": 1.6193733955733478,
+    "model_id": "lmms-lab-encoder/LLaVA-OneVision-2-8B-Instruct",
+    "p95_call_latency_seconds": 7.165011622663587,
+    "successful_calls": 7884,
+    "sum_recorded_latency_hours": 6.860435540793309
+  },
+  {
+    "dataset": "Perception Test valid500",
+    "input_frames": 105728,
+    "median_call_latency_seconds": 0.756876714513055,
+    "model_id": "OpenGVLab/InternVL3_5-14B-Instruct",
+    "p95_call_latency_seconds": 2.1020160131010925,
+    "successful_calls": 7552,
+    "sum_recorded_latency_hours": 2.0106849396792676
+  },
+  {
+    "dataset": "Perception Test valid500",
+    "input_frames": 105728,
+    "median_call_latency_seconds": 0.28628295748785604,
+    "model_id": "Qwen/Qwen3-VL-8B-Instruct",
+    "p95_call_latency_seconds": 0.29042159719683697,
+    "successful_calls": 7552,
+    "sum_recorded_latency_hours": 0.47583705082808997
+  },
+  {
+    "dataset": "Perception Test valid500",
+    "input_frames": 105728,
+    "median_call_latency_seconds": 1.5893206990003819,
+    "model_id": "lmms-lab-encoder/LLaVA-OneVision-2-8B-Instruct",
+    "p95_call_latency_seconds": 7.093541018292308,
+    "successful_calls": 7552,
+    "sum_recorded_latency_hours": 5.588233836615707
+  }
+]

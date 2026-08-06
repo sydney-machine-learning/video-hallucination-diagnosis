@@ -1,0 +1,257 @@
+#!/bin/bash
+#PBS -N trc_pt3
+#PBS -l select=1:ncpus=24:ngpus=3:mem=240gb:gpu_model=H200
+#PBS -l walltime=06:58:00
+#PBS -j oe
+#PBS -m n
+
+set -Eeuo pipefail
+umask 077
+
+PROJECT="/home/${USER}/trace_rc_route"
+PROBE="/home/${USER}/probe_route"
+SICR="/home/${USER}/sicr_route"
+CAVER="/home/${USER}/caver_route"
+SCRATCH="/srv/scratch/${USER}/sicr"
+INPUT="${PROJECT}/input/perception_test/frozen"
+DATA_ROOT="${SCRATCH}/data/perception_test_valid500"
+RUN_ROOT="${SCRATCH}/trace_rc_perception_valid500"
+RESULT_ROOT="${RUN_ROOT}/results"
+STATE_ROOT="${RUN_ROOT}/state"
+LOG_ROOT="${RUN_ROOT}/logs"
+ANALYSIS_ROOT="${PROJECT}/results_fresh/perception_test_confirmation/${PBS_JOBID:-manual}"
+MANIFEST="${INPUT}/perception_test_valid500_inference.jsonl"
+PILOT_LABELS="${INPUT}/pilot_labels.csv"
+TEST_LABELS="${INPUT}/sealed_test_labels.csv"
+PRELOCK="${INPUT}/preinference_split_lock.json"
+SEAL="${PROJECT}/PERCEPTION_TEST_PREINFERENCE_SEAL_20260803.json"
+STOP_FILE="${STATE_ROOT}/GRACEFUL_STOP_REQUESTED"
+PROGRESS_LOG="${LOG_ROOT}/progress.${PBS_JOBID:-manual}.tsv"
+QWEN_ENV="${SCRATCH}/envs/qwen-smoke"
+LLAVA_ENV="${SCRATCH}/envs/llava-ov2"
+EXPECTED=7552
+EXPECTED_HALF=3776
+
+mkdir -p "${RESULT_ROOT}" "${STATE_ROOT}" "${LOG_ROOT}" "${ANALYSIS_ROOT}"
+rm -f "${STOP_FILE}"
+exec > >(tee -a "${LOG_ROOT}/bundle.${PBS_JOBID:-manual}.log") 2>&1
+
+progress() {
+  printf '%s\t%s\t%s\n' "$(date -u +%Y-%m-%dT%H:%M:%SZ)" "$1" "$2" | tee -a "${PROGRESS_LOG}"
+}
+
+count_lines() {
+  local path="$1"
+  if [[ -s "${path}" ]]; then wc -l < "${path}"; else echo 0; fi
+}
+
+( sleep $((6 * 3600 + 25 * 60)); echo "reason=walltime_guard" > "${STOP_FILE}" ) &
+WATCHDOG_PID=$!
+cleanup() {
+  kill "${WATCHDOG_PID:-0}" 2>/dev/null || true
+  sync
+}
+trap cleanup EXIT
+
+module purge
+module load python/3.10.8
+module load cuda/12.8.0
+export HF_HOME="${SCRATCH}/huggingface"
+export HF_HUB_CACHE="${HF_HOME}/hub"
+export TOKENIZERS_PARALLELISM=false PYTHONUNBUFFERED=1 PYTHONDONTWRITEBYTECODE=1
+export OMP_NUM_THREADS=4
+
+progress preflight START
+test -s "${DATA_ROOT}/PREP_COMPLETE.json"
+test -s "${MANIFEST}" && test -s "${PILOT_LABELS}" && test -s "${TEST_LABELS}"
+test -s "${PRELOCK}" && test -s "${SEAL}"
+source "${QWEN_ENV}/bin/activate"
+python - "${MANIFEST}" "${PRELOCK}" "${SEAL}" "${DATA_ROOT}/PREP_COMPLETE.json" "${PROJECT}" <<'PY'
+import hashlib, json, sys
+from pathlib import Path
+manifest, prelock_path, seal_path, prep_path, project = map(Path, sys.argv[1:])
+rows = [json.loads(line) for line in manifest.read_text(encoding="utf-8").splitlines() if line.strip()]
+prelock = json.loads(prelock_path.read_text(encoding="utf-8"))
+seal = json.loads(seal_path.read_text(encoding="utf-8"))
+prep = json.loads(prep_path.read_text(encoding="utf-8"))
+digest = hashlib.sha256(manifest.read_bytes()).hexdigest()
+assert len(rows) == 1888 and len({row["video_id"] for row in rows}) == 500
+assert {row["role"] for row in rows} == {"calibration", "test"}
+assert all(not ({"answer", "answer_id", "gold"} & set(row)) for row in rows)
+assert all(Path(row["video_path"]).is_file() for row in rows)
+assert digest == prelock["manifest_sha256"] == seal["manifest_sha256"] == prep["manifest_sha256"]
+assert hashlib.sha256(prelock_path.read_bytes()).hexdigest() == seal["source_hashes"]["input/perception_test/frozen/preinference_split_lock.json"]
+for relative, expected in seal["source_hashes"].items():
+    path = project / relative
+    assert path.is_file(), path
+    assert hashlib.sha256(path.read_bytes()).hexdigest() == expected, path
+print("TRACE_RC_PERCEPTION_BLIND_PREFLIGHT_PASS", len(rows), digest)
+PY
+deactivate
+nvidia-smi
+progress preflight PASS
+
+run_full_backend() {
+  local backend="$1" gpu="$2" output="$3" state="$4" prefix="$5"
+  local attempt rc lines
+  for attempt in 1 2; do
+    set +e
+    (
+      source "${QWEN_ENV}/bin/activate"
+      CUDA_VISIBLE_DEVICES="${gpu}" python -u "${PROJECT}/katana/perception_multimodel_runner.py" \
+        --backend "${backend}" --manifest "${MANIFEST}" \
+        --output "${output}" --state-dir "${state}" --output-prefix "${prefix}" \
+        --resume --checkpoint-every 10 --stop-file "${STOP_FILE}"
+    ) > "${LOG_ROOT}/${backend}.${PBS_JOBID}.log" 2>&1
+    rc=$?
+    set -e
+    lines=$(count_lines "${output}")
+    if (( rc == 0 )) && [[ "${lines}" == "${EXPECTED}" ]]; then
+      progress "${backend}" "PASS gpu=${gpu} records=${lines}"
+      return 0
+    fi
+    progress "${backend}" "RETRY attempt=${attempt} rc=${rc} records=${lines}"
+  done
+  progress "${backend}" FAILED
+  return 75
+}
+
+run_llava_half() {
+  local half="$1" gpu="$2" runner="$3" output="$4" state="$5" prefix="$6"
+  local attempt rc lines
+  for attempt in 1 2; do
+    set +e
+    (
+      source "${LLAVA_ENV}/bin/activate"
+      CUDA_VISIBLE_DEVICES="${gpu}" python -u "${PROJECT}/katana/${runner}" \
+        --backend llava --manifest "${MANIFEST}" \
+        --output "${output}" --state-dir "${state}" --output-prefix "${prefix}" \
+        --resume --checkpoint-every 10 --stop-file "${STOP_FILE}"
+    ) > "${LOG_ROOT}/llava_${half}.${PBS_JOBID}.log" 2>&1
+    rc=$?
+    set -e
+    lines=$(count_lines "${output}")
+    if (( rc == 0 )) && [[ "${lines}" == "${EXPECTED_HALF}" ]]; then
+      progress "llava_${half}" "PASS gpu=${gpu} records=${lines}"
+      return 0
+    fi
+    progress "llava_${half}" "RETRY attempt=${attempt} rc=${rc} records=${lines}"
+  done
+  progress "llava_${half}" FAILED
+  return 75
+}
+
+start_tail() {
+  local gpu="$1"
+  ( run_llava_half tail "${gpu}" perception_tail_half_runner.py \
+      "${RESULT_ROOT}/llava_tail_predictions.jsonl" "${STATE_ROOT}/llava_tail" \
+      perception-llava-tail ) &
+  TPID=$!
+  TAIL_GPU="${gpu}"
+  TAIL_STARTED=1
+  progress llava_tail "START gpu=${gpu} pid=${TPID}"
+}
+
+( run_full_backend qwen 0 "${RESULT_ROOT}/qwen_predictions.jsonl" \
+    "${STATE_ROOT}/qwen" perception-qwen ) &
+QPID=$!
+( run_full_backend internvl 1 "${RESULT_ROOT}/internvl_predictions.jsonl" \
+    "${STATE_ROOT}/internvl" perception-internvl ) &
+IPID=$!
+( run_llava_half head 2 perception_head_half_runner.py \
+    "${RESULT_ROOT}/llava_head_predictions.jsonl" "${STATE_ROOT}/llava_head" \
+    perception-llava-head ) &
+HPID=$!
+progress concurrent_wave "START qwen_gpu=0 internvl_gpu=1 llava_head_gpu=2"
+
+QDONE=0; IDONE=0; HDONE=0; TDONE=0
+QRC=99; IRC=99; HRC=99; TRC=99
+TAIL_STARTED=0; TAIL_GPU=""
+
+while true; do
+  if (( QDONE == 0 )) && ! kill -0 "${QPID}" 2>/dev/null; then
+    set +e; wait "${QPID}"; QRC=$?; set -e; QDONE=1
+    (( TAIL_STARTED == 1 )) || start_tail 0
+  fi
+  if (( IDONE == 0 )) && ! kill -0 "${IPID}" 2>/dev/null; then
+    set +e; wait "${IPID}"; IRC=$?; set -e; IDONE=1
+    (( TAIL_STARTED == 1 )) || start_tail 1
+  fi
+  if (( HDONE == 0 )) && ! kill -0 "${HPID}" 2>/dev/null; then
+    set +e; wait "${HPID}"; HRC=$?; set -e; HDONE=1
+    (( TAIL_STARTED == 1 )) || start_tail 2
+  fi
+  if (( TAIL_STARTED == 1 && TDONE == 0 )) && ! kill -0 "${TPID}" 2>/dev/null; then
+    set +e; wait "${TPID}"; TRC=$?; set -e; TDONE=1
+  fi
+
+  progress concurrent_wave "RUNNING qwen=$(count_lines "${RESULT_ROOT}/qwen_predictions.jsonl")/${EXPECTED} internvl=$(count_lines "${RESULT_ROOT}/internvl_predictions.jsonl")/${EXPECTED} llava_head=$(count_lines "${RESULT_ROOT}/llava_head_predictions.jsonl")/${EXPECTED_HALF} llava_tail=$(count_lines "${RESULT_ROOT}/llava_tail_predictions.jsonl")/${EXPECTED_HALF} tail_gpu=${TAIL_GPU:-pending}"
+
+  if (( QDONE == 1 && IDONE == 1 && HDONE == 1 && TDONE == 1 )); then break; fi
+  sleep 60
+done
+
+(( QRC == 0 && IRC == 0 && HRC == 0 && TRC == 0 )) || {
+  progress concurrent_wave "FAILED qwen=${QRC} internvl=${IRC} head=${HRC} tail=${TRC}"
+  exit 75
+}
+
+source "${LLAVA_ENV}/bin/activate"
+python -u "${PROJECT}/katana/merge_perception_halves.py" \
+  --manifest "${MANIFEST}" \
+  --head "${RESULT_ROOT}/llava_head_predictions.jsonl" \
+  --tail "${RESULT_ROOT}/llava_tail_predictions.jsonl" \
+  --output "${RESULT_ROOT}/llava_predictions.jsonl"
+deactivate
+[[ "$(count_lines "${RESULT_ROOT}/llava_predictions.jsonl")" == "${EXPECTED}" ]]
+progress concurrent_inference PASS
+
+source "${QWEN_ENV}/bin/activate"
+cd "${PROJECT}/src"
+COMMON_ARGS=(
+  --feature "${SICR}/results_fresh/safe_sirc_confirmation/8901064.kman.restech.unsw.edu.au/multidataset_features.csv"
+  --feature "${CAVER}/results_fresh/mvbench_confirmation/8904763.kman.restech.unsw.edu.au/mvbench_caver_features.csv"
+  --development-result "${SICR}/results/katana_phase2/qwen3_vl_4b_predictions.jsonl"
+  --development-result "${SICR}/results/katana_phase2/internvl3_5_4b_predictions.jsonl"
+  --development-result "${SICR}/results_fresh/public_inference/8900849.kman.restech.unsw.edu.au/nextgqa_llava/llava_ov2_8b_predictions.jsonl"
+  --development-result "${SICR}/results_fresh/public_inference/8900849.kman.restech.unsw.edu.au/star_three_model/qwen_predictions.jsonl"
+  --development-result "${SICR}/results_fresh/public_inference/8900849.kman.restech.unsw.edu.au/star_three_model/internvl_predictions.jsonl"
+  --development-result "${SICR}/results_fresh/public_inference/8900849.kman.restech.unsw.edu.au/star_three_model/llava_predictions.jsonl"
+  --development-result "${CAVER}/results_fresh/mvbench_inference/8904762.kman.restech.unsw.edu.au/qwen_predictions.jsonl"
+  --development-result "${CAVER}/results_fresh/mvbench_inference/8904762.kman.restech.unsw.edu.au/internvl_predictions.jsonl"
+  --development-result "${CAVER}/results_fresh/mvbench_inference/8904762.kman.restech.unsw.edu.au/llava_predictions.jsonl"
+  --development-result "${SICR}/results_fresh/rava_vhd_confirmation/8905351.kman.restech.unsw.edu.au/qwen_predictions.jsonl"
+  --development-result "${SICR}/results_fresh/rava_vhd_confirmation/8905351.kman.restech.unsw.edu.au/internvl_predictions.jsonl"
+  --development-result "${SICR}/results_fresh/rava_vhd_confirmation/8905351.kman.restech.unsw.edu.au/llava_predictions.jsonl"
+  --development-result "${SICR}/results_fresh/prave_tempcompass_confirmation/8905479.kman.restech.unsw.edu.au/qwen_predictions.jsonl"
+  --development-result "${SICR}/results_fresh/prave_tempcompass_confirmation/8905479.kman.restech.unsw.edu.au/internvl_predictions.jsonl"
+  --development-result "${SICR}/results_fresh/prave_tempcompass_confirmation/8905479.kman.restech.unsw.edu.au/llava_predictions.jsonl"
+  --target-result "${RESULT_ROOT}/qwen_predictions.jsonl"
+  --target-result "${RESULT_ROOT}/internvl_predictions.jsonl"
+  --target-result "${RESULT_ROOT}/llava_predictions.jsonl"
+  --vhd-scored "${PROBE}/input/development_scored/vhd_scored_predictions.csv"
+  --temp-scored "${PROBE}/input/development_scored/tempcompass_scored_predictions.csv"
+  --manifest "${MANIFEST}" --preinference-lock "${PRELOCK}"
+  --output-dir "${ANALYSIS_ROOT}"
+)
+
+progress pilot_analysis START
+python -u analyze_perception_trace_rc.py pilot "${COMMON_ARGS[@]}" \
+  --pilot-labels "${PILOT_LABELS}" --bootstrap-iterations 2000 --alpha 0.05
+progress pilot_analysis PASS
+
+progress final_analysis START
+python -u analyze_perception_trace_rc.py final "${COMMON_ARGS[@]}" \
+  --test-labels "${TEST_LABELS}" --final-iterations 10000
+progress final_analysis PASS
+deactivate
+
+sha256sum "${RESULT_ROOT}/qwen_predictions.jsonl" \
+  "${RESULT_ROOT}/internvl_predictions.jsonl" \
+  "${RESULT_ROOT}/llava_predictions.jsonl" > "${ANALYSIS_ROOT}/raw_predictions.sha256"
+cp -p "${PRELOCK}" "${SEAL}" "${ANALYSIS_ROOT}/"
+find "${ANALYSIS_ROOT}" -type f ! -name archive.sha256 -print0 | sort -z | \
+  xargs -0 sha256sum > "${ANALYSIS_ROOT}/archive.sha256"
+kill "${WATCHDOG_PID}" 2>/dev/null || true
+progress bundle PASS
+echo "TRACE_RC_PERCEPTION_3GPU_BUNDLE_PASS ${ANALYSIS_ROOT}"

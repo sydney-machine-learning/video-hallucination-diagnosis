@@ -1,0 +1,9 @@
+dataset,score,maximum_absolute_error
+HERBench,target_scalar_logistic,9.159339953157541e-16
+HERBench,target_base_graph_logistic,6.006306563222097e-14
+HERBench,target_full_graph_logistic,1.1984824244137826e-10
+HERBench,source_trace_hgb,1.1102230246251565e-16
+Perception Test,target_scalar_logistic,3.885780586188048e-16
+Perception Test,target_base_graph_logistic,1.892930256985892e-14
+Perception Test,target_full_graph_logistic,1.830782192513425e-10
+Perception Test,source_trace_hgb,1.1102230246251565e-16

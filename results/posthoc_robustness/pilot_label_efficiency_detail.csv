@@ -1,0 +1,487 @@
+dataset,pilot_fraction_of_target,salt,model_id,family,pilot_videos,pilot_questions,selected,pilot_gain_percent,adjusted_lower_bound_percent,test_gain_percent,harmful_promotion,exact_fallback,matches_registered_decision
+HERBench,0.1,herbench-pilot-subsample-000,OpenGVLab/InternVL3_5-14B-Instruct,InternVL,7,199,raw_fallback,0.0,0.0,0.0,False,True,True
+HERBench,0.1,herbench-pilot-subsample-000,Qwen/Qwen3-VL-8B-Instruct,Qwen,7,199,source_trace_hgb,34.977148350724825,21.72314723059964,23.493692301603932,False,True,True
+HERBench,0.1,herbench-pilot-subsample-000,lmms-lab-encoder/LLaVA-OneVision-2-8B-Instruct,LLaVA,7,199,raw_fallback,0.0,0.0,0.0,False,True,True
+HERBench,0.1,herbench-pilot-subsample-001,OpenGVLab/InternVL3_5-14B-Instruct,InternVL,7,216,raw_fallback,0.0,0.0,0.0,False,True,True
+HERBench,0.1,herbench-pilot-subsample-001,Qwen/Qwen3-VL-8B-Instruct,Qwen,7,216,target_logistic,28.017953400849617,12.519345579131238,19.023148319124193,False,True,True
+HERBench,0.1,herbench-pilot-subsample-001,lmms-lab-encoder/LLaVA-OneVision-2-8B-Instruct,LLaVA,7,216,raw_fallback,0.0,0.0,0.0,False,True,True
+HERBench,0.1,herbench-pilot-subsample-002,OpenGVLab/InternVL3_5-14B-Instruct,InternVL,7,250,raw_fallback,0.0,0.0,0.0,False,True,True
+HERBench,0.1,herbench-pilot-subsample-002,Qwen/Qwen3-VL-8B-Instruct,Qwen,7,250,target_logistic,30.786623285842715,22.15827618001848,23.319700600870096,False,True,True
+HERBench,0.1,herbench-pilot-subsample-002,lmms-lab-encoder/LLaVA-OneVision-2-8B-Instruct,LLaVA,7,250,raw_fallback,0.0,0.0,0.0,False,True,True
+HERBench,0.1,herbench-pilot-subsample-003,OpenGVLab/InternVL3_5-14B-Instruct,InternVL,7,205,target_logistic,5.6396670530293385,0.46895151903893906,8.026491281705862,False,True,True
+HERBench,0.1,herbench-pilot-subsample-003,Qwen/Qwen3-VL-8B-Instruct,Qwen,7,205,target_logistic,26.53608523086567,8.775224917484644,22.780929151551376,False,True,True
+HERBench,0.1,herbench-pilot-subsample-003,lmms-lab-encoder/LLaVA-OneVision-2-8B-Instruct,LLaVA,7,205,raw_fallback,0.0,0.0,0.0,False,True,True
+HERBench,0.1,herbench-pilot-subsample-004,OpenGVLab/InternVL3_5-14B-Instruct,InternVL,7,224,raw_fallback,0.0,0.0,0.0,False,True,True
+HERBench,0.1,herbench-pilot-subsample-004,Qwen/Qwen3-VL-8B-Instruct,Qwen,7,224,target_logistic,21.58120798990236,7.271288867499249,23.608615768245148,False,True,True
+HERBench,0.1,herbench-pilot-subsample-004,lmms-lab-encoder/LLaVA-OneVision-2-8B-Instruct,LLaVA,7,224,raw_fallback,0.0,0.0,0.0,False,True,True
+HERBench,0.1,herbench-pilot-subsample-005,OpenGVLab/InternVL3_5-14B-Instruct,InternVL,7,151,target_logistic,24.083666696887928,11.917699815500269,11.992248068790058,False,True,True
+HERBench,0.1,herbench-pilot-subsample-005,Qwen/Qwen3-VL-8B-Instruct,Qwen,7,151,target_logistic,55.432340886572845,28.941554801398585,25.048802608626083,False,True,True
+HERBench,0.1,herbench-pilot-subsample-005,lmms-lab-encoder/LLaVA-OneVision-2-8B-Instruct,LLaVA,7,151,target_logistic,30.62938832669448,17.64632469235572,6.298613041787327,False,True,True
+HERBench,0.1,herbench-pilot-subsample-006,OpenGVLab/InternVL3_5-14B-Instruct,InternVL,7,228,target_logistic,14.95360138208824,7.002969950909947,-5.840867498080649,True,True,True
+HERBench,0.1,herbench-pilot-subsample-006,Qwen/Qwen3-VL-8B-Instruct,Qwen,7,228,target_logistic,13.220009331915143,6.213510262229068,21.28671716784838,False,True,True
+HERBench,0.1,herbench-pilot-subsample-006,lmms-lab-encoder/LLaVA-OneVision-2-8B-Instruct,LLaVA,7,228,raw_fallback,0.0,0.0,0.0,False,True,True
+HERBench,0.1,herbench-pilot-subsample-007,OpenGVLab/InternVL3_5-14B-Instruct,InternVL,7,245,raw_fallback,0.0,0.0,0.0,False,True,True
+HERBench,0.1,herbench-pilot-subsample-007,Qwen/Qwen3-VL-8B-Instruct,Qwen,7,245,target_logistic,16.36090484820008,6.2532151328121355,18.94508409581659,False,True,True
+HERBench,0.1,herbench-pilot-subsample-007,lmms-lab-encoder/LLaVA-OneVision-2-8B-Instruct,LLaVA,7,245,raw_fallback,0.0,0.0,0.0,False,True,True
+HERBench,0.1,herbench-pilot-subsample-008,OpenGVLab/InternVL3_5-14B-Instruct,InternVL,7,143,raw_fallback,0.0,0.0,0.0,False,True,True
+HERBench,0.1,herbench-pilot-subsample-008,Qwen/Qwen3-VL-8B-Instruct,Qwen,7,143,source_trace_hgb,40.69852614346453,20.48226238353039,23.493692301603932,False,True,True
+HERBench,0.1,herbench-pilot-subsample-008,lmms-lab-encoder/LLaVA-OneVision-2-8B-Instruct,LLaVA,7,143,raw_fallback,0.0,0.0,0.0,False,True,True
+HERBench,0.1,herbench-pilot-subsample-009,OpenGVLab/InternVL3_5-14B-Instruct,InternVL,7,188,raw_fallback,0.0,0.0,0.0,False,True,True
+HERBench,0.1,herbench-pilot-subsample-009,Qwen/Qwen3-VL-8B-Instruct,Qwen,7,188,target_logistic,38.43331780960431,23.848118344265714,21.162364573908338,False,True,True
+HERBench,0.1,herbench-pilot-subsample-009,lmms-lab-encoder/LLaVA-OneVision-2-8B-Instruct,LLaVA,7,188,source_trace_hgb,25.96459773045443,16.767949089772493,11.401107496778346,False,True,True
+HERBench,0.1,herbench-pilot-subsample-010,OpenGVLab/InternVL3_5-14B-Instruct,InternVL,7,291,raw_fallback,0.0,0.0,0.0,False,True,True
+HERBench,0.1,herbench-pilot-subsample-010,Qwen/Qwen3-VL-8B-Instruct,Qwen,7,291,target_logistic,19.017275818020792,7.183227375686418,20.93903418490376,False,True,True
+HERBench,0.1,herbench-pilot-subsample-010,lmms-lab-encoder/LLaVA-OneVision-2-8B-Instruct,LLaVA,7,291,raw_fallback,0.0,0.0,0.0,False,True,True
+HERBench,0.1,herbench-pilot-subsample-011,OpenGVLab/InternVL3_5-14B-Instruct,InternVL,7,201,target_logistic,10.516804484435792,3.4907471335354114,11.886950769886646,False,True,True
+HERBench,0.1,herbench-pilot-subsample-011,Qwen/Qwen3-VL-8B-Instruct,Qwen,7,201,target_logistic,31.30278313982789,22.76554497095915,24.34432927143722,False,True,True
+HERBench,0.1,herbench-pilot-subsample-011,lmms-lab-encoder/LLaVA-OneVision-2-8B-Instruct,LLaVA,7,201,raw_fallback,0.0,0.0,0.0,False,True,True
+HERBench,0.1,herbench-pilot-subsample-012,OpenGVLab/InternVL3_5-14B-Instruct,InternVL,7,199,raw_fallback,0.0,0.0,0.0,False,True,True
+HERBench,0.1,herbench-pilot-subsample-012,Qwen/Qwen3-VL-8B-Instruct,Qwen,7,199,target_logistic,33.530294499118696,22.114776446423974,23.778479298310977,False,True,True
+HERBench,0.1,herbench-pilot-subsample-012,lmms-lab-encoder/LLaVA-OneVision-2-8B-Instruct,LLaVA,7,199,raw_fallback,0.0,0.0,0.0,False,True,True
+HERBench,0.1,herbench-pilot-subsample-013,OpenGVLab/InternVL3_5-14B-Instruct,InternVL,7,196,raw_fallback,0.0,0.0,0.0,False,True,True
+HERBench,0.1,herbench-pilot-subsample-013,Qwen/Qwen3-VL-8B-Instruct,Qwen,7,196,target_logistic,31.778817977125396,11.804939654661043,25.356326222461725,False,True,True
+HERBench,0.1,herbench-pilot-subsample-013,lmms-lab-encoder/LLaVA-OneVision-2-8B-Instruct,LLaVA,7,196,target_logistic,17.871962645065242,8.771744857315825,9.810185977927876,False,True,True
+HERBench,0.1,herbench-pilot-subsample-014,OpenGVLab/InternVL3_5-14B-Instruct,InternVL,7,236,target_logistic,13.739693167570488,0.8250643071967692,2.4274258162227844,False,True,True
+HERBench,0.1,herbench-pilot-subsample-014,Qwen/Qwen3-VL-8B-Instruct,Qwen,7,236,target_logistic,22.2849902582315,9.581047739035494,23.53568940057332,False,True,True
+HERBench,0.1,herbench-pilot-subsample-014,lmms-lab-encoder/LLaVA-OneVision-2-8B-Instruct,LLaVA,7,236,raw_fallback,0.0,0.0,0.0,False,True,True
+HERBench,0.1,herbench-pilot-subsample-015,OpenGVLab/InternVL3_5-14B-Instruct,InternVL,7,235,raw_fallback,0.0,0.0,0.0,False,True,True
+HERBench,0.1,herbench-pilot-subsample-015,Qwen/Qwen3-VL-8B-Instruct,Qwen,7,235,target_logistic,29.93158567889085,18.33595817793821,24.3564849073303,False,True,True
+HERBench,0.1,herbench-pilot-subsample-015,lmms-lab-encoder/LLaVA-OneVision-2-8B-Instruct,LLaVA,7,235,raw_fallback,0.0,0.0,0.0,False,True,True
+HERBench,0.1,herbench-pilot-subsample-016,OpenGVLab/InternVL3_5-14B-Instruct,InternVL,7,235,target_logistic,12.55333386576611,2.2574289995248265,8.982722877831717,False,True,True
+HERBench,0.1,herbench-pilot-subsample-016,Qwen/Qwen3-VL-8B-Instruct,Qwen,7,235,source_trace_hgb,16.038177152466897,5.281640068095746,23.493692301603932,False,True,True
+HERBench,0.1,herbench-pilot-subsample-016,lmms-lab-encoder/LLaVA-OneVision-2-8B-Instruct,LLaVA,7,235,raw_fallback,0.0,0.0,0.0,False,True,True
+HERBench,0.1,herbench-pilot-subsample-017,OpenGVLab/InternVL3_5-14B-Instruct,InternVL,7,252,target_logistic,8.063464961631798,2.8324200704260107,11.467404455388307,False,True,True
+HERBench,0.1,herbench-pilot-subsample-017,Qwen/Qwen3-VL-8B-Instruct,Qwen,7,252,source_trace_hgb,21.526379878611397,11.864361890273148,23.493692301603932,False,True,True
+HERBench,0.1,herbench-pilot-subsample-017,lmms-lab-encoder/LLaVA-OneVision-2-8B-Instruct,LLaVA,7,252,source_trace_hgb,13.91910205140651,7.870171112933411,11.401107496778346,False,True,True
+HERBench,0.1,herbench-pilot-subsample-018,OpenGVLab/InternVL3_5-14B-Instruct,InternVL,7,264,raw_fallback,0.0,0.0,0.0,False,True,True
+HERBench,0.1,herbench-pilot-subsample-018,Qwen/Qwen3-VL-8B-Instruct,Qwen,7,264,source_trace_hgb,27.515763227543165,16.703988013889635,23.493692301603932,False,True,True
+HERBench,0.1,herbench-pilot-subsample-018,lmms-lab-encoder/LLaVA-OneVision-2-8B-Instruct,LLaVA,7,264,source_trace_hgb,14.049734953256428,6.635452510136596,11.401107496778346,False,True,True
+HERBench,0.1,herbench-pilot-subsample-019,OpenGVLab/InternVL3_5-14B-Instruct,InternVL,7,237,target_logistic,11.31926049039748,0.6291697706925996,9.230009622807037,False,True,True
+HERBench,0.1,herbench-pilot-subsample-019,Qwen/Qwen3-VL-8B-Instruct,Qwen,7,237,target_logistic,30.86268951303691,20.722704620264626,22.182884126390338,False,True,True
+HERBench,0.1,herbench-pilot-subsample-019,lmms-lab-encoder/LLaVA-OneVision-2-8B-Instruct,LLaVA,7,237,raw_fallback,0.0,0.0,0.0,False,True,True
+HERBench,0.2,herbench-pilot-subsample-000,OpenGVLab/InternVL3_5-14B-Instruct,InternVL,14,372,target_logistic,11.701913090860502,3.9384045761832636,12.249530207962941,False,True,True
+HERBench,0.2,herbench-pilot-subsample-000,Qwen/Qwen3-VL-8B-Instruct,Qwen,14,372,source_trace_hgb,33.50835134708933,26.231705726499708,23.493692301603932,False,True,True
+HERBench,0.2,herbench-pilot-subsample-000,lmms-lab-encoder/LLaVA-OneVision-2-8B-Instruct,LLaVA,14,372,raw_fallback,0.0,0.0,0.0,False,True,True
+HERBench,0.2,herbench-pilot-subsample-001,OpenGVLab/InternVL3_5-14B-Instruct,InternVL,14,398,target_logistic,11.33707443535717,0.33185297930201324,10.81084094394979,False,True,True
+HERBench,0.2,herbench-pilot-subsample-001,Qwen/Qwen3-VL-8B-Instruct,Qwen,14,398,target_logistic,31.977190852385508,18.381521826040785,24.678725932469277,False,True,True
+HERBench,0.2,herbench-pilot-subsample-001,lmms-lab-encoder/LLaVA-OneVision-2-8B-Instruct,LLaVA,14,398,target_logistic,21.517928325309462,9.812602047780606,11.06141596549153,False,True,True
+HERBench,0.2,herbench-pilot-subsample-002,OpenGVLab/InternVL3_5-14B-Instruct,InternVL,14,473,target_logistic,11.370256938582713,1.916348381008857,7.877659023541582,False,True,True
+HERBench,0.2,herbench-pilot-subsample-002,Qwen/Qwen3-VL-8B-Instruct,Qwen,14,473,target_logistic,28.102719143159735,17.064228429873335,23.500182187573476,False,True,True
+HERBench,0.2,herbench-pilot-subsample-002,lmms-lab-encoder/LLaVA-OneVision-2-8B-Instruct,LLaVA,14,473,raw_fallback,0.0,0.0,0.0,False,True,True
+HERBench,0.2,herbench-pilot-subsample-003,OpenGVLab/InternVL3_5-14B-Instruct,InternVL,14,344,raw_fallback,0.0,0.0,0.0,False,True,True
+HERBench,0.2,herbench-pilot-subsample-003,Qwen/Qwen3-VL-8B-Instruct,Qwen,14,344,target_logistic,30.927527973799013,14.032555252496007,21.85199959836322,False,True,True
+HERBench,0.2,herbench-pilot-subsample-003,lmms-lab-encoder/LLaVA-OneVision-2-8B-Instruct,LLaVA,14,344,raw_fallback,0.0,0.0,0.0,False,True,True
+HERBench,0.2,herbench-pilot-subsample-004,OpenGVLab/InternVL3_5-14B-Instruct,InternVL,14,449,target_logistic,12.985528247584464,5.866822402843148,8.771192478772562,False,True,True
+HERBench,0.2,herbench-pilot-subsample-004,Qwen/Qwen3-VL-8B-Instruct,Qwen,14,449,target_logistic,28.379987537115767,17.01967863713349,24.389040347977826,False,True,True
+HERBench,0.2,herbench-pilot-subsample-004,lmms-lab-encoder/LLaVA-OneVision-2-8B-Instruct,LLaVA,14,449,source_trace_hgb,9.870078683718049,1.1235022204191178,11.401107496778346,False,True,True
+HERBench,0.2,herbench-pilot-subsample-005,OpenGVLab/InternVL3_5-14B-Instruct,InternVL,14,300,target_logistic,30.934390155746133,17.866639252317476,10.842024198645278,False,True,True
+HERBench,0.2,herbench-pilot-subsample-005,Qwen/Qwen3-VL-8B-Instruct,Qwen,14,300,target_logistic,50.699187885634224,26.977254793627388,24.47580939046776,False,True,True
+HERBench,0.2,herbench-pilot-subsample-005,lmms-lab-encoder/LLaVA-OneVision-2-8B-Instruct,LLaVA,14,300,target_logistic,32.81974426345808,15.107400173414153,6.13974253592862,False,True,True
+HERBench,0.2,herbench-pilot-subsample-006,OpenGVLab/InternVL3_5-14B-Instruct,InternVL,14,416,target_logistic,12.320750945069593,3.2705750484902443,7.510933845004468,False,True,True
+HERBench,0.2,herbench-pilot-subsample-006,Qwen/Qwen3-VL-8B-Instruct,Qwen,14,416,target_logistic,24.868136243584395,13.40204439705588,23.34900502271379,False,True,True
+HERBench,0.2,herbench-pilot-subsample-006,lmms-lab-encoder/LLaVA-OneVision-2-8B-Instruct,LLaVA,14,416,raw_fallback,0.0,0.0,0.0,False,True,True
+HERBench,0.2,herbench-pilot-subsample-007,OpenGVLab/InternVL3_5-14B-Instruct,InternVL,14,462,target_logistic,11.43016849291332,3.0260547708241785,5.607261357917826,False,True,True
+HERBench,0.2,herbench-pilot-subsample-007,Qwen/Qwen3-VL-8B-Instruct,Qwen,14,462,target_logistic,27.069917491181826,15.903794113495767,22.59966565161993,False,True,True
+HERBench,0.2,herbench-pilot-subsample-007,lmms-lab-encoder/LLaVA-OneVision-2-8B-Instruct,LLaVA,14,462,raw_fallback,0.0,0.0,0.0,False,True,True
+HERBench,0.2,herbench-pilot-subsample-008,OpenGVLab/InternVL3_5-14B-Instruct,InternVL,14,329,raw_fallback,0.0,0.0,0.0,False,True,True
+HERBench,0.2,herbench-pilot-subsample-008,Qwen/Qwen3-VL-8B-Instruct,Qwen,14,329,target_logistic,38.31710971315659,24.693822922851442,23.830477839404047,False,True,True
+HERBench,0.2,herbench-pilot-subsample-008,lmms-lab-encoder/LLaVA-OneVision-2-8B-Instruct,LLaVA,14,329,target_logistic,16.026332575087608,3.1614295722396557,7.531750616785724,False,True,True
+HERBench,0.2,herbench-pilot-subsample-009,OpenGVLab/InternVL3_5-14B-Instruct,InternVL,14,453,raw_fallback,0.0,0.0,0.0,False,True,True
+HERBench,0.2,herbench-pilot-subsample-009,Qwen/Qwen3-VL-8B-Instruct,Qwen,14,453,target_logistic,23.947492422879982,12.135131894722164,22.736689746970963,False,True,True
+HERBench,0.2,herbench-pilot-subsample-009,lmms-lab-encoder/LLaVA-OneVision-2-8B-Instruct,LLaVA,14,453,raw_fallback,0.0,0.0,0.0,False,True,True
+HERBench,0.2,herbench-pilot-subsample-010,OpenGVLab/InternVL3_5-14B-Instruct,InternVL,14,521,target_logistic,7.0402916124244,0.007531090888512389,1.9658735844464947,False,True,True
+HERBench,0.2,herbench-pilot-subsample-010,Qwen/Qwen3-VL-8B-Instruct,Qwen,14,521,target_logistic,24.330086690151735,15.814372766269473,22.668173017274665,False,True,True
+HERBench,0.2,herbench-pilot-subsample-010,lmms-lab-encoder/LLaVA-OneVision-2-8B-Instruct,LLaVA,14,521,raw_fallback,0.0,0.0,0.0,False,True,True
+HERBench,0.2,herbench-pilot-subsample-011,OpenGVLab/InternVL3_5-14B-Instruct,InternVL,14,400,raw_fallback,0.0,0.0,0.0,False,True,True
+HERBench,0.2,herbench-pilot-subsample-011,Qwen/Qwen3-VL-8B-Instruct,Qwen,14,400,source_trace_hgb,27.861172600222655,17.280489324570755,23.493692301603932,False,True,True
+HERBench,0.2,herbench-pilot-subsample-011,lmms-lab-encoder/LLaVA-OneVision-2-8B-Instruct,LLaVA,14,400,target_logistic,17.58080521222246,6.974400346772404,12.26658559817734,False,True,True
+HERBench,0.2,herbench-pilot-subsample-012,OpenGVLab/InternVL3_5-14B-Instruct,InternVL,14,391,target_logistic,13.078726865780412,3.140458825105935,11.331108175141424,False,True,True
+HERBench,0.2,herbench-pilot-subsample-012,Qwen/Qwen3-VL-8B-Instruct,Qwen,14,391,source_trace_hgb,28.207607362484104,16.889157528737737,23.493692301603932,False,True,True
+HERBench,0.2,herbench-pilot-subsample-012,lmms-lab-encoder/LLaVA-OneVision-2-8B-Instruct,LLaVA,14,391,target_logistic,13.250373663958367,2.6600427354864356,12.862546267071052,False,True,True
+HERBench,0.2,herbench-pilot-subsample-013,OpenGVLab/InternVL3_5-14B-Instruct,InternVL,14,399,target_logistic,14.438338685413658,1.9112680039546073,8.62342596865941,False,True,True
+HERBench,0.2,herbench-pilot-subsample-013,Qwen/Qwen3-VL-8B-Instruct,Qwen,14,399,target_logistic,29.904407573204725,15.335304250748933,23.87988068814131,False,True,True
+HERBench,0.2,herbench-pilot-subsample-013,lmms-lab-encoder/LLaVA-OneVision-2-8B-Instruct,LLaVA,14,399,raw_fallback,0.0,0.0,0.0,False,True,True
+HERBench,0.2,herbench-pilot-subsample-014,OpenGVLab/InternVL3_5-14B-Instruct,InternVL,14,506,target_logistic,8.427001870370312,2.1764938465058448,7.404365424678602,False,True,True
+HERBench,0.2,herbench-pilot-subsample-014,Qwen/Qwen3-VL-8B-Instruct,Qwen,14,506,target_logistic,23.250389208653754,15.638810599025513,23.053995278633337,False,True,True
+HERBench,0.2,herbench-pilot-subsample-014,lmms-lab-encoder/LLaVA-OneVision-2-8B-Instruct,LLaVA,14,506,raw_fallback,0.0,0.0,0.0,False,True,True
+HERBench,0.2,herbench-pilot-subsample-015,OpenGVLab/InternVL3_5-14B-Instruct,InternVL,14,451,target_logistic,13.591460681689977,5.549921090191542,8.182468814076005,False,True,True
+HERBench,0.2,herbench-pilot-subsample-015,Qwen/Qwen3-VL-8B-Instruct,Qwen,14,451,target_logistic,30.571524626341173,21.46637633254497,24.119277357759323,False,True,True
+HERBench,0.2,herbench-pilot-subsample-015,lmms-lab-encoder/LLaVA-OneVision-2-8B-Instruct,LLaVA,14,451,raw_fallback,0.0,0.0,0.0,False,True,True
+HERBench,0.2,herbench-pilot-subsample-016,OpenGVLab/InternVL3_5-14B-Instruct,InternVL,14,378,target_logistic,17.453516182167736,7.192596326322986,9.088940049765506,False,True,True
+HERBench,0.2,herbench-pilot-subsample-016,Qwen/Qwen3-VL-8B-Instruct,Qwen,14,378,target_logistic,30.087395368836063,16.678009519798746,23.74895548643608,False,True,True
+HERBench,0.2,herbench-pilot-subsample-016,lmms-lab-encoder/LLaVA-OneVision-2-8B-Instruct,LLaVA,14,378,raw_fallback,0.0,0.0,0.0,False,True,True
+HERBench,0.2,herbench-pilot-subsample-017,OpenGVLab/InternVL3_5-14B-Instruct,InternVL,14,435,target_logistic,13.731175259276357,6.316005333818369,12.311084594269412,False,True,True
+HERBench,0.2,herbench-pilot-subsample-017,Qwen/Qwen3-VL-8B-Instruct,Qwen,14,435,source_trace_hgb,29.027841567933315,18.0862385650717,23.493692301603932,False,True,True
+HERBench,0.2,herbench-pilot-subsample-017,lmms-lab-encoder/LLaVA-OneVision-2-8B-Instruct,LLaVA,14,435,target_logistic,20.447352011275996,9.545187076167418,11.608185298057618,False,True,True
+HERBench,0.2,herbench-pilot-subsample-018,OpenGVLab/InternVL3_5-14B-Instruct,InternVL,14,471,target_logistic,12.269769159095617,6.559342180421498,12.776444765642507,False,True,True
+HERBench,0.2,herbench-pilot-subsample-018,Qwen/Qwen3-VL-8B-Instruct,Qwen,14,471,target_logistic,30.192417841278345,18.885742992472455,22.5348764133382,False,True,True
+HERBench,0.2,herbench-pilot-subsample-018,lmms-lab-encoder/LLaVA-OneVision-2-8B-Instruct,LLaVA,14,471,target_logistic,13.697529421455165,4.1454644570613475,13.089368876398575,False,True,True
+HERBench,0.2,herbench-pilot-subsample-019,OpenGVLab/InternVL3_5-14B-Instruct,InternVL,14,517,target_logistic,12.172830822632069,4.445321740168842,8.247217883750576,False,True,True
+HERBench,0.2,herbench-pilot-subsample-019,Qwen/Qwen3-VL-8B-Instruct,Qwen,14,517,target_logistic,27.0160188873691,18.008475483303936,23.35550710133642,False,True,True
+HERBench,0.2,herbench-pilot-subsample-019,lmms-lab-encoder/LLaVA-OneVision-2-8B-Instruct,LLaVA,14,517,raw_fallback,0.0,0.0,0.0,False,True,True
+HERBench,0.3,herbench-pilot-subsample-000,OpenGVLab/InternVL3_5-14B-Instruct,InternVL,20,639,target_logistic,11.380236935304719,6.195687215488583,11.485219131213473,False,True,True
+HERBench,0.3,herbench-pilot-subsample-000,Qwen/Qwen3-VL-8B-Instruct,Qwen,20,639,target_logistic,30.463465256462747,22.15404419046447,24.698570903601503,False,True,True
+HERBench,0.3,herbench-pilot-subsample-000,lmms-lab-encoder/LLaVA-OneVision-2-8B-Instruct,LLaVA,20,639,target_logistic,15.835894101982573,7.509913373589451,13.872209231333596,False,True,True
+HERBench,0.3,herbench-pilot-subsample-001,OpenGVLab/InternVL3_5-14B-Instruct,InternVL,20,541,target_logistic,18.147491076392825,10.27942358111958,11.262930277001269,False,True,True
+HERBench,0.3,herbench-pilot-subsample-001,Qwen/Qwen3-VL-8B-Instruct,Qwen,20,541,target_logistic,39.382475313303615,28.38907721830379,24.637077702734146,False,True,True
+HERBench,0.3,herbench-pilot-subsample-001,lmms-lab-encoder/LLaVA-OneVision-2-8B-Instruct,LLaVA,20,541,target_logistic,22.437328100048095,12.53194160449683,11.54423372577387,False,True,True
+HERBench,0.3,herbench-pilot-subsample-002,OpenGVLab/InternVL3_5-14B-Instruct,InternVL,20,622,target_logistic,11.412702500073834,4.102978746671322,10.585506730277386,False,True,True
+HERBench,0.3,herbench-pilot-subsample-002,Qwen/Qwen3-VL-8B-Instruct,Qwen,20,622,target_logistic,29.811975170147896,21.257928601873374,24.232568979314237,False,True,True
+HERBench,0.3,herbench-pilot-subsample-002,lmms-lab-encoder/LLaVA-OneVision-2-8B-Instruct,LLaVA,20,622,raw_fallback,0.0,0.0,0.0,False,True,True
+HERBench,0.3,herbench-pilot-subsample-003,OpenGVLab/InternVL3_5-14B-Instruct,InternVL,20,619,target_logistic,7.930675273494268,2.8094813556058744,11.20373640276616,False,True,True
+HERBench,0.3,herbench-pilot-subsample-003,Qwen/Qwen3-VL-8B-Instruct,Qwen,20,619,target_logistic,25.516541677943476,15.926783443567192,22.841246905861492,False,True,True
+HERBench,0.3,herbench-pilot-subsample-003,lmms-lab-encoder/LLaVA-OneVision-2-8B-Instruct,LLaVA,20,619,raw_fallback,0.0,0.0,0.0,False,True,True
+HERBench,0.3,herbench-pilot-subsample-004,OpenGVLab/InternVL3_5-14B-Instruct,InternVL,20,588,target_logistic,15.911674286625187,8.010195608464523,9.907495399991635,False,True,True
+HERBench,0.3,herbench-pilot-subsample-004,Qwen/Qwen3-VL-8B-Instruct,Qwen,20,588,target_logistic,32.122501595883904,20.786547889214226,25.46931377875898,False,True,True
+HERBench,0.3,herbench-pilot-subsample-004,lmms-lab-encoder/LLaVA-OneVision-2-8B-Instruct,LLaVA,20,588,target_logistic,12.935266749725448,2.228056634841765,11.564938148801037,False,True,True
+HERBench,0.3,herbench-pilot-subsample-005,OpenGVLab/InternVL3_5-14B-Instruct,InternVL,20,521,target_logistic,16.449756829140437,7.567508328325056,11.117552017041417,False,True,True
+HERBench,0.3,herbench-pilot-subsample-005,Qwen/Qwen3-VL-8B-Instruct,Qwen,20,521,target_logistic,33.48216453846485,19.343406481324966,24.21688092651635,False,True,True
+HERBench,0.3,herbench-pilot-subsample-005,lmms-lab-encoder/LLaVA-OneVision-2-8B-Instruct,LLaVA,20,521,raw_fallback,0.0,0.0,0.0,False,True,True
+HERBench,0.3,herbench-pilot-subsample-006,OpenGVLab/InternVL3_5-14B-Instruct,InternVL,20,587,target_logistic,11.78157572036706,5.18058191285194,11.225477519029184,False,True,True
+HERBench,0.3,herbench-pilot-subsample-006,Qwen/Qwen3-VL-8B-Instruct,Qwen,20,587,target_logistic,29.1693922218523,18.90748248922118,24.152586328852735,False,True,True
+HERBench,0.3,herbench-pilot-subsample-006,lmms-lab-encoder/LLaVA-OneVision-2-8B-Instruct,LLaVA,20,587,raw_fallback,0.0,0.0,0.0,False,True,True
+HERBench,0.3,herbench-pilot-subsample-007,OpenGVLab/InternVL3_5-14B-Instruct,InternVL,20,687,target_logistic,11.110210039161638,5.974710057016334,8.637637030370028,False,True,True
+HERBench,0.3,herbench-pilot-subsample-007,Qwen/Qwen3-VL-8B-Instruct,Qwen,20,687,target_logistic,27.23083418494504,18.490025635541535,22.486587313507943,False,True,True
+HERBench,0.3,herbench-pilot-subsample-007,lmms-lab-encoder/LLaVA-OneVision-2-8B-Instruct,LLaVA,20,687,raw_fallback,0.0,0.0,0.0,False,True,True
+HERBench,0.3,herbench-pilot-subsample-008,OpenGVLab/InternVL3_5-14B-Instruct,InternVL,20,463,target_logistic,12.976969610612393,2.3971742882049494,9.286405854502142,False,True,True
+HERBench,0.3,herbench-pilot-subsample-008,Qwen/Qwen3-VL-8B-Instruct,Qwen,20,463,target_logistic,39.34794307457138,27.782510017532076,24.803358993002856,False,True,True
+HERBench,0.3,herbench-pilot-subsample-008,lmms-lab-encoder/LLaVA-OneVision-2-8B-Instruct,LLaVA,20,463,target_logistic,16.071035826062733,6.173718178145168,9.969006430154897,False,True,True
+HERBench,0.3,herbench-pilot-subsample-009,OpenGVLab/InternVL3_5-14B-Instruct,InternVL,20,671,target_logistic,10.537034856451449,3.8825918964641817,10.881249703947775,False,True,True
+HERBench,0.3,herbench-pilot-subsample-009,Qwen/Qwen3-VL-8B-Instruct,Qwen,20,671,target_logistic,24.37187455098897,16.311524120187627,24.14041157150121,False,True,True
+HERBench,0.3,herbench-pilot-subsample-009,lmms-lab-encoder/LLaVA-OneVision-2-8B-Instruct,LLaVA,20,671,target_logistic,9.536711142080563,0.13669126643969506,12.322842475374998,False,True,True
+HERBench,0.3,herbench-pilot-subsample-010,OpenGVLab/InternVL3_5-14B-Instruct,InternVL,20,669,target_logistic,8.984256230097214,3.8904915815647865,9.158169618761729,False,True,True
+HERBench,0.3,herbench-pilot-subsample-010,Qwen/Qwen3-VL-8B-Instruct,Qwen,20,669,target_logistic,27.632183923085815,18.647962274197408,23.423006101819052,False,True,True
+HERBench,0.3,herbench-pilot-subsample-010,lmms-lab-encoder/LLaVA-OneVision-2-8B-Instruct,LLaVA,20,669,raw_fallback,0.0,0.0,0.0,False,True,True
+HERBench,0.3,herbench-pilot-subsample-011,OpenGVLab/InternVL3_5-14B-Instruct,InternVL,20,515,target_logistic,11.298821055118102,3.025752367068056,11.386074966160365,False,True,True
+HERBench,0.3,herbench-pilot-subsample-011,Qwen/Qwen3-VL-8B-Instruct,Qwen,20,515,target_logistic,33.28750874440566,20.766967602743676,25.211170887267418,False,True,True
+HERBench,0.3,herbench-pilot-subsample-011,lmms-lab-encoder/LLaVA-OneVision-2-8B-Instruct,LLaVA,20,515,target_logistic,15.955371847211506,5.712217264335907,11.871326594490723,False,True,True
+HERBench,0.3,herbench-pilot-subsample-012,OpenGVLab/InternVL3_5-14B-Instruct,InternVL,20,565,target_logistic,16.866024771699568,8.434228696718353,10.280454437645602,False,True,True
+HERBench,0.3,herbench-pilot-subsample-012,Qwen/Qwen3-VL-8B-Instruct,Qwen,20,565,target_logistic,32.81868118248287,18.878535242768844,24.943240079733773,False,True,True
+HERBench,0.3,herbench-pilot-subsample-012,lmms-lab-encoder/LLaVA-OneVision-2-8B-Instruct,LLaVA,20,565,target_logistic,12.820994751463363,1.3287021816875235,12.742818237194419,False,True,True
+HERBench,0.3,herbench-pilot-subsample-013,OpenGVLab/InternVL3_5-14B-Instruct,InternVL,20,624,target_logistic,11.611814395713175,4.872578933196569,8.875433017848446,False,True,True
+HERBench,0.3,herbench-pilot-subsample-013,Qwen/Qwen3-VL-8B-Instruct,Qwen,20,624,target_logistic,28.722127175195514,17.87216690136927,23.907196794874686,False,True,True
+HERBench,0.3,herbench-pilot-subsample-013,lmms-lab-encoder/LLaVA-OneVision-2-8B-Instruct,LLaVA,20,624,raw_fallback,0.0,0.0,0.0,False,True,True
+HERBench,0.3,herbench-pilot-subsample-014,OpenGVLab/InternVL3_5-14B-Instruct,InternVL,20,637,target_logistic,10.760901620726427,4.930094837342445,8.367214411252817,False,True,True
+HERBench,0.3,herbench-pilot-subsample-014,Qwen/Qwen3-VL-8B-Instruct,Qwen,20,637,target_logistic,26.85845738568836,19.10940134248757,23.959239163253375,False,True,True
+HERBench,0.3,herbench-pilot-subsample-014,lmms-lab-encoder/LLaVA-OneVision-2-8B-Instruct,LLaVA,20,637,raw_fallback,0.0,0.0,0.0,False,True,True
+HERBench,0.3,herbench-pilot-subsample-015,OpenGVLab/InternVL3_5-14B-Instruct,InternVL,20,649,target_logistic,11.865372254419704,6.087263541048507,9.867585818632984,False,True,True
+HERBench,0.3,herbench-pilot-subsample-015,Qwen/Qwen3-VL-8B-Instruct,Qwen,20,649,target_logistic,28.792677991228075,19.901010120307227,24.459570220861472,False,True,True
+HERBench,0.3,herbench-pilot-subsample-015,lmms-lab-encoder/LLaVA-OneVision-2-8B-Instruct,LLaVA,20,649,target_logistic,10.625246106547108,4.999315230465888,12.713386575272697,False,True,True
+HERBench,0.3,herbench-pilot-subsample-016,OpenGVLab/InternVL3_5-14B-Instruct,InternVL,20,662,target_logistic,14.561054940213793,8.212525708135907,10.009130694915443,False,True,True
+HERBench,0.3,herbench-pilot-subsample-016,Qwen/Qwen3-VL-8B-Instruct,Qwen,20,662,target_logistic,26.818696531314743,17.765948480072794,24.041695845168533,False,True,True
+HERBench,0.3,herbench-pilot-subsample-016,lmms-lab-encoder/LLaVA-OneVision-2-8B-Instruct,LLaVA,20,662,target_logistic,10.27661528623406,1.1278680938562384,13.514127920311285,False,True,True
+HERBench,0.3,herbench-pilot-subsample-017,OpenGVLab/InternVL3_5-14B-Instruct,InternVL,20,621,target_logistic,15.038908257394358,8.294301285715786,12.451178009759747,False,True,True
+HERBench,0.3,herbench-pilot-subsample-017,Qwen/Qwen3-VL-8B-Instruct,Qwen,20,621,target_logistic,31.613849148136868,21.14567212419223,25.571411155674117,False,True,True
+HERBench,0.3,herbench-pilot-subsample-017,lmms-lab-encoder/LLaVA-OneVision-2-8B-Instruct,LLaVA,20,621,target_logistic,18.74320272442282,9.477829463145975,12.54563340581694,False,True,True
+HERBench,0.3,herbench-pilot-subsample-018,OpenGVLab/InternVL3_5-14B-Instruct,InternVL,20,650,target_logistic,11.930755082697436,6.234337409188193,11.51066619365023,False,True,True
+HERBench,0.3,herbench-pilot-subsample-018,Qwen/Qwen3-VL-8B-Instruct,Qwen,20,650,target_logistic,31.228062516695847,21.463975747855407,22.79392910084003,False,True,True
+HERBench,0.3,herbench-pilot-subsample-018,lmms-lab-encoder/LLaVA-OneVision-2-8B-Instruct,LLaVA,20,650,target_logistic,11.704705304890199,3.3264463170021035,12.950338218556023,False,True,True
+HERBench,0.3,herbench-pilot-subsample-019,OpenGVLab/InternVL3_5-14B-Instruct,InternVL,20,634,target_logistic,12.972586201136163,5.388920562800285,8.475251306303202,False,True,True
+HERBench,0.3,herbench-pilot-subsample-019,Qwen/Qwen3-VL-8B-Instruct,Qwen,20,634,target_logistic,33.02192771258294,22.996628191677086,23.786833657241107,False,True,True
+HERBench,0.3,herbench-pilot-subsample-019,lmms-lab-encoder/LLaVA-OneVision-2-8B-Instruct,LLaVA,20,634,raw_fallback,0.0,0.0,0.0,False,True,True
+HERBench,0.4,herbench-pilot-subsample-000,OpenGVLab/InternVL3_5-14B-Instruct,InternVL,27,876,target_logistic,9.448761756222071,3.43094766159651,10.55874505804876,False,True,True
+HERBench,0.4,herbench-pilot-subsample-000,Qwen/Qwen3-VL-8B-Instruct,Qwen,27,876,target_logistic,29.608780578170148,21.55892124057563,24.68495900409667,False,True,True
+HERBench,0.4,herbench-pilot-subsample-000,lmms-lab-encoder/LLaVA-OneVision-2-8B-Instruct,LLaVA,27,876,target_logistic,12.36395459442808,4.519902371377123,13.574767013736123,False,True,True
+HERBench,0.4,herbench-pilot-subsample-001,OpenGVLab/InternVL3_5-14B-Instruct,InternVL,27,765,target_logistic,15.592518770780892,9.68382086246067,11.703096920815959,False,True,True
+HERBench,0.4,herbench-pilot-subsample-001,Qwen/Qwen3-VL-8B-Instruct,Qwen,27,765,target_logistic,35.1573519359221,27.03120930952724,24.843914727252443,False,True,True
+HERBench,0.4,herbench-pilot-subsample-001,lmms-lab-encoder/LLaVA-OneVision-2-8B-Instruct,LLaVA,27,765,target_logistic,18.47468386735577,9.822982685176239,12.557672190844897,False,True,True
+HERBench,0.4,herbench-pilot-subsample-002,OpenGVLab/InternVL3_5-14B-Instruct,InternVL,27,820,target_logistic,14.007356332105314,7.2080452562232455,11.07317787985624,False,True,True
+HERBench,0.4,herbench-pilot-subsample-002,Qwen/Qwen3-VL-8B-Instruct,Qwen,27,820,target_logistic,31.15417873990446,22.510613023556804,25.031802164609733,False,True,True
+HERBench,0.4,herbench-pilot-subsample-002,lmms-lab-encoder/LLaVA-OneVision-2-8B-Instruct,LLaVA,27,820,target_logistic,11.558877138015413,2.8506419167140304,13.396613242826009,False,True,True
+HERBench,0.4,herbench-pilot-subsample-003,OpenGVLab/InternVL3_5-14B-Instruct,InternVL,27,823,target_logistic,10.669457591765129,4.487097929392079,10.619529694611153,False,True,True
+HERBench,0.4,herbench-pilot-subsample-003,Qwen/Qwen3-VL-8B-Instruct,Qwen,27,823,target_logistic,29.128010315472864,20.492959422345315,24.514881284788476,False,True,True
+HERBench,0.4,herbench-pilot-subsample-003,lmms-lab-encoder/LLaVA-OneVision-2-8B-Instruct,LLaVA,27,823,target_logistic,9.780619198017508,2.050317484706202,13.314811545811445,False,True,True
+HERBench,0.4,herbench-pilot-subsample-004,OpenGVLab/InternVL3_5-14B-Instruct,InternVL,27,824,target_logistic,10.504926988694,4.099031787184461,10.476304203317317,False,True,True
+HERBench,0.4,herbench-pilot-subsample-004,Qwen/Qwen3-VL-8B-Instruct,Qwen,27,824,target_logistic,28.456155494817708,19.598568430163365,24.749504853818102,False,True,True
+HERBench,0.4,herbench-pilot-subsample-004,lmms-lab-encoder/LLaVA-OneVision-2-8B-Instruct,LLaVA,27,824,target_logistic,10.499568021453017,3.0235128893106964,12.05621104051361,False,True,True
+HERBench,0.4,herbench-pilot-subsample-005,OpenGVLab/InternVL3_5-14B-Instruct,InternVL,27,718,target_logistic,12.329309042575016,5.096253026717567,11.563263646519497,False,True,True
+HERBench,0.4,herbench-pilot-subsample-005,Qwen/Qwen3-VL-8B-Instruct,Qwen,27,718,target_logistic,35.13202393920797,24.840633542371904,24.65355358463734,False,True,True
+HERBench,0.4,herbench-pilot-subsample-005,lmms-lab-encoder/LLaVA-OneVision-2-8B-Instruct,LLaVA,27,718,target_logistic,13.734817964015036,3.6751429302383727,12.13364121286459,False,True,True
+HERBench,0.4,herbench-pilot-subsample-006,OpenGVLab/InternVL3_5-14B-Instruct,InternVL,27,813,target_logistic,12.239204907019207,6.319080055666345,10.716950176995972,False,True,True
+HERBench,0.4,herbench-pilot-subsample-006,Qwen/Qwen3-VL-8B-Instruct,Qwen,27,813,target_logistic,30.057202444631073,21.10511997731899,24.622427568264044,False,True,True
+HERBench,0.4,herbench-pilot-subsample-006,lmms-lab-encoder/LLaVA-OneVision-2-8B-Instruct,LLaVA,27,813,target_logistic,12.03141835096138,4.072738710764136,12.865103885990258,False,True,True
+HERBench,0.4,herbench-pilot-subsample-007,OpenGVLab/InternVL3_5-14B-Instruct,InternVL,27,820,target_logistic,11.742011709791313,6.2430688335448545,10.884941517272095,False,True,True
+HERBench,0.4,herbench-pilot-subsample-007,Qwen/Qwen3-VL-8B-Instruct,Qwen,27,820,target_logistic,28.245513818445353,19.338016658436963,24.07090157637908,False,True,True
+HERBench,0.4,herbench-pilot-subsample-007,lmms-lab-encoder/LLaVA-OneVision-2-8B-Instruct,LLaVA,27,820,target_logistic,8.806063664541595,1.583281287586442,11.888413998247367,False,True,True
+HERBench,0.4,herbench-pilot-subsample-008,OpenGVLab/InternVL3_5-14B-Instruct,InternVL,27,740,target_logistic,14.615638823580186,7.597369540036945,11.43917665010511,False,True,True
+HERBench,0.4,herbench-pilot-subsample-008,Qwen/Qwen3-VL-8B-Instruct,Qwen,27,740,target_logistic,36.4797540987643,27.457931954877793,25.10953538697996,False,True,True
+HERBench,0.4,herbench-pilot-subsample-008,lmms-lab-encoder/LLaVA-OneVision-2-8B-Instruct,LLaVA,27,740,target_logistic,16.707382143521556,9.362786135850863,12.465837435138512,False,True,True
+HERBench,0.4,herbench-pilot-subsample-009,OpenGVLab/InternVL3_5-14B-Instruct,InternVL,27,818,target_logistic,9.357627603355457,2.2658920175624724,11.233381164252144,False,True,True
+HERBench,0.4,herbench-pilot-subsample-009,Qwen/Qwen3-VL-8B-Instruct,Qwen,27,818,target_logistic,29.20471393762648,20.625569687195892,24.849547598679784,False,True,True
+HERBench,0.4,herbench-pilot-subsample-009,lmms-lab-encoder/LLaVA-OneVision-2-8B-Instruct,LLaVA,27,818,target_logistic,11.986671481757083,4.058821383022378,12.38448679966466,False,True,True
+HERBench,0.4,herbench-pilot-subsample-010,OpenGVLab/InternVL3_5-14B-Instruct,InternVL,27,828,target_logistic,12.798779341063238,6.8142926439157065,11.161240835713404,False,True,True
+HERBench,0.4,herbench-pilot-subsample-010,Qwen/Qwen3-VL-8B-Instruct,Qwen,27,828,target_logistic,31.995899202371948,21.577952470813845,24.394849828190466,False,True,True
+HERBench,0.4,herbench-pilot-subsample-010,lmms-lab-encoder/LLaVA-OneVision-2-8B-Instruct,LLaVA,27,828,target_logistic,10.131914511432655,2.7160774497356788,13.268044537783506,False,True,True
+HERBench,0.4,herbench-pilot-subsample-011,OpenGVLab/InternVL3_5-14B-Instruct,InternVL,27,727,target_logistic,12.69755429133837,5.226869989215188,11.797513555024329,False,True,True
+HERBench,0.4,herbench-pilot-subsample-011,Qwen/Qwen3-VL-8B-Instruct,Qwen,27,727,target_logistic,33.02059635517964,22.883063704797888,25.209790582535742,False,True,True
+HERBench,0.4,herbench-pilot-subsample-011,lmms-lab-encoder/LLaVA-OneVision-2-8B-Instruct,LLaVA,27,727,target_logistic,16.07764663156677,7.394350908433392,12.548671971825893,False,True,True
+HERBench,0.4,herbench-pilot-subsample-012,OpenGVLab/InternVL3_5-14B-Instruct,InternVL,27,786,target_logistic,15.298051441813177,7.854366317574947,10.931540307404433,False,True,True
+HERBench,0.4,herbench-pilot-subsample-012,Qwen/Qwen3-VL-8B-Instruct,Qwen,27,786,target_logistic,31.485195578686085,20.527271391011336,25.222585175000297,False,True,True
+HERBench,0.4,herbench-pilot-subsample-012,lmms-lab-encoder/LLaVA-OneVision-2-8B-Instruct,LLaVA,27,786,target_logistic,13.804824402787451,4.53279120467357,12.24822785457635,False,True,True
+HERBench,0.4,herbench-pilot-subsample-013,OpenGVLab/InternVL3_5-14B-Instruct,InternVL,27,788,target_logistic,12.620059555758875,5.516333026607213,9.237121285550355,False,True,True
+HERBench,0.4,herbench-pilot-subsample-013,Qwen/Qwen3-VL-8B-Instruct,Qwen,27,788,target_logistic,31.24321410596279,21.128506994924873,24.878037198744323,False,True,True
+HERBench,0.4,herbench-pilot-subsample-013,lmms-lab-encoder/LLaVA-OneVision-2-8B-Instruct,LLaVA,27,788,target_logistic,12.391027440974193,3.308184398341915,12.744610330694282,False,True,True
+HERBench,0.4,herbench-pilot-subsample-014,OpenGVLab/InternVL3_5-14B-Instruct,InternVL,27,819,target_logistic,10.156246127831507,3.315680546853054,11.40411410457385,False,True,True
+HERBench,0.4,herbench-pilot-subsample-014,Qwen/Qwen3-VL-8B-Instruct,Qwen,27,819,target_logistic,27.745221387155482,19.186335826095146,24.43480308268631,False,True,True
+HERBench,0.4,herbench-pilot-subsample-014,lmms-lab-encoder/LLaVA-OneVision-2-8B-Instruct,LLaVA,27,819,target_logistic,10.204722538905786,3.0774604927474822,12.051920196147913,False,True,True
+HERBench,0.4,herbench-pilot-subsample-015,OpenGVLab/InternVL3_5-14B-Instruct,InternVL,27,851,target_logistic,11.229379092786527,5.331298230392189,10.177672156613225,False,True,True
+HERBench,0.4,herbench-pilot-subsample-015,Qwen/Qwen3-VL-8B-Instruct,Qwen,27,851,target_logistic,30.105019390500072,21.748883540894166,24.635047040709175,False,True,True
+HERBench,0.4,herbench-pilot-subsample-015,lmms-lab-encoder/LLaVA-OneVision-2-8B-Instruct,LLaVA,27,851,target_logistic,9.23308758094238,2.3378674099719308,12.626510050114426,False,True,True
+HERBench,0.4,herbench-pilot-subsample-016,OpenGVLab/InternVL3_5-14B-Instruct,InternVL,27,865,target_logistic,14.074044370644204,8.427147360455612,10.645042772997416,False,True,True
+HERBench,0.4,herbench-pilot-subsample-016,Qwen/Qwen3-VL-8B-Instruct,Qwen,27,865,target_logistic,28.689727415083027,19.732643630021165,24.56614344928362,False,True,True
+HERBench,0.4,herbench-pilot-subsample-016,lmms-lab-encoder/LLaVA-OneVision-2-8B-Instruct,LLaVA,27,865,target_logistic,12.070151340281072,4.112878255748972,13.67523897460017,False,True,True
+HERBench,0.4,herbench-pilot-subsample-017,OpenGVLab/InternVL3_5-14B-Instruct,InternVL,27,802,target_logistic,15.276296708652184,9.15553366622918,11.53420054146829,False,True,True
+HERBench,0.4,herbench-pilot-subsample-017,Qwen/Qwen3-VL-8B-Instruct,Qwen,27,802,target_logistic,33.500446481181584,22.907521620670817,25.32566796812101,False,True,True
+HERBench,0.4,herbench-pilot-subsample-017,lmms-lab-encoder/LLaVA-OneVision-2-8B-Instruct,LLaVA,27,802,target_logistic,17.721205495174846,9.993447345852447,12.9419605659884,False,True,True
+HERBench,0.4,herbench-pilot-subsample-018,OpenGVLab/InternVL3_5-14B-Instruct,InternVL,27,844,target_logistic,13.020803019650444,7.354740137346373,11.586049561663504,False,True,True
+HERBench,0.4,herbench-pilot-subsample-018,Qwen/Qwen3-VL-8B-Instruct,Qwen,27,844,target_logistic,29.991804439086017,21.198418056452123,24.355774659383922,False,True,True
+HERBench,0.4,herbench-pilot-subsample-018,lmms-lab-encoder/LLaVA-OneVision-2-8B-Instruct,LLaVA,27,844,target_logistic,11.451741479551464,4.147502673567061,12.987957997057743,False,True,True
+HERBench,0.4,herbench-pilot-subsample-019,OpenGVLab/InternVL3_5-14B-Instruct,InternVL,27,770,target_logistic,13.73849796979899,6.560990526621686,10.372651626341888,False,True,True
+HERBench,0.4,herbench-pilot-subsample-019,Qwen/Qwen3-VL-8B-Instruct,Qwen,27,770,target_logistic,33.31310188327673,23.563237414665135,24.939127887563277,False,True,True
+HERBench,0.4,herbench-pilot-subsample-019,lmms-lab-encoder/LLaVA-OneVision-2-8B-Instruct,LLaVA,27,770,target_logistic,11.050304785769331,2.276250518163475,12.432669475814588,False,True,True
+HERBench,0.5,registered-full-pilot,OpenGVLab/InternVL3_5-14B-Instruct,InternVL,34,1008,target_logistic,13.624429957881228,7.458250696410153,11.392735373594022,False,True,True
+HERBench,0.5,registered-full-pilot,Qwen/Qwen3-VL-8B-Instruct,Qwen,34,1008,target_logistic,30.45456046540072,22.163110268302596,25.255786805743913,False,True,True
+HERBench,0.5,registered-full-pilot,lmms-lab-encoder/LLaVA-OneVision-2-8B-Instruct,LLaVA,34,1008,target_logistic,12.474254143485652,5.0675860717672405,13.28539461000015,False,True,True
+Perception Test,0.1,perception-pilot-subsample-000,OpenGVLab/InternVL3_5-14B-Instruct,InternVL,50,182,raw_fallback,0.0,0.0,0.0,False,True,True
+Perception Test,0.1,perception-pilot-subsample-000,Qwen/Qwen3-VL-8B-Instruct,Qwen,50,182,source_trace_hgb,33.083932298213014,17.276697615622833,23.857590337017175,False,True,True
+Perception Test,0.1,perception-pilot-subsample-000,lmms-lab-encoder/LLaVA-OneVision-2-8B-Instruct,LLaVA,50,182,source_trace_hgb,25.84359987624549,14.934683763412325,25.5967749443412,False,True,True
+Perception Test,0.1,perception-pilot-subsample-001,OpenGVLab/InternVL3_5-14B-Instruct,InternVL,50,190,raw_fallback,0.0,0.0,0.0,False,True,True
+Perception Test,0.1,perception-pilot-subsample-001,Qwen/Qwen3-VL-8B-Instruct,Qwen,50,190,source_trace_hgb,22.124378103674022,5.892902049782392,23.857590337017175,False,True,True
+Perception Test,0.1,perception-pilot-subsample-001,lmms-lab-encoder/LLaVA-OneVision-2-8B-Instruct,LLaVA,50,190,source_trace_hgb,35.11250266266381,17.82996142934064,25.5967749443412,False,True,True
+Perception Test,0.1,perception-pilot-subsample-002,OpenGVLab/InternVL3_5-14B-Instruct,InternVL,50,205,raw_fallback,0.0,0.0,0.0,False,True,True
+Perception Test,0.1,perception-pilot-subsample-002,Qwen/Qwen3-VL-8B-Instruct,Qwen,50,205,source_trace_hgb,14.913913647110855,0.667838957971785,23.857590337017175,False,True,True
+Perception Test,0.1,perception-pilot-subsample-002,lmms-lab-encoder/LLaVA-OneVision-2-8B-Instruct,LLaVA,50,205,source_trace_hgb,26.186824136249275,13.723186826782923,25.5967749443412,False,True,True
+Perception Test,0.1,perception-pilot-subsample-003,OpenGVLab/InternVL3_5-14B-Instruct,InternVL,50,204,raw_fallback,0.0,0.0,0.0,False,True,True
+Perception Test,0.1,perception-pilot-subsample-003,Qwen/Qwen3-VL-8B-Instruct,Qwen,50,204,source_trace_hgb,31.6391573155615,14.742141851885894,23.857590337017175,False,True,True
+Perception Test,0.1,perception-pilot-subsample-003,lmms-lab-encoder/LLaVA-OneVision-2-8B-Instruct,LLaVA,50,204,source_trace_hgb,33.30762845252132,20.459840309074924,25.5967749443412,False,True,True
+Perception Test,0.1,perception-pilot-subsample-004,OpenGVLab/InternVL3_5-14B-Instruct,InternVL,50,166,raw_fallback,0.0,0.0,0.0,False,True,True
+Perception Test,0.1,perception-pilot-subsample-004,Qwen/Qwen3-VL-8B-Instruct,Qwen,50,166,raw_fallback,0.0,0.0,0.0,False,True,True
+Perception Test,0.1,perception-pilot-subsample-004,lmms-lab-encoder/LLaVA-OneVision-2-8B-Instruct,LLaVA,50,166,raw_fallback,0.0,0.0,0.0,False,True,True
+Perception Test,0.1,perception-pilot-subsample-005,OpenGVLab/InternVL3_5-14B-Instruct,InternVL,50,184,raw_fallback,0.0,0.0,0.0,False,True,True
+Perception Test,0.1,perception-pilot-subsample-005,Qwen/Qwen3-VL-8B-Instruct,Qwen,50,184,raw_fallback,0.0,0.0,0.0,False,True,True
+Perception Test,0.1,perception-pilot-subsample-005,lmms-lab-encoder/LLaVA-OneVision-2-8B-Instruct,LLaVA,50,184,source_trace_hgb,23.648349003218133,10.87769866935285,25.5967749443412,False,True,True
+Perception Test,0.1,perception-pilot-subsample-006,OpenGVLab/InternVL3_5-14B-Instruct,InternVL,50,189,raw_fallback,0.0,0.0,0.0,False,True,True
+Perception Test,0.1,perception-pilot-subsample-006,Qwen/Qwen3-VL-8B-Instruct,Qwen,50,189,target_logistic,19.6892423248622,7.7949392745411314,20.898836814743454,False,True,True
+Perception Test,0.1,perception-pilot-subsample-006,lmms-lab-encoder/LLaVA-OneVision-2-8B-Instruct,LLaVA,50,189,raw_fallback,0.0,0.0,0.0,False,True,True
+Perception Test,0.1,perception-pilot-subsample-007,OpenGVLab/InternVL3_5-14B-Instruct,InternVL,50,191,raw_fallback,0.0,0.0,0.0,False,True,True
+Perception Test,0.1,perception-pilot-subsample-007,Qwen/Qwen3-VL-8B-Instruct,Qwen,50,191,raw_fallback,0.0,0.0,0.0,False,True,True
+Perception Test,0.1,perception-pilot-subsample-007,lmms-lab-encoder/LLaVA-OneVision-2-8B-Instruct,LLaVA,50,191,source_trace_hgb,21.907968237914485,2.7437727954044235,25.5967749443412,False,True,True
+Perception Test,0.1,perception-pilot-subsample-008,OpenGVLab/InternVL3_5-14B-Instruct,InternVL,50,213,raw_fallback,0.0,0.0,0.0,False,True,True
+Perception Test,0.1,perception-pilot-subsample-008,Qwen/Qwen3-VL-8B-Instruct,Qwen,50,213,source_trace_hgb,22.898010212200585,9.753609175540364,23.857590337017175,False,True,True
+Perception Test,0.1,perception-pilot-subsample-008,lmms-lab-encoder/LLaVA-OneVision-2-8B-Instruct,LLaVA,50,213,target_logistic,22.001249609845733,9.00347796885251,27.230483499559604,False,True,True
+Perception Test,0.1,perception-pilot-subsample-009,OpenGVLab/InternVL3_5-14B-Instruct,InternVL,50,176,raw_fallback,0.0,0.0,0.0,False,True,True
+Perception Test,0.1,perception-pilot-subsample-009,Qwen/Qwen3-VL-8B-Instruct,Qwen,50,176,source_trace_hgb,21.845190051836113,6.860149017384262,23.857590337017175,False,True,True
+Perception Test,0.1,perception-pilot-subsample-009,lmms-lab-encoder/LLaVA-OneVision-2-8B-Instruct,LLaVA,50,176,source_trace_hgb,23.122164542894915,9.846137928540056,25.5967749443412,False,True,True
+Perception Test,0.1,perception-pilot-subsample-010,OpenGVLab/InternVL3_5-14B-Instruct,InternVL,50,211,raw_fallback,0.0,0.0,0.0,False,True,True
+Perception Test,0.1,perception-pilot-subsample-010,Qwen/Qwen3-VL-8B-Instruct,Qwen,50,211,raw_fallback,0.0,0.0,0.0,False,True,True
+Perception Test,0.1,perception-pilot-subsample-010,lmms-lab-encoder/LLaVA-OneVision-2-8B-Instruct,LLaVA,50,211,target_logistic,25.910937078886235,9.761325944599362,21.96690536794556,False,True,True
+Perception Test,0.1,perception-pilot-subsample-011,OpenGVLab/InternVL3_5-14B-Instruct,InternVL,50,189,raw_fallback,0.0,0.0,0.0,False,True,True
+Perception Test,0.1,perception-pilot-subsample-011,Qwen/Qwen3-VL-8B-Instruct,Qwen,50,189,source_trace_hgb,22.80400507568488,8.500265073680026,23.857590337017175,False,True,True
+Perception Test,0.1,perception-pilot-subsample-011,lmms-lab-encoder/LLaVA-OneVision-2-8B-Instruct,LLaVA,50,189,source_trace_hgb,31.470367393735618,20.445925881551304,25.5967749443412,False,True,True
+Perception Test,0.1,perception-pilot-subsample-012,OpenGVLab/InternVL3_5-14B-Instruct,InternVL,50,209,raw_fallback,0.0,0.0,0.0,False,True,True
+Perception Test,0.1,perception-pilot-subsample-012,Qwen/Qwen3-VL-8B-Instruct,Qwen,50,209,source_trace_hgb,31.17435672168629,17.19011804331656,23.857590337017175,False,True,True
+Perception Test,0.1,perception-pilot-subsample-012,lmms-lab-encoder/LLaVA-OneVision-2-8B-Instruct,LLaVA,50,209,target_logistic,30.668403575132505,19.623121962583163,27.534213535703692,False,True,True
+Perception Test,0.1,perception-pilot-subsample-013,OpenGVLab/InternVL3_5-14B-Instruct,InternVL,50,212,raw_fallback,0.0,0.0,0.0,False,True,True
+Perception Test,0.1,perception-pilot-subsample-013,Qwen/Qwen3-VL-8B-Instruct,Qwen,50,212,source_trace_hgb,25.78846281840621,10.064714592523082,23.857590337017175,False,True,True
+Perception Test,0.1,perception-pilot-subsample-013,lmms-lab-encoder/LLaVA-OneVision-2-8B-Instruct,LLaVA,50,212,source_trace_hgb,19.30929257920421,7.0062946750147415,25.5967749443412,False,True,True
+Perception Test,0.1,perception-pilot-subsample-014,OpenGVLab/InternVL3_5-14B-Instruct,InternVL,50,210,raw_fallback,0.0,0.0,0.0,False,True,True
+Perception Test,0.1,perception-pilot-subsample-014,Qwen/Qwen3-VL-8B-Instruct,Qwen,50,210,target_logistic,27.88055883244038,13.28435503493453,20.113104001303466,False,True,True
+Perception Test,0.1,perception-pilot-subsample-014,lmms-lab-encoder/LLaVA-OneVision-2-8B-Instruct,LLaVA,50,210,source_trace_hgb,28.27917963893743,19.656994509312074,25.5967749443412,False,True,True
+Perception Test,0.1,perception-pilot-subsample-015,OpenGVLab/InternVL3_5-14B-Instruct,InternVL,50,173,raw_fallback,0.0,0.0,0.0,False,True,True
+Perception Test,0.1,perception-pilot-subsample-015,Qwen/Qwen3-VL-8B-Instruct,Qwen,50,173,source_trace_hgb,27.442189928220078,15.09223795261943,23.857590337017175,False,True,True
+Perception Test,0.1,perception-pilot-subsample-015,lmms-lab-encoder/LLaVA-OneVision-2-8B-Instruct,LLaVA,50,173,source_trace_hgb,36.22223539073198,26.196674960724206,25.5967749443412,False,True,True
+Perception Test,0.1,perception-pilot-subsample-016,OpenGVLab/InternVL3_5-14B-Instruct,InternVL,50,215,raw_fallback,0.0,0.0,0.0,False,True,True
+Perception Test,0.1,perception-pilot-subsample-016,Qwen/Qwen3-VL-8B-Instruct,Qwen,50,215,source_trace_hgb,18.82592655203967,1.2746219166823813,23.857590337017175,False,True,True
+Perception Test,0.1,perception-pilot-subsample-016,lmms-lab-encoder/LLaVA-OneVision-2-8B-Instruct,LLaVA,50,215,source_trace_hgb,26.461443280518232,16.495815437213757,25.5967749443412,False,True,True
+Perception Test,0.1,perception-pilot-subsample-017,OpenGVLab/InternVL3_5-14B-Instruct,InternVL,50,173,raw_fallback,0.0,0.0,0.0,False,True,True
+Perception Test,0.1,perception-pilot-subsample-017,Qwen/Qwen3-VL-8B-Instruct,Qwen,50,173,source_trace_hgb,24.719620845577516,6.418089563598029,23.857590337017175,False,True,True
+Perception Test,0.1,perception-pilot-subsample-017,lmms-lab-encoder/LLaVA-OneVision-2-8B-Instruct,LLaVA,50,173,source_trace_hgb,33.742326634381634,21.998261917256773,25.5967749443412,False,True,True
+Perception Test,0.1,perception-pilot-subsample-018,OpenGVLab/InternVL3_5-14B-Instruct,InternVL,50,206,raw_fallback,0.0,0.0,0.0,False,True,True
+Perception Test,0.1,perception-pilot-subsample-018,Qwen/Qwen3-VL-8B-Instruct,Qwen,50,206,target_logistic,32.05362938738873,19.158259590097238,24.635972297308005,False,True,True
+Perception Test,0.1,perception-pilot-subsample-018,lmms-lab-encoder/LLaVA-OneVision-2-8B-Instruct,LLaVA,50,206,source_trace_hgb,24.603205515574807,7.041978939232003,25.5967749443412,False,True,True
+Perception Test,0.1,perception-pilot-subsample-019,OpenGVLab/InternVL3_5-14B-Instruct,InternVL,50,201,raw_fallback,0.0,0.0,0.0,False,True,True
+Perception Test,0.1,perception-pilot-subsample-019,Qwen/Qwen3-VL-8B-Instruct,Qwen,50,201,target_logistic,22.080987551058136,8.771635551178578,24.99420651864046,False,True,True
+Perception Test,0.1,perception-pilot-subsample-019,lmms-lab-encoder/LLaVA-OneVision-2-8B-Instruct,LLaVA,50,201,source_trace_hgb,24.741355608362053,12.193550542210561,25.5967749443412,False,True,True
+Perception Test,0.2,perception-pilot-subsample-000,OpenGVLab/InternVL3_5-14B-Instruct,InternVL,100,403,raw_fallback,0.0,0.0,0.0,False,True,True
+Perception Test,0.2,perception-pilot-subsample-000,Qwen/Qwen3-VL-8B-Instruct,Qwen,100,403,source_trace_hgb,25.108001051491527,13.910671272436097,23.857590337017175,False,True,True
+Perception Test,0.2,perception-pilot-subsample-000,lmms-lab-encoder/LLaVA-OneVision-2-8B-Instruct,LLaVA,100,403,target_logistic,27.110823270649306,19.07867694951966,25.72007362653484,False,True,True
+Perception Test,0.2,perception-pilot-subsample-001,OpenGVLab/InternVL3_5-14B-Instruct,InternVL,100,401,raw_fallback,0.0,0.0,0.0,False,True,True
+Perception Test,0.2,perception-pilot-subsample-001,Qwen/Qwen3-VL-8B-Instruct,Qwen,100,401,source_trace_hgb,23.78932977995627,13.945870185587161,23.857590337017175,False,True,True
+Perception Test,0.2,perception-pilot-subsample-001,lmms-lab-encoder/LLaVA-OneVision-2-8B-Instruct,LLaVA,100,401,source_trace_hgb,28.987625538689397,18.821492663336482,25.5967749443412,False,True,True
+Perception Test,0.2,perception-pilot-subsample-002,OpenGVLab/InternVL3_5-14B-Instruct,InternVL,100,428,raw_fallback,0.0,0.0,0.0,False,True,True
+Perception Test,0.2,perception-pilot-subsample-002,Qwen/Qwen3-VL-8B-Instruct,Qwen,100,428,target_logistic,26.24500701469003,16.848834761724657,25.66080807954672,False,True,True
+Perception Test,0.2,perception-pilot-subsample-002,lmms-lab-encoder/LLaVA-OneVision-2-8B-Instruct,LLaVA,100,428,source_trace_hgb,28.715051192086197,20.445311434729962,25.5967749443412,False,True,True
+Perception Test,0.2,perception-pilot-subsample-003,OpenGVLab/InternVL3_5-14B-Instruct,InternVL,100,387,raw_fallback,0.0,0.0,0.0,False,True,True
+Perception Test,0.2,perception-pilot-subsample-003,Qwen/Qwen3-VL-8B-Instruct,Qwen,100,387,source_trace_hgb,27.848942131498372,15.903922314578379,23.857590337017175,False,True,True
+Perception Test,0.2,perception-pilot-subsample-003,lmms-lab-encoder/LLaVA-OneVision-2-8B-Instruct,LLaVA,100,387,source_trace_hgb,31.059836649591738,21.61823350491842,25.5967749443412,False,True,True
+Perception Test,0.2,perception-pilot-subsample-004,OpenGVLab/InternVL3_5-14B-Instruct,InternVL,100,382,raw_fallback,0.0,0.0,0.0,False,True,True
+Perception Test,0.2,perception-pilot-subsample-004,Qwen/Qwen3-VL-8B-Instruct,Qwen,100,382,source_trace_hgb,15.366769333044976,3.413397117380677,23.857590337017175,False,True,True
+Perception Test,0.2,perception-pilot-subsample-004,lmms-lab-encoder/LLaVA-OneVision-2-8B-Instruct,LLaVA,100,382,source_trace_hgb,27.56215623369172,16.627818821148285,25.5967749443412,False,True,True
+Perception Test,0.2,perception-pilot-subsample-005,OpenGVLab/InternVL3_5-14B-Instruct,InternVL,100,356,raw_fallback,0.0,0.0,0.0,False,True,True
+Perception Test,0.2,perception-pilot-subsample-005,Qwen/Qwen3-VL-8B-Instruct,Qwen,100,356,target_logistic,26.442932265575532,17.46642909767668,25.839794349385325,False,True,True
+Perception Test,0.2,perception-pilot-subsample-005,lmms-lab-encoder/LLaVA-OneVision-2-8B-Instruct,LLaVA,100,356,source_trace_hgb,27.55395919547648,19.84876530010134,25.5967749443412,False,True,True
+Perception Test,0.2,perception-pilot-subsample-006,OpenGVLab/InternVL3_5-14B-Instruct,InternVL,100,389,raw_fallback,0.0,0.0,0.0,False,True,True
+Perception Test,0.2,perception-pilot-subsample-006,Qwen/Qwen3-VL-8B-Instruct,Qwen,100,389,target_logistic,19.804949332685535,10.263698656820065,26.081497103952746,False,True,True
+Perception Test,0.2,perception-pilot-subsample-006,lmms-lab-encoder/LLaVA-OneVision-2-8B-Instruct,LLaVA,100,389,source_trace_hgb,27.591774502485592,18.47224622815683,25.5967749443412,False,True,True
+Perception Test,0.2,perception-pilot-subsample-007,OpenGVLab/InternVL3_5-14B-Instruct,InternVL,100,380,raw_fallback,0.0,0.0,0.0,False,True,True
+Perception Test,0.2,perception-pilot-subsample-007,Qwen/Qwen3-VL-8B-Instruct,Qwen,100,380,source_trace_hgb,22.22806216737878,9.621363666278114,23.857590337017175,False,True,True
+Perception Test,0.2,perception-pilot-subsample-007,lmms-lab-encoder/LLaVA-OneVision-2-8B-Instruct,LLaVA,100,380,source_trace_hgb,27.915748300070543,17.440226355759133,25.5967749443412,False,True,True
+Perception Test,0.2,perception-pilot-subsample-008,OpenGVLab/InternVL3_5-14B-Instruct,InternVL,100,415,raw_fallback,0.0,0.0,0.0,False,True,True
+Perception Test,0.2,perception-pilot-subsample-008,Qwen/Qwen3-VL-8B-Instruct,Qwen,100,415,target_logistic,26.935245900098966,18.252936827475093,26.410859801663833,False,True,True
+Perception Test,0.2,perception-pilot-subsample-008,lmms-lab-encoder/LLaVA-OneVision-2-8B-Instruct,LLaVA,100,415,source_trace_hgb,26.31852135452508,18.115154090515183,25.5967749443412,False,True,True
+Perception Test,0.2,perception-pilot-subsample-009,OpenGVLab/InternVL3_5-14B-Instruct,InternVL,100,354,raw_fallback,0.0,0.0,0.0,False,True,True
+Perception Test,0.2,perception-pilot-subsample-009,Qwen/Qwen3-VL-8B-Instruct,Qwen,100,354,source_trace_hgb,24.86305828720998,14.930971235894322,23.857590337017175,False,True,True
+Perception Test,0.2,perception-pilot-subsample-009,lmms-lab-encoder/LLaVA-OneVision-2-8B-Instruct,LLaVA,100,354,source_trace_hgb,23.894752250346745,15.359352898211936,25.5967749443412,False,True,True
+Perception Test,0.2,perception-pilot-subsample-010,OpenGVLab/InternVL3_5-14B-Instruct,InternVL,100,404,raw_fallback,0.0,0.0,0.0,False,True,True
+Perception Test,0.2,perception-pilot-subsample-010,Qwen/Qwen3-VL-8B-Instruct,Qwen,100,404,target_logistic,25.975441926705937,16.80759735100958,27.5072328725407,False,True,True
+Perception Test,0.2,perception-pilot-subsample-010,lmms-lab-encoder/LLaVA-OneVision-2-8B-Instruct,LLaVA,100,404,target_logistic,30.762747538204987,20.143649443220397,23.377850333910317,False,True,True
+Perception Test,0.2,perception-pilot-subsample-011,OpenGVLab/InternVL3_5-14B-Instruct,InternVL,100,400,raw_fallback,0.0,0.0,0.0,False,True,True
+Perception Test,0.2,perception-pilot-subsample-011,Qwen/Qwen3-VL-8B-Instruct,Qwen,100,400,source_trace_hgb,23.66034109656032,13.840835182396876,23.857590337017175,False,True,True
+Perception Test,0.2,perception-pilot-subsample-011,lmms-lab-encoder/LLaVA-OneVision-2-8B-Instruct,LLaVA,100,400,target_logistic,31.160188786564312,23.467223781440374,26.72572392137527,False,True,True
+Perception Test,0.2,perception-pilot-subsample-012,OpenGVLab/InternVL3_5-14B-Instruct,InternVL,100,397,raw_fallback,0.0,0.0,0.0,False,True,True
+Perception Test,0.2,perception-pilot-subsample-012,Qwen/Qwen3-VL-8B-Instruct,Qwen,100,397,source_trace_hgb,27.1372201067178,15.649012740603215,23.857590337017175,False,True,True
+Perception Test,0.2,perception-pilot-subsample-012,lmms-lab-encoder/LLaVA-OneVision-2-8B-Instruct,LLaVA,100,397,target_logistic,29.273260356809377,21.10619545575716,26.922821182965116,False,True,True
+Perception Test,0.2,perception-pilot-subsample-013,OpenGVLab/InternVL3_5-14B-Instruct,InternVL,100,385,raw_fallback,0.0,0.0,0.0,False,True,True
+Perception Test,0.2,perception-pilot-subsample-013,Qwen/Qwen3-VL-8B-Instruct,Qwen,100,385,source_trace_hgb,19.895427557103957,8.645417310951613,23.857590337017175,False,True,True
+Perception Test,0.2,perception-pilot-subsample-013,lmms-lab-encoder/LLaVA-OneVision-2-8B-Instruct,LLaVA,100,385,source_trace_hgb,21.705157188263527,9.958306420089931,25.5967749443412,False,True,True
+Perception Test,0.2,perception-pilot-subsample-014,OpenGVLab/InternVL3_5-14B-Instruct,InternVL,100,419,raw_fallback,0.0,0.0,0.0,False,True,True
+Perception Test,0.2,perception-pilot-subsample-014,Qwen/Qwen3-VL-8B-Instruct,Qwen,100,419,target_logistic,24.17188847277557,14.55424775333462,27.513523523847812,False,True,True
+Perception Test,0.2,perception-pilot-subsample-014,lmms-lab-encoder/LLaVA-OneVision-2-8B-Instruct,LLaVA,100,419,source_trace_hgb,27.035722227520925,17.755569645139776,25.5967749443412,False,True,True
+Perception Test,0.2,perception-pilot-subsample-015,OpenGVLab/InternVL3_5-14B-Instruct,InternVL,100,387,raw_fallback,0.0,0.0,0.0,False,True,True
+Perception Test,0.2,perception-pilot-subsample-015,Qwen/Qwen3-VL-8B-Instruct,Qwen,100,387,source_trace_hgb,32.25895569969746,22.222171951562515,23.857590337017175,False,True,True
+Perception Test,0.2,perception-pilot-subsample-015,lmms-lab-encoder/LLaVA-OneVision-2-8B-Instruct,LLaVA,100,387,source_trace_hgb,32.23903590602441,23.599755070436167,25.5967749443412,False,True,True
+Perception Test,0.2,perception-pilot-subsample-016,OpenGVLab/InternVL3_5-14B-Instruct,InternVL,100,435,raw_fallback,0.0,0.0,0.0,False,True,True
+Perception Test,0.2,perception-pilot-subsample-016,Qwen/Qwen3-VL-8B-Instruct,Qwen,100,435,source_trace_hgb,23.298721896335184,12.117816023694376,23.857590337017175,False,True,True
+Perception Test,0.2,perception-pilot-subsample-016,lmms-lab-encoder/LLaVA-OneVision-2-8B-Instruct,LLaVA,100,435,source_trace_hgb,27.505119771010545,19.546770039938995,25.5967749443412,False,True,True
+Perception Test,0.2,perception-pilot-subsample-017,OpenGVLab/InternVL3_5-14B-Instruct,InternVL,100,386,raw_fallback,0.0,0.0,0.0,False,True,True
+Perception Test,0.2,perception-pilot-subsample-017,Qwen/Qwen3-VL-8B-Instruct,Qwen,100,386,target_logistic,26.89413876133768,13.307560996851805,26.171924856377096,False,True,True
+Perception Test,0.2,perception-pilot-subsample-017,lmms-lab-encoder/LLaVA-OneVision-2-8B-Instruct,LLaVA,100,386,source_trace_hgb,29.009719609260454,20.795088628704033,25.5967749443412,False,True,True
+Perception Test,0.2,perception-pilot-subsample-018,OpenGVLab/InternVL3_5-14B-Instruct,InternVL,100,414,raw_fallback,0.0,0.0,0.0,False,True,True
+Perception Test,0.2,perception-pilot-subsample-018,Qwen/Qwen3-VL-8B-Instruct,Qwen,100,414,target_logistic,32.88170464058373,21.511323584199932,24.891758986943646,False,True,True
+Perception Test,0.2,perception-pilot-subsample-018,lmms-lab-encoder/LLaVA-OneVision-2-8B-Instruct,LLaVA,100,414,source_trace_hgb,25.287883716324163,15.464170108290743,25.5967749443412,False,True,True
+Perception Test,0.2,perception-pilot-subsample-019,OpenGVLab/InternVL3_5-14B-Instruct,InternVL,100,390,target_logistic,10.89688425279499,1.7888683320509422,-15.952101747052412,True,True,True
+Perception Test,0.2,perception-pilot-subsample-019,Qwen/Qwen3-VL-8B-Instruct,Qwen,100,390,target_logistic,23.157276064601376,13.524552537336413,27.532634224025262,False,True,True
+Perception Test,0.2,perception-pilot-subsample-019,lmms-lab-encoder/LLaVA-OneVision-2-8B-Instruct,LLaVA,100,390,target_logistic,31.07159912729111,22.35407717673159,25.363247182151927,False,True,True
+Perception Test,0.3,perception-pilot-subsample-000,OpenGVLab/InternVL3_5-14B-Instruct,InternVL,150,599,raw_fallback,0.0,0.0,0.0,False,True,True
+Perception Test,0.3,perception-pilot-subsample-000,Qwen/Qwen3-VL-8B-Instruct,Qwen,150,599,source_trace_hgb,27.084901718731217,19.367554337929967,23.857590337017175,False,True,True
+Perception Test,0.3,perception-pilot-subsample-000,lmms-lab-encoder/LLaVA-OneVision-2-8B-Instruct,LLaVA,150,599,target_logistic,28.532333152540136,20.888207209217935,27.001683525923195,False,True,True
+Perception Test,0.3,perception-pilot-subsample-001,OpenGVLab/InternVL3_5-14B-Instruct,InternVL,150,595,raw_fallback,0.0,0.0,0.0,False,True,True
+Perception Test,0.3,perception-pilot-subsample-001,Qwen/Qwen3-VL-8B-Instruct,Qwen,150,595,source_trace_hgb,20.825650617511275,13.515176717414823,23.857590337017175,False,True,True
+Perception Test,0.3,perception-pilot-subsample-001,lmms-lab-encoder/LLaVA-OneVision-2-8B-Instruct,LLaVA,150,595,source_trace_hgb,24.696785475219002,16.870032757583708,25.5967749443412,False,True,True
+Perception Test,0.3,perception-pilot-subsample-002,OpenGVLab/InternVL3_5-14B-Instruct,InternVL,150,597,raw_fallback,0.0,0.0,0.0,False,True,True
+Perception Test,0.3,perception-pilot-subsample-002,Qwen/Qwen3-VL-8B-Instruct,Qwen,150,597,target_logistic,25.112976556512262,16.381473902955364,26.948288152500357,False,True,True
+Perception Test,0.3,perception-pilot-subsample-002,lmms-lab-encoder/LLaVA-OneVision-2-8B-Instruct,LLaVA,150,597,source_trace_hgb,30.382755193964588,23.794198408598568,25.5967749443412,False,True,True
+Perception Test,0.3,perception-pilot-subsample-003,OpenGVLab/InternVL3_5-14B-Instruct,InternVL,150,619,raw_fallback,0.0,0.0,0.0,False,True,True
+Perception Test,0.3,perception-pilot-subsample-003,Qwen/Qwen3-VL-8B-Instruct,Qwen,150,619,target_logistic,30.182674609616008,21.114457714415874,26.537976357272765,False,True,True
+Perception Test,0.3,perception-pilot-subsample-003,lmms-lab-encoder/LLaVA-OneVision-2-8B-Instruct,LLaVA,150,619,source_trace_hgb,29.0293466603886,20.9027733016389,25.5967749443412,False,True,True
+Perception Test,0.3,perception-pilot-subsample-004,OpenGVLab/InternVL3_5-14B-Instruct,InternVL,150,603,raw_fallback,0.0,0.0,0.0,False,True,True
+Perception Test,0.3,perception-pilot-subsample-004,Qwen/Qwen3-VL-8B-Instruct,Qwen,150,603,source_trace_hgb,15.172135542494608,6.9331159701091485,23.857590337017175,False,True,True
+Perception Test,0.3,perception-pilot-subsample-004,lmms-lab-encoder/LLaVA-OneVision-2-8B-Instruct,LLaVA,150,603,target_logistic,30.63347103273454,22.64155873199986,27.998820816396144,False,True,True
+Perception Test,0.3,perception-pilot-subsample-005,OpenGVLab/InternVL3_5-14B-Instruct,InternVL,150,551,raw_fallback,0.0,0.0,0.0,False,True,True
+Perception Test,0.3,perception-pilot-subsample-005,Qwen/Qwen3-VL-8B-Instruct,Qwen,150,551,target_logistic,24.21389028440966,15.735678640101918,27.276615939684525,False,True,True
+Perception Test,0.3,perception-pilot-subsample-005,lmms-lab-encoder/LLaVA-OneVision-2-8B-Instruct,LLaVA,150,551,source_trace_hgb,28.215907745964703,21.36485776367395,25.5967749443412,False,True,True
+Perception Test,0.3,perception-pilot-subsample-006,OpenGVLab/InternVL3_5-14B-Instruct,InternVL,150,564,raw_fallback,0.0,0.0,0.0,False,True,True
+Perception Test,0.3,perception-pilot-subsample-006,Qwen/Qwen3-VL-8B-Instruct,Qwen,150,564,target_logistic,19.756062101363337,12.598129299810623,27.28610300566496,False,True,True
+Perception Test,0.3,perception-pilot-subsample-006,lmms-lab-encoder/LLaVA-OneVision-2-8B-Instruct,LLaVA,150,564,target_logistic,27.322044664004437,19.62560327280775,27.374246966787968,False,True,True
+Perception Test,0.3,perception-pilot-subsample-007,OpenGVLab/InternVL3_5-14B-Instruct,InternVL,150,585,raw_fallback,0.0,0.0,0.0,False,True,True
+Perception Test,0.3,perception-pilot-subsample-007,Qwen/Qwen3-VL-8B-Instruct,Qwen,150,585,source_trace_hgb,24.20237243949905,14.450187250723147,23.857590337017175,False,True,True
+Perception Test,0.3,perception-pilot-subsample-007,lmms-lab-encoder/LLaVA-OneVision-2-8B-Instruct,LLaVA,150,585,target_logistic,27.668307301791007,19.66927024024392,27.728261377699646,False,True,True
+Perception Test,0.3,perception-pilot-subsample-008,OpenGVLab/InternVL3_5-14B-Instruct,InternVL,150,595,raw_fallback,0.0,0.0,0.0,False,True,True
+Perception Test,0.3,perception-pilot-subsample-008,Qwen/Qwen3-VL-8B-Instruct,Qwen,150,595,target_logistic,27.271621027356588,20.26199724041555,27.453698200731615,False,True,True
+Perception Test,0.3,perception-pilot-subsample-008,lmms-lab-encoder/LLaVA-OneVision-2-8B-Instruct,LLaVA,150,595,target_logistic,27.437840789851766,20.586189984619303,27.958684790242945,False,True,True
+Perception Test,0.3,perception-pilot-subsample-009,OpenGVLab/InternVL3_5-14B-Instruct,InternVL,150,553,raw_fallback,0.0,0.0,0.0,False,True,True
+Perception Test,0.3,perception-pilot-subsample-009,Qwen/Qwen3-VL-8B-Instruct,Qwen,150,553,target_logistic,29.12173208505888,20.13846489073611,27.11456033027852,False,True,True
+Perception Test,0.3,perception-pilot-subsample-009,lmms-lab-encoder/LLaVA-OneVision-2-8B-Instruct,LLaVA,150,553,source_trace_hgb,27.16319967384958,19.55817136665901,25.5967749443412,False,True,True
+Perception Test,0.3,perception-pilot-subsample-010,OpenGVLab/InternVL3_5-14B-Instruct,InternVL,150,587,raw_fallback,0.0,0.0,0.0,False,True,True
+Perception Test,0.3,perception-pilot-subsample-010,Qwen/Qwen3-VL-8B-Instruct,Qwen,150,587,source_trace_hgb,24.411811248538903,14.979250327337768,23.857590337017175,False,True,True
+Perception Test,0.3,perception-pilot-subsample-010,lmms-lab-encoder/LLaVA-OneVision-2-8B-Instruct,LLaVA,150,587,target_logistic,29.038398020908048,20.232086139380183,27.642066330861468,False,True,True
+Perception Test,0.3,perception-pilot-subsample-011,OpenGVLab/InternVL3_5-14B-Instruct,InternVL,150,576,raw_fallback,0.0,0.0,0.0,False,True,True
+Perception Test,0.3,perception-pilot-subsample-011,Qwen/Qwen3-VL-8B-Instruct,Qwen,150,576,source_trace_hgb,22.376985470563366,14.408781799885785,23.857590337017175,False,True,True
+Perception Test,0.3,perception-pilot-subsample-011,lmms-lab-encoder/LLaVA-OneVision-2-8B-Instruct,LLaVA,150,576,target_logistic,28.75538107045668,21.77533573829439,27.138977374849695,False,True,True
+Perception Test,0.3,perception-pilot-subsample-012,OpenGVLab/InternVL3_5-14B-Instruct,InternVL,150,599,raw_fallback,0.0,0.0,0.0,False,True,True
+Perception Test,0.3,perception-pilot-subsample-012,Qwen/Qwen3-VL-8B-Instruct,Qwen,150,599,target_logistic,25.067871490869038,16.58277873334688,26.633722915755996,False,True,True
+Perception Test,0.3,perception-pilot-subsample-012,lmms-lab-encoder/LLaVA-OneVision-2-8B-Instruct,LLaVA,150,599,target_logistic,26.319712990994304,19.512615260197087,27.84951410876253,False,True,True
+Perception Test,0.3,perception-pilot-subsample-013,OpenGVLab/InternVL3_5-14B-Instruct,InternVL,150,586,raw_fallback,0.0,0.0,0.0,False,True,True
+Perception Test,0.3,perception-pilot-subsample-013,Qwen/Qwen3-VL-8B-Instruct,Qwen,150,586,target_logistic,22.46367005044613,14.073663016004188,26.920345611418508,False,True,True
+Perception Test,0.3,perception-pilot-subsample-013,lmms-lab-encoder/LLaVA-OneVision-2-8B-Instruct,LLaVA,150,586,target_logistic,23.255704911446333,16.121072194858925,27.977442604701796,False,True,True
+Perception Test,0.3,perception-pilot-subsample-014,OpenGVLab/InternVL3_5-14B-Instruct,InternVL,150,628,raw_fallback,0.0,0.0,0.0,False,True,True
+Perception Test,0.3,perception-pilot-subsample-014,Qwen/Qwen3-VL-8B-Instruct,Qwen,150,628,target_logistic,29.327838657184877,21.443077037231998,27.2150673238211,False,True,True
+Perception Test,0.3,perception-pilot-subsample-014,lmms-lab-encoder/LLaVA-OneVision-2-8B-Instruct,LLaVA,150,628,target_logistic,26.376116167765154,19.005233230691534,28.288230600406127,False,True,True
+Perception Test,0.3,perception-pilot-subsample-015,OpenGVLab/InternVL3_5-14B-Instruct,InternVL,150,595,raw_fallback,0.0,0.0,0.0,False,True,True
+Perception Test,0.3,perception-pilot-subsample-015,Qwen/Qwen3-VL-8B-Instruct,Qwen,150,595,source_trace_hgb,32.27626481976996,24.74744386956993,23.857590337017175,False,True,True
+Perception Test,0.3,perception-pilot-subsample-015,lmms-lab-encoder/LLaVA-OneVision-2-8B-Instruct,LLaVA,150,595,target_logistic,28.687180581328416,20.706801953863323,28.479046112607723,False,True,True
+Perception Test,0.3,perception-pilot-subsample-016,OpenGVLab/InternVL3_5-14B-Instruct,InternVL,150,599,raw_fallback,0.0,0.0,0.0,False,True,True
+Perception Test,0.3,perception-pilot-subsample-016,Qwen/Qwen3-VL-8B-Instruct,Qwen,150,599,target_logistic,26.63840475267186,18.281108175338645,28.428074155427634,False,True,True
+Perception Test,0.3,perception-pilot-subsample-016,lmms-lab-encoder/LLaVA-OneVision-2-8B-Instruct,LLaVA,150,599,target_logistic,25.85197283631235,18.814899080056062,27.495962563875775,False,True,True
+Perception Test,0.3,perception-pilot-subsample-017,OpenGVLab/InternVL3_5-14B-Instruct,InternVL,150,606,raw_fallback,0.0,0.0,0.0,False,True,True
+Perception Test,0.3,perception-pilot-subsample-017,Qwen/Qwen3-VL-8B-Instruct,Qwen,150,606,target_logistic,28.798770540917907,19.88696720334562,26.24518852649784,False,True,True
+Perception Test,0.3,perception-pilot-subsample-017,lmms-lab-encoder/LLaVA-OneVision-2-8B-Instruct,LLaVA,150,606,source_trace_hgb,29.135423607379497,21.692586849633017,25.5967749443412,False,True,True
+Perception Test,0.3,perception-pilot-subsample-018,OpenGVLab/InternVL3_5-14B-Instruct,InternVL,150,612,raw_fallback,0.0,0.0,0.0,False,True,True
+Perception Test,0.3,perception-pilot-subsample-018,Qwen/Qwen3-VL-8B-Instruct,Qwen,150,612,target_logistic,30.323822471052384,21.214222526015632,27.58825328900109,False,True,True
+Perception Test,0.3,perception-pilot-subsample-018,lmms-lab-encoder/LLaVA-OneVision-2-8B-Instruct,LLaVA,150,612,source_trace_hgb,26.00104254096103,17.204397156884337,25.5967749443412,False,True,True
+Perception Test,0.3,perception-pilot-subsample-019,OpenGVLab/InternVL3_5-14B-Instruct,InternVL,150,583,raw_fallback,0.0,0.0,0.0,False,True,True
+Perception Test,0.3,perception-pilot-subsample-019,Qwen/Qwen3-VL-8B-Instruct,Qwen,150,583,target_logistic,25.20477237002668,16.508106979930332,27.58047584116564,False,True,True
+Perception Test,0.3,perception-pilot-subsample-019,lmms-lab-encoder/LLaVA-OneVision-2-8B-Instruct,LLaVA,150,583,target_logistic,31.881170550749292,24.22280042117121,27.762440969922956,False,True,True
+Perception Test,0.4,perception-pilot-subsample-000,OpenGVLab/InternVL3_5-14B-Instruct,InternVL,200,785,raw_fallback,0.0,0.0,0.0,False,True,True
+Perception Test,0.4,perception-pilot-subsample-000,Qwen/Qwen3-VL-8B-Instruct,Qwen,200,785,target_logistic,25.235050428069453,18.459273546789706,27.398478061392204,False,True,True
+Perception Test,0.4,perception-pilot-subsample-000,lmms-lab-encoder/LLaVA-OneVision-2-8B-Instruct,LLaVA,200,785,target_logistic,28.57193788319423,22.397003577753665,28.426509236770027,False,True,True
+Perception Test,0.4,perception-pilot-subsample-001,OpenGVLab/InternVL3_5-14B-Instruct,InternVL,200,782,raw_fallback,0.0,0.0,0.0,False,True,True
+Perception Test,0.4,perception-pilot-subsample-001,Qwen/Qwen3-VL-8B-Instruct,Qwen,200,782,target_logistic,24.62379356615825,18.115797265663108,27.653203759175113,False,True,True
+Perception Test,0.4,perception-pilot-subsample-001,lmms-lab-encoder/LLaVA-OneVision-2-8B-Instruct,LLaVA,200,782,target_logistic,28.436920684856137,22.027774369248586,28.909127012688955,False,True,True
+Perception Test,0.4,perception-pilot-subsample-002,OpenGVLab/InternVL3_5-14B-Instruct,InternVL,200,815,raw_fallback,0.0,0.0,0.0,False,True,True
+Perception Test,0.4,perception-pilot-subsample-002,Qwen/Qwen3-VL-8B-Instruct,Qwen,200,815,target_logistic,26.35874281497874,19.76708986156995,28.16203897573595,False,True,True
+Perception Test,0.4,perception-pilot-subsample-002,lmms-lab-encoder/LLaVA-OneVision-2-8B-Instruct,LLaVA,200,815,target_logistic,29.64797160839091,23.69003894431952,28.226746212744374,False,True,True
+Perception Test,0.4,perception-pilot-subsample-003,OpenGVLab/InternVL3_5-14B-Instruct,InternVL,200,792,raw_fallback,0.0,0.0,0.0,False,True,True
+Perception Test,0.4,perception-pilot-subsample-003,Qwen/Qwen3-VL-8B-Instruct,Qwen,200,792,target_logistic,27.483982212134375,20.081483782612228,27.235583857581016,False,True,True
+Perception Test,0.4,perception-pilot-subsample-003,lmms-lab-encoder/LLaVA-OneVision-2-8B-Instruct,LLaVA,200,792,target_logistic,28.544287302482555,22.1950350087264,28.16773584101357,False,True,True
+Perception Test,0.4,perception-pilot-subsample-004,OpenGVLab/InternVL3_5-14B-Instruct,InternVL,200,766,raw_fallback,0.0,0.0,0.0,False,True,True
+Perception Test,0.4,perception-pilot-subsample-004,Qwen/Qwen3-VL-8B-Instruct,Qwen,200,766,target_logistic,19.771678724057,12.965381023545707,28.268470669986005,False,True,True
+Perception Test,0.4,perception-pilot-subsample-004,lmms-lab-encoder/LLaVA-OneVision-2-8B-Instruct,LLaVA,200,766,target_logistic,28.420012393358128,21.64755929231784,28.303348910840484,False,True,True
+Perception Test,0.4,perception-pilot-subsample-005,OpenGVLab/InternVL3_5-14B-Instruct,InternVL,200,787,raw_fallback,0.0,0.0,0.0,False,True,True
+Perception Test,0.4,perception-pilot-subsample-005,Qwen/Qwen3-VL-8B-Instruct,Qwen,200,787,target_logistic,26.95125758562465,20.38452196598589,27.999278950197613,False,True,True
+Perception Test,0.4,perception-pilot-subsample-005,lmms-lab-encoder/LLaVA-OneVision-2-8B-Instruct,LLaVA,200,787,target_logistic,26.594141442660167,19.673062132673095,28.232292741023443,False,True,True
+Perception Test,0.4,perception-pilot-subsample-006,OpenGVLab/InternVL3_5-14B-Instruct,InternVL,200,761,raw_fallback,0.0,0.0,0.0,False,True,True
+Perception Test,0.4,perception-pilot-subsample-006,Qwen/Qwen3-VL-8B-Instruct,Qwen,200,761,source_trace_hgb,19.270557981167748,12.402005510638602,23.857590337017175,False,True,True
+Perception Test,0.4,perception-pilot-subsample-006,lmms-lab-encoder/LLaVA-OneVision-2-8B-Instruct,LLaVA,200,761,target_logistic,27.292505540681365,20.820410229898222,28.09548916250828,False,True,True
+Perception Test,0.4,perception-pilot-subsample-007,OpenGVLab/InternVL3_5-14B-Instruct,InternVL,200,756,raw_fallback,0.0,0.0,0.0,False,True,True
+Perception Test,0.4,perception-pilot-subsample-007,Qwen/Qwen3-VL-8B-Instruct,Qwen,200,756,target_logistic,28.33830315202373,20.544263846357936,27.344621648733394,False,True,True
+Perception Test,0.4,perception-pilot-subsample-007,lmms-lab-encoder/LLaVA-OneVision-2-8B-Instruct,LLaVA,200,756,source_trace_hgb,28.362139514873103,21.660613389195227,25.5967749443412,False,True,True
+Perception Test,0.4,perception-pilot-subsample-008,OpenGVLab/InternVL3_5-14B-Instruct,InternVL,200,795,raw_fallback,0.0,0.0,0.0,False,True,True
+Perception Test,0.4,perception-pilot-subsample-008,Qwen/Qwen3-VL-8B-Instruct,Qwen,200,795,target_logistic,25.37384102872265,18.56629364839384,27.295294209913138,False,True,True
+Perception Test,0.4,perception-pilot-subsample-008,lmms-lab-encoder/LLaVA-OneVision-2-8B-Instruct,LLaVA,200,795,target_logistic,27.623899175054483,21.651476617953325,28.477024888315235,False,True,True
+Perception Test,0.4,perception-pilot-subsample-009,OpenGVLab/InternVL3_5-14B-Instruct,InternVL,200,779,raw_fallback,0.0,0.0,0.0,False,True,True
+Perception Test,0.4,perception-pilot-subsample-009,Qwen/Qwen3-VL-8B-Instruct,Qwen,200,779,target_logistic,26.044415788106566,18.41874484524068,27.6341084523588,False,True,True
+Perception Test,0.4,perception-pilot-subsample-009,lmms-lab-encoder/LLaVA-OneVision-2-8B-Instruct,LLaVA,200,779,target_logistic,27.8788213081857,21.54550050420441,28.063800490167214,False,True,True
+Perception Test,0.4,perception-pilot-subsample-010,OpenGVLab/InternVL3_5-14B-Instruct,InternVL,200,785,raw_fallback,0.0,0.0,0.0,False,True,True
+Perception Test,0.4,perception-pilot-subsample-010,Qwen/Qwen3-VL-8B-Instruct,Qwen,200,785,target_logistic,27.454565810665507,20.825124122022757,27.582446672917595,False,True,True
+Perception Test,0.4,perception-pilot-subsample-010,lmms-lab-encoder/LLaVA-OneVision-2-8B-Instruct,LLaVA,200,785,target_logistic,27.7717126079326,21.014750772521246,28.363749346106637,False,True,True
+Perception Test,0.4,perception-pilot-subsample-011,OpenGVLab/InternVL3_5-14B-Instruct,InternVL,200,788,raw_fallback,0.0,0.0,0.0,False,True,True
+Perception Test,0.4,perception-pilot-subsample-011,Qwen/Qwen3-VL-8B-Instruct,Qwen,200,788,target_logistic,27.197617991220344,19.88254277493147,27.181478983146373,False,True,True
+Perception Test,0.4,perception-pilot-subsample-011,lmms-lab-encoder/LLaVA-OneVision-2-8B-Instruct,LLaVA,200,788,target_logistic,28.9285620444651,22.595085382451167,28.380681840239728,False,True,True
+Perception Test,0.4,perception-pilot-subsample-012,OpenGVLab/InternVL3_5-14B-Instruct,InternVL,200,794,raw_fallback,0.0,0.0,0.0,False,True,True
+Perception Test,0.4,perception-pilot-subsample-012,Qwen/Qwen3-VL-8B-Instruct,Qwen,200,794,target_logistic,24.34148972383521,17.500570068205086,27.20027850005993,False,True,True
+Perception Test,0.4,perception-pilot-subsample-012,lmms-lab-encoder/LLaVA-OneVision-2-8B-Instruct,LLaVA,200,794,target_logistic,25.218941242773237,19.388976913530566,27.95567566656657,False,True,True
+Perception Test,0.4,perception-pilot-subsample-013,OpenGVLab/InternVL3_5-14B-Instruct,InternVL,200,793,raw_fallback,0.0,0.0,0.0,False,True,True
+Perception Test,0.4,perception-pilot-subsample-013,Qwen/Qwen3-VL-8B-Instruct,Qwen,200,793,target_logistic,23.634414342603794,16.490646967382858,27.370463907031322,False,True,True
+Perception Test,0.4,perception-pilot-subsample-013,lmms-lab-encoder/LLaVA-OneVision-2-8B-Instruct,LLaVA,200,793,target_logistic,27.614413332780874,21.65803536449822,27.437706638047846,False,True,True
+Perception Test,0.4,perception-pilot-subsample-014,OpenGVLab/InternVL3_5-14B-Instruct,InternVL,200,786,raw_fallback,0.0,0.0,0.0,False,True,True
+Perception Test,0.4,perception-pilot-subsample-014,Qwen/Qwen3-VL-8B-Instruct,Qwen,200,786,target_logistic,24.985349135957957,17.433979906324055,27.47966833770036,False,True,True
+Perception Test,0.4,perception-pilot-subsample-014,lmms-lab-encoder/LLaVA-OneVision-2-8B-Instruct,LLaVA,200,786,target_logistic,30.934994016844108,23.92644260070617,28.26391662198102,False,True,True
+Perception Test,0.4,perception-pilot-subsample-015,OpenGVLab/InternVL3_5-14B-Instruct,InternVL,200,806,raw_fallback,0.0,0.0,0.0,False,True,True
+Perception Test,0.4,perception-pilot-subsample-015,Qwen/Qwen3-VL-8B-Instruct,Qwen,200,806,target_logistic,27.67887998762796,20.21980749480968,27.42022570235911,False,True,True
+Perception Test,0.4,perception-pilot-subsample-015,lmms-lab-encoder/LLaVA-OneVision-2-8B-Instruct,LLaVA,200,806,target_logistic,30.17706561451047,23.699962832017704,28.548359182284266,False,True,True
+Perception Test,0.4,perception-pilot-subsample-016,OpenGVLab/InternVL3_5-14B-Instruct,InternVL,200,789,raw_fallback,0.0,0.0,0.0,False,True,True
+Perception Test,0.4,perception-pilot-subsample-016,Qwen/Qwen3-VL-8B-Instruct,Qwen,200,789,target_logistic,25.8219271219373,19.091371950115064,28.24092773793306,False,True,True
+Perception Test,0.4,perception-pilot-subsample-016,lmms-lab-encoder/LLaVA-OneVision-2-8B-Instruct,LLaVA,200,789,target_logistic,29.79857568354314,23.77354624784397,27.586614381587776,False,True,True
+Perception Test,0.4,perception-pilot-subsample-017,OpenGVLab/InternVL3_5-14B-Instruct,InternVL,200,773,raw_fallback,0.0,0.0,0.0,False,True,True
+Perception Test,0.4,perception-pilot-subsample-017,Qwen/Qwen3-VL-8B-Instruct,Qwen,200,773,target_logistic,26.152071257383845,18.229689094012375,26.869723739939015,False,True,True
+Perception Test,0.4,perception-pilot-subsample-017,lmms-lab-encoder/LLaVA-OneVision-2-8B-Instruct,LLaVA,200,773,target_logistic,28.739718674534473,22.316177372353636,28.329900942582874,False,True,True
+Perception Test,0.4,perception-pilot-subsample-018,OpenGVLab/InternVL3_5-14B-Instruct,InternVL,200,797,raw_fallback,0.0,0.0,0.0,False,True,True
+Perception Test,0.4,perception-pilot-subsample-018,Qwen/Qwen3-VL-8B-Instruct,Qwen,200,797,target_logistic,27.821216852475402,20.71165700194663,27.059473834397497,False,True,True
+Perception Test,0.4,perception-pilot-subsample-018,lmms-lab-encoder/LLaVA-OneVision-2-8B-Instruct,LLaVA,200,797,target_logistic,27.927327954957637,21.236210879897296,28.565207509656197,False,True,True
+Perception Test,0.4,perception-pilot-subsample-019,OpenGVLab/InternVL3_5-14B-Instruct,InternVL,200,785,raw_fallback,0.0,0.0,0.0,False,True,True
+Perception Test,0.4,perception-pilot-subsample-019,Qwen/Qwen3-VL-8B-Instruct,Qwen,200,785,target_logistic,29.49360299074834,22.25200148974301,27.302643662131427,False,True,True
+Perception Test,0.4,perception-pilot-subsample-019,lmms-lab-encoder/LLaVA-OneVision-2-8B-Instruct,LLaVA,200,785,target_logistic,31.342001843715913,24.99234588143743,28.183952503176975,False,True,True
+Perception Test,0.5,registered-full-pilot,OpenGVLab/InternVL3_5-14B-Instruct,InternVL,250,977,raw_fallback,0.0,0.0,0.0,False,True,True
+Perception Test,0.5,registered-full-pilot,Qwen/Qwen3-VL-8B-Instruct,Qwen,250,977,target_logistic,25.370710778241225,19.180097394331064,28.14138187585669,False,True,True
+Perception Test,0.5,registered-full-pilot,lmms-lab-encoder/LLaVA-OneVision-2-8B-Instruct,LLaVA,250,977,target_logistic,29.443883267673694,23.691260544974327,28.46270145299172,False,True,True

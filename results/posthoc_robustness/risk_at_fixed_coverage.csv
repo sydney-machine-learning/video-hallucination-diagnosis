@@ -1,0 +1,25 @@
+dataset,method,coverage,macro_risk
+HERBench,Raw confidence,0.25,0.2517289073305671
+HERBench,Raw confidence,0.5,0.37344398340248963
+HERBench,Raw confidence,0.75,0.4541263254956201
+HERBench,Raw confidence,1.0,0.5264797507788163
+HERBench,Target base graph,0.25,0.1203319502074689
+HERBench,Target base graph,0.5,0.330567081604426
+HERBench,Target base graph,0.75,0.4407561088059014
+HERBench,Target base graph,1.0,0.5264797507788163
+HERBench,TRACE-RC,0.25,0.12171507607192256
+HERBench,TRACE-RC,0.5,0.3084370677731674
+HERBench,TRACE-RC,0.75,0.437989857076994
+HERBench,TRACE-RC,1.0,0.5264797507788163
+Perception Test,Raw confidence,0.25,0.03508771929824561
+Perception Test,Raw confidence,0.5,0.14839181286549705
+Perception Test,Raw confidence,0.75,0.2524366471734893
+Perception Test,Raw confidence,1.0,0.3278448591291621
+Perception Test,Target base graph,0.25,0.007309941520467859
+Perception Test,Target base graph,0.5,0.08845029239766085
+Perception Test,Target base graph,0.75,0.21198830409356725
+Perception Test,Target base graph,1.0,0.3278448591291621
+Perception Test,TRACE-RC,0.25,0.004385964912280715
+Perception Test,TRACE-RC,0.5,0.08260233918128652
+Perception Test,TRACE-RC,0.75,0.21393762183235868
+Perception Test,TRACE-RC,1.0,0.3278448591291621

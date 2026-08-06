@@ -1,0 +1,24 @@
+{
+  "bootstrap_iterations": 10000,
+  "bootstrap_seed": 20260803,
+  "checks": {
+    "all_rejections_exact_fallback": true,
+    "at_least_one_environment_promoted": true,
+    "grouped_ci_lower_above_zero": true,
+    "macro_gain_at_least_one_percent": true,
+    "worst_model_gain_at_least_minus_one_percent": true
+  },
+  "macro_mean_relative_aurc_reduction_percent": 18.868027776282805,
+  "models": 3,
+  "primary_gate_pass": true,
+  "promoted_environments": 2,
+  "schema_version": "trace-rc-perception-test-confirmation-gate-1.0",
+  "target_dataset": "Perception-Test-valid500",
+  "test_questions": 911,
+  "test_videos": 250,
+  "video_grouped_bootstrap_95ci_percent": [
+    15.428923760958313,
+    22.13951293477054
+  ],
+  "worst_model_gain_percent": 0.0
+}

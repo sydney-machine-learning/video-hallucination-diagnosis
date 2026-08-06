@@ -1,0 +1,193 @@
+#!/bin/bash
+#PBS -N trace_rc_her
+#PBS -l select=1:ncpus=14:ngpus=2:mem=160gb:gpu_model=H200
+#PBS -l walltime=05:58:00
+#PBS -j oe
+#PBS -m n
+
+set -Eeuo pipefail
+umask 077
+
+HOME_ROOT="/home/${USER}"
+PROJECT="${HOME_ROOT}/trace_rc_route"
+PROBE="${HOME_ROOT}/probe_route"
+SICR="${HOME_ROOT}/sicr_route"
+CAVER="${HOME_ROOT}/caver_route"
+SCRATCH_ROOT="/srv/scratch/${USER}/sicr"
+DATA_ROOT="${SCRATCH_ROOT}/data/herbench_lite_v2"
+RUN_ROOT="${SCRATCH_ROOT}/trace_rc_herbench"
+RESULT_ROOT="${RUN_ROOT}/results"
+STATE_ROOT="${RUN_ROOT}/state"
+LOG_ROOT="${RUN_ROOT}/logs"
+ANALYSIS_ROOT="${PROJECT}/results_fresh/herbench_confirmation/${PBS_JOBID:-manual}"
+MANIFEST="${PROJECT}/input/herbench_lite_v2_inference.jsonl"
+PILOT_LABELS="${PROJECT}/input/pilot_labels.csv"
+TEST_LABELS="${PROJECT}/input/sealed_test_labels.csv"
+PRELOCK="${PROJECT}/input/preinference_split_lock.json"
+SEAL="${PROJECT}/HERBENCH_PREINFERENCE_SEAL_20260802.json"
+STOP_FILE="${STATE_ROOT}/GRACEFUL_STOP_REQUESTED"
+PROGRESS_LOG="${LOG_ROOT}/progress.${PBS_JOBID:-manual}.tsv"
+QWEN_ENV="${SCRATCH_ROOT}/envs/qwen-smoke"
+LLAVA_ENV="${SCRATCH_ROOT}/envs/llava-ov2"
+mkdir -p "${RESULT_ROOT}" "${STATE_ROOT}" "${LOG_ROOT}" "${ANALYSIS_ROOT}"
+rm -f "${STOP_FILE}"
+exec > >(tee -a "${LOG_ROOT}/bundle.${PBS_JOBID:-manual}.log") 2>&1
+
+progress() {
+  printf '%s\t%s\t%s\n' "$(date -u +%Y-%m-%dT%H:%M:%SZ)" "$1" "$2" | tee -a "${PROGRESS_LOG}"
+}
+
+# Leave eighteen minutes for final checkpoints and hashes if inference is slow.
+( sleep $((5 * 3600 + 40 * 60)); echo "reason=walltime_guard" > "${STOP_FILE}" ) &
+WATCHDOG_PID=$!
+PIDS=()
+cleanup() {
+  kill "${WATCHDOG_PID:-0}" 2>/dev/null || true
+  for pid in "${PIDS[@]:-}"; do kill "${pid}" 2>/dev/null || true; done
+  sync
+}
+trap cleanup EXIT
+
+module purge
+module load python/3.10.8
+module load cuda/12.8.0
+export HF_HOME="${SCRATCH_ROOT}/huggingface"
+export HF_HUB_CACHE="${HF_HOME}/hub"
+export TOKENIZERS_PARALLELISM=false PYTHONUNBUFFERED=1 PYTHONDONTWRITEBYTECODE=1
+export OMP_NUM_THREADS=4
+
+progress preflight START
+test -s "${DATA_ROOT}/PREP_COMPLETE.json"
+test -s "${MANIFEST}" && test -s "${PILOT_LABELS}" && test -s "${TEST_LABELS}"
+test -s "${PRELOCK}" && test -s "${SEAL}"
+source "${QWEN_ENV}/bin/activate"
+python - "${MANIFEST}" "${PRELOCK}" "${SEAL}" <<'PY'
+import hashlib, json, sys
+from pathlib import Path
+manifest, prelock, seal = map(Path, sys.argv[1:])
+rows = [json.loads(line) for line in manifest.read_text(encoding="utf-8").splitlines() if line.strip()]
+lock = json.loads(prelock.read_text(encoding="utf-8"))
+frozen = json.loads(seal.read_text(encoding="utf-8"))
+assert len(rows) == 1971 and len({row["video_id"] for row in rows}) == 68
+assert {row["role"] for row in rows} == {"calibration", "test"}
+assert all("answer" not in row and "gold" not in row for row in rows)
+assert all(Path(row["video_path"]).is_file() for row in rows)
+sha = hashlib.sha256(manifest.read_bytes()).hexdigest()
+assert sha == lock["manifest_sha256"] == frozen["manifest_sha256"]
+print("TRACE_RC_LABEL_BLIND_PREFLIGHT_PASS", len(rows), sha)
+PY
+deactivate
+nvidia-smi
+df -h "${SCRATCH_ROOT}"
+progress preflight PASS
+
+run_backend() {
+  local backend="$1" env_root="$2" cuda_device="$3"
+  local output="${RESULT_ROOT}/${backend}_predictions.jsonl"
+  local state="${STATE_ROOT}/${backend}"
+  source "${env_root}/bin/activate"
+  CUDA_VISIBLE_DEVICES="${cuda_device}" python -u "${PROJECT}/katana/herbench_multimodel_runner.py" \
+    --backend "${backend}" --manifest "${MANIFEST}" \
+    --output "${output}" --state-dir "${state}" \
+    --output-prefix "herbench-${backend}" --resume \
+    --checkpoint-every 10 --stop-file "${STOP_FILE}" \
+    > >(tee -a "${LOG_ROOT}/${backend}.${PBS_JOBID:-manual}.log") 2>&1 &
+  local pid=$!
+  deactivate
+  PIDS+=("${pid}")
+  progress "${backend}_inference" "START_pid_${pid}"
+}
+
+wait_wave() {
+  local wave="$1"
+  while true; do
+    alive=0
+    status=""
+    for backend in qwen internvl llava; do
+      output="${RESULT_ROOT}/${backend}_predictions.jsonl"
+      lines=0
+      [[ -s "${output}" ]] && lines=$(wc -l < "${output}")
+      status="${status}${backend}:${lines}/7884 "
+    done
+    for pid in "${PIDS[@]}"; do
+      kill -0 "${pid}" 2>/dev/null && alive=$((alive + 1))
+    done
+    progress "${wave}" "RUNNING_${alive}_${status}"
+    (( alive > 0 )) || break
+    sleep 60
+  done
+
+  set +e
+  FAIL=0
+  for pid in "${PIDS[@]}"; do
+    wait "${pid}"
+    rc=$?
+    (( rc == 0 )) || FAIL=1
+  done
+  set -e
+  PIDS=()
+  (( FAIL == 0 )) || { progress "${wave}" FAILED; exit 75; }
+  progress "${wave}" PASS
+}
+
+# Two GPUs shorten the queue substantially.  The question set and four views
+# are unchanged: Qwen and InternVL run together, then LLaVA resumes on GPU 0
+# within the same PBS allocation.
+run_backend qwen "${QWEN_ENV}" 0
+run_backend internvl "${QWEN_ENV}" 1
+wait_wave inference_wave_1
+
+run_backend llava "${LLAVA_ENV}" 0
+wait_wave inference_wave_2
+
+for backend in qwen internvl llava; do
+  [[ "$(wc -l < "${RESULT_ROOT}/${backend}_predictions.jsonl")" == "7884" ]]
+done
+progress inference PASS
+
+source "${QWEN_ENV}/bin/activate"
+cd "${PROJECT}/src"
+COMMON_ARGS=(
+  --feature "${SICR}/results_fresh/safe_sirc_confirmation/8901064.kman.restech.unsw.edu.au/multidataset_features.csv"
+  --feature "${CAVER}/results_fresh/mvbench_confirmation/8904763.kman.restech.unsw.edu.au/mvbench_caver_features.csv"
+  --development-result "${SICR}/results/katana_phase2/qwen3_vl_4b_predictions.jsonl"
+  --development-result "${SICR}/results/katana_phase2/internvl3_5_4b_predictions.jsonl"
+  --development-result "${SICR}/results_fresh/public_inference/8900849.kman.restech.unsw.edu.au/nextgqa_llava/llava_ov2_8b_predictions.jsonl"
+  --development-result "${SICR}/results_fresh/public_inference/8900849.kman.restech.unsw.edu.au/star_three_model/qwen_predictions.jsonl"
+  --development-result "${SICR}/results_fresh/public_inference/8900849.kman.restech.unsw.edu.au/star_three_model/internvl_predictions.jsonl"
+  --development-result "${SICR}/results_fresh/public_inference/8900849.kman.restech.unsw.edu.au/star_three_model/llava_predictions.jsonl"
+  --development-result "${CAVER}/results_fresh/mvbench_inference/8904762.kman.restech.unsw.edu.au/qwen_predictions.jsonl"
+  --development-result "${CAVER}/results_fresh/mvbench_inference/8904762.kman.restech.unsw.edu.au/internvl_predictions.jsonl"
+  --development-result "${CAVER}/results_fresh/mvbench_inference/8904762.kman.restech.unsw.edu.au/llava_predictions.jsonl"
+  --development-result "${SICR}/results_fresh/rava_vhd_confirmation/8905351.kman.restech.unsw.edu.au/qwen_predictions.jsonl"
+  --development-result "${SICR}/results_fresh/rava_vhd_confirmation/8905351.kman.restech.unsw.edu.au/internvl_predictions.jsonl"
+  --development-result "${SICR}/results_fresh/rava_vhd_confirmation/8905351.kman.restech.unsw.edu.au/llava_predictions.jsonl"
+  --development-result "${SICR}/results_fresh/prave_tempcompass_confirmation/8905479.kman.restech.unsw.edu.au/qwen_predictions.jsonl"
+  --development-result "${SICR}/results_fresh/prave_tempcompass_confirmation/8905479.kman.restech.unsw.edu.au/internvl_predictions.jsonl"
+  --development-result "${SICR}/results_fresh/prave_tempcompass_confirmation/8905479.kman.restech.unsw.edu.au/llava_predictions.jsonl"
+  --target-result "${RESULT_ROOT}/qwen_predictions.jsonl"
+  --target-result "${RESULT_ROOT}/internvl_predictions.jsonl"
+  --target-result "${RESULT_ROOT}/llava_predictions.jsonl"
+  --vhd-scored "${PROBE}/input/development_scored/vhd_scored_predictions.csv"
+  --temp-scored "${PROBE}/input/development_scored/tempcompass_scored_predictions.csv"
+  --manifest "${MANIFEST}" --preinference-lock "${PRELOCK}"
+  --output-dir "${ANALYSIS_ROOT}"
+)
+
+progress pilot_analysis START
+python -u analyze_herbench_trace_rc.py pilot "${COMMON_ARGS[@]}" \
+  --pilot-labels "${PILOT_LABELS}" --bootstrap-iterations 2000 --alpha 0.05
+progress pilot_analysis PASS
+
+progress final_analysis START
+python -u analyze_herbench_trace_rc.py final "${COMMON_ARGS[@]}" \
+  --test-labels "${TEST_LABELS}" --final-iterations 10000
+progress final_analysis PASS
+deactivate
+
+sha256sum "${RESULT_ROOT}"/*_predictions.jsonl > "${ANALYSIS_ROOT}/raw_predictions.sha256"
+cp -p "${PRELOCK}" "${SEAL}" "${ANALYSIS_ROOT}/"
+find "${ANALYSIS_ROOT}" -type f ! -name archive.sha256 -print0 | sort -z | xargs -0 sha256sum > "${ANALYSIS_ROOT}/archive.sha256"
+kill "${WATCHDOG_PID}" 2>/dev/null || true
+progress bundle PASS
+echo "TRACE_RC_HERBENCH_BUNDLE_PASS ${ANALYSIS_ROOT}"

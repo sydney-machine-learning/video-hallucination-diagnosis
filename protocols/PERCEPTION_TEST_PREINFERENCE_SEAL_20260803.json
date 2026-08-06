@@ -1,0 +1,109 @@
+{
+  "annotation_sha256": "174d3fa7ffa0958ae1d61311f85747dd5d0a9ae3d1e21c504dd4a47e723f78c3",
+  "confirmation_gate": {
+    "at_least_one_environment_promoted": true,
+    "bootstrap_seed": 20260803,
+    "final_bootstrap_iterations": 10000,
+    "macro_relative_aurc_gain_percent_at_least": 1.0,
+    "video_grouped_95ci_lower_above_zero": true,
+    "worst_model_gain_percent_at_least": -1.0
+  },
+  "created_date": "2026-08-03",
+  "cut_mapping_sha256": "3cd9ae2d56f28ba70fa80ccca04aca6481ebab1bf1099f3aabe92afad89a67f7",
+  "dataset": "Google DeepMind Perception Test validation, deterministic 500-video subset",
+  "dataset_repository": "google-deepmind/perception_test",
+  "dataset_revision": "3938d2f1ba3a6b502025741cea4cd73c7b3bdfaf",
+  "execution": {
+    "analysis_inside_same_allocation": true,
+    "checkpointed": true,
+    "gpu_model": "H200",
+    "gpus": 4,
+    "schedule": "Qwen, InternVL, and two disjoint LLaVA halves run concurrently",
+    "single_gpu_pbs_allocation": true,
+    "walltime": "05:58:00"
+  },
+  "failed_gate_must_be_retained": true,
+  "manifest_sha256": "614862e5fd8ec344cf2cdcd76f1b18dbf5192567f23021dea0d9744982fcc389",
+  "model_panel": {
+    "internvl": [
+      "OpenGVLab/InternVL3_5-14B-Instruct",
+      "72c82460a2c05a3bc2b47be230c44edc88e86ed4"
+    ],
+    "llava": [
+      "lmms-lab-encoder/LLaVA-OneVision-2-8B-Instruct",
+      "802f16c8346a062fef7ddf92b2bd64a770a50a1a"
+    ],
+    "qwen": [
+      "Qwen/Qwen3-VL-8B-Instruct",
+      "0c351dd01ed87e9c1b53cbc748cba10e6187ff3b"
+    ]
+  },
+  "parent_herbench_confirmation": {
+    "macro_gain_percent": 16.64463892977936,
+    "path": "results/herbench_confirmation/8918264.kman.restech.unsw.edu.au/confirmation_gate.json",
+    "sha256": "d45e0fff8978ee1183d4241e6096e74add50c271e2694e85414ed8386bf974c4"
+  },
+  "pilot_labels_sha256": "eb60c3ef1dc0e8162b742d03f04e452b7255e690844ec96dd3fc27bbe2f08e6a",
+  "promotion": {
+    "candidate_lower_bound_margins_percent": {
+      "source_trace_hgb": 0.5,
+      "target_logistic": 0.0
+    },
+    "candidates": [
+      "source_trace_hgb",
+      "target_logistic"
+    ],
+    "familywise_alpha": 0.05,
+    "rejection_action": "pointwise raw-confidence fallback",
+    "video_grouped_bootstrap_iterations": 2000
+  },
+  "route_fixed_before_dataset_inference": true,
+  "schema_version": "trace-rc-perception-test-preinference-seal-1.0",
+  "sealed_test_labels_sha256": "f37f1e50e6e0df98be4802073a1884e3c447d1ad48d4179dfd598fbaaeefc952",
+  "selected_video_ids_sha256": "5813a8e28485bd2bc053f47ba30473762da73fb269f38fdbead898e83bdb36ec",
+  "selection": {
+    "frame": "all 5,260 official validation videos with MCQA annotations",
+    "method": "first 500 video IDs under a salted SHA-256 order",
+    "salt": "trace-rc-perception-test-valid500-selection-20260803",
+    "uses_question_text_options_or_answers": false
+  },
+  "source_hashes": {
+    "METHOD_SPEC.md": "47ccb5753fbea18e6cadba06fc8133870af12ccfa48472d24e060d30b12db995",
+    "PREINFERENCE_AMENDMENT_20260803_FOUR_GPU.json": "31b5ff5f3a55f86c635e429662906a2f3781396ffde67a6a4a734328cd73252a",
+    "PREINFERENCE_AMENDMENT_20260803_POSIX_PATH.json": "f9705e72bd6b38cde4e950519a7f2a3704401b6186f334c3eb1660d81945b2c5",
+    "input/perception_test/frozen/perception_test_valid500_inference.jsonl": "614862e5fd8ec344cf2cdcd76f1b18dbf5192567f23021dea0d9744982fcc389",
+    "input/perception_test/frozen/preinference_split_lock.json": "4fef8a1265e460e8023a8432fa9528c80772728a289e25fe4f16f16f049ae5c1",
+    "input/perception_test/frozen/selected_video_ids.txt": "5813a8e28485bd2bc053f47ba30473762da73fb269f38fdbead898e83bdb36ec",
+    "katana/herbench_multimodel_runner.py": "d768649e14b5470ceee10ad119f175f35ee836a0784f8a3867eeab166dbdf641",
+    "katana/merge_perception_halves.py": "ce076fcdffab3c17a2471db78bf8bc73f3b71a010b8e24bd0e3a74cc4219fec3",
+    "katana/perception_head_half_runner.py": "79576dfcefe91b97dc1f80e9e7a4f07a7522bef2f74b1c277382042c89666edc",
+    "katana/perception_multimodel_runner.py": "8be3d3d47c889b40e3331d8dd748fd1dc1a94c84e295d708a633afc052650e55",
+    "katana/perception_tail_half_runner.py": "5a215f78a2016a782e05d88b926004918ca9aa446f7075d16b36ae1dc282ab93",
+    "katana/prepare_perception_valid500.pbs": "9cad04f1ee58ffaa4453fce2516a4d1f50d894d9f95c3db12a155efcd56ead59",
+    "katana/run_perception_valid500.pbs": "82a62d8e21e4f0987facf5b8003416ff26c0f3ffe1bd501a63f1a6568573505d",
+    "src/analyze_herbench_trace_rc.py": "4c2790d59381d6bb30f19bca6d019cf5aa86e467948b0e20154e155618d3c8ba",
+    "src/analyze_perception_trace_rc.py": "240dd1676a923a3ab8cb21867ca008368ca62cb317228c2c26aa0e7c8666dac1",
+    "src/build_perception_test_manifest.py": "99e93dc8b6b2200d2e39d030c40e98009d02624b226632b4f8f30b98d7337d64",
+    "src/evaluate_v2_target_pilot.py": "7bfb3c932ceec54b0e71bc5a3dd3b8385cb3a56ade3d3c861db5c180ec403730",
+    "src/extract_remote_zip_subset.py": "f6bf18fc882f461a1cba1073b9bc7806503d0325928b15a3356ca2e86df1edb0",
+    "src/freeze_perception_protocol.py": "2cfb931c7596a1ec57df8a0c74698c54fb87840610f184d02fb0858fff78eceb",
+    "src/verify_perception_media.py": "d266020cca67043fc9c40a2d8d3a384f7c3dfb2712c8a7a77fe1b5f0ea63619e",
+    "src/verify_perception_seal.py": "d208f58b090f41ab9b04b865e67953a5b5e984fd839ac5514ab5088a87183533"
+  },
+  "split": {
+    "calibration_questions": 977,
+    "calibration_videos": 250,
+    "grouping_unit": "source video",
+    "method": "salted SHA-256 order",
+    "salt": "trace-rc-perception-test-valid500-role-split-20260803",
+    "test_questions": 911,
+    "test_videos": 250
+  },
+  "test_labels_must_not_be_passed_to_pilot_phase": true,
+  "views": {
+    "base": 16,
+    "dense_acquisition": 24,
+    "invariant_nuisance": 8,
+    "temporal_order_destruction": 8
+  }
+}

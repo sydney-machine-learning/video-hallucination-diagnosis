@@ -1,0 +1,42 @@
+#!/bin/bash
+#PBS -N trc_hb_cache
+#PBS -l select=1:ncpus=4:mem=16gb
+#PBS -l walltime=03:00:00
+#PBS -j oe
+#PBS -m n
+
+set -Eeuo pipefail
+umask 077
+
+SCRATCH_ROOT="/srv/scratch/${USER}/sicr"
+QWEN_ENV="${SCRATCH_ROOT}/envs/qwen-smoke"
+export HF_HOME="${SCRATCH_ROOT}/huggingface"
+export HF_HUB_CACHE="${HF_HOME}/hub"
+export HF_HUB_ENABLE_HF_TRANSFER=0
+export PYTHONUNBUFFERED=1
+
+module purge
+module load python/3.10.8
+source "${QWEN_ENV}/bin/activate"
+
+python - <<'PY'
+from huggingface_hub import snapshot_download
+
+LOCKED = {
+    "Qwen/Qwen3-VL-8B-Instruct":
+        "0c351dd01ed87e9c1b53cbc748cba10e6187ff3b",
+    "OpenGVLab/InternVL3_5-14B-Instruct":
+        "72c82460a2c05a3bc2b47be230c44edc88e86ed4",
+}
+
+for model_id, revision in LOCKED.items():
+    print("PREFETCH_START", model_id, revision, flush=True)
+    path = snapshot_download(repo_id=model_id, revision=revision)
+    print("PREFETCH_PASS", model_id, path, flush=True)
+print("HERBENCH_MODEL_PREFETCH_PASS", len(LOCKED), flush=True)
+PY
+
+deactivate
+du -sh "${HF_HUB_CACHE}"/models--Qwen--Qwen3-VL-8B-Instruct \
+  "${HF_HUB_CACHE}"/models--OpenGVLab--InternVL3_5-14B-Instruct
+df -h "${SCRATCH_ROOT}"

@@ -1,0 +1,24 @@
+{
+  "bootstrap_iterations": 10000,
+  "bootstrap_seed": 20260802,
+  "checks": {
+    "all_rejections_exact_fallback": true,
+    "at_least_one_environment_promoted": true,
+    "grouped_ci_lower_above_zero": true,
+    "macro_gain_at_least_one_percent": true,
+    "worst_model_gain_at_least_minus_one_percent": true
+  },
+  "macro_mean_relative_aurc_reduction_percent": 16.64463892977936,
+  "models": 3,
+  "primary_gate_pass": true,
+  "promoted_environments": 3,
+  "schema_version": "trace-rc-herbench-confirmation-gate-1.0",
+  "target_dataset": "HERBench-Lite-v2",
+  "test_questions": 963,
+  "test_videos": 34,
+  "video_grouped_bootstrap_95ci_percent": [
+    12.121000036072816,
+    22.609653039294535
+  ],
+  "worst_model_gain_percent": 11.392735373594022
+}

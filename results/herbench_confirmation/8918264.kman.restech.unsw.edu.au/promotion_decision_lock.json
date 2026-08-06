@@ -1,0 +1,45 @@
+{
+  "bootstrap_iterations": 2000,
+  "candidate_library": [
+    "source_trace_hgb",
+    "target_logistic"
+  ],
+  "candidate_lower_bound_margins_percent": {
+    "source_trace_hgb": 0.5,
+    "target_logistic": 0.0
+  },
+  "decisions": {
+    "OpenGVLab/InternVL3_5-14B-Instruct": {
+      "model_family": "internvl",
+      "multiplicity_adjusted_lower_bound_percent": 6.78369314134238,
+      "pilot_gain_percent": 12.703781663386708,
+      "pilot_questions": 1008,
+      "pilot_videos": 34,
+      "selected": "target_logistic"
+    },
+    "Qwen/Qwen3-VL-8B-Instruct": {
+      "model_family": "qwen",
+      "multiplicity_adjusted_lower_bound_percent": 23.198037569811877,
+      "pilot_gain_percent": 31.39452963773616,
+      "pilot_questions": 1008,
+      "pilot_videos": 34,
+      "selected": "target_logistic"
+    },
+    "lmms-lab-encoder/LLaVA-OneVision-2-8B-Instruct": {
+      "model_family": "llava",
+      "multiplicity_adjusted_lower_bound_percent": 4.8661498659240525,
+      "pilot_gain_percent": 12.252639373789684,
+      "pilot_questions": 1008,
+      "pilot_videos": 34,
+      "selected": "target_logistic"
+    }
+  },
+  "familywise_alpha": 0.05,
+  "manifest_sha256": "c889297f86d764f762de9abe4323a108f2350cc079f0f28e311a4f7df6286c90",
+  "model_bundle_sha256": "f4fbf6c2e07186e6fe8a570d76b70e19eb9388fe85b4084e9e0b44e9f12e113a",
+  "phase": "pilot_complete_before_test_label_opening",
+  "pilot_labels_sha256": "318635c71b52dcbd298112ad20e94af6366d0d01257874e9f9ae4ec22162d212",
+  "schema_version": "trace-rc-herbench-promotion-lock-1.0",
+  "sealed_test_labels_sha256_from_prelock": "de8d2fe41b29697956341c114ff0243a76725293c43c5877a9752c9496367c34",
+  "target_dataset": "HERBench-Lite-v2"
+}

@@ -1,0 +1,37 @@
+model_id,task,n,accuracy,relative_aurc_reduction_percent
+OpenGVLab/InternVL3_5-14B-Instruct,Action Counting,65,0.5692307692307692,53.54040065548092
+OpenGVLab/InternVL3_5-14B-Instruct,Action Sequence Integrity Identification,72,0.6388888888888888,12.426066404304528
+OpenGVLab/InternVL3_5-14B-Instruct,Appearance-Grounded Attribute Recognition,15,0.7333333333333333,44.8423565885948
+OpenGVLab/InternVL3_5-14B-Instruct,Appearance-Grounded Behavior & Interactions,44,0.9318181818181818,18.482635051672247
+OpenGVLab/InternVL3_5-14B-Instruct,Appearance-Grounded Localization & Trajectory,91,0.7582417582417582,37.10694250062348
+OpenGVLab/InternVL3_5-14B-Instruct,False Action Memory,75,0.56,-13.479847649997808
+OpenGVLab/InternVL3_5-14B-Instruct,False Object Memory,76,0.4868421052631579,6.9355447969435176
+OpenGVLab/InternVL3_5-14B-Instruct,Multi-Entities Grounding and Localization,111,0.27927927927927926,-1.5594024302887022
+OpenGVLab/InternVL3_5-14B-Instruct,Multi-Person Duration Reasoning,95,0.3894736842105263,-9.965393339591762
+OpenGVLab/InternVL3_5-14B-Instruct,Region Localized People Counting,78,0.3333333333333333,0.8915035477413358
+OpenGVLab/InternVL3_5-14B-Instruct,Scene Verification & Arrangement,164,0.2073170731707317,10.159172501978514
+OpenGVLab/InternVL3_5-14B-Instruct,Temporal Shot Ordering,77,0.4675324675324675,16.838253139597168
+Qwen/Qwen3-VL-8B-Instruct,Action Counting,65,0.7846153846153846,78.90563529704244
+Qwen/Qwen3-VL-8B-Instruct,Action Sequence Integrity Identification,72,0.7083333333333334,8.188923829212722
+Qwen/Qwen3-VL-8B-Instruct,Appearance-Grounded Attribute Recognition,15,0.8,45.61976175309966
+Qwen/Qwen3-VL-8B-Instruct,Appearance-Grounded Behavior & Interactions,44,0.8863636363636364,46.326982881272336
+Qwen/Qwen3-VL-8B-Instruct,Appearance-Grounded Localization & Trajectory,91,0.8241758241758241,31.156009738855694
+Qwen/Qwen3-VL-8B-Instruct,False Action Memory,75,0.4533333333333333,17.769429345817528
+Qwen/Qwen3-VL-8B-Instruct,False Object Memory,76,0.3684210526315789,36.70109000033885
+Qwen/Qwen3-VL-8B-Instruct,Multi-Entities Grounding and Localization,111,0.2072072072072072,-0.6170678539761499
+Qwen/Qwen3-VL-8B-Instruct,Multi-Person Duration Reasoning,95,0.3894736842105263,10.0449316503093
+Qwen/Qwen3-VL-8B-Instruct,Region Localized People Counting,78,0.3717948717948718,20.009675431563785
+Qwen/Qwen3-VL-8B-Instruct,Scene Verification & Arrangement,164,0.4817073170731707,-45.320316938850254
+Qwen/Qwen3-VL-8B-Instruct,Temporal Shot Ordering,77,0.0,0.0
+lmms-lab-encoder/LLaVA-OneVision-2-8B-Instruct,Action Counting,65,0.7692307692307693,-3.5493632495172838
+lmms-lab-encoder/LLaVA-OneVision-2-8B-Instruct,Action Sequence Integrity Identification,72,0.5555555555555556,38.59753387139463
+lmms-lab-encoder/LLaVA-OneVision-2-8B-Instruct,Appearance-Grounded Attribute Recognition,15,0.8,71.91811032832388
+lmms-lab-encoder/LLaVA-OneVision-2-8B-Instruct,Appearance-Grounded Behavior & Interactions,44,0.8863636363636364,16.112657151147776
+lmms-lab-encoder/LLaVA-OneVision-2-8B-Instruct,Appearance-Grounded Localization & Trajectory,91,0.8021978021978022,14.619134549002199
+lmms-lab-encoder/LLaVA-OneVision-2-8B-Instruct,False Action Memory,75,0.5066666666666667,33.117181398023604
+lmms-lab-encoder/LLaVA-OneVision-2-8B-Instruct,False Object Memory,76,0.5263157894736842,19.01085159909061
+lmms-lab-encoder/LLaVA-OneVision-2-8B-Instruct,Multi-Entities Grounding and Localization,111,0.2972972972972973,-0.41662635416113253
+lmms-lab-encoder/LLaVA-OneVision-2-8B-Instruct,Multi-Person Duration Reasoning,95,0.30526315789473685,8.805898739309383
+lmms-lab-encoder/LLaVA-OneVision-2-8B-Instruct,Region Localized People Counting,78,0.3076923076923077,1.887709051153635
+lmms-lab-encoder/LLaVA-OneVision-2-8B-Instruct,Scene Verification & Arrangement,164,0.47560975609756095,-20.634820816850013
+lmms-lab-encoder/LLaVA-OneVision-2-8B-Instruct,Temporal Shot Ordering,77,0.09090909090909091,9.949954077141593

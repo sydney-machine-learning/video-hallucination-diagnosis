@@ -1,0 +1,40 @@
+#!/bin/bash
+#PBS -N trc_pt_prep
+#PBS -l select=1:ncpus=2:mem=8gb
+#PBS -l walltime=01:58:00
+#PBS -j oe
+#PBS -m n
+
+set -Eeuo pipefail
+umask 077
+
+PROJECT="/home/${USER}/trace_rc_route"
+SCRATCH="/srv/scratch/${USER}/sicr"
+INPUT="${PROJECT}/input/perception_test/frozen"
+DATA_ROOT="${SCRATCH}/data/perception_test_valid500"
+VIDEO_ROOT="${DATA_ROOT}/videos"
+INVENTORY="${DATA_ROOT}/media_inventory.json"
+PREP_COMPLETE="${DATA_ROOT}/PREP_COMPLETE.json"
+ENV_ROOT="${SCRATCH}/envs/qwen-smoke"
+URL="https://storage.googleapis.com/dm-perception-test/zip_data/valid_videos.zip"
+
+module purge
+module load python/3.10.8
+source "${ENV_ROOT}/bin/activate"
+export PYTHONUNBUFFERED=1 PYTHONDONTWRITEBYTECODE=1
+mkdir -p "${VIDEO_ROOT}"
+
+python -u "${PROJECT}/src/extract_remote_zip_subset.py" \
+  --url "${URL}" \
+  --selected-ids "${INPUT}/selected_video_ids.txt" \
+  --output-dir "${VIDEO_ROOT}" \
+  --inventory "${INVENTORY}"
+
+python -u "${PROJECT}/src/verify_perception_media.py" \
+  --manifest "${INPUT}/perception_test_valid500_inference.jsonl" \
+  --inventory "${INVENTORY}" \
+  --output "${PREP_COMPLETE}"
+
+deactivate
+df -h "${SCRATCH}"
+echo "TRACE_RC_PERCEPTION_PREP_PASS ${PREP_COMPLETE}"

@@ -1,0 +1,121 @@
+#!/bin/bash
+#PBS -N trace_rc_prep
+#PBS -l select=1:ncpus=4:mem=32gb
+#PBS -l walltime=11:58:00
+#PBS -j oe
+#PBS -m n
+
+set -Eeuo pipefail
+umask 077
+
+HOME_ROOT="/home/${USER}"
+PROJECT="${HOME_ROOT}/trace_rc_route"
+SCRATCH_ROOT="/srv/scratch/${USER}/sicr"
+DATA_ROOT="${SCRATCH_ROOT}/data/herbench_lite_v2"
+PART_ROOT="${DATA_ROOT}/archive_parts"
+META_ROOT="${SCRATCH_ROOT}/data/herbench_lite_v2_metadata"
+HF_HOME="${SCRATCH_ROOT}/huggingface"
+HF_HUB_CACHE="${HF_HOME}/hub"
+QWEN_ENV="${SCRATCH_ROOT}/envs/qwen-smoke"
+LOG_ROOT="${SCRATCH_ROOT}/trace_rc_herbench/logs"
+MARKER="${DATA_ROOT}/PREP_COMPLETE.json"
+mkdir -p "${DATA_ROOT}" "${PART_ROOT}" "${LOG_ROOT}"
+exec > >(tee -a "${LOG_ROOT}/prep.${PBS_JOBID:-manual}.log") 2>&1
+
+module purge
+module load python/3.10.8
+export HF_HOME HF_HUB_CACHE HF_HUB_ENABLE_HF_TRANSFER=0
+export TOKENIZERS_PARALLELISM=false PYTHONUNBUFFERED=1
+
+echo "PREP_START $(date -u +%Y-%m-%dT%H:%M:%SZ)"
+df -h "${SCRATCH_ROOT}"
+
+download_part() {
+  local index="$1"
+  part="videos.tar.part.${index}"
+  expected=$(awk -v name="${part}" '$2 == name {print $1}' "${META_ROOT}/videos.tar.checksums.txt")
+  test -n "${expected}"
+  path="${PART_ROOT}/${part}"
+  if [[ ! -s "${path}" ]] || [[ "$(sha256sum "${path}" | cut -d' ' -f1)" != "${expected}" ]]; then
+    rm -f "${path}"
+    if [[ ! -s "${path}.part" ]] || [[ "$(sha256sum "${path}.part" | cut -d' ' -f1)" != "${expected}" ]]; then
+      curl --location --fail --show-error --retry 12 --retry-delay 15 \
+        --continue-at - --output "${path}.part" \
+        "https://huggingface.co/datasets/DanBenAmi/HERBench/resolve/30b42e97180f2c7c0fdc3f2aed412ae04f0366ca/videos/${part}?download=true"
+    fi
+    mv "${path}.part" "${path}"
+  fi
+  [[ "$(sha256sum "${path}" | cut -d' ' -f1)" == "${expected}" ]]
+  echo "PART_PASS ${part} $(stat -c '%s' "${path}")"
+}
+
+# The four official parts are independent and individually checksum-pinned.
+# Parallel acquisition avoids wasting a 12-hour allocation on serial network
+# latency; the existing .part file is resumed after a preparation-job retry.
+download_pids=()
+for index in 00 01 02 03; do
+  download_part "${index}" &
+  download_pids+=("$!")
+done
+download_fail=0
+for pid in "${download_pids[@]}"; do
+  wait "${pid}" || download_fail=1
+done
+(( download_fail == 0 ))
+
+echo "EXTRACT_START $(date -u +%Y-%m-%dT%H:%M:%SZ)"
+cat "${PART_ROOT}"/videos.tar.part.{00..03} | tar -xf - -C "${DATA_ROOT}"
+python - "${PROJECT}/input/herbench_lite_v2_inference.jsonl" <<'PY'
+import json, sys
+from pathlib import Path
+manifest = Path(sys.argv[1])
+rows = [json.loads(line) for line in manifest.read_text(encoding="utf-8").splitlines() if line.strip()]
+paths = sorted({Path(row["video_path"]) for row in rows})
+missing = [str(path) for path in paths if not path.is_file()]
+if missing:
+    raise SystemExit(f"missing {len(missing)} HERBench videos; first={missing[:5]}")
+if len(rows) != 1971 or len(paths) != 68:
+    raise SystemExit(f"unexpected manifest inventory rows={len(rows)} videos={len(paths)}")
+print("HERBENCH_MEDIA_PASS", len(rows), len(paths), sum(path.stat().st_size for path in paths))
+PY
+
+# Parts are public, checksum-verified staging files and are recoverable from
+# the pinned release.  Delete them only after every sealed manifest path exists.
+rm -f "${PART_ROOT}"/videos.tar.part.{00..03}
+rmdir "${PART_ROOT}" 2>/dev/null || true
+df -h "${SCRATCH_ROOT}"
+
+source "${QWEN_ENV}/bin/activate"
+python - <<'PY'
+from huggingface_hub import snapshot_download
+models = {
+    "Qwen/Qwen3-VL-8B-Instruct": "0c351dd01ed87e9c1b53cbc748cba10e6187ff3b",
+    "OpenGVLab/InternVL3_5-14B-Instruct": "72c82460a2c05a3bc2b47be230c44edc88e86ed4",
+    "lmms-lab-encoder/LLaVA-OneVision-2-8B-Instruct": "802f16c8346a062fef7ddf92b2bd64a770a50a1a",
+}
+for model_id, revision in models.items():
+    path = snapshot_download(repo_id=model_id, revision=revision)
+    print("MODEL_SNAPSHOT_PASS", model_id, revision, path, flush=True)
+PY
+deactivate
+
+python - "${MARKER}" "${PROJECT}/input/herbench_lite_v2_inference.jsonl" <<'PY'
+import hashlib, json, os, platform, sys
+from datetime import datetime, timezone
+from pathlib import Path
+marker, manifest = map(Path, sys.argv[1:])
+payload = {
+    "schema_version": "trace-rc-herbench-prep-complete-1.0",
+    "created_at_utc": datetime.now(timezone.utc).isoformat(),
+    "hostname": platform.node(),
+    "pbs_jobid": os.environ.get("PBS_JOBID"),
+    "manifest_sha256": hashlib.sha256(manifest.read_bytes()).hexdigest(),
+    "questions": 1971,
+    "videos": 68,
+    "models_prefetched": 3,
+}
+marker.write_text(json.dumps(payload, indent=2, sort_keys=True) + "\n", encoding="utf-8")
+print(json.dumps(payload, indent=2, sort_keys=True))
+PY
+df -h "${SCRATCH_ROOT}"
+echo "TRACE_RC_HERBENCH_PREP_PASS $(date -u +%Y-%m-%dT%H:%M:%SZ)"

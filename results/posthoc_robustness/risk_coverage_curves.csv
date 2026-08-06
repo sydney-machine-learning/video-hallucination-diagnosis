@@ -1,0 +1,115 @@
+dataset,method,coverage,macro_risk
+HERBench,Raw confidence,0.1,0.11340206185567007
+HERBench,Raw confidence,0.15,0.16551724137931034
+HERBench,Raw confidence,0.2,0.21761658031088082
+HERBench,Raw confidence,0.25,0.2517289073305671
+HERBench,Raw confidence,0.3,0.27566320645905423
+HERBench,Raw confidence,0.35,0.3057199211045365
+HERBench,Raw confidence,0.4,0.3290155440414508
+HERBench,Raw confidence,0.45,0.34562211981566815
+HERBench,Raw confidence,0.5,0.37344398340248963
+HERBench,Raw confidence,0.55,0.3949685534591196
+HERBench,Raw confidence,0.6,0.4129181084198385
+HERBench,Raw confidence,0.65,0.42758253461128853
+HERBench,Raw confidence,0.7,0.4409876543209877
+HERBench,Raw confidence,0.75,0.4541263254956201
+HERBench,Raw confidence,0.8,0.4755728491137052
+HERBench,Raw confidence,0.85,0.4863654863654863
+HERBench,Raw confidence,0.9,0.4994232987312572
+HERBench,Raw confidence,0.95,0.5147540983606558
+HERBench,Raw confidence,1.0,0.5264797507788163
+HERBench,Target base graph,0.1,0.04123711340206182
+HERBench,Target base graph,0.15,0.0666666666666667
+HERBench,Target base graph,0.2,0.09499136442141624
+HERBench,Target base graph,0.25,0.1203319502074689
+HERBench,Target base graph,0.3,0.17416378316032297
+HERBench,Target base graph,0.35,0.21794871794871795
+HERBench,Target base graph,0.4,0.25906735751295334
+HERBench,Target base graph,0.45,0.29493087557603687
+HERBench,Target base graph,0.5,0.330567081604426
+HERBench,Target base graph,0.55,0.35471698113207556
+HERBench,Target base graph,0.6,0.3771626297577855
+HERBench,Target base graph,0.65,0.3998935037273695
+HERBench,Target base graph,0.7,0.4217283950617284
+HERBench,Target base graph,0.75,0.4407561088059014
+HERBench,Target base graph,0.8,0.4565499351491569
+HERBench,Target base graph,0.85,0.474969474969475
+HERBench,Target base graph,0.9,0.4940407535563245
+HERBench,Target base graph,0.95,0.5085610200364299
+HERBench,Target base graph,1.0,0.5264797507788163
+HERBench,TRACE-RC,0.1,0.024054982817869403
+HERBench,TRACE-RC,0.15,0.05977011494252874
+HERBench,TRACE-RC,0.2,0.07944732297063906
+HERBench,TRACE-RC,0.25,0.12171507607192256
+HERBench,TRACE-RC,0.3,0.16147635524798154
+HERBench,TRACE-RC,0.35,0.20118343195266267
+HERBench,TRACE-RC,0.4,0.24697754749568224
+HERBench,TRACE-RC,0.45,0.27880184331797236
+HERBench,TRACE-RC,0.5,0.3084370677731674
+HERBench,TRACE-RC,0.55,0.34088050314465407
+HERBench,TRACE-RC,0.6,0.36274509803921573
+HERBench,TRACE-RC,0.65,0.389776357827476
+HERBench,TRACE-RC,0.7,0.411358024691358
+HERBench,TRACE-RC,0.75,0.437989857076994
+HERBench,TRACE-RC,0.8,0.4535235624729788
+HERBench,TRACE-RC,0.85,0.47252747252747246
+HERBench,TRACE-RC,0.9,0.48865820838139173
+HERBench,TRACE-RC,0.95,0.5074681238615665
+HERBench,TRACE-RC,1.0,0.5264797507788163
+Perception Test,Raw confidence,0.1,0.0036231884057971175
+Perception Test,Raw confidence,0.15,0.007299270072992692
+Perception Test,Raw confidence,0.2,0.02003642987249547
+Perception Test,Raw confidence,0.25,0.03508771929824561
+Perception Test,Raw confidence,0.3,0.05474452554744528
+Perception Test,Raw confidence,0.35,0.07314524555903867
+Perception Test,Raw confidence,0.4,0.1004566210045662
+Perception Test,Raw confidence,0.45,0.12357723577235775
+Perception Test,Raw confidence,0.5,0.14839181286549705
+Perception Test,Raw confidence,0.55,0.17330677290836657
+Perception Test,Raw confidence,0.6,0.19804996953077392
+Perception Test,Raw confidence,0.65,0.2209106239460371
+Perception Test,Raw confidence,0.7,0.2366771159874608
+Perception Test,Raw confidence,0.75,0.2524366471734893
+Perception Test,Raw confidence,0.8,0.2684042066758116
+Perception Test,Raw confidence,0.85,0.287741935483871
+Perception Test,Raw confidence,0.9,0.2983739837398374
+Perception Test,Raw confidence,0.95,0.31100846805234794
+Perception Test,Raw confidence,1.0,0.3278448591291621
+Perception Test,Target base graph,0.1,0.0
+Perception Test,Target base graph,0.15,0.0
+Perception Test,Target base graph,0.2,0.0018214936247723152
+Perception Test,Target base graph,0.25,0.007309941520467859
+Perception Test,Target base graph,0.3,0.021897810218978075
+Perception Test,Target base graph,0.35,0.03343782654127481
+Perception Test,Target base graph,0.4,0.042009132420091334
+Perception Test,Target base graph,0.45,0.06829268292682926
+Perception Test,Target base graph,0.5,0.08845029239766085
+Perception Test,Target base graph,0.55,0.11819389110225764
+Perception Test,Target base graph,0.6,0.14381474710542352
+Perception Test,Target base graph,0.65,0.16863406408094436
+Perception Test,Target base graph,0.7,0.18913270637408566
+Perception Test,Target base graph,0.75,0.21198830409356725
+Perception Test,Target base graph,0.8,0.23411065386374028
+Perception Test,Target base graph,0.85,0.2593548387096774
+Perception Test,Target base graph,0.9,0.2821138211382114
+Perception Test,Target base graph,0.95,0.3029253271747498
+Perception Test,Target base graph,1.0,0.3278448591291621
+Perception Test,TRACE-RC,0.1,0.0
+Perception Test,TRACE-RC,0.15,0.0
+Perception Test,TRACE-RC,0.2,0.0018214936247723152
+Perception Test,TRACE-RC,0.25,0.004385964912280715
+Perception Test,TRACE-RC,0.3,0.015815085158150888
+Perception Test,TRACE-RC,0.35,0.03134796238244516
+Perception Test,TRACE-RC,0.4,0.04474885844748858
+Perception Test,TRACE-RC,0.45,0.06260162601626018
+Perception Test,TRACE-RC,0.5,0.08260233918128652
+Perception Test,TRACE-RC,0.55,0.11155378486055778
+Perception Test,TRACE-RC,0.6,0.14320536258379035
+Perception Test,TRACE-RC,0.65,0.17144463181562675
+Perception Test,TRACE-RC,0.7,0.1948798328108673
+Perception Test,TRACE-RC,0.75,0.21393762183235868
+Perception Test,TRACE-RC,0.8,0.23411065386374028
+Perception Test,TRACE-RC,0.85,0.2593548387096774
+Perception Test,TRACE-RC,0.9,0.27967479674796747
+Perception Test,TRACE-RC,0.95,0.30369515011547343
+Perception Test,TRACE-RC,1.0,0.3278448591291621

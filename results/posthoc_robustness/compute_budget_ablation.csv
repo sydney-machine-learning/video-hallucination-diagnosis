@@ -1,0 +1,85 @@
+dataset,audit_family,configuration,panel_models,reference_model,reference_family,roles,model_calls_per_question,model_input_frames_per_question,relative_aurc_reduction_percent
+HERBench,model_panel,Own scalar,InternVL+Qwen+LLaVA,OpenGVLab/InternVL3_5-14B-Instruct,InternVL,base,1,16,-0.0007905565391636229
+HERBench,model_panel,Own scalar,InternVL+Qwen+LLaVA,Qwen/Qwen3-VL-8B-Instruct,Qwen,base,1,16,0.2062887648639836
+HERBench,model_panel,Own scalar,InternVL+Qwen+LLaVA,lmms-lab-encoder/LLaVA-OneVision-2-8B-Instruct,LLaVA,base,1,16,0.610400534315478
+HERBench,model_panel,Three-family base,InternVL+Qwen+LLaVA,OpenGVLab/InternVL3_5-14B-Instruct,InternVL,base,3,48,8.932213760438557
+HERBench,model_panel,Three-family base,InternVL+Qwen+LLaVA,Qwen/Qwen3-VL-8B-Instruct,Qwen,base,3,48,23.16847553658975
+HERBench,model_panel,Three-family base,InternVL+Qwen+LLaVA,lmms-lab-encoder/LLaVA-OneVision-2-8B-Instruct,LLaVA,base,3,48,10.223720029880187
+HERBench,model_panel,Own four views,InternVL,OpenGVLab/InternVL3_5-14B-Instruct,InternVL,base+invariant+addition+removal,4,56,4.416832235500371
+HERBench,model_panel,Own four views,Qwen,Qwen/Qwen3-VL-8B-Instruct,Qwen,base+invariant+addition+removal,4,56,-1.0003580626346105
+HERBench,model_panel,Own four views,LLaVA,lmms-lab-encoder/LLaVA-OneVision-2-8B-Instruct,LLaVA,base+invariant+addition+removal,4,56,1.6160437987057334
+HERBench,model_panel,Two-family four views,InternVL+Qwen,OpenGVLab/InternVL3_5-14B-Instruct,InternVL,base+invariant+addition+removal,8,112,10.095503676851296
+HERBench,model_panel,Two-family four views,InternVL+Qwen,Qwen/Qwen3-VL-8B-Instruct,Qwen,base+invariant+addition+removal,8,112,24.974006054655284
+HERBench,model_panel,Two-family four views,InternVL+LLaVA,OpenGVLab/InternVL3_5-14B-Instruct,InternVL,base+invariant+addition+removal,8,112,9.448835541397697
+HERBench,model_panel,Two-family four views,InternVL+LLaVA,lmms-lab-encoder/LLaVA-OneVision-2-8B-Instruct,LLaVA,base+invariant+addition+removal,8,112,10.65549496006049
+HERBench,model_panel,Two-family four views,Qwen+LLaVA,Qwen/Qwen3-VL-8B-Instruct,Qwen,base+invariant+addition+removal,8,112,17.457740919656924
+HERBench,model_panel,Two-family four views,Qwen+LLaVA,lmms-lab-encoder/LLaVA-OneVision-2-8B-Instruct,LLaVA,base+invariant+addition+removal,8,112,2.740004835946417
+HERBench,model_panel,Three-family four views,InternVL+Qwen+LLaVA,OpenGVLab/InternVL3_5-14B-Instruct,InternVL,base+invariant+addition+removal,12,168,11.392735373594022
+HERBench,model_panel,Three-family four views,InternVL+Qwen+LLaVA,Qwen/Qwen3-VL-8B-Instruct,Qwen,base+invariant+addition+removal,12,168,25.255786805743913
+HERBench,model_panel,Three-family four views,InternVL+Qwen+LLaVA,lmms-lab-encoder/LLaVA-OneVision-2-8B-Instruct,LLaVA,base+invariant+addition+removal,12,168,13.28539461000015
+HERBench,view_panel,Base only,InternVL+Qwen+LLaVA,OpenGVLab/InternVL3_5-14B-Instruct,InternVL,base,3,48,8.932213760438557
+HERBench,view_panel,Base only,InternVL+Qwen+LLaVA,Qwen/Qwen3-VL-8B-Instruct,Qwen,base,3,48,23.16847553658975
+HERBench,view_panel,Base only,InternVL+Qwen+LLaVA,lmms-lab-encoder/LLaVA-OneVision-2-8B-Instruct,LLaVA,base,3,48,10.223720029880187
+HERBench,view_panel,Base + invariant,InternVL+Qwen+LLaVA,OpenGVLab/InternVL3_5-14B-Instruct,InternVL,base+invariant,6,72,10.316092949339257
+HERBench,view_panel,Base + invariant,InternVL+Qwen+LLaVA,Qwen/Qwen3-VL-8B-Instruct,Qwen,base+invariant,6,72,24.819755971810014
+HERBench,view_panel,Base + invariant,InternVL+Qwen+LLaVA,lmms-lab-encoder/LLaVA-OneVision-2-8B-Instruct,LLaVA,base+invariant,6,72,12.296005673671905
+HERBench,view_panel,Base + addition,InternVL+Qwen+LLaVA,OpenGVLab/InternVL3_5-14B-Instruct,InternVL,base+addition,6,120,11.807973777709545
+HERBench,view_panel,Base + addition,InternVL+Qwen+LLaVA,Qwen/Qwen3-VL-8B-Instruct,Qwen,base+addition,6,120,24.781580310936256
+HERBench,view_panel,Base + addition,InternVL+Qwen+LLaVA,lmms-lab-encoder/LLaVA-OneVision-2-8B-Instruct,LLaVA,base+addition,6,120,12.932598368146783
+HERBench,view_panel,Base + removal,InternVL+Qwen+LLaVA,OpenGVLab/InternVL3_5-14B-Instruct,InternVL,base+removal,6,72,8.658025215401677
+HERBench,view_panel,Base + removal,InternVL+Qwen+LLaVA,Qwen/Qwen3-VL-8B-Instruct,Qwen,base+removal,6,72,24.340905887990637
+HERBench,view_panel,Base + removal,InternVL+Qwen+LLaVA,lmms-lab-encoder/LLaVA-OneVision-2-8B-Instruct,LLaVA,base+removal,6,72,11.431307923149813
+HERBench,view_panel,Base + invariant + addition,InternVL+Qwen+LLaVA,OpenGVLab/InternVL3_5-14B-Instruct,InternVL,base+invariant+addition,9,144,12.033811186116136
+HERBench,view_panel,Base + invariant + addition,InternVL+Qwen+LLaVA,Qwen/Qwen3-VL-8B-Instruct,Qwen,base+invariant+addition,9,144,25.30431945196093
+HERBench,view_panel,Base + invariant + addition,InternVL+Qwen+LLaVA,lmms-lab-encoder/LLaVA-OneVision-2-8B-Instruct,LLaVA,base+invariant+addition,9,144,13.53385213461018
+HERBench,view_panel,Base + invariant + removal,InternVL+Qwen+LLaVA,OpenGVLab/InternVL3_5-14B-Instruct,InternVL,base+invariant+removal,9,96,9.516897737038827
+HERBench,view_panel,Base + invariant + removal,InternVL+Qwen+LLaVA,Qwen/Qwen3-VL-8B-Instruct,Qwen,base+invariant+removal,9,96,24.875860499777367
+HERBench,view_panel,Base + invariant + removal,InternVL+Qwen+LLaVA,lmms-lab-encoder/LLaVA-OneVision-2-8B-Instruct,LLaVA,base+invariant+removal,9,96,12.327918111413135
+HERBench,view_panel,Base + addition + removal,InternVL+Qwen+LLaVA,OpenGVLab/InternVL3_5-14B-Instruct,InternVL,base+addition+removal,9,144,11.48612917426087
+HERBench,view_panel,Base + addition + removal,InternVL+Qwen+LLaVA,Qwen/Qwen3-VL-8B-Instruct,Qwen,base+addition+removal,9,144,25.100824153362883
+HERBench,view_panel,Base + addition + removal,InternVL+Qwen+LLaVA,lmms-lab-encoder/LLaVA-OneVision-2-8B-Instruct,LLaVA,base+addition+removal,9,144,13.278839192424117
+HERBench,view_panel,All temporal relations,InternVL+Qwen+LLaVA,OpenGVLab/InternVL3_5-14B-Instruct,InternVL,base+invariant+addition+removal,12,168,11.392735373594022
+HERBench,view_panel,All temporal relations,InternVL+Qwen+LLaVA,Qwen/Qwen3-VL-8B-Instruct,Qwen,base+invariant+addition+removal,12,168,25.255786805743913
+HERBench,view_panel,All temporal relations,InternVL+Qwen+LLaVA,lmms-lab-encoder/LLaVA-OneVision-2-8B-Instruct,LLaVA,base+invariant+addition+removal,12,168,13.28539461000015
+Perception Test,model_panel,Own scalar,InternVL+Qwen+LLaVA,OpenGVLab/InternVL3_5-14B-Instruct,InternVL,base,1,16,-0.3266506111079919
+Perception Test,model_panel,Own scalar,InternVL+Qwen+LLaVA,Qwen/Qwen3-VL-8B-Instruct,Qwen,base,1,16,0.14366565736983003
+Perception Test,model_panel,Own scalar,InternVL+Qwen+LLaVA,lmms-lab-encoder/LLaVA-OneVision-2-8B-Instruct,LLaVA,base,1,16,-0.09924648806494527
+Perception Test,model_panel,Three-family base,InternVL+Qwen+LLaVA,OpenGVLab/InternVL3_5-14B-Instruct,InternVL,base,3,48,-0.8585964121943482
+Perception Test,model_panel,Three-family base,InternVL+Qwen+LLaVA,Qwen/Qwen3-VL-8B-Instruct,Qwen,base,3,48,26.869836530818326
+Perception Test,model_panel,Three-family base,InternVL+Qwen+LLaVA,lmms-lab-encoder/LLaVA-OneVision-2-8B-Instruct,LLaVA,base,3,48,28.855975421660048
+Perception Test,model_panel,Own four views,InternVL,OpenGVLab/InternVL3_5-14B-Instruct,InternVL,base+invariant+addition+removal,4,56,2.11126004084343
+Perception Test,model_panel,Own four views,Qwen,Qwen/Qwen3-VL-8B-Instruct,Qwen,base+invariant+addition+removal,4,56,1.954991403004277
+Perception Test,model_panel,Own four views,LLaVA,lmms-lab-encoder/LLaVA-OneVision-2-8B-Instruct,LLaVA,base+invariant+addition+removal,4,56,1.152509564514442
+Perception Test,model_panel,Two-family four views,InternVL+Qwen,OpenGVLab/InternVL3_5-14B-Instruct,InternVL,base+invariant+addition+removal,8,112,1.3851686364082525
+Perception Test,model_panel,Two-family four views,InternVL+Qwen,Qwen/Qwen3-VL-8B-Instruct,Qwen,base+invariant+addition+removal,8,112,28.710659856800472
+Perception Test,model_panel,Two-family four views,InternVL+LLaVA,OpenGVLab/InternVL3_5-14B-Instruct,InternVL,base+invariant+addition+removal,8,112,0.9896117708623343
+Perception Test,model_panel,Two-family four views,InternVL+LLaVA,lmms-lab-encoder/LLaVA-OneVision-2-8B-Instruct,LLaVA,base+invariant+addition+removal,8,112,28.68474056881317
+Perception Test,model_panel,Two-family four views,Qwen+LLaVA,Qwen/Qwen3-VL-8B-Instruct,Qwen,base+invariant+addition+removal,8,112,2.9967302565808622
+Perception Test,model_panel,Two-family four views,Qwen+LLaVA,lmms-lab-encoder/LLaVA-OneVision-2-8B-Instruct,LLaVA,base+invariant+addition+removal,8,112,8.542743427351882
+Perception Test,model_panel,Three-family four views,InternVL+Qwen+LLaVA,OpenGVLab/InternVL3_5-14B-Instruct,InternVL,base+invariant+addition+removal,12,168,2.1129859749126427
+Perception Test,model_panel,Three-family four views,InternVL+Qwen+LLaVA,Qwen/Qwen3-VL-8B-Instruct,Qwen,base+invariant+addition+removal,12,168,28.14138187585669
+Perception Test,model_panel,Three-family four views,InternVL+Qwen+LLaVA,lmms-lab-encoder/LLaVA-OneVision-2-8B-Instruct,LLaVA,base+invariant+addition+removal,12,168,28.46270145299172
+Perception Test,view_panel,Base only,InternVL+Qwen+LLaVA,OpenGVLab/InternVL3_5-14B-Instruct,InternVL,base,3,48,-0.8585964121943482
+Perception Test,view_panel,Base only,InternVL+Qwen+LLaVA,Qwen/Qwen3-VL-8B-Instruct,Qwen,base,3,48,26.869836530818326
+Perception Test,view_panel,Base only,InternVL+Qwen+LLaVA,lmms-lab-encoder/LLaVA-OneVision-2-8B-Instruct,LLaVA,base,3,48,28.855975421660048
+Perception Test,view_panel,Base + invariant,InternVL+Qwen+LLaVA,OpenGVLab/InternVL3_5-14B-Instruct,InternVL,base+invariant,6,72,-1.5074085892213678
+Perception Test,view_panel,Base + invariant,InternVL+Qwen+LLaVA,Qwen/Qwen3-VL-8B-Instruct,Qwen,base+invariant,6,72,26.924333176232736
+Perception Test,view_panel,Base + invariant,InternVL+Qwen+LLaVA,lmms-lab-encoder/LLaVA-OneVision-2-8B-Instruct,LLaVA,base+invariant,6,72,28.346291352391745
+Perception Test,view_panel,Base + addition,InternVL+Qwen+LLaVA,OpenGVLab/InternVL3_5-14B-Instruct,InternVL,base+addition,6,120,2.646971539797643
+Perception Test,view_panel,Base + addition,InternVL+Qwen+LLaVA,Qwen/Qwen3-VL-8B-Instruct,Qwen,base+addition,6,120,27.586481192548156
+Perception Test,view_panel,Base + addition,InternVL+Qwen+LLaVA,lmms-lab-encoder/LLaVA-OneVision-2-8B-Instruct,LLaVA,base+addition,6,120,28.933084731947677
+Perception Test,view_panel,Base + removal,InternVL+Qwen+LLaVA,OpenGVLab/InternVL3_5-14B-Instruct,InternVL,base+removal,6,72,-2.0156295166274476
+Perception Test,view_panel,Base + removal,InternVL+Qwen+LLaVA,Qwen/Qwen3-VL-8B-Instruct,Qwen,base+removal,6,72,27.492860503540808
+Perception Test,view_panel,Base + removal,InternVL+Qwen+LLaVA,lmms-lab-encoder/LLaVA-OneVision-2-8B-Instruct,LLaVA,base+removal,6,72,28.487686407492998
+Perception Test,view_panel,Base + invariant + addition,InternVL+Qwen+LLaVA,OpenGVLab/InternVL3_5-14B-Instruct,InternVL,base+invariant+addition,9,144,2.5298242303704197
+Perception Test,view_panel,Base + invariant + addition,InternVL+Qwen+LLaVA,Qwen/Qwen3-VL-8B-Instruct,Qwen,base+invariant+addition,9,144,27.674219557131135
+Perception Test,view_panel,Base + invariant + addition,InternVL+Qwen+LLaVA,lmms-lab-encoder/LLaVA-OneVision-2-8B-Instruct,LLaVA,base+invariant+addition,9,144,28.491163243823006
+Perception Test,view_panel,Base + invariant + removal,InternVL+Qwen+LLaVA,OpenGVLab/InternVL3_5-14B-Instruct,InternVL,base+invariant+removal,9,96,-2.139956291248163
+Perception Test,view_panel,Base + invariant + removal,InternVL+Qwen+LLaVA,Qwen/Qwen3-VL-8B-Instruct,Qwen,base+invariant+removal,9,96,27.45406119424254
+Perception Test,view_panel,Base + invariant + removal,InternVL+Qwen+LLaVA,lmms-lab-encoder/LLaVA-OneVision-2-8B-Instruct,LLaVA,base+invariant+removal,9,96,28.291310243228455
+Perception Test,view_panel,Base + addition + removal,InternVL+Qwen+LLaVA,OpenGVLab/InternVL3_5-14B-Instruct,InternVL,base+addition+removal,9,144,1.7087728204942332
+Perception Test,view_panel,Base + addition + removal,InternVL+Qwen+LLaVA,Qwen/Qwen3-VL-8B-Instruct,Qwen,base+addition+removal,9,144,28.245542738615722
+Perception Test,view_panel,Base + addition + removal,InternVL+Qwen+LLaVA,lmms-lab-encoder/LLaVA-OneVision-2-8B-Instruct,LLaVA,base+addition+removal,9,144,28.643572205770184
+Perception Test,view_panel,All temporal relations,InternVL+Qwen+LLaVA,OpenGVLab/InternVL3_5-14B-Instruct,InternVL,base+invariant+addition+removal,12,168,2.1129859749126427
+Perception Test,view_panel,All temporal relations,InternVL+Qwen+LLaVA,Qwen/Qwen3-VL-8B-Instruct,Qwen,base+invariant+addition+removal,12,168,28.14138187585669
+Perception Test,view_panel,All temporal relations,InternVL+Qwen+LLaVA,lmms-lab-encoder/LLaVA-OneVision-2-8B-Instruct,LLaVA,base+invariant+addition+removal,12,168,28.46270145299172

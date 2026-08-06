@@ -1,0 +1,13 @@
+model_id,task,n,accuracy,relative_aurc_reduction_percent
+OpenGVLab/InternVL3_5-14B-Instruct,abstraction,285,0.624561403508772,0.0
+OpenGVLab/InternVL3_5-14B-Instruct,memory,38,0.6052631578947368,0.0
+OpenGVLab/InternVL3_5-14B-Instruct,physics,325,0.7353846153846154,0.0
+OpenGVLab/InternVL3_5-14B-Instruct,semantics,263,0.8479087452471483,0.0
+Qwen/Qwen3-VL-8B-Instruct,abstraction,285,0.5368421052631579,31.747029693287864
+Qwen/Qwen3-VL-8B-Instruct,memory,38,0.42105263157894735,32.41259081204041
+Qwen/Qwen3-VL-8B-Instruct,physics,325,0.6923076923076923,21.067211225874903
+Qwen/Qwen3-VL-8B-Instruct,semantics,263,0.8326996197718631,32.62274740930858
+lmms-lab-encoder/LLaVA-OneVision-2-8B-Instruct,abstraction,285,0.5228070175438596,23.124101009900766
+lmms-lab-encoder/LLaVA-OneVision-2-8B-Instruct,memory,38,0.6052631578947368,14.733064064861933
+lmms-lab-encoder/LLaVA-OneVision-2-8B-Instruct,physics,325,0.5415384615384615,40.05009743637878
+lmms-lab-encoder/LLaVA-OneVision-2-8B-Instruct,semantics,263,0.8098859315589354,33.494119673814915

@@ -1,0 +1,145 @@
+#!/bin/bash
+#PBS -N trc_pt2fill
+#PBS -l select=1:ncpus=16:ngpus=2:mem=160gb:gpu_model=H200
+#PBS -l walltime=01:58:00
+#PBS -j oe
+#PBS -m n
+
+set -Eeuo pipefail
+umask 077
+
+PROJECT="/home/${USER}/trace_rc_route"
+SCRATCH="/srv/scratch/${USER}/sicr"
+INPUT="${PROJECT}/input/perception_test/frozen"
+DATA_ROOT="${SCRATCH}/data/perception_test_valid500"
+RUN_ROOT="${SCRATCH}/trace_rc_perception_valid500"
+RESULT_ROOT="${RUN_ROOT}/results"
+LOG_ROOT="${RUN_ROOT}/logs"
+PREFILL_ROOT="${RUN_ROOT}/prefill/${PBS_JOBID:-manual}"
+PREFILL_RESULTS="${PREFILL_ROOT}/results"
+PREFILL_STATE="${PREFILL_ROOT}/state"
+PREFILL_STOP="${PREFILL_ROOT}/GRACEFUL_STOP_REQUESTED"
+MANIFEST="${INPUT}/perception_test_valid500_inference.jsonl"
+PRELOCK="${INPUT}/preinference_split_lock.json"
+SEAL="${PROJECT}/PERCEPTION_TEST_PREINFERENCE_SEAL_20260803.json"
+QWEN_ENV="${SCRATCH}/envs/qwen-smoke"
+MAIN_JOB="8919110"
+EXPECTED=7552
+MAIN_HELD=0
+
+mkdir -p "${RESULT_ROOT}" "${LOG_ROOT}" "${PREFILL_RESULTS}" "${PREFILL_STATE}"
+rm -f "${PREFILL_STOP}"
+exec > >(tee -a "${LOG_ROOT}/prefill.${PBS_JOBID:-manual}.log") 2>&1
+
+progress() {
+  printf '%s\tprefill-2gpu\t%s\n' "$(date -u +%Y-%m-%dT%H:%M:%SZ)" "$1" | \
+    tee -a "${LOG_ROOT}/progress.${PBS_JOBID:-manual}.tsv"
+}
+release_main() {
+  if (( MAIN_HELD == 1 )); then
+    qrls "${MAIN_JOB}" 2>/dev/null || true
+    MAIN_HELD=0
+    progress "MAIN_RELEASED job=${MAIN_JOB}"
+  fi
+}
+cleanup() {
+  [[ -z "${WATCHDOG_PID:-}" ]] || kill "${WATCHDOG_PID}" 2>/dev/null || true
+  release_main
+  sync
+}
+trap cleanup EXIT
+trap 'exit 143' TERM INT
+
+main_info=$(qstat -fx "${MAIN_JOB}" 2>/dev/null)
+main_state=$(printf '%s\n' "${main_info}" | awk -F'= ' '/job_state =/{print $2; exit}')
+main_estimate=$(printf '%s\n' "${main_info}" | sed -n 's/^[[:space:]]*estimated.start_time = //p' | head -1)
+if [[ "${main_state}" != "Q" || -z "${main_estimate}" ]]; then
+  progress "SKIP main_state=${main_state:-missing} estimate=${main_estimate:-missing}"
+  exit 0
+fi
+run_seconds=$(($(date -d "${main_estimate}" +%s) - $(date +%s) - 15 * 60))
+(( run_seconds > 95 * 60 )) && run_seconds=$((95 * 60))
+if (( run_seconds < 30 * 60 )); then
+  progress "SKIP insufficient_safe_window_seconds=${run_seconds}"
+  exit 0
+fi
+
+qhold "${MAIN_JOB}"
+MAIN_HELD=1
+sleep 2
+[[ "$(qstat -fx "${MAIN_JOB}" | awk -F'= ' '/job_state =/{print $2; exit}')" == "H" ]] || {
+  progress ABORT_HOLD_FAILED
+  exit 75
+}
+progress "MAIN_HELD job=${MAIN_JOB} safe_run_seconds=${run_seconds}"
+( sleep "${run_seconds}"; echo "reason=two_gpu_backfill_guard" > "${PREFILL_STOP}" ) &
+WATCHDOG_PID=$!
+
+module purge
+module load python/3.10.8
+module load cuda/12.8.0
+export HF_HOME="${SCRATCH}/huggingface" HF_HUB_CACHE="${SCRATCH}/huggingface/hub"
+export TOKENIZERS_PARALLELISM=false PYTHONUNBUFFERED=1 PYTHONDONTWRITEBYTECODE=1 OMP_NUM_THREADS=4
+
+source "${QWEN_ENV}/bin/activate"
+python - "${MANIFEST}" "${PRELOCK}" "${SEAL}" "${DATA_ROOT}/PREP_COMPLETE.json" "${PROJECT}" <<'PY'
+import hashlib, json, sys
+from pathlib import Path
+manifest, prelock_path, seal_path, prep_path, project = map(Path, sys.argv[1:])
+rows = [json.loads(line) for line in manifest.read_text(encoding="utf-8").splitlines() if line.strip()]
+prelock = json.loads(prelock_path.read_text(encoding="utf-8"))
+seal = json.loads(seal_path.read_text(encoding="utf-8"))
+prep = json.loads(prep_path.read_text(encoding="utf-8"))
+digest = hashlib.sha256(manifest.read_bytes()).hexdigest()
+assert len(rows) == 1888 and len({row["video_id"] for row in rows}) == 500
+assert all(not ({"answer", "answer_id", "gold"} & set(row)) for row in rows)
+assert all(Path(row["video_path"]).is_file() for row in rows)
+assert digest == prelock["manifest_sha256"] == seal["manifest_sha256"] == prep["manifest_sha256"]
+for relative, expected in seal["source_hashes"].items():
+    path = project / relative
+    assert path.is_file() and hashlib.sha256(path.read_bytes()).hexdigest() == expected, path
+print("TRACE_RC_PERCEPTION_2GPU_PREFLIGHT_PASS", len(rows), digest)
+PY
+deactivate
+progress PREFLIGHT_PASS
+
+( source "${QWEN_ENV}/bin/activate"; CUDA_VISIBLE_DEVICES=0 python -u \
+    "${PROJECT}/katana/perception_multimodel_runner.py" --backend qwen --manifest "${MANIFEST}" \
+    --output "${PREFILL_RESULTS}/qwen_predictions.jsonl" --state-dir "${PREFILL_STATE}/qwen" \
+    --output-prefix prefill-qwen --resume --checkpoint-every 10 --stop-file "${PREFILL_STOP}" ) \
+    > "${LOG_ROOT}/prefill_qwen.${PBS_JOBID}.log" 2>&1 &
+QPID=$!
+( source "${QWEN_ENV}/bin/activate"; CUDA_VISIBLE_DEVICES=1 python -u \
+    "${PROJECT}/katana/perception_multimodel_runner.py" --backend internvl --manifest "${MANIFEST}" \
+    --output "${PREFILL_RESULTS}/internvl_predictions.jsonl" --state-dir "${PREFILL_STATE}/internvl" \
+    --output-prefix prefill-internvl --resume --checkpoint-every 10 --stop-file "${PREFILL_STOP}" ) \
+    > "${LOG_ROOT}/prefill_internvl.${PBS_JOBID}.log" 2>&1 &
+IPID=$!
+progress "INFERENCE_START qwen_gpu=0 internvl_gpu=1"
+
+while kill -0 "${QPID}" 2>/dev/null || kill -0 "${IPID}" 2>/dev/null; do
+  q=0; i=0
+  [[ ! -s "${PREFILL_RESULTS}/qwen_predictions.jsonl" ]] || q=$(wc -l < "${PREFILL_RESULTS}/qwen_predictions.jsonl")
+  [[ ! -s "${PREFILL_RESULTS}/internvl_predictions.jsonl" ]] || i=$(wc -l < "${PREFILL_RESULTS}/internvl_predictions.jsonl")
+  progress "RUNNING qwen=${q}/${EXPECTED} internvl=${i}/${EXPECTED}"
+  sleep 60
+done
+set +e
+wait "${QPID}"; QRC=$?
+wait "${IPID}"; IRC=$?
+set -e
+progress "INFERENCE_STOP qwen_rc=${QRC} internvl_rc=${IRC}"
+for rc in "${QRC}" "${IRC}"; do
+  [[ "${rc}" -eq 0 || "${rc}" -eq 75 ]] || { progress "ABORT runner_failure=${rc}"; exit "${rc}"; }
+done
+
+source "${QWEN_ENV}/bin/activate"
+for name in qwen_predictions.jsonl internvl_predictions.jsonl; do
+  [[ ! -s "${PREFILL_RESULTS}/${name}" ]] || python -u "${PROJECT}/katana/merge_perception_prefill.py" \
+    --source "${PREFILL_RESULTS}/${name}" --destination "${RESULT_ROOT}/${name}" --expected-max "${EXPECTED}"
+done
+deactivate
+kill "${WATCHDOG_PID}" 2>/dev/null || true
+release_main
+progress PREFILL_PASS
+echo "TRACE_RC_PERCEPTION_2GPU_PREFILL_PASS ${PREFILL_ROOT}"

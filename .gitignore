@@ -17,6 +17,11 @@ data/manifest/*.csv
 *.jsonl
 outputs/
 
+# Frozen, label-free inference manifests are part of the reproducibility record.
+!input/
+!input/**/
+!input/**/*.jsonl
+
 # Local TeX build artefacts.
 *.aux
 *.bbl

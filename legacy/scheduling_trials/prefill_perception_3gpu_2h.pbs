@@ -1,0 +1,170 @@
+#!/bin/bash
+#PBS -N trc_ptfill
+#PBS -l select=1:ncpus=24:ngpus=3:mem=240gb:gpu_model=H200
+#PBS -l walltime=01:58:00
+#PBS -j oe
+#PBS -m n
+
+set -Eeuo pipefail
+umask 077
+
+PROJECT="/home/${USER}/trace_rc_route"
+SCRATCH="/srv/scratch/${USER}/sicr"
+INPUT="${PROJECT}/input/perception_test/frozen"
+DATA_ROOT="${SCRATCH}/data/perception_test_valid500"
+RUN_ROOT="${SCRATCH}/trace_rc_perception_valid500"
+RESULT_ROOT="${RUN_ROOT}/results"
+STATE_ROOT="${RUN_ROOT}/state"
+LOG_ROOT="${RUN_ROOT}/logs"
+PREFILL_ROOT="${RUN_ROOT}/prefill/${PBS_JOBID:-manual}"
+PREFILL_RESULTS="${PREFILL_ROOT}/results"
+PREFILL_STATE="${PREFILL_ROOT}/state"
+PREFILL_STOP="${PREFILL_ROOT}/GRACEFUL_STOP_REQUESTED"
+MANIFEST="${INPUT}/perception_test_valid500_inference.jsonl"
+PRELOCK="${INPUT}/preinference_split_lock.json"
+SEAL="${PROJECT}/PERCEPTION_TEST_PREINFERENCE_SEAL_20260803.json"
+QWEN_ENV="${SCRATCH}/envs/qwen-smoke"
+LLAVA_ENV="${SCRATCH}/envs/llava-ov2"
+MAIN_JOB="8919110"
+EXPECTED=7552
+EXPECTED_HALF=3776
+MAIN_HELD_BY_PREFILL=0
+
+mkdir -p "${RESULT_ROOT}" "${STATE_ROOT}" "${LOG_ROOT}" "${PREFILL_RESULTS}" "${PREFILL_STATE}"
+rm -f "${PREFILL_STOP}"
+exec > >(tee -a "${LOG_ROOT}/prefill.${PBS_JOBID:-manual}.log") 2>&1
+
+progress() {
+  printf '%s\tprefill\t%s\n' "$(date -u +%Y-%m-%dT%H:%M:%SZ)" "$1" | \
+    tee -a "${LOG_ROOT}/progress.${PBS_JOBID:-manual}.tsv"
+}
+
+release_main() {
+  if (( MAIN_HELD_BY_PREFILL == 1 )); then
+    qrls "${MAIN_JOB}" 2>/dev/null || true
+    progress "MAIN_RELEASED job=${MAIN_JOB}"
+    MAIN_HELD_BY_PREFILL=0
+  fi
+}
+
+cleanup() {
+  if [[ -n "${WATCHDOG_PID:-}" ]]; then
+    kill "${WATCHDOG_PID}" 2>/dev/null || true
+  fi
+  release_main
+  sync
+}
+trap cleanup EXIT
+trap 'exit 143' TERM INT
+
+main_state=$(qstat -fx "${MAIN_JOB}" 2>/dev/null | awk -F'= ' '/job_state =/{print $2; exit}')
+if [[ "${main_state}" != "Q" ]]; then
+  progress "SKIP main_state=${main_state:-missing}"
+  exit 0
+fi
+qhold "${MAIN_JOB}"
+MAIN_HELD_BY_PREFILL=1
+sleep 2
+main_state=$(qstat -fx "${MAIN_JOB}" 2>/dev/null | awk -F'= ' '/job_state =/{print $2; exit}')
+[[ "${main_state}" == "H" ]] || { progress "ABORT hold_failed state=${main_state}"; exit 75; }
+progress "MAIN_HELD job=${MAIN_JOB}"
+
+( sleep $((95 * 60)); echo "reason=short_backfill_guard" > "${PREFILL_STOP}" ) &
+WATCHDOG_PID=$!
+
+module purge
+module load python/3.10.8
+module load cuda/12.8.0
+export HF_HOME="${SCRATCH}/huggingface"
+export HF_HUB_CACHE="${HF_HOME}/hub"
+export TOKENIZERS_PARALLELISM=false PYTHONUNBUFFERED=1 PYTHONDONTWRITEBYTECODE=1
+export OMP_NUM_THREADS=4
+
+progress PREFLIGHT_START
+test -s "${DATA_ROOT}/PREP_COMPLETE.json" && test -s "${MANIFEST}" && test -s "${PRELOCK}" && test -s "${SEAL}"
+source "${QWEN_ENV}/bin/activate"
+python - "${MANIFEST}" "${PRELOCK}" "${SEAL}" "${DATA_ROOT}/PREP_COMPLETE.json" "${PROJECT}" <<'PY'
+import hashlib, json, sys
+from pathlib import Path
+manifest, prelock_path, seal_path, prep_path, project = map(Path, sys.argv[1:])
+rows = [json.loads(line) for line in manifest.read_text(encoding="utf-8").splitlines() if line.strip()]
+prelock = json.loads(prelock_path.read_text(encoding="utf-8"))
+seal = json.loads(seal_path.read_text(encoding="utf-8"))
+prep = json.loads(prep_path.read_text(encoding="utf-8"))
+digest = hashlib.sha256(manifest.read_bytes()).hexdigest()
+assert len(rows) == 1888 and len({row["video_id"] for row in rows}) == 500
+assert all(not ({"answer", "answer_id", "gold"} & set(row)) for row in rows)
+assert all(Path(row["video_path"]).is_file() for row in rows)
+assert digest == prelock["manifest_sha256"] == seal["manifest_sha256"] == prep["manifest_sha256"]
+for relative, expected in seal["source_hashes"].items():
+    path = project / relative
+    assert path.is_file() and hashlib.sha256(path.read_bytes()).hexdigest() == expected, path
+print("TRACE_RC_PERCEPTION_PREFILL_PREFLIGHT_PASS", len(rows), digest)
+PY
+deactivate
+progress PREFLIGHT_PASS
+
+( source "${LLAVA_ENV}/bin/activate"; CUDA_VISIBLE_DEVICES=0 python -u \
+    "${PROJECT}/katana/perception_head_half_runner.py" --backend llava --manifest "${MANIFEST}" \
+    --output "${PREFILL_RESULTS}/llava_head_predictions.jsonl" \
+    --state-dir "${PREFILL_STATE}/llava_head" --output-prefix prefill-llava-head \
+    --resume --checkpoint-every 10 --stop-file "${PREFILL_STOP}" ) \
+    > "${LOG_ROOT}/prefill_llava_head.${PBS_JOBID}.log" 2>&1 &
+HPID=$!
+( source "${LLAVA_ENV}/bin/activate"; CUDA_VISIBLE_DEVICES=1 python -u \
+    "${PROJECT}/katana/perception_tail_half_runner.py" --backend llava --manifest "${MANIFEST}" \
+    --output "${PREFILL_RESULTS}/llava_tail_predictions.jsonl" \
+    --state-dir "${PREFILL_STATE}/llava_tail" --output-prefix prefill-llava-tail \
+    --resume --checkpoint-every 10 --stop-file "${PREFILL_STOP}" ) \
+    > "${LOG_ROOT}/prefill_llava_tail.${PBS_JOBID}.log" 2>&1 &
+TPID=$!
+( source "${QWEN_ENV}/bin/activate"; CUDA_VISIBLE_DEVICES=2 python -u \
+    "${PROJECT}/katana/perception_multimodel_runner.py" --backend internvl --manifest "${MANIFEST}" \
+    --output "${PREFILL_RESULTS}/internvl_predictions.jsonl" \
+    --state-dir "${PREFILL_STATE}/internvl" --output-prefix prefill-internvl \
+    --resume --checkpoint-every 10 --stop-file "${PREFILL_STOP}" ) \
+    > "${LOG_ROOT}/prefill_internvl.${PBS_JOBID}.log" 2>&1 &
+IPID=$!
+progress "INFERENCE_START head_gpu=0 tail_gpu=1 internvl_gpu=2"
+
+while kill -0 "${HPID}" 2>/dev/null || kill -0 "${TPID}" 2>/dev/null || kill -0 "${IPID}" 2>/dev/null; do
+  h=0; t=0; i=0
+  [[ -s "${PREFILL_RESULTS}/llava_head_predictions.jsonl" ]] && h=$(wc -l < "${PREFILL_RESULTS}/llava_head_predictions.jsonl")
+  [[ -s "${PREFILL_RESULTS}/llava_tail_predictions.jsonl" ]] && t=$(wc -l < "${PREFILL_RESULTS}/llava_tail_predictions.jsonl")
+  [[ -s "${PREFILL_RESULTS}/internvl_predictions.jsonl" ]] && i=$(wc -l < "${PREFILL_RESULTS}/internvl_predictions.jsonl")
+  progress "RUNNING head=${h}/${EXPECTED_HALF} tail=${t}/${EXPECTED_HALF} internvl=${i}/${EXPECTED}"
+  sleep 60
+done
+
+set +e
+wait "${HPID}"; HRC=$?
+wait "${TPID}"; TRC=$?
+wait "${IPID}"; IRC=$?
+set -e
+progress "INFERENCE_STOP head_rc=${HRC} tail_rc=${TRC} internvl_rc=${IRC}"
+
+for rc in "${HRC}" "${TRC}" "${IRC}"; do
+  if [[ "${rc}" -ne 0 && "${rc}" -ne 75 ]]; then
+    progress "ABORT runner_failure rc=${rc}"
+    exit "${rc}"
+  fi
+done
+
+source "${QWEN_ENV}/bin/activate"
+for spec in \
+  "llava_head_predictions.jsonl:${EXPECTED_HALF}" \
+  "llava_tail_predictions.jsonl:${EXPECTED_HALF}" \
+  "internvl_predictions.jsonl:${EXPECTED}"; do
+  name=${spec%%:*}; maximum=${spec##*:}
+  test -s "${PREFILL_RESULTS}/${name}" || continue
+  python -u "${PROJECT}/katana/merge_perception_prefill.py" \
+    --source "${PREFILL_RESULTS}/${name}" \
+    --destination "${RESULT_ROOT}/${name}" --expected-max "${maximum}"
+done
+deactivate
+
+sha256sum "${RESULT_ROOT}"/*predictions.jsonl 2>/dev/null > "${PREFILL_ROOT}/canonical_after_prefill.sha256" || true
+kill "${WATCHDOG_PID}" 2>/dev/null || true
+release_main
+progress PREFILL_PASS
+echo "TRACE_RC_PERCEPTION_PREFILL_PASS ${PREFILL_ROOT}"

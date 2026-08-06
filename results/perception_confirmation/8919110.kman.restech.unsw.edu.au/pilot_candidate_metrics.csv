@@ -1,0 +1,7 @@
+model_id,candidate,pilot_gain_percent,promoted
+OpenGVLab/InternVL3_5-14B-Instruct,source_trace_hgb,-8.190512632550877,False
+OpenGVLab/InternVL3_5-14B-Instruct,target_logistic,-1.3791044703290247,False
+Qwen/Qwen3-VL-8B-Instruct,source_trace_hgb,22.795642593421903,False
+Qwen/Qwen3-VL-8B-Instruct,target_logistic,27.185236328194346,True
+lmms-lab-encoder/LLaVA-OneVision-2-8B-Instruct,source_trace_hgb,26.919619872386356,False
+lmms-lab-encoder/LLaVA-OneVision-2-8B-Instruct,target_logistic,29.615953595295274,True

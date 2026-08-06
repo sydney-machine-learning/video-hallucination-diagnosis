@@ -1,0 +1,35 @@
+{
+  "dataset_revision": "DanBenAmi/HERBench@30b42e97180f2c7c0fdc3f2aed412ae04f0366ca",
+  "manifest_sha256": "c889297f86d764f762de9abe4323a108f2350cc079f0f28e311a4f7df6286c90",
+  "parquet_sha256": "23a7dc1d6baafc75ac9065cf13591e6dc1c7ef92f044bb9d2f00067b8f861c8c",
+  "pilot_labels_sha256": "318635c71b52dcbd298112ad20e94af6366d0d01257874e9f9ae4ec22162d212",
+  "pilot_questions": 1008,
+  "pilot_videos": 34,
+  "questions": 1971,
+  "schema_version": "trace-rc-herbench-lite-v2-manifest-1.0",
+  "sealed_test_labels_sha256": "de8d2fe41b29697956341c114ff0243a76725293c43c5877a9752c9496367c34",
+  "selection_uses_answer_values": false,
+  "source_video_balance": {
+    "HD_EPIC": {
+      "calibration": 16,
+      "test": 15
+    },
+    "PersonPath22": {
+      "calibration": 2,
+      "test": 2
+    },
+    "WildTrack": {
+      "calibration": 7,
+      "test": 8
+    },
+    "trailers": {
+      "calibration": 9,
+      "test": 9
+    }
+  },
+  "split_salt": "trace-rc-herbench-lite-v2-video-split-20260802",
+  "test_labels_opened_for_split": false,
+  "test_questions": 963,
+  "test_videos": 34,
+  "videos": 68
+}
