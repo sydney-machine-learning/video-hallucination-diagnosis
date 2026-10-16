@@ -145,8 +145,12 @@ protocol files.
 
 Data resources:
 
-- [VHD v1.1.2 on Kaggle](https://www.kaggle.com/datasets/mlopssss/video-hallucination-diagnosis)
-- [VHD dataset and annotation tools](https://github.com/transitional-ai/hallucinationdataset)
+- [VHD pilot package on Kaggle](https://www.kaggle.com/datasets/mlopssss/video-hallucination-diagnosis)
+- [VHD v1.1.2 metadata, gold labels, and evaluation tools](https://github.com/transitional-ai/hallucinationdataset/tree/master/releases/v1.1.2-metadata-code)
+- [VHD annotation and inference tools](https://github.com/transitional-ai/hallucinationdataset)
+- The Kaggle page currently hosts the earlier 1,155-question pilot package.
+  The frozen v1.1.2 archive contains the 801 adjudicated questions reported in
+  the paper and does not redistribute MP4 files.
 - HERBench and Perception Test remain subject to their upstream licenses and
   distribution terms. This repository stores derived scores and hashes, not
   copies of their videos.
