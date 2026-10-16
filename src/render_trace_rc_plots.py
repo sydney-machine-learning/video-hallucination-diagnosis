@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Render vector figures for the TRACE-RC manuscript from audited results."""
+"""Render manuscript figures from the audited reliability-refinement results."""
 
 from __future__ import annotations
 
@@ -25,13 +25,15 @@ METHOD_ORDER = [
     "raw_confidence",
 ]
 METHOD_LABELS = {
-    "TRACE-RC": "TRACE-RC",
-    "target_full_graph_logistic": "Target full graph",
-    "target_base_graph_logistic": "Target base graph",
-    "target_scalar_logistic": "Target scalar",
-    "source_trace_hgb": "Source graph HGB",
-    "source_trace_logistic": "Source graph logistic",
-    "raw_confidence": "Raw confidence",
+    # Keep the dictionary keys unchanged because they are stored in the audited
+    # CSV files.  Only the reader-facing labels use the current terminology.
+    "TRACE-RC": "Target-checked score",
+    "target_full_graph_logistic": "Target pilot: all views",
+    "target_base_graph_logistic": "Target pilot: base view only",
+    "target_scalar_logistic": "Target pilot: confidence only",
+    "source_trace_hgb": "Development datasets: tree",
+    "source_trace_logistic": "Development datasets: linear",
+    "raw_confidence": "Original score",
 }
 
 
@@ -133,12 +135,11 @@ def render_confirmation_overview(
                 fontsize=7.5,
             )
 
-    ax_gain.set_xticks(x, ["InternVL", "Qwen", "LLaVA", "Model average"])
+    ax_gain.set_xticks(x, ["InternVL3.5", "Qwen3-VL", "LLaVA-OV2", "Model average"])
     ax_gain.set_ylabel("Relative AURC reduction (%)")
-    ax_gain.set_title("(a) TRACE-RC by model", loc="left")
+    ax_gain.set_title("(a) Target-checked score by model", loc="left")
     ax_gain.set_ylim(0, 33)
     ax_gain.grid(axis="y", color="0.88", linewidth=0.6, zorder=0)
-    ax_gain.legend(frameon=False, ncols=2, loc="upper left")
 
     def baseline_panel(ax: plt.Axes, title: str, metrics: pd.DataFrame, color: str) -> None:
         grouped = (
@@ -165,14 +166,15 @@ def render_confirmation_overview(
 
     baseline_panel(ax_her, "(b) HERBench baselines", her_metrics, "#3B6FB6")
     baseline_panel(ax_per, "(c) Perception Test baselines", per_metrics, "#D67A2B")
-    handles = [
+    target_handles, target_labels = ax_gain.get_legend_handles_labels()
+    handles = target_handles + [
         Line2D([0], [0], marker="o", linestyle="none", markerfacecolor="0.55",
                markeredgecolor="black", markersize=6, label="Average across models"),
         Line2D([0], [0], marker="D", linestyle="none", markerfacecolor="white",
                markeredgecolor="black", markersize=6, label="Smallest model gain"),
     ]
-    labels = [handle.get_label() for handle in handles]
-    ax_key.legend(handles, labels, frameon=False, ncols=2, loc="center")
+    labels = target_labels + [handle.get_label() for handle in handles[2:]]
+    ax_key.legend(handles, labels, frameon=False, ncols=4, loc="center")
 
     for suffix in ("pdf", "png"):
         fig.savefig(output_dir / f"trace_rc_confirmation_overview.{suffix}", bbox_inches="tight", pad_inches=0.03)
@@ -181,14 +183,25 @@ def render_confirmation_overview(
 
 def render_vhd_consensus(vhd_csv: Path, output_dir: Path) -> None:
     frame = pd.read_csv(vhd_csv)
+    required = {
+        "task",
+        "unanimous_fraction",
+        "false_consensus_fraction",
+        "wrong_among_unanimous_fraction",
+    }
+    missing = sorted(required.difference(frame.columns))
+    if missing:
+        raise ValueError(
+            f"{vhd_csv} is not a VHD model-consensus table; missing columns: {missing}"
+        )
     task_order = ["accuracy", "vhd_i_pdi", "vhd_ii_hce"]
-    task_labels = ["Visible-event\ncontrol", "Prior-conflict\nreversal", "Concealed\nevidence"]
+    task_labels = ["Clearly visible\nevidence", "Video contradicts\nexpectation", "Key evidence\nhidden"]
     frame = frame.set_index("task").loc[task_order]
 
     measures = [
-        ("unanimous_fraction", "Unanimous", "#6C7A89", ""),
-        ("false_consensus_fraction", "Unanimous and wrong", "#D67A2B", "//"),
-        ("wrong_among_unanimous_fraction", "Wrong given unanimous", "#3B6FB6", "\\\\"),
+        ("unanimous_fraction", "All models agree", "#6C7A89", ""),
+        ("false_consensus_fraction", "All agree and are wrong", "#D67A2B", "//"),
+        ("wrong_among_unanimous_fraction", "Wrong when all agree", "#3B6FB6", "\\\\"),
     ]
     x = np.arange(len(frame), dtype=float)
     width = 0.19
@@ -230,7 +243,7 @@ def render_vhd_consensus(vhd_csv: Path, output_dir: Path) -> None:
             )
 
     ax.set_xticks(x, task_labels)
-    ax.set_ylabel("Questions (%)")
+    ax.set_ylabel("Rate (%)")
     ax.set_ylim(0, 100)
     ax.grid(axis="y", color="0.88", linewidth=0.6, zorder=0)
     ax.legend(frameon=False, ncols=3, loc="upper center", bbox_to_anchor=(0.5, 1.15))
@@ -260,7 +273,7 @@ def render_posthoc_pilot_efficiency(posthoc_dir: Path, output_dir: Path) -> None
             marker="s",
             linestyle=":",
             linewidth=1.1,
-            label="10th percentile",
+            label="10th-percentile gain",
         )
         if harmful.any():
             ax.scatter(
@@ -271,7 +284,7 @@ def render_posthoc_pilot_efficiency(posthoc_dir: Path, output_dir: Path) -> None
                 linewidth=1.5,
                 color="#A51C30",
                 zorder=5,
-                label="Any harmful promotion",
+                label="At least one harmful use",
             )
         ax_rate = ax.twinx()
         ax_rate.plot(
@@ -281,13 +294,13 @@ def render_posthoc_pilot_efficiency(posthoc_dir: Path, output_dir: Path) -> None
             marker="^",
             linestyle="--",
             linewidth=1.1,
-            label="Promotion rate",
+            label="Learned score used",
         )
         ax.axhline(0, color="0.25", linewidth=0.7)
         ax.set_xticks(x)
         ax.set_xlabel("Labeled target videos (%)")
         ax.set_ylabel("Relative AURC reduction (%)")
-        ax_rate.set_ylabel("Promotion rate (%)")
+        ax_rate.set_ylabel("Learned score used (%)")
         ax_rate.set_ylim(0, 105)
         ax.set_title(target, loc="left")
         ax.grid(axis="y", color="0.88", linewidth=0.6)
@@ -339,7 +352,7 @@ def render_posthoc_compute(posthoc_dir: Path, output_dir: Path) -> None:
         highlights = {
             "Base only": "Base",
             "Base + addition": "Base+dense",
-            "All temporal relations": "Full",
+            "All temporal relations": "All views",
         }
         other = data.loc[~data["configuration"].isin(highlights)]
         ax.scatter(
@@ -361,7 +374,7 @@ def render_posthoc_compute(posthoc_dir: Path, output_dir: Path) -> None:
             color=color,
             marker="o",
             linewidth=1.5,
-            label="Base / base+dense / full",
+            label="Base / base+dense / all views",
             zorder=3,
         )
         for row in key.itertuples(index=False):
@@ -448,7 +461,7 @@ def render_posthoc_efficiency_audits(posthoc_dir: Path, output_dir: Path) -> Non
             marker="s",
             linestyle=":",
             linewidth=1.1,
-            label="10th percentile",
+            label="10th-percentile gain",
         )
         if harmful.any():
             ax.scatter(
@@ -459,7 +472,7 @@ def render_posthoc_efficiency_audits(posthoc_dir: Path, output_dir: Path) -> Non
                 linewidth=1.5,
                 color="#A51C30",
                 zorder=5,
-                label="Any harmful promotion",
+                label="At least one harmful use",
             )
         ax_rate = ax.twinx()
         ax_rate.plot(
@@ -469,13 +482,13 @@ def render_posthoc_efficiency_audits(posthoc_dir: Path, output_dir: Path) -> Non
             marker="^",
             linestyle="--",
             linewidth=1.1,
-            label="Promotion rate",
+            label="Learned score used",
         )
         ax_rate.set_ylim(0, 105)
         if index == 0:
             ax_rate.tick_params(right=False, labelright=False)
         else:
-            ax_rate.set_ylabel("Promotion rate (%)")
+            ax_rate.set_ylabel("Learned score used (%)")
 
         ax.axhline(0, color="0.25", linewidth=0.7)
         ax.set_xticks(x)
@@ -504,7 +517,7 @@ def render_posthoc_efficiency_audits(posthoc_dir: Path, output_dir: Path) -> Non
     highlights = {
         "Base only": "Base",
         "Base + addition": "Base+dense",
-        "All temporal relations": "Full",
+        "All temporal relations": "All views",
     }
     for index, (ax, (target, color)) in enumerate(zip(bottom_axes, targets)):
         data = aggregate.loc[aggregate["dataset"].eq(target)].copy()
@@ -528,7 +541,7 @@ def render_posthoc_efficiency_audits(posthoc_dir: Path, output_dir: Path) -> Non
             color=color,
             marker="o",
             linewidth=1.5,
-            label="Base / base+dense / full",
+            label="Base / base+dense / all views",
             zorder=3,
         )
         for row in key.itertuples(index=False):
@@ -565,15 +578,15 @@ def render_posthoc_risk_coverage(posthoc_dir: Path, output_dir: Path) -> None:
     frame = pd.read_csv(posthoc_dir / "risk_coverage_curves.csv")
     targets = ["HERBench", "Perception Test"]
     method_specs = [
-        ("Raw confidence", "0.45", "--"),
-        ("Target base graph", "#6C7A89", ":"),
-        ("TRACE-RC", "#3B6FB6", "-"),
+        ("Raw confidence", "Original score", "0.45", "--"),
+        ("Target base graph", "Target pilot: base view only", "#6C7A89", ":"),
+        ("TRACE-RC", "Target-checked score", "#3B6FB6", "-"),
     ]
     fig, axes = plt.subplots(1, 2, figsize=(7.15, 2.75))
     fig.subplots_adjust(left=0.085, right=0.985, bottom=0.22, top=0.88, wspace=0.34)
     for ax, target in zip(axes, targets):
         data = frame.loc[frame["dataset"].eq(target)]
-        for method, color, style in method_specs:
+        for method, display_label, color, style in method_specs:
             line = data.loc[data["method"].eq(method)].sort_values("coverage")
             ax.plot(
                 100 * line["coverage"],
@@ -581,7 +594,7 @@ def render_posthoc_risk_coverage(posthoc_dir: Path, output_dir: Path) -> None:
                 color=color,
                 linestyle=style,
                 linewidth=1.5,
-                label=method,
+                label=display_label,
             )
         ax.set_xlabel("Coverage (%)")
         ax.set_ylabel("Average risk across models (%)")
@@ -601,7 +614,14 @@ def main() -> int:
     parser = argparse.ArgumentParser()
     parser.add_argument("--herbench-dir", type=Path, required=True)
     parser.add_argument("--perception-dir", type=Path, required=True)
-    parser.add_argument("--vhd-csv", type=Path, required=True)
+    parser.add_argument(
+        "--vhd-csv",
+        type=Path,
+        help=(
+            "optional VHD model-consensus table; omit this argument when the "
+            "raw model-response archive is unavailable"
+        ),
+    )
     parser.add_argument("--posthoc-dir", type=Path)
     parser.add_argument("--output-dir", type=Path, required=True)
     args = parser.parse_args()
@@ -609,7 +629,8 @@ def main() -> int:
     configure_style()
     args.output_dir.mkdir(parents=True, exist_ok=True)
     render_confirmation_overview(args.herbench_dir, args.perception_dir, args.output_dir)
-    render_vhd_consensus(args.vhd_csv, args.output_dir)
+    if args.vhd_csv is not None:
+        render_vhd_consensus(args.vhd_csv, args.output_dir)
     if args.posthoc_dir is not None:
         render_posthoc_pilot_efficiency(args.posthoc_dir, args.output_dir)
         render_posthoc_compute(args.posthoc_dir, args.output_dir)

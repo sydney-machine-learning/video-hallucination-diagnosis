@@ -1,4 +1,4 @@
-"""Validate and render a non-pooled summary of two sealed confirmations."""
+"""Validate and render a non-pooled summary of two held-out evaluations."""
 
 from __future__ import annotations
 
@@ -53,7 +53,7 @@ def load_archive(path: Path, display_name: str) -> dict:
     predictions = pd.read_csv(predictions_path)
     trace = metrics.loc[metrics["method"].eq("TRACE-RC")].copy()
     if len(trace) != 3 or trace["model_id"].nunique() != 3:
-        raise RuntimeError(f"{display_name}: expected three TRACE-RC model rows")
+        raise RuntimeError(f"{display_name}: expected three target-checked model rows")
     if predictions["model_id"].nunique() != 3:
         raise RuntimeError(f"{display_name}: expected three prediction environments")
     if predictions["qid"].nunique() != int(gate["test_questions"]):
@@ -149,16 +149,15 @@ def main() -> int:
     write(output / "trace_rc_two_confirmation_table.tex", table)
     if payload["all_confirmation_gates_pass"]:
         sentence = (
-            "Both independently sealed targets meet the pre-specified TRACE-RC "
-            "success criteria.  HERBench "
-            "promotes all three model environments; Perception Test promotes two and "
-            "uses exact fallback for the third.  Effects are reported separately "
+            "Both held-out targets meet the target-check success criteria.  HERBench "
+            "uses a learned score for all three models; Perception Test uses one for two "
+            "models and retains the original score for the third.  Effects are reported separately "
             "because the benchmarks have different video and question distributions."
         )
     else:
         sentence = (
-            f"Only {passes} of the two sealed public targets passes its complete "
-            "TRACE-RC gate; the evidence therefore does not support a two-target "
+            f"Only {passes} of the two held-out public targets passes its complete "
+            "target-check criteria; the evidence therefore does not support a two-target "
             "confirmation claim."
         )
     write(output / "trace_rc_two_confirmation_sentence.tex", sentence)

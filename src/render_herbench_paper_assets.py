@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Render audited TRACE-RC paper assets from a sealed analysis archive."""
+"""Render paper assets from an audited fixed-protocol result archive."""
 
 from __future__ import annotations
 
@@ -36,14 +36,15 @@ def short_model(model_id: str) -> str:
 
 def display_method(method: str) -> str:
     return {
-        "TRACE-RC": "TRACE-RC",
-        "target_full_graph_logistic": "Target full graph",
-        "source_trace_logistic": "Source graph logistic",
-        "source_trace_hgb": "Source graph HGB",
-        "target_base_graph_logistic": "Target base graph",
-        "target_scalar_logistic": "Target scalar",
-        "raw_confidence": "Raw confidence",
-        "target_logistic": "target graph",
+        # Keys are historical values stored in the archived result files.
+        "TRACE-RC": "Target-checked score",
+        "target_full_graph_logistic": "Target pilot: all views",
+        "source_trace_logistic": "Development datasets: linear",
+        "source_trace_hgb": "Development datasets: tree",
+        "target_base_graph_logistic": "Target pilot: base view only",
+        "target_scalar_logistic": "Target pilot: confidence only",
+        "raw_confidence": "Original score",
+        "target_logistic": "Target pilot: all views",
     }.get(method, method.replace("_", " "))
 
 
@@ -217,27 +218,27 @@ def main() -> int:
     if passed:
         if args.target == "perception":
             sentence = (
-                f"On the held-out {target_name} split, TRACE-RC meets its "
-                f"pre-specified success criteria. Average AURC across the three models falls by {mean_gain:.2f}\\% "
+                f"On the held-out {target_name} split, the target-checked method meets its "
+                f"success criteria fixed before inference. Average AURC across the three models falls by {mean_gain:.2f}\\% "
                 f"(video-grouped 95\\% CI, {lower:.2f}--{upper:.2f}\\%); "
-                f"exact fallback leaves the worst model unchanged ({worst:.2f}\\%)."
+                f"exact fallback leaves the third model unchanged ({worst:.2f}\\%)."
             )
             abstract = (
-                f"On a separately locked {gate['test_questions']}-question "
-                f"Perception Test split, TRACE-RC reduces average AURC across the three models by "
+                f"On a separately held-out {gate['test_questions']}-question "
+                f"Perception Test split, the target-checked method reduces average AURC across the three models by "
                 f"{mean_gain:.2f}\\% (95\\% CI, {lower:.2f}--{upper:.2f}\\%); "
-                "exact fallback leaves the worst model unchanged."
+                "exact fallback leaves the non-promoted model unchanged."
             )
         else:
             sentence = (
-                f"On the held-out {target_name} split, TRACE-RC meets its "
-                f"pre-specified success criteria. Average AURC across the three models falls by {mean_gain:.2f}\\% "
+                f"On the held-out {target_name} split, the target-checked method meets its "
+                f"success criteria fixed before inference. Average AURC across the three models falls by {mean_gain:.2f}\\% "
                 f"(video-grouped 95\\% CI, {lower:.2f}--{upper:.2f}\\%), and "
                 f"the smallest model-level gain is {worst:.2f}\\%."
             )
             abstract = (
                 f"On a fresh {gate['test_questions']}-question {target_name} split, "
-                f"TRACE-RC reduces average AURC across the three models by {mean_gain:.2f}\\% "
+                f"the target-checked method reduces average AURC across the three models by {mean_gain:.2f}\\% "
                 f"(95\\% CI, {lower:.2f}--{upper:.2f}\\%); the smallest "
                 f"model-level gain is {worst:.2f}\\%."
             )
@@ -248,13 +249,13 @@ def main() -> int:
     else:
         failed = ", ".join(name for name, ok in gate["checks"].items() if not ok)
         sentence = (
-            f"TRACE-RC does not pass its pre-specified {target_name} gate: "
+            f"The target-checked method does not pass its {target_name} gate fixed before inference: "
             f"macro relative AURC reduction {mean_gain:.2f}\\% "
             f"(video-grouped 95\\% CI [{lower:.2f}, {upper:.2f}]\\%), "
             f"worst-model gain {worst:.2f}\\%; failed checks: {latex(failed)}."
         )
         abstract = (
-            f"The {target_name} evaluation did not meet the complete registered "
+            f"The {target_name} evaluation did not meet the complete fixed-protocol "
             "gate, limiting the evidence for transfer beyond the earlier datasets."
         )
         conclusion = (

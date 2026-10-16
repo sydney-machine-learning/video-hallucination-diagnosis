@@ -1,0 +1,43 @@
+dataset,baseline,baseline_label,model_id,family,questions,videos,raw_aurc,baseline_aurc,relative_aurc_reduction_percent
+HERBench,confidence_margin,Top-two margin,OpenGVLab/InternVL3_5-14B-Instruct,InternVL,963,34,0.32768357757653177,0.33386948522839405,-1.887768589934152
+HERBench,confidence_margin,Top-two margin,Qwen/Qwen3-VL-8B-Instruct,Qwen,963,34,0.3726957337190911,0.3751495260733477,-0.6583902449782565
+HERBench,confidence_margin,Top-two margin,lmms-lab-encoder/LLaVA-OneVision-2-8B-Instruct,LLaVA,963,34,0.315265845929251,0.3185660350907133,-1.0467956501075903
+HERBench,negative_entropy,Negative entropy,OpenGVLab/InternVL3_5-14B-Instruct,InternVL,963,34,0.32768357757653177,0.3313165483526889,-1.1086825903897053
+HERBench,negative_entropy,Negative entropy,Qwen/Qwen3-VL-8B-Instruct,Qwen,963,34,0.3726957337190911,0.37160644347585986,0.29227333309166753
+HERBench,negative_entropy,Negative entropy,lmms-lab-encoder/LLaVA-OneVision-2-8B-Instruct,LLaVA,963,34,0.315265845929251,0.31345459806590364,0.5745144571587425
+HERBench,base_vote_then_confidence,Base cross-model vote,OpenGVLab/InternVL3_5-14B-Instruct,InternVL,963,34,0.32768357757653177,0.3071076058133193,6.279219701941537
+HERBench,base_vote_then_confidence,Base cross-model vote,Qwen/Qwen3-VL-8B-Instruct,Qwen,963,34,0.3726957337190911,0.313452140165973,15.895967727328825
+HERBench,base_vote_then_confidence,Base cross-model vote,lmms-lab-encoder/LLaVA-OneVision-2-8B-Instruct,LLaVA,963,34,0.315265845929251,0.30086681572672597,4.5672661306154705
+HERBench,base_support,Base cross-model support,OpenGVLab/InternVL3_5-14B-Instruct,InternVL,963,34,0.32768357757653177,0.30273740073655464,7.612885889635667
+HERBench,base_support,Base cross-model support,Qwen/Qwen3-VL-8B-Instruct,Qwen,963,34,0.3726957337190911,0.28894096101331057,22.472694245786116
+HERBench,base_support,Base cross-model support,lmms-lab-encoder/LLaVA-OneVision-2-8B-Instruct,LLaVA,963,34,0.315265845929251,0.2860416074044444,9.269712816073591
+HERBench,own_temporal_stability,Own-view stability,OpenGVLab/InternVL3_5-14B-Instruct,InternVL,963,34,0.32768357757653177,0.4301358620696799,-31.265614606279744
+HERBench,own_temporal_stability,Own-view stability,Qwen/Qwen3-VL-8B-Instruct,Qwen,963,34,0.3726957337190911,0.3488054569454326,6.410128856389093
+HERBench,own_temporal_stability,Own-view stability,lmms-lab-encoder/LLaVA-OneVision-2-8B-Instruct,LLaVA,963,34,0.315265845929251,0.38021017961612924,-20.599863424930728
+HERBench,all_view_vote_then_confidence,All-view panel vote,OpenGVLab/InternVL3_5-14B-Instruct,InternVL,963,34,0.32768357757653177,0.3003843351783907,8.33097666963955
+HERBench,all_view_vote_then_confidence,All-view panel vote,Qwen/Qwen3-VL-8B-Instruct,Qwen,963,34,0.3726957337190911,0.29637617786724674,20.47771115871374
+HERBench,all_view_vote_then_confidence,All-view panel vote,lmms-lab-encoder/LLaVA-OneVision-2-8B-Instruct,LLaVA,963,34,0.315265845929251,0.2875845448537392,8.780304442405026
+HERBench,all_view_support,All-view panel support,OpenGVLab/InternVL3_5-14B-Instruct,InternVL,963,34,0.32768357757653177,0.2943977096679857,10.157929840341803
+HERBench,all_view_support,All-view panel support,Qwen/Qwen3-VL-8B-Instruct,Qwen,963,34,0.3726957337190911,0.28032616783461556,24.784175810849632
+HERBench,all_view_support,All-view panel support,lmms-lab-encoder/LLaVA-OneVision-2-8B-Instruct,LLaVA,963,34,0.315265845929251,0.27817627071396384,11.764539576421626
+Perception Test,confidence_margin,Top-two margin,OpenGVLab/InternVL3_5-14B-Instruct,InternVL,911,250,0.10082478083703053,0.1010672464018756,-0.24048211444861278
+Perception Test,confidence_margin,Top-two margin,Qwen/Qwen3-VL-8B-Instruct,Qwen,911,250,0.15570880613805577,0.1557925665533172,-0.05379298534159996
+Perception Test,confidence_margin,Top-two margin,lmms-lab-encoder/LLaVA-OneVision-2-8B-Instruct,LLaVA,911,250,0.1895377452783245,0.18954831801548114,-0.00557816974191729
+Perception Test,negative_entropy,Negative entropy,OpenGVLab/InternVL3_5-14B-Instruct,InternVL,911,250,0.10082478083703053,0.10263118308531323,-1.7916252664139194
+Perception Test,negative_entropy,Negative entropy,Qwen/Qwen3-VL-8B-Instruct,Qwen,911,250,0.15570880613805577,0.15546818872215828,0.15453038390400575
+Perception Test,negative_entropy,Negative entropy,lmms-lab-encoder/LLaVA-OneVision-2-8B-Instruct,LLaVA,911,250,0.1895377452783245,0.19014719262748417,-0.3215440535418012
+Perception Test,base_vote_then_confidence,Base cross-model vote,OpenGVLab/InternVL3_5-14B-Instruct,InternVL,911,250,0.10082478083703053,0.11101661552221023,-10.108462027458714
+Perception Test,base_vote_then_confidence,Base cross-model vote,Qwen/Qwen3-VL-8B-Instruct,Qwen,911,250,0.15570880613805577,0.13316147209523577,14.480448859667515
+Perception Test,base_vote_then_confidence,Base cross-model vote,lmms-lab-encoder/LLaVA-OneVision-2-8B-Instruct,LLaVA,911,250,0.1895377452783245,0.15136358424033305,20.140664320943067
+Perception Test,base_support,Base cross-model support,OpenGVLab/InternVL3_5-14B-Instruct,InternVL,911,250,0.10082478083703053,0.10966466738669005,-8.767573285329512
+Perception Test,base_support,Base cross-model support,Qwen/Qwen3-VL-8B-Instruct,Qwen,911,250,0.15570880613805577,0.1256905199112332,19.278476902717703
+Perception Test,base_support,Base cross-model support,lmms-lab-encoder/LLaVA-OneVision-2-8B-Instruct,LLaVA,911,250,0.1895377452783245,0.14308950043526683,24.506065942090473
+Perception Test,own_temporal_stability,Own-view stability,OpenGVLab/InternVL3_5-14B-Instruct,InternVL,911,250,0.10082478083703053,0.17993345452947995,-78.46153796289205
+Perception Test,own_temporal_stability,Own-view stability,Qwen/Qwen3-VL-8B-Instruct,Qwen,911,250,0.15570880613805577,0.17434128136763777,-11.966230871401024
+Perception Test,own_temporal_stability,Own-view stability,lmms-lab-encoder/LLaVA-OneVision-2-8B-Instruct,LLaVA,911,250,0.1895377452783245,0.22336603253796639,-17.847783938743767
+Perception Test,all_view_vote_then_confidence,All-view panel vote,OpenGVLab/InternVL3_5-14B-Instruct,InternVL,911,250,0.10082478083703053,0.11633524640979002,-15.383584713990144
+Perception Test,all_view_vote_then_confidence,All-view panel vote,Qwen/Qwen3-VL-8B-Instruct,Qwen,911,250,0.15570880613805577,0.13368131847379972,14.14659081306286
+Perception Test,all_view_vote_then_confidence,All-view panel vote,lmms-lab-encoder/LLaVA-OneVision-2-8B-Instruct,LLaVA,911,250,0.1895377452783245,0.14851034516042597,21.646031537228815
+Perception Test,all_view_support,All-view panel support,OpenGVLab/InternVL3_5-14B-Instruct,InternVL,911,250,0.10082478083703053,0.10968491599856299,-8.787656256703057
+Perception Test,all_view_support,All-view panel support,Qwen/Qwen3-VL-8B-Instruct,Qwen,911,250,0.15570880613805577,0.12607299792268523,19.032840178027314
+Perception Test,all_view_support,All-view panel support,lmms-lab-encoder/LLaVA-OneVision-2-8B-Instruct,LLaVA,911,250,0.1895377452783245,0.14420169137054392,23.919274675979384

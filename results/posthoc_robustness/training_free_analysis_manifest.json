@@ -1,0 +1,36 @@
+{
+  "baseline_definitions": {
+    "all_view_support": "All-view panel support",
+    "all_view_vote_then_confidence": "All-view panel vote",
+    "base_support": "Base cross-model support",
+    "base_vote_then_confidence": "Base cross-model vote",
+    "confidence_margin": "Top-two margin",
+    "negative_entropy": "Negative entropy",
+    "own_temporal_stability": "Own-view stability"
+  },
+  "bootstrap_iterations": 10000,
+  "changes_sealed_primary_results": false,
+  "input_sha256": {
+    "trace_rc_route/input/audited_raw/herbench/internvl_predictions.jsonl": "3fdd14c7bd6806ea02ae71c161a251f2725eed6c374a46f300d902b90d0e5ca2",
+    "trace_rc_route/input/audited_raw/herbench/llava_predictions.jsonl": "986bdba286cdb00254bab58be57eedd2f70b895b552479e6b9c23491c4c9e9be",
+    "trace_rc_route/input/audited_raw/herbench/qwen_predictions.jsonl": "37ffb6764fcc5094ab0eca6b50fc1efd77f62c171e4fa240e087122bbb00dc75",
+    "trace_rc_route/input/audited_raw/perception/internvl_predictions.jsonl": "1e4a7fd0025656bd29c03bf441db02d37db0ac729bba07e12413d4a8def0a87d",
+    "trace_rc_route/input/audited_raw/perception/llava_predictions.jsonl": "15cce5fc6c1efd1d37d9a3a403f7eb4eea26d44b169557e6c720e2c5cd8e993f",
+    "trace_rc_route/input/audited_raw/perception/qwen_predictions.jsonl": "102d0b0b14b71c4014ae37089fe867565f37352c11d161f82a841033d9c8e554",
+    "trace_rc_route/input/herbench_lite_v2_inference.jsonl": "c889297f86d764f762de9abe4323a108f2350cc079f0f28e311a4f7df6286c90",
+    "trace_rc_route/input/perception_test/frozen/perception_test_valid500_inference.jsonl": "614862e5fd8ec344cf2cdcd76f1b18dbf5192567f23021dea0d9744982fcc389",
+    "trace_rc_route/input/perception_test/frozen/pilot_labels.csv": "eb60c3ef1dc0e8162b742d03f04e452b7255e690844ec96dd3fc27bbe2f08e6a",
+    "trace_rc_route/input/perception_test/frozen/sealed_test_labels.csv": "f37f1e50e6e0df98be4802073a1884e3c447d1ad48d4179dfd598fbaaeefc952",
+    "trace_rc_route/input/pilot_labels.csv": "318635c71b52dcbd298112ad20e94af6366d0d01257874e9f9ae4ec22162d212",
+    "trace_rc_route/input/sealed_test_labels.csv": "de8d2fe41b29697956341c114ff0243a76725293c43c5877a9752c9496367c34",
+    "trace_rc_route/results/herbench_confirmation/8918264.kman.restech.unsw.edu.au/test_scored_predictions.csv": "8856071bd955433b1481268bd867037d56e39f7ba4eb58770fd4050184a6fa28",
+    "trace_rc_route/results/perception_confirmation/8919110.kman.restech.unsw.edu.au/test_scored_predictions.csv": "86c991aed4757cd8591e10b25b2a4fa8df7c39a23bb938b479681dd5a87f6e8f"
+  },
+  "output_sha256": {
+    "training_free_model_metrics.csv": "7515992e204fae2f432c0ccddfe4a7d22f689aaea592b1e5f90aaf02130541ca",
+    "training_free_paired_bootstrap_distributions.csv": "ed89e8c41aff6ce4693cb02d54300dca112b177a9a909db71ad5cf3a2191ad59",
+    "training_free_paired_bootstrap_summary.csv": "765a2834bc5fa8379eee13c1747351a987389789b5ff4666a79c8192bd9f562e"
+  },
+  "retrospective_secondary_analysis": true,
+  "schema_version": "trace-rc-training-free-baselines-1.0"
+}

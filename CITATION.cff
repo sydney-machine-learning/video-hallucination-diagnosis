@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite the associated paper and this repository."
+title: "Hallucination Risk Evaluation Framework for Question-Answering in Video-Language Models"
+type: software
+authors:
+  - family-names: Ren
+    given-names: Guoxiang
+  - family-names: Chandra
+    given-names: Rohitash
+repository-code: "https://github.com/sydney-machine-learning/video-hallucination-diagnosis"
+url: "https://github.com/sydney-machine-learning/video-hallucination-diagnosis"
+license: MIT
+keywords:
+  - video question answering
+  - video-language models
+  - hallucination risk
+  - selective prediction
+  - reliability estimation
