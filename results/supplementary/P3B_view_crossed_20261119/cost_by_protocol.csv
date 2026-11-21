@@ -1,0 +1,3 @@
+protocol,full_scorer_calls_including_common_answer,frame_exposures_including_common_answer,mean_call_wall_seconds_including_common_answer,common_answer_extra_seconds
+original_views,12,168,24.330367741587377,0.0
+phase_views,13,40,4.365301312667589,1.206949919269945

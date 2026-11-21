@@ -1,0 +1,22 @@
+\begin{tabular}{llrrrrr}
+\hline
+policy & method & accuracy & aurc & auroc & risk\_at\_50pct & gain\_percent \\
+\hline
+original\_views & raw & 0.7047 & 0.1253 & 0.7896 & 0.0877 & 0.0000 \\
+original\_views & label\_free\_support & 0.7047 & 0.1154 & 0.7948 & 0.1031 & 7.8660 \\
+original\_views & ours\_unchecked\_lr & 0.7047 & 0.1044 & 0.8301 & 0.0855 & 16.6539 \\
+original\_views & ours\_checked & 0.7047 & 0.1044 & 0.8301 & 0.0855 & 16.6539 \\
+original\_views & pg\_single & 0.7047 & 0.1194 & 0.7965 & 0.0899 & 4.7253 \\
+original\_views & pg\_full & 0.7047 & 0.1053 & 0.8261 & 0.0833 & 15.9876 \\
+original\_views & pg\_fixed\_rf & 0.7047 & 0.1032 & 0.8314 & 0.0833 & 17.5953 \\
+original\_views & pg\_same\_lr & 0.7047 & 0.1118 & 0.8201 & 0.0877 & 10.7842 \\
+phase\_views & raw & 0.7047 & 0.1253 & 0.7896 & 0.0877 & 0.0000 \\
+phase\_views & label\_free\_support & 0.7047 & 0.1499 & 0.7040 & 0.1711 & -19.6188 \\
+phase\_views & ours\_unchecked\_lr & 0.7047 & 0.1302 & 0.7706 & 0.1294 & -3.9598 \\
+phase\_views & ours\_checked & 0.7047 & 0.1253 & 0.7896 & 0.0877 & 0.0000 \\
+phase\_views & pg\_single & 0.7047 & 0.1200 & 0.7932 & 0.0921 & 4.2114 \\
+phase\_views & pg\_full & 0.7047 & 0.1137 & 0.8029 & 0.0965 & 9.2823 \\
+phase\_views & pg\_fixed\_rf & 0.7047 & 0.1213 & 0.7856 & 0.1075 & 3.1906 \\
+phase\_views & pg\_same\_lr & 0.7047 & 0.1264 & 0.7708 & 0.1140 & -0.9006 \\
+\hline
+\end{tabular}

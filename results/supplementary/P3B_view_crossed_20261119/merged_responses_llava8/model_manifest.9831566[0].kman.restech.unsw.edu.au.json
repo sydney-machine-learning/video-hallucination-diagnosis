@@ -1,0 +1,140 @@
+{
+  "model_id": "lmms-lab-encoder/LLaVA-OneVision-2-8B-Instruct",
+  "revision": "802f16c8346a062fef7ddf92b2bd64a770a50a1a",
+  "records": [
+    {
+      "name": "added_tokens.json",
+      "bytes": 605,
+      "sha256": "58b54bbe36fc752f79a24a271ef66a0a0830054b4dfad94bde757d851968060b",
+      "lfs_sha256": null
+    },
+    {
+      "name": "chat_template.jinja",
+      "bytes": 1017,
+      "sha256": "a0bc6f6fc7a29a80017a433e8f03a1cc1236e838a944a2d034295a60c4f2fddb",
+      "lfs_sha256": null
+    },
+    {
+      "name": "codec_video_processing_llava_onevision2.py",
+      "bytes": 14988,
+      "sha256": "ffaf30d03674f90d7b25bd0462e936f2965a2247ae3f536368d078d9b7e1d97d",
+      "lfs_sha256": null
+    },
+    {
+      "name": "config.json",
+      "bytes": 3143,
+      "sha256": "93e2921267f19b95c7b07b766684a21898d52462a87c719a9385cc2ed219ff9e",
+      "lfs_sha256": null
+    },
+    {
+      "name": "configuration_llava_onevision2.py",
+      "bytes": 5153,
+      "sha256": "9cdf98ab862e43570f042067110e1d11e1a0973b065fd7233d54866b2d000e45",
+      "lfs_sha256": null
+    },
+    {
+      "name": "demo_inference.py",
+      "bytes": 8720,
+      "sha256": "c96c2eaf52429b1346c4799939af4fef7cf74a1e1874e0fa52fe9f41a527b10a",
+      "lfs_sha256": null
+    },
+    {
+      "name": "generation_config.json",
+      "bytes": 120,
+      "sha256": "7e4a5445c39a562a37eb98fa14eceaa845e3bb3d22d007de64ef3600056e950b",
+      "lfs_sha256": null
+    },
+    {
+      "name": "merges.txt",
+      "bytes": 1671853,
+      "sha256": "8831e4f1a044471340f7c0a83d7bd71306a5b867e95fd870f74d0c5308a904d5",
+      "lfs_sha256": null
+    },
+    {
+      "name": "model-00001-of-00004.safetensors",
+      "bytes": 5288213408,
+      "sha256": "6510d6eb5c999d9f3c869f127016bd8bada90269c1e76d0bea6ab59ffe3ac876",
+      "lfs_sha256": "6510d6eb5c999d9f3c869f127016bd8bada90269c1e76d0bea6ab59ffe3ac876"
+    },
+    {
+      "name": "model-00002-of-00004.safetensors",
+      "bytes": 4546819264,
+      "sha256": "e927a5f586ab4e43b0d13e29c0ae43d9b838850ebce106fc5d290507a8c4b3c3",
+      "lfs_sha256": "e927a5f586ab4e43b0d13e29c0ae43d9b838850ebce106fc5d290507a8c4b3c3"
+    },
+    {
+      "name": "model-00003-of-00004.safetensors",
+      "bytes": 5346916160,
+      "sha256": "608b6d6d544935773de4653cb2c560c12fe2899b1d6bc7602f58ea2dbecb9fdc",
+      "lfs_sha256": "608b6d6d544935773de4653cb2c560c12fe2899b1d6bc7602f58ea2dbecb9fdc"
+    },
+    {
+      "name": "model-00004-of-00004.safetensors",
+      "bytes": 1872566720,
+      "sha256": "99ef8daea1b127d97b724add790b1dfd28f0ae12a81a22cdfdf2f38c92177538",
+      "lfs_sha256": "99ef8daea1b127d97b724add790b1dfd28f0ae12a81a22cdfdf2f38c92177538"
+    },
+    {
+      "name": "model.safetensors.index.json",
+      "bytes": 65770,
+      "sha256": "9f9a3bdb3608f2b3a330c1dd0c726589ab8fdb48f8c115eb8ffc414ab8df268d",
+      "lfs_sha256": null
+    },
+    {
+      "name": "modeling_llava_onevision2.py",
+      "bytes": 68865,
+      "sha256": "275a9837825612ba75f6ca70dd13ce5613c3dca5ac2a71da80dff2df23163cb1",
+      "lfs_sha256": null
+    },
+    {
+      "name": "preprocessor_config.json",
+      "bytes": 1027,
+      "sha256": "2eb3d3f7b1ee08c4d8b67a7a0e88512a4913442ac442ba4cf2cb502b6364a676",
+      "lfs_sha256": null
+    },
+    {
+      "name": "processing_llava_onevision2.py",
+      "bytes": 24904,
+      "sha256": "7f40230f3de461a582c73c1a6d125809cd94887b81f0da92cabdfce31cf07cc7",
+      "lfs_sha256": null
+    },
+    {
+      "name": "special_tokens_map.json",
+      "bytes": 613,
+      "sha256": "76862e765266b85aa9459767e33cbaf13970f327a0e88d1c65846c2ddd3a1ecd",
+      "lfs_sha256": null
+    },
+    {
+      "name": "tokenizer.json",
+      "bytes": 11422064,
+      "sha256": "ba0c439f7be467bf47d12a7e6f9adc6116201056fc60c67f431c679b7c16afc8",
+      "lfs_sha256": "ba0c439f7be467bf47d12a7e6f9adc6116201056fc60c67f431c679b7c16afc8"
+    },
+    {
+      "name": "tokenizer_config.json",
+      "bytes": 4750,
+      "sha256": "f64d944a98d2d9901581be7a5f36b626ff2dc0d5b7d5dedb412412ca39606df0",
+      "lfs_sha256": null
+    },
+    {
+      "name": "video_preprocessor_config.json",
+      "bytes": 520,
+      "sha256": "d75d49d7f59667be049083b13bef5d52f442e04d65f3a01f71d9ad7f6c0e07a5",
+      "lfs_sha256": null
+    },
+    {
+      "name": "video_processing_llava_onevision2.py",
+      "bytes": 28441,
+      "sha256": "7e2fa8e174bdbb571ab8696dc9e308eb50639a70866e18a60aea7f475a949116",
+      "lfs_sha256": null
+    },
+    {
+      "name": "vocab.json",
+      "bytes": 2776833,
+      "sha256": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910",
+      "lfs_sha256": null
+    }
+  ],
+  "model_directory": "/scratch/pbs.9831566[0].kman.restech.unsw.edu.au/weights_llava8",
+  "ephemeral": true
+}

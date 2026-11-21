@@ -1,0 +1,65 @@
+{
+  "status": "frozen before new peer responses or fitted scores",
+  "single": {
+    "dimensions": 32,
+    "source": "../P3B_pilot_20261119/phaseguard_features.py",
+    "change": "voted_probability summaries reference the common target answer"
+  },
+  "full": {
+    "dimensions": 48,
+    "peer_order": [
+      "llava8",
+      "internvl14"
+    ],
+    "per_peer": [
+      "maximum phase vote frequency / 4",
+      "natural entropy of phase vote frequencies",
+      "mean maximum option probability across four phases",
+      "mean probability of peer phase-majority answer",
+      "mean probability of common target answer",
+      "peer phase-majority equals common target answer"
+    ],
+    "aggregate": [
+      "maximum frequency among three model phase-majorities / 3",
+      "mean agreement of each peer phase answer with Qwen3-VL-8B-Instruct phase answer over 8 comparisons",
+      "common target equals majority of three phase-majorities, ties Qwen3-VL-8B-Instruct then LLaVA-OneVision-2-8B-Instruct then InternVL3_5-14B-Instruct",
+      "the two peer phase-majorities agree"
+    ]
+  },
+  "trace": {
+    "dimensions": 53,
+    "source": "src/evaluate_response_graph_features.py",
+    "slot_order": [
+      "internvl14",
+      "qwen8",
+      "llava8"
+    ],
+    "phase_slots": [
+      0,
+      2,
+      4,
+      6
+    ],
+    "selected_answer_override": "support and correctness use the common answer; unmodified probability vectors"
+  },
+  "promotion_bootstrap_iterations": 2000,
+  "familywise_alpha": 0.05,
+  "promotion_seed_formula": "20260803 + 1000003 * split_id + 1009",
+  "test_bootstrap_iterations": 10000,
+  "test_seed": 20260803,
+  "deviation": "Full feature scalars are our explicit reconstruction of the coarse published Table 7 groups, not official executable code.",
+  "common_answer": "Qwen3-VL-8B-Instruct original base16 option argmax, shared across both protocols",
+  "original_view_slot_order": [
+    "base16",
+    "shift8",
+    "dense24",
+    "rev8"
+  ],
+  "phase_slot_order": [
+    0,
+    2,
+    4,
+    6
+  ],
+  "adapted_phase_features": "Fixed consecutive slots and pairs (0,2),(1,3); no literal phase interpretation on original views."
+}

@@ -1,0 +1,32 @@
+% Accuracy percent; brackets are 95% video bootstrap CIs.
+\begin{tabular}{lrr}
+\hline
+Model & Reference test & Full panel \\
+\hline
+InternVL3.5 14B Instruct & 72.67 [69.29, 75.86] & 73.68 [71.50, 75.81] \\
+Qwen3-VL 8B Instruct & 70.47 [67.10, 73.71] & 71.08 [68.80, 73.29] \\
+LLaVA-OneVision-2 8B Instruct & 63.01 [59.53, 66.37] & 63.77 [61.37, 66.06] \\
+Majority vote & 70.80 [67.34, 74.16] & 72.25 [69.89, 74.54] \\
+\hline
+\end{tabular}
+
+% Thirty fixed video splits; relative AURC reduction percent.
+\begin{tabular}{lrrrrrr}
+\hline
+Answering model & Mean & Minimum & Harm & Fallback & Pilot LR & Dev HGB \\
+\hline
+InternVL3.5 14B Instruct & 0.26 & 0.00 & 0/30 & 27/30 & 3 & 0 \\
+LLaVA-OneVision-2 8B Instruct & 26.61 & 22.24 & 0/30 & 0/30 & 17 & 13 \\
+\hline
+\end{tabular}
+
+\begin{tabular}{lrr}
+\hline
+Answering model & All view support & Base support \\
+\hline
+InternVL3.5 14B Instruct & -0.43 & -0.75 \\
+Qwen3-VL 8B Instruct & 9.96 & 11.51 \\
+LLaVA-OneVision-2 8B Instruct & 26.00 & 26.84 \\
+Mean across models & 11.84 & 12.53 \\
+\hline
+\end{tabular}

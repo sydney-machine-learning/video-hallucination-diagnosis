@@ -1,0 +1,7 @@
+dataset,pair,mean_relative_aurc_gain_percent,min_relative_aurc_gain_percent,reference_models,source,source_lines,individual_gains
+HERBench,InternVL+Qwen,17.53475486575329,10.095503676851296,2,results/posthoc_robustness/compute_budget_ablation.csv,"11,12","{""InternVL"": 10.095503676851296, ""Qwen"": 24.974006054655284}"
+HERBench,InternVL+LLaVA,10.052165250729093,9.448835541397697,2,results/posthoc_robustness/compute_budget_ablation.csv,"13,14","{""InternVL"": 9.448835541397697, ""LLaVA"": 10.65549496006049}"
+HERBench,Qwen+LLaVA,10.098872877801671,2.740004835946417,2,results/posthoc_robustness/compute_budget_ablation.csv,"15,16","{""Qwen"": 17.457740919656924, ""LLaVA"": 2.740004835946417}"
+Perception Test,InternVL+Qwen,15.047914246604362,1.3851686364082525,2,results/posthoc_robustness/compute_budget_ablation.csv,"53,54","{""InternVL"": 1.3851686364082525, ""Qwen"": 28.710659856800472}"
+Perception Test,InternVL+LLaVA,14.837176169837752,0.9896117708623343,2,results/posthoc_robustness/compute_budget_ablation.csv,"55,56","{""InternVL"": 0.9896117708623343, ""LLaVA"": 28.68474056881317}"
+Perception Test,Qwen+LLaVA,5.769736841966372,2.9967302565808622,2,results/posthoc_robustness/compute_budget_ablation.csv,"57,58","{""Qwen"": 2.9967302565808622, ""LLaVA"": 8.542743427351882}"

@@ -1,0 +1,8 @@
+{
+  "time": "2026-11-21T02:00 AEDT",
+  "jobs": ["9843045[]", "9843046[]", "9843047[]"],
+  "change": "qalter removed host=k099 pin; select is now ngpus=1:mem=96gb:gpu_model=H200 (site hook adds cpu_per_gpu_gte_8, mem_per_gpu_gte_120). No qsub or qdel.",
+  "reason": "All 21 shards were pinned to one 4-GPU node (k099), fully occupied by another user; scheduler estimated start 07:49. Any full H200 in generalgpu2 is acceptable.",
+  "mig_guard": "run_shard_stage.py checks torch.cuda device 0 before fetching videos: name must contain H200 and total memory >= 100 GiB, else the shard exits before writing any response. A shard placed on a MIG slice (k203, 1g.18gb) fails cleanly and is resubmitted. Device written to staging/<model>/<job>/GPU.json. Backup: run_shard_stage.py.bak_20261121.",
+  "unchanged": ["walltime 01:55:00", "shard plans", "models", "prompts", "frames", "run_shard.py (sha in protocol)", "manifest"]
+}

@@ -1,0 +1,13 @@
+{
+  "passed": true,
+  "labels_read": false,
+  "model": "OpenGVLab/InternVL3_5-14B-Instruct",
+  "videos": 50,
+  "questions": 205,
+  "calls": 820,
+  "responses_sha256": "9602ebbf70d2106140f9a5bd0331d4d331e98fa83513b400b8aa8474a51124fe",
+  "full_500_video_estimate_seconds": 10471.549209726594,
+  "remaining_estimate_seconds": 9337.759391371595,
+  "peak_memory_bytes": 48629752832,
+  "exact_archived_sampling": true
+}

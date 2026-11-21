@@ -1,0 +1,16 @@
+{
+  "target": "Perception",
+  "model": "llava8",
+  "split": 12,
+  "rule2_selected": "source_trace_hgb",
+  "rule3_selected": "all_view_support",
+  "rule2_gain": 23.318038059054782,
+  "rule3_gain": 23.188951401335945,
+  "support_gain": 23.188951401335945,
+  "pilot_lr_gain": 24.91888337078691,
+  "rule3_lower_bounds": {
+    "all_view_support": 21.144431184313735,
+    "source_trace_hgb": 20.198549574670345,
+    "target_logistic": 18.370996474433884
+  }
+}

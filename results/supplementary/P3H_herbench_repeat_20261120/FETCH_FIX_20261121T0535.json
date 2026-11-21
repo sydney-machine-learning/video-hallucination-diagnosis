@@ -1,0 +1,9 @@
+{
+  "time": "2026-11-21T05:35 AEDT",
+  "failed_job": "9843045[0] (qwen8 shard 0), fetch stage, before any response was written",
+  "cause": "HERBench archive members are stored as HD_EPIC/..., trailers/... without the videos/ prefix used in the manifest; tar reported every member not found. All four parts downloaded and matched their sha256.",
+  "fix": "fetch_videos.py strips videos/ from the member list and extracts into VIDEO_ROOT/videos, so manifest paths resolve unchanged. Backup fetch_videos.py.bak_20261121.",
+  "old_fetch_sha256": "f5aa4196f6f16a8ed3b074b44025f7eb619e0da4d9469058dcd42b1c4042e0de",
+  "new_fetch_sha256": "9b21d8ffd7b6939c03855a98fb8c5588f9e517fdfadb0bf8562f64f278510493",
+  "runner_and_manifest_unchanged": true
+}

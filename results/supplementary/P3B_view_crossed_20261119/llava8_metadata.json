@@ -1,0 +1,248 @@
+{
+  "_id": "6a01a4a172839c7228176408",
+  "id": "lmms-lab-encoder/LLaVA-OneVision-2-8B-Instruct",
+  "private": false,
+  "pipeline_tag": "image-text-to-text",
+  "library_name": "transformers",
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llava_onevision2",
+    "image-text-to-text",
+    "multimodal",
+    "vision-language",
+    "video-text-to-text",
+    "llava",
+    "llava-onevision-2",
+    "qwen3",
+    "conversational",
+    "custom_code",
+    "en",
+    "zh",
+    "license:apache-2.0",
+    "eval-results",
+    "region:us"
+  ],
+  "downloads": 5409,
+  "likes": 17,
+  "modelId": "lmms-lab-encoder/LLaVA-OneVision-2-8B-Instruct",
+  "author": "lmms-lab-encoder",
+  "sha": "802f16c8346a062fef7ddf92b2bd64a770a50a1a",
+  "lastModified": "2026-07-16T12:57:02.000Z",
+  "gated": false,
+  "disabled": false,
+  "widgetData": [
+    {
+      "text": "Hi, what can you help me with?"
+    },
+    {
+      "text": "What is 84 * 3 / 2?"
+    },
+    {
+      "text": "Tell me an interesting fact about the universe!"
+    },
+    {
+      "text": "Explain quantum computing in simple terms."
+    }
+  ],
+  "model-index": null,
+  "config": {
+    "architectures": [
+      "LlavaOnevision2ForConditionalGeneration"
+    ],
+    "auto_map": {
+      "AutoConfig": "configuration_llava_onevision2.LlavaOnevision2Config",
+      "AutoModel": "modeling_llava_onevision2.LlavaOnevision2Model",
+      "AutoModelForImageTextToText": "modeling_llava_onevision2.LlavaOnevision2ForConditionalGeneration",
+      "AutoProcessor": "processing_llava_onevision2.LlavaOnevision2Processor",
+      "AutoVideoProcessor": "video_processing_llava_onevision2.LlavaOnevision2VideoProcessor"
+    },
+    "model_type": "llava_onevision2",
+    "tokenizer_config": {
+      "bos_token": null,
+      "eos_token": "<|im_end|>",
+      "unk_token": null,
+      "pad_token": "<|endoftext|>"
+    },
+    "chat_template_jinja": "{% set image_count = namespace(value=0) %}{% set video_count = namespace(value=0) %}{% for message in messages %}{% if loop.first and message['role'] != 'system' %}<|im_start|>system\nYou are a helpful assistant.<|im_end|>\n{% endif %}<|im_start|>{{ message['role'] }}\n{% if message['content'] is string %}{{ message['content'] }}<|im_end|>\n{% else %}{% for content in message['content'] %}{% if content['type'] == 'image' or 'image' in content or 'image_url' in content %}{% set image_count.value = image_count.value + 1 %}{% if add_vision_id %}Picture {{ image_count.value }}: {% endif %}<|vision_start|><|image_pad|><|vision_end|>{% elif content['type'] == 'video' or 'video' in content %}{% set video_count.value = video_count.value + 1 %}{% if add_vision_id %}Video {{ video_count.value }}: {% endif %}<|vision_start|><|video_pad|><|vision_end|>{% elif 'text' in content %}{{ content['text'] }}{% endif %}{% endfor %}<|im_end|>\n{% endif %}{% endfor %}{% if add_generation_prompt %}<|im_start|>assistant\n{% endif %}"
+  },
+  "cardData": {
+    "library_name": "transformers",
+    "pipeline_tag": "image-text-to-text",
+    "license": "apache-2.0",
+    "tags": [
+      "multimodal",
+      "vision-language",
+      "image-text-to-text",
+      "video-text-to-text",
+      "llava",
+      "llava-onevision-2",
+      "qwen3"
+    ],
+    "language": [
+      "en",
+      "zh"
+    ]
+  },
+  "transformersInfo": {
+    "auto_model": "AutoModelForImageTextToText",
+    "custom_class": "modeling_llava_onevision2.LlavaOnevision2ForConditionalGeneration",
+    "pipeline_tag": "image-text-to-text"
+  },
+  "siblings": [
+    {
+      "rfilename": ".gitattributes",
+      "blobId": "52373fe24473b1aa44333d318f578ae6bf04b49b",
+      "size": 1570
+    },
+    {
+      "rfilename": "README.md",
+      "blobId": "479f61124372dc8f8d3fde0c1966506e73d7ce0a",
+      "size": 6844
+    },
+    {
+      "rfilename": "added_tokens.json",
+      "blobId": "482ced4679301bf287ebb310bdd1790eb4514232",
+      "size": 605
+    },
+    {
+      "rfilename": "chat_template.jinja",
+      "blobId": "6c226632394ae7474b0d4b13e15793eac2e21ee9",
+      "size": 1017
+    },
+    {
+      "rfilename": "codec_video_processing_llava_onevision2.py",
+      "blobId": "4d145575920cc7f4af373122de9aa6e701d53cb5",
+      "size": 14988
+    },
+    {
+      "rfilename": "config.json",
+      "blobId": "def3c0a5edccfeb2d45baf2a66f1275a7166f77e",
+      "size": 3143
+    },
+    {
+      "rfilename": "configuration_llava_onevision2.py",
+      "blobId": "33f205432e0614a6ed90e6fb8a6ae84409a3ff4e",
+      "size": 5153
+    },
+    {
+      "rfilename": "demo_inference.py",
+      "blobId": "07527b6297dd1f35f47751b655635453832ff729",
+      "size": 8720
+    },
+    {
+      "rfilename": "generation_config.json",
+      "blobId": "99d3561498eadaeed7935d1b1f8abbe7c6471eb0",
+      "size": 120
+    },
+    {
+      "rfilename": "merges.txt",
+      "blobId": "31349551d90c7606f325fe0f11bbb8bd5fa0d7c7",
+      "size": 1671853
+    },
+    {
+      "rfilename": "model-00001-of-00004.safetensors",
+      "blobId": "b2945e3e66f3f34a1a85e99f97c8327d4374c5a1",
+      "size": 5288213408,
+      "lfs": {
+        "sha256": "6510d6eb5c999d9f3c869f127016bd8bada90269c1e76d0bea6ab59ffe3ac876",
+        "size": 5288213408,
+        "pointerSize": 135
+      }
+    },
+    {
+      "rfilename": "model-00002-of-00004.safetensors",
+      "blobId": "96845255202c262e94ef500209985a1adac515ed",
+      "size": 4546819264,
+      "lfs": {
+        "sha256": "e927a5f586ab4e43b0d13e29c0ae43d9b838850ebce106fc5d290507a8c4b3c3",
+        "size": 4546819264,
+        "pointerSize": 135
+      }
+    },
+    {
+      "rfilename": "model-00003-of-00004.safetensors",
+      "blobId": "4542f51baf25348b5bc4bd0080463e80cb35aea1",
+      "size": 5346916160,
+      "lfs": {
+        "sha256": "608b6d6d544935773de4653cb2c560c12fe2899b1d6bc7602f58ea2dbecb9fdc",
+        "size": 5346916160,
+        "pointerSize": 135
+      }
+    },
+    {
+      "rfilename": "model-00004-of-00004.safetensors",
+      "blobId": "4cbdf3a47f9fc398cb32606c3c770561992ec9ef",
+      "size": 1872566720,
+      "lfs": {
+        "sha256": "99ef8daea1b127d97b724add790b1dfd28f0ae12a81a22cdfdf2f38c92177538",
+        "size": 1872566720,
+        "pointerSize": 135
+      }
+    },
+    {
+      "rfilename": "model.safetensors.index.json",
+      "blobId": "2b5bf5c99db6e2a045eae3cc8ade3838937087e8",
+      "size": 65770
+    },
+    {
+      "rfilename": "modeling_llava_onevision2.py",
+      "blobId": "676cc2a51b71a5e28795aaed1874fd625feb0f9c",
+      "size": 68865
+    },
+    {
+      "rfilename": "preprocessor_config.json",
+      "blobId": "14346fe3c9677adcc628f718f2c7a0359e4405cb",
+      "size": 1027
+    },
+    {
+      "rfilename": "processing_llava_onevision2.py",
+      "blobId": "a17e3137010948f21bda74bb1fd1b8102905c05d",
+      "size": 24904
+    },
+    {
+      "rfilename": "special_tokens_map.json",
+      "blobId": "ac23c0aaa2434523c494330aeb79c58395378103",
+      "size": 613
+    },
+    {
+      "rfilename": "tokenizer.json",
+      "blobId": "944a5cb95c4973d7e4af7d0ea7f4c265dc324657",
+      "size": 11422064,
+      "lfs": {
+        "sha256": "ba0c439f7be467bf47d12a7e6f9adc6116201056fc60c67f431c679b7c16afc8",
+        "size": 11422064,
+        "pointerSize": 133
+      }
+    },
+    {
+      "rfilename": "tokenizer_config.json",
+      "blobId": "d595495d9de4be70a7c97263eabe3653c6492ab3",
+      "size": 4750
+    },
+    {
+      "rfilename": "video_preprocessor_config.json",
+      "blobId": "0fa6f25e41de271109136ad83dbdbd9b84199570",
+      "size": 520
+    },
+    {
+      "rfilename": "video_processing_llava_onevision2.py",
+      "blobId": "86ffaefc47b916c34e5270d55ce57ff371b85800",
+      "size": 28441
+    },
+    {
+      "rfilename": "vocab.json",
+      "blobId": "4783fe10ac3adce15ac8f358ef5462739852c569",
+      "size": 2776833
+    }
+  ],
+  "spaces": [],
+  "createdAt": "2026-05-11T09:42:57.000Z",
+  "safetensors": {
+    "parameters": {
+      "BF16": 8527213568
+    },
+    "total": 8527213568
+  },
+  "usedStorage": 17065937616
+}

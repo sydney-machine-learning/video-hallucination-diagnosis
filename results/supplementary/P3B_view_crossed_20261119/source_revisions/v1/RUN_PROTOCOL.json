@@ -1,0 +1,27 @@
+{
+  "manifest_sha256": "20c9a995a6b199f8555ddc87469b57aed2eeb5fd25b419e9dfe19713623be542",
+  "runner_sha256": "c431de9268cbd5a131e8053f39163d3c652aa2101c86cd7b5253b900fead2e74",
+  "models": {
+    "qwen8": "Qwen/Qwen3-VL-8B-Instruct",
+    "internvl14": "OpenGVLab/InternVL3_5-14B-Instruct",
+    "llava8": "lmms-lab-encoder/LLaVA-OneVision-2-8B-Instruct"
+  },
+  "seed": 1234,
+  "phases": [
+    0,
+    2,
+    4,
+    6
+  ],
+  "frames_per_phase": {
+    "0": 16,
+    "2": 8,
+    "4": 24,
+    "6": 8
+  },
+  "gpu_job_cap_seconds": 17100,
+  "pilot_size_videos": 50,
+  "pipeline": "generation with normalized first-step legal-option token logits; shared by both scorers",
+  "sampling_source": "katana/herbench_multimodel_runner.py:sample_frame_indices",
+  "sampling_source_sha256": "d768649e14b5470ceee10ad119f175f35ee836a0784f8a3867eeab166dbdf641"
+}

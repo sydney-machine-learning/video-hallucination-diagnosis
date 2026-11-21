@@ -1,0 +1,29 @@
+{
+  "complete": true,
+  "videos": 500,
+  "questions": 1888,
+  "calls": 7552,
+  "responses_sha256": "1bfa47f60ab3cd07750c96b17f143a63ed04fa8f6f41d8d80b480767fda7d51e",
+  "test_labels_read": false,
+  "model_load_seconds": 17.830669415998273,
+  "peak_memory_bytes": 21935470592,
+  "source_records_preserved": true,
+  "merge_order": "fixed full_manifest question order then view slots 0,2,4,6",
+  "sources": [
+    {
+      "source": "/srv/scratch/z5611125/video_hallucination_supplementary/results/supplementary/P3B_view_crossed_20261119/pilot_snapshot_qwen8",
+      "response_sha256": "6e564c823201d77759c1a8b089f6afa9879a4530096a5d8a493c7f1b5ef7ae28",
+      "decode_sha256": "326486705c3e1df06e28f5437a0d971f437c6f5a4684e493f9854e7c58128fb3"
+    },
+    {
+      "source": "/srv/scratch/z5611125/video_hallucination_supplementary/results/supplementary/P3B_view_crossed_20261119/shards/qwen8/shard_00",
+      "response_sha256": "fc1e32c20885967ed3cfd5d35e26b4d45d20d059261a87cc8c88120094751079",
+      "decode_sha256": "f96dd8388025bfa327e1c84348dc29878df0a1cd9194c09b64970f9a9cbe14a8"
+    },
+    {
+      "source": "/srv/scratch/z5611125/video_hallucination_supplementary/results/supplementary/P3B_view_crossed_20261119/shards/qwen8/shard_01",
+      "response_sha256": "10ad6098b1c38c29e8a0452b489224639e9cff5ab2fa2e958f6659812f012790",
+      "decode_sha256": "7d9ddf411fcb4d4a438ba5ee39108308aa32533fb2d162b440ace6f8aecd5e8a"
+    }
+  ]
+}

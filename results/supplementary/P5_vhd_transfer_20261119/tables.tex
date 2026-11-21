@@ -1,0 +1,32 @@
+% Proposed appendix tables. Review before inserting. Mean over three models.
+\begin{table}[t]
+\centering
+\caption{Transferred development scores on 178 VHD questions about reversed videos. Lower AURC and risk are better. Answers are fixed.}
+\label{tab:vhd-transferred-scores}
+\begin{tabular}{lrrr}
+\toprule
+Score & AURC & AUROC & Risk at 50\% \\
+\midrule
+Original confidence & 0.7923 & 0.384 & 80.90\% \\
+Development LR & 0.8231 & 0.323 & 83.90\% \\
+Development HGB & 0.8098 & 0.437 & 79.40\% \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table}[t]
+\centering
+\caption{Mean relative AURC gain when each development dataset is held out. The three answering model checkpoints remain fixed. Active internal HGB validation is grouped by source video.}
+\label{tab:fixed-checkpoint-transfer}
+\begin{tabular}{lrr}
+\toprule
+Dataset & Development LR & Development HGB \\
+\midrule
+MVBench & 13.76\% & 1.49\% \\
+NExT-GQA & 26.83\% & 26.71\% \\
+STAR & 9.01\% & 11.32\% \\
+TempCompass & 12.24\% & 10.61\% \\
+VHD & -3.77\% & -2.14\% \\
+\bottomrule
+\end{tabular}
+\end{table}

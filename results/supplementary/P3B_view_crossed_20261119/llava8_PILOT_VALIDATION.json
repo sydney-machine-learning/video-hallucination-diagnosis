@@ -1,0 +1,13 @@
+{
+  "passed": true,
+  "labels_read": false,
+  "model": "lmms-lab-encoder/LLaVA-OneVision-2-8B-Instruct",
+  "videos": 50,
+  "questions": 205,
+  "calls": 820,
+  "responses_sha256": "a0566ac3139d3759b28b760637e5145e89fbe29be081aebd70da8f7a4b2936ad",
+  "full_500_video_estimate_seconds": 30106.716174156,
+  "remaining_estimate_seconds": 26840.464550393463,
+  "peak_memory_bytes": 39310227968,
+  "exact_archived_sampling": true
+}

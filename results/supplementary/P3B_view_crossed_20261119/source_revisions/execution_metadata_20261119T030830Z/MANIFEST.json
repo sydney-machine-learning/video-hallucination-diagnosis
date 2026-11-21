@@ -1,0 +1,92 @@
+{
+  "commit": "22e6aaa2616b1e59f49a01672ffc46f9605a6e5b",
+  "utc": "2026-11-19T02:38:10.545598+00:00",
+  "status": "Five bounded jobs queued after corrected deployment and frame preflight",
+  "jobs": {
+    "utc": "2026-11-19T02:38:10.545598+00:00",
+    "tasks": [
+      {
+        "protocol": "phase_views",
+        "model": "internvl14",
+        "job": "9829635.kman.restech.unsw.edu.au"
+      },
+      {
+        "protocol": "phase_views",
+        "model": "llava8",
+        "job": "9829636.kman.restech.unsw.edu.au"
+      },
+      {
+        "protocol": "original_views",
+        "model": "qwen8",
+        "job": "9829612.kman.restech.unsw.edu.au"
+      },
+      {
+        "protocol": "original_views",
+        "model": "internvl14",
+        "job": "9829161.kman.restech.unsw.edu.au"
+      },
+      {
+        "protocol": "original_views",
+        "model": "llava8",
+        "job": "9829162.kman.restech.unsw.edu.au"
+      }
+    ],
+    "cpu_gate": "9829167.kman.restech.unsw.edu.au",
+    "native_jobs_user_hold_until_cpu_gate_passes": false,
+    "failed_before_inference": [
+      "9829050.kman.restech.unsw.edu.au",
+      "9829051.kman.restech.unsw.edu.au"
+    ],
+    "supplementary_unused_held_job": "9828938.kman.restech.unsw.edu.au",
+    "cpu_frame_validation": "9829148 passed",
+    "tokenizer_validation": "Configured official loader hash check on CPU within each allocation, before weight staging, then equality check at inference load",
+    "cancelled_dependency_jobs": [
+      "9829160",
+      "9829168",
+      "9829169"
+    ]
+  },
+  "seeds": {
+    "inference": 1234,
+    "pilot_lr": 20260802,
+    "phaseguard": 20260820,
+    "bootstrap": 20260803
+  },
+  "gpu": "one RP6000 per job; cap 285 minutes",
+  "env": "same pilot venv and isolated dependencies as P3B_original_panel_20261119; runtime environment receipts required",
+  "checksums": {
+    "ANALYSIS_LOCK.json": "0e3f0a3f9369ed3075a91786a59affe39de2e47c8d38372d618b4398affd6d85",
+    "analyze_matched.py": "be62752a3d49639429b7b920467e4f8fde2ba96c98ff6ee5980115f68aa3b10f",
+    "archived_internvl_adapter.py": "4b3ca4cb5d34767bed91edbd1661460c1ff7bf8a36fc69f45edfad63615b4f12",
+    "audit_matched.py": "130abdd1f1dbfa29d4a4da3057f3774489588bc9baf7851ea6c0e1cd67133319",
+    "check_inputs.pbs": "1f448e90a42da6d9795c62d210a78869782232dcce03d8bdcb6dea7a5fe7f261",
+    "check_inputs.py": "2e940c0e288a536e2944a3220eda1460eb93d0da8fc3f5b641adb3e49baa8f0d",
+    "check_inputs_v2.pbs": "33d3302729951dd386541f98ab19cbbad538e36a68e36bb4d7681f156b44e633",
+    "check_inputs_v2.py": "adae130569257e25444130456e38ebe3d9e089cd54e0d829328497fa004584cb",
+    "check_inputs_v3.pbs": "f1f63bec3d6b98b93f578a5d57c138a80612bac4be809a9a1c2122af59cdc5a4",
+    "check_inputs_v3.py": "14e8eca7a4b68093b3f3c764094f7ea635a322427d3ea38ab44ad0bed9d669b7",
+    "collect_accounting.py": "f70e05c367388ca2114bf79488cc1488427bee0cdba06ef8a06b2e26548aaf67",
+    "collect_and_analyze.py": "e92d2e084f85b7121efc3071635daa9b0a476a16e25b69a500c5f74815ebb9f1",
+    "FEATURE_SPEC.json": "32c5d61c014b3b155a86f40b054066f4f5af7d0d75d4772e8e8e8c36595511d4",
+    "matched_features.py": "5c4957bd08274c70158cb2d9820926005c7635eeec97e7e8be7c1ead40d10fe8",
+    "matched_selector.py": "4676ffa8c9224012ced687aba33fa074e8498d35e9c55db6a28db2662e7242c0",
+    "native_sampling.py": "4e1486265f6e21bbff6b40c70748026b6f1a24d598e238ee636a212d204c999c",
+    "native_views.pbs": "2e433f5f587a10bce0ddf49d7a0f0885337013806c25de874e90b29652c0b226",
+    "pilot_video_ids.json": "285e426ea097c3dcb7e48b31e7ff6642682cc5e2606c963c9a8dc3e43cf5ce05",
+    "plot_matched.py": "4942c4127d738186e3b6d225dead2be861c45507b6382933ebe539529b3930a8",
+    "preflight_assets.py": "98bcd209f24d0e9033fd413b5976935153cfffe484c532992cf5c0587827486e",
+    "prepare_features.py": "231302ffb522e913295b0d3cf65795633869fbbe29375db872724475fb060adc",
+    "prepare_models.py": "73bf9cc1b506c7ed6f040b423dffcc1ec83e684205ee930aa7aecfb8d93f8845",
+    "PROTOCOL.md": "54c55ad3aeb66a5e9f6d3b1b13ef5baebe306977236fc6f05d26a3a4d32a7b32",
+    "remote_status.py": "8c182019b5c6a8958f7a8e6d38d534ce95487510bd464447a5ef223548ed380d",
+    "report_crossed.py": "7e1ca69cb265fff5027a195e1ae4527608377c24806d738eabcbd0b91292f312",
+    "run_peer.py": "7ce223dc4d426ee721844458f49ab56a7b4bbb9317b38872768701ca5c55b05d",
+    "RUN_PROTOCOL.json": "dde1298ae5ff9bfcac330aa34a4a0be9d7dd80c1166d531a2a5acba5240067ce",
+    "run_staged.py": "dd3a8edec2472fd5beab80947355c4ca7b1d26233b2523344fba0d790399f640",
+    "summarize_matched.py": "21c20c95249baf4242091c7cb9c558a5668fe69b19c360141844bbfbebc8f71c",
+    "test_matched.py": "1dc552aad2dfc557184792922d275843ab045d512c2a8f17878c2150b73a7379",
+    "tokenizer_guard.py": "39dc689e0b13e5008aeb5034af413c16e8ba9fc8384b8bdfacdb7b3f1fa6320a",
+    "tokenizer_preflight.py": "98011e02e72576372ac8d5df679acc9e97295589f97b91da073e00bb2384007f",
+    "validate_native.py": "491768fff8dbd320b94bc1067c6b588bb0862e8efee06bb35bf54837cfe9dc77"
+  }
+}

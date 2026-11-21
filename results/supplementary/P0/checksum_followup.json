@@ -1,0 +1,47 @@
+[
+  {
+    "scope": "HERBench:archive.sha256",
+    "recorded_path": "/home/z5611125/trace_rc_route/results_fresh/herbench_confirmation/8918264.kman.restech.unsw.edu.au/HERBENCH_PREINFERENCE_SEAL_20260802.json",
+    "local_path": "results/herbench_confirmation/8918264.kman.restech.unsw.edu.au/HERBENCH_PREINFERENCE_SEAL_20260802.json",
+    "expected_sha256": "c5ffe98641b097f6610312d7bfade18881760442775011d5a506a137fa1d9327",
+    "actual_sha256": "f86e58c9152a24192f41f8c63a22b1bb38c4ba1da401a76893429d343f4b0e12",
+    "git_blob_sha256": "f8b77c446ce8ed5c1ab4a81a9a4c64e6c9e3da839a721a6cc8a67f45f347853e",
+    "status": "content_mismatch",
+    "remote_copy": "inputs/remote_code/original_herbench_seal.json",
+    "remote_sha256": "c5ffe98641b097f6610312d7bfade18881760442775011d5a506a137fa1d9327",
+    "remote_matches_expected": true,
+    "equal_after_newline_normalization": true,
+    "equal_after_ignoring_final_newlines": true,
+    "resolution": "Recovered byte-exact sealed file; local difference is line endings"
+  },
+  {
+    "scope": "HERBench:sealed_source",
+    "recorded_path": "katana/herbench_persistent_worker.py",
+    "local_path": "katana/herbench_persistent_worker.py",
+    "expected_sha256": "0f029f9d1891670daf0da8e512433b161e2ef3446a6134364df6efe873c3b228",
+    "actual_sha256": "018c35494b0e410634dd56b17ed4f6b3a13514c24d7dc0f6534cd5e9e995b706",
+    "git_blob_sha256": "bfe9e5e75dc020ad69103931ea596e0e9082f2a1b508d9e26ca3a16ab7635794",
+    "status": "content_mismatch",
+    "remote_copy": "inputs/remote_code/remote_herbench_persistent_worker.py",
+    "remote_sha256": "0f029f9d1891670daf0da8e512433b161e2ef3446a6134364df6efe873c3b228",
+    "remote_matches_expected": true,
+    "equal_after_newline_normalization": false,
+    "equal_after_ignoring_final_newlines": true,
+    "resolution": "Recovered byte-exact sealed file; local difference is a trailing blank line"
+  },
+  {
+    "scope": "HERBench:sealed_source",
+    "recorded_path": "src/analyze_herbench_trace_rc.py",
+    "local_path": "src/analyze_herbench_trace_rc.py",
+    "expected_sha256": "b44a3de8d9d58350b66712f6a476b5bc5f3c852e40e845605c735720250e5593",
+    "actual_sha256": "b01d57b0f4a91433481ffd0469af9831cfb532c0762f5113c5666d14613afe87",
+    "git_blob_sha256": "4c2790d59381d6bb30f19bca6d019cf5aa86e467948b0e20154e155618d3c8ba",
+    "status": "content_mismatch",
+    "remote_copy": "inputs/remote_code/remote_analyze_herbench_trace_rc.py",
+    "remote_sha256": "4c2790d59381d6bb30f19bca6d019cf5aa86e467948b0e20154e155618d3c8ba",
+    "remote_matches_expected": false,
+    "equal_after_newline_normalization": true,
+    "equal_after_ignoring_final_newlines": true,
+    "resolution": "Current local and Katana source agree after newline normalization and match the Perception seal; older HERBench sealed version remains unavailable"
+  }
+]

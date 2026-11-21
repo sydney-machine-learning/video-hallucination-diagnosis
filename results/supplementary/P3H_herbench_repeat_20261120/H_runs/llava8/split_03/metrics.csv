@@ -1,0 +1,7 @@
+model,split,method,accuracy,aurc,gain_pct,selected
+llava8,3,original,0.5234375,0.2742345619334378,0.0,target_logistic
+llava8,3,pilot_lr,0.5234375,0.24528528268094327,10.556393420432949,target_logistic
+llava8,3,development_hgb,0.5234375,0.25453848648950045,7.18220026865833,target_logistic
+llava8,3,base_support,0.5234375,0.2524520639163217,7.943017052096874,target_logistic
+llava8,3,all_view_support,0.5234375,0.24260756793331595,11.532825686573513,target_logistic
+llava8,3,checked,0.5234375,0.24528528268094327,10.556393420432949,target_logistic

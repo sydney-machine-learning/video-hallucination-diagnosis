@@ -1,0 +1,5 @@
+dataset,split,questions,videos,video_overlap,labels_join_exact,expected_raw_response_rows_per_model,raw_response_rows_verified
+HERBench,pilot,1008,34,0,True,4032,
+HERBench,test,963,34,0,True,3852,
+Perception,pilot,977,250,0,True,3908,
+Perception,test,911,250,0,True,3644,

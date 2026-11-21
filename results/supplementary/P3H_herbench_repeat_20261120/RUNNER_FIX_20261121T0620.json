@@ -1,0 +1,12 @@
+{
+  "time": "2026-11-21 AEDT",
+  "failed_jobs": [
+    "9843045[1]",
+    "9843045[2]"
+  ],
+  "cause": "First video of each shard (a trailer) has no stored frame count or duration in its stream header; the runner asserted both were present. No responses were written.",
+  "fix": "Read fps, duration and frame count with the same fallbacks as the original HERBench probe_video (fps 24, duration end+1, frame count round(duration*fps)). If an estimated frame count exceeds the decodable frames, the missing indices take the last decoded frame; decode.jsonl records stored_frame_count and clamped_indices. Videos with a stored frame count are unaffected.",
+  "old_runner_sha256": "5a81f79678adef36eb4d045f2bea876a0cc9b31f8d440c0ddc9822ba313751a3",
+  "new_runner_sha256": "dab4d56504b6a14c7cd3b0f703c28aab882b82ed7245d927c78c7efd06f6b5ab",
+  "backup": "run_shard.py.bak_20261121"
+}

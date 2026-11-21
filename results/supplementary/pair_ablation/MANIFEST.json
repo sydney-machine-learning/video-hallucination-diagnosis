@@ -1,0 +1,20 @@
+{
+  "phase": "pair_ablation",
+  "utc": "2026-11-18T13:10:13.984026+00:00",
+  "commit": "22e6aaa2616b1e59f49a01672ffc46f9605a6e5b",
+  "seeds": null,
+  "gpu_used": false,
+  "jobs_submitted": 0,
+  "environment": {
+    "python": "3.10.9 | packaged by Anaconda, Inc. | (main, Mar  1 2023, 18:18:15) [MSC v.1916 64 bit (AMD64)]",
+    "platform": "Windows-10-10.0.22631-SP0"
+  },
+  "input_sha256": {
+    "results/posthoc_robustness/compute_budget_ablation.csv": "644d5deb98c8ad937aba273f18050e1fb2dfc6a3baf7eb1ac6173c166ec6f6d2"
+  },
+  "output_sha256": {
+    "extract.py": "056781001763645aad3720b16363e943a8d75c091fa1764a35c42084d177c6fc",
+    "pair_gains.csv": "c2091dda41706af16b4d6bfe3ac35306a8b40c07248cf2d2284308c71ed20122",
+    "REPORT.md": "104bb39140875a992f8d5a438a23fe7412e88abb5b3f74793d7d44c4662abca9"
+  }
+}

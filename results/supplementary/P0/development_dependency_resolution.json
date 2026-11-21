@@ -1,0 +1,178 @@
+{
+  "references": [
+    {
+      "archived_path": "caver_route/results_fresh/mvbench_confirmation/8904763.kman.restech.unsw.edu.au/mvbench_caver_features.csv",
+      "expected_sha256": "2a2f223e904bf94f534768fcf97bbf37afbd2105389782891dcd37a80788e6f3",
+      "remote_checksum_matches": true,
+      "remote_paths": [
+        "/home/z5611125/caver_route/results_fresh/mvbench_confirmation/8904763.kman.restech.unsw.edu.au/mvbench_caver_features.csv"
+      ],
+      "rows": 5400
+    },
+    {
+      "archived_path": "caver_route/results_fresh/mvbench_inference/8904762.kman.restech.unsw.edu.au/internvl_predictions.jsonl",
+      "expected_sha256": "698fd864284537bae956303f477b51f4772c0b0c819e3c77909503aa63dd96ea",
+      "remote_checksum_matches": true,
+      "remote_paths": [
+        "/home/z5611125/caver_route/results_fresh/mvbench_inference/8904762.kman.restech.unsw.edu.au/internvl_predictions.jsonl"
+      ],
+      "rows": 7200
+    },
+    {
+      "archived_path": "caver_route/results_fresh/mvbench_inference/8904762.kman.restech.unsw.edu.au/llava_predictions.jsonl",
+      "expected_sha256": "5f064f3de2f2724be2d3d902de3dd737158a4732a26ba855aa7c52271c44f2fd",
+      "remote_checksum_matches": true,
+      "remote_paths": [
+        "/home/z5611125/caver_route/results_fresh/mvbench_inference/8904762.kman.restech.unsw.edu.au/llava_predictions.jsonl"
+      ],
+      "rows": 7200
+    },
+    {
+      "archived_path": "caver_route/results_fresh/mvbench_inference/8904762.kman.restech.unsw.edu.au/qwen_predictions.jsonl",
+      "expected_sha256": "ed2df49f3d95dd2345c14e9e1358a63ebfeb0601240a39a55cdea9840bd7cb6a",
+      "remote_checksum_matches": true,
+      "remote_paths": [
+        "/home/z5611125/caver_route/results_fresh/mvbench_inference/8904762.kman.restech.unsw.edu.au/qwen_predictions.jsonl"
+      ],
+      "rows": 7200
+    },
+    {
+      "archived_path": "probe_route/results/prave_tempcompass_confirmation/raw/8905479.kman.restech.unsw.edu.au/internvl_predictions.jsonl",
+      "expected_sha256": "f1742226cd4b8acd1ed4cae07d9d1b1aa89ccaef9950c5b34fd20209c161d51b",
+      "remote_checksum_matches": true,
+      "remote_paths": [
+        "/home/z5611125/sicr_route/results_fresh/prave_tempcompass_confirmation/8905479.kman.restech.unsw.edu.au/internvl_predictions.jsonl"
+      ],
+      "rows": 820
+    },
+    {
+      "archived_path": "probe_route/results/prave_tempcompass_confirmation/raw/8905479.kman.restech.unsw.edu.au/llava_predictions.jsonl",
+      "expected_sha256": "a7afb6da8c07d4bbe67a16ceba2e5d7d264f205e78eadde4596cdb65106a6be5",
+      "remote_checksum_matches": true,
+      "remote_paths": [
+        "/home/z5611125/sicr_route/results_fresh/prave_tempcompass_confirmation/8905479.kman.restech.unsw.edu.au/llava_predictions.jsonl"
+      ],
+      "rows": 820
+    },
+    {
+      "archived_path": "probe_route/results/prave_tempcompass_confirmation/raw/8905479.kman.restech.unsw.edu.au/qwen_predictions.jsonl",
+      "expected_sha256": "a2292ec0de436084e94473f1d38bbf15c146a07cae8c6cd6223776636b3f2e0d",
+      "remote_checksum_matches": true,
+      "remote_paths": [
+        "/home/z5611125/sicr_route/results_fresh/prave_tempcompass_confirmation/8905479.kman.restech.unsw.edu.au/qwen_predictions.jsonl"
+      ],
+      "rows": 820
+    },
+    {
+      "archived_path": "probe_route/results/prave_tempcompass_confirmation/scored_predictions.csv",
+      "expected_sha256": "133c8fcadaad18f0d10ecd7a9107e9e695723fc80e8df2a38bb063a2c7aafcbc",
+      "remote_checksum_matches": true,
+      "remote_paths": [
+        "/home/z5611125/probe_route/input/development_scored/tempcompass_scored_predictions.csv"
+      ],
+      "rows": 1230
+    },
+    {
+      "archived_path": "probe_route/results/rava_vhd_confirmation/raw/8905351.kman.restech.unsw.edu.au/internvl_predictions.jsonl",
+      "expected_sha256": "21c0be9a4da73786698f5528888678b09839cf839a59993c7c2f0164a3bbbbe9",
+      "remote_checksum_matches": true,
+      "remote_paths": [
+        "/home/z5611125/sicr_route/results_fresh/rava_vhd_confirmation/8905351.kman.restech.unsw.edu.au/internvl_predictions.jsonl"
+      ],
+      "rows": 1602
+    },
+    {
+      "archived_path": "probe_route/results/rava_vhd_confirmation/raw/8905351.kman.restech.unsw.edu.au/llava_predictions.jsonl",
+      "expected_sha256": "5e4491fd92274d5e709e39c4bce01bea9e2c3d33934f0bd8315a9d7347a918e7",
+      "remote_checksum_matches": true,
+      "remote_paths": [
+        "/home/z5611125/sicr_route/results_fresh/rava_vhd_confirmation/8905351.kman.restech.unsw.edu.au/llava_predictions.jsonl"
+      ],
+      "rows": 1602
+    },
+    {
+      "archived_path": "probe_route/results/rava_vhd_confirmation/raw/8905351.kman.restech.unsw.edu.au/qwen_predictions.jsonl",
+      "expected_sha256": "df3536c84653316acbaf0c91076fa7184bc749354f92b9174e31234cc7a3a956",
+      "remote_checksum_matches": true,
+      "remote_paths": [
+        "/home/z5611125/sicr_route/results_fresh/rava_vhd_confirmation/8905351.kman.restech.unsw.edu.au/qwen_predictions.jsonl"
+      ],
+      "rows": 1602
+    },
+    {
+      "archived_path": "probe_route/results/rava_vhd_confirmation/scored_predictions.csv",
+      "expected_sha256": "b10e371afb6f21881e4b8b7a4b821c2a1531465fb5e0aae0d15607298e39fb08",
+      "remote_checksum_matches": true,
+      "remote_paths": [
+        "/home/z5611125/probe_route/input/development_scored/vhd_scored_predictions.csv"
+      ],
+      "rows": 2403
+    },
+    {
+      "archived_path": "sicr_route/results/katana_phase2/internvl3_5_4b_predictions.jsonl",
+      "expected_sha256": "92a03293109d7a92a353d6d9a1a2fbab21190cd3f3dba5b5afe556be03b2a1a5",
+      "remote_checksum_matches": true,
+      "remote_paths": [
+        "/home/z5611125/sicr_route/results/katana_phase2/internvl3_5_4b_predictions.jsonl"
+      ],
+      "rows": 2000
+    },
+    {
+      "archived_path": "sicr_route/results/katana_phase2/qwen3_vl_4b_predictions.jsonl",
+      "expected_sha256": "99e7a876c27276f0b87f4adf6891260be7e818e4403659ba7f95819c0674da6a",
+      "remote_checksum_matches": true,
+      "remote_paths": [
+        "/home/z5611125/sicr_route/results/katana_phase2/qwen3_vl_4b_predictions.jsonl"
+      ],
+      "rows": 2000
+    },
+    {
+      "archived_path": "sicr_route/results_fresh/download_2026-07-31/8900849.kman.restech.unsw.edu.au/nextgqa_llava/llava_ov2_8b_predictions.jsonl",
+      "expected_sha256": "1a1f6022cd07c93e52435e46f8f08bbdb409d33dae7910b31a967ed1038d963c",
+      "remote_checksum_matches": true,
+      "remote_paths": [
+        "/home/z5611125/sicr_route/results_fresh/public_inference/8900849.kman.restech.unsw.edu.au/nextgqa_llava/llava_ov2_8b_predictions.jsonl"
+      ],
+      "rows": 2000
+    },
+    {
+      "archived_path": "sicr_route/results_fresh/download_2026-07-31/8900849.kman.restech.unsw.edu.au/star_three_model/internvl_predictions.jsonl",
+      "expected_sha256": "0f124ac84328714042a91cc4b7b3302d322e33b712e199aa6707c2e14e56f240",
+      "remote_checksum_matches": true,
+      "remote_paths": [
+        "/home/z5611125/sicr_route/results_fresh/public_inference/8900849.kman.restech.unsw.edu.au/star_three_model/internvl_predictions.jsonl"
+      ],
+      "rows": 2000
+    },
+    {
+      "archived_path": "sicr_route/results_fresh/download_2026-07-31/8900849.kman.restech.unsw.edu.au/star_three_model/llava_predictions.jsonl",
+      "expected_sha256": "83822b27e72d541fb64edc740f366c8c93034d035407dba930b958b30a2b36a0",
+      "remote_checksum_matches": true,
+      "remote_paths": [
+        "/home/z5611125/sicr_route/results_fresh/public_inference/8900849.kman.restech.unsw.edu.au/star_three_model/llava_predictions.jsonl"
+      ],
+      "rows": 2000
+    },
+    {
+      "archived_path": "sicr_route/results_fresh/download_2026-07-31/8900849.kman.restech.unsw.edu.au/star_three_model/qwen_predictions.jsonl",
+      "expected_sha256": "ebeb62495ac6781d144f755d9bf2b3a7ee8c964522b4bce922c075e84ff4e0ce",
+      "remote_checksum_matches": true,
+      "remote_paths": [
+        "/home/z5611125/sicr_route/results_fresh/public_inference/8900849.kman.restech.unsw.edu.au/star_three_model/qwen_predictions.jsonl"
+      ],
+      "rows": 2000
+    },
+    {
+      "archived_path": "sicr_route/results_fresh/download_2026-07-31/8901064.kman.restech.unsw.edu.au/multidataset_features.csv",
+      "expected_sha256": "5b17dd2e1d25294f524be03e386c1b56b4c3a83c64ecd813d5fbe5c6e255b831",
+      "remote_checksum_matches": true,
+      "remote_paths": [
+        "/home/z5611125/sicr_route/results_fresh/multidataset_analysis/8906912.kman.restech.unsw.edu.au/multidataset_features.csv",
+        "/home/z5611125/sicr_route/results_fresh/safe_sirc_confirmation/8901064.kman.restech.unsw.edu.au/multidataset_features.csv"
+      ],
+      "rows": 3000
+    }
+  ],
+  "inventory_schema_caveat": "remote_dependency_audit.json uses question_id before pilot_id for duplicate counting. This causes false duplicate flags for NExT-GQA, where question_id is local to a video. Those duplicate counts and question counts are not validated and are not used here. The archived feature builder correctly prioritizes pilot_id. Byte hashes and total row counts are unaffected.",
+  "audit_scope": "SHA256 and total row counts only; no development model refit or feature reconstruction was performed"
+}

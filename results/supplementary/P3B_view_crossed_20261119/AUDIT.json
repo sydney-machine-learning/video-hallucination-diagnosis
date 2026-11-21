@@ -1,0 +1,10 @@
+{
+  "passed": true,
+  "policy_split_pairs": 62,
+  "all_fixed_splits_present": true,
+  "video_disjoint_splits_and_folds": true,
+  "all_metrics_recomputed_from_saved_predictions": true,
+  "same_answers_accuracy_and_question_order_within_policy": true,
+  "source_locks_intact": true,
+  "common_answer_verified_against_base16": true
+}

@@ -1,0 +1,7 @@
+dataset,model_id,archived_selection,prefix_selection,would_differ,status
+HERBench,OpenGVLab/InternVL3_5-14B-Instruct,target_logistic,,,unverifiable_missing_pilot_responses_and_scores
+HERBench,Qwen/Qwen3-VL-8B-Instruct,target_logistic,,,unverifiable_missing_pilot_responses_and_scores
+HERBench,lmms-lab-encoder/LLaVA-OneVision-2-8B-Instruct,target_logistic,,,unverifiable_missing_pilot_responses_and_scores
+Perception,OpenGVLab/InternVL3_5-14B-Instruct,raw_fallback,,,unverifiable_missing_pilot_responses_and_scores
+Perception,Qwen/Qwen3-VL-8B-Instruct,target_logistic,,,unverifiable_missing_pilot_responses_and_scores
+Perception,lmms-lab-encoder/LLaVA-OneVision-2-8B-Instruct,target_logistic,,,unverifiable_missing_pilot_responses_and_scores

@@ -1,0 +1,9 @@
+dataset,split,source_collection,videos,questions
+HERBench,pilot,HD_EPIC,16,327
+HERBench,pilot,PersonPath22,2,15
+HERBench,pilot,WildTrack,7,427
+HERBench,pilot,trailers,9,239
+HERBench,test,HD_EPIC,15,288
+HERBench,test,PersonPath22,2,16
+HERBench,test,WildTrack,8,418
+HERBench,test,trailers,9,241

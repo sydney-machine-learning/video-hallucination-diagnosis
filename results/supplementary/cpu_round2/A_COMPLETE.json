@@ -1,0 +1,6 @@
+{
+  "cpu_only": true,
+  "runs": 60,
+  "bootstrap_selection": 2000,
+  "bootstrap_accuracy": 10000
+}

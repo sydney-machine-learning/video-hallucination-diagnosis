@@ -1,0 +1,14 @@
+{
+  "time": "2026-11-21 06:35 AEDT",
+  "failed_jobs": [
+    "9843046[0]",
+    "9843046[1]",
+    "9843046[2]",
+    "9843046[3]"
+  ],
+  "cause": "InternVL replied 'B. A woman in a green parka ...'; the parser saw both B and the article A as standalone labels and the runner stopped on the parse assertion. Rows already written are kept and resumed.",
+  "fix": "parse_answer takes a leading option label first, then falls back to the original unique-label rule. An unparseable reply is logged as PARSE_FAILURE and recorded with answer null instead of stopping the shard. Candidate probabilities, which the analysis uses, are unchanged.",
+  "old_runner_sha256": "dab4d56504b6a14c7cd3b0f703c28aab882b82ed7245d927c78c7efd06f6b5ab",
+  "new_runner_sha256": "1b14e3a098cca2e5e33a3ea691d5965f0032536accb821e7d093bd052da00fb9",
+  "backup": "run_shard.py.bak_20261121_parse"
+}

@@ -1,0 +1,156 @@
+dataset,split_id,source,pilot_videos,test_videos,pilot_questions,test_questions,no_video_leakage
+HERBench,0,HD_EPIC,16,15,1008,963,True
+HERBench,0,PersonPath22,2,2,1008,963,True
+HERBench,0,WildTrack,7,8,1008,963,True
+HERBench,0,trailers,9,9,1008,963,True
+HERBench,1,HD_EPIC,15,16,1044,927,True
+HERBench,1,PersonPath22,2,2,1044,927,True
+HERBench,1,WildTrack,8,7,1044,927,True
+HERBench,1,trailers,9,9,1044,927,True
+HERBench,2,HD_EPIC,15,16,1026,945,True
+HERBench,2,PersonPath22,2,2,1026,945,True
+HERBench,2,WildTrack,8,7,1026,945,True
+HERBench,2,trailers,9,9,1026,945,True
+HERBench,3,HD_EPIC,16,15,947,1024,True
+HERBench,3,PersonPath22,2,2,947,1024,True
+HERBench,3,WildTrack,7,8,947,1024,True
+HERBench,3,trailers,9,9,947,1024,True
+HERBench,4,HD_EPIC,15,16,1032,939,True
+HERBench,4,PersonPath22,2,2,1032,939,True
+HERBench,4,WildTrack,8,7,1032,939,True
+HERBench,4,trailers,9,9,1032,939,True
+HERBench,5,HD_EPIC,15,16,964,1007,True
+HERBench,5,PersonPath22,2,2,964,1007,True
+HERBench,5,WildTrack,8,7,964,1007,True
+HERBench,5,trailers,9,9,964,1007,True
+HERBench,6,HD_EPIC,15,16,1034,937,True
+HERBench,6,PersonPath22,2,2,1034,937,True
+HERBench,6,WildTrack,8,7,1034,937,True
+HERBench,6,trailers,9,9,1034,937,True
+HERBench,7,HD_EPIC,15,16,1055,916,True
+HERBench,7,PersonPath22,2,2,1055,916,True
+HERBench,7,WildTrack,8,7,1055,916,True
+HERBench,7,trailers,9,9,1055,916,True
+HERBench,8,HD_EPIC,15,16,981,990,True
+HERBench,8,PersonPath22,2,2,981,990,True
+HERBench,8,WildTrack,8,7,981,990,True
+HERBench,8,trailers,9,9,981,990,True
+HERBench,9,HD_EPIC,16,15,990,981,True
+HERBench,9,PersonPath22,2,2,990,981,True
+HERBench,9,WildTrack,7,8,990,981,True
+HERBench,9,trailers,9,9,990,981,True
+HERBench,10,HD_EPIC,16,15,935,1036,True
+HERBench,10,PersonPath22,2,2,935,1036,True
+HERBench,10,WildTrack,7,8,935,1036,True
+HERBench,10,trailers,9,9,935,1036,True
+HERBench,11,HD_EPIC,16,15,991,980,True
+HERBench,11,PersonPath22,2,2,991,980,True
+HERBench,11,WildTrack,7,8,991,980,True
+HERBench,11,trailers,9,9,991,980,True
+HERBench,12,HD_EPIC,16,15,956,1015,True
+HERBench,12,PersonPath22,2,2,956,1015,True
+HERBench,12,WildTrack,7,8,956,1015,True
+HERBench,12,trailers,9,9,956,1015,True
+HERBench,13,HD_EPIC,15,16,990,981,True
+HERBench,13,PersonPath22,2,2,990,981,True
+HERBench,13,WildTrack,8,7,990,981,True
+HERBench,13,trailers,9,9,990,981,True
+HERBench,14,HD_EPIC,16,15,975,996,True
+HERBench,14,PersonPath22,2,2,975,996,True
+HERBench,14,WildTrack,7,8,975,996,True
+HERBench,14,trailers,9,9,975,996,True
+HERBench,15,HD_EPIC,15,16,1018,953,True
+HERBench,15,PersonPath22,2,2,1018,953,True
+HERBench,15,WildTrack,8,7,1018,953,True
+HERBench,15,trailers,9,9,1018,953,True
+HERBench,16,HD_EPIC,16,15,977,994,True
+HERBench,16,PersonPath22,2,2,977,994,True
+HERBench,16,WildTrack,7,8,977,994,True
+HERBench,16,trailers,9,9,977,994,True
+HERBench,17,HD_EPIC,15,16,963,1008,True
+HERBench,17,PersonPath22,2,2,963,1008,True
+HERBench,17,WildTrack,8,7,963,1008,True
+HERBench,17,trailers,9,9,963,1008,True
+HERBench,18,HD_EPIC,16,15,923,1048,True
+HERBench,18,PersonPath22,2,2,923,1048,True
+HERBench,18,WildTrack,7,8,923,1048,True
+HERBench,18,trailers,9,9,923,1048,True
+HERBench,19,HD_EPIC,16,15,932,1039,True
+HERBench,19,PersonPath22,2,2,932,1039,True
+HERBench,19,WildTrack,7,8,932,1039,True
+HERBench,19,trailers,9,9,932,1039,True
+HERBench,20,HD_EPIC,16,15,915,1056,True
+HERBench,20,PersonPath22,2,2,915,1056,True
+HERBench,20,WildTrack,7,8,915,1056,True
+HERBench,20,trailers,9,9,915,1056,True
+HERBench,21,HD_EPIC,16,15,951,1020,True
+HERBench,21,PersonPath22,2,2,951,1020,True
+HERBench,21,WildTrack,7,8,951,1020,True
+HERBench,21,trailers,9,9,951,1020,True
+HERBench,22,HD_EPIC,15,16,1042,929,True
+HERBench,22,PersonPath22,2,2,1042,929,True
+HERBench,22,WildTrack,8,7,1042,929,True
+HERBench,22,trailers,9,9,1042,929,True
+HERBench,23,HD_EPIC,16,15,987,984,True
+HERBench,23,PersonPath22,2,2,987,984,True
+HERBench,23,WildTrack,7,8,987,984,True
+HERBench,23,trailers,9,9,987,984,True
+HERBench,24,HD_EPIC,16,15,999,972,True
+HERBench,24,PersonPath22,2,2,999,972,True
+HERBench,24,WildTrack,7,8,999,972,True
+HERBench,24,trailers,9,9,999,972,True
+HERBench,25,HD_EPIC,16,15,988,983,True
+HERBench,25,PersonPath22,2,2,988,983,True
+HERBench,25,WildTrack,7,8,988,983,True
+HERBench,25,trailers,9,9,988,983,True
+HERBench,26,HD_EPIC,16,15,936,1035,True
+HERBench,26,PersonPath22,2,2,936,1035,True
+HERBench,26,WildTrack,7,8,936,1035,True
+HERBench,26,trailers,9,9,936,1035,True
+HERBench,27,HD_EPIC,16,15,977,994,True
+HERBench,27,PersonPath22,2,2,977,994,True
+HERBench,27,WildTrack,7,8,977,994,True
+HERBench,27,trailers,9,9,977,994,True
+HERBench,28,HD_EPIC,15,16,981,990,True
+HERBench,28,PersonPath22,2,2,981,990,True
+HERBench,28,WildTrack,8,7,981,990,True
+HERBench,28,trailers,9,9,981,990,True
+HERBench,29,HD_EPIC,15,16,982,989,True
+HERBench,29,PersonPath22,2,2,982,989,True
+HERBench,29,WildTrack,8,7,982,989,True
+HERBench,29,trailers,9,9,982,989,True
+HERBench,30,HD_EPIC,15,16,971,1000,True
+HERBench,30,PersonPath22,2,2,971,1000,True
+HERBench,30,WildTrack,8,7,971,1000,True
+HERBench,30,trailers,9,9,971,1000,True
+Perception,0,Perception Test,250,250,977,911,True
+Perception,1,Perception Test,250,250,937,951,True
+Perception,2,Perception Test,250,250,964,924,True
+Perception,3,Perception Test,250,250,907,981,True
+Perception,4,Perception Test,250,250,906,982,True
+Perception,5,Perception Test,250,250,901,987,True
+Perception,6,Perception Test,250,250,930,958,True
+Perception,7,Perception Test,250,250,890,998,True
+Perception,8,Perception Test,250,250,934,954,True
+Perception,9,Perception Test,250,250,957,931,True
+Perception,10,Perception Test,250,250,918,970,True
+Perception,11,Perception Test,250,250,972,916,True
+Perception,12,Perception Test,250,250,901,987,True
+Perception,13,Perception Test,250,250,944,944,True
+Perception,14,Perception Test,250,250,949,939,True
+Perception,15,Perception Test,250,250,983,905,True
+Perception,16,Perception Test,250,250,905,983,True
+Perception,17,Perception Test,250,250,927,961,True
+Perception,18,Perception Test,250,250,958,930,True
+Perception,19,Perception Test,250,250,880,1008,True
+Perception,20,Perception Test,250,250,947,941,True
+Perception,21,Perception Test,250,250,955,933,True
+Perception,22,Perception Test,250,250,951,937,True
+Perception,23,Perception Test,250,250,951,937,True
+Perception,24,Perception Test,250,250,938,950,True
+Perception,25,Perception Test,250,250,941,947,True
+Perception,26,Perception Test,250,250,945,943,True
+Perception,27,Perception Test,250,250,885,1003,True
+Perception,28,Perception Test,250,250,939,949,True
+Perception,29,Perception Test,250,250,929,959,True
+Perception,30,Perception Test,250,250,943,945,True

@@ -1,0 +1,23 @@
+[
+  {
+    "remote": "/home/z5611125/trace_rc_route/results_fresh/herbench_confirmation/8918264.kman.restech.unsw.edu.au/HERBENCH_PREINFERENCE_SEAL_20260802.json",
+    "repository_file": "results/herbench_confirmation/8918264.kman.restech.unsw.edu.au/HERBENCH_PREINFERENCE_SEAL_20260802.json",
+    "returncode": 0,
+    "stderr": "",
+    "copy": "inputs\\remote_code\\original_herbench_seal.json"
+  },
+  {
+    "remote": "/home/z5611125/trace_rc_route/katana/herbench_persistent_worker.py",
+    "repository_file": "katana/herbench_persistent_worker.py",
+    "returncode": 0,
+    "stderr": "",
+    "copy": "inputs\\remote_code\\remote_herbench_persistent_worker.py"
+  },
+  {
+    "remote": "/home/z5611125/trace_rc_route/src/analyze_herbench_trace_rc.py",
+    "repository_file": "src/analyze_herbench_trace_rc.py",
+    "returncode": 0,
+    "stderr": "",
+    "copy": "inputs\\remote_code\\remote_analyze_herbench_trace_rc.py"
+  }
+]

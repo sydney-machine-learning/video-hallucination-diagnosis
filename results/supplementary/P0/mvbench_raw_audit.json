@@ -1,0 +1,35 @@
+[
+  {
+    "path": "results/supplementary/P0/inputs/mvbench/internvl_predictions.jsonl",
+    "sha256": "698fd864284537bae956303f477b51f4772c0b0c819e3c77909503aa63dd96ea",
+    "rows": 7200,
+    "questions": 1800,
+    "unique_media_paths": 1723,
+    "bad_rows": [],
+    "question_view_counts": {
+      "4": 1800
+    }
+  },
+  {
+    "path": "results/supplementary/P0/inputs/mvbench/llava_predictions.jsonl",
+    "sha256": "5f064f3de2f2724be2d3d902de3dd737158a4732a26ba855aa7c52271c44f2fd",
+    "rows": 7200,
+    "questions": 1800,
+    "unique_media_paths": 1723,
+    "bad_rows": [],
+    "question_view_counts": {
+      "4": 1800
+    }
+  },
+  {
+    "path": "results/supplementary/P0/inputs/mvbench/qwen_predictions.jsonl",
+    "sha256": "ed2df49f3d95dd2345c14e9e1358a63ebfeb0601240a39a55cdea9840bd7cb6a",
+    "rows": 7200,
+    "questions": 1800,
+    "unique_media_paths": 1723,
+    "bad_rows": [],
+    "question_view_counts": {
+      "4": 1800
+    }
+  }
+]

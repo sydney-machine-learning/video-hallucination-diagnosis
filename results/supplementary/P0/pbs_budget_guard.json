@@ -1,0 +1,20 @@
+{
+  "jobs_submitted": 0,
+  "archived_scripts": [
+    {
+      "dataset": "HERBench",
+      "archived_allocated_gpus": 2,
+      "archived_walltime_hours": 5.966666666666667,
+      "allocated_gpu_hours": 11.933333333333334,
+      "exceeds_user_5_gpu_hour_stop": true
+    },
+    {
+      "dataset": "Perception",
+      "archived_allocated_gpus": 4,
+      "archived_walltime_hours": 5.966666666666667,
+      "allocated_gpu_hours": 23.866666666666667,
+      "exceeds_user_5_gpu_hour_stop": true
+    }
+  ],
+  "rule": "These are configured allocation limits, not measured utilization. Do not resubmit unchanged; future jobs exceeding five GPU-hours require the user's stop/review."
+}

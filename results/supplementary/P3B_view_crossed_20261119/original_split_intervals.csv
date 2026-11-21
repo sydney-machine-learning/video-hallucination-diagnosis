@@ -1,0 +1,77 @@
+policy,subset,quantity,method,estimate,lo,hi
+original_views,all,aurc,raw,0.1252805014074511,0.10290491283920326,0.15281591306886178
+original_views,all,relative_gain_percent,raw,0.0,0.0,0.0
+original_views,all,aurc,ours_checked,0.10441644399984235,0.08403942258282913,0.12697225935661915
+original_views,all,relative_gain_percent,ours_checked,16.65387444431784,6.724481140651746,27.354909965900546
+original_views,all,aurc,pg_full,0.10525111117893433,0.08507036779505418,0.12778759235966333
+original_views,all,relative_gain_percent,pg_full,15.987635748179962,7.478415658412704,25.81521833719312
+original_views,all,aurc,pg_scope_selected,0.10525111117893433,0.08507036779505418,0.12778759235966333
+original_views,all,relative_gain_percent,pg_scope_selected,15.987635748179962,7.478415658412704,25.81521833719312
+original_views,all,aurc,pg_fixed_rf,0.103237053182261,0.08351444441725447,0.12526989779945635
+original_views,all,relative_gain_percent,pg_fixed_rf,17.595274585865482,9.616723753403537,27.17902251316465
+original_views,all,aurc,ours_unchecked_lr,0.10441644399984235,0.08403942258282913,0.12697225935661915
+original_views,all,relative_gain_percent,ours_unchecked_lr,16.65387444431784,6.724481140651746,27.354909965900546
+original_views,all,aurc,pg_same_lr,0.11176996154202354,0.08859453516413197,0.13826497440325108
+original_views,all,relative_gain_percent,pg_same_lr,10.784231954410117,-3.802473547731145,24.58309818453071
+original_views,all,paired_aurc_difference_negative_favors_left,ours_checked minus pg_full,-0.0008346671790919885,-0.005691604027260013,0.004046142059017687
+original_views,all,paired_aurc_difference_negative_favors_left,ours_checked minus pg_scope_selected,-0.0008346671790919885,-0.005691604027260013,0.004046142059017687
+original_views,all,paired_aurc_difference_negative_favors_left,ours_checked minus pg_fixed_rf,0.0011793908175813522,-0.004310356297169573,0.007165784434998815
+original_views,all,paired_aurc_difference_negative_favors_left,ours_unchecked_lr minus pg_same_lr,-0.007353517542181193,-0.02006834872905578,0.0011868908085345253
+original_views,all,paired_aurc_difference_negative_favors_left,ours_checked minus ours_unchecked_lr,0.0,0.0,0.0
+original_views,physics,aurc,raw,0.17302967257417648,0.1247244763243885,0.2386036920781639
+original_views,physics,relative_gain_percent,raw,0.0,0.0,0.0
+original_views,physics,aurc,ours_checked,0.13437226769403687,0.09588059619181843,0.1804202939022584
+original_views,physics,relative_gain_percent,ours_checked,22.3414887776358,4.710658546478896,39.525515281526374
+original_views,physics,aurc,pg_full,0.13346152296658925,0.09472196003852727,0.18154996938217755
+original_views,physics,relative_gain_percent,pg_full,22.867840537942808,6.230375148724162,39.03933532843441
+original_views,physics,aurc,pg_scope_selected,0.13346152296658925,0.09472196003852727,0.18154996938217755
+original_views,physics,relative_gain_percent,pg_scope_selected,22.867840537942808,6.230375148724162,39.03933532843441
+original_views,physics,aurc,pg_fixed_rf,0.12633381148295408,0.09086485596375199,0.17005733737116607
+original_views,physics,relative_gain_percent,pg_fixed_rf,26.987198436270653,13.553094426553855,41.19249033211282
+original_views,physics,aurc,ours_unchecked_lr,0.13437226769403687,0.09588059619181843,0.1804202939022584
+original_views,physics,relative_gain_percent,ours_unchecked_lr,22.3414887776358,4.710658546478896,39.525515281526374
+original_views,physics,aurc,pg_same_lr,0.14126114299138387,0.09446556435853333,0.19651930455944433
+original_views,physics,relative_gain_percent,pg_same_lr,18.36016280339067,-7.581381181096136,41.743168141458746
+original_views,physics,paired_aurc_difference_negative_favors_left,ours_checked minus pg_full,0.000910744727447621,-0.015084007166546157,0.01483227278831069
+original_views,physics,paired_aurc_difference_negative_favors_left,ours_checked minus pg_scope_selected,0.000910744727447621,-0.015084007166546157,0.01483227278831069
+original_views,physics,paired_aurc_difference_negative_favors_left,ours_checked minus pg_fixed_rf,0.00803845621108279,-0.004605520419670078,0.021493023261554
+original_views,physics,paired_aurc_difference_negative_favors_left,ours_unchecked_lr minus pg_same_lr,-0.006888875297346997,-0.035301003781066494,0.015759806152084714
+original_views,physics,paired_aurc_difference_negative_favors_left,ours_checked minus ours_unchecked_lr,0.0,0.0,0.0
+phase_views,all,aurc,raw,0.1252805014074511,0.10290491283920326,0.15281591306886178
+phase_views,all,relative_gain_percent,raw,0.0,0.0,0.0
+phase_views,all,aurc,ours_checked,0.1252805014074511,0.10290491283920326,0.15281591306886178
+phase_views,all,relative_gain_percent,ours_checked,0.0,0.0,0.0
+phase_views,all,aurc,pg_full,0.11365157151639474,0.09304579757351114,0.1366690399587417
+phase_views,all,relative_gain_percent,pg_full,9.282314295051751,2.277743592074312,17.99405506281934
+phase_views,all,aurc,pg_scope_selected,0.11365157151639474,0.09304579757351114,0.1366690399587417
+phase_views,all,relative_gain_percent,pg_scope_selected,9.282314295051751,2.277743592074312,17.99405506281934
+phase_views,all,aurc,pg_fixed_rf,0.12128335313012344,0.09930075292096706,0.14546511861716827
+phase_views,all,relative_gain_percent,pg_fixed_rf,3.190558971605395,-7.956933157554844,15.636417254198891
+phase_views,all,aurc,ours_unchecked_lr,0.13024140174008117,0.1056878897310669,0.15748480764981918
+phase_views,all,relative_gain_percent,ours_unchecked_lr,-3.9598343532292413,-19.873147301124167,11.414818955164144
+phase_views,all,aurc,pg_same_lr,0.12640879568039537,0.10392617082721563,0.15172961419675235
+phase_views,all,relative_gain_percent,pg_same_lr,-0.9006144294352092,-13.960491218312644,12.61306030298603
+phase_views,all,paired_aurc_difference_negative_favors_left,ours_checked minus pg_full,0.01162892989105635,0.0026496249539153596,0.024716256630864762
+phase_views,all,paired_aurc_difference_negative_favors_left,ours_checked minus pg_scope_selected,0.01162892989105635,0.0026496249539153596,0.024716256630864762
+phase_views,all,paired_aurc_difference_negative_favors_left,ours_checked minus pg_fixed_rf,0.003997148277327653,-0.009451077799892543,0.021247243365743337
+phase_views,all,paired_aurc_difference_negative_favors_left,ours_unchecked_lr minus pg_same_lr,0.0038326060596858003,-0.005084854766844086,0.014378005650127966
+phase_views,all,paired_aurc_difference_negative_favors_left,ours_checked minus ours_unchecked_lr,-0.0049609003326300805,-0.023399756758390747,0.015602147672970797
+phase_views,physics,aurc,raw,0.17302967257417648,0.1247244763243885,0.2386036920781639
+phase_views,physics,relative_gain_percent,raw,0.0,0.0,0.0
+phase_views,physics,aurc,ours_checked,0.17302967257417648,0.1247244763243885,0.2386036920781639
+phase_views,physics,relative_gain_percent,ours_checked,0.0,0.0,0.0
+phase_views,physics,aurc,pg_full,0.14264672506107592,0.10246931091381407,0.1888736671807612
+phase_views,physics,relative_gain_percent,pg_full,17.559385659748983,6.054775956818292,31.312288922119286
+phase_views,physics,aurc,pg_scope_selected,0.14264672506107592,0.10246931091381407,0.1888736671807612
+phase_views,physics,relative_gain_percent,pg_scope_selected,17.559385659748983,6.054775956818292,31.312288922119286
+phase_views,physics,aurc,pg_fixed_rf,0.15802332422737034,0.11268380336833274,0.21075025768432382
+phase_views,physics,relative_gain_percent,pg_fixed_rf,8.67270227328959,-13.49751428354549,30.31429972817744
+phase_views,physics,aurc,ours_unchecked_lr,0.1624114495774927,0.11661446784899354,0.2150953929451858
+phase_views,physics,relative_gain_percent,ours_unchecked_lr,6.136648609868822,-19.413052064029113,29.60475069813851
+phase_views,physics,aurc,pg_same_lr,0.15396155841979048,0.10967498554302657,0.2064109289960951
+phase_views,physics,relative_gain_percent,pg_same_lr,11.020141153079766,-13.105687505738146,33.289388471686216
+phase_views,physics,paired_aurc_difference_negative_favors_left,ours_checked minus pg_full,0.030382947513100556,0.009168567353575583,0.06471103229096974
+phase_views,physics,paired_aurc_difference_negative_favors_left,ours_checked minus pg_scope_selected,0.030382947513100556,0.009168567353575583,0.06471103229096974
+phase_views,physics,paired_aurc_difference_negative_favors_left,ours_checked minus pg_fixed_rf,0.015006348346806142,-0.02051246589243934,0.061808140228178
+phase_views,physics,paired_aurc_difference_negative_favors_left,ours_unchecked_lr minus pg_same_lr,0.008449891157702227,-0.00808724089275772,0.025097280279131207
+phase_views,physics,paired_aurc_difference_negative_favors_left,ours_checked minus ours_unchecked_lr,0.010618222996683774,-0.028740935056688146,0.061351899352470256

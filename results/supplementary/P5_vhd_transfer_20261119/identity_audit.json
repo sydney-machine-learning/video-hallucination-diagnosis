@@ -1,0 +1,6 @@
+{
+  "model_identity_0_duplicates_base_peer_0_is_self": true,
+  "model_identity_1_duplicates_base_peer_1_is_self": true,
+  "model_identity_2_duplicates_base_peer_2_is_self": true,
+  "max_abs_hgb_prediction_change_after_removing_three_ids": 0.0
+}

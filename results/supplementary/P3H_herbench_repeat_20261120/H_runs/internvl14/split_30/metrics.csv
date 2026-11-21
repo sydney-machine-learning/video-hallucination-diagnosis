@@ -1,0 +1,7 @@
+model,split,method,accuracy,aurc,gain_pct,selected
+internvl14,30,original,0.472,0.3106994303952083,0.0,target_logistic
+internvl14,30,pilot_lr,0.472,0.27032273776084736,12.995418943318295,target_logistic
+internvl14,30,development_hgb,0.472,0.2826649026378525,9.023038028005402,target_logistic
+internvl14,30,base_support,0.472,0.2779374673529439,10.544584198494135,target_logistic
+internvl14,30,all_view_support,0.472,0.26630295792157904,14.289203046544742,target_logistic
+internvl14,30,checked,0.472,0.27032273776084736,12.995418943318295,target_logistic

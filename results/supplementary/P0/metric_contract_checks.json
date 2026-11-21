@@ -1,0 +1,59 @@
+{
+  "cases": [
+    {
+      "correct": [
+        1,
+        0
+      ],
+      "scores": [
+        0.5,
+        0.5
+      ],
+      "prefix": 0.25,
+      "trapezoid": 0.5
+    },
+    {
+      "correct": [
+        0,
+        1
+      ],
+      "scores": [
+        0.5,
+        0.5
+      ],
+      "prefix": 0.75,
+      "trapezoid": 0.5
+    },
+    {
+      "correct": [
+        1,
+        0,
+        1
+      ],
+      "scores": [
+        0.9,
+        0.8,
+        0.7
+      ],
+      "prefix": 0.27777777777777773,
+      "trapezoid": 0.2222222222222222
+    },
+    {
+      "correct": [
+        1,
+        1
+      ],
+      "scores": [
+        1,
+        0
+      ],
+      "prefix": 0.0,
+      "trapezoid": 0.0
+    }
+  ],
+  "tie_rule": "descending score; ties retain current input row order",
+  "bootstrap_tie_order": "concatenate full video blocks in RNG sampled order, preserving original row order inside each block",
+  "canonical_function": "src/evaluate_probe_escalation.py:aurc",
+  "archived_helper": "src/evaluate_v2_target_pilot.py:aurc",
+  "future_policy": "P2+ uses canonical_metric.aurc throughout selection, bootstrap and reporting; split 0 retains archived selections"
+}

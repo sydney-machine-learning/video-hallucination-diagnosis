@@ -1,0 +1,6 @@
+{
+  "model": "internvl14",
+  "split": 16,
+  "selected": "target_logistic",
+  "gain": 14.711316692558517
+}

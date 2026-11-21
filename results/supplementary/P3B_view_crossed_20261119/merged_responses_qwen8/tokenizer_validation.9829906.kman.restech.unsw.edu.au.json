@@ -1,0 +1,14 @@
+{
+  "passed": true,
+  "basis": "official AutoProcessor/AutoTokenizer with complete pinned configuration",
+  "questions_checked": 1888,
+  "assets": {
+    "tokenizer.json": "a5d85b6dcc535e6b93115a9ef287e6132fdbf30270da6218194ba742261173c7",
+    "vocab.json": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910",
+    "merges.txt": "599bab54075088774b1733fde865d5bd747cbcc7a547c5bc12610e874e26f5e3",
+    "tokenizer_config.json": "c2da771801886ad9ae98181793ffd3dfb7f1af30f6f7c6a4e15d7dbba52e2399"
+  },
+  "backend_sha256": "41e00eccf531cffc2e562d38bdd879d41e5044ea279af5b73c6a32aabcc8fe04",
+  "sample_ids_sha256": "890c1c4d5835aa399124a61c6bff50cd7546418e0104f0fc4a77d83a842bbb05",
+  "tokenizer_class": "Qwen2Tokenizer"
+}

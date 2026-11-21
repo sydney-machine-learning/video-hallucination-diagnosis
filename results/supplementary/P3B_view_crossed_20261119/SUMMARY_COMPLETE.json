@@ -1,0 +1,8 @@
+{
+  "policies": 2,
+  "splits_per_policy": 31,
+  "resamples": 10000,
+  "archived_original_split_draws_reused": true,
+  "metric": "prefix-risk mean with archived stable ties",
+  "split_quantiles_are_not_independent_dataset_CIs": true
+}

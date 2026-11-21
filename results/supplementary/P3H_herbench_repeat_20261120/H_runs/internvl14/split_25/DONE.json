@@ -1,0 +1,6 @@
+{
+  "model": "internvl14",
+  "split": 25,
+  "selected": "source_trace_hgb",
+  "gain": 8.083056014720638
+}

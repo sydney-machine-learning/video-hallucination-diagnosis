@@ -1,0 +1,2109 @@
+dataset,split_id,seed,video_id,role,source_collection
+HERBench,0,,A Quiet Place 2018 - Official Trailer - Paramount Pictures,calibration,trailers
+HERBench,0,,Anchorman - The Legend of Ron Burgundy - Trailer,calibration,trailers
+HERBench,0,,Furious 7 - Official Trailer HD,test,trailers
+HERBench,0,,Groundhog Day Trailer HD,test,trailers
+HERBench,0,,Into the Wild 2007 Trailer 1 Movieclips Classic Trailers,calibration,trailers
+HERBench,0,,John Wick Official Trailer 1 2014 - Keanu Reeves Willem Dafoe Movie HD,test,trailers
+HERBench,0,,Jurassic Park Trailer,test,trailers
+HERBench,0,,Marvel Studios Avengers - Endgame - Official Trailer,calibration,trailers
+HERBench,0,,Marvel s Guardians of the Galaxy - Trailer 1 OFFICIAL,calibration,trailers
+HERBench,0,,P01-20240202-161354,test,HD_EPIC
+HERBench,0,,P01-20240203-121517,calibration,HD_EPIC
+HERBench,0,,P01-20240203-130505,calibration,HD_EPIC
+HERBench,0,,P01-20240203-184214,calibration,HD_EPIC
+HERBench,0,,P01-20240204-120411,calibration,HD_EPIC
+HERBench,0,,P01-20240204-142301,calibration,HD_EPIC
+HERBench,0,,P01-20240204-152537,test,HD_EPIC
+HERBench,0,,P02-20240211-100250,calibration,HD_EPIC
+HERBench,0,,P02-20240211-104948,test,HD_EPIC
+HERBench,0,,P02-20240211-141313,test,HD_EPIC
+HERBench,0,,P03-20240216-084005,test,HD_EPIC
+HERBench,0,,P03-20240217-152152,test,HD_EPIC
+HERBench,0,,P03-20240217-192543,calibration,HD_EPIC
+HERBench,0,,P04-20240413-142619,test,HD_EPIC
+HERBench,0,,P04-20240414-064514,test,HD_EPIC
+HERBench,0,,P04-20240414-162242,calibration,HD_EPIC
+HERBench,0,,P04-20240415-175615,calibration,HD_EPIC
+HERBench,0,,P05-20240425-083515,calibration,HD_EPIC
+HERBench,0,,P05-20240427-150402,calibration,HD_EPIC
+HERBench,0,,P06-20240510-100047,test,HD_EPIC
+HERBench,0,,P06-20240510-121619,calibration,HD_EPIC
+HERBench,0,,P06-20240511-121048,test,HD_EPIC
+HERBench,0,,P07-20240529-102652,test,HD_EPIC
+HERBench,0,,P07-20240529-191007,test,HD_EPIC
+HERBench,0,,P07-20240529-194518,calibration,HD_EPIC
+HERBench,0,,P07-20240530-102543,calibration,HD_EPIC
+HERBench,0,,P07-20240531-201703,calibration,HD_EPIC
+HERBench,0,,P08-20240618-163547,test,HD_EPIC
+HERBench,0,,P09-20240622-162302,test,HD_EPIC
+HERBench,0,,P09-20240623-153253,test,HD_EPIC
+HERBench,0,,P09-20240624-160737,calibration,HD_EPIC
+HERBench,0,,Se7en 1995 Official Trailer - Brad Pitt Morgan Freeman Movie HD,test,trailers
+HERBench,0,,Singin in the Rain 1952 Official Trailer - Gene Kelly Debbie Reynolds Movie HD,test,trailers
+HERBench,0,,Thank You for Your Service Trailer 1 2017 Movieclips Trailers,calibration,trailers
+HERBench,0,,The Longest Ride Official Trailer HD 20th Century FOX,calibration,trailers
+HERBench,0,,The Secret Life of Walter Mitty Official Trailer 1 2013 - Ben Stiller Movie HD,test,trailers
+HERBench,0,,There Will Be Blood 2007 Official Trailer - Daniel Day-Lewis Paul Dano Movie HD,calibration,trailers
+HERBench,0,,Titanic TBT Trailer 20th Century FOX,test,trailers
+HERBench,0,,Toy Story 3 Official Trailer HD,test,trailers
+HERBench,0,,Werner Herzog Reads Curious George,calibration,trailers
+HERBench,0,,cam1_segment_6_300s_360s,test,WildTrack
+HERBench,0,,cam1_segment_7_360s_420s,test,WildTrack
+HERBench,0,,cam2_segment_10_540s_600s,calibration,WildTrack
+HERBench,0,,cam2_segment_2_60s_120s,calibration,WildTrack
+HERBench,0,,cam2_segment_5_240s_300s,calibration,WildTrack
+HERBench,0,,cam2_segment_8_420s_480s,calibration,WildTrack
+HERBench,0,,cam3_segment_1_0s_180s,calibration,WildTrack
+HERBench,0,,cam3_segment_5_720s_900s,test,WildTrack
+HERBench,0,,cam3_segment_6_900s_1080s,calibration,WildTrack
+HERBench,0,,cam4_segment_9_1440s_1620s,test,WildTrack
+HERBench,0,,cam5_segment_3_360s_540s,test,WildTrack
+HERBench,0,,cam5_segment_4_540s_720s,test,WildTrack
+HERBench,0,,cam5_segment_5_720s_900s,test,WildTrack
+HERBench,0,,cam6_segment_2_300s_600s,calibration,WildTrack
+HERBench,0,,cam7_segment_4_900s_1200s,test,WildTrack
+HERBench,0,,uid_vid_00102,calibration,PersonPath22
+HERBench,0,,uid_vid_00105,test,PersonPath22
+HERBench,0,,uid_vid_00108,calibration,PersonPath22
+HERBench,0,,uid_vid_00165,test,PersonPath22
+HERBench,1,21260805.0,A Quiet Place 2018 - Official Trailer - Paramount Pictures,test,trailers
+HERBench,1,21260805.0,Anchorman - The Legend of Ron Burgundy - Trailer,calibration,trailers
+HERBench,1,21260805.0,Furious 7 - Official Trailer HD,calibration,trailers
+HERBench,1,21260805.0,Groundhog Day Trailer HD,calibration,trailers
+HERBench,1,21260805.0,Into the Wild 2007 Trailer 1 Movieclips Classic Trailers,calibration,trailers
+HERBench,1,21260805.0,John Wick Official Trailer 1 2014 - Keanu Reeves Willem Dafoe Movie HD,test,trailers
+HERBench,1,21260805.0,Jurassic Park Trailer,test,trailers
+HERBench,1,21260805.0,Marvel Studios Avengers - Endgame - Official Trailer,test,trailers
+HERBench,1,21260805.0,Marvel s Guardians of the Galaxy - Trailer 1 OFFICIAL,calibration,trailers
+HERBench,1,21260805.0,P01-20240202-161354,test,HD_EPIC
+HERBench,1,21260805.0,P01-20240203-121517,calibration,HD_EPIC
+HERBench,1,21260805.0,P01-20240203-130505,test,HD_EPIC
+HERBench,1,21260805.0,P01-20240203-184214,calibration,HD_EPIC
+HERBench,1,21260805.0,P01-20240204-120411,calibration,HD_EPIC
+HERBench,1,21260805.0,P01-20240204-142301,test,HD_EPIC
+HERBench,1,21260805.0,P01-20240204-152537,calibration,HD_EPIC
+HERBench,1,21260805.0,P02-20240211-100250,test,HD_EPIC
+HERBench,1,21260805.0,P02-20240211-104948,calibration,HD_EPIC
+HERBench,1,21260805.0,P02-20240211-141313,test,HD_EPIC
+HERBench,1,21260805.0,P03-20240216-084005,calibration,HD_EPIC
+HERBench,1,21260805.0,P03-20240217-152152,test,HD_EPIC
+HERBench,1,21260805.0,P03-20240217-192543,test,HD_EPIC
+HERBench,1,21260805.0,P04-20240413-142619,calibration,HD_EPIC
+HERBench,1,21260805.0,P04-20240414-064514,test,HD_EPIC
+HERBench,1,21260805.0,P04-20240414-162242,calibration,HD_EPIC
+HERBench,1,21260805.0,P04-20240415-175615,calibration,HD_EPIC
+HERBench,1,21260805.0,P05-20240425-083515,test,HD_EPIC
+HERBench,1,21260805.0,P05-20240427-150402,calibration,HD_EPIC
+HERBench,1,21260805.0,P06-20240510-100047,test,HD_EPIC
+HERBench,1,21260805.0,P06-20240510-121619,test,HD_EPIC
+HERBench,1,21260805.0,P06-20240511-121048,calibration,HD_EPIC
+HERBench,1,21260805.0,P07-20240529-102652,test,HD_EPIC
+HERBench,1,21260805.0,P07-20240529-191007,calibration,HD_EPIC
+HERBench,1,21260805.0,P07-20240529-194518,calibration,HD_EPIC
+HERBench,1,21260805.0,P07-20240530-102543,test,HD_EPIC
+HERBench,1,21260805.0,P07-20240531-201703,calibration,HD_EPIC
+HERBench,1,21260805.0,P08-20240618-163547,test,HD_EPIC
+HERBench,1,21260805.0,P09-20240622-162302,calibration,HD_EPIC
+HERBench,1,21260805.0,P09-20240623-153253,test,HD_EPIC
+HERBench,1,21260805.0,P09-20240624-160737,test,HD_EPIC
+HERBench,1,21260805.0,Se7en 1995 Official Trailer - Brad Pitt Morgan Freeman Movie HD,test,trailers
+HERBench,1,21260805.0,Singin in the Rain 1952 Official Trailer - Gene Kelly Debbie Reynolds Movie HD,test,trailers
+HERBench,1,21260805.0,Thank You for Your Service Trailer 1 2017 Movieclips Trailers,test,trailers
+HERBench,1,21260805.0,The Longest Ride Official Trailer HD 20th Century FOX,calibration,trailers
+HERBench,1,21260805.0,The Secret Life of Walter Mitty Official Trailer 1 2013 - Ben Stiller Movie HD,calibration,trailers
+HERBench,1,21260805.0,There Will Be Blood 2007 Official Trailer - Daniel Day-Lewis Paul Dano Movie HD,calibration,trailers
+HERBench,1,21260805.0,Titanic TBT Trailer 20th Century FOX,test,trailers
+HERBench,1,21260805.0,Toy Story 3 Official Trailer HD,calibration,trailers
+HERBench,1,21260805.0,Werner Herzog Reads Curious George,test,trailers
+HERBench,1,21260805.0,cam1_segment_6_300s_360s,calibration,WildTrack
+HERBench,1,21260805.0,cam1_segment_7_360s_420s,test,WildTrack
+HERBench,1,21260805.0,cam2_segment_10_540s_600s,calibration,WildTrack
+HERBench,1,21260805.0,cam2_segment_2_60s_120s,calibration,WildTrack
+HERBench,1,21260805.0,cam2_segment_5_240s_300s,calibration,WildTrack
+HERBench,1,21260805.0,cam2_segment_8_420s_480s,test,WildTrack
+HERBench,1,21260805.0,cam3_segment_1_0s_180s,calibration,WildTrack
+HERBench,1,21260805.0,cam3_segment_5_720s_900s,calibration,WildTrack
+HERBench,1,21260805.0,cam3_segment_6_900s_1080s,calibration,WildTrack
+HERBench,1,21260805.0,cam4_segment_9_1440s_1620s,test,WildTrack
+HERBench,1,21260805.0,cam5_segment_3_360s_540s,test,WildTrack
+HERBench,1,21260805.0,cam5_segment_4_540s_720s,calibration,WildTrack
+HERBench,1,21260805.0,cam5_segment_5_720s_900s,test,WildTrack
+HERBench,1,21260805.0,cam6_segment_2_300s_600s,test,WildTrack
+HERBench,1,21260805.0,cam7_segment_4_900s_1200s,test,WildTrack
+HERBench,1,21260805.0,uid_vid_00102,calibration,PersonPath22
+HERBench,1,21260805.0,uid_vid_00105,calibration,PersonPath22
+HERBench,1,21260805.0,uid_vid_00108,test,PersonPath22
+HERBench,1,21260805.0,uid_vid_00165,test,PersonPath22
+HERBench,2,22260808.0,A Quiet Place 2018 - Official Trailer - Paramount Pictures,calibration,trailers
+HERBench,2,22260808.0,Anchorman - The Legend of Ron Burgundy - Trailer,test,trailers
+HERBench,2,22260808.0,Furious 7 - Official Trailer HD,test,trailers
+HERBench,2,22260808.0,Groundhog Day Trailer HD,calibration,trailers
+HERBench,2,22260808.0,Into the Wild 2007 Trailer 1 Movieclips Classic Trailers,test,trailers
+HERBench,2,22260808.0,John Wick Official Trailer 1 2014 - Keanu Reeves Willem Dafoe Movie HD,test,trailers
+HERBench,2,22260808.0,Jurassic Park Trailer,test,trailers
+HERBench,2,22260808.0,Marvel Studios Avengers - Endgame - Official Trailer,calibration,trailers
+HERBench,2,22260808.0,Marvel s Guardians of the Galaxy - Trailer 1 OFFICIAL,test,trailers
+HERBench,2,22260808.0,P01-20240202-161354,calibration,HD_EPIC
+HERBench,2,22260808.0,P01-20240203-121517,calibration,HD_EPIC
+HERBench,2,22260808.0,P01-20240203-130505,calibration,HD_EPIC
+HERBench,2,22260808.0,P01-20240203-184214,calibration,HD_EPIC
+HERBench,2,22260808.0,P01-20240204-120411,test,HD_EPIC
+HERBench,2,22260808.0,P01-20240204-142301,calibration,HD_EPIC
+HERBench,2,22260808.0,P01-20240204-152537,calibration,HD_EPIC
+HERBench,2,22260808.0,P02-20240211-100250,test,HD_EPIC
+HERBench,2,22260808.0,P02-20240211-104948,test,HD_EPIC
+HERBench,2,22260808.0,P02-20240211-141313,test,HD_EPIC
+HERBench,2,22260808.0,P03-20240216-084005,test,HD_EPIC
+HERBench,2,22260808.0,P03-20240217-152152,test,HD_EPIC
+HERBench,2,22260808.0,P03-20240217-192543,test,HD_EPIC
+HERBench,2,22260808.0,P04-20240413-142619,calibration,HD_EPIC
+HERBench,2,22260808.0,P04-20240414-064514,calibration,HD_EPIC
+HERBench,2,22260808.0,P04-20240414-162242,calibration,HD_EPIC
+HERBench,2,22260808.0,P04-20240415-175615,calibration,HD_EPIC
+HERBench,2,22260808.0,P05-20240425-083515,test,HD_EPIC
+HERBench,2,22260808.0,P05-20240427-150402,calibration,HD_EPIC
+HERBench,2,22260808.0,P06-20240510-100047,test,HD_EPIC
+HERBench,2,22260808.0,P06-20240510-121619,test,HD_EPIC
+HERBench,2,22260808.0,P06-20240511-121048,calibration,HD_EPIC
+HERBench,2,22260808.0,P07-20240529-102652,calibration,HD_EPIC
+HERBench,2,22260808.0,P07-20240529-191007,test,HD_EPIC
+HERBench,2,22260808.0,P07-20240529-194518,test,HD_EPIC
+HERBench,2,22260808.0,P07-20240530-102543,test,HD_EPIC
+HERBench,2,22260808.0,P07-20240531-201703,calibration,HD_EPIC
+HERBench,2,22260808.0,P08-20240618-163547,test,HD_EPIC
+HERBench,2,22260808.0,P09-20240622-162302,test,HD_EPIC
+HERBench,2,22260808.0,P09-20240623-153253,test,HD_EPIC
+HERBench,2,22260808.0,P09-20240624-160737,calibration,HD_EPIC
+HERBench,2,22260808.0,Se7en 1995 Official Trailer - Brad Pitt Morgan Freeman Movie HD,calibration,trailers
+HERBench,2,22260808.0,Singin in the Rain 1952 Official Trailer - Gene Kelly Debbie Reynolds Movie HD,calibration,trailers
+HERBench,2,22260808.0,Thank You for Your Service Trailer 1 2017 Movieclips Trailers,calibration,trailers
+HERBench,2,22260808.0,The Longest Ride Official Trailer HD 20th Century FOX,calibration,trailers
+HERBench,2,22260808.0,The Secret Life of Walter Mitty Official Trailer 1 2013 - Ben Stiller Movie HD,test,trailers
+HERBench,2,22260808.0,There Will Be Blood 2007 Official Trailer - Daniel Day-Lewis Paul Dano Movie HD,calibration,trailers
+HERBench,2,22260808.0,Titanic TBT Trailer 20th Century FOX,calibration,trailers
+HERBench,2,22260808.0,Toy Story 3 Official Trailer HD,test,trailers
+HERBench,2,22260808.0,Werner Herzog Reads Curious George,test,trailers
+HERBench,2,22260808.0,cam1_segment_6_300s_360s,calibration,WildTrack
+HERBench,2,22260808.0,cam1_segment_7_360s_420s,calibration,WildTrack
+HERBench,2,22260808.0,cam2_segment_10_540s_600s,test,WildTrack
+HERBench,2,22260808.0,cam2_segment_2_60s_120s,calibration,WildTrack
+HERBench,2,22260808.0,cam2_segment_5_240s_300s,calibration,WildTrack
+HERBench,2,22260808.0,cam2_segment_8_420s_480s,test,WildTrack
+HERBench,2,22260808.0,cam3_segment_1_0s_180s,calibration,WildTrack
+HERBench,2,22260808.0,cam3_segment_5_720s_900s,test,WildTrack
+HERBench,2,22260808.0,cam3_segment_6_900s_1080s,test,WildTrack
+HERBench,2,22260808.0,cam4_segment_9_1440s_1620s,test,WildTrack
+HERBench,2,22260808.0,cam5_segment_3_360s_540s,calibration,WildTrack
+HERBench,2,22260808.0,cam5_segment_4_540s_720s,calibration,WildTrack
+HERBench,2,22260808.0,cam5_segment_5_720s_900s,calibration,WildTrack
+HERBench,2,22260808.0,cam6_segment_2_300s_600s,test,WildTrack
+HERBench,2,22260808.0,cam7_segment_4_900s_1200s,test,WildTrack
+HERBench,2,22260808.0,uid_vid_00102,calibration,PersonPath22
+HERBench,2,22260808.0,uid_vid_00105,test,PersonPath22
+HERBench,2,22260808.0,uid_vid_00108,calibration,PersonPath22
+HERBench,2,22260808.0,uid_vid_00165,test,PersonPath22
+HERBench,3,23260811.0,A Quiet Place 2018 - Official Trailer - Paramount Pictures,calibration,trailers
+HERBench,3,23260811.0,Anchorman - The Legend of Ron Burgundy - Trailer,test,trailers
+HERBench,3,23260811.0,Furious 7 - Official Trailer HD,calibration,trailers
+HERBench,3,23260811.0,Groundhog Day Trailer HD,calibration,trailers
+HERBench,3,23260811.0,Into the Wild 2007 Trailer 1 Movieclips Classic Trailers,calibration,trailers
+HERBench,3,23260811.0,John Wick Official Trailer 1 2014 - Keanu Reeves Willem Dafoe Movie HD,test,trailers
+HERBench,3,23260811.0,Jurassic Park Trailer,calibration,trailers
+HERBench,3,23260811.0,Marvel Studios Avengers - Endgame - Official Trailer,test,trailers
+HERBench,3,23260811.0,Marvel s Guardians of the Galaxy - Trailer 1 OFFICIAL,test,trailers
+HERBench,3,23260811.0,P01-20240202-161354,test,HD_EPIC
+HERBench,3,23260811.0,P01-20240203-121517,test,HD_EPIC
+HERBench,3,23260811.0,P01-20240203-130505,test,HD_EPIC
+HERBench,3,23260811.0,P01-20240203-184214,test,HD_EPIC
+HERBench,3,23260811.0,P01-20240204-120411,test,HD_EPIC
+HERBench,3,23260811.0,P01-20240204-142301,test,HD_EPIC
+HERBench,3,23260811.0,P01-20240204-152537,calibration,HD_EPIC
+HERBench,3,23260811.0,P02-20240211-100250,calibration,HD_EPIC
+HERBench,3,23260811.0,P02-20240211-104948,calibration,HD_EPIC
+HERBench,3,23260811.0,P02-20240211-141313,calibration,HD_EPIC
+HERBench,3,23260811.0,P03-20240216-084005,test,HD_EPIC
+HERBench,3,23260811.0,P03-20240217-152152,test,HD_EPIC
+HERBench,3,23260811.0,P03-20240217-192543,calibration,HD_EPIC
+HERBench,3,23260811.0,P04-20240413-142619,test,HD_EPIC
+HERBench,3,23260811.0,P04-20240414-064514,calibration,HD_EPIC
+HERBench,3,23260811.0,P04-20240414-162242,calibration,HD_EPIC
+HERBench,3,23260811.0,P04-20240415-175615,test,HD_EPIC
+HERBench,3,23260811.0,P05-20240425-083515,calibration,HD_EPIC
+HERBench,3,23260811.0,P05-20240427-150402,calibration,HD_EPIC
+HERBench,3,23260811.0,P06-20240510-100047,test,HD_EPIC
+HERBench,3,23260811.0,P06-20240510-121619,test,HD_EPIC
+HERBench,3,23260811.0,P06-20240511-121048,calibration,HD_EPIC
+HERBench,3,23260811.0,P07-20240529-102652,calibration,HD_EPIC
+HERBench,3,23260811.0,P07-20240529-191007,test,HD_EPIC
+HERBench,3,23260811.0,P07-20240529-194518,calibration,HD_EPIC
+HERBench,3,23260811.0,P07-20240530-102543,calibration,HD_EPIC
+HERBench,3,23260811.0,P07-20240531-201703,calibration,HD_EPIC
+HERBench,3,23260811.0,P08-20240618-163547,test,HD_EPIC
+HERBench,3,23260811.0,P09-20240622-162302,calibration,HD_EPIC
+HERBench,3,23260811.0,P09-20240623-153253,calibration,HD_EPIC
+HERBench,3,23260811.0,P09-20240624-160737,test,HD_EPIC
+HERBench,3,23260811.0,Se7en 1995 Official Trailer - Brad Pitt Morgan Freeman Movie HD,calibration,trailers
+HERBench,3,23260811.0,Singin in the Rain 1952 Official Trailer - Gene Kelly Debbie Reynolds Movie HD,test,trailers
+HERBench,3,23260811.0,Thank You for Your Service Trailer 1 2017 Movieclips Trailers,calibration,trailers
+HERBench,3,23260811.0,The Longest Ride Official Trailer HD 20th Century FOX,calibration,trailers
+HERBench,3,23260811.0,The Secret Life of Walter Mitty Official Trailer 1 2013 - Ben Stiller Movie HD,calibration,trailers
+HERBench,3,23260811.0,There Will Be Blood 2007 Official Trailer - Daniel Day-Lewis Paul Dano Movie HD,test,trailers
+HERBench,3,23260811.0,Titanic TBT Trailer 20th Century FOX,test,trailers
+HERBench,3,23260811.0,Toy Story 3 Official Trailer HD,test,trailers
+HERBench,3,23260811.0,Werner Herzog Reads Curious George,test,trailers
+HERBench,3,23260811.0,cam1_segment_6_300s_360s,calibration,WildTrack
+HERBench,3,23260811.0,cam1_segment_7_360s_420s,test,WildTrack
+HERBench,3,23260811.0,cam2_segment_10_540s_600s,test,WildTrack
+HERBench,3,23260811.0,cam2_segment_2_60s_120s,test,WildTrack
+HERBench,3,23260811.0,cam2_segment_5_240s_300s,calibration,WildTrack
+HERBench,3,23260811.0,cam2_segment_8_420s_480s,calibration,WildTrack
+HERBench,3,23260811.0,cam3_segment_1_0s_180s,calibration,WildTrack
+HERBench,3,23260811.0,cam3_segment_5_720s_900s,test,WildTrack
+HERBench,3,23260811.0,cam3_segment_6_900s_1080s,test,WildTrack
+HERBench,3,23260811.0,cam4_segment_9_1440s_1620s,test,WildTrack
+HERBench,3,23260811.0,cam5_segment_3_360s_540s,test,WildTrack
+HERBench,3,23260811.0,cam5_segment_4_540s_720s,test,WildTrack
+HERBench,3,23260811.0,cam5_segment_5_720s_900s,calibration,WildTrack
+HERBench,3,23260811.0,cam6_segment_2_300s_600s,calibration,WildTrack
+HERBench,3,23260811.0,cam7_segment_4_900s_1200s,calibration,WildTrack
+HERBench,3,23260811.0,uid_vid_00102,test,PersonPath22
+HERBench,3,23260811.0,uid_vid_00105,test,PersonPath22
+HERBench,3,23260811.0,uid_vid_00108,calibration,PersonPath22
+HERBench,3,23260811.0,uid_vid_00165,calibration,PersonPath22
+HERBench,4,24260814.0,A Quiet Place 2018 - Official Trailer - Paramount Pictures,test,trailers
+HERBench,4,24260814.0,Anchorman - The Legend of Ron Burgundy - Trailer,test,trailers
+HERBench,4,24260814.0,Furious 7 - Official Trailer HD,test,trailers
+HERBench,4,24260814.0,Groundhog Day Trailer HD,calibration,trailers
+HERBench,4,24260814.0,Into the Wild 2007 Trailer 1 Movieclips Classic Trailers,test,trailers
+HERBench,4,24260814.0,John Wick Official Trailer 1 2014 - Keanu Reeves Willem Dafoe Movie HD,calibration,trailers
+HERBench,4,24260814.0,Jurassic Park Trailer,test,trailers
+HERBench,4,24260814.0,Marvel Studios Avengers - Endgame - Official Trailer,calibration,trailers
+HERBench,4,24260814.0,Marvel s Guardians of the Galaxy - Trailer 1 OFFICIAL,test,trailers
+HERBench,4,24260814.0,P01-20240202-161354,calibration,HD_EPIC
+HERBench,4,24260814.0,P01-20240203-121517,test,HD_EPIC
+HERBench,4,24260814.0,P01-20240203-130505,calibration,HD_EPIC
+HERBench,4,24260814.0,P01-20240203-184214,calibration,HD_EPIC
+HERBench,4,24260814.0,P01-20240204-120411,test,HD_EPIC
+HERBench,4,24260814.0,P01-20240204-142301,test,HD_EPIC
+HERBench,4,24260814.0,P01-20240204-152537,test,HD_EPIC
+HERBench,4,24260814.0,P02-20240211-100250,test,HD_EPIC
+HERBench,4,24260814.0,P02-20240211-104948,test,HD_EPIC
+HERBench,4,24260814.0,P02-20240211-141313,calibration,HD_EPIC
+HERBench,4,24260814.0,P03-20240216-084005,test,HD_EPIC
+HERBench,4,24260814.0,P03-20240217-152152,calibration,HD_EPIC
+HERBench,4,24260814.0,P03-20240217-192543,calibration,HD_EPIC
+HERBench,4,24260814.0,P04-20240413-142619,calibration,HD_EPIC
+HERBench,4,24260814.0,P04-20240414-064514,calibration,HD_EPIC
+HERBench,4,24260814.0,P04-20240414-162242,calibration,HD_EPIC
+HERBench,4,24260814.0,P04-20240415-175615,calibration,HD_EPIC
+HERBench,4,24260814.0,P05-20240425-083515,calibration,HD_EPIC
+HERBench,4,24260814.0,P05-20240427-150402,test,HD_EPIC
+HERBench,4,24260814.0,P06-20240510-100047,calibration,HD_EPIC
+HERBench,4,24260814.0,P06-20240510-121619,calibration,HD_EPIC
+HERBench,4,24260814.0,P06-20240511-121048,calibration,HD_EPIC
+HERBench,4,24260814.0,P07-20240529-102652,test,HD_EPIC
+HERBench,4,24260814.0,P07-20240529-191007,test,HD_EPIC
+HERBench,4,24260814.0,P07-20240529-194518,test,HD_EPIC
+HERBench,4,24260814.0,P07-20240530-102543,test,HD_EPIC
+HERBench,4,24260814.0,P07-20240531-201703,test,HD_EPIC
+HERBench,4,24260814.0,P08-20240618-163547,test,HD_EPIC
+HERBench,4,24260814.0,P09-20240622-162302,calibration,HD_EPIC
+HERBench,4,24260814.0,P09-20240623-153253,test,HD_EPIC
+HERBench,4,24260814.0,P09-20240624-160737,test,HD_EPIC
+HERBench,4,24260814.0,Se7en 1995 Official Trailer - Brad Pitt Morgan Freeman Movie HD,calibration,trailers
+HERBench,4,24260814.0,Singin in the Rain 1952 Official Trailer - Gene Kelly Debbie Reynolds Movie HD,calibration,trailers
+HERBench,4,24260814.0,Thank You for Your Service Trailer 1 2017 Movieclips Trailers,calibration,trailers
+HERBench,4,24260814.0,The Longest Ride Official Trailer HD 20th Century FOX,calibration,trailers
+HERBench,4,24260814.0,The Secret Life of Walter Mitty Official Trailer 1 2013 - Ben Stiller Movie HD,calibration,trailers
+HERBench,4,24260814.0,There Will Be Blood 2007 Official Trailer - Daniel Day-Lewis Paul Dano Movie HD,calibration,trailers
+HERBench,4,24260814.0,Titanic TBT Trailer 20th Century FOX,test,trailers
+HERBench,4,24260814.0,Toy Story 3 Official Trailer HD,test,trailers
+HERBench,4,24260814.0,Werner Herzog Reads Curious George,test,trailers
+HERBench,4,24260814.0,cam1_segment_6_300s_360s,calibration,WildTrack
+HERBench,4,24260814.0,cam1_segment_7_360s_420s,test,WildTrack
+HERBench,4,24260814.0,cam2_segment_10_540s_600s,calibration,WildTrack
+HERBench,4,24260814.0,cam2_segment_2_60s_120s,calibration,WildTrack
+HERBench,4,24260814.0,cam2_segment_5_240s_300s,calibration,WildTrack
+HERBench,4,24260814.0,cam2_segment_8_420s_480s,test,WildTrack
+HERBench,4,24260814.0,cam3_segment_1_0s_180s,test,WildTrack
+HERBench,4,24260814.0,cam3_segment_5_720s_900s,test,WildTrack
+HERBench,4,24260814.0,cam3_segment_6_900s_1080s,calibration,WildTrack
+HERBench,4,24260814.0,cam4_segment_9_1440s_1620s,calibration,WildTrack
+HERBench,4,24260814.0,cam5_segment_3_360s_540s,test,WildTrack
+HERBench,4,24260814.0,cam5_segment_4_540s_720s,test,WildTrack
+HERBench,4,24260814.0,cam5_segment_5_720s_900s,calibration,WildTrack
+HERBench,4,24260814.0,cam6_segment_2_300s_600s,calibration,WildTrack
+HERBench,4,24260814.0,cam7_segment_4_900s_1200s,test,WildTrack
+HERBench,4,24260814.0,uid_vid_00102,calibration,PersonPath22
+HERBench,4,24260814.0,uid_vid_00105,test,PersonPath22
+HERBench,4,24260814.0,uid_vid_00108,calibration,PersonPath22
+HERBench,4,24260814.0,uid_vid_00165,test,PersonPath22
+HERBench,5,25260817.0,A Quiet Place 2018 - Official Trailer - Paramount Pictures,calibration,trailers
+HERBench,5,25260817.0,Anchorman - The Legend of Ron Burgundy - Trailer,calibration,trailers
+HERBench,5,25260817.0,Furious 7 - Official Trailer HD,test,trailers
+HERBench,5,25260817.0,Groundhog Day Trailer HD,calibration,trailers
+HERBench,5,25260817.0,Into the Wild 2007 Trailer 1 Movieclips Classic Trailers,test,trailers
+HERBench,5,25260817.0,John Wick Official Trailer 1 2014 - Keanu Reeves Willem Dafoe Movie HD,calibration,trailers
+HERBench,5,25260817.0,Jurassic Park Trailer,test,trailers
+HERBench,5,25260817.0,Marvel Studios Avengers - Endgame - Official Trailer,test,trailers
+HERBench,5,25260817.0,Marvel s Guardians of the Galaxy - Trailer 1 OFFICIAL,calibration,trailers
+HERBench,5,25260817.0,P01-20240202-161354,test,HD_EPIC
+HERBench,5,25260817.0,P01-20240203-121517,test,HD_EPIC
+HERBench,5,25260817.0,P01-20240203-130505,calibration,HD_EPIC
+HERBench,5,25260817.0,P01-20240203-184214,test,HD_EPIC
+HERBench,5,25260817.0,P01-20240204-120411,calibration,HD_EPIC
+HERBench,5,25260817.0,P01-20240204-142301,calibration,HD_EPIC
+HERBench,5,25260817.0,P01-20240204-152537,test,HD_EPIC
+HERBench,5,25260817.0,P02-20240211-100250,calibration,HD_EPIC
+HERBench,5,25260817.0,P02-20240211-104948,test,HD_EPIC
+HERBench,5,25260817.0,P02-20240211-141313,test,HD_EPIC
+HERBench,5,25260817.0,P03-20240216-084005,calibration,HD_EPIC
+HERBench,5,25260817.0,P03-20240217-152152,test,HD_EPIC
+HERBench,5,25260817.0,P03-20240217-192543,test,HD_EPIC
+HERBench,5,25260817.0,P04-20240413-142619,calibration,HD_EPIC
+HERBench,5,25260817.0,P04-20240414-064514,calibration,HD_EPIC
+HERBench,5,25260817.0,P04-20240414-162242,calibration,HD_EPIC
+HERBench,5,25260817.0,P04-20240415-175615,test,HD_EPIC
+HERBench,5,25260817.0,P05-20240425-083515,test,HD_EPIC
+HERBench,5,25260817.0,P05-20240427-150402,test,HD_EPIC
+HERBench,5,25260817.0,P06-20240510-100047,test,HD_EPIC
+HERBench,5,25260817.0,P06-20240510-121619,calibration,HD_EPIC
+HERBench,5,25260817.0,P06-20240511-121048,test,HD_EPIC
+HERBench,5,25260817.0,P07-20240529-102652,calibration,HD_EPIC
+HERBench,5,25260817.0,P07-20240529-191007,test,HD_EPIC
+HERBench,5,25260817.0,P07-20240529-194518,calibration,HD_EPIC
+HERBench,5,25260817.0,P07-20240530-102543,calibration,HD_EPIC
+HERBench,5,25260817.0,P07-20240531-201703,calibration,HD_EPIC
+HERBench,5,25260817.0,P08-20240618-163547,calibration,HD_EPIC
+HERBench,5,25260817.0,P09-20240622-162302,calibration,HD_EPIC
+HERBench,5,25260817.0,P09-20240623-153253,test,HD_EPIC
+HERBench,5,25260817.0,P09-20240624-160737,test,HD_EPIC
+HERBench,5,25260817.0,Se7en 1995 Official Trailer - Brad Pitt Morgan Freeman Movie HD,calibration,trailers
+HERBench,5,25260817.0,Singin in the Rain 1952 Official Trailer - Gene Kelly Debbie Reynolds Movie HD,calibration,trailers
+HERBench,5,25260817.0,Thank You for Your Service Trailer 1 2017 Movieclips Trailers,calibration,trailers
+HERBench,5,25260817.0,The Longest Ride Official Trailer HD 20th Century FOX,calibration,trailers
+HERBench,5,25260817.0,The Secret Life of Walter Mitty Official Trailer 1 2013 - Ben Stiller Movie HD,test,trailers
+HERBench,5,25260817.0,There Will Be Blood 2007 Official Trailer - Daniel Day-Lewis Paul Dano Movie HD,test,trailers
+HERBench,5,25260817.0,Titanic TBT Trailer 20th Century FOX,test,trailers
+HERBench,5,25260817.0,Toy Story 3 Official Trailer HD,test,trailers
+HERBench,5,25260817.0,Werner Herzog Reads Curious George,test,trailers
+HERBench,5,25260817.0,cam1_segment_6_300s_360s,test,WildTrack
+HERBench,5,25260817.0,cam1_segment_7_360s_420s,calibration,WildTrack
+HERBench,5,25260817.0,cam2_segment_10_540s_600s,calibration,WildTrack
+HERBench,5,25260817.0,cam2_segment_2_60s_120s,test,WildTrack
+HERBench,5,25260817.0,cam2_segment_5_240s_300s,test,WildTrack
+HERBench,5,25260817.0,cam2_segment_8_420s_480s,test,WildTrack
+HERBench,5,25260817.0,cam3_segment_1_0s_180s,calibration,WildTrack
+HERBench,5,25260817.0,cam3_segment_5_720s_900s,calibration,WildTrack
+HERBench,5,25260817.0,cam3_segment_6_900s_1080s,test,WildTrack
+HERBench,5,25260817.0,cam4_segment_9_1440s_1620s,test,WildTrack
+HERBench,5,25260817.0,cam5_segment_3_360s_540s,test,WildTrack
+HERBench,5,25260817.0,cam5_segment_4_540s_720s,calibration,WildTrack
+HERBench,5,25260817.0,cam5_segment_5_720s_900s,calibration,WildTrack
+HERBench,5,25260817.0,cam6_segment_2_300s_600s,calibration,WildTrack
+HERBench,5,25260817.0,cam7_segment_4_900s_1200s,calibration,WildTrack
+HERBench,5,25260817.0,uid_vid_00102,test,PersonPath22
+HERBench,5,25260817.0,uid_vid_00105,calibration,PersonPath22
+HERBench,5,25260817.0,uid_vid_00108,calibration,PersonPath22
+HERBench,5,25260817.0,uid_vid_00165,test,PersonPath22
+HERBench,6,26260820.0,A Quiet Place 2018 - Official Trailer - Paramount Pictures,test,trailers
+HERBench,6,26260820.0,Anchorman - The Legend of Ron Burgundy - Trailer,test,trailers
+HERBench,6,26260820.0,Furious 7 - Official Trailer HD,calibration,trailers
+HERBench,6,26260820.0,Groundhog Day Trailer HD,calibration,trailers
+HERBench,6,26260820.0,Into the Wild 2007 Trailer 1 Movieclips Classic Trailers,calibration,trailers
+HERBench,6,26260820.0,John Wick Official Trailer 1 2014 - Keanu Reeves Willem Dafoe Movie HD,test,trailers
+HERBench,6,26260820.0,Jurassic Park Trailer,test,trailers
+HERBench,6,26260820.0,Marvel Studios Avengers - Endgame - Official Trailer,test,trailers
+HERBench,6,26260820.0,Marvel s Guardians of the Galaxy - Trailer 1 OFFICIAL,calibration,trailers
+HERBench,6,26260820.0,P01-20240202-161354,calibration,HD_EPIC
+HERBench,6,26260820.0,P01-20240203-121517,calibration,HD_EPIC
+HERBench,6,26260820.0,P01-20240203-130505,test,HD_EPIC
+HERBench,6,26260820.0,P01-20240203-184214,test,HD_EPIC
+HERBench,6,26260820.0,P01-20240204-120411,calibration,HD_EPIC
+HERBench,6,26260820.0,P01-20240204-142301,calibration,HD_EPIC
+HERBench,6,26260820.0,P01-20240204-152537,calibration,HD_EPIC
+HERBench,6,26260820.0,P02-20240211-100250,test,HD_EPIC
+HERBench,6,26260820.0,P02-20240211-104948,test,HD_EPIC
+HERBench,6,26260820.0,P02-20240211-141313,test,HD_EPIC
+HERBench,6,26260820.0,P03-20240216-084005,calibration,HD_EPIC
+HERBench,6,26260820.0,P03-20240217-152152,calibration,HD_EPIC
+HERBench,6,26260820.0,P03-20240217-192543,test,HD_EPIC
+HERBench,6,26260820.0,P04-20240413-142619,test,HD_EPIC
+HERBench,6,26260820.0,P04-20240414-064514,calibration,HD_EPIC
+HERBench,6,26260820.0,P04-20240414-162242,calibration,HD_EPIC
+HERBench,6,26260820.0,P04-20240415-175615,test,HD_EPIC
+HERBench,6,26260820.0,P05-20240425-083515,test,HD_EPIC
+HERBench,6,26260820.0,P05-20240427-150402,calibration,HD_EPIC
+HERBench,6,26260820.0,P06-20240510-100047,calibration,HD_EPIC
+HERBench,6,26260820.0,P06-20240510-121619,calibration,HD_EPIC
+HERBench,6,26260820.0,P06-20240511-121048,test,HD_EPIC
+HERBench,6,26260820.0,P07-20240529-102652,test,HD_EPIC
+HERBench,6,26260820.0,P07-20240529-191007,calibration,HD_EPIC
+HERBench,6,26260820.0,P07-20240529-194518,test,HD_EPIC
+HERBench,6,26260820.0,P07-20240530-102543,test,HD_EPIC
+HERBench,6,26260820.0,P07-20240531-201703,calibration,HD_EPIC
+HERBench,6,26260820.0,P08-20240618-163547,test,HD_EPIC
+HERBench,6,26260820.0,P09-20240622-162302,test,HD_EPIC
+HERBench,6,26260820.0,P09-20240623-153253,test,HD_EPIC
+HERBench,6,26260820.0,P09-20240624-160737,calibration,HD_EPIC
+HERBench,6,26260820.0,Se7en 1995 Official Trailer - Brad Pitt Morgan Freeman Movie HD,calibration,trailers
+HERBench,6,26260820.0,Singin in the Rain 1952 Official Trailer - Gene Kelly Debbie Reynolds Movie HD,calibration,trailers
+HERBench,6,26260820.0,Thank You for Your Service Trailer 1 2017 Movieclips Trailers,test,trailers
+HERBench,6,26260820.0,The Longest Ride Official Trailer HD 20th Century FOX,test,trailers
+HERBench,6,26260820.0,The Secret Life of Walter Mitty Official Trailer 1 2013 - Ben Stiller Movie HD,calibration,trailers
+HERBench,6,26260820.0,There Will Be Blood 2007 Official Trailer - Daniel Day-Lewis Paul Dano Movie HD,test,trailers
+HERBench,6,26260820.0,Titanic TBT Trailer 20th Century FOX,calibration,trailers
+HERBench,6,26260820.0,Toy Story 3 Official Trailer HD,calibration,trailers
+HERBench,6,26260820.0,Werner Herzog Reads Curious George,test,trailers
+HERBench,6,26260820.0,cam1_segment_6_300s_360s,test,WildTrack
+HERBench,6,26260820.0,cam1_segment_7_360s_420s,test,WildTrack
+HERBench,6,26260820.0,cam2_segment_10_540s_600s,test,WildTrack
+HERBench,6,26260820.0,cam2_segment_2_60s_120s,test,WildTrack
+HERBench,6,26260820.0,cam2_segment_5_240s_300s,test,WildTrack
+HERBench,6,26260820.0,cam2_segment_8_420s_480s,calibration,WildTrack
+HERBench,6,26260820.0,cam3_segment_1_0s_180s,calibration,WildTrack
+HERBench,6,26260820.0,cam3_segment_5_720s_900s,calibration,WildTrack
+HERBench,6,26260820.0,cam3_segment_6_900s_1080s,calibration,WildTrack
+HERBench,6,26260820.0,cam4_segment_9_1440s_1620s,calibration,WildTrack
+HERBench,6,26260820.0,cam5_segment_3_360s_540s,calibration,WildTrack
+HERBench,6,26260820.0,cam5_segment_4_540s_720s,test,WildTrack
+HERBench,6,26260820.0,cam5_segment_5_720s_900s,calibration,WildTrack
+HERBench,6,26260820.0,cam6_segment_2_300s_600s,calibration,WildTrack
+HERBench,6,26260820.0,cam7_segment_4_900s_1200s,test,WildTrack
+HERBench,6,26260820.0,uid_vid_00102,test,PersonPath22
+HERBench,6,26260820.0,uid_vid_00105,calibration,PersonPath22
+HERBench,6,26260820.0,uid_vid_00108,calibration,PersonPath22
+HERBench,6,26260820.0,uid_vid_00165,test,PersonPath22
+HERBench,7,27260823.0,A Quiet Place 2018 - Official Trailer - Paramount Pictures,test,trailers
+HERBench,7,27260823.0,Anchorman - The Legend of Ron Burgundy - Trailer,test,trailers
+HERBench,7,27260823.0,Furious 7 - Official Trailer HD,test,trailers
+HERBench,7,27260823.0,Groundhog Day Trailer HD,test,trailers
+HERBench,7,27260823.0,Into the Wild 2007 Trailer 1 Movieclips Classic Trailers,test,trailers
+HERBench,7,27260823.0,John Wick Official Trailer 1 2014 - Keanu Reeves Willem Dafoe Movie HD,calibration,trailers
+HERBench,7,27260823.0,Jurassic Park Trailer,calibration,trailers
+HERBench,7,27260823.0,Marvel Studios Avengers - Endgame - Official Trailer,test,trailers
+HERBench,7,27260823.0,Marvel s Guardians of the Galaxy - Trailer 1 OFFICIAL,test,trailers
+HERBench,7,27260823.0,P01-20240202-161354,test,HD_EPIC
+HERBench,7,27260823.0,P01-20240203-121517,test,HD_EPIC
+HERBench,7,27260823.0,P01-20240203-130505,calibration,HD_EPIC
+HERBench,7,27260823.0,P01-20240203-184214,calibration,HD_EPIC
+HERBench,7,27260823.0,P01-20240204-120411,calibration,HD_EPIC
+HERBench,7,27260823.0,P01-20240204-142301,test,HD_EPIC
+HERBench,7,27260823.0,P01-20240204-152537,test,HD_EPIC
+HERBench,7,27260823.0,P02-20240211-100250,calibration,HD_EPIC
+HERBench,7,27260823.0,P02-20240211-104948,test,HD_EPIC
+HERBench,7,27260823.0,P02-20240211-141313,test,HD_EPIC
+HERBench,7,27260823.0,P03-20240216-084005,test,HD_EPIC
+HERBench,7,27260823.0,P03-20240217-152152,test,HD_EPIC
+HERBench,7,27260823.0,P03-20240217-192543,calibration,HD_EPIC
+HERBench,7,27260823.0,P04-20240413-142619,test,HD_EPIC
+HERBench,7,27260823.0,P04-20240414-064514,test,HD_EPIC
+HERBench,7,27260823.0,P04-20240414-162242,calibration,HD_EPIC
+HERBench,7,27260823.0,P04-20240415-175615,calibration,HD_EPIC
+HERBench,7,27260823.0,P05-20240425-083515,calibration,HD_EPIC
+HERBench,7,27260823.0,P05-20240427-150402,test,HD_EPIC
+HERBench,7,27260823.0,P06-20240510-100047,calibration,HD_EPIC
+HERBench,7,27260823.0,P06-20240510-121619,test,HD_EPIC
+HERBench,7,27260823.0,P06-20240511-121048,calibration,HD_EPIC
+HERBench,7,27260823.0,P07-20240529-102652,calibration,HD_EPIC
+HERBench,7,27260823.0,P07-20240529-191007,test,HD_EPIC
+HERBench,7,27260823.0,P07-20240529-194518,test,HD_EPIC
+HERBench,7,27260823.0,P07-20240530-102543,calibration,HD_EPIC
+HERBench,7,27260823.0,P07-20240531-201703,calibration,HD_EPIC
+HERBench,7,27260823.0,P08-20240618-163547,calibration,HD_EPIC
+HERBench,7,27260823.0,P09-20240622-162302,calibration,HD_EPIC
+HERBench,7,27260823.0,P09-20240623-153253,test,HD_EPIC
+HERBench,7,27260823.0,P09-20240624-160737,test,HD_EPIC
+HERBench,7,27260823.0,Se7en 1995 Official Trailer - Brad Pitt Morgan Freeman Movie HD,calibration,trailers
+HERBench,7,27260823.0,Singin in the Rain 1952 Official Trailer - Gene Kelly Debbie Reynolds Movie HD,calibration,trailers
+HERBench,7,27260823.0,Thank You for Your Service Trailer 1 2017 Movieclips Trailers,test,trailers
+HERBench,7,27260823.0,The Longest Ride Official Trailer HD 20th Century FOX,calibration,trailers
+HERBench,7,27260823.0,The Secret Life of Walter Mitty Official Trailer 1 2013 - Ben Stiller Movie HD,calibration,trailers
+HERBench,7,27260823.0,There Will Be Blood 2007 Official Trailer - Daniel Day-Lewis Paul Dano Movie HD,calibration,trailers
+HERBench,7,27260823.0,Titanic TBT Trailer 20th Century FOX,calibration,trailers
+HERBench,7,27260823.0,Toy Story 3 Official Trailer HD,test,trailers
+HERBench,7,27260823.0,Werner Herzog Reads Curious George,calibration,trailers
+HERBench,7,27260823.0,cam1_segment_6_300s_360s,calibration,WildTrack
+HERBench,7,27260823.0,cam1_segment_7_360s_420s,calibration,WildTrack
+HERBench,7,27260823.0,cam2_segment_10_540s_600s,calibration,WildTrack
+HERBench,7,27260823.0,cam2_segment_2_60s_120s,test,WildTrack
+HERBench,7,27260823.0,cam2_segment_5_240s_300s,test,WildTrack
+HERBench,7,27260823.0,cam2_segment_8_420s_480s,calibration,WildTrack
+HERBench,7,27260823.0,cam3_segment_1_0s_180s,calibration,WildTrack
+HERBench,7,27260823.0,cam3_segment_5_720s_900s,calibration,WildTrack
+HERBench,7,27260823.0,cam3_segment_6_900s_1080s,calibration,WildTrack
+HERBench,7,27260823.0,cam4_segment_9_1440s_1620s,calibration,WildTrack
+HERBench,7,27260823.0,cam5_segment_3_360s_540s,test,WildTrack
+HERBench,7,27260823.0,cam5_segment_4_540s_720s,test,WildTrack
+HERBench,7,27260823.0,cam5_segment_5_720s_900s,test,WildTrack
+HERBench,7,27260823.0,cam6_segment_2_300s_600s,test,WildTrack
+HERBench,7,27260823.0,cam7_segment_4_900s_1200s,test,WildTrack
+HERBench,7,27260823.0,uid_vid_00102,test,PersonPath22
+HERBench,7,27260823.0,uid_vid_00105,calibration,PersonPath22
+HERBench,7,27260823.0,uid_vid_00108,test,PersonPath22
+HERBench,7,27260823.0,uid_vid_00165,calibration,PersonPath22
+HERBench,8,28260826.0,A Quiet Place 2018 - Official Trailer - Paramount Pictures,test,trailers
+HERBench,8,28260826.0,Anchorman - The Legend of Ron Burgundy - Trailer,test,trailers
+HERBench,8,28260826.0,Furious 7 - Official Trailer HD,calibration,trailers
+HERBench,8,28260826.0,Groundhog Day Trailer HD,calibration,trailers
+HERBench,8,28260826.0,Into the Wild 2007 Trailer 1 Movieclips Classic Trailers,calibration,trailers
+HERBench,8,28260826.0,John Wick Official Trailer 1 2014 - Keanu Reeves Willem Dafoe Movie HD,test,trailers
+HERBench,8,28260826.0,Jurassic Park Trailer,calibration,trailers
+HERBench,8,28260826.0,Marvel Studios Avengers - Endgame - Official Trailer,calibration,trailers
+HERBench,8,28260826.0,Marvel s Guardians of the Galaxy - Trailer 1 OFFICIAL,test,trailers
+HERBench,8,28260826.0,P01-20240202-161354,calibration,HD_EPIC
+HERBench,8,28260826.0,P01-20240203-121517,calibration,HD_EPIC
+HERBench,8,28260826.0,P01-20240203-130505,calibration,HD_EPIC
+HERBench,8,28260826.0,P01-20240203-184214,test,HD_EPIC
+HERBench,8,28260826.0,P01-20240204-120411,test,HD_EPIC
+HERBench,8,28260826.0,P01-20240204-142301,calibration,HD_EPIC
+HERBench,8,28260826.0,P01-20240204-152537,test,HD_EPIC
+HERBench,8,28260826.0,P02-20240211-100250,test,HD_EPIC
+HERBench,8,28260826.0,P02-20240211-104948,calibration,HD_EPIC
+HERBench,8,28260826.0,P02-20240211-141313,test,HD_EPIC
+HERBench,8,28260826.0,P03-20240216-084005,test,HD_EPIC
+HERBench,8,28260826.0,P03-20240217-152152,calibration,HD_EPIC
+HERBench,8,28260826.0,P03-20240217-192543,test,HD_EPIC
+HERBench,8,28260826.0,P04-20240413-142619,test,HD_EPIC
+HERBench,8,28260826.0,P04-20240414-064514,calibration,HD_EPIC
+HERBench,8,28260826.0,P04-20240414-162242,calibration,HD_EPIC
+HERBench,8,28260826.0,P04-20240415-175615,test,HD_EPIC
+HERBench,8,28260826.0,P05-20240425-083515,calibration,HD_EPIC
+HERBench,8,28260826.0,P05-20240427-150402,calibration,HD_EPIC
+HERBench,8,28260826.0,P06-20240510-100047,calibration,HD_EPIC
+HERBench,8,28260826.0,P06-20240510-121619,calibration,HD_EPIC
+HERBench,8,28260826.0,P06-20240511-121048,test,HD_EPIC
+HERBench,8,28260826.0,P07-20240529-102652,test,HD_EPIC
+HERBench,8,28260826.0,P07-20240529-191007,test,HD_EPIC
+HERBench,8,28260826.0,P07-20240529-194518,test,HD_EPIC
+HERBench,8,28260826.0,P07-20240530-102543,test,HD_EPIC
+HERBench,8,28260826.0,P07-20240531-201703,calibration,HD_EPIC
+HERBench,8,28260826.0,P08-20240618-163547,calibration,HD_EPIC
+HERBench,8,28260826.0,P09-20240622-162302,calibration,HD_EPIC
+HERBench,8,28260826.0,P09-20240623-153253,test,HD_EPIC
+HERBench,8,28260826.0,P09-20240624-160737,test,HD_EPIC
+HERBench,8,28260826.0,Se7en 1995 Official Trailer - Brad Pitt Morgan Freeman Movie HD,test,trailers
+HERBench,8,28260826.0,Singin in the Rain 1952 Official Trailer - Gene Kelly Debbie Reynolds Movie HD,test,trailers
+HERBench,8,28260826.0,Thank You for Your Service Trailer 1 2017 Movieclips Trailers,test,trailers
+HERBench,8,28260826.0,The Longest Ride Official Trailer HD 20th Century FOX,calibration,trailers
+HERBench,8,28260826.0,The Secret Life of Walter Mitty Official Trailer 1 2013 - Ben Stiller Movie HD,calibration,trailers
+HERBench,8,28260826.0,There Will Be Blood 2007 Official Trailer - Daniel Day-Lewis Paul Dano Movie HD,calibration,trailers
+HERBench,8,28260826.0,Titanic TBT Trailer 20th Century FOX,test,trailers
+HERBench,8,28260826.0,Toy Story 3 Official Trailer HD,calibration,trailers
+HERBench,8,28260826.0,Werner Herzog Reads Curious George,test,trailers
+HERBench,8,28260826.0,cam1_segment_6_300s_360s,calibration,WildTrack
+HERBench,8,28260826.0,cam1_segment_7_360s_420s,test,WildTrack
+HERBench,8,28260826.0,cam2_segment_10_540s_600s,calibration,WildTrack
+HERBench,8,28260826.0,cam2_segment_2_60s_120s,test,WildTrack
+HERBench,8,28260826.0,cam2_segment_5_240s_300s,test,WildTrack
+HERBench,8,28260826.0,cam2_segment_8_420s_480s,calibration,WildTrack
+HERBench,8,28260826.0,cam3_segment_1_0s_180s,calibration,WildTrack
+HERBench,8,28260826.0,cam3_segment_5_720s_900s,test,WildTrack
+HERBench,8,28260826.0,cam3_segment_6_900s_1080s,test,WildTrack
+HERBench,8,28260826.0,cam4_segment_9_1440s_1620s,test,WildTrack
+HERBench,8,28260826.0,cam5_segment_3_360s_540s,calibration,WildTrack
+HERBench,8,28260826.0,cam5_segment_4_540s_720s,calibration,WildTrack
+HERBench,8,28260826.0,cam5_segment_5_720s_900s,test,WildTrack
+HERBench,8,28260826.0,cam6_segment_2_300s_600s,calibration,WildTrack
+HERBench,8,28260826.0,cam7_segment_4_900s_1200s,calibration,WildTrack
+HERBench,8,28260826.0,uid_vid_00102,calibration,PersonPath22
+HERBench,8,28260826.0,uid_vid_00105,test,PersonPath22
+HERBench,8,28260826.0,uid_vid_00108,calibration,PersonPath22
+HERBench,8,28260826.0,uid_vid_00165,test,PersonPath22
+HERBench,9,29260829.0,A Quiet Place 2018 - Official Trailer - Paramount Pictures,test,trailers
+HERBench,9,29260829.0,Anchorman - The Legend of Ron Burgundy - Trailer,test,trailers
+HERBench,9,29260829.0,Furious 7 - Official Trailer HD,calibration,trailers
+HERBench,9,29260829.0,Groundhog Day Trailer HD,calibration,trailers
+HERBench,9,29260829.0,Into the Wild 2007 Trailer 1 Movieclips Classic Trailers,test,trailers
+HERBench,9,29260829.0,John Wick Official Trailer 1 2014 - Keanu Reeves Willem Dafoe Movie HD,calibration,trailers
+HERBench,9,29260829.0,Jurassic Park Trailer,calibration,trailers
+HERBench,9,29260829.0,Marvel Studios Avengers - Endgame - Official Trailer,test,trailers
+HERBench,9,29260829.0,Marvel s Guardians of the Galaxy - Trailer 1 OFFICIAL,calibration,trailers
+HERBench,9,29260829.0,P01-20240202-161354,test,HD_EPIC
+HERBench,9,29260829.0,P01-20240203-121517,test,HD_EPIC
+HERBench,9,29260829.0,P01-20240203-130505,test,HD_EPIC
+HERBench,9,29260829.0,P01-20240203-184214,test,HD_EPIC
+HERBench,9,29260829.0,P01-20240204-120411,calibration,HD_EPIC
+HERBench,9,29260829.0,P01-20240204-142301,calibration,HD_EPIC
+HERBench,9,29260829.0,P01-20240204-152537,calibration,HD_EPIC
+HERBench,9,29260829.0,P02-20240211-100250,calibration,HD_EPIC
+HERBench,9,29260829.0,P02-20240211-104948,test,HD_EPIC
+HERBench,9,29260829.0,P02-20240211-141313,calibration,HD_EPIC
+HERBench,9,29260829.0,P03-20240216-084005,test,HD_EPIC
+HERBench,9,29260829.0,P03-20240217-152152,calibration,HD_EPIC
+HERBench,9,29260829.0,P03-20240217-192543,calibration,HD_EPIC
+HERBench,9,29260829.0,P04-20240413-142619,calibration,HD_EPIC
+HERBench,9,29260829.0,P04-20240414-064514,test,HD_EPIC
+HERBench,9,29260829.0,P04-20240414-162242,test,HD_EPIC
+HERBench,9,29260829.0,P04-20240415-175615,test,HD_EPIC
+HERBench,9,29260829.0,P05-20240425-083515,calibration,HD_EPIC
+HERBench,9,29260829.0,P05-20240427-150402,test,HD_EPIC
+HERBench,9,29260829.0,P06-20240510-100047,calibration,HD_EPIC
+HERBench,9,29260829.0,P06-20240510-121619,calibration,HD_EPIC
+HERBench,9,29260829.0,P06-20240511-121048,calibration,HD_EPIC
+HERBench,9,29260829.0,P07-20240529-102652,test,HD_EPIC
+HERBench,9,29260829.0,P07-20240529-191007,test,HD_EPIC
+HERBench,9,29260829.0,P07-20240529-194518,calibration,HD_EPIC
+HERBench,9,29260829.0,P07-20240530-102543,test,HD_EPIC
+HERBench,9,29260829.0,P07-20240531-201703,test,HD_EPIC
+HERBench,9,29260829.0,P08-20240618-163547,calibration,HD_EPIC
+HERBench,9,29260829.0,P09-20240622-162302,calibration,HD_EPIC
+HERBench,9,29260829.0,P09-20240623-153253,test,HD_EPIC
+HERBench,9,29260829.0,P09-20240624-160737,calibration,HD_EPIC
+HERBench,9,29260829.0,Se7en 1995 Official Trailer - Brad Pitt Morgan Freeman Movie HD,calibration,trailers
+HERBench,9,29260829.0,Singin in the Rain 1952 Official Trailer - Gene Kelly Debbie Reynolds Movie HD,calibration,trailers
+HERBench,9,29260829.0,Thank You for Your Service Trailer 1 2017 Movieclips Trailers,test,trailers
+HERBench,9,29260829.0,The Longest Ride Official Trailer HD 20th Century FOX,test,trailers
+HERBench,9,29260829.0,The Secret Life of Walter Mitty Official Trailer 1 2013 - Ben Stiller Movie HD,test,trailers
+HERBench,9,29260829.0,There Will Be Blood 2007 Official Trailer - Daniel Day-Lewis Paul Dano Movie HD,test,trailers
+HERBench,9,29260829.0,Titanic TBT Trailer 20th Century FOX,calibration,trailers
+HERBench,9,29260829.0,Toy Story 3 Official Trailer HD,test,trailers
+HERBench,9,29260829.0,Werner Herzog Reads Curious George,calibration,trailers
+HERBench,9,29260829.0,cam1_segment_6_300s_360s,calibration,WildTrack
+HERBench,9,29260829.0,cam1_segment_7_360s_420s,calibration,WildTrack
+HERBench,9,29260829.0,cam2_segment_10_540s_600s,calibration,WildTrack
+HERBench,9,29260829.0,cam2_segment_2_60s_120s,calibration,WildTrack
+HERBench,9,29260829.0,cam2_segment_5_240s_300s,test,WildTrack
+HERBench,9,29260829.0,cam2_segment_8_420s_480s,test,WildTrack
+HERBench,9,29260829.0,cam3_segment_1_0s_180s,test,WildTrack
+HERBench,9,29260829.0,cam3_segment_5_720s_900s,calibration,WildTrack
+HERBench,9,29260829.0,cam3_segment_6_900s_1080s,test,WildTrack
+HERBench,9,29260829.0,cam4_segment_9_1440s_1620s,calibration,WildTrack
+HERBench,9,29260829.0,cam5_segment_3_360s_540s,calibration,WildTrack
+HERBench,9,29260829.0,cam5_segment_4_540s_720s,test,WildTrack
+HERBench,9,29260829.0,cam5_segment_5_720s_900s,test,WildTrack
+HERBench,9,29260829.0,cam6_segment_2_300s_600s,test,WildTrack
+HERBench,9,29260829.0,cam7_segment_4_900s_1200s,test,WildTrack
+HERBench,9,29260829.0,uid_vid_00102,test,PersonPath22
+HERBench,9,29260829.0,uid_vid_00105,calibration,PersonPath22
+HERBench,9,29260829.0,uid_vid_00108,calibration,PersonPath22
+HERBench,9,29260829.0,uid_vid_00165,test,PersonPath22
+HERBench,10,30260832.0,A Quiet Place 2018 - Official Trailer - Paramount Pictures,calibration,trailers
+HERBench,10,30260832.0,Anchorman - The Legend of Ron Burgundy - Trailer,calibration,trailers
+HERBench,10,30260832.0,Furious 7 - Official Trailer HD,calibration,trailers
+HERBench,10,30260832.0,Groundhog Day Trailer HD,calibration,trailers
+HERBench,10,30260832.0,Into the Wild 2007 Trailer 1 Movieclips Classic Trailers,test,trailers
+HERBench,10,30260832.0,John Wick Official Trailer 1 2014 - Keanu Reeves Willem Dafoe Movie HD,calibration,trailers
+HERBench,10,30260832.0,Jurassic Park Trailer,test,trailers
+HERBench,10,30260832.0,Marvel Studios Avengers - Endgame - Official Trailer,calibration,trailers
+HERBench,10,30260832.0,Marvel s Guardians of the Galaxy - Trailer 1 OFFICIAL,test,trailers
+HERBench,10,30260832.0,P01-20240202-161354,test,HD_EPIC
+HERBench,10,30260832.0,P01-20240203-121517,calibration,HD_EPIC
+HERBench,10,30260832.0,P01-20240203-130505,calibration,HD_EPIC
+HERBench,10,30260832.0,P01-20240203-184214,test,HD_EPIC
+HERBench,10,30260832.0,P01-20240204-120411,calibration,HD_EPIC
+HERBench,10,30260832.0,P01-20240204-142301,test,HD_EPIC
+HERBench,10,30260832.0,P01-20240204-152537,test,HD_EPIC
+HERBench,10,30260832.0,P02-20240211-100250,calibration,HD_EPIC
+HERBench,10,30260832.0,P02-20240211-104948,test,HD_EPIC
+HERBench,10,30260832.0,P02-20240211-141313,calibration,HD_EPIC
+HERBench,10,30260832.0,P03-20240216-084005,calibration,HD_EPIC
+HERBench,10,30260832.0,P03-20240217-152152,calibration,HD_EPIC
+HERBench,10,30260832.0,P03-20240217-192543,test,HD_EPIC
+HERBench,10,30260832.0,P04-20240413-142619,calibration,HD_EPIC
+HERBench,10,30260832.0,P04-20240414-064514,calibration,HD_EPIC
+HERBench,10,30260832.0,P04-20240414-162242,test,HD_EPIC
+HERBench,10,30260832.0,P04-20240415-175615,calibration,HD_EPIC
+HERBench,10,30260832.0,P05-20240425-083515,calibration,HD_EPIC
+HERBench,10,30260832.0,P05-20240427-150402,test,HD_EPIC
+HERBench,10,30260832.0,P06-20240510-100047,test,HD_EPIC
+HERBench,10,30260832.0,P06-20240510-121619,calibration,HD_EPIC
+HERBench,10,30260832.0,P06-20240511-121048,test,HD_EPIC
+HERBench,10,30260832.0,P07-20240529-102652,test,HD_EPIC
+HERBench,10,30260832.0,P07-20240529-191007,test,HD_EPIC
+HERBench,10,30260832.0,P07-20240529-194518,calibration,HD_EPIC
+HERBench,10,30260832.0,P07-20240530-102543,test,HD_EPIC
+HERBench,10,30260832.0,P07-20240531-201703,calibration,HD_EPIC
+HERBench,10,30260832.0,P08-20240618-163547,test,HD_EPIC
+HERBench,10,30260832.0,P09-20240622-162302,test,HD_EPIC
+HERBench,10,30260832.0,P09-20240623-153253,calibration,HD_EPIC
+HERBench,10,30260832.0,P09-20240624-160737,calibration,HD_EPIC
+HERBench,10,30260832.0,Se7en 1995 Official Trailer - Brad Pitt Morgan Freeman Movie HD,test,trailers
+HERBench,10,30260832.0,Singin in the Rain 1952 Official Trailer - Gene Kelly Debbie Reynolds Movie HD,test,trailers
+HERBench,10,30260832.0,Thank You for Your Service Trailer 1 2017 Movieclips Trailers,test,trailers
+HERBench,10,30260832.0,The Longest Ride Official Trailer HD 20th Century FOX,calibration,trailers
+HERBench,10,30260832.0,The Secret Life of Walter Mitty Official Trailer 1 2013 - Ben Stiller Movie HD,test,trailers
+HERBench,10,30260832.0,There Will Be Blood 2007 Official Trailer - Daniel Day-Lewis Paul Dano Movie HD,test,trailers
+HERBench,10,30260832.0,Titanic TBT Trailer 20th Century FOX,calibration,trailers
+HERBench,10,30260832.0,Toy Story 3 Official Trailer HD,test,trailers
+HERBench,10,30260832.0,Werner Herzog Reads Curious George,calibration,trailers
+HERBench,10,30260832.0,cam1_segment_6_300s_360s,test,WildTrack
+HERBench,10,30260832.0,cam1_segment_7_360s_420s,test,WildTrack
+HERBench,10,30260832.0,cam2_segment_10_540s_600s,calibration,WildTrack
+HERBench,10,30260832.0,cam2_segment_2_60s_120s,calibration,WildTrack
+HERBench,10,30260832.0,cam2_segment_5_240s_300s,test,WildTrack
+HERBench,10,30260832.0,cam2_segment_8_420s_480s,calibration,WildTrack
+HERBench,10,30260832.0,cam3_segment_1_0s_180s,test,WildTrack
+HERBench,10,30260832.0,cam3_segment_5_720s_900s,calibration,WildTrack
+HERBench,10,30260832.0,cam3_segment_6_900s_1080s,test,WildTrack
+HERBench,10,30260832.0,cam4_segment_9_1440s_1620s,test,WildTrack
+HERBench,10,30260832.0,cam5_segment_3_360s_540s,calibration,WildTrack
+HERBench,10,30260832.0,cam5_segment_4_540s_720s,test,WildTrack
+HERBench,10,30260832.0,cam5_segment_5_720s_900s,test,WildTrack
+HERBench,10,30260832.0,cam6_segment_2_300s_600s,calibration,WildTrack
+HERBench,10,30260832.0,cam7_segment_4_900s_1200s,calibration,WildTrack
+HERBench,10,30260832.0,uid_vid_00102,test,PersonPath22
+HERBench,10,30260832.0,uid_vid_00105,calibration,PersonPath22
+HERBench,10,30260832.0,uid_vid_00108,calibration,PersonPath22
+HERBench,10,30260832.0,uid_vid_00165,test,PersonPath22
+HERBench,11,31260835.0,A Quiet Place 2018 - Official Trailer - Paramount Pictures,test,trailers
+HERBench,11,31260835.0,Anchorman - The Legend of Ron Burgundy - Trailer,test,trailers
+HERBench,11,31260835.0,Furious 7 - Official Trailer HD,calibration,trailers
+HERBench,11,31260835.0,Groundhog Day Trailer HD,calibration,trailers
+HERBench,11,31260835.0,Into the Wild 2007 Trailer 1 Movieclips Classic Trailers,calibration,trailers
+HERBench,11,31260835.0,John Wick Official Trailer 1 2014 - Keanu Reeves Willem Dafoe Movie HD,calibration,trailers
+HERBench,11,31260835.0,Jurassic Park Trailer,calibration,trailers
+HERBench,11,31260835.0,Marvel Studios Avengers - Endgame - Official Trailer,calibration,trailers
+HERBench,11,31260835.0,Marvel s Guardians of the Galaxy - Trailer 1 OFFICIAL,test,trailers
+HERBench,11,31260835.0,P01-20240202-161354,calibration,HD_EPIC
+HERBench,11,31260835.0,P01-20240203-121517,test,HD_EPIC
+HERBench,11,31260835.0,P01-20240203-130505,calibration,HD_EPIC
+HERBench,11,31260835.0,P01-20240203-184214,calibration,HD_EPIC
+HERBench,11,31260835.0,P01-20240204-120411,calibration,HD_EPIC
+HERBench,11,31260835.0,P01-20240204-142301,calibration,HD_EPIC
+HERBench,11,31260835.0,P01-20240204-152537,calibration,HD_EPIC
+HERBench,11,31260835.0,P02-20240211-100250,test,HD_EPIC
+HERBench,11,31260835.0,P02-20240211-104948,calibration,HD_EPIC
+HERBench,11,31260835.0,P02-20240211-141313,test,HD_EPIC
+HERBench,11,31260835.0,P03-20240216-084005,test,HD_EPIC
+HERBench,11,31260835.0,P03-20240217-152152,calibration,HD_EPIC
+HERBench,11,31260835.0,P03-20240217-192543,calibration,HD_EPIC
+HERBench,11,31260835.0,P04-20240413-142619,test,HD_EPIC
+HERBench,11,31260835.0,P04-20240414-064514,calibration,HD_EPIC
+HERBench,11,31260835.0,P04-20240414-162242,calibration,HD_EPIC
+HERBench,11,31260835.0,P04-20240415-175615,calibration,HD_EPIC
+HERBench,11,31260835.0,P05-20240425-083515,test,HD_EPIC
+HERBench,11,31260835.0,P05-20240427-150402,test,HD_EPIC
+HERBench,11,31260835.0,P06-20240510-100047,calibration,HD_EPIC
+HERBench,11,31260835.0,P06-20240510-121619,test,HD_EPIC
+HERBench,11,31260835.0,P06-20240511-121048,test,HD_EPIC
+HERBench,11,31260835.0,P07-20240529-102652,test,HD_EPIC
+HERBench,11,31260835.0,P07-20240529-191007,calibration,HD_EPIC
+HERBench,11,31260835.0,P07-20240529-194518,test,HD_EPIC
+HERBench,11,31260835.0,P07-20240530-102543,test,HD_EPIC
+HERBench,11,31260835.0,P07-20240531-201703,calibration,HD_EPIC
+HERBench,11,31260835.0,P08-20240618-163547,calibration,HD_EPIC
+HERBench,11,31260835.0,P09-20240622-162302,test,HD_EPIC
+HERBench,11,31260835.0,P09-20240623-153253,test,HD_EPIC
+HERBench,11,31260835.0,P09-20240624-160737,test,HD_EPIC
+HERBench,11,31260835.0,Se7en 1995 Official Trailer - Brad Pitt Morgan Freeman Movie HD,test,trailers
+HERBench,11,31260835.0,Singin in the Rain 1952 Official Trailer - Gene Kelly Debbie Reynolds Movie HD,test,trailers
+HERBench,11,31260835.0,Thank You for Your Service Trailer 1 2017 Movieclips Trailers,test,trailers
+HERBench,11,31260835.0,The Longest Ride Official Trailer HD 20th Century FOX,calibration,trailers
+HERBench,11,31260835.0,The Secret Life of Walter Mitty Official Trailer 1 2013 - Ben Stiller Movie HD,test,trailers
+HERBench,11,31260835.0,There Will Be Blood 2007 Official Trailer - Daniel Day-Lewis Paul Dano Movie HD,calibration,trailers
+HERBench,11,31260835.0,Titanic TBT Trailer 20th Century FOX,calibration,trailers
+HERBench,11,31260835.0,Toy Story 3 Official Trailer HD,test,trailers
+HERBench,11,31260835.0,Werner Herzog Reads Curious George,test,trailers
+HERBench,11,31260835.0,cam1_segment_6_300s_360s,test,WildTrack
+HERBench,11,31260835.0,cam1_segment_7_360s_420s,test,WildTrack
+HERBench,11,31260835.0,cam2_segment_10_540s_600s,test,WildTrack
+HERBench,11,31260835.0,cam2_segment_2_60s_120s,calibration,WildTrack
+HERBench,11,31260835.0,cam2_segment_5_240s_300s,calibration,WildTrack
+HERBench,11,31260835.0,cam2_segment_8_420s_480s,calibration,WildTrack
+HERBench,11,31260835.0,cam3_segment_1_0s_180s,calibration,WildTrack
+HERBench,11,31260835.0,cam3_segment_5_720s_900s,test,WildTrack
+HERBench,11,31260835.0,cam3_segment_6_900s_1080s,calibration,WildTrack
+HERBench,11,31260835.0,cam4_segment_9_1440s_1620s,test,WildTrack
+HERBench,11,31260835.0,cam5_segment_3_360s_540s,calibration,WildTrack
+HERBench,11,31260835.0,cam5_segment_4_540s_720s,calibration,WildTrack
+HERBench,11,31260835.0,cam5_segment_5_720s_900s,test,WildTrack
+HERBench,11,31260835.0,cam6_segment_2_300s_600s,test,WildTrack
+HERBench,11,31260835.0,cam7_segment_4_900s_1200s,test,WildTrack
+HERBench,11,31260835.0,uid_vid_00102,calibration,PersonPath22
+HERBench,11,31260835.0,uid_vid_00105,calibration,PersonPath22
+HERBench,11,31260835.0,uid_vid_00108,test,PersonPath22
+HERBench,11,31260835.0,uid_vid_00165,test,PersonPath22
+HERBench,12,32260838.0,A Quiet Place 2018 - Official Trailer - Paramount Pictures,test,trailers
+HERBench,12,32260838.0,Anchorman - The Legend of Ron Burgundy - Trailer,calibration,trailers
+HERBench,12,32260838.0,Furious 7 - Official Trailer HD,calibration,trailers
+HERBench,12,32260838.0,Groundhog Day Trailer HD,calibration,trailers
+HERBench,12,32260838.0,Into the Wild 2007 Trailer 1 Movieclips Classic Trailers,calibration,trailers
+HERBench,12,32260838.0,John Wick Official Trailer 1 2014 - Keanu Reeves Willem Dafoe Movie HD,calibration,trailers
+HERBench,12,32260838.0,Jurassic Park Trailer,calibration,trailers
+HERBench,12,32260838.0,Marvel Studios Avengers - Endgame - Official Trailer,calibration,trailers
+HERBench,12,32260838.0,Marvel s Guardians of the Galaxy - Trailer 1 OFFICIAL,test,trailers
+HERBench,12,32260838.0,P01-20240202-161354,calibration,HD_EPIC
+HERBench,12,32260838.0,P01-20240203-121517,calibration,HD_EPIC
+HERBench,12,32260838.0,P01-20240203-130505,calibration,HD_EPIC
+HERBench,12,32260838.0,P01-20240203-184214,calibration,HD_EPIC
+HERBench,12,32260838.0,P01-20240204-120411,test,HD_EPIC
+HERBench,12,32260838.0,P01-20240204-142301,test,HD_EPIC
+HERBench,12,32260838.0,P01-20240204-152537,calibration,HD_EPIC
+HERBench,12,32260838.0,P02-20240211-100250,calibration,HD_EPIC
+HERBench,12,32260838.0,P02-20240211-104948,test,HD_EPIC
+HERBench,12,32260838.0,P02-20240211-141313,test,HD_EPIC
+HERBench,12,32260838.0,P03-20240216-084005,test,HD_EPIC
+HERBench,12,32260838.0,P03-20240217-152152,calibration,HD_EPIC
+HERBench,12,32260838.0,P03-20240217-192543,calibration,HD_EPIC
+HERBench,12,32260838.0,P04-20240413-142619,calibration,HD_EPIC
+HERBench,12,32260838.0,P04-20240414-064514,calibration,HD_EPIC
+HERBench,12,32260838.0,P04-20240414-162242,calibration,HD_EPIC
+HERBench,12,32260838.0,P04-20240415-175615,test,HD_EPIC
+HERBench,12,32260838.0,P05-20240425-083515,test,HD_EPIC
+HERBench,12,32260838.0,P05-20240427-150402,calibration,HD_EPIC
+HERBench,12,32260838.0,P06-20240510-100047,test,HD_EPIC
+HERBench,12,32260838.0,P06-20240510-121619,calibration,HD_EPIC
+HERBench,12,32260838.0,P06-20240511-121048,test,HD_EPIC
+HERBench,12,32260838.0,P07-20240529-102652,calibration,HD_EPIC
+HERBench,12,32260838.0,P07-20240529-191007,test,HD_EPIC
+HERBench,12,32260838.0,P07-20240529-194518,calibration,HD_EPIC
+HERBench,12,32260838.0,P07-20240530-102543,test,HD_EPIC
+HERBench,12,32260838.0,P07-20240531-201703,test,HD_EPIC
+HERBench,12,32260838.0,P08-20240618-163547,test,HD_EPIC
+HERBench,12,32260838.0,P09-20240622-162302,test,HD_EPIC
+HERBench,12,32260838.0,P09-20240623-153253,test,HD_EPIC
+HERBench,12,32260838.0,P09-20240624-160737,calibration,HD_EPIC
+HERBench,12,32260838.0,Se7en 1995 Official Trailer - Brad Pitt Morgan Freeman Movie HD,test,trailers
+HERBench,12,32260838.0,Singin in the Rain 1952 Official Trailer - Gene Kelly Debbie Reynolds Movie HD,test,trailers
+HERBench,12,32260838.0,Thank You for Your Service Trailer 1 2017 Movieclips Trailers,test,trailers
+HERBench,12,32260838.0,The Longest Ride Official Trailer HD 20th Century FOX,test,trailers
+HERBench,12,32260838.0,The Secret Life of Walter Mitty Official Trailer 1 2013 - Ben Stiller Movie HD,test,trailers
+HERBench,12,32260838.0,There Will Be Blood 2007 Official Trailer - Daniel Day-Lewis Paul Dano Movie HD,test,trailers
+HERBench,12,32260838.0,Titanic TBT Trailer 20th Century FOX,calibration,trailers
+HERBench,12,32260838.0,Toy Story 3 Official Trailer HD,calibration,trailers
+HERBench,12,32260838.0,Werner Herzog Reads Curious George,test,trailers
+HERBench,12,32260838.0,cam1_segment_6_300s_360s,calibration,WildTrack
+HERBench,12,32260838.0,cam1_segment_7_360s_420s,calibration,WildTrack
+HERBench,12,32260838.0,cam2_segment_10_540s_600s,calibration,WildTrack
+HERBench,12,32260838.0,cam2_segment_2_60s_120s,test,WildTrack
+HERBench,12,32260838.0,cam2_segment_5_240s_300s,test,WildTrack
+HERBench,12,32260838.0,cam2_segment_8_420s_480s,test,WildTrack
+HERBench,12,32260838.0,cam3_segment_1_0s_180s,test,WildTrack
+HERBench,12,32260838.0,cam3_segment_5_720s_900s,test,WildTrack
+HERBench,12,32260838.0,cam3_segment_6_900s_1080s,calibration,WildTrack
+HERBench,12,32260838.0,cam4_segment_9_1440s_1620s,calibration,WildTrack
+HERBench,12,32260838.0,cam5_segment_3_360s_540s,test,WildTrack
+HERBench,12,32260838.0,cam5_segment_4_540s_720s,calibration,WildTrack
+HERBench,12,32260838.0,cam5_segment_5_720s_900s,test,WildTrack
+HERBench,12,32260838.0,cam6_segment_2_300s_600s,test,WildTrack
+HERBench,12,32260838.0,cam7_segment_4_900s_1200s,calibration,WildTrack
+HERBench,12,32260838.0,uid_vid_00102,test,PersonPath22
+HERBench,12,32260838.0,uid_vid_00105,calibration,PersonPath22
+HERBench,12,32260838.0,uid_vid_00108,test,PersonPath22
+HERBench,12,32260838.0,uid_vid_00165,calibration,PersonPath22
+HERBench,13,33260841.0,A Quiet Place 2018 - Official Trailer - Paramount Pictures,test,trailers
+HERBench,13,33260841.0,Anchorman - The Legend of Ron Burgundy - Trailer,test,trailers
+HERBench,13,33260841.0,Furious 7 - Official Trailer HD,test,trailers
+HERBench,13,33260841.0,Groundhog Day Trailer HD,calibration,trailers
+HERBench,13,33260841.0,Into the Wild 2007 Trailer 1 Movieclips Classic Trailers,calibration,trailers
+HERBench,13,33260841.0,John Wick Official Trailer 1 2014 - Keanu Reeves Willem Dafoe Movie HD,calibration,trailers
+HERBench,13,33260841.0,Jurassic Park Trailer,calibration,trailers
+HERBench,13,33260841.0,Marvel Studios Avengers - Endgame - Official Trailer,test,trailers
+HERBench,13,33260841.0,Marvel s Guardians of the Galaxy - Trailer 1 OFFICIAL,calibration,trailers
+HERBench,13,33260841.0,P01-20240202-161354,calibration,HD_EPIC
+HERBench,13,33260841.0,P01-20240203-121517,test,HD_EPIC
+HERBench,13,33260841.0,P01-20240203-130505,test,HD_EPIC
+HERBench,13,33260841.0,P01-20240203-184214,calibration,HD_EPIC
+HERBench,13,33260841.0,P01-20240204-120411,calibration,HD_EPIC
+HERBench,13,33260841.0,P01-20240204-142301,test,HD_EPIC
+HERBench,13,33260841.0,P01-20240204-152537,calibration,HD_EPIC
+HERBench,13,33260841.0,P02-20240211-100250,calibration,HD_EPIC
+HERBench,13,33260841.0,P02-20240211-104948,test,HD_EPIC
+HERBench,13,33260841.0,P02-20240211-141313,test,HD_EPIC
+HERBench,13,33260841.0,P03-20240216-084005,test,HD_EPIC
+HERBench,13,33260841.0,P03-20240217-152152,calibration,HD_EPIC
+HERBench,13,33260841.0,P03-20240217-192543,calibration,HD_EPIC
+HERBench,13,33260841.0,P04-20240413-142619,calibration,HD_EPIC
+HERBench,13,33260841.0,P04-20240414-064514,test,HD_EPIC
+HERBench,13,33260841.0,P04-20240414-162242,calibration,HD_EPIC
+HERBench,13,33260841.0,P04-20240415-175615,test,HD_EPIC
+HERBench,13,33260841.0,P05-20240425-083515,test,HD_EPIC
+HERBench,13,33260841.0,P05-20240427-150402,test,HD_EPIC
+HERBench,13,33260841.0,P06-20240510-100047,calibration,HD_EPIC
+HERBench,13,33260841.0,P06-20240510-121619,test,HD_EPIC
+HERBench,13,33260841.0,P06-20240511-121048,calibration,HD_EPIC
+HERBench,13,33260841.0,P07-20240529-102652,calibration,HD_EPIC
+HERBench,13,33260841.0,P07-20240529-191007,test,HD_EPIC
+HERBench,13,33260841.0,P07-20240529-194518,calibration,HD_EPIC
+HERBench,13,33260841.0,P07-20240530-102543,test,HD_EPIC
+HERBench,13,33260841.0,P07-20240531-201703,test,HD_EPIC
+HERBench,13,33260841.0,P08-20240618-163547,test,HD_EPIC
+HERBench,13,33260841.0,P09-20240622-162302,calibration,HD_EPIC
+HERBench,13,33260841.0,P09-20240623-153253,test,HD_EPIC
+HERBench,13,33260841.0,P09-20240624-160737,calibration,HD_EPIC
+HERBench,13,33260841.0,Se7en 1995 Official Trailer - Brad Pitt Morgan Freeman Movie HD,calibration,trailers
+HERBench,13,33260841.0,Singin in the Rain 1952 Official Trailer - Gene Kelly Debbie Reynolds Movie HD,test,trailers
+HERBench,13,33260841.0,Thank You for Your Service Trailer 1 2017 Movieclips Trailers,calibration,trailers
+HERBench,13,33260841.0,The Longest Ride Official Trailer HD 20th Century FOX,test,trailers
+HERBench,13,33260841.0,The Secret Life of Walter Mitty Official Trailer 1 2013 - Ben Stiller Movie HD,test,trailers
+HERBench,13,33260841.0,There Will Be Blood 2007 Official Trailer - Daniel Day-Lewis Paul Dano Movie HD,calibration,trailers
+HERBench,13,33260841.0,Titanic TBT Trailer 20th Century FOX,test,trailers
+HERBench,13,33260841.0,Toy Story 3 Official Trailer HD,calibration,trailers
+HERBench,13,33260841.0,Werner Herzog Reads Curious George,test,trailers
+HERBench,13,33260841.0,cam1_segment_6_300s_360s,calibration,WildTrack
+HERBench,13,33260841.0,cam1_segment_7_360s_420s,calibration,WildTrack
+HERBench,13,33260841.0,cam2_segment_10_540s_600s,test,WildTrack
+HERBench,13,33260841.0,cam2_segment_2_60s_120s,test,WildTrack
+HERBench,13,33260841.0,cam2_segment_5_240s_300s,calibration,WildTrack
+HERBench,13,33260841.0,cam2_segment_8_420s_480s,test,WildTrack
+HERBench,13,33260841.0,cam3_segment_1_0s_180s,calibration,WildTrack
+HERBench,13,33260841.0,cam3_segment_5_720s_900s,calibration,WildTrack
+HERBench,13,33260841.0,cam3_segment_6_900s_1080s,calibration,WildTrack
+HERBench,13,33260841.0,cam4_segment_9_1440s_1620s,test,WildTrack
+HERBench,13,33260841.0,cam5_segment_3_360s_540s,test,WildTrack
+HERBench,13,33260841.0,cam5_segment_4_540s_720s,calibration,WildTrack
+HERBench,13,33260841.0,cam5_segment_5_720s_900s,test,WildTrack
+HERBench,13,33260841.0,cam6_segment_2_300s_600s,test,WildTrack
+HERBench,13,33260841.0,cam7_segment_4_900s_1200s,calibration,WildTrack
+HERBench,13,33260841.0,uid_vid_00102,test,PersonPath22
+HERBench,13,33260841.0,uid_vid_00105,calibration,PersonPath22
+HERBench,13,33260841.0,uid_vid_00108,test,PersonPath22
+HERBench,13,33260841.0,uid_vid_00165,calibration,PersonPath22
+HERBench,14,34260844.0,A Quiet Place 2018 - Official Trailer - Paramount Pictures,test,trailers
+HERBench,14,34260844.0,Anchorman - The Legend of Ron Burgundy - Trailer,calibration,trailers
+HERBench,14,34260844.0,Furious 7 - Official Trailer HD,test,trailers
+HERBench,14,34260844.0,Groundhog Day Trailer HD,calibration,trailers
+HERBench,14,34260844.0,Into the Wild 2007 Trailer 1 Movieclips Classic Trailers,calibration,trailers
+HERBench,14,34260844.0,John Wick Official Trailer 1 2014 - Keanu Reeves Willem Dafoe Movie HD,calibration,trailers
+HERBench,14,34260844.0,Jurassic Park Trailer,test,trailers
+HERBench,14,34260844.0,Marvel Studios Avengers - Endgame - Official Trailer,test,trailers
+HERBench,14,34260844.0,Marvel s Guardians of the Galaxy - Trailer 1 OFFICIAL,calibration,trailers
+HERBench,14,34260844.0,P01-20240202-161354,calibration,HD_EPIC
+HERBench,14,34260844.0,P01-20240203-121517,calibration,HD_EPIC
+HERBench,14,34260844.0,P01-20240203-130505,calibration,HD_EPIC
+HERBench,14,34260844.0,P01-20240203-184214,test,HD_EPIC
+HERBench,14,34260844.0,P01-20240204-120411,test,HD_EPIC
+HERBench,14,34260844.0,P01-20240204-142301,test,HD_EPIC
+HERBench,14,34260844.0,P01-20240204-152537,test,HD_EPIC
+HERBench,14,34260844.0,P02-20240211-100250,calibration,HD_EPIC
+HERBench,14,34260844.0,P02-20240211-104948,test,HD_EPIC
+HERBench,14,34260844.0,P02-20240211-141313,test,HD_EPIC
+HERBench,14,34260844.0,P03-20240216-084005,test,HD_EPIC
+HERBench,14,34260844.0,P03-20240217-152152,test,HD_EPIC
+HERBench,14,34260844.0,P03-20240217-192543,calibration,HD_EPIC
+HERBench,14,34260844.0,P04-20240413-142619,calibration,HD_EPIC
+HERBench,14,34260844.0,P04-20240414-064514,test,HD_EPIC
+HERBench,14,34260844.0,P04-20240414-162242,test,HD_EPIC
+HERBench,14,34260844.0,P04-20240415-175615,calibration,HD_EPIC
+HERBench,14,34260844.0,P05-20240425-083515,test,HD_EPIC
+HERBench,14,34260844.0,P05-20240427-150402,test,HD_EPIC
+HERBench,14,34260844.0,P06-20240510-100047,test,HD_EPIC
+HERBench,14,34260844.0,P06-20240510-121619,calibration,HD_EPIC
+HERBench,14,34260844.0,P06-20240511-121048,calibration,HD_EPIC
+HERBench,14,34260844.0,P07-20240529-102652,test,HD_EPIC
+HERBench,14,34260844.0,P07-20240529-191007,calibration,HD_EPIC
+HERBench,14,34260844.0,P07-20240529-194518,calibration,HD_EPIC
+HERBench,14,34260844.0,P07-20240530-102543,calibration,HD_EPIC
+HERBench,14,34260844.0,P07-20240531-201703,calibration,HD_EPIC
+HERBench,14,34260844.0,P08-20240618-163547,test,HD_EPIC
+HERBench,14,34260844.0,P09-20240622-162302,calibration,HD_EPIC
+HERBench,14,34260844.0,P09-20240623-153253,calibration,HD_EPIC
+HERBench,14,34260844.0,P09-20240624-160737,calibration,HD_EPIC
+HERBench,14,34260844.0,Se7en 1995 Official Trailer - Brad Pitt Morgan Freeman Movie HD,test,trailers
+HERBench,14,34260844.0,Singin in the Rain 1952 Official Trailer - Gene Kelly Debbie Reynolds Movie HD,test,trailers
+HERBench,14,34260844.0,Thank You for Your Service Trailer 1 2017 Movieclips Trailers,test,trailers
+HERBench,14,34260844.0,The Longest Ride Official Trailer HD 20th Century FOX,calibration,trailers
+HERBench,14,34260844.0,The Secret Life of Walter Mitty Official Trailer 1 2013 - Ben Stiller Movie HD,test,trailers
+HERBench,14,34260844.0,There Will Be Blood 2007 Official Trailer - Daniel Day-Lewis Paul Dano Movie HD,calibration,trailers
+HERBench,14,34260844.0,Titanic TBT Trailer 20th Century FOX,test,trailers
+HERBench,14,34260844.0,Toy Story 3 Official Trailer HD,calibration,trailers
+HERBench,14,34260844.0,Werner Herzog Reads Curious George,calibration,trailers
+HERBench,14,34260844.0,cam1_segment_6_300s_360s,calibration,WildTrack
+HERBench,14,34260844.0,cam1_segment_7_360s_420s,calibration,WildTrack
+HERBench,14,34260844.0,cam2_segment_10_540s_600s,test,WildTrack
+HERBench,14,34260844.0,cam2_segment_2_60s_120s,calibration,WildTrack
+HERBench,14,34260844.0,cam2_segment_5_240s_300s,test,WildTrack
+HERBench,14,34260844.0,cam2_segment_8_420s_480s,test,WildTrack
+HERBench,14,34260844.0,cam3_segment_1_0s_180s,test,WildTrack
+HERBench,14,34260844.0,cam3_segment_5_720s_900s,test,WildTrack
+HERBench,14,34260844.0,cam3_segment_6_900s_1080s,test,WildTrack
+HERBench,14,34260844.0,cam4_segment_9_1440s_1620s,calibration,WildTrack
+HERBench,14,34260844.0,cam5_segment_3_360s_540s,calibration,WildTrack
+HERBench,14,34260844.0,cam5_segment_4_540s_720s,calibration,WildTrack
+HERBench,14,34260844.0,cam5_segment_5_720s_900s,test,WildTrack
+HERBench,14,34260844.0,cam6_segment_2_300s_600s,calibration,WildTrack
+HERBench,14,34260844.0,cam7_segment_4_900s_1200s,test,WildTrack
+HERBench,14,34260844.0,uid_vid_00102,test,PersonPath22
+HERBench,14,34260844.0,uid_vid_00105,calibration,PersonPath22
+HERBench,14,34260844.0,uid_vid_00108,calibration,PersonPath22
+HERBench,14,34260844.0,uid_vid_00165,test,PersonPath22
+HERBench,15,35260847.0,A Quiet Place 2018 - Official Trailer - Paramount Pictures,test,trailers
+HERBench,15,35260847.0,Anchorman - The Legend of Ron Burgundy - Trailer,calibration,trailers
+HERBench,15,35260847.0,Furious 7 - Official Trailer HD,calibration,trailers
+HERBench,15,35260847.0,Groundhog Day Trailer HD,calibration,trailers
+HERBench,15,35260847.0,Into the Wild 2007 Trailer 1 Movieclips Classic Trailers,calibration,trailers
+HERBench,15,35260847.0,John Wick Official Trailer 1 2014 - Keanu Reeves Willem Dafoe Movie HD,test,trailers
+HERBench,15,35260847.0,Jurassic Park Trailer,test,trailers
+HERBench,15,35260847.0,Marvel Studios Avengers - Endgame - Official Trailer,calibration,trailers
+HERBench,15,35260847.0,Marvel s Guardians of the Galaxy - Trailer 1 OFFICIAL,calibration,trailers
+HERBench,15,35260847.0,P01-20240202-161354,calibration,HD_EPIC
+HERBench,15,35260847.0,P01-20240203-121517,test,HD_EPIC
+HERBench,15,35260847.0,P01-20240203-130505,calibration,HD_EPIC
+HERBench,15,35260847.0,P01-20240203-184214,calibration,HD_EPIC
+HERBench,15,35260847.0,P01-20240204-120411,calibration,HD_EPIC
+HERBench,15,35260847.0,P01-20240204-142301,calibration,HD_EPIC
+HERBench,15,35260847.0,P01-20240204-152537,calibration,HD_EPIC
+HERBench,15,35260847.0,P02-20240211-100250,calibration,HD_EPIC
+HERBench,15,35260847.0,P02-20240211-104948,calibration,HD_EPIC
+HERBench,15,35260847.0,P02-20240211-141313,test,HD_EPIC
+HERBench,15,35260847.0,P03-20240216-084005,test,HD_EPIC
+HERBench,15,35260847.0,P03-20240217-152152,calibration,HD_EPIC
+HERBench,15,35260847.0,P03-20240217-192543,test,HD_EPIC
+HERBench,15,35260847.0,P04-20240413-142619,test,HD_EPIC
+HERBench,15,35260847.0,P04-20240414-064514,calibration,HD_EPIC
+HERBench,15,35260847.0,P04-20240414-162242,test,HD_EPIC
+HERBench,15,35260847.0,P04-20240415-175615,calibration,HD_EPIC
+HERBench,15,35260847.0,P05-20240425-083515,test,HD_EPIC
+HERBench,15,35260847.0,P05-20240427-150402,test,HD_EPIC
+HERBench,15,35260847.0,P06-20240510-100047,test,HD_EPIC
+HERBench,15,35260847.0,P06-20240510-121619,test,HD_EPIC
+HERBench,15,35260847.0,P06-20240511-121048,test,HD_EPIC
+HERBench,15,35260847.0,P07-20240529-102652,test,HD_EPIC
+HERBench,15,35260847.0,P07-20240529-191007,test,HD_EPIC
+HERBench,15,35260847.0,P07-20240529-194518,calibration,HD_EPIC
+HERBench,15,35260847.0,P07-20240530-102543,calibration,HD_EPIC
+HERBench,15,35260847.0,P07-20240531-201703,test,HD_EPIC
+HERBench,15,35260847.0,P08-20240618-163547,calibration,HD_EPIC
+HERBench,15,35260847.0,P09-20240622-162302,calibration,HD_EPIC
+HERBench,15,35260847.0,P09-20240623-153253,test,HD_EPIC
+HERBench,15,35260847.0,P09-20240624-160737,test,HD_EPIC
+HERBench,15,35260847.0,Se7en 1995 Official Trailer - Brad Pitt Morgan Freeman Movie HD,test,trailers
+HERBench,15,35260847.0,Singin in the Rain 1952 Official Trailer - Gene Kelly Debbie Reynolds Movie HD,test,trailers
+HERBench,15,35260847.0,Thank You for Your Service Trailer 1 2017 Movieclips Trailers,test,trailers
+HERBench,15,35260847.0,The Longest Ride Official Trailer HD 20th Century FOX,calibration,trailers
+HERBench,15,35260847.0,The Secret Life of Walter Mitty Official Trailer 1 2013 - Ben Stiller Movie HD,test,trailers
+HERBench,15,35260847.0,There Will Be Blood 2007 Official Trailer - Daniel Day-Lewis Paul Dano Movie HD,calibration,trailers
+HERBench,15,35260847.0,Titanic TBT Trailer 20th Century FOX,test,trailers
+HERBench,15,35260847.0,Toy Story 3 Official Trailer HD,test,trailers
+HERBench,15,35260847.0,Werner Herzog Reads Curious George,calibration,trailers
+HERBench,15,35260847.0,cam1_segment_6_300s_360s,test,WildTrack
+HERBench,15,35260847.0,cam1_segment_7_360s_420s,calibration,WildTrack
+HERBench,15,35260847.0,cam2_segment_10_540s_600s,test,WildTrack
+HERBench,15,35260847.0,cam2_segment_2_60s_120s,calibration,WildTrack
+HERBench,15,35260847.0,cam2_segment_5_240s_300s,test,WildTrack
+HERBench,15,35260847.0,cam2_segment_8_420s_480s,calibration,WildTrack
+HERBench,15,35260847.0,cam3_segment_1_0s_180s,calibration,WildTrack
+HERBench,15,35260847.0,cam3_segment_5_720s_900s,calibration,WildTrack
+HERBench,15,35260847.0,cam3_segment_6_900s_1080s,test,WildTrack
+HERBench,15,35260847.0,cam4_segment_9_1440s_1620s,test,WildTrack
+HERBench,15,35260847.0,cam5_segment_3_360s_540s,calibration,WildTrack
+HERBench,15,35260847.0,cam5_segment_4_540s_720s,calibration,WildTrack
+HERBench,15,35260847.0,cam5_segment_5_720s_900s,calibration,WildTrack
+HERBench,15,35260847.0,cam6_segment_2_300s_600s,test,WildTrack
+HERBench,15,35260847.0,cam7_segment_4_900s_1200s,test,WildTrack
+HERBench,15,35260847.0,uid_vid_00102,test,PersonPath22
+HERBench,15,35260847.0,uid_vid_00105,calibration,PersonPath22
+HERBench,15,35260847.0,uid_vid_00108,calibration,PersonPath22
+HERBench,15,35260847.0,uid_vid_00165,test,PersonPath22
+HERBench,16,36260850.0,A Quiet Place 2018 - Official Trailer - Paramount Pictures,calibration,trailers
+HERBench,16,36260850.0,Anchorman - The Legend of Ron Burgundy - Trailer,calibration,trailers
+HERBench,16,36260850.0,Furious 7 - Official Trailer HD,test,trailers
+HERBench,16,36260850.0,Groundhog Day Trailer HD,calibration,trailers
+HERBench,16,36260850.0,Into the Wild 2007 Trailer 1 Movieclips Classic Trailers,test,trailers
+HERBench,16,36260850.0,John Wick Official Trailer 1 2014 - Keanu Reeves Willem Dafoe Movie HD,calibration,trailers
+HERBench,16,36260850.0,Jurassic Park Trailer,test,trailers
+HERBench,16,36260850.0,Marvel Studios Avengers - Endgame - Official Trailer,test,trailers
+HERBench,16,36260850.0,Marvel s Guardians of the Galaxy - Trailer 1 OFFICIAL,calibration,trailers
+HERBench,16,36260850.0,P01-20240202-161354,calibration,HD_EPIC
+HERBench,16,36260850.0,P01-20240203-121517,calibration,HD_EPIC
+HERBench,16,36260850.0,P01-20240203-130505,calibration,HD_EPIC
+HERBench,16,36260850.0,P01-20240203-184214,test,HD_EPIC
+HERBench,16,36260850.0,P01-20240204-120411,calibration,HD_EPIC
+HERBench,16,36260850.0,P01-20240204-142301,test,HD_EPIC
+HERBench,16,36260850.0,P01-20240204-152537,calibration,HD_EPIC
+HERBench,16,36260850.0,P02-20240211-100250,test,HD_EPIC
+HERBench,16,36260850.0,P02-20240211-104948,test,HD_EPIC
+HERBench,16,36260850.0,P02-20240211-141313,test,HD_EPIC
+HERBench,16,36260850.0,P03-20240216-084005,test,HD_EPIC
+HERBench,16,36260850.0,P03-20240217-152152,test,HD_EPIC
+HERBench,16,36260850.0,P03-20240217-192543,test,HD_EPIC
+HERBench,16,36260850.0,P04-20240413-142619,test,HD_EPIC
+HERBench,16,36260850.0,P04-20240414-064514,test,HD_EPIC
+HERBench,16,36260850.0,P04-20240414-162242,test,HD_EPIC
+HERBench,16,36260850.0,P04-20240415-175615,calibration,HD_EPIC
+HERBench,16,36260850.0,P05-20240425-083515,test,HD_EPIC
+HERBench,16,36260850.0,P05-20240427-150402,calibration,HD_EPIC
+HERBench,16,36260850.0,P06-20240510-100047,calibration,HD_EPIC
+HERBench,16,36260850.0,P06-20240510-121619,calibration,HD_EPIC
+HERBench,16,36260850.0,P06-20240511-121048,test,HD_EPIC
+HERBench,16,36260850.0,P07-20240529-102652,calibration,HD_EPIC
+HERBench,16,36260850.0,P07-20240529-191007,calibration,HD_EPIC
+HERBench,16,36260850.0,P07-20240529-194518,calibration,HD_EPIC
+HERBench,16,36260850.0,P07-20240530-102543,calibration,HD_EPIC
+HERBench,16,36260850.0,P07-20240531-201703,calibration,HD_EPIC
+HERBench,16,36260850.0,P08-20240618-163547,calibration,HD_EPIC
+HERBench,16,36260850.0,P09-20240622-162302,test,HD_EPIC
+HERBench,16,36260850.0,P09-20240623-153253,test,HD_EPIC
+HERBench,16,36260850.0,P09-20240624-160737,calibration,HD_EPIC
+HERBench,16,36260850.0,Se7en 1995 Official Trailer - Brad Pitt Morgan Freeman Movie HD,test,trailers
+HERBench,16,36260850.0,Singin in the Rain 1952 Official Trailer - Gene Kelly Debbie Reynolds Movie HD,calibration,trailers
+HERBench,16,36260850.0,Thank You for Your Service Trailer 1 2017 Movieclips Trailers,calibration,trailers
+HERBench,16,36260850.0,The Longest Ride Official Trailer HD 20th Century FOX,calibration,trailers
+HERBench,16,36260850.0,The Secret Life of Walter Mitty Official Trailer 1 2013 - Ben Stiller Movie HD,calibration,trailers
+HERBench,16,36260850.0,There Will Be Blood 2007 Official Trailer - Daniel Day-Lewis Paul Dano Movie HD,test,trailers
+HERBench,16,36260850.0,Titanic TBT Trailer 20th Century FOX,test,trailers
+HERBench,16,36260850.0,Toy Story 3 Official Trailer HD,test,trailers
+HERBench,16,36260850.0,Werner Herzog Reads Curious George,test,trailers
+HERBench,16,36260850.0,cam1_segment_6_300s_360s,test,WildTrack
+HERBench,16,36260850.0,cam1_segment_7_360s_420s,test,WildTrack
+HERBench,16,36260850.0,cam2_segment_10_540s_600s,test,WildTrack
+HERBench,16,36260850.0,cam2_segment_2_60s_120s,calibration,WildTrack
+HERBench,16,36260850.0,cam2_segment_5_240s_300s,test,WildTrack
+HERBench,16,36260850.0,cam2_segment_8_420s_480s,calibration,WildTrack
+HERBench,16,36260850.0,cam3_segment_1_0s_180s,test,WildTrack
+HERBench,16,36260850.0,cam3_segment_5_720s_900s,test,WildTrack
+HERBench,16,36260850.0,cam3_segment_6_900s_1080s,calibration,WildTrack
+HERBench,16,36260850.0,cam4_segment_9_1440s_1620s,calibration,WildTrack
+HERBench,16,36260850.0,cam5_segment_3_360s_540s,calibration,WildTrack
+HERBench,16,36260850.0,cam5_segment_4_540s_720s,calibration,WildTrack
+HERBench,16,36260850.0,cam5_segment_5_720s_900s,calibration,WildTrack
+HERBench,16,36260850.0,cam6_segment_2_300s_600s,test,WildTrack
+HERBench,16,36260850.0,cam7_segment_4_900s_1200s,test,WildTrack
+HERBench,16,36260850.0,uid_vid_00102,test,PersonPath22
+HERBench,16,36260850.0,uid_vid_00105,test,PersonPath22
+HERBench,16,36260850.0,uid_vid_00108,calibration,PersonPath22
+HERBench,16,36260850.0,uid_vid_00165,calibration,PersonPath22
+HERBench,17,37260853.0,A Quiet Place 2018 - Official Trailer - Paramount Pictures,calibration,trailers
+HERBench,17,37260853.0,Anchorman - The Legend of Ron Burgundy - Trailer,test,trailers
+HERBench,17,37260853.0,Furious 7 - Official Trailer HD,calibration,trailers
+HERBench,17,37260853.0,Groundhog Day Trailer HD,test,trailers
+HERBench,17,37260853.0,Into the Wild 2007 Trailer 1 Movieclips Classic Trailers,calibration,trailers
+HERBench,17,37260853.0,John Wick Official Trailer 1 2014 - Keanu Reeves Willem Dafoe Movie HD,calibration,trailers
+HERBench,17,37260853.0,Jurassic Park Trailer,test,trailers
+HERBench,17,37260853.0,Marvel Studios Avengers - Endgame - Official Trailer,test,trailers
+HERBench,17,37260853.0,Marvel s Guardians of the Galaxy - Trailer 1 OFFICIAL,test,trailers
+HERBench,17,37260853.0,P01-20240202-161354,calibration,HD_EPIC
+HERBench,17,37260853.0,P01-20240203-121517,calibration,HD_EPIC
+HERBench,17,37260853.0,P01-20240203-130505,test,HD_EPIC
+HERBench,17,37260853.0,P01-20240203-184214,calibration,HD_EPIC
+HERBench,17,37260853.0,P01-20240204-120411,test,HD_EPIC
+HERBench,17,37260853.0,P01-20240204-142301,test,HD_EPIC
+HERBench,17,37260853.0,P01-20240204-152537,test,HD_EPIC
+HERBench,17,37260853.0,P02-20240211-100250,calibration,HD_EPIC
+HERBench,17,37260853.0,P02-20240211-104948,test,HD_EPIC
+HERBench,17,37260853.0,P02-20240211-141313,test,HD_EPIC
+HERBench,17,37260853.0,P03-20240216-084005,test,HD_EPIC
+HERBench,17,37260853.0,P03-20240217-152152,calibration,HD_EPIC
+HERBench,17,37260853.0,P03-20240217-192543,test,HD_EPIC
+HERBench,17,37260853.0,P04-20240413-142619,calibration,HD_EPIC
+HERBench,17,37260853.0,P04-20240414-064514,calibration,HD_EPIC
+HERBench,17,37260853.0,P04-20240414-162242,calibration,HD_EPIC
+HERBench,17,37260853.0,P04-20240415-175615,test,HD_EPIC
+HERBench,17,37260853.0,P05-20240425-083515,test,HD_EPIC
+HERBench,17,37260853.0,P05-20240427-150402,calibration,HD_EPIC
+HERBench,17,37260853.0,P06-20240510-100047,test,HD_EPIC
+HERBench,17,37260853.0,P06-20240510-121619,test,HD_EPIC
+HERBench,17,37260853.0,P06-20240511-121048,calibration,HD_EPIC
+HERBench,17,37260853.0,P07-20240529-102652,test,HD_EPIC
+HERBench,17,37260853.0,P07-20240529-191007,calibration,HD_EPIC
+HERBench,17,37260853.0,P07-20240529-194518,test,HD_EPIC
+HERBench,17,37260853.0,P07-20240530-102543,test,HD_EPIC
+HERBench,17,37260853.0,P07-20240531-201703,calibration,HD_EPIC
+HERBench,17,37260853.0,P08-20240618-163547,test,HD_EPIC
+HERBench,17,37260853.0,P09-20240622-162302,calibration,HD_EPIC
+HERBench,17,37260853.0,P09-20240623-153253,calibration,HD_EPIC
+HERBench,17,37260853.0,P09-20240624-160737,calibration,HD_EPIC
+HERBench,17,37260853.0,Se7en 1995 Official Trailer - Brad Pitt Morgan Freeman Movie HD,test,trailers
+HERBench,17,37260853.0,Singin in the Rain 1952 Official Trailer - Gene Kelly Debbie Reynolds Movie HD,calibration,trailers
+HERBench,17,37260853.0,Thank You for Your Service Trailer 1 2017 Movieclips Trailers,test,trailers
+HERBench,17,37260853.0,The Longest Ride Official Trailer HD 20th Century FOX,test,trailers
+HERBench,17,37260853.0,The Secret Life of Walter Mitty Official Trailer 1 2013 - Ben Stiller Movie HD,test,trailers
+HERBench,17,37260853.0,There Will Be Blood 2007 Official Trailer - Daniel Day-Lewis Paul Dano Movie HD,calibration,trailers
+HERBench,17,37260853.0,Titanic TBT Trailer 20th Century FOX,calibration,trailers
+HERBench,17,37260853.0,Toy Story 3 Official Trailer HD,calibration,trailers
+HERBench,17,37260853.0,Werner Herzog Reads Curious George,calibration,trailers
+HERBench,17,37260853.0,cam1_segment_6_300s_360s,test,WildTrack
+HERBench,17,37260853.0,cam1_segment_7_360s_420s,calibration,WildTrack
+HERBench,17,37260853.0,cam2_segment_10_540s_600s,calibration,WildTrack
+HERBench,17,37260853.0,cam2_segment_2_60s_120s,test,WildTrack
+HERBench,17,37260853.0,cam2_segment_5_240s_300s,test,WildTrack
+HERBench,17,37260853.0,cam2_segment_8_420s_480s,test,WildTrack
+HERBench,17,37260853.0,cam3_segment_1_0s_180s,test,WildTrack
+HERBench,17,37260853.0,cam3_segment_5_720s_900s,test,WildTrack
+HERBench,17,37260853.0,cam3_segment_6_900s_1080s,test,WildTrack
+HERBench,17,37260853.0,cam4_segment_9_1440s_1620s,calibration,WildTrack
+HERBench,17,37260853.0,cam5_segment_3_360s_540s,calibration,WildTrack
+HERBench,17,37260853.0,cam5_segment_4_540s_720s,calibration,WildTrack
+HERBench,17,37260853.0,cam5_segment_5_720s_900s,calibration,WildTrack
+HERBench,17,37260853.0,cam6_segment_2_300s_600s,calibration,WildTrack
+HERBench,17,37260853.0,cam7_segment_4_900s_1200s,calibration,WildTrack
+HERBench,17,37260853.0,uid_vid_00102,calibration,PersonPath22
+HERBench,17,37260853.0,uid_vid_00105,test,PersonPath22
+HERBench,17,37260853.0,uid_vid_00108,test,PersonPath22
+HERBench,17,37260853.0,uid_vid_00165,calibration,PersonPath22
+HERBench,18,38260856.0,A Quiet Place 2018 - Official Trailer - Paramount Pictures,test,trailers
+HERBench,18,38260856.0,Anchorman - The Legend of Ron Burgundy - Trailer,test,trailers
+HERBench,18,38260856.0,Furious 7 - Official Trailer HD,calibration,trailers
+HERBench,18,38260856.0,Groundhog Day Trailer HD,calibration,trailers
+HERBench,18,38260856.0,Into the Wild 2007 Trailer 1 Movieclips Classic Trailers,calibration,trailers
+HERBench,18,38260856.0,John Wick Official Trailer 1 2014 - Keanu Reeves Willem Dafoe Movie HD,test,trailers
+HERBench,18,38260856.0,Jurassic Park Trailer,test,trailers
+HERBench,18,38260856.0,Marvel Studios Avengers - Endgame - Official Trailer,test,trailers
+HERBench,18,38260856.0,Marvel s Guardians of the Galaxy - Trailer 1 OFFICIAL,calibration,trailers
+HERBench,18,38260856.0,P01-20240202-161354,calibration,HD_EPIC
+HERBench,18,38260856.0,P01-20240203-121517,test,HD_EPIC
+HERBench,18,38260856.0,P01-20240203-130505,calibration,HD_EPIC
+HERBench,18,38260856.0,P01-20240203-184214,calibration,HD_EPIC
+HERBench,18,38260856.0,P01-20240204-120411,calibration,HD_EPIC
+HERBench,18,38260856.0,P01-20240204-142301,test,HD_EPIC
+HERBench,18,38260856.0,P01-20240204-152537,test,HD_EPIC
+HERBench,18,38260856.0,P02-20240211-100250,calibration,HD_EPIC
+HERBench,18,38260856.0,P02-20240211-104948,calibration,HD_EPIC
+HERBench,18,38260856.0,P02-20240211-141313,test,HD_EPIC
+HERBench,18,38260856.0,P03-20240216-084005,calibration,HD_EPIC
+HERBench,18,38260856.0,P03-20240217-152152,test,HD_EPIC
+HERBench,18,38260856.0,P03-20240217-192543,calibration,HD_EPIC
+HERBench,18,38260856.0,P04-20240413-142619,test,HD_EPIC
+HERBench,18,38260856.0,P04-20240414-064514,calibration,HD_EPIC
+HERBench,18,38260856.0,P04-20240414-162242,calibration,HD_EPIC
+HERBench,18,38260856.0,P04-20240415-175615,test,HD_EPIC
+HERBench,18,38260856.0,P05-20240425-083515,test,HD_EPIC
+HERBench,18,38260856.0,P05-20240427-150402,calibration,HD_EPIC
+HERBench,18,38260856.0,P06-20240510-100047,calibration,HD_EPIC
+HERBench,18,38260856.0,P06-20240510-121619,calibration,HD_EPIC
+HERBench,18,38260856.0,P06-20240511-121048,test,HD_EPIC
+HERBench,18,38260856.0,P07-20240529-102652,test,HD_EPIC
+HERBench,18,38260856.0,P07-20240529-191007,test,HD_EPIC
+HERBench,18,38260856.0,P07-20240529-194518,test,HD_EPIC
+HERBench,18,38260856.0,P07-20240530-102543,calibration,HD_EPIC
+HERBench,18,38260856.0,P07-20240531-201703,test,HD_EPIC
+HERBench,18,38260856.0,P08-20240618-163547,calibration,HD_EPIC
+HERBench,18,38260856.0,P09-20240622-162302,test,HD_EPIC
+HERBench,18,38260856.0,P09-20240623-153253,test,HD_EPIC
+HERBench,18,38260856.0,P09-20240624-160737,calibration,HD_EPIC
+HERBench,18,38260856.0,Se7en 1995 Official Trailer - Brad Pitt Morgan Freeman Movie HD,calibration,trailers
+HERBench,18,38260856.0,Singin in the Rain 1952 Official Trailer - Gene Kelly Debbie Reynolds Movie HD,calibration,trailers
+HERBench,18,38260856.0,Thank You for Your Service Trailer 1 2017 Movieclips Trailers,test,trailers
+HERBench,18,38260856.0,The Longest Ride Official Trailer HD 20th Century FOX,test,trailers
+HERBench,18,38260856.0,The Secret Life of Walter Mitty Official Trailer 1 2013 - Ben Stiller Movie HD,calibration,trailers
+HERBench,18,38260856.0,There Will Be Blood 2007 Official Trailer - Daniel Day-Lewis Paul Dano Movie HD,test,trailers
+HERBench,18,38260856.0,Titanic TBT Trailer 20th Century FOX,test,trailers
+HERBench,18,38260856.0,Toy Story 3 Official Trailer HD,calibration,trailers
+HERBench,18,38260856.0,Werner Herzog Reads Curious George,calibration,trailers
+HERBench,18,38260856.0,cam1_segment_6_300s_360s,test,WildTrack
+HERBench,18,38260856.0,cam1_segment_7_360s_420s,test,WildTrack
+HERBench,18,38260856.0,cam2_segment_10_540s_600s,test,WildTrack
+HERBench,18,38260856.0,cam2_segment_2_60s_120s,calibration,WildTrack
+HERBench,18,38260856.0,cam2_segment_5_240s_300s,test,WildTrack
+HERBench,18,38260856.0,cam2_segment_8_420s_480s,test,WildTrack
+HERBench,18,38260856.0,cam3_segment_1_0s_180s,test,WildTrack
+HERBench,18,38260856.0,cam3_segment_5_720s_900s,test,WildTrack
+HERBench,18,38260856.0,cam3_segment_6_900s_1080s,calibration,WildTrack
+HERBench,18,38260856.0,cam4_segment_9_1440s_1620s,calibration,WildTrack
+HERBench,18,38260856.0,cam5_segment_3_360s_540s,calibration,WildTrack
+HERBench,18,38260856.0,cam5_segment_4_540s_720s,calibration,WildTrack
+HERBench,18,38260856.0,cam5_segment_5_720s_900s,calibration,WildTrack
+HERBench,18,38260856.0,cam6_segment_2_300s_600s,test,WildTrack
+HERBench,18,38260856.0,cam7_segment_4_900s_1200s,calibration,WildTrack
+HERBench,18,38260856.0,uid_vid_00102,calibration,PersonPath22
+HERBench,18,38260856.0,uid_vid_00105,calibration,PersonPath22
+HERBench,18,38260856.0,uid_vid_00108,test,PersonPath22
+HERBench,18,38260856.0,uid_vid_00165,test,PersonPath22
+HERBench,19,39260859.0,A Quiet Place 2018 - Official Trailer - Paramount Pictures,test,trailers
+HERBench,19,39260859.0,Anchorman - The Legend of Ron Burgundy - Trailer,test,trailers
+HERBench,19,39260859.0,Furious 7 - Official Trailer HD,test,trailers
+HERBench,19,39260859.0,Groundhog Day Trailer HD,calibration,trailers
+HERBench,19,39260859.0,Into the Wild 2007 Trailer 1 Movieclips Classic Trailers,calibration,trailers
+HERBench,19,39260859.0,John Wick Official Trailer 1 2014 - Keanu Reeves Willem Dafoe Movie HD,calibration,trailers
+HERBench,19,39260859.0,Jurassic Park Trailer,test,trailers
+HERBench,19,39260859.0,Marvel Studios Avengers - Endgame - Official Trailer,calibration,trailers
+HERBench,19,39260859.0,Marvel s Guardians of the Galaxy - Trailer 1 OFFICIAL,test,trailers
+HERBench,19,39260859.0,P01-20240202-161354,test,HD_EPIC
+HERBench,19,39260859.0,P01-20240203-121517,test,HD_EPIC
+HERBench,19,39260859.0,P01-20240203-130505,test,HD_EPIC
+HERBench,19,39260859.0,P01-20240203-184214,test,HD_EPIC
+HERBench,19,39260859.0,P01-20240204-120411,calibration,HD_EPIC
+HERBench,19,39260859.0,P01-20240204-142301,test,HD_EPIC
+HERBench,19,39260859.0,P01-20240204-152537,calibration,HD_EPIC
+HERBench,19,39260859.0,P02-20240211-100250,test,HD_EPIC
+HERBench,19,39260859.0,P02-20240211-104948,calibration,HD_EPIC
+HERBench,19,39260859.0,P02-20240211-141313,calibration,HD_EPIC
+HERBench,19,39260859.0,P03-20240216-084005,calibration,HD_EPIC
+HERBench,19,39260859.0,P03-20240217-152152,test,HD_EPIC
+HERBench,19,39260859.0,P03-20240217-192543,calibration,HD_EPIC
+HERBench,19,39260859.0,P04-20240413-142619,test,HD_EPIC
+HERBench,19,39260859.0,P04-20240414-064514,calibration,HD_EPIC
+HERBench,19,39260859.0,P04-20240414-162242,test,HD_EPIC
+HERBench,19,39260859.0,P04-20240415-175615,calibration,HD_EPIC
+HERBench,19,39260859.0,P05-20240425-083515,calibration,HD_EPIC
+HERBench,19,39260859.0,P05-20240427-150402,calibration,HD_EPIC
+HERBench,19,39260859.0,P06-20240510-100047,calibration,HD_EPIC
+HERBench,19,39260859.0,P06-20240510-121619,test,HD_EPIC
+HERBench,19,39260859.0,P06-20240511-121048,test,HD_EPIC
+HERBench,19,39260859.0,P07-20240529-102652,calibration,HD_EPIC
+HERBench,19,39260859.0,P07-20240529-191007,test,HD_EPIC
+HERBench,19,39260859.0,P07-20240529-194518,test,HD_EPIC
+HERBench,19,39260859.0,P07-20240530-102543,calibration,HD_EPIC
+HERBench,19,39260859.0,P07-20240531-201703,calibration,HD_EPIC
+HERBench,19,39260859.0,P08-20240618-163547,calibration,HD_EPIC
+HERBench,19,39260859.0,P09-20240622-162302,test,HD_EPIC
+HERBench,19,39260859.0,P09-20240623-153253,test,HD_EPIC
+HERBench,19,39260859.0,P09-20240624-160737,calibration,HD_EPIC
+HERBench,19,39260859.0,Se7en 1995 Official Trailer - Brad Pitt Morgan Freeman Movie HD,test,trailers
+HERBench,19,39260859.0,Singin in the Rain 1952 Official Trailer - Gene Kelly Debbie Reynolds Movie HD,test,trailers
+HERBench,19,39260859.0,Thank You for Your Service Trailer 1 2017 Movieclips Trailers,calibration,trailers
+HERBench,19,39260859.0,The Longest Ride Official Trailer HD 20th Century FOX,test,trailers
+HERBench,19,39260859.0,The Secret Life of Walter Mitty Official Trailer 1 2013 - Ben Stiller Movie HD,calibration,trailers
+HERBench,19,39260859.0,There Will Be Blood 2007 Official Trailer - Daniel Day-Lewis Paul Dano Movie HD,calibration,trailers
+HERBench,19,39260859.0,Titanic TBT Trailer 20th Century FOX,test,trailers
+HERBench,19,39260859.0,Toy Story 3 Official Trailer HD,calibration,trailers
+HERBench,19,39260859.0,Werner Herzog Reads Curious George,calibration,trailers
+HERBench,19,39260859.0,cam1_segment_6_300s_360s,test,WildTrack
+HERBench,19,39260859.0,cam1_segment_7_360s_420s,calibration,WildTrack
+HERBench,19,39260859.0,cam2_segment_10_540s_600s,test,WildTrack
+HERBench,19,39260859.0,cam2_segment_2_60s_120s,calibration,WildTrack
+HERBench,19,39260859.0,cam2_segment_5_240s_300s,calibration,WildTrack
+HERBench,19,39260859.0,cam2_segment_8_420s_480s,test,WildTrack
+HERBench,19,39260859.0,cam3_segment_1_0s_180s,test,WildTrack
+HERBench,19,39260859.0,cam3_segment_5_720s_900s,test,WildTrack
+HERBench,19,39260859.0,cam3_segment_6_900s_1080s,calibration,WildTrack
+HERBench,19,39260859.0,cam4_segment_9_1440s_1620s,calibration,WildTrack
+HERBench,19,39260859.0,cam5_segment_3_360s_540s,test,WildTrack
+HERBench,19,39260859.0,cam5_segment_4_540s_720s,test,WildTrack
+HERBench,19,39260859.0,cam5_segment_5_720s_900s,calibration,WildTrack
+HERBench,19,39260859.0,cam6_segment_2_300s_600s,test,WildTrack
+HERBench,19,39260859.0,cam7_segment_4_900s_1200s,calibration,WildTrack
+HERBench,19,39260859.0,uid_vid_00102,calibration,PersonPath22
+HERBench,19,39260859.0,uid_vid_00105,test,PersonPath22
+HERBench,19,39260859.0,uid_vid_00108,test,PersonPath22
+HERBench,19,39260859.0,uid_vid_00165,calibration,PersonPath22
+HERBench,20,40260862.0,A Quiet Place 2018 - Official Trailer - Paramount Pictures,test,trailers
+HERBench,20,40260862.0,Anchorman - The Legend of Ron Burgundy - Trailer,test,trailers
+HERBench,20,40260862.0,Furious 7 - Official Trailer HD,test,trailers
+HERBench,20,40260862.0,Groundhog Day Trailer HD,test,trailers
+HERBench,20,40260862.0,Into the Wild 2007 Trailer 1 Movieclips Classic Trailers,test,trailers
+HERBench,20,40260862.0,John Wick Official Trailer 1 2014 - Keanu Reeves Willem Dafoe Movie HD,calibration,trailers
+HERBench,20,40260862.0,Jurassic Park Trailer,test,trailers
+HERBench,20,40260862.0,Marvel Studios Avengers - Endgame - Official Trailer,test,trailers
+HERBench,20,40260862.0,Marvel s Guardians of the Galaxy - Trailer 1 OFFICIAL,calibration,trailers
+HERBench,20,40260862.0,P01-20240202-161354,test,HD_EPIC
+HERBench,20,40260862.0,P01-20240203-121517,test,HD_EPIC
+HERBench,20,40260862.0,P01-20240203-130505,calibration,HD_EPIC
+HERBench,20,40260862.0,P01-20240203-184214,test,HD_EPIC
+HERBench,20,40260862.0,P01-20240204-120411,calibration,HD_EPIC
+HERBench,20,40260862.0,P01-20240204-142301,test,HD_EPIC
+HERBench,20,40260862.0,P01-20240204-152537,test,HD_EPIC
+HERBench,20,40260862.0,P02-20240211-100250,test,HD_EPIC
+HERBench,20,40260862.0,P02-20240211-104948,test,HD_EPIC
+HERBench,20,40260862.0,P02-20240211-141313,calibration,HD_EPIC
+HERBench,20,40260862.0,P03-20240216-084005,calibration,HD_EPIC
+HERBench,20,40260862.0,P03-20240217-152152,calibration,HD_EPIC
+HERBench,20,40260862.0,P03-20240217-192543,test,HD_EPIC
+HERBench,20,40260862.0,P04-20240413-142619,test,HD_EPIC
+HERBench,20,40260862.0,P04-20240414-064514,calibration,HD_EPIC
+HERBench,20,40260862.0,P04-20240414-162242,calibration,HD_EPIC
+HERBench,20,40260862.0,P04-20240415-175615,test,HD_EPIC
+HERBench,20,40260862.0,P05-20240425-083515,test,HD_EPIC
+HERBench,20,40260862.0,P05-20240427-150402,calibration,HD_EPIC
+HERBench,20,40260862.0,P06-20240510-100047,calibration,HD_EPIC
+HERBench,20,40260862.0,P06-20240510-121619,test,HD_EPIC
+HERBench,20,40260862.0,P06-20240511-121048,calibration,HD_EPIC
+HERBench,20,40260862.0,P07-20240529-102652,calibration,HD_EPIC
+HERBench,20,40260862.0,P07-20240529-191007,test,HD_EPIC
+HERBench,20,40260862.0,P07-20240529-194518,calibration,HD_EPIC
+HERBench,20,40260862.0,P07-20240530-102543,calibration,HD_EPIC
+HERBench,20,40260862.0,P07-20240531-201703,test,HD_EPIC
+HERBench,20,40260862.0,P08-20240618-163547,calibration,HD_EPIC
+HERBench,20,40260862.0,P09-20240622-162302,calibration,HD_EPIC
+HERBench,20,40260862.0,P09-20240623-153253,calibration,HD_EPIC
+HERBench,20,40260862.0,P09-20240624-160737,test,HD_EPIC
+HERBench,20,40260862.0,Se7en 1995 Official Trailer - Brad Pitt Morgan Freeman Movie HD,calibration,trailers
+HERBench,20,40260862.0,Singin in the Rain 1952 Official Trailer - Gene Kelly Debbie Reynolds Movie HD,calibration,trailers
+HERBench,20,40260862.0,Thank You for Your Service Trailer 1 2017 Movieclips Trailers,test,trailers
+HERBench,20,40260862.0,The Longest Ride Official Trailer HD 20th Century FOX,test,trailers
+HERBench,20,40260862.0,The Secret Life of Walter Mitty Official Trailer 1 2013 - Ben Stiller Movie HD,calibration,trailers
+HERBench,20,40260862.0,There Will Be Blood 2007 Official Trailer - Daniel Day-Lewis Paul Dano Movie HD,calibration,trailers
+HERBench,20,40260862.0,Titanic TBT Trailer 20th Century FOX,calibration,trailers
+HERBench,20,40260862.0,Toy Story 3 Official Trailer HD,calibration,trailers
+HERBench,20,40260862.0,Werner Herzog Reads Curious George,calibration,trailers
+HERBench,20,40260862.0,cam1_segment_6_300s_360s,test,WildTrack
+HERBench,20,40260862.0,cam1_segment_7_360s_420s,calibration,WildTrack
+HERBench,20,40260862.0,cam2_segment_10_540s_600s,test,WildTrack
+HERBench,20,40260862.0,cam2_segment_2_60s_120s,test,WildTrack
+HERBench,20,40260862.0,cam2_segment_5_240s_300s,test,WildTrack
+HERBench,20,40260862.0,cam2_segment_8_420s_480s,test,WildTrack
+HERBench,20,40260862.0,cam3_segment_1_0s_180s,test,WildTrack
+HERBench,20,40260862.0,cam3_segment_5_720s_900s,test,WildTrack
+HERBench,20,40260862.0,cam3_segment_6_900s_1080s,test,WildTrack
+HERBench,20,40260862.0,cam4_segment_9_1440s_1620s,calibration,WildTrack
+HERBench,20,40260862.0,cam5_segment_3_360s_540s,calibration,WildTrack
+HERBench,20,40260862.0,cam5_segment_4_540s_720s,calibration,WildTrack
+HERBench,20,40260862.0,cam5_segment_5_720s_900s,calibration,WildTrack
+HERBench,20,40260862.0,cam6_segment_2_300s_600s,calibration,WildTrack
+HERBench,20,40260862.0,cam7_segment_4_900s_1200s,calibration,WildTrack
+HERBench,20,40260862.0,uid_vid_00102,calibration,PersonPath22
+HERBench,20,40260862.0,uid_vid_00105,calibration,PersonPath22
+HERBench,20,40260862.0,uid_vid_00108,test,PersonPath22
+HERBench,20,40260862.0,uid_vid_00165,test,PersonPath22
+HERBench,21,41260865.0,A Quiet Place 2018 - Official Trailer - Paramount Pictures,test,trailers
+HERBench,21,41260865.0,Anchorman - The Legend of Ron Burgundy - Trailer,test,trailers
+HERBench,21,41260865.0,Furious 7 - Official Trailer HD,calibration,trailers
+HERBench,21,41260865.0,Groundhog Day Trailer HD,calibration,trailers
+HERBench,21,41260865.0,Into the Wild 2007 Trailer 1 Movieclips Classic Trailers,calibration,trailers
+HERBench,21,41260865.0,John Wick Official Trailer 1 2014 - Keanu Reeves Willem Dafoe Movie HD,calibration,trailers
+HERBench,21,41260865.0,Jurassic Park Trailer,calibration,trailers
+HERBench,21,41260865.0,Marvel Studios Avengers - Endgame - Official Trailer,calibration,trailers
+HERBench,21,41260865.0,Marvel s Guardians of the Galaxy - Trailer 1 OFFICIAL,calibration,trailers
+HERBench,21,41260865.0,P01-20240202-161354,calibration,HD_EPIC
+HERBench,21,41260865.0,P01-20240203-121517,test,HD_EPIC
+HERBench,21,41260865.0,P01-20240203-130505,test,HD_EPIC
+HERBench,21,41260865.0,P01-20240203-184214,calibration,HD_EPIC
+HERBench,21,41260865.0,P01-20240204-120411,calibration,HD_EPIC
+HERBench,21,41260865.0,P01-20240204-142301,calibration,HD_EPIC
+HERBench,21,41260865.0,P01-20240204-152537,test,HD_EPIC
+HERBench,21,41260865.0,P02-20240211-100250,calibration,HD_EPIC
+HERBench,21,41260865.0,P02-20240211-104948,calibration,HD_EPIC
+HERBench,21,41260865.0,P02-20240211-141313,calibration,HD_EPIC
+HERBench,21,41260865.0,P03-20240216-084005,test,HD_EPIC
+HERBench,21,41260865.0,P03-20240217-152152,calibration,HD_EPIC
+HERBench,21,41260865.0,P03-20240217-192543,test,HD_EPIC
+HERBench,21,41260865.0,P04-20240413-142619,calibration,HD_EPIC
+HERBench,21,41260865.0,P04-20240414-064514,calibration,HD_EPIC
+HERBench,21,41260865.0,P04-20240414-162242,calibration,HD_EPIC
+HERBench,21,41260865.0,P04-20240415-175615,calibration,HD_EPIC
+HERBench,21,41260865.0,P05-20240425-083515,test,HD_EPIC
+HERBench,21,41260865.0,P05-20240427-150402,test,HD_EPIC
+HERBench,21,41260865.0,P06-20240510-100047,test,HD_EPIC
+HERBench,21,41260865.0,P06-20240510-121619,test,HD_EPIC
+HERBench,21,41260865.0,P06-20240511-121048,test,HD_EPIC
+HERBench,21,41260865.0,P07-20240529-102652,calibration,HD_EPIC
+HERBench,21,41260865.0,P07-20240529-191007,calibration,HD_EPIC
+HERBench,21,41260865.0,P07-20240529-194518,test,HD_EPIC
+HERBench,21,41260865.0,P07-20240530-102543,test,HD_EPIC
+HERBench,21,41260865.0,P07-20240531-201703,calibration,HD_EPIC
+HERBench,21,41260865.0,P08-20240618-163547,test,HD_EPIC
+HERBench,21,41260865.0,P09-20240622-162302,test,HD_EPIC
+HERBench,21,41260865.0,P09-20240623-153253,calibration,HD_EPIC
+HERBench,21,41260865.0,P09-20240624-160737,test,HD_EPIC
+HERBench,21,41260865.0,Se7en 1995 Official Trailer - Brad Pitt Morgan Freeman Movie HD,calibration,trailers
+HERBench,21,41260865.0,Singin in the Rain 1952 Official Trailer - Gene Kelly Debbie Reynolds Movie HD,test,trailers
+HERBench,21,41260865.0,Thank You for Your Service Trailer 1 2017 Movieclips Trailers,test,trailers
+HERBench,21,41260865.0,The Longest Ride Official Trailer HD 20th Century FOX,test,trailers
+HERBench,21,41260865.0,The Secret Life of Walter Mitty Official Trailer 1 2013 - Ben Stiller Movie HD,test,trailers
+HERBench,21,41260865.0,There Will Be Blood 2007 Official Trailer - Daniel Day-Lewis Paul Dano Movie HD,calibration,trailers
+HERBench,21,41260865.0,Titanic TBT Trailer 20th Century FOX,test,trailers
+HERBench,21,41260865.0,Toy Story 3 Official Trailer HD,test,trailers
+HERBench,21,41260865.0,Werner Herzog Reads Curious George,test,trailers
+HERBench,21,41260865.0,cam1_segment_6_300s_360s,test,WildTrack
+HERBench,21,41260865.0,cam1_segment_7_360s_420s,calibration,WildTrack
+HERBench,21,41260865.0,cam2_segment_10_540s_600s,calibration,WildTrack
+HERBench,21,41260865.0,cam2_segment_2_60s_120s,calibration,WildTrack
+HERBench,21,41260865.0,cam2_segment_5_240s_300s,calibration,WildTrack
+HERBench,21,41260865.0,cam2_segment_8_420s_480s,calibration,WildTrack
+HERBench,21,41260865.0,cam3_segment_1_0s_180s,test,WildTrack
+HERBench,21,41260865.0,cam3_segment_5_720s_900s,calibration,WildTrack
+HERBench,21,41260865.0,cam3_segment_6_900s_1080s,test,WildTrack
+HERBench,21,41260865.0,cam4_segment_9_1440s_1620s,test,WildTrack
+HERBench,21,41260865.0,cam5_segment_3_360s_540s,test,WildTrack
+HERBench,21,41260865.0,cam5_segment_4_540s_720s,test,WildTrack
+HERBench,21,41260865.0,cam5_segment_5_720s_900s,test,WildTrack
+HERBench,21,41260865.0,cam6_segment_2_300s_600s,test,WildTrack
+HERBench,21,41260865.0,cam7_segment_4_900s_1200s,calibration,WildTrack
+HERBench,21,41260865.0,uid_vid_00102,test,PersonPath22
+HERBench,21,41260865.0,uid_vid_00105,calibration,PersonPath22
+HERBench,21,41260865.0,uid_vid_00108,calibration,PersonPath22
+HERBench,21,41260865.0,uid_vid_00165,test,PersonPath22
+HERBench,22,42260868.0,A Quiet Place 2018 - Official Trailer - Paramount Pictures,test,trailers
+HERBench,22,42260868.0,Anchorman - The Legend of Ron Burgundy - Trailer,test,trailers
+HERBench,22,42260868.0,Furious 7 - Official Trailer HD,calibration,trailers
+HERBench,22,42260868.0,Groundhog Day Trailer HD,test,trailers
+HERBench,22,42260868.0,Into the Wild 2007 Trailer 1 Movieclips Classic Trailers,test,trailers
+HERBench,22,42260868.0,John Wick Official Trailer 1 2014 - Keanu Reeves Willem Dafoe Movie HD,calibration,trailers
+HERBench,22,42260868.0,Jurassic Park Trailer,calibration,trailers
+HERBench,22,42260868.0,Marvel Studios Avengers - Endgame - Official Trailer,test,trailers
+HERBench,22,42260868.0,Marvel s Guardians of the Galaxy - Trailer 1 OFFICIAL,test,trailers
+HERBench,22,42260868.0,P01-20240202-161354,calibration,HD_EPIC
+HERBench,22,42260868.0,P01-20240203-121517,calibration,HD_EPIC
+HERBench,22,42260868.0,P01-20240203-130505,calibration,HD_EPIC
+HERBench,22,42260868.0,P01-20240203-184214,calibration,HD_EPIC
+HERBench,22,42260868.0,P01-20240204-120411,calibration,HD_EPIC
+HERBench,22,42260868.0,P01-20240204-142301,test,HD_EPIC
+HERBench,22,42260868.0,P01-20240204-152537,test,HD_EPIC
+HERBench,22,42260868.0,P02-20240211-100250,test,HD_EPIC
+HERBench,22,42260868.0,P02-20240211-104948,calibration,HD_EPIC
+HERBench,22,42260868.0,P02-20240211-141313,test,HD_EPIC
+HERBench,22,42260868.0,P03-20240216-084005,test,HD_EPIC
+HERBench,22,42260868.0,P03-20240217-152152,calibration,HD_EPIC
+HERBench,22,42260868.0,P03-20240217-192543,calibration,HD_EPIC
+HERBench,22,42260868.0,P04-20240413-142619,test,HD_EPIC
+HERBench,22,42260868.0,P04-20240414-064514,test,HD_EPIC
+HERBench,22,42260868.0,P04-20240414-162242,test,HD_EPIC
+HERBench,22,42260868.0,P04-20240415-175615,calibration,HD_EPIC
+HERBench,22,42260868.0,P05-20240425-083515,test,HD_EPIC
+HERBench,22,42260868.0,P05-20240427-150402,calibration,HD_EPIC
+HERBench,22,42260868.0,P06-20240510-100047,calibration,HD_EPIC
+HERBench,22,42260868.0,P06-20240510-121619,test,HD_EPIC
+HERBench,22,42260868.0,P06-20240511-121048,test,HD_EPIC
+HERBench,22,42260868.0,P07-20240529-102652,test,HD_EPIC
+HERBench,22,42260868.0,P07-20240529-191007,calibration,HD_EPIC
+HERBench,22,42260868.0,P07-20240529-194518,test,HD_EPIC
+HERBench,22,42260868.0,P07-20240530-102543,test,HD_EPIC
+HERBench,22,42260868.0,P07-20240531-201703,calibration,HD_EPIC
+HERBench,22,42260868.0,P08-20240618-163547,test,HD_EPIC
+HERBench,22,42260868.0,P09-20240622-162302,test,HD_EPIC
+HERBench,22,42260868.0,P09-20240623-153253,calibration,HD_EPIC
+HERBench,22,42260868.0,P09-20240624-160737,calibration,HD_EPIC
+HERBench,22,42260868.0,Se7en 1995 Official Trailer - Brad Pitt Morgan Freeman Movie HD,calibration,trailers
+HERBench,22,42260868.0,Singin in the Rain 1952 Official Trailer - Gene Kelly Debbie Reynolds Movie HD,test,trailers
+HERBench,22,42260868.0,Thank You for Your Service Trailer 1 2017 Movieclips Trailers,calibration,trailers
+HERBench,22,42260868.0,The Longest Ride Official Trailer HD 20th Century FOX,calibration,trailers
+HERBench,22,42260868.0,The Secret Life of Walter Mitty Official Trailer 1 2013 - Ben Stiller Movie HD,test,trailers
+HERBench,22,42260868.0,There Will Be Blood 2007 Official Trailer - Daniel Day-Lewis Paul Dano Movie HD,calibration,trailers
+HERBench,22,42260868.0,Titanic TBT Trailer 20th Century FOX,calibration,trailers
+HERBench,22,42260868.0,Toy Story 3 Official Trailer HD,test,trailers
+HERBench,22,42260868.0,Werner Herzog Reads Curious George,calibration,trailers
+HERBench,22,42260868.0,cam1_segment_6_300s_360s,calibration,WildTrack
+HERBench,22,42260868.0,cam1_segment_7_360s_420s,calibration,WildTrack
+HERBench,22,42260868.0,cam2_segment_10_540s_600s,calibration,WildTrack
+HERBench,22,42260868.0,cam2_segment_2_60s_120s,test,WildTrack
+HERBench,22,42260868.0,cam2_segment_5_240s_300s,test,WildTrack
+HERBench,22,42260868.0,cam2_segment_8_420s_480s,test,WildTrack
+HERBench,22,42260868.0,cam3_segment_1_0s_180s,calibration,WildTrack
+HERBench,22,42260868.0,cam3_segment_5_720s_900s,test,WildTrack
+HERBench,22,42260868.0,cam3_segment_6_900s_1080s,calibration,WildTrack
+HERBench,22,42260868.0,cam4_segment_9_1440s_1620s,calibration,WildTrack
+HERBench,22,42260868.0,cam5_segment_3_360s_540s,calibration,WildTrack
+HERBench,22,42260868.0,cam5_segment_4_540s_720s,test,WildTrack
+HERBench,22,42260868.0,cam5_segment_5_720s_900s,test,WildTrack
+HERBench,22,42260868.0,cam6_segment_2_300s_600s,calibration,WildTrack
+HERBench,22,42260868.0,cam7_segment_4_900s_1200s,test,WildTrack
+HERBench,22,42260868.0,uid_vid_00102,calibration,PersonPath22
+HERBench,22,42260868.0,uid_vid_00105,test,PersonPath22
+HERBench,22,42260868.0,uid_vid_00108,test,PersonPath22
+HERBench,22,42260868.0,uid_vid_00165,calibration,PersonPath22
+HERBench,23,43260871.0,A Quiet Place 2018 - Official Trailer - Paramount Pictures,test,trailers
+HERBench,23,43260871.0,Anchorman - The Legend of Ron Burgundy - Trailer,test,trailers
+HERBench,23,43260871.0,Furious 7 - Official Trailer HD,calibration,trailers
+HERBench,23,43260871.0,Groundhog Day Trailer HD,calibration,trailers
+HERBench,23,43260871.0,Into the Wild 2007 Trailer 1 Movieclips Classic Trailers,calibration,trailers
+HERBench,23,43260871.0,John Wick Official Trailer 1 2014 - Keanu Reeves Willem Dafoe Movie HD,calibration,trailers
+HERBench,23,43260871.0,Jurassic Park Trailer,calibration,trailers
+HERBench,23,43260871.0,Marvel Studios Avengers - Endgame - Official Trailer,test,trailers
+HERBench,23,43260871.0,Marvel s Guardians of the Galaxy - Trailer 1 OFFICIAL,calibration,trailers
+HERBench,23,43260871.0,P01-20240202-161354,calibration,HD_EPIC
+HERBench,23,43260871.0,P01-20240203-121517,test,HD_EPIC
+HERBench,23,43260871.0,P01-20240203-130505,calibration,HD_EPIC
+HERBench,23,43260871.0,P01-20240203-184214,test,HD_EPIC
+HERBench,23,43260871.0,P01-20240204-120411,test,HD_EPIC
+HERBench,23,43260871.0,P01-20240204-142301,calibration,HD_EPIC
+HERBench,23,43260871.0,P01-20240204-152537,test,HD_EPIC
+HERBench,23,43260871.0,P02-20240211-100250,calibration,HD_EPIC
+HERBench,23,43260871.0,P02-20240211-104948,calibration,HD_EPIC
+HERBench,23,43260871.0,P02-20240211-141313,test,HD_EPIC
+HERBench,23,43260871.0,P03-20240216-084005,test,HD_EPIC
+HERBench,23,43260871.0,P03-20240217-152152,test,HD_EPIC
+HERBench,23,43260871.0,P03-20240217-192543,calibration,HD_EPIC
+HERBench,23,43260871.0,P04-20240413-142619,test,HD_EPIC
+HERBench,23,43260871.0,P04-20240414-064514,test,HD_EPIC
+HERBench,23,43260871.0,P04-20240414-162242,test,HD_EPIC
+HERBench,23,43260871.0,P04-20240415-175615,test,HD_EPIC
+HERBench,23,43260871.0,P05-20240425-083515,test,HD_EPIC
+HERBench,23,43260871.0,P05-20240427-150402,calibration,HD_EPIC
+HERBench,23,43260871.0,P06-20240510-100047,calibration,HD_EPIC
+HERBench,23,43260871.0,P06-20240510-121619,calibration,HD_EPIC
+HERBench,23,43260871.0,P06-20240511-121048,calibration,HD_EPIC
+HERBench,23,43260871.0,P07-20240529-102652,test,HD_EPIC
+HERBench,23,43260871.0,P07-20240529-191007,calibration,HD_EPIC
+HERBench,23,43260871.0,P07-20240529-194518,calibration,HD_EPIC
+HERBench,23,43260871.0,P07-20240530-102543,calibration,HD_EPIC
+HERBench,23,43260871.0,P07-20240531-201703,calibration,HD_EPIC
+HERBench,23,43260871.0,P08-20240618-163547,test,HD_EPIC
+HERBench,23,43260871.0,P09-20240622-162302,test,HD_EPIC
+HERBench,23,43260871.0,P09-20240623-153253,calibration,HD_EPIC
+HERBench,23,43260871.0,P09-20240624-160737,calibration,HD_EPIC
+HERBench,23,43260871.0,Se7en 1995 Official Trailer - Brad Pitt Morgan Freeman Movie HD,calibration,trailers
+HERBench,23,43260871.0,Singin in the Rain 1952 Official Trailer - Gene Kelly Debbie Reynolds Movie HD,calibration,trailers
+HERBench,23,43260871.0,Thank You for Your Service Trailer 1 2017 Movieclips Trailers,test,trailers
+HERBench,23,43260871.0,The Longest Ride Official Trailer HD 20th Century FOX,test,trailers
+HERBench,23,43260871.0,The Secret Life of Walter Mitty Official Trailer 1 2013 - Ben Stiller Movie HD,test,trailers
+HERBench,23,43260871.0,There Will Be Blood 2007 Official Trailer - Daniel Day-Lewis Paul Dano Movie HD,test,trailers
+HERBench,23,43260871.0,Titanic TBT Trailer 20th Century FOX,test,trailers
+HERBench,23,43260871.0,Toy Story 3 Official Trailer HD,test,trailers
+HERBench,23,43260871.0,Werner Herzog Reads Curious George,calibration,trailers
+HERBench,23,43260871.0,cam1_segment_6_300s_360s,calibration,WildTrack
+HERBench,23,43260871.0,cam1_segment_7_360s_420s,test,WildTrack
+HERBench,23,43260871.0,cam2_segment_10_540s_600s,test,WildTrack
+HERBench,23,43260871.0,cam2_segment_2_60s_120s,calibration,WildTrack
+HERBench,23,43260871.0,cam2_segment_5_240s_300s,calibration,WildTrack
+HERBench,23,43260871.0,cam2_segment_8_420s_480s,test,WildTrack
+HERBench,23,43260871.0,cam3_segment_1_0s_180s,calibration,WildTrack
+HERBench,23,43260871.0,cam3_segment_5_720s_900s,test,WildTrack
+HERBench,23,43260871.0,cam3_segment_6_900s_1080s,calibration,WildTrack
+HERBench,23,43260871.0,cam4_segment_9_1440s_1620s,test,WildTrack
+HERBench,23,43260871.0,cam5_segment_3_360s_540s,test,WildTrack
+HERBench,23,43260871.0,cam5_segment_4_540s_720s,calibration,WildTrack
+HERBench,23,43260871.0,cam5_segment_5_720s_900s,test,WildTrack
+HERBench,23,43260871.0,cam6_segment_2_300s_600s,calibration,WildTrack
+HERBench,23,43260871.0,cam7_segment_4_900s_1200s,test,WildTrack
+HERBench,23,43260871.0,uid_vid_00102,test,PersonPath22
+HERBench,23,43260871.0,uid_vid_00105,test,PersonPath22
+HERBench,23,43260871.0,uid_vid_00108,calibration,PersonPath22
+HERBench,23,43260871.0,uid_vid_00165,calibration,PersonPath22
+HERBench,24,44260874.0,A Quiet Place 2018 - Official Trailer - Paramount Pictures,calibration,trailers
+HERBench,24,44260874.0,Anchorman - The Legend of Ron Burgundy - Trailer,calibration,trailers
+HERBench,24,44260874.0,Furious 7 - Official Trailer HD,test,trailers
+HERBench,24,44260874.0,Groundhog Day Trailer HD,test,trailers
+HERBench,24,44260874.0,Into the Wild 2007 Trailer 1 Movieclips Classic Trailers,test,trailers
+HERBench,24,44260874.0,John Wick Official Trailer 1 2014 - Keanu Reeves Willem Dafoe Movie HD,test,trailers
+HERBench,24,44260874.0,Jurassic Park Trailer,test,trailers
+HERBench,24,44260874.0,Marvel Studios Avengers - Endgame - Official Trailer,calibration,trailers
+HERBench,24,44260874.0,Marvel s Guardians of the Galaxy - Trailer 1 OFFICIAL,calibration,trailers
+HERBench,24,44260874.0,P01-20240202-161354,calibration,HD_EPIC
+HERBench,24,44260874.0,P01-20240203-121517,calibration,HD_EPIC
+HERBench,24,44260874.0,P01-20240203-130505,calibration,HD_EPIC
+HERBench,24,44260874.0,P01-20240203-184214,test,HD_EPIC
+HERBench,24,44260874.0,P01-20240204-120411,test,HD_EPIC
+HERBench,24,44260874.0,P01-20240204-142301,calibration,HD_EPIC
+HERBench,24,44260874.0,P01-20240204-152537,calibration,HD_EPIC
+HERBench,24,44260874.0,P02-20240211-100250,calibration,HD_EPIC
+HERBench,24,44260874.0,P02-20240211-104948,calibration,HD_EPIC
+HERBench,24,44260874.0,P02-20240211-141313,calibration,HD_EPIC
+HERBench,24,44260874.0,P03-20240216-084005,calibration,HD_EPIC
+HERBench,24,44260874.0,P03-20240217-152152,test,HD_EPIC
+HERBench,24,44260874.0,P03-20240217-192543,calibration,HD_EPIC
+HERBench,24,44260874.0,P04-20240413-142619,test,HD_EPIC
+HERBench,24,44260874.0,P04-20240414-064514,test,HD_EPIC
+HERBench,24,44260874.0,P04-20240414-162242,test,HD_EPIC
+HERBench,24,44260874.0,P04-20240415-175615,test,HD_EPIC
+HERBench,24,44260874.0,P05-20240425-083515,test,HD_EPIC
+HERBench,24,44260874.0,P05-20240427-150402,test,HD_EPIC
+HERBench,24,44260874.0,P06-20240510-100047,test,HD_EPIC
+HERBench,24,44260874.0,P06-20240510-121619,calibration,HD_EPIC
+HERBench,24,44260874.0,P06-20240511-121048,test,HD_EPIC
+HERBench,24,44260874.0,P07-20240529-102652,calibration,HD_EPIC
+HERBench,24,44260874.0,P07-20240529-191007,test,HD_EPIC
+HERBench,24,44260874.0,P07-20240529-194518,test,HD_EPIC
+HERBench,24,44260874.0,P07-20240530-102543,test,HD_EPIC
+HERBench,24,44260874.0,P07-20240531-201703,calibration,HD_EPIC
+HERBench,24,44260874.0,P08-20240618-163547,test,HD_EPIC
+HERBench,24,44260874.0,P09-20240622-162302,calibration,HD_EPIC
+HERBench,24,44260874.0,P09-20240623-153253,calibration,HD_EPIC
+HERBench,24,44260874.0,P09-20240624-160737,calibration,HD_EPIC
+HERBench,24,44260874.0,Se7en 1995 Official Trailer - Brad Pitt Morgan Freeman Movie HD,test,trailers
+HERBench,24,44260874.0,Singin in the Rain 1952 Official Trailer - Gene Kelly Debbie Reynolds Movie HD,calibration,trailers
+HERBench,24,44260874.0,Thank You for Your Service Trailer 1 2017 Movieclips Trailers,calibration,trailers
+HERBench,24,44260874.0,The Longest Ride Official Trailer HD 20th Century FOX,calibration,trailers
+HERBench,24,44260874.0,The Secret Life of Walter Mitty Official Trailer 1 2013 - Ben Stiller Movie HD,test,trailers
+HERBench,24,44260874.0,There Will Be Blood 2007 Official Trailer - Daniel Day-Lewis Paul Dano Movie HD,test,trailers
+HERBench,24,44260874.0,Titanic TBT Trailer 20th Century FOX,test,trailers
+HERBench,24,44260874.0,Toy Story 3 Official Trailer HD,calibration,trailers
+HERBench,24,44260874.0,Werner Herzog Reads Curious George,calibration,trailers
+HERBench,24,44260874.0,cam1_segment_6_300s_360s,test,WildTrack
+HERBench,24,44260874.0,cam1_segment_7_360s_420s,calibration,WildTrack
+HERBench,24,44260874.0,cam2_segment_10_540s_600s,test,WildTrack
+HERBench,24,44260874.0,cam2_segment_2_60s_120s,test,WildTrack
+HERBench,24,44260874.0,cam2_segment_5_240s_300s,calibration,WildTrack
+HERBench,24,44260874.0,cam2_segment_8_420s_480s,test,WildTrack
+HERBench,24,44260874.0,cam3_segment_1_0s_180s,calibration,WildTrack
+HERBench,24,44260874.0,cam3_segment_5_720s_900s,calibration,WildTrack
+HERBench,24,44260874.0,cam3_segment_6_900s_1080s,calibration,WildTrack
+HERBench,24,44260874.0,cam4_segment_9_1440s_1620s,calibration,WildTrack
+HERBench,24,44260874.0,cam5_segment_3_360s_540s,test,WildTrack
+HERBench,24,44260874.0,cam5_segment_4_540s_720s,test,WildTrack
+HERBench,24,44260874.0,cam5_segment_5_720s_900s,calibration,WildTrack
+HERBench,24,44260874.0,cam6_segment_2_300s_600s,test,WildTrack
+HERBench,24,44260874.0,cam7_segment_4_900s_1200s,test,WildTrack
+HERBench,24,44260874.0,uid_vid_00102,calibration,PersonPath22
+HERBench,24,44260874.0,uid_vid_00105,calibration,PersonPath22
+HERBench,24,44260874.0,uid_vid_00108,test,PersonPath22
+HERBench,24,44260874.0,uid_vid_00165,test,PersonPath22
+HERBench,25,45260877.0,A Quiet Place 2018 - Official Trailer - Paramount Pictures,calibration,trailers
+HERBench,25,45260877.0,Anchorman - The Legend of Ron Burgundy - Trailer,test,trailers
+HERBench,25,45260877.0,Furious 7 - Official Trailer HD,calibration,trailers
+HERBench,25,45260877.0,Groundhog Day Trailer HD,calibration,trailers
+HERBench,25,45260877.0,Into the Wild 2007 Trailer 1 Movieclips Classic Trailers,calibration,trailers
+HERBench,25,45260877.0,John Wick Official Trailer 1 2014 - Keanu Reeves Willem Dafoe Movie HD,test,trailers
+HERBench,25,45260877.0,Jurassic Park Trailer,calibration,trailers
+HERBench,25,45260877.0,Marvel Studios Avengers - Endgame - Official Trailer,test,trailers
+HERBench,25,45260877.0,Marvel s Guardians of the Galaxy - Trailer 1 OFFICIAL,calibration,trailers
+HERBench,25,45260877.0,P01-20240202-161354,calibration,HD_EPIC
+HERBench,25,45260877.0,P01-20240203-121517,test,HD_EPIC
+HERBench,25,45260877.0,P01-20240203-130505,test,HD_EPIC
+HERBench,25,45260877.0,P01-20240203-184214,test,HD_EPIC
+HERBench,25,45260877.0,P01-20240204-120411,calibration,HD_EPIC
+HERBench,25,45260877.0,P01-20240204-142301,calibration,HD_EPIC
+HERBench,25,45260877.0,P01-20240204-152537,test,HD_EPIC
+HERBench,25,45260877.0,P02-20240211-100250,test,HD_EPIC
+HERBench,25,45260877.0,P02-20240211-104948,test,HD_EPIC
+HERBench,25,45260877.0,P02-20240211-141313,test,HD_EPIC
+HERBench,25,45260877.0,P03-20240216-084005,test,HD_EPIC
+HERBench,25,45260877.0,P03-20240217-152152,calibration,HD_EPIC
+HERBench,25,45260877.0,P03-20240217-192543,test,HD_EPIC
+HERBench,25,45260877.0,P04-20240413-142619,calibration,HD_EPIC
+HERBench,25,45260877.0,P04-20240414-064514,test,HD_EPIC
+HERBench,25,45260877.0,P04-20240414-162242,test,HD_EPIC
+HERBench,25,45260877.0,P04-20240415-175615,test,HD_EPIC
+HERBench,25,45260877.0,P05-20240425-083515,calibration,HD_EPIC
+HERBench,25,45260877.0,P05-20240427-150402,calibration,HD_EPIC
+HERBench,25,45260877.0,P06-20240510-100047,test,HD_EPIC
+HERBench,25,45260877.0,P06-20240510-121619,calibration,HD_EPIC
+HERBench,25,45260877.0,P06-20240511-121048,calibration,HD_EPIC
+HERBench,25,45260877.0,P07-20240529-102652,calibration,HD_EPIC
+HERBench,25,45260877.0,P07-20240529-191007,test,HD_EPIC
+HERBench,25,45260877.0,P07-20240529-194518,calibration,HD_EPIC
+HERBench,25,45260877.0,P07-20240530-102543,calibration,HD_EPIC
+HERBench,25,45260877.0,P07-20240531-201703,calibration,HD_EPIC
+HERBench,25,45260877.0,P08-20240618-163547,test,HD_EPIC
+HERBench,25,45260877.0,P09-20240622-162302,calibration,HD_EPIC
+HERBench,25,45260877.0,P09-20240623-153253,calibration,HD_EPIC
+HERBench,25,45260877.0,P09-20240624-160737,calibration,HD_EPIC
+HERBench,25,45260877.0,Se7en 1995 Official Trailer - Brad Pitt Morgan Freeman Movie HD,test,trailers
+HERBench,25,45260877.0,Singin in the Rain 1952 Official Trailer - Gene Kelly Debbie Reynolds Movie HD,test,trailers
+HERBench,25,45260877.0,Thank You for Your Service Trailer 1 2017 Movieclips Trailers,test,trailers
+HERBench,25,45260877.0,The Longest Ride Official Trailer HD 20th Century FOX,calibration,trailers
+HERBench,25,45260877.0,The Secret Life of Walter Mitty Official Trailer 1 2013 - Ben Stiller Movie HD,test,trailers
+HERBench,25,45260877.0,There Will Be Blood 2007 Official Trailer - Daniel Day-Lewis Paul Dano Movie HD,test,trailers
+HERBench,25,45260877.0,Titanic TBT Trailer 20th Century FOX,calibration,trailers
+HERBench,25,45260877.0,Toy Story 3 Official Trailer HD,test,trailers
+HERBench,25,45260877.0,Werner Herzog Reads Curious George,calibration,trailers
+HERBench,25,45260877.0,cam1_segment_6_300s_360s,test,WildTrack
+HERBench,25,45260877.0,cam1_segment_7_360s_420s,test,WildTrack
+HERBench,25,45260877.0,cam2_segment_10_540s_600s,calibration,WildTrack
+HERBench,25,45260877.0,cam2_segment_2_60s_120s,calibration,WildTrack
+HERBench,25,45260877.0,cam2_segment_5_240s_300s,calibration,WildTrack
+HERBench,25,45260877.0,cam2_segment_8_420s_480s,calibration,WildTrack
+HERBench,25,45260877.0,cam3_segment_1_0s_180s,calibration,WildTrack
+HERBench,25,45260877.0,cam3_segment_5_720s_900s,test,WildTrack
+HERBench,25,45260877.0,cam3_segment_6_900s_1080s,test,WildTrack
+HERBench,25,45260877.0,cam4_segment_9_1440s_1620s,test,WildTrack
+HERBench,25,45260877.0,cam5_segment_3_360s_540s,calibration,WildTrack
+HERBench,25,45260877.0,cam5_segment_4_540s_720s,test,WildTrack
+HERBench,25,45260877.0,cam5_segment_5_720s_900s,calibration,WildTrack
+HERBench,25,45260877.0,cam6_segment_2_300s_600s,test,WildTrack
+HERBench,25,45260877.0,cam7_segment_4_900s_1200s,test,WildTrack
+HERBench,25,45260877.0,uid_vid_00102,test,PersonPath22
+HERBench,25,45260877.0,uid_vid_00105,calibration,PersonPath22
+HERBench,25,45260877.0,uid_vid_00108,test,PersonPath22
+HERBench,25,45260877.0,uid_vid_00165,calibration,PersonPath22
+HERBench,26,46260880.0,A Quiet Place 2018 - Official Trailer - Paramount Pictures,calibration,trailers
+HERBench,26,46260880.0,Anchorman - The Legend of Ron Burgundy - Trailer,test,trailers
+HERBench,26,46260880.0,Furious 7 - Official Trailer HD,calibration,trailers
+HERBench,26,46260880.0,Groundhog Day Trailer HD,test,trailers
+HERBench,26,46260880.0,Into the Wild 2007 Trailer 1 Movieclips Classic Trailers,calibration,trailers
+HERBench,26,46260880.0,John Wick Official Trailer 1 2014 - Keanu Reeves Willem Dafoe Movie HD,calibration,trailers
+HERBench,26,46260880.0,Jurassic Park Trailer,test,trailers
+HERBench,26,46260880.0,Marvel Studios Avengers - Endgame - Official Trailer,test,trailers
+HERBench,26,46260880.0,Marvel s Guardians of the Galaxy - Trailer 1 OFFICIAL,calibration,trailers
+HERBench,26,46260880.0,P01-20240202-161354,test,HD_EPIC
+HERBench,26,46260880.0,P01-20240203-121517,test,HD_EPIC
+HERBench,26,46260880.0,P01-20240203-130505,test,HD_EPIC
+HERBench,26,46260880.0,P01-20240203-184214,test,HD_EPIC
+HERBench,26,46260880.0,P01-20240204-120411,test,HD_EPIC
+HERBench,26,46260880.0,P01-20240204-142301,calibration,HD_EPIC
+HERBench,26,46260880.0,P01-20240204-152537,calibration,HD_EPIC
+HERBench,26,46260880.0,P02-20240211-100250,calibration,HD_EPIC
+HERBench,26,46260880.0,P02-20240211-104948,calibration,HD_EPIC
+HERBench,26,46260880.0,P02-20240211-141313,test,HD_EPIC
+HERBench,26,46260880.0,P03-20240216-084005,test,HD_EPIC
+HERBench,26,46260880.0,P03-20240217-152152,calibration,HD_EPIC
+HERBench,26,46260880.0,P03-20240217-192543,calibration,HD_EPIC
+HERBench,26,46260880.0,P04-20240413-142619,calibration,HD_EPIC
+HERBench,26,46260880.0,P04-20240414-064514,calibration,HD_EPIC
+HERBench,26,46260880.0,P04-20240414-162242,calibration,HD_EPIC
+HERBench,26,46260880.0,P04-20240415-175615,calibration,HD_EPIC
+HERBench,26,46260880.0,P05-20240425-083515,calibration,HD_EPIC
+HERBench,26,46260880.0,P05-20240427-150402,test,HD_EPIC
+HERBench,26,46260880.0,P06-20240510-100047,test,HD_EPIC
+HERBench,26,46260880.0,P06-20240510-121619,test,HD_EPIC
+HERBench,26,46260880.0,P06-20240511-121048,calibration,HD_EPIC
+HERBench,26,46260880.0,P07-20240529-102652,calibration,HD_EPIC
+HERBench,26,46260880.0,P07-20240529-191007,test,HD_EPIC
+HERBench,26,46260880.0,P07-20240529-194518,calibration,HD_EPIC
+HERBench,26,46260880.0,P07-20240530-102543,test,HD_EPIC
+HERBench,26,46260880.0,P07-20240531-201703,calibration,HD_EPIC
+HERBench,26,46260880.0,P08-20240618-163547,test,HD_EPIC
+HERBench,26,46260880.0,P09-20240622-162302,calibration,HD_EPIC
+HERBench,26,46260880.0,P09-20240623-153253,test,HD_EPIC
+HERBench,26,46260880.0,P09-20240624-160737,test,HD_EPIC
+HERBench,26,46260880.0,Se7en 1995 Official Trailer - Brad Pitt Morgan Freeman Movie HD,calibration,trailers
+HERBench,26,46260880.0,Singin in the Rain 1952 Official Trailer - Gene Kelly Debbie Reynolds Movie HD,test,trailers
+HERBench,26,46260880.0,Thank You for Your Service Trailer 1 2017 Movieclips Trailers,calibration,trailers
+HERBench,26,46260880.0,The Longest Ride Official Trailer HD 20th Century FOX,test,trailers
+HERBench,26,46260880.0,The Secret Life of Walter Mitty Official Trailer 1 2013 - Ben Stiller Movie HD,calibration,trailers
+HERBench,26,46260880.0,There Will Be Blood 2007 Official Trailer - Daniel Day-Lewis Paul Dano Movie HD,calibration,trailers
+HERBench,26,46260880.0,Titanic TBT Trailer 20th Century FOX,test,trailers
+HERBench,26,46260880.0,Toy Story 3 Official Trailer HD,test,trailers
+HERBench,26,46260880.0,Werner Herzog Reads Curious George,test,trailers
+HERBench,26,46260880.0,cam1_segment_6_300s_360s,test,WildTrack
+HERBench,26,46260880.0,cam1_segment_7_360s_420s,calibration,WildTrack
+HERBench,26,46260880.0,cam2_segment_10_540s_600s,test,WildTrack
+HERBench,26,46260880.0,cam2_segment_2_60s_120s,calibration,WildTrack
+HERBench,26,46260880.0,cam2_segment_5_240s_300s,calibration,WildTrack
+HERBench,26,46260880.0,cam2_segment_8_420s_480s,test,WildTrack
+HERBench,26,46260880.0,cam3_segment_1_0s_180s,calibration,WildTrack
+HERBench,26,46260880.0,cam3_segment_5_720s_900s,test,WildTrack
+HERBench,26,46260880.0,cam3_segment_6_900s_1080s,test,WildTrack
+HERBench,26,46260880.0,cam4_segment_9_1440s_1620s,calibration,WildTrack
+HERBench,26,46260880.0,cam5_segment_3_360s_540s,test,WildTrack
+HERBench,26,46260880.0,cam5_segment_4_540s_720s,calibration,WildTrack
+HERBench,26,46260880.0,cam5_segment_5_720s_900s,test,WildTrack
+HERBench,26,46260880.0,cam6_segment_2_300s_600s,test,WildTrack
+HERBench,26,46260880.0,cam7_segment_4_900s_1200s,calibration,WildTrack
+HERBench,26,46260880.0,uid_vid_00102,test,PersonPath22
+HERBench,26,46260880.0,uid_vid_00105,calibration,PersonPath22
+HERBench,26,46260880.0,uid_vid_00108,calibration,PersonPath22
+HERBench,26,46260880.0,uid_vid_00165,test,PersonPath22
+HERBench,27,47260883.0,A Quiet Place 2018 - Official Trailer - Paramount Pictures,test,trailers
+HERBench,27,47260883.0,Anchorman - The Legend of Ron Burgundy - Trailer,calibration,trailers
+HERBench,27,47260883.0,Furious 7 - Official Trailer HD,calibration,trailers
+HERBench,27,47260883.0,Groundhog Day Trailer HD,test,trailers
+HERBench,27,47260883.0,Into the Wild 2007 Trailer 1 Movieclips Classic Trailers,test,trailers
+HERBench,27,47260883.0,John Wick Official Trailer 1 2014 - Keanu Reeves Willem Dafoe Movie HD,test,trailers
+HERBench,27,47260883.0,Jurassic Park Trailer,calibration,trailers
+HERBench,27,47260883.0,Marvel Studios Avengers - Endgame - Official Trailer,test,trailers
+HERBench,27,47260883.0,Marvel s Guardians of the Galaxy - Trailer 1 OFFICIAL,calibration,trailers
+HERBench,27,47260883.0,P01-20240202-161354,test,HD_EPIC
+HERBench,27,47260883.0,P01-20240203-121517,calibration,HD_EPIC
+HERBench,27,47260883.0,P01-20240203-130505,calibration,HD_EPIC
+HERBench,27,47260883.0,P01-20240203-184214,test,HD_EPIC
+HERBench,27,47260883.0,P01-20240204-120411,test,HD_EPIC
+HERBench,27,47260883.0,P01-20240204-142301,calibration,HD_EPIC
+HERBench,27,47260883.0,P01-20240204-152537,calibration,HD_EPIC
+HERBench,27,47260883.0,P02-20240211-100250,test,HD_EPIC
+HERBench,27,47260883.0,P02-20240211-104948,test,HD_EPIC
+HERBench,27,47260883.0,P02-20240211-141313,calibration,HD_EPIC
+HERBench,27,47260883.0,P03-20240216-084005,test,HD_EPIC
+HERBench,27,47260883.0,P03-20240217-152152,test,HD_EPIC
+HERBench,27,47260883.0,P03-20240217-192543,calibration,HD_EPIC
+HERBench,27,47260883.0,P04-20240413-142619,calibration,HD_EPIC
+HERBench,27,47260883.0,P04-20240414-064514,test,HD_EPIC
+HERBench,27,47260883.0,P04-20240414-162242,calibration,HD_EPIC
+HERBench,27,47260883.0,P04-20240415-175615,calibration,HD_EPIC
+HERBench,27,47260883.0,P05-20240425-083515,calibration,HD_EPIC
+HERBench,27,47260883.0,P05-20240427-150402,test,HD_EPIC
+HERBench,27,47260883.0,P06-20240510-100047,test,HD_EPIC
+HERBench,27,47260883.0,P06-20240510-121619,test,HD_EPIC
+HERBench,27,47260883.0,P06-20240511-121048,test,HD_EPIC
+HERBench,27,47260883.0,P07-20240529-102652,calibration,HD_EPIC
+HERBench,27,47260883.0,P07-20240529-191007,calibration,HD_EPIC
+HERBench,27,47260883.0,P07-20240529-194518,test,HD_EPIC
+HERBench,27,47260883.0,P07-20240530-102543,calibration,HD_EPIC
+HERBench,27,47260883.0,P07-20240531-201703,calibration,HD_EPIC
+HERBench,27,47260883.0,P08-20240618-163547,calibration,HD_EPIC
+HERBench,27,47260883.0,P09-20240622-162302,test,HD_EPIC
+HERBench,27,47260883.0,P09-20240623-153253,test,HD_EPIC
+HERBench,27,47260883.0,P09-20240624-160737,calibration,HD_EPIC
+HERBench,27,47260883.0,Se7en 1995 Official Trailer - Brad Pitt Morgan Freeman Movie HD,calibration,trailers
+HERBench,27,47260883.0,Singin in the Rain 1952 Official Trailer - Gene Kelly Debbie Reynolds Movie HD,test,trailers
+HERBench,27,47260883.0,Thank You for Your Service Trailer 1 2017 Movieclips Trailers,calibration,trailers
+HERBench,27,47260883.0,The Longest Ride Official Trailer HD 20th Century FOX,calibration,trailers
+HERBench,27,47260883.0,The Secret Life of Walter Mitty Official Trailer 1 2013 - Ben Stiller Movie HD,test,trailers
+HERBench,27,47260883.0,There Will Be Blood 2007 Official Trailer - Daniel Day-Lewis Paul Dano Movie HD,calibration,trailers
+HERBench,27,47260883.0,Titanic TBT Trailer 20th Century FOX,test,trailers
+HERBench,27,47260883.0,Toy Story 3 Official Trailer HD,test,trailers
+HERBench,27,47260883.0,Werner Herzog Reads Curious George,calibration,trailers
+HERBench,27,47260883.0,cam1_segment_6_300s_360s,test,WildTrack
+HERBench,27,47260883.0,cam1_segment_7_360s_420s,calibration,WildTrack
+HERBench,27,47260883.0,cam2_segment_10_540s_600s,calibration,WildTrack
+HERBench,27,47260883.0,cam2_segment_2_60s_120s,test,WildTrack
+HERBench,27,47260883.0,cam2_segment_5_240s_300s,test,WildTrack
+HERBench,27,47260883.0,cam2_segment_8_420s_480s,calibration,WildTrack
+HERBench,27,47260883.0,cam3_segment_1_0s_180s,test,WildTrack
+HERBench,27,47260883.0,cam3_segment_5_720s_900s,test,WildTrack
+HERBench,27,47260883.0,cam3_segment_6_900s_1080s,test,WildTrack
+HERBench,27,47260883.0,cam4_segment_9_1440s_1620s,test,WildTrack
+HERBench,27,47260883.0,cam5_segment_3_360s_540s,calibration,WildTrack
+HERBench,27,47260883.0,cam5_segment_4_540s_720s,calibration,WildTrack
+HERBench,27,47260883.0,cam5_segment_5_720s_900s,calibration,WildTrack
+HERBench,27,47260883.0,cam6_segment_2_300s_600s,calibration,WildTrack
+HERBench,27,47260883.0,cam7_segment_4_900s_1200s,test,WildTrack
+HERBench,27,47260883.0,uid_vid_00102,test,PersonPath22
+HERBench,27,47260883.0,uid_vid_00105,calibration,PersonPath22
+HERBench,27,47260883.0,uid_vid_00108,calibration,PersonPath22
+HERBench,27,47260883.0,uid_vid_00165,test,PersonPath22
+HERBench,28,48260886.0,A Quiet Place 2018 - Official Trailer - Paramount Pictures,test,trailers
+HERBench,28,48260886.0,Anchorman - The Legend of Ron Burgundy - Trailer,test,trailers
+HERBench,28,48260886.0,Furious 7 - Official Trailer HD,calibration,trailers
+HERBench,28,48260886.0,Groundhog Day Trailer HD,test,trailers
+HERBench,28,48260886.0,Into the Wild 2007 Trailer 1 Movieclips Classic Trailers,calibration,trailers
+HERBench,28,48260886.0,John Wick Official Trailer 1 2014 - Keanu Reeves Willem Dafoe Movie HD,test,trailers
+HERBench,28,48260886.0,Jurassic Park Trailer,calibration,trailers
+HERBench,28,48260886.0,Marvel Studios Avengers - Endgame - Official Trailer,calibration,trailers
+HERBench,28,48260886.0,Marvel s Guardians of the Galaxy - Trailer 1 OFFICIAL,calibration,trailers
+HERBench,28,48260886.0,P01-20240202-161354,test,HD_EPIC
+HERBench,28,48260886.0,P01-20240203-121517,test,HD_EPIC
+HERBench,28,48260886.0,P01-20240203-130505,test,HD_EPIC
+HERBench,28,48260886.0,P01-20240203-184214,test,HD_EPIC
+HERBench,28,48260886.0,P01-20240204-120411,calibration,HD_EPIC
+HERBench,28,48260886.0,P01-20240204-142301,test,HD_EPIC
+HERBench,28,48260886.0,P01-20240204-152537,test,HD_EPIC
+HERBench,28,48260886.0,P02-20240211-100250,calibration,HD_EPIC
+HERBench,28,48260886.0,P02-20240211-104948,test,HD_EPIC
+HERBench,28,48260886.0,P02-20240211-141313,calibration,HD_EPIC
+HERBench,28,48260886.0,P03-20240216-084005,test,HD_EPIC
+HERBench,28,48260886.0,P03-20240217-152152,test,HD_EPIC
+HERBench,28,48260886.0,P03-20240217-192543,calibration,HD_EPIC
+HERBench,28,48260886.0,P04-20240413-142619,test,HD_EPIC
+HERBench,28,48260886.0,P04-20240414-064514,calibration,HD_EPIC
+HERBench,28,48260886.0,P04-20240414-162242,test,HD_EPIC
+HERBench,28,48260886.0,P04-20240415-175615,test,HD_EPIC
+HERBench,28,48260886.0,P05-20240425-083515,test,HD_EPIC
+HERBench,28,48260886.0,P05-20240427-150402,calibration,HD_EPIC
+HERBench,28,48260886.0,P06-20240510-100047,test,HD_EPIC
+HERBench,28,48260886.0,P06-20240510-121619,calibration,HD_EPIC
+HERBench,28,48260886.0,P06-20240511-121048,calibration,HD_EPIC
+HERBench,28,48260886.0,P07-20240529-102652,calibration,HD_EPIC
+HERBench,28,48260886.0,P07-20240529-191007,calibration,HD_EPIC
+HERBench,28,48260886.0,P07-20240529-194518,calibration,HD_EPIC
+HERBench,28,48260886.0,P07-20240530-102543,calibration,HD_EPIC
+HERBench,28,48260886.0,P07-20240531-201703,calibration,HD_EPIC
+HERBench,28,48260886.0,P08-20240618-163547,test,HD_EPIC
+HERBench,28,48260886.0,P09-20240622-162302,calibration,HD_EPIC
+HERBench,28,48260886.0,P09-20240623-153253,calibration,HD_EPIC
+HERBench,28,48260886.0,P09-20240624-160737,test,HD_EPIC
+HERBench,28,48260886.0,Se7en 1995 Official Trailer - Brad Pitt Morgan Freeman Movie HD,test,trailers
+HERBench,28,48260886.0,Singin in the Rain 1952 Official Trailer - Gene Kelly Debbie Reynolds Movie HD,test,trailers
+HERBench,28,48260886.0,Thank You for Your Service Trailer 1 2017 Movieclips Trailers,calibration,trailers
+HERBench,28,48260886.0,The Longest Ride Official Trailer HD 20th Century FOX,test,trailers
+HERBench,28,48260886.0,The Secret Life of Walter Mitty Official Trailer 1 2013 - Ben Stiller Movie HD,calibration,trailers
+HERBench,28,48260886.0,There Will Be Blood 2007 Official Trailer - Daniel Day-Lewis Paul Dano Movie HD,calibration,trailers
+HERBench,28,48260886.0,Titanic TBT Trailer 20th Century FOX,test,trailers
+HERBench,28,48260886.0,Toy Story 3 Official Trailer HD,test,trailers
+HERBench,28,48260886.0,Werner Herzog Reads Curious George,calibration,trailers
+HERBench,28,48260886.0,cam1_segment_6_300s_360s,calibration,WildTrack
+HERBench,28,48260886.0,cam1_segment_7_360s_420s,calibration,WildTrack
+HERBench,28,48260886.0,cam2_segment_10_540s_600s,calibration,WildTrack
+HERBench,28,48260886.0,cam2_segment_2_60s_120s,test,WildTrack
+HERBench,28,48260886.0,cam2_segment_5_240s_300s,calibration,WildTrack
+HERBench,28,48260886.0,cam2_segment_8_420s_480s,test,WildTrack
+HERBench,28,48260886.0,cam3_segment_1_0s_180s,test,WildTrack
+HERBench,28,48260886.0,cam3_segment_5_720s_900s,calibration,WildTrack
+HERBench,28,48260886.0,cam3_segment_6_900s_1080s,test,WildTrack
+HERBench,28,48260886.0,cam4_segment_9_1440s_1620s,test,WildTrack
+HERBench,28,48260886.0,cam5_segment_3_360s_540s,test,WildTrack
+HERBench,28,48260886.0,cam5_segment_4_540s_720s,calibration,WildTrack
+HERBench,28,48260886.0,cam5_segment_5_720s_900s,test,WildTrack
+HERBench,28,48260886.0,cam6_segment_2_300s_600s,calibration,WildTrack
+HERBench,28,48260886.0,cam7_segment_4_900s_1200s,calibration,WildTrack
+HERBench,28,48260886.0,uid_vid_00102,test,PersonPath22
+HERBench,28,48260886.0,uid_vid_00105,calibration,PersonPath22
+HERBench,28,48260886.0,uid_vid_00108,test,PersonPath22
+HERBench,28,48260886.0,uid_vid_00165,calibration,PersonPath22
+HERBench,29,49260889.0,A Quiet Place 2018 - Official Trailer - Paramount Pictures,test,trailers
+HERBench,29,49260889.0,Anchorman - The Legend of Ron Burgundy - Trailer,test,trailers
+HERBench,29,49260889.0,Furious 7 - Official Trailer HD,test,trailers
+HERBench,29,49260889.0,Groundhog Day Trailer HD,calibration,trailers
+HERBench,29,49260889.0,Into the Wild 2007 Trailer 1 Movieclips Classic Trailers,calibration,trailers
+HERBench,29,49260889.0,John Wick Official Trailer 1 2014 - Keanu Reeves Willem Dafoe Movie HD,test,trailers
+HERBench,29,49260889.0,Jurassic Park Trailer,test,trailers
+HERBench,29,49260889.0,Marvel Studios Avengers - Endgame - Official Trailer,calibration,trailers
+HERBench,29,49260889.0,Marvel s Guardians of the Galaxy - Trailer 1 OFFICIAL,test,trailers
+HERBench,29,49260889.0,P01-20240202-161354,calibration,HD_EPIC
+HERBench,29,49260889.0,P01-20240203-121517,test,HD_EPIC
+HERBench,29,49260889.0,P01-20240203-130505,test,HD_EPIC
+HERBench,29,49260889.0,P01-20240203-184214,test,HD_EPIC
+HERBench,29,49260889.0,P01-20240204-120411,calibration,HD_EPIC
+HERBench,29,49260889.0,P01-20240204-142301,calibration,HD_EPIC
+HERBench,29,49260889.0,P01-20240204-152537,calibration,HD_EPIC
+HERBench,29,49260889.0,P02-20240211-100250,calibration,HD_EPIC
+HERBench,29,49260889.0,P02-20240211-104948,test,HD_EPIC
+HERBench,29,49260889.0,P02-20240211-141313,test,HD_EPIC
+HERBench,29,49260889.0,P03-20240216-084005,calibration,HD_EPIC
+HERBench,29,49260889.0,P03-20240217-152152,test,HD_EPIC
+HERBench,29,49260889.0,P03-20240217-192543,calibration,HD_EPIC
+HERBench,29,49260889.0,P04-20240413-142619,test,HD_EPIC
+HERBench,29,49260889.0,P04-20240414-064514,calibration,HD_EPIC
+HERBench,29,49260889.0,P04-20240414-162242,test,HD_EPIC
+HERBench,29,49260889.0,P04-20240415-175615,test,HD_EPIC
+HERBench,29,49260889.0,P05-20240425-083515,calibration,HD_EPIC
+HERBench,29,49260889.0,P05-20240427-150402,test,HD_EPIC
+HERBench,29,49260889.0,P06-20240510-100047,calibration,HD_EPIC
+HERBench,29,49260889.0,P06-20240510-121619,test,HD_EPIC
+HERBench,29,49260889.0,P06-20240511-121048,calibration,HD_EPIC
+HERBench,29,49260889.0,P07-20240529-102652,test,HD_EPIC
+HERBench,29,49260889.0,P07-20240529-191007,test,HD_EPIC
+HERBench,29,49260889.0,P07-20240529-194518,calibration,HD_EPIC
+HERBench,29,49260889.0,P07-20240530-102543,calibration,HD_EPIC
+HERBench,29,49260889.0,P07-20240531-201703,test,HD_EPIC
+HERBench,29,49260889.0,P08-20240618-163547,calibration,HD_EPIC
+HERBench,29,49260889.0,P09-20240622-162302,calibration,HD_EPIC
+HERBench,29,49260889.0,P09-20240623-153253,test,HD_EPIC
+HERBench,29,49260889.0,P09-20240624-160737,test,HD_EPIC
+HERBench,29,49260889.0,Se7en 1995 Official Trailer - Brad Pitt Morgan Freeman Movie HD,calibration,trailers
+HERBench,29,49260889.0,Singin in the Rain 1952 Official Trailer - Gene Kelly Debbie Reynolds Movie HD,calibration,trailers
+HERBench,29,49260889.0,Thank You for Your Service Trailer 1 2017 Movieclips Trailers,calibration,trailers
+HERBench,29,49260889.0,The Longest Ride Official Trailer HD 20th Century FOX,calibration,trailers
+HERBench,29,49260889.0,The Secret Life of Walter Mitty Official Trailer 1 2013 - Ben Stiller Movie HD,calibration,trailers
+HERBench,29,49260889.0,There Will Be Blood 2007 Official Trailer - Daniel Day-Lewis Paul Dano Movie HD,test,trailers
+HERBench,29,49260889.0,Titanic TBT Trailer 20th Century FOX,calibration,trailers
+HERBench,29,49260889.0,Toy Story 3 Official Trailer HD,test,trailers
+HERBench,29,49260889.0,Werner Herzog Reads Curious George,test,trailers
+HERBench,29,49260889.0,cam1_segment_6_300s_360s,test,WildTrack
+HERBench,29,49260889.0,cam1_segment_7_360s_420s,calibration,WildTrack
+HERBench,29,49260889.0,cam2_segment_10_540s_600s,test,WildTrack
+HERBench,29,49260889.0,cam2_segment_2_60s_120s,calibration,WildTrack
+HERBench,29,49260889.0,cam2_segment_5_240s_300s,calibration,WildTrack
+HERBench,29,49260889.0,cam2_segment_8_420s_480s,calibration,WildTrack
+HERBench,29,49260889.0,cam3_segment_1_0s_180s,calibration,WildTrack
+HERBench,29,49260889.0,cam3_segment_5_720s_900s,test,WildTrack
+HERBench,29,49260889.0,cam3_segment_6_900s_1080s,calibration,WildTrack
+HERBench,29,49260889.0,cam4_segment_9_1440s_1620s,test,WildTrack
+HERBench,29,49260889.0,cam5_segment_3_360s_540s,test,WildTrack
+HERBench,29,49260889.0,cam5_segment_4_540s_720s,test,WildTrack
+HERBench,29,49260889.0,cam5_segment_5_720s_900s,test,WildTrack
+HERBench,29,49260889.0,cam6_segment_2_300s_600s,calibration,WildTrack
+HERBench,29,49260889.0,cam7_segment_4_900s_1200s,calibration,WildTrack
+HERBench,29,49260889.0,uid_vid_00102,calibration,PersonPath22
+HERBench,29,49260889.0,uid_vid_00105,test,PersonPath22
+HERBench,29,49260889.0,uid_vid_00108,calibration,PersonPath22
+HERBench,29,49260889.0,uid_vid_00165,test,PersonPath22
+HERBench,30,50260892.0,A Quiet Place 2018 - Official Trailer - Paramount Pictures,calibration,trailers
+HERBench,30,50260892.0,Anchorman - The Legend of Ron Burgundy - Trailer,calibration,trailers
+HERBench,30,50260892.0,Furious 7 - Official Trailer HD,test,trailers
+HERBench,30,50260892.0,Groundhog Day Trailer HD,calibration,trailers
+HERBench,30,50260892.0,Into the Wild 2007 Trailer 1 Movieclips Classic Trailers,test,trailers
+HERBench,30,50260892.0,John Wick Official Trailer 1 2014 - Keanu Reeves Willem Dafoe Movie HD,calibration,trailers
+HERBench,30,50260892.0,Jurassic Park Trailer,test,trailers
+HERBench,30,50260892.0,Marvel Studios Avengers - Endgame - Official Trailer,calibration,trailers
+HERBench,30,50260892.0,Marvel s Guardians of the Galaxy - Trailer 1 OFFICIAL,test,trailers
+HERBench,30,50260892.0,P01-20240202-161354,test,HD_EPIC
+HERBench,30,50260892.0,P01-20240203-121517,calibration,HD_EPIC
+HERBench,30,50260892.0,P01-20240203-130505,test,HD_EPIC
+HERBench,30,50260892.0,P01-20240203-184214,calibration,HD_EPIC
+HERBench,30,50260892.0,P01-20240204-120411,test,HD_EPIC
+HERBench,30,50260892.0,P01-20240204-142301,calibration,HD_EPIC
+HERBench,30,50260892.0,P01-20240204-152537,test,HD_EPIC
+HERBench,30,50260892.0,P02-20240211-100250,calibration,HD_EPIC
+HERBench,30,50260892.0,P02-20240211-104948,calibration,HD_EPIC
+HERBench,30,50260892.0,P02-20240211-141313,test,HD_EPIC
+HERBench,30,50260892.0,P03-20240216-084005,test,HD_EPIC
+HERBench,30,50260892.0,P03-20240217-152152,test,HD_EPIC
+HERBench,30,50260892.0,P03-20240217-192543,test,HD_EPIC
+HERBench,30,50260892.0,P04-20240413-142619,test,HD_EPIC
+HERBench,30,50260892.0,P04-20240414-064514,test,HD_EPIC
+HERBench,30,50260892.0,P04-20240414-162242,test,HD_EPIC
+HERBench,30,50260892.0,P04-20240415-175615,calibration,HD_EPIC
+HERBench,30,50260892.0,P05-20240425-083515,calibration,HD_EPIC
+HERBench,30,50260892.0,P05-20240427-150402,test,HD_EPIC
+HERBench,30,50260892.0,P06-20240510-100047,test,HD_EPIC
+HERBench,30,50260892.0,P06-20240510-121619,test,HD_EPIC
+HERBench,30,50260892.0,P06-20240511-121048,test,HD_EPIC
+HERBench,30,50260892.0,P07-20240529-102652,test,HD_EPIC
+HERBench,30,50260892.0,P07-20240529-191007,calibration,HD_EPIC
+HERBench,30,50260892.0,P07-20240529-194518,calibration,HD_EPIC
+HERBench,30,50260892.0,P07-20240530-102543,calibration,HD_EPIC
+HERBench,30,50260892.0,P07-20240531-201703,calibration,HD_EPIC
+HERBench,30,50260892.0,P08-20240618-163547,calibration,HD_EPIC
+HERBench,30,50260892.0,P09-20240622-162302,calibration,HD_EPIC
+HERBench,30,50260892.0,P09-20240623-153253,calibration,HD_EPIC
+HERBench,30,50260892.0,P09-20240624-160737,calibration,HD_EPIC
+HERBench,30,50260892.0,Se7en 1995 Official Trailer - Brad Pitt Morgan Freeman Movie HD,test,trailers
+HERBench,30,50260892.0,Singin in the Rain 1952 Official Trailer - Gene Kelly Debbie Reynolds Movie HD,test,trailers
+HERBench,30,50260892.0,Thank You for Your Service Trailer 1 2017 Movieclips Trailers,calibration,trailers
+HERBench,30,50260892.0,The Longest Ride Official Trailer HD 20th Century FOX,test,trailers
+HERBench,30,50260892.0,The Secret Life of Walter Mitty Official Trailer 1 2013 - Ben Stiller Movie HD,calibration,trailers
+HERBench,30,50260892.0,There Will Be Blood 2007 Official Trailer - Daniel Day-Lewis Paul Dano Movie HD,test,trailers
+HERBench,30,50260892.0,Titanic TBT Trailer 20th Century FOX,calibration,trailers
+HERBench,30,50260892.0,Toy Story 3 Official Trailer HD,test,trailers
+HERBench,30,50260892.0,Werner Herzog Reads Curious George,calibration,trailers
+HERBench,30,50260892.0,cam1_segment_6_300s_360s,calibration,WildTrack
+HERBench,30,50260892.0,cam1_segment_7_360s_420s,test,WildTrack
+HERBench,30,50260892.0,cam2_segment_10_540s_600s,test,WildTrack
+HERBench,30,50260892.0,cam2_segment_2_60s_120s,calibration,WildTrack
+HERBench,30,50260892.0,cam2_segment_5_240s_300s,test,WildTrack
+HERBench,30,50260892.0,cam2_segment_8_420s_480s,test,WildTrack
+HERBench,30,50260892.0,cam3_segment_1_0s_180s,calibration,WildTrack
+HERBench,30,50260892.0,cam3_segment_5_720s_900s,calibration,WildTrack
+HERBench,30,50260892.0,cam3_segment_6_900s_1080s,calibration,WildTrack
+HERBench,30,50260892.0,cam4_segment_9_1440s_1620s,test,WildTrack
+HERBench,30,50260892.0,cam5_segment_3_360s_540s,test,WildTrack
+HERBench,30,50260892.0,cam5_segment_4_540s_720s,calibration,WildTrack
+HERBench,30,50260892.0,cam5_segment_5_720s_900s,calibration,WildTrack
+HERBench,30,50260892.0,cam6_segment_2_300s_600s,test,WildTrack
+HERBench,30,50260892.0,cam7_segment_4_900s_1200s,calibration,WildTrack
+HERBench,30,50260892.0,uid_vid_00102,calibration,PersonPath22
+HERBench,30,50260892.0,uid_vid_00105,calibration,PersonPath22
+HERBench,30,50260892.0,uid_vid_00108,test,PersonPath22
+HERBench,30,50260892.0,uid_vid_00165,test,PersonPath22

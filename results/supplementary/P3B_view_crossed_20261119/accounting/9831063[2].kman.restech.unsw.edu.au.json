@@ -1,0 +1,22 @@
+{
+  "job": "9831063[2].kman.restech.unsw.edu.au",
+  "utc": "2026-11-19T09:05:54.683488+00:00",
+  "qstat_exit_code": 0,
+  "fields": {
+    "resources_used.walltime": "01:00:41",
+    "resources_used.cput": "01:05:09",
+    "resources_used.mem": "32642200kb",
+    "resources_used.ncpus": "8",
+    "resources_used.GPU_duration": "1.01hrs",
+    "resources_used.GPU_maxGpuMemoryUsed": "93.66GB",
+    "Exit_status": "0",
+    "job_state": "F",
+    "stime": "Thu Nov 19 16:38:45 2026",
+    "etime": "Thu Nov 19 14:56:58 2026",
+    "obittime": "Thu Nov 19 17:39:34 2026",
+    "exec_host": "k207/1*8",
+    "Resource_List.select": "ngpus=1:mem=96gb:gpu_model=RP6000:cpu_per_gpu_gte_8=1:mem_per_gpu_gte_120=1:ncpus=8",
+    "Resource_List.walltime": "01:50:00"
+  },
+  "error": null
+}

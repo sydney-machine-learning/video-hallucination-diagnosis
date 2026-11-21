@@ -1,0 +1,16 @@
+{
+  "python": "3.10.9 | packaged by Anaconda, Inc. | (main, Mar  1 2023, 18:18:15) [MSC v.1916 64 bit (AMD64)]",
+  "executable": "C:\\Users\\87385\\Desktop\\paper 3\\video-hallucination-diagnosis\\results\\supplementary\\P3B_full_reference_20261119\\cpu_env\\Scripts\\python.exe",
+  "platform": "Windows-10-10.0.22631-SP0",
+  "packages": {
+    "numpy": "2.2.6",
+    "pandas": "2.3.3",
+    "scipy": "1.15.3",
+    "scikit-learn": "1.7.2",
+    "joblib": "1.6.0",
+    "threadpoolctl": "3.8.0"
+  },
+  "gpu": "none",
+  "gpu_jobs_submitted": 0,
+  "inference_calls": 0
+}

@@ -1,0 +1,41 @@
+{
+  "status": "passed",
+  "models": [
+    {
+      "model": "internvl14",
+      "rows": 7884,
+      "answer_vs_argmax_mismatch": 10,
+      "model_ids": [
+        "OpenGVLab/InternVL3_5-14B-Instruct"
+      ],
+      "revisions": [
+        "72c82460a2c05a3bc2b47be230c44edc88e86ed4"
+      ]
+    },
+    {
+      "model": "qwen8",
+      "rows": 7884,
+      "answer_vs_argmax_mismatch": 5,
+      "model_ids": [
+        "Qwen/Qwen3-VL-8B-Instruct"
+      ],
+      "revisions": [
+        "0c351dd01ed87e9c1b53cbc748cba10e6187ff3b"
+      ]
+    },
+    {
+      "model": "llava8",
+      "rows": 7884,
+      "answer_vs_argmax_mismatch": 262,
+      "model_ids": [
+        "lmms-lab-encoder/LLaVA-OneVision-2-8B-Instruct"
+      ],
+      "revisions": [
+        "802f16c8346a062fef7ddf92b2bd64a770a50a1a"
+      ]
+    }
+  ],
+  "feature_columns_match_bundle": true,
+  "manifest_sha256": "dbb2a58ed3354d5309ddb99cb14d88e9c7f97323d864573df51708e3617a0e3c",
+  "bundle_sha256": "f4fbf6c2e07186e6fe8a570d76b70e19eb9388fe85b4084e9e0b44e9f12e113a"
+}

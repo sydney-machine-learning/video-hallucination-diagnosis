@@ -1,0 +1,50 @@
+[
+  {
+    "path": "/home/z5611125/sicr_route/results_fresh/prave_tempcompass_confirmation/8905479.kman.restech.unsw.edu.au/qwen_predictions.jsonl",
+    "sha256": "a2292ec0de436084e94473f1d38bbf15c146a07cae8c6cd6223776636b3f2e0d",
+    "local": "C:\\Users\\87385\\Desktop\\paper 3\\video-hallucination-diagnosis\\results\\supplementary\\P5_vhd_transfer_20261119\\inputs\\tempcompass_qwen_predictions.jsonl",
+    "bytes": 2878595
+  },
+  {
+    "path": "/home/z5611125/sicr_route/results_fresh/prave_tempcompass_confirmation/8905479.kman.restech.unsw.edu.au/llava_predictions.jsonl",
+    "sha256": "a7afb6da8c07d4bbe67a16ceba2e5d7d264f205e78eadde4596cdb65106a6be5",
+    "local": "C:\\Users\\87385\\Desktop\\paper 3\\video-hallucination-diagnosis\\results\\supplementary\\P5_vhd_transfer_20261119\\inputs\\tempcompass_llava_predictions.jsonl",
+    "bytes": 2888667
+  },
+  {
+    "path": "/home/z5611125/sicr_route/results_fresh/prave_tempcompass_confirmation/8905479.kman.restech.unsw.edu.au/internvl_predictions.jsonl",
+    "sha256": "f1742226cd4b8acd1ed4cae07d9d1b1aa89ccaef9950c5b34fd20209c161d51b",
+    "local": "C:\\Users\\87385\\Desktop\\paper 3\\video-hallucination-diagnosis\\results\\supplementary\\P5_vhd_transfer_20261119\\inputs\\tempcompass_internvl_predictions.jsonl",
+    "bytes": 2857278
+  },
+  {
+    "path": "/home/z5611125/sicr_route/results_fresh/rava_vhd_confirmation/8905351.kman.restech.unsw.edu.au/qwen_predictions.jsonl",
+    "sha256": "df3536c84653316acbaf0c91076fa7184bc749354f92b9174e31234cc7a3a956",
+    "local": "C:\\Users\\87385\\Desktop\\paper 3\\video-hallucination-diagnosis\\results\\supplementary\\P5_vhd_transfer_20261119\\inputs\\vhd_qwen_predictions.jsonl",
+    "bytes": 5855460
+  },
+  {
+    "path": "/home/z5611125/sicr_route/results_fresh/rava_vhd_confirmation/8905351.kman.restech.unsw.edu.au/internvl_predictions.jsonl",
+    "sha256": "21c0be9a4da73786698f5528888678b09839cf839a59993c7c2f0164a3bbbbe9",
+    "local": "C:\\Users\\87385\\Desktop\\paper 3\\video-hallucination-diagnosis\\results\\supplementary\\P5_vhd_transfer_20261119\\inputs\\vhd_internvl_predictions.jsonl",
+    "bytes": 5818424
+  },
+  {
+    "path": "/home/z5611125/sicr_route/results_fresh/rava_vhd_confirmation/8905351.kman.restech.unsw.edu.au/llava_predictions.jsonl",
+    "sha256": "5e4491fd92274d5e709e39c4bce01bea9e2c3d33934f0bd8315a9d7347a918e7",
+    "local": "C:\\Users\\87385\\Desktop\\paper 3\\video-hallucination-diagnosis\\results\\supplementary\\P5_vhd_transfer_20261119\\inputs\\vhd_llava_predictions.jsonl",
+    "bytes": 5879951
+  },
+  {
+    "path": "/home/z5611125/probe_route/input/development_scored/tempcompass_scored_predictions.csv",
+    "sha256": "133c8fcadaad18f0d10ecd7a9107e9e695723fc80e8df2a38bb063a2c7aafcbc",
+    "local": "C:\\Users\\87385\\Desktop\\paper 3\\video-hallucination-diagnosis\\results\\supplementary\\P5_vhd_transfer_20261119\\inputs\\tempcompass_tempcompass_scored_predictions.csv",
+    "bytes": 525121
+  },
+  {
+    "path": "/home/z5611125/probe_route/input/development_scored/vhd_scored_predictions.csv",
+    "sha256": "b10e371afb6f21881e4b8b7a4b821c2a1531465fb5e0aae0d15607298e39fb08",
+    "local": "C:\\Users\\87385\\Desktop\\paper 3\\video-hallucination-diagnosis\\results\\supplementary\\P5_vhd_transfer_20261119\\inputs\\vhd_vhd_scored_predictions.csv",
+    "bytes": 1054989
+  }
+]

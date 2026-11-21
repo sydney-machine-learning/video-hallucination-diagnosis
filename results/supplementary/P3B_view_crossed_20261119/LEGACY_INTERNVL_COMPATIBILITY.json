@@ -1,0 +1,14 @@
+{
+  "passed": true,
+  "fixture_is_not_an_experiment_model": true,
+  "fixture_path": "/srv/scratch/z5611125/video_hallucination_supplementary/results/supplementary/P3B_view_crossed_20261119/internvl_loader_fixture_3uskdj4f",
+  "transformers": "4.57.6",
+  "tokenizer_class": "Qwen2Tokenizer",
+  "torch": "2.14.0+cu130",
+  "loading_info": {
+    "missing_keys": [],
+    "unexpected_keys": [],
+    "mismatched_keys": [],
+    "error_msgs": []
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "model": "internvl14",
+  "split": 19,
+  "selected": "raw_fallback",
+  "gain": 0.0
+}

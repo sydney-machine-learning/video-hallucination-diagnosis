@@ -1,0 +1,238 @@
+{
+  "_id": "68ac9198413484079abc229a",
+  "id": "OpenGVLab/InternVL3_5-14B-Instruct",
+  "private": false,
+  "pipeline_tag": "image-text-to-text",
+  "library_name": "transformers",
+  "tags": [
+    "transformers",
+    "safetensors",
+    "internvl_chat",
+    "feature-extraction",
+    "internvl",
+    "custom_code",
+    "image-text-to-text",
+    "conversational",
+    "multilingual",
+    "dataset:OpenGVLab/MMPR-v1.2",
+    "dataset:OpenGVLab/MMPR-Tiny",
+    "arxiv:2312.14238",
+    "arxiv:2404.16821",
+    "arxiv:2412.05271",
+    "arxiv:2411.10442",
+    "arxiv:2504.10479",
+    "arxiv:2508.18265",
+    "base_model:OpenGVLab/InternVL3_5-14B-Pretrained",
+    "base_model:finetune:OpenGVLab/InternVL3_5-14B-Pretrained",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "downloads": 408,
+  "likes": 9,
+  "modelId": "OpenGVLab/InternVL3_5-14B-Instruct",
+  "author": "OpenGVLab",
+  "sha": "72c82460a2c05a3bc2b47be230c44edc88e86ed4",
+  "lastModified": "2025-08-29T17:57:06.000Z",
+  "gated": false,
+  "disabled": false,
+  "model-index": null,
+  "config": {
+    "architectures": [
+      "InternVLChatModel"
+    ],
+    "auto_map": {
+      "AutoConfig": "configuration_internvl_chat.InternVLChatConfig",
+      "AutoModel": "modeling_internvl_chat.InternVLChatModel",
+      "AutoModelForCausalLM": "modeling_internvl_chat.InternVLChatModel"
+    },
+    "model_type": "internvl_chat",
+    "tokenizer_config": {
+      "bos_token": null,
+      "eos_token": "<|im_end|>",
+      "unk_token": null,
+      "pad_token": "<|endoftext|>",
+      "chat_template": "{%- if tools %}\n    {{- '<|im_start|>system\\n' }}\n    {%- if messages[0].role == 'system' %}\n        {{- messages[0].content + '\\n\\n' }}\n    {%- endif %}\n    {{- \"# Tools\\n\\nYou may call one or more functions to assist with the user query.\\n\\nYou are provided with function signatures within <tools></tools> XML tags:\\n<tools>\" }}\n    {%- for tool in tools %}\n        {{- \"\\n\" }}\n        {{- tool | tojson }}\n    {%- endfor %}\n    {{- \"\\n</tools>\\n\\nFor each function call, return a json object with function name and arguments within <tool_call></tool_call> XML tags:\\n<tool_call>\\n{\\\"name\\\": <function-name>, \\\"arguments\\\": <args-json-object>}\\n</tool_call><|im_end|>\\n\" }}\n{%- else %}\n    {%- if messages[0].role == 'system' %}\n        {{- '<|im_start|>system\\n' + messages[0].content + '<|im_end|>\\n' }}\n    {%- endif %}\n{%- endif %}\n{%- set ns = namespace(multi_step_tool=true, last_query_index=messages|length - 1) %}\n{%- for message in messages[::-1] %}\n    {%- set index = (messages|length - 1) - loop.index0 %}\n    {%- if ns.multi_step_tool and message.role == \"user\" and message.content is string and not(message.content.startswith('<tool_response>') and message.content.endswith('</tool_response>')) %}\n        {%- set ns.multi_step_tool = false %}\n        {%- set ns.last_query_index = index %}\n    {%- endif %}\n{%- endfor %}\n{%- for message in messages %}\n    {%- if message.content is string %}\n        {%- set content = message.content %}\n    {%- else %}\n        {%- set content = '' %}\n    {%- endif %}\n    {%- if (message.role == \"user\") or (message.role == \"system\" and not loop.first) %}\n        {{- '<|im_start|>' + message.role + '\\n' + content + '<|im_end|>' + '\\n' }}\n    {%- elif message.role == \"assistant\" %}\n        {%- set reasoning_content = '' %}\n        {%- if message.reasoning_content is string %}\n            {%- set reasoning_content = message.reasoning_content %}\n        {%- else %}\n            {%- if '</think>' in content %}\n                {%- set reasoning_content = content.split('</think>')[0].rstrip('\\n').split('<think>')[-1].lstrip('\\n') %}\n                {%- set content = content.split('</think>')[-1].lstrip('\\n') %}\n            {%- endif %}\n        {%- endif %}\n        {%- if loop.index0 > ns.last_query_index %}\n            {%- if loop.last or (not loop.last and reasoning_content) %}\n                {{- '<|im_start|>' + message.role + '\\n<think>\\n' + reasoning_content.strip('\\n') + '\\n</think>\\n\\n' + content.lstrip('\\n') }}\n            {%- else %}\n                {{- '<|im_start|>' + message.role + '\\n' + content }}\n            {%- endif %}\n        {%- else %}\n            {{- '<|im_start|>' + message.role + '\\n' + content }}\n        {%- endif %}\n        {%- if message.tool_calls %}\n            {%- for tool_call in message.tool_calls %}\n                {%- if (loop.first and content) or (not loop.first) %}\n                    {{- '\\n' }}\n                {%- endif %}\n                {%- if tool_call.function %}\n                    {%- set tool_call = tool_call.function %}\n                {%- endif %}\n                {{- '<tool_call>\\n{\"name\": \"' }}\n                {{- tool_call.name }}\n                {{- '\", \"arguments\": ' }}\n                {%- if tool_call.arguments is string %}\n                    {{- tool_call.arguments }}\n                {%- else %}\n                    {{- tool_call.arguments | tojson }}\n                {%- endif %}\n                {{- '}\\n</tool_call>' }}\n            {%- endfor %}\n        {%- endif %}\n        {{- '<|im_end|>\\n' }}\n    {%- elif message.role == \"tool\" %}\n        {%- if loop.first or (messages[loop.index0 - 1].role != \"tool\") %}\n            {{- '<|im_start|>user' }}\n        {%- endif %}\n        {{- '\\n<tool_response>\\n' }}\n        {{- content }}\n        {{- '\\n</tool_response>' }}\n        {%- if loop.last or (messages[loop.index0 + 1].role != \"tool\") %}\n            {{- '<|im_end|>\\n' }}\n        {%- endif %}\n    {%- endif %}\n{%- endfor %}\n{%- if add_generation_prompt %}\n    {{- '<|im_start|>assistant\\n' }}\n    {%- if enable_thinking is defined and enable_thinking is false %}\n        {{- '<think>\\n\\n</think>\\n\\n' }}\n    {%- endif %}\n{%- endif %}"
+    }
+  },
+  "cardData": {
+    "license": "apache-2.0",
+    "pipeline_tag": "image-text-to-text",
+    "library_name": "transformers",
+    "base_model": [
+      "OpenGVLab/InternVL3_5-14B-Pretrained"
+    ],
+    "base_model_relation": "finetune",
+    "datasets": [
+      "OpenGVLab/MMPR-v1.2",
+      "OpenGVLab/MMPR-Tiny"
+    ],
+    "language": [
+      "multilingual"
+    ],
+    "tags": [
+      "internvl",
+      "custom_code"
+    ]
+  },
+  "transformersInfo": {
+    "auto_model": "AutoModel",
+    "custom_class": "modeling_internvl_chat.InternVLChatModel",
+    "pipeline_tag": "feature-extraction"
+  },
+  "siblings": [
+    {
+      "rfilename": ".gitattributes",
+      "blobId": "a6344aac8c09253b3b630fb776ae94478aa0275b",
+      "size": 1519
+    },
+    {
+      "rfilename": "README.md",
+      "blobId": "7d4138b7f331c2112e165ea9782ba7d7bf537af1",
+      "size": 53721
+    },
+    {
+      "rfilename": "added_tokens.json",
+      "blobId": "eab196639fbd4e8a5297c208d58b44f5ef6b93dc",
+      "size": 892
+    },
+    {
+      "rfilename": "config.json",
+      "blobId": "0b5352deead4d03854f87563e63cdeb6b8f71887",
+      "size": 5753
+    },
+    {
+      "rfilename": "configuration_intern_vit.py",
+      "blobId": "32f469c4bbfee021fe19e622245d16fd9ba0aae6",
+      "size": 5546
+    },
+    {
+      "rfilename": "configuration_internvl_chat.py",
+      "blobId": "a3105708ef1462b3a467ed24b10afe2c5d08fd2c",
+      "size": 4700
+    },
+    {
+      "rfilename": "conversation.py",
+      "blobId": "5a771766f21ce3aeeb99b286fb8d188b0038a547",
+      "size": 15309
+    },
+    {
+      "rfilename": "generation_config.json",
+      "blobId": "539bd252b6a4c0a5447aab4fc3853b2120d60e1b",
+      "size": 69
+    },
+    {
+      "rfilename": "merges.txt",
+      "blobId": "31349551d90c7606f325fe0f11bbb8bd5fa0d7c7",
+      "size": 1671853
+    },
+    {
+      "rfilename": "model-00001-of-00007.safetensors",
+      "blobId": "fc058c3bcec082bdcb76a9795ac79c8226f7fe37",
+      "size": 4932220936,
+      "lfs": {
+        "sha256": "7670b03f39956e3d87ae94e6c1708f6a56e0347746b119bc80d77e8ca20272c3",
+        "size": 4932220936,
+        "pointerSize": 135
+      }
+    },
+    {
+      "rfilename": "model-00002-of-00007.safetensors",
+      "blobId": "8da8bfe949ad64bc355c71377dda7abba72c6f15",
+      "size": 4980893224,
+      "lfs": {
+        "sha256": "029185b390b5b7b6abc0cae25c49918bb89ebe1e02953200c933c85595792898",
+        "size": 4980893224,
+        "pointerSize": 135
+      }
+    },
+    {
+      "rfilename": "model-00003-of-00007.safetensors",
+      "blobId": "b78b59b9c4c71375591438cf744cdb51534ec279",
+      "size": 4928486392,
+      "lfs": {
+        "sha256": "b08bf2847960813e5e35ed5ca6ed0525378662bbe0231382f69b41eda6cbd624",
+        "size": 4928486392,
+        "pointerSize": 135
+      }
+    },
+    {
+      "rfilename": "model-00004-of-00007.safetensors",
+      "blobId": "3c05823191aca8f9dc1b909e9be4ec3bbb85433a",
+      "size": 4980893296,
+      "lfs": {
+        "sha256": "5ae47eae7ca5c2459f689526ce8cc24ebb5a2b1d53dd1008e0d812d82d150337",
+        "size": 4980893296,
+        "pointerSize": 135
+      }
+    },
+    {
+      "rfilename": "model-00005-of-00007.safetensors",
+      "blobId": "1205f8aeee17236da6144407d2a02bb1a476ccb7",
+      "size": 4928486392,
+      "lfs": {
+        "sha256": "f246cb1456dcf15117b3d1e02789708d219226b0d82a2a2f37e83929fbde1656",
+        "size": 4928486392,
+        "pointerSize": 135
+      }
+    },
+    {
+      "rfilename": "model-00006-of-00007.safetensors",
+      "blobId": "cf123db88cf9e3c65080c1813b8f03c40d99cfed",
+      "size": 3837931808,
+      "lfs": {
+        "sha256": "011f94c731ad7597f00d42da70d92085d2f086d1243bd30b47a589639647d7eb",
+        "size": 3837931808,
+        "pointerSize": 135
+      }
+    },
+    {
+      "rfilename": "model-00007-of-00007.safetensors",
+      "blobId": "28d413a51dfcb0ba7ab6d7e9a9a610be101d218e",
+      "size": 1650234016,
+      "lfs": {
+        "sha256": "30f2f3cc050130065fb4fcd309f2fa83615f08ad20fa17f3c7fd65b63315ae44",
+        "size": 1650234016,
+        "pointerSize": 135
+      }
+    },
+    {
+      "rfilename": "model.safetensors.index.json",
+      "blobId": "0fa87d1e87183bca13fa5615e9e15456180198bd",
+      "size": 72742
+    },
+    {
+      "rfilename": "modeling_intern_vit.py",
+      "blobId": "6d72917a7806261841f603e8ef48ff782d39f2d2",
+      "size": 18151
+    },
+    {
+      "rfilename": "modeling_internvl_chat.py",
+      "blobId": "09256882ddf97c60c9ff44f72f0cb4cab27ae7fa",
+      "size": 16518
+    },
+    {
+      "rfilename": "special_tokens_map.json",
+      "blobId": "74ea6ef5bd52e11d45791fbab7cca3dc984942fa",
+      "size": 744
+    },
+    {
+      "rfilename": "tokenizer_config.json",
+      "blobId": "9532da38f208a49ef967e94a15a7252dcc3e2ef2",
+      "size": 11480
+    },
+    {
+      "rfilename": "vocab.json",
+      "blobId": "6bce3a0a3866c4791a74d83d78f6824c3af64ec3",
+      "size": 3383407
+    }
+  ],
+  "spaces": [],
+  "createdAt": "2025-08-25T16:38:48.000Z",
+  "safetensors": {
+    "parameters": {
+      "BF16": 15119523840
+    },
+    "total": 15119523840
+  },
+  "usedStorage": 30239146064
+}

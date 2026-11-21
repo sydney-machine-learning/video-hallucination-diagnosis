@@ -1,0 +1,8 @@
+{
+  "dataset": "HERBench",
+  "definition": "trapezoid",
+  "seconds": 163.7809999999954,
+  "iterations": 10000,
+  "seed": 20260802,
+  "max_absolute_difference_from_archived_distribution": 0.0
+}

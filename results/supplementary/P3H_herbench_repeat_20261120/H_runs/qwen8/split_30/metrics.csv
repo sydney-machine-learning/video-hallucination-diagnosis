@@ -1,0 +1,7 @@
+model,split,method,accuracy,aurc,gain_pct,selected
+qwen8,30,original,0.525,0.2963978619270399,0.0,target_logistic
+qwen8,30,pilot_lr,0.525,0.23816282442961528,19.64759027572186,target_logistic
+qwen8,30,development_hgb,0.525,0.24398044301508173,17.684816810473823,target_logistic
+qwen8,30,base_support,0.525,0.2502963912769065,15.55391471126115,target_logistic
+qwen8,30,all_view_support,0.525,0.23626953245447121,20.286357358194984,target_logistic
+qwen8,30,checked,0.525,0.23816282442961528,19.64759027572186,target_logistic

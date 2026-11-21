@@ -1,0 +1,11 @@
+{
+  "status": "passed",
+  "checks": [
+    "All preflight source checksums unchanged",
+    "All 72 B point metrics and 288 sampled bootstrap metrics match independent sklearn AUROC and archived prefix AURC; eight LR/HGB point and CI rows match P5",
+    "All 60 A selections have correct thresholds, lower quantiles, disjoint videos, and reproducible test AURC"
+  ],
+  "gpu": "none",
+  "report_local_links_verified": 99,
+  "source_checksums_verified": 35
+}

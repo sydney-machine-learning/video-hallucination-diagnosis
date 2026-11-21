@@ -1,0 +1,13 @@
+{
+  "passed": true,
+  "labels_read": false,
+  "model": "Qwen/Qwen3-VL-8B-Instruct",
+  "videos": 50,
+  "questions": 205,
+  "calls": 820,
+  "responses_sha256": "6e564c823201d77759c1a8b089f6afa9879a4530096a5d8a493c7f1b5ef7ae28",
+  "full_500_video_estimate_seconds": 8145.067999453093,
+  "remaining_estimate_seconds": 7263.691489140661,
+  "peak_memory_bytes": 21927726080,
+  "exact_archived_sampling": true
+}

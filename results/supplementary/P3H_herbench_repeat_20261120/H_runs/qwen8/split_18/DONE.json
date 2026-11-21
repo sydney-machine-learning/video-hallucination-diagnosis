@@ -1,0 +1,6 @@
+{
+  "model": "qwen8",
+  "split": 18,
+  "selected": "target_logistic",
+  "gain": 18.853293546822822
+}

@@ -1,0 +1,42 @@
+[
+  {
+    "held_out": "MVBench",
+    "changed": false,
+    "reason": "Archived auto early stopping is off; no internal split"
+  },
+  {
+    "held_out": "NExT-GQA",
+    "changed": true,
+    "train_rows": 9480,
+    "validation_rows": 1053,
+    "train_videos": 2676,
+    "validation_videos": 298,
+    "overlap": 0,
+    "seed": 20260801
+  },
+  {
+    "held_out": "STAR",
+    "changed": true,
+    "train_rows": 9480,
+    "validation_rows": 1053,
+    "train_videos": 2676,
+    "validation_videos": 298,
+    "overlap": 0,
+    "seed": 20260801
+  },
+  {
+    "held_out": "TempCompass",
+    "changed": true,
+    "train_rows": 9750,
+    "validation_rows": 1053,
+    "train_videos": 2757,
+    "validation_videos": 307,
+    "overlap": 0,
+    "seed": 20260801
+  },
+  {
+    "held_out": "VHD",
+    "changed": false,
+    "reason": "Archived auto early stopping is off; no internal split"
+  }
+]

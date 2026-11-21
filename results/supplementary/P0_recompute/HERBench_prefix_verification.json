@@ -1,0 +1,7 @@
+{
+  "dataset": "HERBench",
+  "definition": "prefix",
+  "seconds": 21.25,
+  "iterations": 10000,
+  "seed": 20260802
+}

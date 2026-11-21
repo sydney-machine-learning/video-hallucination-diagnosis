@@ -1,0 +1,7 @@
+--- remote/remote_herbench_persistent_worker.py
++++ katana/herbench_persistent_worker.py
+@@ -110,4 +110,3 @@
+ 
+ if __name__ == "__main__":
+     raise SystemExit(main())
+-

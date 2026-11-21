@@ -1,0 +1,32 @@
+[
+  {
+    "file": "NExT-GQA_grouped_validation.joblib",
+    "n_iter": 200,
+    "early_stopping": true
+  },
+  {
+    "file": "NExT-GQA_without_three_id_grouped_validation.joblib",
+    "n_iter": 200,
+    "early_stopping": true
+  },
+  {
+    "file": "STAR_grouped_validation.joblib",
+    "n_iter": 200,
+    "early_stopping": true
+  },
+  {
+    "file": "STAR_without_three_id_grouped_validation.joblib",
+    "n_iter": 200,
+    "early_stopping": true
+  },
+  {
+    "file": "TempCompass_grouped_validation.joblib",
+    "n_iter": 200,
+    "early_stopping": true
+  },
+  {
+    "file": "TempCompass_without_three_id_grouped_validation.joblib",
+    "n_iter": 200,
+    "early_stopping": true
+  }
+]

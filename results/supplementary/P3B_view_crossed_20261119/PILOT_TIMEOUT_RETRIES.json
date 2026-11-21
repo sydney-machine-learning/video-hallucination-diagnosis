@@ -1,0 +1,8 @@
+{
+  "previous_job": "9829910.kman.restech.unsw.edu.au",
+  "model": "llava8",
+  "walltime_limit_seconds": 4500,
+  "status": "submitted",
+  "reason": "Original pilot reached its 55-minute allocation without a model error; resume saved responses once.",
+  "job": "9830954.kman.restech.unsw.edu.au"
+}

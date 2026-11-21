@@ -1,0 +1,4 @@
+model,revision,paper_archive_accuracy_pct,phaseguard_bank_accuracy_pct,questions,videos,official_same_checkpoint_perception_score
+OpenGVLab/InternVL3_5-14B-Instruct,72c82460a2c05a3bc2b47be230c44edc88e86ed4,72.77716794731064,72.66739846322722,911,250,not found in audited primary sources
+Qwen/Qwen3-VL-8B-Instruct,0c351dd01ed87e9c1b53cbc748cba10e6187ff3b,67.2886937431394,70.47200878155873,911,250,not found in audited primary sources
+lmms-lab-encoder/LLaVA-OneVision-2-8B-Instruct,802f16c8346a062fef7ddf92b2bd64a770a50a1a,61.58068057080131,63.007683863885845,911,250,not found in audited primary sources

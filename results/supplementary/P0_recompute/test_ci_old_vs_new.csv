@@ -1,0 +1,3 @@
+dataset,seed,iterations,point_gain_unchanged,old_ci_low,old_ci_high,new_ci_low,new_ci_high,lower_change_pp,upper_change_pp,old_lower_above_zero,new_lower_above_zero,archived_selection_unchanged,original_primary_gate_pass,primary_gate_pass_with_new_ci
+HERBench,20260802,10000,16.64463892977936,12.121000036072815,22.609653039294535,12.112517882267275,22.59094391210004,-0.008482153805539738,-0.018709127194494357,True,True,True,True,True
+Perception,20260803,10000,18.868027776282805,15.428923760958314,22.139512934770536,15.413038856078781,22.115259076492702,-0.01588490487953287,-0.02425385827783444,True,True,True,True,True

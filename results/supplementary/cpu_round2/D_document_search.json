@@ -1,0 +1,292 @@
+[
+  {
+    "file": "encoder_report.txt",
+    "matches": [
+      {
+        "line": 71,
+        "text": "MLLM Evaluation Tasks. We adapt vision encoders to large multimodal models and evaluate downstream performance on a set of image- and video-centric benchmarks using LMMs-Eval ( Zhang et al., 2025 ) with the default prompt. Image tasks include ChartQA ( Masry et al., 2022 ) , DocVQA ( Mathew et al., 2021 ) , InfoVQA ( Mathew et al., 2022 ) , AI2D ( Kembhavi et al., 2016 ) , MMBench-EN ( Fu et al., 2023 ) , OCRBench ( Liu et al., 2024b ) , OCRBench v2 ( Liu et al., 2024b ) , MMStar ( Chen et al., 2024a ) , and RealWorldQA ( Corp., 2024 ) . Video tasks include MVBench ( Li et al., 2023a ) , MLVU-dev ( Zhou et al., 2024 ) , NExT-QA ( Xiao et al., 2021 ) , VideoMME ( Fu et al., 2024 ) , PerceptionTest ( Patraucean et al., 2023 ) , TOMATO ( Shinoda et al., 2025 ) , and LongVideoBench-Val-Video ( Wu et al., 2024 ) ."
+      },
+      {
+        "line": 75,
+        "text": "Task Benchmark Qwen3-4B-Instruct2507 OV-Encoder-Lang Qwen3-ViT OV-Encoder OV-Encoder-Frame SigLIP2 (Codec) (Frame) (Codec) (Frame) (Frame) Video MVBench 53.2 47.4 52.4 49.8 47.2 MLVU-dev 47.4 47.2 46.3 49.4 48.4 NExT-QA (MC) 76.1 70.1 75.6 71.9 70.6 VideoMME 54.1 47.2 53.4 49.3 46.8 Perception Test 60.6 57.1 60.3 56.7 56.0 TOMATO 21.8 22.2 22.2 21.8 22.3 LongVideoBench-Val-Video 51.6 45.0 50.4 45.5 45.2 Image AI2D 80.2 77.8 75.7 76.5 78.6 ChartQA 80.1 79.6 76.5 77.8 76.4 DocVQA 83.2 85.1 78.4 79.5 75.0 InfoVQA 51.6 49.0 43.1 45.5 42.0 MMBench-EN 80.2 79.4 77.2 78.5 79.6 OCRBench 657 706 605 630 621 OCRBench v2 30.8 30.6 26.3 26.1 26.1 MMStar 56.6 56.6 52.1 54.3 55.0 RealWorldQA 66.1 63.3 60.8 61.2 62.1"
+      },
+      {
+        "line": 85,
+        "text": "All models are evaluated under a controlled and unified attentive probing protocol. Following prior work on vision-language pretraining and attentive pooling ( Tschannen et al., 2025 ) , we employ a multi-head attention pooling classifier to aggregate spatiotemporal features into video-level representations. The same classifier architecture is used for all methods to ensure architectural consistency, and the probing head is trained with an identical number of epochs, optimization settings, and learning rate schedules across all experiments. All experiments are conducted on a cluster of 8 NVIDIA A800 GPUs. We therefore evaluate our model by assessing the quality of the model’s learned representation on a set of seven benchmarks: SSV2, Diving48 ( Li et al., 2018 ) , Perception Test ( Patraucean et al., 2023 ) , CharadesEgo ( Sigurdsson et al., 2018 ) , Epic-Kitchens-100 ( Kay et al., 2017 ) , Kinetics-400 ( Damen et al., 2022 ) , HMDB51 ( Kuehne et al., 2011 ) . Batch sizes are determined on a per-dataset basis to balance computational efficiency and training stability: a batch size of 32 is used for SSV2, Diving48, and Perception Test, 16 for HMDB51, and 128 for all remaining datasets. During evaluation, we adopt a single-crop inference protocol, using one temporal crop and one spatial crop per video clip, resulting in a single prediction for each input video."
+      },
+      {
+        "line": 86,
+        "text": "Model Setup Video Benchmarks (Acc. %) Method Backbone Res. Avg. SSV2 Diving48 Perception Test CharadesEgo Epic-Verb Epic-Noun Kinetics-400 HMDB51 8 Frames / 2048 Patches CLIP ViT-L/14 224 50.5 48.2 46.6 52.2 10.8 52.8 36.1 79.3 78.0 SigLIP ViT-L/16 256 50.1 50.7 43.9 48.9 10.9 52.2 39.1 78.2 77.0 MetaCLIP ViT-L/14 224 48.5 50.6 28.9 49.8 10.4 54.1 37.1 79.6 77.1 MetaCLIP2 ViT-L/14 224 50.2 47.2 48.0 47.7 11.0 48.0 40.9 82.4 76.3 AIMv2 ViT-L/14 224 53.8 55.1 43.6 55.1 12.0 56.6 45.6 81.1 81.3 SigLIP2 ViT-L/16 256 53.1 52.6 50.1 52.7 11.6 54.2 43.8 80.9 79.1 DINOv3 ViT-L/14 224 58.0 57.4 58.6 59.3 13.2 62.5 51.7 82.9 78.6 OV-Encoder (Frame) ViT-L/14 224 58.4 57.7 57.6 58.3 12.1 61.4 52.5 84.3 83.1 OV-Encoder (Codec) ViT-L/14 224 60.2 58.5 67.2 60.0 12.3 62.3 53.9 84.4 83.4 16 Frames / 4096 Patches SigLIP ViT-L/16 256 52.8 52.7 54.7 51.0 11.7 54.1 40.2 79.1 78.8 MetaCLIP2 ViT-L/14 224 51.0 49.3 42.1 51.1 11.2 49.2 43.2 84.0 78.2 AIMv2 ViT-L/14 224 56.4 57.2 55.7 56.4 12.4 58.3 46.2 82.2 82.6 SigLIP2 ViT-L/16 256 55.7 58.2 56.7 53.3 11.9 56.4 45.2 82.7 81.2 DINOv3 ViT-L/14 224 59.1 58.3 61.3 60.8 14.0 63.2 51.9 83.9 79.7 OV-Encoder (Frame) ViT-L/14 224 59.9 58.7 63.2 60.3 12.6 62.9 54.5 85.1 81.6 OV-Encoder (Codec) ViT-L/14 224 61.4 60.1 69.4 60.9 12.9 63.3 54.4 85.4 85.3"
+      },
+      {
+        "line": 88,
+        "text": "Setting Video Benchmarks (Acc. %) AVG SSV2 Diving48 Perception Test CharadesEgo Epic-Verb Epic-Noun Kinetics-400 HMDB51 Patch Budget = 512 SigLIP2 47.0 42.8 37.3 22.5 46.4 42.9 37.4 74.5 72.4 OV-Encoder (Codec) 55.1 50.0 46.5 50.5 50.6 50.3 41.7 76.7 74.7 Patch Budget = 1024 SigLIP2 53.4 49.0 48.5 35.2 50.0 50.6 42.0 78.8 76.6 OV-Encoder (Codec) 62.4 56.6 54.9 61.6 57.4 58.2 48.4 81.8 80.3 Patch Budget = 2048 SigLIP2 56.6 53.1 52.6 50.1 52.7 54.2 43.8 80.9 79.1 OV-Encoder (Codec) 66.5 60.2 58.5 67.2 60.0 62.3 53.9 84.4 83.4 Patch Budget = 4096 SigLIP2 59.9 55.7 58.2 56.7 53.3 56.4 45.2 82.7 81.2 OV-Encoder (Codec) 67.5 61.4 60.1 69.4 60.9 63.3 54.4 85.4 85.3"
+      },
+      {
+        "line": 93,
+        "text": "For a fair comparison, SigLIP2 is evaluated under the same token budgets and adopts a traditional frame sampling strategy, where each group of 256 patches corresponds to a contiguous RGB frame. Under a fixed token budget, OV-Encoder (Codec) redistributes patches across time while preserving their spatial positions, enabling long-range temporal coverage. As a result, it outperforms SigLIP2 on Diving48 and Perception Test while reducing patch processing by 75.0%–96.9% compared to dense processing of 16,384 patches. Specifically, the reduction ratio is computed relative to the dense baseline that processes all 64 × 256 = 16,384 64\\times 256=16{,}384 patches from the full video. Using token budgets of 4096, 2048, 1024, and 512 patches corresponds to retaining 25.0%, 12.5%, 6.25%, and 3.1% of the dense patches, respectively, yielding a patch reduction of 75.0%–96.9%."
+      },
+      {
+        "line": 94,
+        "text": "Setting Video Benchmarks (Acc. %) AVG SSV2 Diving48 Perception Test CharadesEgo Epic-Verb Epic-Noun Kinetics-400 HMDB51 OV-Encoder (Codec) 61.4 60.1 69.4 60.9 12.9 63.3 54.4 85.4 85.3 Non-motion Patch Replacement (50%) (Same Video, Same Position) 55.4 52.1 55.4 54.9 11.6 56.3 50.2 83.1 79.4 Counterfactual Motion Replacement (50%) (Motion Patch from Other Video) 54.9 50.6 57.2 53.8 11.3 55.1 49.6 82.7 79.0 Patch–Position Shuffle (Content Preserved, Positions Shuffled) 48.1 41.8 46.3 45.1 8.7 48.2 42.5 78.4 73.6"
+      }
+    ]
+  },
+  {
+    "file": "internvl_card.md",
+    "matches": []
+  },
+  {
+    "file": "internvl_repo.md",
+    "matches": []
+  },
+  {
+    "file": "internvl_report.txt",
+    "matches": []
+  },
+  {
+    "file": "llava_card.md",
+    "matches": []
+  },
+  {
+    "file": "llava_repo.md",
+    "matches": []
+  },
+  {
+    "file": "llava_report.txt",
+    "matches": []
+  },
+  {
+    "file": "perception_repo.md",
+    "matches": [
+      {
+        "line": 1,
+        "text": "# Perception Test: A Diagnostic Benchmark for Multimodal Video Models"
+      },
+      {
+        "line": 4,
+        "text": "The Fourth Perception Test Challenge will be organised as an ECCV2026 workshop, challenge website [here](https://perception-test-challenge.github.io/)."
+      },
+      {
+        "line": 12,
+        "text": "|Quickstart visualisation notebook | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://github.com/deepmind/perception_test/blob/main/data_visualisation.ipynb) |"
+      },
+      {
+        "line": 14,
+        "text": "| Download data            | [Download section here](https://github.com/deepmind/perception_test#download-the-data-and-annotations)      |"
+      },
+      {
+        "line": 15,
+        "text": "| Evaluation scripts (including data loader, dummy baseline, evaluation metrics)               | [multiple-choice video QA](https://github.com/deepmind/perception_test/blob/main/baselines/mc_vqa.ipynb), [object tracking](https://github.com/deepmind/perception_test/blob/main/baselines/single_object_tracking.ipynb), [action localisation](https://github.com/deepmind/perception_test/blob/main/baselines/temporal_action_localisation.ipynb), [point tracking](https://github.com/deepmind/perception_test/blob/main/baselines/single_point_tracking.ipynb), [sound localisation](https://github.com/deepmind/perception_test/blob/main/baselines/temporal_sound_localisation.ipynb), [grounded video QA](https://github.com/deepmind/perception_test/blob/main/baselines/grounded_vqa.ipynb)   |"
+      },
+      {
+        "line": 20,
+        "text": "[Perception Test: A Diagnostic Benchmark for Multimodal Video Models](https://arxiv.org/abs/2305.13786) is a multimodal benchmark designed to comprehensively evaluate the perception and reasoning skills of multimodal video models. The Perception Test dataset introduces real-world videos designed to show perceptually interesting situations and defines multiple tasks (object and point tracking, action and sound localisation, multiple-choice and grounded video question-answering) that require understanding of memory, abstract patterns, physics, and semantics, across visual, audio, and text modalities."
+      },
+      {
+        "line": 23,
+        "text": "* A summary of the Perception Test and the associated challenge"
+      },
+      {
+        "line": 24,
+        "text": "* A detailed description of the data and annotations in the Perception Test (**interactive demo notebook [here](https://github.com/deepmind/perception_test/blob/main/data_visualisation.ipynb)**)"
+      },
+      {
+        "line": 25,
+        "text": "* Details about how to download the data and annotations in the Perception Test (**download section [here](https://github.com/deepmind/perception_test#download-the-data-and-annotations)**)"
+      },
+      {
+        "line": 26,
+        "text": "* Metrics for evaluating the performance on the different tasks (**metrics section [here](https://github.com/deepmind/perception_test#metrics)**)"
+      },
+      {
+        "line": 27,
+        "text": "* Dummy baselines showcasing how to evaluate models on each of the tasks (**baselines section [here](https://github.com/deepmind/perception_test#baselines)**)"
+      },
+      {
+        "line": 30,
+        "text": "## 5-minutes summary of the Perception Test"
+      },
+      {
+        "line": 31,
+        "text": "[![Perception Test Overview Presentation](https://img.youtube.com/vi/8BiajMOBWdk/maxresdefault.jpg)](https://youtu.be/8BiajMOBWdk)"
+      },
+      {
+        "line": 33,
+        "text": "*Try the Perception Test for yourself by accessing this [quiz](https://docs.google.com/forms/d/e/1FAIpQLScp49reYMAByszH6vo_y6umlkBPwsua2-kMpGjff3IV0YzYkw/viewform?usp=sf_link).*"
+      },
+      {
+        "line": 35,
+        "text": "For more example videos in the Perception Test, check out this [playlist](https://youtube.com/playlist?list=PLbMStx8-UPhbaKViNMF8ZcQpyzVhwJC3R)."
+      },
+      {
+        "line": 39,
+        "text": "The Perception Test dataset can be downloaded as zip files containing:"
+      },
+      {
+        "line": 49,
+        "text": "| Sample                    | All    |  [sample_videos.zip (214.9MB)](https://storage.googleapis.com/dm-perception-test/zip_data/sample_videos.zip)     |  [sample_audios.zip (83.9MB)](https://storage.googleapis.com/dm-perception-test/zip_data/sample_audios.zip)     |  [sample_annotations.zip (3MB)](https://storage.googleapis.com/dm-perception-test/zip_data/sample_annotations.zip)    |"
+      },
+      {
+        "line": 50,
+        "text": "| All Tasks                 | Train  |  [train_videos.zip (26.5GB)](https://storage.googleapis.com/dm-perception-test/zip_data/train_videos.zip)      |  [train_audios.zip (12.3GB)](https://storage.googleapis.com/dm-perception-test/zip_data/train_audios.zip)      |  [train_annotations.zip (30.6MB)](https://storage.googleapis.com/dm-perception-test/zip_data/train_annotations.zip)   |"
+      },
+      {
+        "line": 51,
+        "text": "| All Tasks                 | Valid  |  [valid_videos.zip (70.2GB)](https://storage.googleapis.com/dm-perception-test/zip_data/valid_videos.zip)      |  [valid_audios.zip (33.1GB)](https://storage.googleapis.com/dm-perception-test/zip_data/valid_audios.zip)      |  [valid_annotations.zip (81.5MB)](https://storage.googleapis.com/dm-perception-test/zip_data/valid_annotations.zip)    |"
+      },
+      {
+        "line": 52,
+        "text": "| All Tasks                 | Test  |  [test_videos.zip (41.8GB)](https://storage.googleapis.com/dm-perception-test/zip_data/test_videos.zip)      |  [test_audios.zip (19.3GB)](https://storage.googleapis.com/dm-perception-test/zip_data/test_audios.zip)      |  [test_annotations.zip (633.9kB)](https://storage.googleapis.com/dm-perception-test/zip_data/test_annotations.zip)    |"
+      },
+      {
+        "line": 54,
+        "text": "*In test videos where the end of the video gives away the answer to some questions (e.g. in cup-games, where is the hidden object at the end), we cut the end of the video. For the validation and train splits, we provide the frame id where the cut should be made: [cut_frame_mapping_train.json](https://storage.googleapis.com/dm-perception-test/misc/cut_frame_mapping_train.json), [cut_frame_mapping_valid.json](https://storage.googleapis.com/dm-perception-test/misc/cut_frame_mapping_valid.json). "
+      },
+      {
+        "line": 65,
+        "text": "| Single Object Tracking    | [object_tracking_train_id_list.csv](https://storage.googleapis.com/dm-perception-test/misc/object_tracking_train_id_list.csv) | [object_tracking_valid_subset_id_list.csv](https://storage.googleapis.com/dm-perception-test/misc/object_tracking_valid_subset_id_list.csv) | [object_tracking_test_subset_id_list.csv](https://storage.googleapis.com/dm-perception-test/misc/object_tracking_test_subset_id_list.csv) |"
+      },
+      {
+        "line": 66,
+        "text": "| Single Point Tracking     | [point_tracking_train_id_list.csv](https://storage.googleapis.com/dm-perception-test/misc/point_tracking_train_id_list.csv) | [point_tracking_valid_id_list.csv](https://storage.googleapis.com/dm-perception-test/misc/point_tracking_valid_id_list.csv) | [point_tracking_test_id_list.csv](https://storage.googleapis.com/dm-perception-test/misc/point_tracking_test_id_list.csv) |"
+      },
+      {
+        "line": 67,
+        "text": "| Temporal Action Localisation | [action_localisation_train_id_list.csv](https://storage.googleapis.com/dm-perception-test/misc/action_localisation_train_id_list.csv) | [localisation_challenge_valid_id_list.csv](https://storage.googleapis.com/dm-perception-test/misc/localisation_challenge_valid_id_list.csv) | [localisation_challenge_test_id_list.csv](https://storage.googleapis.com/dm-perception-test/misc/localisation_challenge_test_id_list.csv) |"
+      },
+      {
+        "line": 68,
+        "text": "| Temporal Sound Localisation  | [sound_localisation_train_id_list.csv](https://storage.googleapis.com/dm-perception-test/misc/sound_localisation_train_id_list.csv) | [localisation_challenge_valid_id_list.csv](https://storage.googleapis.com/dm-perception-test/misc/localisation_challenge_valid_id_list.csv) | [localisation_challenge_test_id_list.csv](https://storage.googleapis.com/dm-perception-test/misc/localisation_challenge_test_id_list.csv) |"
+      },
+      {
+        "line": 69,
+        "text": "| Multiple-Choice Video QA  | [mc_question_train_id_list.csv](https://storage.googleapis.com/dm-perception-test/misc/mc_question_train_id_list.csv) | [mc_question_valid_id_list.csv](https://storage.googleapis.com/dm-perception-test/misc/mc_question_valid_id_list.csv) | [mc_question_test_id_list.csv](https://storage.googleapis.com/dm-perception-test/misc/mc_question_test_id_list.csv) |"
+      },
+      {
+        "line": 70,
+        "text": "| Grounded Video QA        | [grounded_question_train_id_list.csv](https://storage.googleapis.com/dm-perception-test/misc/grounded_question_train_id_list.csv) | [grounded_question_valid_id_list.csv](https://storage.googleapis.com/dm-perception-test/misc/grounded_question_valid_id_list.csv) | [grounded_question_test_id_list.csv](https://storage.googleapis.com/dm-perception-test/misc/grounded_question_test_id_list.csv) |"
+      },
+      {
+        "line": 82,
+        "text": "| Single Object Tracking     | Valid  |  [sot_valid_videos_challenge2023.zip (11.6GB)](https://storage.googleapis.com/dm-perception-test/zip_data/sot_valid_videos_challenge2023.zip)      |  N/A    |  [sot_valid_annotations_challenge2023.zip (9MB)](https://storage.googleapis.com/dm-perception-test/zip_data/sot_valid_annotations_challenge2023.zip)    |"
+      },
+      {
+        "line": 83,
+        "text": "| Single Object Tracking     | Test  |  [sot_test_videos_challenge2023.zip (12.1GB)](https://storage.googleapis.com/dm-perception-test/zip_data/sot_test_videos_challenge2023.zip)      |  N/A    |  [sot_test_annotations_challenge2023.zip (613kB)](https://storage.googleapis.com/dm-perception-test/zip_data/sot_test_annotations_challenge2023.zip)    |"
+      },
+      {
+        "line": 91,
+        "text": "| Single Point Tracking     | Train  | [point_tracking_train_videos.zip (398.4MB)](https://storage.googleapis.com/dm-perception-test/zip_data/point_tracking_train_videos.zip)    |  N/A   | [point_tracking_train_annotations.zip (4.7MB)](https://storage.googleapis.com/dm-perception-test/zip_data/point_tracking_train_annotations.zip)    |"
+      },
+      {
+        "line": 92,
+        "text": "| Single Point Tracking     | Valid  |  [point_tracking_valid_videos.zip (1.1GB)](https://storage.googleapis.com/dm-perception-test/zip_data/point_tracking_valid_videos.zip)    |  N/A   | [point_tracking_valid_annotations.zip (11.1MB)](https://storage.googleapis.com/dm-perception-test/zip_data/point_tracking_valid_annotations.zip)    |"
+      },
+      {
+        "line": 93,
+        "text": "| Single Point Tracking     | Test  |  [point_tracking_test_videos.zip (691MB)](https://storage.googleapis.com/dm-perception-test/zip_data/point_tracking_test_videos.zip)    |  N/A   | [point_tracking_test_annotations.zip (42.2kB)](https://storage.googleapis.com/dm-perception-test/zip_data/point_tracking_test_annotations.zip)    |"
+      },
+      {
+        "line": 101,
+        "text": "| Temporal Action Localisation          | Train  |  Use full split download above   | Use full split download above |  [action_localisation_train_annotations.zip (217kB)](https://storage.googleapis.com/dm-perception-test/zip_data/action_localisation_train_annotations.zip)   | [action_localisation_train_video_features.zip (81.7MB)](https://storage.googleapis.com/dm-perception-test/zip_data/action_localisation_train_video_features.zip)    |"
+      },
+      {
+        "line": 102,
+        "text": "| Temporal Action Localisation          | Valid   |  Use full split download above   | Use full split download above |  [challenge_action_localisation_valid_annotations.zip (558kB)](https://storage.googleapis.com/dm-perception-test/zip_data/challenge_action_localisation_valid_annotations.zip)   | [action_localisation_valid_video_features.zip (219.2MB)](https://storage.googleapis.com/dm-perception-test/zip_data/action_localisation_valid_video_features.zip)     |"
+      },
+      {
+        "line": 103,
+        "text": "| Temporal Action Localisation          | Test   |  Use full split download above   | Use full split download above | N/A | [action_localisation_test_video_features.zip (131.7MB)](https://storage.googleapis.com/dm-perception-test/zip_data/action_localisation_test_video_features.zip)     |"
+      },
+      {
+        "line": 112,
+        "text": "| Temporal Sound Localisation          | Train  |  Use full split download above   | Use full split download above |  [sound_localisation_train_annotations.zip (363kB)](https://storage.googleapis.com/dm-perception-test/zip_data/sound_localisation_train_annotations.zip)   | [sound_localisation_train_audio_features.zip (109.1MB)](https://storage.googleapis.com/dm-perception-test/zip_data/sound_localisation_train_audio_features.zip)    |"
+      },
+      {
+        "line": 113,
+        "text": "| Temporal Sound Localisation          | Valid   |  Use full split download above   | Use full split download above |  [challenge_sound_localisation_valid_annotations.zip (552kB)](https://storage.googleapis.com/dm-perception-test/zip_data/challenge_sound_localisation_valid_annotations.zip)   | [sound_localisation_valid_audio_features.zip (291.4MB)](https://storage.googleapis.com/dm-perception-test/zip_data/sound_localisation_valid_audio_features.zip)     |"
+      },
+      {
+        "line": 114,
+        "text": "| Temporal Sound Localisation          | Test   |  Use full split download above   | Use full split download above | N/A | [sound_localisation_test_video_features.zip (177.2MB)](https://storage.googleapis.com/dm-perception-test/zip_data/sound_localisation_test_audio_features.zip)     |"
+      },
+      {
+        "line": 122,
+        "text": "| Multiple-Choice Video QA          | Train  |  Use full split download above   | Use full split download above |  [mc_question_train_annotations.zip (85kB)](https://storage.googleapis.com/dm-perception-test/zip_data/mc_question_train_annotations.zip), [cut_frame_mapping_train.json](https://storage.googleapis.com/dm-perception-test/misc/cut_frame_mapping_train.json)  |"
+      },
+      {
+        "line": 123,
+        "text": "| Multiple-Choice Video QA          | Valid   |  Use full split download above   | Use full split download above |  [mc_question_valid_annotations.zip (200kB)](https://storage.googleapis.com/dm-perception-test/zip_data/mc_question_valid_annotations.zip), [cut_frame_mapping_valid.json](https://storage.googleapis.com/dm-perception-test/misc/cut_frame_mapping_valid.json)    |"
+      },
+      {
+        "line": 124,
+        "text": "| Multiple-Choice Video QA          | Test   |  Use full split download above   | Use full split download above |  [mc_question_test_annotations.zip (200kB)](https://storage.googleapis.com/dm-perception-test/zip_data/mc_question_test_annotations.zip)   |"
+      },
+      {
+        "line": 131,
+        "text": "| Grounded Video QA         | Train  | [grounded_question_train_videos.zip (7.3GB)](https://storage.googleapis.com/dm-perception-test/zip_data/grounded_question_train_videos.zip) | [grounded_question_train_audios.zip (3.4GB)](https://storage.googleapis.com/dm-perception-test/zip_data/grounded_question_train_audios.zip) | [grounded_question_train_annotations.zip (6.1MB)](https://storage.googleapis.com/dm-perception-test/zip_data/grounded_question_train_annotations.zip)   |"
+      },
+      {
+        "line": 132,
+        "text": "| Grounded Video QA         | Valid  | [grounded_question_valid_videos.zip (19.3GB)](https://storage.googleapis.com/dm-perception-test/zip_data/grounded_question_valid_videos.zip) | [grounded_question_valid_audios.zip (9.1GB)](https://storage.googleapis.com/dm-perception-test/zip_data/grounded_question_valid_audios.zip) | [grounded_question_valid_annotations.zip (16.8MB)](https://storage.googleapis.com/dm-perception-test/zip_data/grounded_question_valid_annotations.zip)   |"
+      },
+      {
+        "line": 133,
+        "text": "| Grounded Video QA         | Test  | [grounded_question_test_videos.zip (11.3GB)](https://storage.googleapis.com/dm-perception-test/zip_data/grounded_question_test_videos.zip) | | [grounded_question_test_annotations.zip (17.5kB)](https://storage.googleapis.com/dm-perception-test/zip_data/grounded_question_test_annotations.zip)   |"
+      },
+      {
+        "line": 142,
+        "text": "| Single Object Tracking    | [Static](https://github.com/deepmind/perception_test/blob/main/baselines/single_object_tracking.ipynb) | Static object baseline. |"
+      },
+      {
+        "line": 143,
+        "text": "| Single Point Tracking     | [Static](https://github.com/deepmind/perception_test/blob/main/baselines/single_point_tracking.ipynb) | Static point baseline. |"
+      },
+      {
+        "line": 144,
+        "text": "| Temporal Action Localisation | [ActionFormer](https://github.com/deepmind/perception_test/blob/main/baselines/temporal_action_localisation.ipynb) | [ActionFormer model](https://github.com/ptchallenge-workshop/actionformer_release_PT) fine-tuned on Perception Test data. |"
+      },
+      {
+        "line": 145,
+        "text": "| Temporal Sound Localisation  | [ActionFormer](https://github.com/deepmind/perception_test/blob/main/baselines/temporal_sound_localisation.ipynb) | [ActionFormer model](https://github.com/ptchallenge-workshop/actionformer_release_PT) fine-tuned on Perception Test data. |"
+      },
+      {
+        "line": 146,
+        "text": "| Multiple-Choice Video QA   | [Frequency](https://github.com/deepmind/perception_test/blob/main/baselines/mc_vqa.ipynb)           | Frequency baseline using training question/answer pairs. More details are provided in the paper. |"
+      },
+      {
+        "line": 147,
+        "text": "| Grounded Video QA        | [MDETR + static](https://github.com/deepmind/perception_test/blob/main/baselines/grounded_vqa.ipynb)       | [MDETR](https://github.com/facebookresearch/multimodal/tree/main) open-vocabulary object detections kept static throughout the video. |"
+      },
+      {
+        "line": 166,
+        "text": "## Perception Test annotations"
+      },
+      {
+        "line": 168,
+        "text": "**Explore the annotations**: [data_visualisation.ipynb](https://github.com/deepmind/perception_test/blob/main/data_visualisation.ipynb)"
+      },
+      {
+        "line": 276,
+        "text": "If you have any questions, feedback, or require support regarding the Perception Test dataset or challenge, please contact us at **perception-test@google.com**."
+      },
+      {
+        "line": 282,
+        "text": "      title={Perception Test: A Diagnostic Benchmark for Multimodal Video Models}, "
+      }
+    ]
+  },
+  {
+    "file": "qwen_card.md",
+    "matches": []
+  },
+  {
+    "file": "qwen_repo.md",
+    "matches": []
+  },
+  {
+    "file": "qwen_report.txt",
+    "matches": []
+  }
+]

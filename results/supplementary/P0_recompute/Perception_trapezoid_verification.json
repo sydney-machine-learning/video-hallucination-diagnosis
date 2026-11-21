@@ -1,0 +1,8 @@
+{
+  "dataset": "Perception",
+  "definition": "trapezoid",
+  "seconds": 153.53100000000268,
+  "iterations": 10000,
+  "seed": 20260803,
+  "max_absolute_difference_from_archived_distribution": 0.0
+}

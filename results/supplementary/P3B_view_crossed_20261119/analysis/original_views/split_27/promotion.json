@@ -1,0 +1,19 @@
+{
+  "selected": "target_logistic",
+  "candidates": [
+    {
+      "candidate": "source_trace_hgb",
+      "gain": 15.24327765699594,
+      "lower": 1.3484702999447946,
+      "margin": 0.5,
+      "pass": true
+    },
+    {
+      "candidate": "target_logistic",
+      "gain": 13.650722164035889,
+      "lower": 4.825691588854847,
+      "margin": 0.0,
+      "pass": true
+    }
+  ]
+}

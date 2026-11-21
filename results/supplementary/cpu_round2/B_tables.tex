@@ -1,0 +1,223 @@
+% all; equal mean across three development models.
+\begin{tabular}{lrr}
+\hline
+Score & AUROC [95\% CI] & AURC reduction [95\% CI] \\
+\hline
+raw\_confidence & 0.619 [0.590, 0.646] & 0.00 [0.00, 0.00] \\
+base\_vote & 0.558 [0.543, 0.573] & -19.11 [-38.75, -15.45] \\
+base\_vote\_then\_confidence & 0.624 [0.599, 0.647] & -0.06 [-2.62, 1.83] \\
+base\_support & 0.624 [0.594, 0.652] & -3.31 [-7.02, 0.11] \\
+graph\_lr & 0.620 [0.591, 0.648] & -3.77 [-7.46, -0.37] \\
+graph\_hgb & 0.633 [0.601, 0.662] & -2.14 [-14.52, -0.09] \\
+\hline
+\end{tabular}
+
+% visible; equal mean across three development models.
+\begin{tabular}{lrr}
+\hline
+Score & AUROC [95\% CI] & AURC reduction [95\% CI] \\
+\hline
+raw\_confidence & 0.636 [0.592, 0.680] & 0.00 [0.00, 0.00] \\
+base\_vote & 0.574 [0.545, 0.606] & -23.21 [-65.16, -15.46] \\
+base\_vote\_then\_confidence & 0.639 [0.600, 0.678] & -1.28 [-7.29, 2.15] \\
+base\_support & 0.615 [0.567, 0.664] & -16.00 [-26.79, -7.11] \\
+graph\_lr & 0.603 [0.554, 0.651] & -17.59 [-28.26, -8.71] \\
+graph\_hgb & 0.603 [0.556, 0.652] & -19.17 [-45.46, -10.02] \\
+\hline
+\end{tabular}
+
+% counterintuitive; equal mean across three development models.
+\begin{tabular}{lrr}
+\hline
+Score & AUROC [95\% CI] & AURC reduction [95\% CI] \\
+\hline
+raw\_confidence & 0.384 [0.315, 0.453] & 0.00 [0.00, 0.00] \\
+base\_vote & 0.327 [0.262, 0.385] & -11.84 [-17.96, -1.48] \\
+base\_vote\_then\_confidence & 0.311 [0.236, 0.382] & -6.36 [-10.52, -3.03] \\
+base\_support & 0.317 [0.236, 0.396] & -7.83 [-14.04, -3.16] \\
+graph\_lr & 0.323 [0.245, 0.397] & -7.20 [-13.28, -2.64] \\
+graph\_hgb & 0.437 [0.364, 0.511] & -5.48 [-9.16, -1.27] \\
+\hline
+\end{tabular}
+
+% hidden; equal mean across three development models.
+\begin{tabular}{lrr}
+\hline
+Score & AUROC [95\% CI] & AURC reduction [95\% CI] \\
+\hline
+raw\_confidence & 0.642 [0.592, 0.693] & 0.00 [0.00, 0.00] \\
+base\_vote & 0.658 [0.616, 0.706] & 1.71 [-50.25, 15.74] \\
+base\_vote\_then\_confidence & 0.702 [0.653, 0.753] & 10.88 [4.85, 18.00] \\
+base\_support & 0.705 [0.647, 0.764] & 8.37 [-4.78, 19.99] \\
+graph\_lr & 0.715 [0.656, 0.773] & 10.78 [-2.44, 22.42] \\
+graph\_hgb & 0.706 [0.645, 0.768] & 12.48 [-10.19, 22.37] \\
+\hline
+\end{tabular}
+
+% OpenGVLab/InternVL3_5-4B-Instruct / all
+\begin{tabular}{lrr}
+\hline
+Score & AUROC [95\% CI] & AURC reduction [95\% CI] \\
+\hline
+raw\_confidence & 0.645 [0.603, 0.684] & 0.00 [0.00, 0.00] \\
+base\_vote & 0.490 [0.463, 0.518] & -38.14 [-65.60, -30.55] \\
+base\_vote\_then\_confidence & 0.594 [0.556, 0.630] & -7.18 [-11.16, -3.78] \\
+base\_support & 0.563 [0.526, 0.598] & -19.18 [-25.95, -13.05] \\
+graph\_lr & 0.570 [0.533, 0.606] & -16.48 [-22.18, -11.37] \\
+graph\_hgb & 0.578 [0.539, 0.615] & -17.47 [-34.29, -14.15] \\
+\hline
+\end{tabular}
+
+% OpenGVLab/InternVL3_5-4B-Instruct / visible
+\begin{tabular}{lrr}
+\hline
+Score & AUROC [95\% CI] & AURC reduction [95\% CI] \\
+\hline
+raw\_confidence & 0.653 [0.592, 0.711] & 0.00 [0.00, 0.00] \\
+base\_vote & 0.570 [0.519, 0.622] & -23.34 [-66.25, -13.80] \\
+base\_vote\_then\_confidence & 0.645 [0.584, 0.703] & -1.74 [-6.20, 2.16] \\
+base\_support & 0.612 [0.548, 0.675] & -15.78 [-25.19, -7.17] \\
+graph\_lr & 0.605 [0.543, 0.667] & -14.73 [-22.74, -7.50] \\
+graph\_hgb & 0.597 [0.536, 0.660] & -20.31 [-48.22, -11.13] \\
+\hline
+\end{tabular}
+
+% OpenGVLab/InternVL3_5-4B-Instruct / counterintuitive
+\begin{tabular}{lrr}
+\hline
+Score & AUROC [95\% CI] & AURC reduction [95\% CI] \\
+\hline
+raw\_confidence & 0.523 [0.434, 0.610] & 0.00 [0.00, 0.00] \\
+base\_vote & 0.159 [0.103, 0.221] & -41.69 [-58.87, -21.79] \\
+base\_vote\_then\_confidence & 0.234 [0.149, 0.327] & -22.39 [-34.98, -13.32] \\
+base\_support & 0.170 [0.106, 0.242] & -35.67 [-52.49, -23.13] \\
+graph\_lr & 0.201 [0.131, 0.278] & -32.51 [-47.81, -21.15] \\
+graph\_hgb & 0.304 [0.227, 0.384] & -30.32 [-43.44, -18.55] \\
+\hline
+\end{tabular}
+
+% OpenGVLab/InternVL3_5-4B-Instruct / hidden
+\begin{tabular}{lrr}
+\hline
+Score & AUROC [95\% CI] & AURC reduction [95\% CI] \\
+\hline
+raw\_confidence & 0.649 [0.572, 0.724] & 0.00 [0.00, 0.00] \\
+base\_vote & 0.594 [0.528, 0.664] & -13.15 [-81.11, 6.23] \\
+base\_vote\_then\_confidence & 0.664 [0.586, 0.739] & 4.36 [-5.82, 14.02] \\
+base\_support & 0.653 [0.573, 0.730] & -4.91 [-25.57, 13.98] \\
+graph\_lr & 0.667 [0.587, 0.742] & -0.68 [-16.68, 15.39] \\
+graph\_hgb & 0.657 [0.578, 0.734] & 1.10 [-28.37, 14.49] \\
+\hline
+\end{tabular}
+
+% Qwen/Qwen3-VL-4B-Instruct / all
+\begin{tabular}{lrr}
+\hline
+Score & AUROC [95\% CI] & AURC reduction [95\% CI] \\
+\hline
+raw\_confidence & 0.646 [0.612, 0.679] & 0.00 [0.00, 0.00] \\
+base\_vote & 0.552 [0.520, 0.583] & -30.15 [-52.42, -24.93] \\
+base\_vote\_then\_confidence & 0.639 [0.602, 0.674] & -1.13 [-6.51, 2.48] \\
+base\_support & 0.617 [0.578, 0.654] & -12.86 [-21.54, -4.91] \\
+graph\_lr & 0.617 [0.578, 0.654] & -13.07 [-21.74, -5.28] \\
+graph\_hgb & 0.631 [0.592, 0.668] & -10.95 [-26.09, -5.69] \\
+\hline
+\end{tabular}
+
+% Qwen/Qwen3-VL-4B-Instruct / visible
+\begin{tabular}{lrr}
+\hline
+Score & AUROC [95\% CI] & AURC reduction [95\% CI] \\
+\hline
+raw\_confidence & 0.719 [0.663, 0.772] & 0.00 [0.00, 0.00] \\
+base\_vote & 0.498 [0.448, 0.550] & -70.92 [-139.26, -53.01] \\
+base\_vote\_then\_confidence & 0.656 [0.599, 0.712] & -9.79 [-25.84, -1.53] \\
+base\_support & 0.541 [0.476, 0.605] & -60.93 [-90.57, -36.89] \\
+graph\_lr & 0.542 [0.477, 0.605] & -61.34 [-90.62, -37.35] \\
+graph\_hgb & 0.544 [0.481, 0.608] & -62.99 [-109.23, -42.07] \\
+\hline
+\end{tabular}
+
+% Qwen/Qwen3-VL-4B-Instruct / counterintuitive
+\begin{tabular}{lrr}
+\hline
+Score & AUROC [95\% CI] & AURC reduction [95\% CI] \\
+\hline
+raw\_confidence & 0.215 [0.141, 0.298] & 0.00 [0.00, 0.00] \\
+base\_vote & 0.362 [0.269, 0.456] & 5.88 [2.34, 14.87] \\
+base\_vote\_then\_confidence & 0.266 [0.180, 0.359] & 1.82 [0.03, 3.96] \\
+base\_support & 0.349 [0.246, 0.458] & 9.08 [3.28, 14.61] \\
+graph\_lr & 0.322 [0.225, 0.428] & 7.81 [2.14, 13.20] \\
+graph\_hgb & 0.459 [0.363, 0.559] & 9.95 [5.76, 15.78] \\
+\hline
+\end{tabular}
+
+% Qwen/Qwen3-VL-4B-Instruct / hidden
+\begin{tabular}{lrr}
+\hline
+Score & AUROC [95\% CI] & AURC reduction [95\% CI] \\
+\hline
+raw\_confidence & 0.705 [0.639, 0.769] & 0.00 [0.00, 0.00] \\
+base\_vote & 0.687 [0.624, 0.748] & -5.83 [-72.88, 14.71] \\
+base\_vote\_then\_confidence & 0.764 [0.698, 0.825] & 11.38 [3.54, 20.99] \\
+base\_support & 0.730 [0.659, 0.798] & 1.44 [-25.40, 20.23] \\
+graph\_lr & 0.748 [0.679, 0.814] & 6.51 [-19.61, 24.67] \\
+graph\_hgb & 0.732 [0.662, 0.800] & 5.96 [-28.89, 23.85] \\
+\hline
+\end{tabular}
+
+% lmms-lab-encoder/LLaVA-OneVision-2-8B-Instruct / all
+\begin{tabular}{lrr}
+\hline
+Score & AUROC [95\% CI] & AURC reduction [95\% CI] \\
+\hline
+raw\_confidence & 0.567 [0.528, 0.604] & 0.00 [0.00, 0.00] \\
+base\_vote & 0.632 [0.602, 0.662] & 10.97 [-3.96, 13.73] \\
+base\_vote\_then\_confidence & 0.639 [0.600, 0.676] & 8.13 [5.50, 10.89] \\
+base\_support & 0.692 [0.654, 0.728] & 22.10 [17.69, 26.27] \\
+graph\_lr & 0.674 [0.635, 0.710] & 18.24 [14.02, 22.19] \\
+graph\_hgb & 0.688 [0.649, 0.725] & 22.02 [11.25, 24.46] \\
+\hline
+\end{tabular}
+
+% lmms-lab-encoder/LLaVA-OneVision-2-8B-Instruct / visible
+\begin{tabular}{lrr}
+\hline
+Score & AUROC [95\% CI] & AURC reduction [95\% CI] \\
+\hline
+raw\_confidence & 0.535 [0.473, 0.598] & 0.00 [0.00, 0.00] \\
+base\_vote & 0.653 [0.604, 0.701] & 24.61 [-1.47, 29.62] \\
+base\_vote\_then\_confidence & 0.615 [0.550, 0.679] & 7.68 [4.20, 11.53] \\
+base\_support & 0.692 [0.632, 0.750] & 28.71 [21.88, 35.19] \\
+graph\_lr & 0.661 [0.599, 0.721] & 23.29 [16.36, 29.71] \\
+graph\_hgb & 0.668 [0.609, 0.725] & 25.81 [8.79, 31.52] \\
+\hline
+\end{tabular}
+
+% lmms-lab-encoder/LLaVA-OneVision-2-8B-Instruct / counterintuitive
+\begin{tabular}{lrr}
+\hline
+Score & AUROC [95\% CI] & AURC reduction [95\% CI] \\
+\hline
+raw\_confidence & 0.414 [0.294, 0.537] & 0.00 [0.00, 0.00] \\
+base\_vote & 0.459 [0.358, 0.557] & 0.28 [-4.66, 9.43] \\
+base\_vote\_then\_confidence & 0.433 [0.314, 0.555] & 1.48 [-0.79, 4.76] \\
+base\_support & 0.432 [0.314, 0.558] & 3.10 [-2.98, 8.45] \\
+graph\_lr & 0.445 [0.331, 0.561] & 3.09 [-2.60, 8.06] \\
+graph\_hgb & 0.549 [0.445, 0.655] & 3.92 [-0.50, 9.31] \\
+\hline
+\end{tabular}
+
+% lmms-lab-encoder/LLaVA-OneVision-2-8B-Instruct / hidden
+\begin{tabular}{lrr}
+\hline
+Score & AUROC [95\% CI] & AURC reduction [95\% CI] \\
+\hline
+raw\_confidence & 0.572 [0.498, 0.646] & 0.00 [0.00, 0.00] \\
+base\_vote & 0.693 [0.633, 0.756] & 24.12 [-14.05, 36.30] \\
+base\_vote\_then\_confidence & 0.679 [0.603, 0.754] & 16.88 [9.15, 26.51] \\
+base\_support & 0.733 [0.665, 0.799] & 28.57 [14.60, 42.00] \\
+graph\_lr & 0.729 [0.660, 0.797] & 26.52 [13.03, 39.74] \\
+graph\_hgb & 0.727 [0.657, 0.796] & 30.38 [9.68, 41.19] \\
+\hline
+\end{tabular}

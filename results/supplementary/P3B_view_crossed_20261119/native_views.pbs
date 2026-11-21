@@ -1,0 +1,26 @@
+#!/bin/bash
+# Adapted from katana/prefill_perception_2gpu_2h.pbs; one GPU, isolated outputs.
+#PBS -N vh_crossed
+#PBS -l select=1:ncpus=8:ngpus=1:mem=96gb:gpu_model=RP6000
+#PBS -l walltime=00:55:00
+#PBS -j oe
+#PBS -m n
+set -Eeuo pipefail
+umask 077
+module purge
+module load gcc/12.2.0 python/3.11.3 cuda/13.0.0
+ROOT=/srv/scratch/z5611125/video_hallucination_supplementary/results/supplementary/P3B_view_crossed_20261119
+cd "$ROOT"
+exec > >(tee -a "pilot.${PBS_JOBID}.log") 2>&1
+export PYTHONPATH="/srv/scratch/z5611125/video_hallucination_supplementary/results/supplementary/P3B_original_panel_20261119/python:/srv/scratch/z5611125/video_hallucination_supplementary/results/supplementary/P3B_pilot_20261119/python:/srv/scratch/z5611125/b21_pylib"
+export PYTHONDONTWRITEBYTECODE=1 PYTHONUNBUFFERED=1 TOKENIZERS_PARALLELISM=false OMP_NUM_THREADS=4
+export HF_HUB_OFFLINE=1 TRANSFORMERS_OFFLINE=1 HF_HUB_DISABLE_IMPLICIT_TOKEN=1
+export HF_HUB_DISABLE_TELEMETRY=1 DO_NOT_TRACK=1
+unset HF_TOKEN HUGGING_FACE_HUB_TOKEN OPENAI_API_KEY DEEPSEEK_API_KEY
+export XDG_CACHE_HOME="${TMPDIR:?}/phaseguard_cache" TRITON_CACHE_DIR="${TMPDIR}/phaseguard_triton"
+mkdir -p "$XDG_CACHE_HOME" "$TRITON_CACHE_DIR"
+test -s CPU_INPUT_VALIDATION.json
+export HF_MODULES_CACHE="$ROOT/hf_modules"
+nvidia-smi
+PY=/srv/scratch/z5611125/venvs/pilot/bin/python
+"$PY" -B run_staged.py

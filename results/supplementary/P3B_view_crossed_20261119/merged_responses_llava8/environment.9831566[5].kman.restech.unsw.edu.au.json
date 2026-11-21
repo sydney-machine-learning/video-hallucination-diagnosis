@@ -1,0 +1,43 @@
+{
+  "torch": "2.14.0+cu130",
+  "transformers": "5.20.2",
+  "av": "16.0.1",
+  "numpy": "2.3.5",
+  "gpu": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+  "gpu_memory": 102038896640,
+  "model_load_seconds": 2.435556047013961,
+  "token_groups": {
+    "A": [
+      32,
+      362,
+      22985
+    ],
+    "B": [
+      33,
+      425,
+      12791
+    ],
+    "C": [
+      34,
+      356,
+      6258
+    ],
+    "D": [
+      35,
+      422,
+      10957
+    ],
+    "E": [
+      36,
+      468,
+      22784
+    ]
+  },
+  "processor": {
+    "class": "LlavaOnevision2Processor",
+    "adapter_sha256": "4b3ca4cb5d34767bed91edbd1661460c1ff7bf8a36fc69f45edfad63615b4f12"
+  },
+  "protocol_sha256": "0451fc8b2f3dda9d40dd7e90087013cc3299aac6ade97c0b68107b6e9e39d3b2",
+  "runner_sha256": "e43c48ce64d2cf717812da41f3efbc97f3cd9bda898477fdd85467f5883a341d",
+  "model_manifest_sha256": "994342aef6e972fde7526f7a1ffded784580957f193d48cb123618f51a1ce3f7"
+}

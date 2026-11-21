@@ -1,0 +1,263 @@
+{
+  "checked_unix": 1795079150.3846462,
+  "tasks": [
+    {
+      "protocol": "phase_views",
+      "model": "internvl14",
+      "job": "9830178.kman.restech.unsw.edu.au",
+      "bank_directory": "responses_internvl14",
+      "scheduler": {
+        "resources_used.walltime": "00:40:35",
+        "job_state": "F",
+        "Exit_status": "0"
+      },
+      "qstat_ok": true,
+      "complete": true,
+      "validation": {
+        "passed": true,
+        "model": "internvl14",
+        "videos": 500,
+        "questions": 1888,
+        "calls": 7552,
+        "labels_read": false,
+        "frame_indices_identical_to_qwen8": true,
+        "all_video_hashes_identical": true,
+        "pilot_records_preserved": true,
+        "responses_sha256": "9ba438e5d50a3c6ee902918c3a09ca830cbf3185c25f64c0d7a35bd0788c67c6",
+        "revision": "72c82460a2c05a3bc2b47be230c44edc88e86ed4"
+      },
+      "pilot": {
+        "passed": true,
+        "model": "internvl14",
+        "questions": 205,
+        "videos": 50,
+        "calls": 820,
+        "labels_read": false,
+        "same_frames_and_video_hashes_as_qwen8": true,
+        "full_500_video_estimate_seconds": 1856.0748607319745,
+        "remaining_estimate_seconds": 1657.6611870622926,
+        "peak_memory_bytes": 30615079936,
+        "responses_sha256": "c0b1859ae5491a5b11c6e6e529ffdc5ad5502a88af4b641de13c6f4302f2908a",
+        "selection_on_outcomes": false
+      },
+      "latest_logged_calls": 7552,
+      "error_tail": null,
+      "budget_gate": {
+        "model": "internvl14",
+        "elapsed_seconds": 655.0909432220506,
+        "available_seconds": 5764.909058560035,
+        "estimated_remaining_seconds": 1657.6611870622926,
+        "safety_multiplier": 1.5,
+        "labels_used": false,
+        "continue": true
+      }
+    },
+    {
+      "protocol": "phase_views",
+      "model": "llava8",
+      "job": "9829636.kman.restech.unsw.edu.au",
+      "bank_directory": "responses_llava8",
+      "scheduler": {
+        "resources_used.walltime": "01:01:35",
+        "job_state": "F",
+        "Exit_status": "0"
+      },
+      "qstat_ok": true,
+      "complete": true,
+      "validation": {
+        "passed": true,
+        "model": "llava8",
+        "videos": 500,
+        "questions": 1888,
+        "calls": 7552,
+        "labels_read": false,
+        "frame_indices_identical_to_qwen8": true,
+        "all_video_hashes_identical": true,
+        "pilot_records_preserved": true,
+        "responses_sha256": "8ed6d375b76b53fd63c06cce3a8ca4126424ede43c37fa0fc65256d34b1a2f5d",
+        "revision": "802f16c8346a062fef7ddf92b2bd64a770a50a1a"
+      },
+      "pilot": {
+        "passed": true,
+        "model": "llava8",
+        "questions": 205,
+        "videos": 50,
+        "calls": 820,
+        "labels_read": false,
+        "same_frames_and_video_hashes_as_qwen8": true,
+        "full_500_video_estimate_seconds": 3455.133527948278,
+        "remaining_estimate_seconds": 3082.4591299579374,
+        "peak_memory_bytes": 18944077312,
+        "responses_sha256": "e677183f0a65b511f6662aca7318c31e61176ee5644d593e1469f86950e175c1",
+        "selection_on_outcomes": false
+      },
+      "latest_logged_calls": 7552,
+      "error_tail": null,
+      "budget_gate": {
+        "model": "llava8",
+        "elapsed_seconds": 726.8542183879763,
+        "available_seconds": 5693.145783665008,
+        "estimated_remaining_seconds": 3082.4591299579374,
+        "safety_multiplier": 1.5,
+        "labels_used": false,
+        "continue": true
+      }
+    },
+    {
+      "protocol": "original_views",
+      "model": "qwen8",
+      "job": "9829906.kman.restech.unsw.edu.au",
+      "bank_directory": "merged_responses_qwen8",
+      "scheduler": {
+        "resources_used.walltime": "00:19:57",
+        "job_state": "F",
+        "Exit_status": "0"
+      },
+      "qstat_ok": true,
+      "complete": true,
+      "validation": {
+        "passed": true,
+        "labels_read": false,
+        "model": "Qwen/Qwen3-VL-8B-Instruct",
+        "videos": 500,
+        "questions": 1888,
+        "calls": 7552,
+        "responses_sha256": "1bfa47f60ab3cd07750c96b17f143a63ed04fa8f6f41d8d80b480767fda7d51e",
+        "full_500_video_estimate_seconds": 7887.631211508182,
+        "remaining_estimate_seconds": 17.830669415998273,
+        "peak_memory_bytes": 21935470592,
+        "exact_archived_sampling": true
+      },
+      "pilot": {
+        "passed": true,
+        "labels_read": false,
+        "model": "Qwen/Qwen3-VL-8B-Instruct",
+        "videos": 50,
+        "questions": 205,
+        "calls": 820,
+        "responses_sha256": "6e564c823201d77759c1a8b089f6afa9879a4530096a5d8a493c7f1b5ef7ae28",
+        "full_500_video_estimate_seconds": 8145.067999453093,
+        "remaining_estimate_seconds": 7263.691489140661,
+        "peak_memory_bytes": 21927726080,
+        "exact_archived_sampling": true
+      },
+      "latest_logged_calls": 820,
+      "error_tail": null,
+      "budget_gate": {
+        "model": "qwen8",
+        "elapsed_seconds": 1194.4875769088976,
+        "available_seconds": 1925.5124246930936,
+        "estimated_remaining_seconds": 7263.691489140661,
+        "safety_multiplier": 1.5,
+        "labels_used": false,
+        "continue": false
+      },
+      "shards_total": 2,
+      "shards_complete": 2
+    },
+    {
+      "protocol": "original_views",
+      "model": "internvl14",
+      "job": "9830179.kman.restech.unsw.edu.au",
+      "bank_directory": "merged_responses_internvl14",
+      "scheduler": {
+        "resources_used.walltime": "00:26:49",
+        "job_state": "F",
+        "Exit_status": "0"
+      },
+      "qstat_ok": true,
+      "complete": true,
+      "validation": {
+        "passed": true,
+        "labels_read": false,
+        "model": "OpenGVLab/InternVL3_5-14B-Instruct",
+        "videos": 500,
+        "questions": 1888,
+        "calls": 7552,
+        "responses_sha256": "96da51984040c4da55092b1990ef6a968b4699267b2bebb5286dcf035969fe11",
+        "full_500_video_estimate_seconds": 10479.9420662981,
+        "remaining_estimate_seconds": 29.212735978886485,
+        "peak_memory_bytes": 48786554368,
+        "exact_archived_sampling": true
+      },
+      "pilot": {
+        "passed": true,
+        "labels_read": false,
+        "model": "OpenGVLab/InternVL3_5-14B-Instruct",
+        "videos": 50,
+        "questions": 205,
+        "calls": 820,
+        "responses_sha256": "9602ebbf70d2106140f9a5bd0331d4d331e98fa83513b400b8aa8474a51124fe",
+        "full_500_video_estimate_seconds": 10471.549209726594,
+        "remaining_estimate_seconds": 9337.759391371595,
+        "peak_memory_bytes": 48629752832,
+        "exact_archived_sampling": true
+      },
+      "latest_logged_calls": 820,
+      "error_tail": null,
+      "budget_gate": {
+        "model": "internvl14",
+        "elapsed_seconds": 1607.5598332709633,
+        "available_seconds": 1512.440168480971,
+        "estimated_remaining_seconds": 9337.759391371595,
+        "safety_multiplier": 1.5,
+        "labels_used": false,
+        "continue": false
+      },
+      "shards_total": 3,
+      "shards_complete": 3
+    },
+    {
+      "protocol": "original_views",
+      "model": "llava8",
+      "job": "9830954.kman.restech.unsw.edu.au",
+      "bank_directory": "merged_responses_llava8",
+      "scheduler": {
+        "resources_used.walltime": "00:10:24",
+        "job_state": "F",
+        "Exit_status": "0"
+      },
+      "qstat_ok": true,
+      "complete": true,
+      "validation": {
+        "passed": true,
+        "labels_read": false,
+        "model": "lmms-lab-encoder/LLaVA-OneVision-2-8B-Instruct",
+        "videos": 500,
+        "questions": 1888,
+        "calls": 7552,
+        "responses_sha256": "d72105606dc802103a431cfb591612ea60bc7d8f840ebd653f12e25959d17ec5",
+        "full_500_video_estimate_seconds": 28453.403500550306,
+        "remaining_estimate_seconds": 24.197182263942523,
+        "peak_memory_bytes": 39310227968,
+        "exact_archived_sampling": true
+      },
+      "pilot": {
+        "passed": true,
+        "labels_read": false,
+        "model": "lmms-lab-encoder/LLaVA-OneVision-2-8B-Instruct",
+        "videos": 50,
+        "questions": 205,
+        "calls": 820,
+        "responses_sha256": "a0566ac3139d3759b28b760637e5145e89fbe29be081aebd70da8f7a4b2936ad",
+        "full_500_video_estimate_seconds": 30106.716174156,
+        "remaining_estimate_seconds": 26840.464550393463,
+        "peak_memory_bytes": 39310227968,
+        "exact_archived_sampling": true
+      },
+      "latest_logged_calls": 820,
+      "error_tail": null,
+      "budget_gate": {
+        "model": "llava8",
+        "elapsed_seconds": 622.1898094770731,
+        "available_seconds": 2497.8101917339955,
+        "estimated_remaining_seconds": 26840.464550393463,
+        "safety_multiplier": 1.5,
+        "labels_used": false,
+        "continue": false
+      },
+      "shards_total": 8,
+      "shards_complete": 8
+    }
+  ]
+}

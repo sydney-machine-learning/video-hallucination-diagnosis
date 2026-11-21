@@ -1,0 +1,80 @@
+{
+  "status": "passed",
+  "models": [
+    {
+      "model": "internvl14",
+      "rows": 7552,
+      "questions": 1888,
+      "views": 4,
+      "answer_vs_argmax_mismatch": 9,
+      "model_ids": [
+        "OpenGVLab/InternVL3_5-14B-Instruct"
+      ],
+      "revisions": [
+        "72c82460a2c05a3bc2b47be230c44edc88e86ed4"
+      ]
+    },
+    {
+      "model": "qwen8",
+      "rows": 7552,
+      "questions": 1888,
+      "views": 4,
+      "answer_vs_argmax_mismatch": 0,
+      "model_ids": [
+        "Qwen/Qwen3-VL-8B-Instruct"
+      ],
+      "revisions": [
+        "0c351dd01ed87e9c1b53cbc748cba10e6187ff3b"
+      ]
+    },
+    {
+      "model": "llava8",
+      "rows": 7552,
+      "questions": 1888,
+      "views": 4,
+      "answer_vs_argmax_mismatch": 139,
+      "model_ids": [
+        "lmms-lab-encoder/LLaVA-OneVision-2-8B-Instruct"
+      ],
+      "revisions": [
+        "802f16c8346a062fef7ddf92b2bd64a770a50a1a"
+      ]
+    }
+  ],
+  "split_ids": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30
+  ],
+  "split_zero": "reference only",
+  "total_raw_records": 22656,
+  "qwen_feature_match": true,
+  "source_results_unchanged": true
+}

@@ -1,0 +1,14 @@
+{
+  "all_original_tracked_files_unchanged": true,
+  "git_status": "?? results/supplementary/\n",
+  "checkpoint": "S1",
+  "scope_after_user_clarification": "Identify historical definitions; stop further AURC recomputation",
+  "counterfactual_pilot_selection": "unknown_not_evaluated",
+  "gpu_jobs_submitted": 0,
+  "known_unresolved_items": [
+    "target raw responses unavailable in searched locations",
+    "older HERBench analysis source hash unresolved",
+    "scikit-learn environment mismatch for future estimator use"
+  ],
+  "preliminary_outputs": "audit_summary.json and checksum_checks.csv precede remote follow-up; read REPORT.md, checksum_followup.json and development_dependency_resolution.json for final resolution"
+}

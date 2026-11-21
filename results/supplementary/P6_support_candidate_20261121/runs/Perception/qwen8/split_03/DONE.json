@@ -1,0 +1,16 @@
+{
+  "target": "Perception",
+  "model": "qwen8",
+  "split": 3,
+  "rule2_selected": "target_logistic",
+  "rule3_selected": "target_logistic",
+  "rule2_gain": 23.023062717060444,
+  "rule3_gain": 23.023062717060444,
+  "support_gain": 11.48892089212576,
+  "pilot_lr_gain": 23.023062717060444,
+  "rule3_lower_bounds": {
+    "all_view_support": -1.33498819842519,
+    "source_trace_hgb": 1.0461017986075511,
+    "target_logistic": 1.0894184368988766
+  }
+}

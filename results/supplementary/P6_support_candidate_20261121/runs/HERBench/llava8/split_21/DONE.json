@@ -1,0 +1,16 @@
+{
+  "target": "HERBench",
+  "model": "llava8",
+  "split": 21,
+  "rule2_selected": "target_logistic",
+  "rule3_selected": "all_view_support",
+  "rule2_gain": 11.067906556743134,
+  "rule3_gain": 11.003854759668476,
+  "support_gain": 11.003854759668476,
+  "pilot_lr_gain": 11.067906556743134,
+  "rule3_lower_bounds": {
+    "all_view_support": 6.359730463164205,
+    "source_trace_hgb": 2.6380655337711336,
+    "target_logistic": 3.830322861949161
+  }
+}

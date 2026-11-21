@@ -1,0 +1,43 @@
+{
+  "torch": "2.14.0+cu130",
+  "transformers": "4.57.6",
+  "av": "16.0.1",
+  "numpy": "2.3.5",
+  "gpu": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+  "gpu_memory": 102038896640,
+  "model_load_seconds": 6.923932723933831,
+  "token_groups": {
+    "A": [
+      32,
+      362,
+      22985
+    ],
+    "B": [
+      33,
+      425,
+      12791
+    ],
+    "C": [
+      34,
+      356,
+      6258
+    ],
+    "D": [
+      35,
+      422,
+      10957
+    ],
+    "E": [
+      36,
+      468,
+      22784
+    ]
+  },
+  "processor": {
+    "class": "archived InternVL frame adapter",
+    "adapter_sha256": "4b3ca4cb5d34767bed91edbd1661460c1ff7bf8a36fc69f45edfad63615b4f12"
+  },
+  "protocol_sha256": "e8625180305c80efa6595a03d8a85e79e18e3d3e7db81534d86903b6a381aa9e",
+  "runner_sha256": "7ce223dc4d426ee721844458f49ab56a7b4bbb9317b38872768701ca5c55b05d",
+  "model_manifest_sha256": "49a2eae593b5bad187204f9cacb90227d06c762c7324b73241713ac47742870e"
+}

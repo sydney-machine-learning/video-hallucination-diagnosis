@@ -1,0 +1,901 @@
+{
+  "log_hits": [
+    {
+      "path": "/home/z5611125/trace_rc_route/trace_rc_her.o8915415",
+      "sha256": "c4b832d0d2770619515fcc54a5783e2c4aa5c8a17d52c89aa711f12ea7472a42",
+      "total_matching_lines": 15,
+      "matches": [
+        {
+          "line": 37,
+          "text": "Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]"
+        },
+        {
+          "line": 38,
+          "text": "Loading checkpoint shards:  25%|\u2588\u2588\u258c       | 1/4 [00:04<00:12,  4.06s/it]FlashAttention2 is not installed."
+        },
+        {
+          "line": 40,
+          "text": "Loading checkpoint shards:  50%|\u2588\u2588\u2588\u2588\u2588     | 2/4 [00:08<00:08,  4.04s/it]"
+        },
+        {
+          "line": 41,
+          "text": "Loading checkpoint shards:   0%|          | 0/7 [00:00<?, ?it/s]"
+        },
+        {
+          "line": 42,
+          "text": "Loading checkpoint shards:  14%|\u2588\u258d        | 1/7 [00:01<00:08,  1.35s/it]"
+        },
+        {
+          "line": 43,
+          "text": "Loading checkpoint shards:  29%|\u2588\u2588\u258a       | 2/7 [00:02<00:05,  1.14s/it]"
+        },
+        {
+          "line": 44,
+          "text": "Loading checkpoint shards:  43%|\u2588\u2588\u2588\u2588\u258e     | 3/7 [00:03<00:04,  1.09s/it]"
+        },
+        {
+          "line": 45,
+          "text": "Loading checkpoint shards:  75%|\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u258c  | 3/4 [00:12<00:04,  4.09s/it]"
+        },
+        {
+          "line": 46,
+          "text": "Loading checkpoint shards:  57%|\u2588\u2588\u2588\u2588\u2588\u258b    | 4/7 [00:04<00:03,  1.06s/it]"
+        },
+        {
+          "line": 47,
+          "text": "Loading checkpoint shards:  71%|\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u258f  | 5/7 [00:05<00:02,  1.07s/it]"
+        },
+        {
+          "line": 48,
+          "text": "Loading checkpoint shards:  86%|\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u258c | 6/7 [00:06<00:00,  1.04it/s]"
+        },
+        {
+          "line": 49,
+          "text": "Loading checkpoint shards: 100%|\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588| 7/7 [00:06<00:00,  1.46it/s]"
+        },
+        {
+          "line": 50,
+          "text": "Loading checkpoint shards: 100%|\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588| 7/7 [00:06<00:00,  1.10it/s]"
+        },
+        {
+          "line": 52,
+          "text": "Loading checkpoint shards: 100%|\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588| 4/4 [00:19<00:00,  5.43s/it]"
+        },
+        {
+          "line": 53,
+          "text": "Loading checkpoint shards: 100%|\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588| 4/4 [00:19<00:00,  4.93s/it]"
+        }
+      ]
+    },
+    {
+      "path": "/home/z5611125/trace_rc_route/tmp_trace_rc_figure.log",
+      "sha256": "100ddeaf4817a40ce523fb896d014ded04ce33ef08072b2c45e2bef4fadee6bb",
+      "total_matching_lines": 0,
+      "matches": []
+    },
+    {
+      "path": "/home/z5611125/trace_rc_route/PERCEPTION_TEST_EXECUTION_LOG.md",
+      "sha256": "bee58fd5e1d1aa65ae4a848073c982f39d039ffa0fc3f5605369f1d1844a70c5",
+      "total_matching_lines": 8,
+      "matches": [
+        {
+          "line": 7,
+          "text": "- LongVideoBench was rejected because its gated media archive was too large"
+        },
+        {
+          "line": 13,
+          "text": "  without downloading the complete 70.2 GB archive."
+        },
+        {
+          "line": 27,
+          "text": "- Pilot-label SHA-256:"
+        },
+        {
+          "line": 35,
+          "text": "  `kdm.restech.unsw.edu.au`; the complete 70.2 GB archive was not stored."
+        },
+        {
+          "line": 133,
+          "text": "  with status 0. It checkpointed and atomically merged 3,368 Qwen records and"
+        },
+        {
+          "line": 137,
+          "text": "  model--question--view records completed; inference, pilot analysis, final"
+        },
+        {
+          "line": 143,
+          "text": "- The sealed analysis archive was downloaded to"
+        },
+        {
+          "line": 145,
+          "text": "  file listed in `archive.sha256` passed local SHA-256 verification."
+        }
+      ]
+    },
+    {
+      "path": "/home/z5611125/trace_rc_route/trace_rc_prep.o8912682",
+      "sha256": "918c37b36f825b6f8298f26d902806f678dd8a1aba542a0174b0a7b61809adeb",
+      "total_matching_lines": 0,
+      "matches": []
+    },
+    {
+      "path": "/home/z5611125/trace_rc_route/trc_pt2fill.o8922679",
+      "sha256": "be67fce4c9845c18e93eb1334c95f5a3066f8a1c4dd92d5e50cf47dab53f1b7c",
+      "total_matching_lines": 0,
+      "matches": []
+    },
+    {
+      "path": "/home/z5611125/trace_rc_route/trace_rc_her.o8913645",
+      "sha256": "a114b949ebbaf83dc3ae1593f15aa03debbfc2a90ff9c1f18e516cecefabc5c0",
+      "total_matching_lines": 6,
+      "matches": [
+        {
+          "line": 49,
+          "text": "Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]"
+        },
+        {
+          "line": 50,
+          "text": "Loading checkpoint shards:  25%|\u2588\u2588\u258c       | 1/4 [00:04<00:12,  4.21s/it]2026-08-02T09:55:21Z\tinference_wave_1\tRUNNING_1_qwen:0/7884 internvl:0/7884 llava:0/7884 "
+        },
+        {
+          "line": 52,
+          "text": "Loading checkpoint shards:  50%|\u2588\u2588\u2588\u2588\u2588     | 2/4 [00:08<00:08,  4.00s/it]"
+        },
+        {
+          "line": 53,
+          "text": "Loading checkpoint shards:  75%|\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u258c  | 3/4 [00:11<00:03,  3.95s/it]"
+        },
+        {
+          "line": 54,
+          "text": "Loading checkpoint shards: 100%|\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588| 4/4 [00:14<00:00,  3.30s/it]"
+        },
+        {
+          "line": 55,
+          "text": "Loading checkpoint shards: 100%|\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588| 4/4 [00:14<00:00,  3.57s/it]"
+        }
+      ]
+    },
+    {
+      "path": "/home/z5611125/trace_rc_route/trace_rc_prep.o8912669",
+      "sha256": "47147934ff11cb783ce9ff53196dcf750d13e6b7ef0034fa6d3d3fb04a1461aa",
+      "total_matching_lines": 0,
+      "matches": []
+    },
+    {
+      "path": "/home/z5611125/trace_rc_route/trc_hb_cache.o8913595",
+      "sha256": "9d5ff454c44f59ab7f8ad164e872d63d8d2f044e441c49c1cad651b232b28e7e",
+      "total_matching_lines": 0,
+      "matches": []
+    },
+    {
+      "path": "/home/z5611125/trace_rc_route/trace_rc_her.o8913398",
+      "sha256": "cbb2d08f696ba7c4a84203ede2c93613e65e6c01e820f6a1a89dc575d302eff5",
+      "total_matching_lines": 0,
+      "matches": []
+    }
+  ],
+  "candidate_tables": [
+    {
+      "path": "/home/z5611125/trace_rc_route/input/pilot_labels.csv",
+      "sha256": "318635c71b52dcbd298112ad20e94af6366d0d01257874e9f9ae4ec22162d212",
+      "columns": [
+        "question_id",
+        "video_id",
+        "gold_candidate_index"
+      ],
+      "rows": 1008,
+      "first_rows": [
+        {
+          "question_id": "AC_1000",
+          "video_id": "P04-20240414-162242",
+          "gold_candidate_index": "4"
+        },
+        {
+          "question_id": "AC_111",
+          "video_id": "P01-20240203-121517",
+          "gold_candidate_index": "1"
+        }
+      ],
+      "datasets": [
+        ""
+      ]
+    },
+    {
+      "path": "/home/z5611125/trace_rc_route/input/perception_test/frozen/pilot_labels.csv",
+      "sha256": "eb60c3ef1dc0e8162b742d03f04e452b7255e690844ec96dd3fc27bbe2f08e6a",
+      "columns": [
+        "question_id",
+        "video_id",
+        "gold_candidate_index"
+      ],
+      "rows": 977,
+      "first_rows": [
+        {
+          "question_id": "perception-valid:video_10043:0",
+          "video_id": "video_10043",
+          "gold_candidate_index": "1"
+        },
+        {
+          "question_id": "perception-valid:video_10048:0",
+          "video_id": "video_10048",
+          "gold_candidate_index": "1"
+        }
+      ],
+      "datasets": [
+        ""
+      ]
+    },
+    {
+      "path": "/home/z5611125/trace_rc_route/results_fresh/herbench_confirmation/8918264.kman.restech.unsw.edu.au/pilot_candidate_metrics.csv",
+      "sha256": "92083679e31e06a840db846f43cdd584feecabb3bf46eec66f8905fb5d06907c",
+      "columns": [
+        "model_id",
+        "candidate",
+        "pilot_gain_percent",
+        "promoted"
+      ],
+      "rows": 6,
+      "first_rows": [
+        {
+          "model_id": "OpenGVLab/InternVL3_5-14B-Instruct",
+          "candidate": "source_trace_hgb",
+          "pilot_gain_percent": "3.776449018452687",
+          "promoted": "False"
+        },
+        {
+          "model_id": "OpenGVLab/InternVL3_5-14B-Instruct",
+          "candidate": "target_logistic",
+          "pilot_gain_percent": "12.703781663386708",
+          "promoted": "True"
+        }
+      ],
+      "datasets": [
+        ""
+      ]
+    },
+    {
+      "path": "/home/z5611125/trace_rc_route/results_fresh/perception_test_confirmation/8919110.kman.restech.unsw.edu.au/pilot_candidate_metrics.csv",
+      "sha256": "861def81dfa560c0ecd06b7f6906cf58a3ede849154dca946aa3aac62b8212fb",
+      "columns": [
+        "model_id",
+        "candidate",
+        "pilot_gain_percent",
+        "promoted"
+      ],
+      "rows": 6,
+      "first_rows": [
+        {
+          "model_id": "OpenGVLab/InternVL3_5-14B-Instruct",
+          "candidate": "source_trace_hgb",
+          "pilot_gain_percent": "-8.190512632550877",
+          "promoted": "False"
+        },
+        {
+          "model_id": "OpenGVLab/InternVL3_5-14B-Instruct",
+          "candidate": "target_logistic",
+          "pilot_gain_percent": "-1.3791044703290247",
+          "promoted": "False"
+        }
+      ],
+      "datasets": [
+        ""
+      ]
+    },
+    {
+      "path": "/home/z5611125/trace_rc_route/results/v2_pilot_robust_stability/split_model_results.csv",
+      "sha256": "f55f64b66cc3670cc472764e23ff47cadb832ee42ae6bd03829f14d40a25b2b7",
+      "columns": [
+        "salt",
+        "pilot_fraction",
+        "model_id",
+        "pilot_groups",
+        "pilot_questions",
+        "test_groups",
+        "test_questions",
+        "selected",
+        "pilot_gain_percent",
+        "multiplicity_adjusted_lower_bound_percent",
+        "test_gain_percent",
+        "exact_fallback"
+      ],
+      "rows": 180,
+      "first_rows": [
+        {
+          "salt": "trace-rc-v2-dev-000",
+          "pilot_fraction": "0.25",
+          "model_id": "OpenGVLab/InternVL3_5-4B-Instruct",
+          "pilot_groups": "200",
+          "pilot_questions": "800",
+          "test_groups": "600",
+          "test_questions": "2400",
+          "selected": "raw_fallback",
+          "pilot_gain_percent": "0.0",
+          "multiplicity_adjusted_lower_bound_percent": "0.0",
+          "test_gain_percent": "0.0",
+          "exact_fallback": "True"
+        },
+        {
+          "salt": "trace-rc-v2-dev-000",
+          "pilot_fraction": "0.25",
+          "model_id": "Qwen/Qwen3-VL-4B-Instruct",
+          "pilot_groups": "200",
+          "pilot_questions": "800",
+          "test_groups": "600",
+          "test_questions": "2400",
+          "selected": "raw_fallback",
+          "pilot_gain_percent": "0.0",
+          "multiplicity_adjusted_lower_bound_percent": "0.0",
+          "test_gain_percent": "0.0",
+          "exact_fallback": "True"
+        }
+      ],
+      "datasets": [
+        ""
+      ]
+    },
+    {
+      "path": "/home/z5611125/trace_rc_route/results/v2_pilot_robust_stability/pilot_fraction_summary.csv",
+      "sha256": "84f7f000c2cc3665fac58be6ecced5ce29867e417c578d6b511c2173f4847e7f",
+      "columns": [
+        "pilot_fraction",
+        "split_models",
+        "mean_test_gain_percent",
+        "median_test_gain_percent",
+        "worst_test_gain_percent",
+        "positive_rate",
+        "fallback_rate",
+        "exact_fallback_rate"
+      ],
+      "rows": 3,
+      "first_rows": [
+        {
+          "pilot_fraction": "0.25",
+          "split_models": "60",
+          "mean_test_gain_percent": "0.37006101166360217",
+          "median_test_gain_percent": "0.0",
+          "worst_test_gain_percent": "0.0",
+          "positive_rate": "0.15",
+          "fallback_rate": "0.85",
+          "exact_fallback_rate": "1.0"
+        },
+        {
+          "pilot_fraction": "0.35",
+          "split_models": "60",
+          "mean_test_gain_percent": "0.36063204518339054",
+          "median_test_gain_percent": "0.0",
+          "worst_test_gain_percent": "-1.034075735654979",
+          "positive_rate": "0.15",
+          "fallback_rate": "0.8333333333333334",
+          "exact_fallback_rate": "1.0"
+        }
+      ],
+      "datasets": [
+        ""
+      ]
+    },
+    {
+      "path": "/home/z5611125/trace_rc_route/results/v2_pilot_target_only_stability/pilot_fraction_summary.csv",
+      "sha256": "37f54aee8bfef4997f1e334f1f5e9daa2f6baa627d0e0c8ded722fab87a46f00",
+      "columns": [
+        "pilot_fraction",
+        "split_models",
+        "mean_test_gain_percent",
+        "median_test_gain_percent",
+        "worst_test_gain_percent",
+        "positive_rate",
+        "fallback_rate",
+        "exact_fallback_rate"
+      ],
+      "rows": 3,
+      "first_rows": [
+        {
+          "pilot_fraction": "0.25",
+          "split_models": "30",
+          "mean_test_gain_percent": "0.007885275811687279",
+          "median_test_gain_percent": "0.0",
+          "worst_test_gain_percent": "-0.3130608056378239",
+          "positive_rate": "0.06666666666666667",
+          "fallback_rate": "0.9",
+          "exact_fallback_rate": "1.0"
+        },
+        {
+          "pilot_fraction": "0.35",
+          "split_models": "30",
+          "mean_test_gain_percent": "0.0889252100166005",
+          "median_test_gain_percent": "0.0",
+          "worst_test_gain_percent": "0.0",
+          "positive_rate": "0.13333333333333333",
+          "fallback_rate": "0.8666666666666667",
+          "exact_fallback_rate": "1.0"
+        }
+      ],
+      "datasets": [
+        ""
+      ]
+    },
+    {
+      "path": "/home/z5611125/trace_rc_route/results/v2_pilot_target_only_stability/split_model_results.csv",
+      "sha256": "85352a0ae9b550fed8ba62bfd9c631ae7d842a17d4a4fd8d483bae3560678969",
+      "columns": [
+        "salt",
+        "pilot_fraction",
+        "model_id",
+        "pilot_groups",
+        "pilot_questions",
+        "test_groups",
+        "test_questions",
+        "selected",
+        "pilot_gain_percent",
+        "multiplicity_adjusted_lower_bound_percent",
+        "test_gain_percent",
+        "exact_fallback"
+      ],
+      "rows": 90,
+      "first_rows": [
+        {
+          "salt": "trace-rc-v2-dev-000",
+          "pilot_fraction": "0.25",
+          "model_id": "OpenGVLab/InternVL3_5-4B-Instruct",
+          "pilot_groups": "200",
+          "pilot_questions": "800",
+          "test_groups": "600",
+          "test_questions": "2400",
+          "selected": "raw_fallback",
+          "pilot_gain_percent": "0.0",
+          "multiplicity_adjusted_lower_bound_percent": "0.0",
+          "test_gain_percent": "0.0",
+          "exact_fallback": "True"
+        },
+        {
+          "salt": "trace-rc-v2-dev-000",
+          "pilot_fraction": "0.25",
+          "model_id": "Qwen/Qwen3-VL-4B-Instruct",
+          "pilot_groups": "200",
+          "pilot_questions": "800",
+          "test_groups": "600",
+          "test_questions": "2400",
+          "selected": "raw_fallback",
+          "pilot_gain_percent": "0.0",
+          "multiplicity_adjusted_lower_bound_percent": "0.0",
+          "test_gain_percent": "0.0",
+          "exact_fallback": "True"
+        }
+      ],
+      "datasets": [
+        ""
+      ]
+    },
+    {
+      "path": "/home/z5611125/trace_rc_route/results/v2_pilot_robust_safe_stability/pilot_fraction_summary.csv",
+      "sha256": "67548a7ef27ee956d6cf6a49a623a504e8dddcd53b9aae60890f9b21f75b054b",
+      "columns": [
+        "pilot_fraction",
+        "split_models",
+        "mean_test_gain_percent",
+        "median_test_gain_percent",
+        "worst_test_gain_percent",
+        "positive_rate",
+        "fallback_rate",
+        "exact_fallback_rate"
+      ],
+      "rows": 3,
+      "first_rows": [
+        {
+          "pilot_fraction": "0.25",
+          "split_models": "60",
+          "mean_test_gain_percent": "0.3156022880221492",
+          "median_test_gain_percent": "0.0",
+          "worst_test_gain_percent": "0.0",
+          "positive_rate": "0.13333333333333333",
+          "fallback_rate": "0.8666666666666667",
+          "exact_fallback_rate": "1.0"
+        },
+        {
+          "pilot_fraction": "0.35",
+          "split_models": "60",
+          "mean_test_gain_percent": "0.3289108747151065",
+          "median_test_gain_percent": "0.0",
+          "worst_test_gain_percent": "0.0",
+          "positive_rate": "0.13333333333333333",
+          "fallback_rate": "0.8666666666666667",
+          "exact_fallback_rate": "1.0"
+        }
+      ],
+      "datasets": [
+        ""
+      ]
+    },
+    {
+      "path": "/home/z5611125/trace_rc_route/results/v2_pilot_robust_safe_stability/split_model_results.csv",
+      "sha256": "4bf0016332f89a5237b62117e3a1c2b8edbaea344c5709d0253639696494321c",
+      "columns": [
+        "salt",
+        "pilot_fraction",
+        "model_id",
+        "pilot_groups",
+        "pilot_questions",
+        "test_groups",
+        "test_questions",
+        "selected",
+        "pilot_gain_percent",
+        "multiplicity_adjusted_lower_bound_percent",
+        "test_gain_percent",
+        "exact_fallback"
+      ],
+      "rows": 180,
+      "first_rows": [
+        {
+          "salt": "trace-rc-v2-dev-000",
+          "pilot_fraction": "0.25",
+          "model_id": "OpenGVLab/InternVL3_5-4B-Instruct",
+          "pilot_groups": "200",
+          "pilot_questions": "800",
+          "test_groups": "600",
+          "test_questions": "2400",
+          "selected": "raw_fallback",
+          "pilot_gain_percent": "0.0",
+          "multiplicity_adjusted_lower_bound_percent": "0.0",
+          "test_gain_percent": "0.0",
+          "exact_fallback": "True"
+        },
+        {
+          "salt": "trace-rc-v2-dev-000",
+          "pilot_fraction": "0.25",
+          "model_id": "Qwen/Qwen3-VL-4B-Instruct",
+          "pilot_groups": "200",
+          "pilot_questions": "800",
+          "test_groups": "600",
+          "test_questions": "2400",
+          "selected": "raw_fallback",
+          "pilot_gain_percent": "0.0",
+          "multiplicity_adjusted_lower_bound_percent": "0.0",
+          "test_gain_percent": "0.0",
+          "exact_fallback": "True"
+        }
+      ],
+      "datasets": [
+        ""
+      ]
+    },
+    {
+      "path": "/home/z5611125/trace_rc_route/results/v2_pilot_stability/pilot_fraction_summary.csv",
+      "sha256": "b3eee9635d6d62f39c3a4482abb3bded081e3418d31cadf6a64854d69bffe464",
+      "columns": [
+        "pilot_fraction",
+        "split_models",
+        "mean_test_gain_percent",
+        "median_test_gain_percent",
+        "worst_test_gain_percent",
+        "positive_rate",
+        "fallback_rate",
+        "exact_fallback_rate"
+      ],
+      "rows": 3,
+      "first_rows": [
+        {
+          "pilot_fraction": "0.25",
+          "split_models": "30",
+          "mean_test_gain_percent": "0.16632732496707153",
+          "median_test_gain_percent": "0.0",
+          "worst_test_gain_percent": "0.0",
+          "positive_rate": "0.1",
+          "fallback_rate": "0.9",
+          "exact_fallback_rate": "1.0"
+        },
+        {
+          "pilot_fraction": "0.35",
+          "split_models": "30",
+          "mean_test_gain_percent": "0.3876926635408446",
+          "median_test_gain_percent": "0.0",
+          "worst_test_gain_percent": "0.0",
+          "positive_rate": "0.23333333333333334",
+          "fallback_rate": "0.7666666666666667",
+          "exact_fallback_rate": "1.0"
+        }
+      ],
+      "datasets": [
+        ""
+      ]
+    },
+    {
+      "path": "/home/z5611125/trace_rc_route/results/v2_pilot_stability/split_model_results.csv",
+      "sha256": "b66a3bb622c2975f4472b454b5c11df3b43ecc86ef0969f8e1aeec433271dddc",
+      "columns": [
+        "salt",
+        "pilot_fraction",
+        "model_id",
+        "pilot_groups",
+        "pilot_questions",
+        "test_groups",
+        "test_questions",
+        "selected",
+        "pilot_gain_percent",
+        "multiplicity_adjusted_lower_bound_percent",
+        "test_gain_percent",
+        "exact_fallback"
+      ],
+      "rows": 90,
+      "first_rows": [
+        {
+          "salt": "trace-rc-v2-dev-000",
+          "pilot_fraction": "0.25",
+          "model_id": "OpenGVLab/InternVL3_5-4B-Instruct",
+          "pilot_groups": "200",
+          "pilot_questions": "800",
+          "test_groups": "600",
+          "test_questions": "2400",
+          "selected": "raw_fallback",
+          "pilot_gain_percent": "0.0",
+          "multiplicity_adjusted_lower_bound_percent": "0.0",
+          "test_gain_percent": "0.0",
+          "exact_fallback": "True"
+        },
+        {
+          "salt": "trace-rc-v2-dev-000",
+          "pilot_fraction": "0.25",
+          "model_id": "Qwen/Qwen3-VL-4B-Instruct",
+          "pilot_groups": "200",
+          "pilot_questions": "800",
+          "test_groups": "600",
+          "test_questions": "2400",
+          "selected": "raw_fallback",
+          "pilot_gain_percent": "0.0",
+          "multiplicity_adjusted_lower_bound_percent": "0.0",
+          "test_gain_percent": "0.0",
+          "exact_fallback": "True"
+        }
+      ],
+      "datasets": [
+        ""
+      ]
+    },
+    {
+      "path": "/home/z5611125/trace_rc_route/results/v2_pilot_smoke/pilot_fraction_summary.csv",
+      "sha256": "4de242ee5bbf2408debc43adda2875898a6d35475731939de188460ad9ac2fce",
+      "columns": [
+        "pilot_fraction",
+        "split_models",
+        "mean_test_gain_percent",
+        "median_test_gain_percent",
+        "worst_test_gain_percent",
+        "positive_rate",
+        "fallback_rate",
+        "exact_fallback_rate"
+      ],
+      "rows": 3,
+      "first_rows": [
+        {
+          "pilot_fraction": "0.25",
+          "split_models": "3",
+          "mean_test_gain_percent": "0.0",
+          "median_test_gain_percent": "0.0",
+          "worst_test_gain_percent": "0.0",
+          "positive_rate": "0.0",
+          "fallback_rate": "1.0",
+          "exact_fallback_rate": "1.0"
+        },
+        {
+          "pilot_fraction": "0.35",
+          "split_models": "3",
+          "mean_test_gain_percent": "0.22089052612244445",
+          "median_test_gain_percent": "0.0",
+          "worst_test_gain_percent": "0.0",
+          "positive_rate": "0.3333333333333333",
+          "fallback_rate": "0.6666666666666666",
+          "exact_fallback_rate": "1.0"
+        }
+      ],
+      "datasets": [
+        ""
+      ]
+    },
+    {
+      "path": "/home/z5611125/trace_rc_route/results/v2_pilot_smoke/split_model_results.csv",
+      "sha256": "99bafa246e405a22d9992c20a85a47fe223156b24f7b16c01b51ee87426a085c",
+      "columns": [
+        "salt",
+        "pilot_fraction",
+        "model_id",
+        "pilot_groups",
+        "pilot_questions",
+        "test_groups",
+        "test_questions",
+        "selected",
+        "pilot_gain_percent",
+        "multiplicity_adjusted_lower_bound_percent",
+        "test_gain_percent",
+        "exact_fallback"
+      ],
+      "rows": 9,
+      "first_rows": [
+        {
+          "salt": "trace-rc-v2-dev-000",
+          "pilot_fraction": "0.25",
+          "model_id": "OpenGVLab/InternVL3_5-4B-Instruct",
+          "pilot_groups": "200",
+          "pilot_questions": "800",
+          "test_groups": "600",
+          "test_questions": "2400",
+          "selected": "raw_fallback",
+          "pilot_gain_percent": "0.0",
+          "multiplicity_adjusted_lower_bound_percent": "0.0",
+          "test_gain_percent": "0.0",
+          "exact_fallback": "True"
+        },
+        {
+          "salt": "trace-rc-v2-dev-000",
+          "pilot_fraction": "0.25",
+          "model_id": "Qwen/Qwen3-VL-4B-Instruct",
+          "pilot_groups": "200",
+          "pilot_questions": "800",
+          "test_groups": "600",
+          "test_questions": "2400",
+          "selected": "raw_fallback",
+          "pilot_gain_percent": "0.0",
+          "multiplicity_adjusted_lower_bound_percent": "0.0",
+          "test_gain_percent": "0.0",
+          "exact_fallback": "True"
+        }
+      ],
+      "datasets": [
+        ""
+      ]
+    },
+    {
+      "path": "/home/z5611125/trace_rc_route/results/v2_pilot_stability_final/split_model_results.csv",
+      "sha256": "ef41eab13018691dbcf8194f66a1cf75450b28138032110c3853ffc8a4d416ef",
+      "columns": [
+        "salt",
+        "pilot_fraction",
+        "model_id",
+        "pilot_groups",
+        "pilot_questions",
+        "test_groups",
+        "test_questions",
+        "selected",
+        "pilot_gain_percent",
+        "multiplicity_adjusted_lower_bound_percent",
+        "test_gain_percent",
+        "exact_fallback"
+      ],
+      "rows": 180,
+      "first_rows": [
+        {
+          "salt": "trace-rc-v2-dev-000",
+          "pilot_fraction": "0.25",
+          "model_id": "OpenGVLab/InternVL3_5-4B-Instruct",
+          "pilot_groups": "200",
+          "pilot_questions": "800",
+          "test_groups": "600",
+          "test_questions": "2400",
+          "selected": "raw_fallback",
+          "pilot_gain_percent": "0.0",
+          "multiplicity_adjusted_lower_bound_percent": "0.0",
+          "test_gain_percent": "0.0",
+          "exact_fallback": "True"
+        },
+        {
+          "salt": "trace-rc-v2-dev-000",
+          "pilot_fraction": "0.25",
+          "model_id": "Qwen/Qwen3-VL-4B-Instruct",
+          "pilot_groups": "200",
+          "pilot_questions": "800",
+          "test_groups": "600",
+          "test_questions": "2400",
+          "selected": "raw_fallback",
+          "pilot_gain_percent": "0.0",
+          "multiplicity_adjusted_lower_bound_percent": "0.0",
+          "test_gain_percent": "0.0",
+          "exact_fallback": "True"
+        }
+      ],
+      "datasets": [
+        ""
+      ]
+    },
+    {
+      "path": "/home/z5611125/trace_rc_route/results/v2_pilot_stability_final/pilot_fraction_summary.csv",
+      "sha256": "cb77002f86d1a7d6261789a16946fcc2f5f7c8931f3483797609256eed9e55de",
+      "columns": [
+        "pilot_fraction",
+        "split_models",
+        "mean_test_gain_percent",
+        "median_test_gain_percent",
+        "worst_test_gain_percent",
+        "positive_rate",
+        "fallback_rate",
+        "exact_fallback_rate"
+      ],
+      "rows": 3,
+      "first_rows": [
+        {
+          "pilot_fraction": "0.25",
+          "split_models": "60",
+          "mean_test_gain_percent": "0.3034172911489409",
+          "median_test_gain_percent": "0.0",
+          "worst_test_gain_percent": "0.0",
+          "positive_rate": "0.15",
+          "fallback_rate": "0.85",
+          "exact_fallback_rate": "1.0"
+        },
+        {
+          "pilot_fraction": "0.35",
+          "split_models": "60",
+          "mean_test_gain_percent": "0.3909502457805464",
+          "median_test_gain_percent": "0.0",
+          "worst_test_gain_percent": "-0.07599200762936262",
+          "positive_rate": "0.18333333333333332",
+          "fallback_rate": "0.8",
+          "exact_fallback_rate": "1.0"
+        }
+      ],
+      "datasets": [
+        ""
+      ]
+    },
+    {
+      "path": "/home/z5611125/trace_rc_route/results/herbench_confirmation/8918264.kman.restech.unsw.edu.au/pilot_candidate_metrics.csv",
+      "sha256": "92083679e31e06a840db846f43cdd584feecabb3bf46eec66f8905fb5d06907c",
+      "columns": [
+        "model_id",
+        "candidate",
+        "pilot_gain_percent",
+        "promoted"
+      ],
+      "rows": 6,
+      "first_rows": [
+        {
+          "model_id": "OpenGVLab/InternVL3_5-14B-Instruct",
+          "candidate": "source_trace_hgb",
+          "pilot_gain_percent": "3.776449018452687",
+          "promoted": "False"
+        },
+        {
+          "model_id": "OpenGVLab/InternVL3_5-14B-Instruct",
+          "candidate": "target_logistic",
+          "pilot_gain_percent": "12.703781663386708",
+          "promoted": "True"
+        }
+      ],
+      "datasets": [
+        ""
+      ]
+    }
+  ],
+  "checkpoint_files": [],
+  "assets": {
+    "HERBench": {
+      "manifest": "/home/z5611125/trace_rc_route/input/herbench_lite_v2_inference.jsonl",
+      "videos_referenced": 68,
+      "existing_videos": 0,
+      "missing_examples": [
+        "/srv/scratch/z5611125/sicr/data/herbench_lite_v2/videos/HD_EPIC/P01/P01-20240202-161354.mp4",
+        "/srv/scratch/z5611125/sicr/data/herbench_lite_v2/videos/HD_EPIC/P01/P01-20240203-121517.mp4",
+        "/srv/scratch/z5611125/sicr/data/herbench_lite_v2/videos/HD_EPIC/P01/P01-20240203-130505.mp4"
+      ]
+    },
+    "Perception": {
+      "manifest": "/home/z5611125/trace_rc_route/input/perception_test/frozen/perception_test_valid500_inference.jsonl",
+      "videos_referenced": 500,
+      "existing_videos": 0,
+      "missing_examples": [
+        "/srv/scratch/z5611125/sicr/data/perception_test_valid500/videos/video_10000.mp4",
+        "/srv/scratch/z5611125/sicr/data/perception_test_valid500/videos/video_10033.mp4",
+        "/srv/scratch/z5611125/sicr/data/perception_test_valid500/videos/video_10043.mp4"
+      ]
+    },
+    "/srv/scratch/z5611125/sicr/envs/qwen-smoke/bin/python": {
+      "exists": false
+    },
+    "/srv/scratch/z5611125/sicr/envs/llava-ov2/bin/python": {
+      "exists": false
+    },
+    "/srv/scratch/z5611125/sicr/huggingface/hub": {
+      "exists": false
+    },
+    "/home/z5611125/.cache/huggingface/hub": {
+      "exists": true
+    }
+  },
+  "errors": []
+}

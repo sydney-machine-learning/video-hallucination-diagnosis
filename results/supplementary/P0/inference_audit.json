@@ -1,0 +1,66 @@
+{
+  "target_views": {
+    "base": 16,
+    "invariant_nuisance": 8,
+    "dense_acquisition": 24,
+    "temporal_order_destruction": 8
+  },
+  "models": [
+    {
+      "model": "Qwen",
+      "code": "katana/nextgqa_qwen_runner.py",
+      "prompt_lines": [
+        427,
+        440
+      ],
+      "score_lines": [
+        486,
+        520
+      ],
+      "video_position": "first user content item, before question and options",
+      "method": "one forward pass on final prefix token logits when each option label has one token; teacher-forced per-candidate fallback otherwise",
+      "generate_called": false
+    },
+    {
+      "model": "InternVL",
+      "code": "katana/nextgqa_internvl_runner.py",
+      "prompt_lines": [
+        449,
+        474
+      ],
+      "score_lines": [
+        533,
+        600
+      ],
+      "video_position": "FrameN image tokens precede question and options in user message, after the model system message",
+      "method": "one forward pass for single-token contextual option labels; teacher-forced fallback otherwise",
+      "generate_called": false
+    },
+    {
+      "model": "LLaVA",
+      "code": "results/supplementary/P0/inputs/remote_code/nextgqa_llava_ov2_runner.py",
+      "prompt_lines": [
+        196,
+        222
+      ],
+      "score_lines": [
+        274,
+        320
+      ],
+      "video_position": "image content items for all frames precede the text question and options",
+      "method": "single-prefix scoring or teacher-forced continuation according to option tokenization",
+      "generate_called": false,
+      "provenance": "current Katana source copied; file is missing from public repository; not verified against a historical target-run source checksum"
+    }
+  ],
+  "decoded_frame_reuse": {
+    "code": "katana/mvbench_multimodel_runner.py:436-467",
+    "description": "decodes union of frame indices once per video/segment/view-set key, reuses decoded frames for subsequent questions with the same key; HERBench wrapper sorts work by segment"
+  },
+  "kv_reuse": {
+    "implemented_in_examined_adapters": false,
+    "evidence": "use_cache=False in forward calls"
+  },
+  "raw_record_confirmation": "MVBench records all show single_prefix_next_token_logits, one forward call and generated=false. Target raw records are missing, so target branch frequencies cannot be verified.",
+  "timing_implication": "P1 cannot claim frame decoding reuse and single-token option scoring as new optimizations. Measure any added caching or runtime changes against the actual existing pipeline."
+}

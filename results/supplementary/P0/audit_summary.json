@@ -1,0 +1,50 @@
+{
+  "phase": "P0",
+  "status": "S1_partial_missing_target_raw",
+  "commit": "22e6aaa2616b1e59f49a01672ffc46f9605a6e5b",
+  "checkpoint": "S1; do not start P1 or P2 without review",
+  "checksum_status_counts": {
+    "git_blob_match_worktree_crlf": 55,
+    "content_mismatch": 3,
+    "exact_match": 29,
+    "missing": 42
+  },
+  "test_macro_gains": [
+    {
+      "dataset": "HERBench",
+      "aurc_definition": "paper_prefix_risk_mean",
+      "policy": "fixed_archived_selection",
+      "mean_relative_gain_percent": 16.64463892977936,
+      "worst_model_gain_percent": 11.392735373594022,
+      "paper_reported_gain_percent": 16.64
+    },
+    {
+      "dataset": "HERBench",
+      "aurc_definition": "helper_tie_grouped_trapezoid",
+      "policy": "fixed_archived_selection",
+      "mean_relative_gain_percent": 16.65790055844001,
+      "worst_model_gain_percent": 11.402687178987437,
+      "paper_reported_gain_percent": 16.64
+    },
+    {
+      "dataset": "Perception",
+      "aurc_definition": "paper_prefix_risk_mean",
+      "policy": "fixed_archived_selection",
+      "mean_relative_gain_percent": 18.868027776282805,
+      "worst_model_gain_percent": 0.0,
+      "paper_reported_gain_percent": 18.87
+    },
+    {
+      "dataset": "Perception",
+      "aurc_definition": "helper_tie_grouped_trapezoid",
+      "policy": "fixed_archived_selection",
+      "mean_relative_gain_percent": 18.88976612142548,
+      "worst_model_gain_percent": 0.0,
+      "paper_reported_gain_percent": 18.87
+    }
+  ],
+  "pilot_decision_recomputation": "blocked_missing_target_raw_and_pilot_scores",
+  "mvbench": "found_and_copied_from_Katana",
+  "gpu_jobs_submitted": 0,
+  "tests": "split counts and joins, no video overlap, fixed selections, prefix archived gains, MVBench raw integrity, stable tie examples, archive byte preservation"
+}

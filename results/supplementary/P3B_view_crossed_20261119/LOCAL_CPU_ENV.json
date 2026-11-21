@@ -1,0 +1,10 @@
+{
+  "python": "C:\\Users\\87385\\Desktop\\paper 3\\video-hallucination-diagnosis\\results\\supplementary\\P3B_full_reference_20261119\\cpu_env\\Scripts\\python.exe",
+  "prefix": "C:\\Users\\87385\\Desktop\\paper 3\\video-hallucination-diagnosis\\results\\supplementary\\P3B_full_reference_20261119\\cpu_env",
+  "versions": {
+    "scikit-learn": "1.7.2",
+    "numpy": "2.2.6",
+    "pandas": "2.3.3",
+    "scipy": "1.15.3"
+  }
+}

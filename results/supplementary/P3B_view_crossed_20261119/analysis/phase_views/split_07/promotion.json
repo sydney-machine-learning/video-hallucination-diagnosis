@@ -1,0 +1,19 @@
+{
+  "selected": "raw_fallback",
+  "candidates": [
+    {
+      "candidate": "source_trace_hgb",
+      "gain": -8.909718073323909,
+      "lower": -24.4147539065919,
+      "margin": 0.5,
+      "pass": false
+    },
+    {
+      "candidate": "target_logistic",
+      "gain": -1.8003004697017588,
+      "lower": -13.444103173789815,
+      "margin": 0.0,
+      "pass": false
+    }
+  ]
+}

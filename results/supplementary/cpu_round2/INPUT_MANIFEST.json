@@ -1,0 +1,77 @@
+[
+  {
+    "path": "C:\\Users\\87385\\Desktop\\paper 3\\video-hallucination-diagnosis\\results\\supplementary\\P2\\video_assignments.csv",
+    "bytes": 1091954,
+    "sha256": "d04b46d0e026e8e2677d17372b7e7f7b37f157d2580c806339ee67cf8415e6b2"
+  },
+  {
+    "path": "C:\\Users\\87385\\Desktop\\paper 3\\video-hallucination-diagnosis\\results\\perception_confirmation\\8919110.kman.restech.unsw.edu.au\\pilot_model_bundle.joblib",
+    "bytes": 169649,
+    "sha256": "bb6579e9a7c5e1a56c0a614c6c0c6a25bde3bcd0a4d8e6f13c6ab1a30d50fb17"
+  },
+  {
+    "path": "C:\\Users\\87385\\Desktop\\paper 3\\video-hallucination-diagnosis\\results\\supplementary\\P3B_view_crossed_20261119\\full_manifest.jsonl",
+    "bytes": 1673501,
+    "sha256": "20c9a995a6b199f8555ddc87469b57aed2eeb5fd25b419e9dfe19713623be542"
+  },
+  {
+    "path": "C:\\Users\\87385\\Desktop\\paper 3\\video-hallucination-diagnosis\\results\\supplementary\\P3B_view_crossed_20261119\\original_views_features.csv",
+    "bytes": 2858792,
+    "sha256": "12875120e3d4b5ced4a000bbf7fc9d80e80d83598b907d924fc1423ef40ba9da"
+  },
+  {
+    "path": "C:\\Users\\87385\\Desktop\\paper 3\\video-hallucination-diagnosis\\results\\supplementary\\P3B_view_crossed_20261119\\SCHEMAS.json",
+    "bytes": 9416,
+    "sha256": "d6ac5b8c1c1187d13a23fd1f72fa95e80eef9d184435865ff657ab75f55db808"
+  },
+  {
+    "path": "C:\\Users\\87385\\Desktop\\paper 3\\video-hallucination-diagnosis\\results\\supplementary\\P5_vhd_transfer_20261119\\predictions.csv",
+    "bytes": 2488211,
+    "sha256": "b87ed0c31543d37d1966a793afcd1739cb8de5485f02843f4ea6fd6a2b4257a0"
+  },
+  {
+    "path": "C:\\Users\\87385\\Desktop\\paper 3\\video-hallucination-diagnosis\\results\\supplementary\\P5_vhd_transfer_20261119\\features.csv",
+    "bytes": 8976109,
+    "sha256": "c079178978a2e71d236594ae5e2e7f53b2cade09edf0391c75aac849318e32fd"
+  },
+  {
+    "path": "C:\\Users\\87385\\Desktop\\paper 3\\video-hallucination-diagnosis\\results\\supplementary\\P5_vhd_transfer_20261119\\vhd_question_subsets.csv",
+    "bytes": 58701,
+    "sha256": "05bac366e24fa164c0113a0f4d68497691f95c1891904776aaf15565ccdad413"
+  },
+  {
+    "path": "C:\\Users\\87385\\Desktop\\paper 3\\video-hallucination-diagnosis\\results\\supplementary\\P5_vhd_transfer_20261119\\holdout_audit.json",
+    "bytes": 1077,
+    "sha256": "0958e1f9da1389112459129740d1c90e8343454c79a90a555848fc7b3dd7a0c3"
+  },
+  {
+    "path": "C:\\Users\\87385\\Desktop\\paper 3\\video-hallucination-diagnosis\\results\\supplementary\\P5_vhd_transfer_20261119\\models\\VHD.joblib",
+    "bytes": 437042,
+    "sha256": "a44f7c2adc733948bf947136f7ea6dea598f9c3ed352cf8936c9be5fc63e5c40"
+  },
+  {
+    "path": "C:\\Users\\87385\\Desktop\\paper 3\\video-hallucination-diagnosis\\results\\supplementary\\P3B_view_crossed_20261119\\merged_responses_internvl14\\responses.jsonl",
+    "bytes": 7317434,
+    "sha256": "96da51984040c4da55092b1990ef6a968b4699267b2bebb5286dcf035969fe11"
+  },
+  {
+    "path": "C:\\Users\\87385\\Desktop\\paper 3\\video-hallucination-diagnosis\\results\\supplementary\\P3B_view_crossed_20261119\\merged_responses_qwen8\\responses.jsonl",
+    "bytes": 7731425,
+    "sha256": "1bfa47f60ab3cd07750c96b17f143a63ed04fa8f6f41d8d80b480767fda7d51e"
+  },
+  {
+    "path": "C:\\Users\\87385\\Desktop\\paper 3\\video-hallucination-diagnosis\\results\\supplementary\\P3B_view_crossed_20261119\\merged_responses_llava8\\responses.jsonl",
+    "bytes": 7753478,
+    "sha256": "d72105606dc802103a431cfb591612ea60bc7d8f840ebd653f12e25959d17ec5"
+  },
+  {
+    "path": "C:\\Users\\87385\\Desktop\\paper 3\\video-hallucination-diagnosis\\input\\perception_test\\frozen\\pilot_labels.csv",
+    "bytes": 43192,
+    "sha256": "eb60c3ef1dc0e8162b742d03f04e452b7255e690844ec96dd3fc27bbe2f08e6a"
+  },
+  {
+    "path": "C:\\Users\\87385\\Desktop\\paper 3\\video-hallucination-diagnosis\\input\\perception_test\\frozen\\sealed_test_labels.csv",
+    "bytes": 40169,
+    "sha256": "f37f1e50e6e0df98be4802073a1884e3c447d1ad48d4179dfd598fbaaeefc952"
+  }
+]

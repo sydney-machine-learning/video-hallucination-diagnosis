@@ -1,0 +1,59 @@
+{
+  "complete": true,
+  "videos": 500,
+  "questions": 1888,
+  "calls": 7552,
+  "responses_sha256": "d72105606dc802103a431cfb591612ea60bc7d8f840ebd653f12e25959d17ec5",
+  "test_labels_read": false,
+  "model_load_seconds": 24.19718226394616,
+  "peak_memory_bytes": 39310227968,
+  "source_records_preserved": true,
+  "merge_order": "fixed full_manifest question order then view slots 0,2,4,6",
+  "sources": [
+    {
+      "source": "/srv/scratch/z5611125/video_hallucination_supplementary/results/supplementary/P3B_view_crossed_20261119/pilot_snapshot_llava8",
+      "response_sha256": "a0566ac3139d3759b28b760637e5145e89fbe29be081aebd70da8f7a4b2936ad",
+      "decode_sha256": "5ba38f3b07950fc4260ada648b04d695ef9398c76fb6a01c097525593fdf4894"
+    },
+    {
+      "source": "/srv/scratch/z5611125/video_hallucination_supplementary/results/supplementary/P3B_view_crossed_20261119/shards/llava8/shard_00",
+      "response_sha256": "75c5d701e6bacd94e28244619bd8946791e8aca6e18ddd8dd6ec786e2e5477d7",
+      "decode_sha256": "30b55a23e79672bac8266b411d0acfcecef3931b62e4253884116483f9f2e62d"
+    },
+    {
+      "source": "/srv/scratch/z5611125/video_hallucination_supplementary/results/supplementary/P3B_view_crossed_20261119/shards/llava8/shard_01",
+      "response_sha256": "3765d34eb0ccf10d1e90beb9c2228f92c7f18d144f8fce0ee5f0e42e54681ee8",
+      "decode_sha256": "d56d536a88657bf5947438e668e66987ff5852e6440947766149d7cb796b48cf"
+    },
+    {
+      "source": "/srv/scratch/z5611125/video_hallucination_supplementary/results/supplementary/P3B_view_crossed_20261119/shards/llava8/shard_02",
+      "response_sha256": "dfbf5226de37e0f4671ae93788053f2fb22d22cbc8e49c7fbe8db07233d0e5a2",
+      "decode_sha256": "ab2596d375d4f81ab25c2fcca1a92b8904d85697a0dd5b86f09e63a7288aa313"
+    },
+    {
+      "source": "/srv/scratch/z5611125/video_hallucination_supplementary/results/supplementary/P3B_view_crossed_20261119/shards/llava8/shard_03",
+      "response_sha256": "46b77e9ae5792887af570d98a1e28b51a9df3e28fd829dd92e0b327902c6db40",
+      "decode_sha256": "8a2c9608c8477b1b7e9d63c419b9f631042a6c9c675451dbc987e44ac768ead3"
+    },
+    {
+      "source": "/srv/scratch/z5611125/video_hallucination_supplementary/results/supplementary/P3B_view_crossed_20261119/shards/llava8/shard_04",
+      "response_sha256": "9a12bcf61dc216b043f1be6115b02fe8ac9e13b96ba380ce75cbb5eb6ee07c63",
+      "decode_sha256": "c158f73884873599615ba0d65c2b3e9984fa4123016118e9be38d99463dc55f5"
+    },
+    {
+      "source": "/srv/scratch/z5611125/video_hallucination_supplementary/results/supplementary/P3B_view_crossed_20261119/shards/llava8/shard_05",
+      "response_sha256": "92aec84cd185368ef3f38ef62a675bc868bab23759ce5165f0207429fec1e4d0",
+      "decode_sha256": "f4ce4653af50c4476e7b1746344ad1b488761ec5c7e21030aca61a99c77d79b3"
+    },
+    {
+      "source": "/srv/scratch/z5611125/video_hallucination_supplementary/results/supplementary/P3B_view_crossed_20261119/shards/llava8/shard_06",
+      "response_sha256": "e7f3e5145733bda007f71c1c4dabf5d14c186572d39e4ee9e385f8c223af7d93",
+      "decode_sha256": "5f1e69286b8778c59fa5e4d9b707a1fe6f200535176cb2dfb9e1281318b71c70"
+    },
+    {
+      "source": "/srv/scratch/z5611125/video_hallucination_supplementary/results/supplementary/P3B_view_crossed_20261119/shards/llava8/shard_07",
+      "response_sha256": "b2095999551b37b666d2c7713edf72832facf7cfedbd0d0b37f2348514423e74",
+      "decode_sha256": "8aaef1e9647b3843ada31ae492c8bbd71369893629b337fad8b2919c92efecbf"
+    }
+  ]
+}

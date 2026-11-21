@@ -1,0 +1,17 @@
+{
+  "copied": [
+    "phase_views/llava8",
+    "phase_views/internvl14",
+    "original_views/qwen8",
+    "original_views/internvl14",
+    "original_views/llava8"
+  ],
+  "running_cpu": [],
+  "completed_cpu": [
+    "phase_views",
+    "original_views"
+  ],
+  "elapsed_seconds": 20684.82800000001,
+  "complete": true,
+  "completed_utc": "2026-11-19T09:07:15.771509+00:00"
+}

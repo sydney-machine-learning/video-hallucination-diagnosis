@@ -1,0 +1,35 @@
+{
+  "status": "Machine verified; author review pending",
+  "claims": [
+    {
+      "id": "VHD01",
+      "claim": "178 reversed questions, 178 source clips; 99 shared errors",
+      "source": "vhd_scored_subsets.csv"
+    },
+    {
+      "id": "VHD02",
+      "claim": "Accuracy 24.91%, LR gain -7.20%, HGB gain -5.48%",
+      "source": "model_metrics.csv and mean_metrics.csv"
+    },
+    {
+      "id": "VHD03",
+      "claim": "Paired confidence intervals",
+      "source": "gain_intervals_grouped_validation.csv"
+    },
+    {
+      "id": "M701",
+      "claim": "Checkpoint revisions identical across datasets",
+      "source": "view_inventory.csv"
+    },
+    {
+      "id": "M702",
+      "claim": "Fixed checkpoint gains",
+      "source": "mean_metrics_grouped_validation.csv"
+    },
+    {
+      "id": "M703",
+      "claim": "Three ID columns redundant and HGB predictions unchanged",
+      "source": "identity_audit.json"
+    }
+  ]
+}

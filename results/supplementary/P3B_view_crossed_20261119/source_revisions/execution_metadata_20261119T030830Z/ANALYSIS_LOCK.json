@@ -1,0 +1,27 @@
+{
+  "utc": "2026-11-19T02:28:32.188682+00:00",
+  "before_full_peer_bank_exists": true,
+  "previous_test_inspection_disclosed": true,
+  "checksums": {
+    "results/supplementary/P3B_view_crossed_20261119/matched_features.py": "5c4957bd08274c70158cb2d9820926005c7635eeec97e7e8be7c1ead40d10fe8",
+    "results/supplementary/P3B_view_crossed_20261119/matched_selector.py": "4676ffa8c9224012ced687aba33fa074e8498d35e9c55db6a28db2662e7242c0",
+    "results/supplementary/P3B_view_crossed_20261119/prepare_features.py": "ade20c53e8e755d20d34b31e6305f969efaed90870c0a3529562d7ca59c3fc68",
+    "results/supplementary/P3B_view_crossed_20261119/analyze_matched.py": "be62752a3d49639429b7b920467e4f8fde2ba96c98ff6ee5980115f68aa3b10f",
+    "results/supplementary/P3B_view_crossed_20261119/summarize_matched.py": "21c20c95249baf4242091c7cb9c558a5668fe69b19c360141844bbfbebc8f71c",
+    "results/supplementary/P3B_view_crossed_20261119/FEATURE_SPEC.json": "32c5d61c014b3b155a86f40b054066f4f5af7d0d75d4772e8e8e8c36595511d4",
+    "src/evaluate_response_graph_features.py": "cd08fbc31e82c46aed783fc054450730cc85472538152557804e2e69435bdaaf",
+    "src/evaluate_v2_target_pilot.py": "b30ff93c3d39da617580c7ec75daea5a94e5019c64736d80812f8e0c601deef3",
+    "src/evaluate_probe_escalation.py": "7664e16eadb8d247797cc0ca0a0648afabeb1318e27265529c2c32dfe8d87d10",
+    "src/analyze_trace_videomme_confirmation.py": "dad8f44e91571b35dfb690c29c3d334d6f8220224e19e5213d659eaf0bdeaf21",
+    "results/perception_confirmation/8919110.kman.restech.unsw.edu.au/pilot_model_bundle.joblib": "bb6579e9a7c5e1a56c0a614c6c0c6a25bde3bcd0a4d8e6f13c6ab1a30d50fb17",
+    "results/supplementary/P2/video_assignments.csv": "d04b46d0e026e8e2677d17372b7e7f7b37f157d2580c806339ee67cf8415e6b2",
+    "results/supplementary/P0_recompute/Perception_resamples.npz": "d946732411f5bbdf9a1737a06ceb9f8900d60bd16c9759ed4bfe4eaaf5bf52ee",
+    "results/supplementary/P3B_pilot_20261119/phaseguard_features.py": "3290363caeb9a96c6837a079bcd1aad2b8064ae7d88ebe2bfe96353006229324",
+    "results/supplementary/P3B_pilot_20261119/phaseguard_selector.py": "ea647660a4ecb7135d4390863ccd586004fa241dd48aef143a798d3ec0333a79",
+    "results/supplementary/P3B_view_crossed_20261119/audit_matched.py": "130abdd1f1dbfa29d4a4da3057f3774489588bc9baf7851ea6c0e1cd67133319",
+    "results/supplementary/P3B_view_crossed_20261119/plot_matched.py": "4942c4127d738186e3b6d225dead2be861c45507b6382933ebe539529b3930a8",
+    "results/supplementary/P3B_view_crossed_20261119/PROTOCOL.md": "47e7cc43d7218d1359964d7ce9cece36032a1efa2649f783be6436fc51b41d15",
+    "results/supplementary/P3B_view_crossed_20261119/report_crossed.py": "ec44b442ee982d61f631e970eb5e6bba6326f339548013765b7f4db1d7bf2e7a"
+  },
+  "revision_reason": "User-approved two-protocol comparison, one base16 answer across protocols, no reuse of selectors fitted for different answers; all settings and split seeds retained."
+}

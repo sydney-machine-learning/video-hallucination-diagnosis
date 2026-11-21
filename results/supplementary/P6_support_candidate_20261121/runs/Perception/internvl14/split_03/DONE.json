@@ -1,0 +1,16 @@
+{
+  "target": "Perception",
+  "model": "internvl14",
+  "split": 3,
+  "rule2_selected": "raw_fallback",
+  "rule3_selected": "raw_fallback",
+  "rule2_gain": 0.0,
+  "rule3_gain": 0.0,
+  "support_gain": -3.782494186219466,
+  "pilot_lr_gain": 5.460730479039196,
+  "rule3_lower_bounds": {
+    "all_view_support": -7.273268548866598,
+    "source_trace_hgb": -5.173819279296756,
+    "target_logistic": -7.7724823669571
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "phase": "P2",
+  "status": "splits_prepared_execution_blocked_missing_target_responses",
+  "commit": "22e6aaa2616b1e59f49a01672ffc46f9605a6e5b",
+  "utc": "2026-11-18T12:20:47.177601+00:00",
+  "seeds": {
+    "base": {
+      "HERBench": 20260802,
+      "Perception": 20260803
+    },
+    "formula": "base + 1000003 * split_id"
+  },
+  "gpu": {
+    "used": false
+  },
+  "environment": {
+    "python": "3.10.16 | packaged by Anaconda, Inc. | (main, Dec 11 2024, 16:19:12) [MSC v.1929 64 bit (AMD64)]",
+    "numpy": "2.2.6",
+    "pandas": "2.2.3",
+    "platform": "Windows-10-10.0.22631-SP0"
+  },
+  "input_sha256": {
+    "C:\\Users\\87385\\Desktop\\paper 3\\video-hallucination-diagnosis\\input\\herbench\\herbench_lite_v2_inference.jsonl": "5b4ae1fc5fa1b320f3990740bdc6cf3101cd927d8fe4f75c2f90c4817ddcb5e6",
+    "C:\\Users\\87385\\Desktop\\paper 3\\video-hallucination-diagnosis\\input\\perception_test\\frozen\\perception_test_valid500_inference.jsonl": "f61bfd9ad5eb63c280788efd65000ddc9bbe1f1cae929159da2fc678eeb5bbf0"
+  },
+  "output_sha256": {
+    "prepare_splits.py": "5580bd980b26a7b80b2e16c114f891c19eb9667795de40d17e530fcb51c22554",
+    "REPORT.md": "dce0f146ddfe80d180cffe4440761c0ce504ca06f44bf1a173902a2ba4d754d4",
+    "split_checks.csv": "0d8ab6a266fc5d75f2879798c857187669b75cf25fccdf7f473078dea419f60e",
+    "video_assignments.csv": "d04b46d0e026e8e2677d17372b7e7f7b37f157d2580c806339ee67cf8415e6b2"
+  }
+}

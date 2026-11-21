@@ -1,0 +1,174 @@
+[
+  {
+    "file": "C:\\Users\\87385\\Desktop\\paper 3\\video-hallucination-diagnosis\\results\\supplementary\\cpu_round2\\D_sources\\encoder_report.html",
+    "matches": 9,
+    "contexts": [
+      "T-QA ( Xiao et al., 2021 ) , VideoMME ( Fu et al., 2024 ) , PerceptionTest ( Patraucean et al., 2023 ) , TOMATO ( Shinoda et al., 2025 ) , and LongVideoBench-Val-Video ( Wu et al., 2024 ) . Expe",
+      " 76.1 70.1 75.6 71.9 70.6 VideoMME 54.1 47.2 53.4 49.3 46.8 Perception Test 60.6 57.1 60.3 56.7 56.0 TOMATO 21.8 22.2 22.2 21.8 22.3 LongVideoBench-Val-Video 51.6 45.0 50.4 45.5 45.2 Image AI2D 8",
+      "t of seven benchmarks: SSV2, Diving48 ( Li et al., 2018 ) , Perception Test ( Patraucean et al., 2023 ) , CharadesEgo ( Sigurdsson et al., 2018 ) , Epic-Kitchens-100 ( Kay et al., 2017 ) , Kineti",
+      "ability: a batch size of 32 is used for SSV2, Diving48, and Perception Test, 16 for HMDB51, and 128 for all remaining datasets. During evaluation, we adopt a single-crop inference protocol, using",
+      "Benchmarks (Acc. %) Method Backbone Res. Avg. SSV2 Diving48 Perception Test CharadesEgo Epic-Verb Epic-Noun Kinetics-400 HMDB51 8 Frames / 2048 Patches CLIP ViT-L/14 224 50.5 48.2 46.6 52.2 10.8 ",
+      "ignals. Setting Video Benchmarks (Acc. %) AVG SSV2 Diving48 Perception Test CharadesEgo Epic-Verb Epic-Noun Kinetics-400 HMDB51 Patch Budget = 512 SigLIP2 47.0 42.8 37.3 22.5 46.4 42.9 37.4 74.5 ",
+      "verage. As a result, it outperforms SigLIP2 on Diving48 and Perception Test while reducing patch processing by 75.0%–96.9% compared to dense processing of 16,384 patches. Specifically, the reduct",
+      "cified. Setting Video Benchmarks (Acc. %) AVG SSV2 Diving48 Perception Test CharadesEgo Epic-Verb Epic-Noun Kinetics-400 HMDB51 OV-Encoder (Codec) 61.4 60.1 69.4 60.9 12.9 63.3 54.4 85.4 85.3 Non",
+      " Osindero, Dima Damen, Andrew Zisserman, and Joao Carreira. Perception test: A diagnostic benchmark for multimodal video models. In NeurIPS , pages 42748–42761. Curran Associates, Inc., 2023. Rad"
+    ]
+  },
+  {
+    "file": "C:\\Users\\87385\\Desktop\\paper 3\\video-hallucination-diagnosis\\results\\supplementary\\cpu_round2\\D_sources\\encoder_report.txt",
+    "matches": 8,
+    "contexts": [
+      "T-QA ( Xiao et al., 2021 ) , VideoMME ( Fu et al., 2024 ) , PerceptionTest ( Patraucean et al., 2023 ) , TOMATO ( Shinoda et al., 2025 ) , and LongVideoBench-Val-Video ( Wu et al., 2024 ) . Foll",
+      " 76.1 70.1 75.6 71.9 70.6 VideoMME 54.1 47.2 53.4 49.3 46.8 Perception Test 60.6 57.1 60.3 56.7 56.0 TOMATO 21.8 22.2 22.2 21.8 22.3 LongVideoBench-Val-Video 51.6 45.0 50.4 45.5 45.2 Image AI2D 8",
+      "t of seven benchmarks: SSV2, Diving48 ( Li et al., 2018 ) , Perception Test ( Patraucean et al., 2023 ) , CharadesEgo ( Sigurdsson et al., 2018 ) , Epic-Kitchens-100 ( Kay et al., 2017 ) , Kineti",
+      "ability: a batch size of 32 is used for SSV2, Diving48, and Perception Test, 16 for HMDB51, and 128 for all remaining datasets. During evaluation, we adopt a single-crop inference protocol, using",
+      "Benchmarks (Acc. %) Method Backbone Res. Avg. SSV2 Diving48 Perception Test CharadesEgo Epic-Verb Epic-Noun Kinetics-400 HMDB51 8 Frames / 2048 Patches CLIP ViT-L/14 224 50.5 48.2 46.6 52.2 10.8 ",
+      " count. Setting Video Benchmarks (Acc. %) AVG SSV2 Diving48 Perception Test CharadesEgo Epic-Verb Epic-Noun Kinetics-400 HMDB51 Patch Budget = 512 SigLIP2 47.0 42.8 37.3 22.5 46.4 42.9 37.4 74.5 ",
+      "verage. As a result, it outperforms SigLIP2 on Diving48 and Perception Test while reducing patch processing by 75.0%–96.9% compared to dense processing of 16,384 patches. Specifically, the reduct",
+      "–96.9%. Setting Video Benchmarks (Acc. %) AVG SSV2 Diving48 Perception Test CharadesEgo Epic-Verb Epic-Noun Kinetics-400 HMDB51 OV-Encoder (Codec) 61.4 60.1 69.4 60.9 12.9 63.3 54.4 85.4 85.3 Non"
+    ]
+  },
+  {
+    "file": "C:\\Users\\87385\\Desktop\\paper 3\\video-hallucination-diagnosis\\results\\supplementary\\cpu_round2\\D_sources\\internvl14_archived_card.md",
+    "matches": 0,
+    "contexts": []
+  },
+  {
+    "file": "C:\\Users\\87385\\Desktop\\paper 3\\video-hallucination-diagnosis\\results\\supplementary\\cpu_round2\\D_sources\\internvl3_report.html",
+    "matches": 0,
+    "contexts": []
+  },
+  {
+    "file": "C:\\Users\\87385\\Desktop\\paper 3\\video-hallucination-diagnosis\\results\\supplementary\\cpu_round2\\D_sources\\InternVL__internvl_chat_gpt_oss__shell__internvl3_5_qwen3__internvl3_5_14b_mpo.sh",
+    "matches": 0,
+    "contexts": []
+  },
+  {
+    "file": "C:\\Users\\87385\\Desktop\\paper 3\\video-hallucination-diagnosis\\results\\supplementary\\cpu_round2\\D_sources\\InternVL__internvl_chat_gpt_oss__shell__internvl3_5_qwen3__internvl3_5_14b_sft.sh",
+    "matches": 0,
+    "contexts": []
+  },
+  {
+    "file": "C:\\Users\\87385\\Desktop\\paper 3\\video-hallucination-diagnosis\\results\\supplementary\\cpu_round2\\D_sources\\internvl_card.md",
+    "matches": 0,
+    "contexts": []
+  },
+  {
+    "file": "C:\\Users\\87385\\Desktop\\paper 3\\video-hallucination-diagnosis\\results\\supplementary\\cpu_round2\\D_sources\\internvl_data_card.md",
+    "matches": 0,
+    "contexts": []
+  },
+  {
+    "file": "C:\\Users\\87385\\Desktop\\paper 3\\video-hallucination-diagnosis\\results\\supplementary\\cpu_round2\\D_sources\\internvl_repo.md",
+    "matches": 0,
+    "contexts": []
+  },
+  {
+    "file": "C:\\Users\\87385\\Desktop\\paper 3\\video-hallucination-diagnosis\\results\\supplementary\\cpu_round2\\D_sources\\internvl_report.html",
+    "matches": 0,
+    "contexts": []
+  },
+  {
+    "file": "C:\\Users\\87385\\Desktop\\paper 3\\video-hallucination-diagnosis\\results\\supplementary\\cpu_round2\\D_sources\\internvl_report.txt",
+    "matches": 0,
+    "contexts": []
+  },
+  {
+    "file": "C:\\Users\\87385\\Desktop\\paper 3\\video-hallucination-diagnosis\\results\\supplementary\\cpu_round2\\D_sources\\LLaVA-OneVision-2__aiak_megatron__examples__multimodal__pretrain_dataset.yaml",
+    "matches": 0,
+    "contexts": []
+  },
+  {
+    "file": "C:\\Users\\87385\\Desktop\\paper 3\\video-hallucination-diagnosis\\results\\supplementary\\cpu_round2\\D_sources\\LLaVA-OneVision-2__aiak_megatron__examples__multimodal__sft_dataset.yaml",
+    "matches": 0,
+    "contexts": []
+  },
+  {
+    "file": "C:\\Users\\87385\\Desktop\\paper 3\\video-hallucination-diagnosis\\results\\supplementary\\cpu_round2\\D_sources\\LLaVA-OneVision-2__configs__README.md",
+    "matches": 0,
+    "contexts": []
+  },
+  {
+    "file": "C:\\Users\\87385\\Desktop\\paper 3\\video-hallucination-diagnosis\\results\\supplementary\\cpu_round2\\D_sources\\LLaVA-OneVision-2__examples__llava_onevision2__qwen3_8b__mid_training.sh",
+    "matches": 0,
+    "contexts": []
+  },
+  {
+    "file": "C:\\Users\\87385\\Desktop\\paper 3\\video-hallucination-diagnosis\\results\\supplementary\\cpu_round2\\D_sources\\llava8_archived_card.md",
+    "matches": 0,
+    "contexts": []
+  },
+  {
+    "file": "C:\\Users\\87385\\Desktop\\paper 3\\video-hallucination-diagnosis\\results\\supplementary\\cpu_round2\\D_sources\\llava_card.md",
+    "matches": 0,
+    "contexts": []
+  },
+  {
+    "file": "C:\\Users\\87385\\Desktop\\paper 3\\video-hallucination-diagnosis\\results\\supplementary\\cpu_round2\\D_sources\\llava_repo.md",
+    "matches": 0,
+    "contexts": []
+  },
+  {
+    "file": "C:\\Users\\87385\\Desktop\\paper 3\\video-hallucination-diagnosis\\results\\supplementary\\cpu_round2\\D_sources\\llava_report.html",
+    "matches": 0,
+    "contexts": []
+  },
+  {
+    "file": "C:\\Users\\87385\\Desktop\\paper 3\\video-hallucination-diagnosis\\results\\supplementary\\cpu_round2\\D_sources\\llava_report.txt",
+    "matches": 0,
+    "contexts": []
+  },
+  {
+    "file": "C:\\Users\\87385\\Desktop\\paper 3\\video-hallucination-diagnosis\\results\\supplementary\\cpu_round2\\D_sources\\perception_repo.md",
+    "matches": 103,
+    "contexts": [
+      "# Perception Test: A Diagnostic Benchmark for Multimodal Video Models # News The Fourth Perception Test Challenge will be organised as an",
+      "tic Benchmark for Multimodal Video Models # News The Fourth Perception Test Challenge will be organised as an ECCV2026 workshop, challenge website [here](https://perception-test-challenge.github.",
+      "d as an ECCV2026 workshop, challenge website [here](https://perception-test-challenge.github.io/). <!--Please see the website here for more details and links to eval.ai challenge pages: [ptchalle",
+      "le.com/assets/colab-badge.svg)](https://github.com/deepmind/perception_test/blob/main/data_visualisation.ipynb) | | Dataset Explorer | [Dataset Explorer](https://ptchallenge-workshop.github.io/ex",
+      " data | [Download section here](https://github.com/deepmind/perception_test#download-the-data-and-annotations) | | Evaluation scripts (including data loader, dummy baseline, evaluation metrics) |",
+      "s) | [multiple-choice video QA](https://github.com/deepmind/perception_test/blob/main/baselines/mc_vqa.ipynb), [object tracking](https://github.com/deepmind/perception_test/blob/main/baselines/si",
+      "c_vqa.ipynb), [object tracking](https://github.com/deepmind/perception_test/blob/main/baselines/single_object_tracking.ipynb), [action localisation](https://github.com/deepmind/perception_test/bl",
+      "g.ipynb), [action localisation](https://github.com/deepmind/perception_test/blob/main/baselines/temporal_action_localisation.ipynb), [point tracking](https://github.com/deepmind/perception_test/b",
+      "sation.ipynb), [point tracking](https://github.com/deepmind/perception_test/blob/main/baselines/single_point_tracking.ipynb), [sound localisation](https://github.com/deepmind/perception_test/blob",
+      "ng.ipynb), [sound localisation](https://github.com/deepmind/perception_test/blob/main/baselines/temporal_sound_localisation.ipynb), [grounded video QA](https://github.com/deepmind/perception_test",
+      "ion.ipynb), [grounded video QA](https://github.com/deepmind/perception_test/blob/main/baselines/grounded_vqa.ipynb) | | Challenges and evaluation servers | [multiple-choice video QA](https://eval",
+      "tps://eval.ai/web/challenges/challenge-page/2110/overview) [Perception Test: A Diagnostic Benchmark for Multimodal Video Models](https://arxiv.org/abs/2305.13786) is a multimodal benchmark design"
+    ]
+  },
+  {
+    "file": "C:\\Users\\87385\\Desktop\\paper 3\\video-hallucination-diagnosis\\results\\supplementary\\cpu_round2\\D_sources\\Qwen3-VL__qwen-vl-finetune__qwenvl__data____init__.py",
+    "matches": 0,
+    "contexts": []
+  },
+  {
+    "file": "C:\\Users\\87385\\Desktop\\paper 3\\video-hallucination-diagnosis\\results\\supplementary\\cpu_round2\\D_sources\\Qwen3-VL__qwen-vl-finetune__README.md",
+    "matches": 0,
+    "contexts": []
+  },
+  {
+    "file": "C:\\Users\\87385\\Desktop\\paper 3\\video-hallucination-diagnosis\\results\\supplementary\\cpu_round2\\D_sources\\qwen8_archived_card.md",
+    "matches": 0,
+    "contexts": []
+  },
+  {
+    "file": "C:\\Users\\87385\\Desktop\\paper 3\\video-hallucination-diagnosis\\results\\supplementary\\cpu_round2\\D_sources\\qwen_card.md",
+    "matches": 0,
+    "contexts": []
+  },
+  {
+    "file": "C:\\Users\\87385\\Desktop\\paper 3\\video-hallucination-diagnosis\\results\\supplementary\\cpu_round2\\D_sources\\qwen_repo.md",
+    "matches": 0,
+    "contexts": []
+  },
+  {
+    "file": "C:\\Users\\87385\\Desktop\\paper 3\\video-hallucination-diagnosis\\results\\supplementary\\cpu_round2\\D_sources\\qwen_report.html",
+    "matches": 0,
+    "contexts": []
+  },
+  {
+    "file": "C:\\Users\\87385\\Desktop\\paper 3\\video-hallucination-diagnosis\\results\\supplementary\\cpu_round2\\D_sources\\qwen_report.txt",
+    "matches": 0,
+    "contexts": []
+  }
+]

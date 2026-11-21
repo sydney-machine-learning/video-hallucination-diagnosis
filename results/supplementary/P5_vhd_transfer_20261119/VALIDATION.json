@@ -1,0 +1,12 @@
+{
+  "status": "passed",
+  "archived_source_hashes_preserved": true,
+  "rows": 12033,
+  "questions": 4011,
+  "independent_aurc_checks": 75,
+  "all_internal_control_splits_video_grouped": true,
+  "all_held_out_datasets_excluded_from_fit": true,
+  "all_probabilities_finite": true,
+  "new_gpu_inference": false,
+  "overleaf_modified": false
+}

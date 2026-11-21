@@ -1,0 +1,27 @@
+{
+  "passed": true,
+  "labels_read": false,
+  "common_answer_source": {
+    "responses_sha256": "1bfa47f60ab3cd07750c96b17f143a63ed04fa8f6f41d8d80b480767fda7d51e",
+    "decode_sha256": "afa72654b09fd9492a8abbd95585ce9598f550b57ed3fa53633be826a63d6c8a",
+    "directory": "C:\\Users\\87385\\Desktop\\paper 3\\video-hallucination-diagnosis\\results\\supplementary\\P3B_view_crossed_20261119\\merged_responses_qwen8"
+  },
+  "receipts": {
+    "internvl14": {
+      "responses_sha256": "96da51984040c4da55092b1990ef6a968b4699267b2bebb5286dcf035969fe11",
+      "decode_sha256": "f5dc9015898238084485052c9ea35a36f01a8f6247d1016590efd307c5f22043",
+      "directory": "C:\\Users\\87385\\Desktop\\paper 3\\video-hallucination-diagnosis\\results\\supplementary\\P3B_view_crossed_20261119\\merged_responses_internvl14"
+    },
+    "qwen8": {
+      "responses_sha256": "1bfa47f60ab3cd07750c96b17f143a63ed04fa8f6f41d8d80b480767fda7d51e",
+      "decode_sha256": "afa72654b09fd9492a8abbd95585ce9598f550b57ed3fa53633be826a63d6c8a",
+      "directory": "C:\\Users\\87385\\Desktop\\paper 3\\video-hallucination-diagnosis\\results\\supplementary\\P3B_view_crossed_20261119\\merged_responses_qwen8"
+    },
+    "llava8": {
+      "responses_sha256": "d72105606dc802103a431cfb591612ea60bc7d8f840ebd653f12e25959d17ec5",
+      "decode_sha256": "adb80a7390a61b52f5f05c5d6901cb7882ec1623464430a3857e20ba46293262",
+      "directory": "C:\\Users\\87385\\Desktop\\paper 3\\video-hallucination-diagnosis\\results\\supplementary\\P3B_view_crossed_20261119\\merged_responses_llava8"
+    }
+  },
+  "features_sha256": "12875120e3d4b5ced4a000bbf7fc9d80e80d83598b907d924fc1423ef40ba9da"
+}

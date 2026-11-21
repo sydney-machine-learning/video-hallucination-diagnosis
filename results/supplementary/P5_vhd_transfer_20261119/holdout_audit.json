@@ -1,0 +1,62 @@
+[
+  {
+    "held_out": "MVBench",
+    "train_datasets": [
+      "NExT-GQA",
+      "STAR",
+      "TempCompass",
+      "VHD"
+    ],
+    "train_rows": 6633,
+    "test_rows": 5400,
+    "test_videos": 1723
+  },
+  {
+    "held_out": "NExT-GQA",
+    "train_datasets": [
+      "MVBench",
+      "STAR",
+      "TempCompass",
+      "VHD"
+    ],
+    "train_rows": 10533,
+    "test_rows": 1500,
+    "test_videos": 500
+  },
+  {
+    "held_out": "STAR",
+    "train_datasets": [
+      "MVBench",
+      "NExT-GQA",
+      "TempCompass",
+      "VHD"
+    ],
+    "train_rows": 10533,
+    "test_rows": 1500,
+    "test_videos": 500
+  },
+  {
+    "held_out": "TempCompass",
+    "train_datasets": [
+      "MVBench",
+      "NExT-GQA",
+      "STAR",
+      "VHD"
+    ],
+    "train_rows": 10803,
+    "test_rows": 1230,
+    "test_videos": 410
+  },
+  {
+    "held_out": "VHD",
+    "train_datasets": [
+      "MVBench",
+      "NExT-GQA",
+      "STAR",
+      "TempCompass"
+    ],
+    "train_rows": 9630,
+    "test_rows": 2403,
+    "test_videos": 341
+  }
+]

@@ -1,0 +1,75 @@
+{
+  "utc": "2026-11-19T03:07:32.860804+00:00",
+  "tasks": [
+    {
+      "protocol": "phase_views",
+      "model": "internvl14",
+      "job": "9830178.kman.restech.unsw.edu.au"
+    },
+    {
+      "protocol": "phase_views",
+      "model": "llava8",
+      "job": "9829636.kman.restech.unsw.edu.au"
+    },
+    {
+      "protocol": "original_views",
+      "model": "qwen8",
+      "job": "9829906.kman.restech.unsw.edu.au"
+    },
+    {
+      "protocol": "original_views",
+      "model": "internvl14",
+      "job": "9830179.kman.restech.unsw.edu.au"
+    },
+    {
+      "protocol": "original_views",
+      "model": "llava8",
+      "job": "9830954.kman.restech.unsw.edu.au"
+    }
+  ],
+  "cpu_gate": "9829167.kman.restech.unsw.edu.au",
+  "native_jobs_user_hold_until_cpu_gate_passes": false,
+  "failed_before_inference": [
+    "9829050.kman.restech.unsw.edu.au",
+    "9829051.kman.restech.unsw.edu.au"
+  ],
+  "supplementary_unused_held_job": "9828938.kman.restech.unsw.edu.au",
+  "cpu_frame_validation": "9829148 passed",
+  "tokenizer_validation": "Configured official loader hash check on CPU within each allocation, before weight staging, then equality check at inference load",
+  "cancelled_dependency_jobs": [
+    "9829160",
+    "9829168",
+    "9829169"
+  ],
+  "native_gpu_cap_seconds": 3300,
+  "shard_gpu_cap_seconds": 6600,
+  "shard_maximum_concurrent_per_model": 2,
+  "never_started_unschedulable_jobs": [
+    "9829161",
+    "9829162",
+    "9829612"
+  ],
+  "superseded_jobs": [
+    {
+      "protocol": "phase_views",
+      "model": "internvl14",
+      "job": "9829635.kman.restech.unsw.edu.au"
+    },
+    {
+      "protocol": "original_views",
+      "model": "internvl14",
+      "job": "9829909.kman.restech.unsw.edu.au"
+    }
+  ],
+  "internvl_runtime": "isolated transformers 4.57.6, tokenizers 0.22.1, huggingface-hub 0.36.0; CPU compatibility passed job 9830138; original model revision unchanged",
+  "timeout_retries": [
+    {
+      "previous_job": "9829910.kman.restech.unsw.edu.au",
+      "model": "llava8",
+      "walltime_limit_seconds": 4500,
+      "status": "submitted",
+      "reason": "Original pilot reached its 55-minute allocation without a model error; resume saved responses once.",
+      "job": "9830954.kman.restech.unsw.edu.au"
+    }
+  ]
+}

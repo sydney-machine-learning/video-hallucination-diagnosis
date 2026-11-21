@@ -1,0 +1,13 @@
+model_id,view,frame_budget,frame_indices_count,input_visual_frames,scoring_method,forward_calls,generated,rows
+OpenGVLab/InternVL3_5-4B-Instruct,base,8,8,8,single_prefix_next_token_logits,1,False,1800
+OpenGVLab/InternVL3_5-4B-Instruct,invariant_nuisance,8,8,8,single_prefix_next_token_logits,1,False,1800
+OpenGVLab/InternVL3_5-4B-Instruct,dense_acquisition,16,16,16,single_prefix_next_token_logits,1,False,1800
+OpenGVLab/InternVL3_5-4B-Instruct,temporal_order_destruction,8,8,8,single_prefix_next_token_logits,1,False,1800
+lmms-lab-encoder/LLaVA-OneVision-2-8B-Instruct,base,8,8,8,single_prefix_next_token_logits,1,False,1800
+lmms-lab-encoder/LLaVA-OneVision-2-8B-Instruct,invariant_nuisance,8,8,8,single_prefix_next_token_logits,1,False,1800
+lmms-lab-encoder/LLaVA-OneVision-2-8B-Instruct,dense_acquisition,16,16,16,single_prefix_next_token_logits,1,False,1800
+lmms-lab-encoder/LLaVA-OneVision-2-8B-Instruct,temporal_order_destruction,8,8,8,single_prefix_next_token_logits,1,False,1800
+Qwen/Qwen3-VL-4B-Instruct,base,8,8,8,single_prefix_next_token_logits,1,False,1800
+Qwen/Qwen3-VL-4B-Instruct,invariant_nuisance,8,8,8,single_prefix_next_token_logits,1,False,1800
+Qwen/Qwen3-VL-4B-Instruct,dense_acquisition,16,16,16,single_prefix_next_token_logits,1,False,1800
+Qwen/Qwen3-VL-4B-Instruct,temporal_order_destruction,8,8,8,single_prefix_next_token_logits,1,False,1800

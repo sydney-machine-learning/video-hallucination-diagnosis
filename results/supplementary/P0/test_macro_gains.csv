@@ -1,0 +1,5 @@
+dataset,aurc_definition,policy,mean_relative_gain_percent,worst_model_gain_percent,paper_reported_gain_percent
+HERBench,paper_prefix_risk_mean,fixed_archived_selection,16.64463892977936,11.392735373594022,16.64
+HERBench,helper_tie_grouped_trapezoid,fixed_archived_selection,16.65790055844001,11.402687178987437,16.64
+Perception,paper_prefix_risk_mean,fixed_archived_selection,18.868027776282805,0.0,18.87
+Perception,helper_tie_grouped_trapezoid,fixed_archived_selection,18.88976612142548,0.0,18.87

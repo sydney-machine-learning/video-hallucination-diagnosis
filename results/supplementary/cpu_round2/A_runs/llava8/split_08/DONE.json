@@ -1,0 +1,6 @@
+{
+  "model": "llava8",
+  "split": 8,
+  "selected": "source_trace_hgb",
+  "gain": 27.961803254891773
+}

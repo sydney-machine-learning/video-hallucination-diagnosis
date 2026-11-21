@@ -1,0 +1,1321 @@
+[
+  {
+    "path": "/home/z5611125/sicr_route/results_fresh/public_inference/8900849.kman.restech.unsw.edu.au/star_three_model/qwen_predictions.jsonl",
+    "sha256": "ebeb62495ac6781d144f755d9bf2b3a7ee8c964522b4bce922c075e84ff4e0ce",
+    "bytes": 8111541,
+    "rows": 2000,
+    "questions": 500,
+    "duplicate_question_model_view_keys": 0,
+    "status_counts": {
+      "ok": 2000
+    },
+    "models": [
+      "Qwen/Qwen3-VL-4B-Instruct"
+    ],
+    "datasets": [
+      "STAR"
+    ],
+    "views": [
+      {
+        "view": "base",
+        "frame_budget": "8",
+        "input_visual_frames": "8",
+        "rows": 500
+      },
+      {
+        "view": "invariant_nuisance",
+        "frame_budget": "8",
+        "input_visual_frames": "8",
+        "rows": 500
+      },
+      {
+        "view": "dense_acquisition",
+        "frame_budget": "16",
+        "input_visual_frames": "16",
+        "rows": 500
+      },
+      {
+        "view": "temporal_order_destruction",
+        "frame_budget": "8",
+        "input_visual_frames": "8",
+        "rows": 500
+      }
+    ]
+  },
+  {
+    "path": "/home/z5611125/sicr_route/results_fresh/public_inference/8900849.kman.restech.unsw.edu.au/star_three_model/llava_predictions.jsonl",
+    "sha256": "83822b27e72d541fb64edc740f366c8c93034d035407dba930b958b30a2b36a0",
+    "bytes": 8133358,
+    "rows": 2000,
+    "questions": 500,
+    "duplicate_question_model_view_keys": 0,
+    "status_counts": {
+      "ok": 2000
+    },
+    "models": [
+      "lmms-lab-encoder/LLaVA-OneVision-2-8B-Instruct"
+    ],
+    "datasets": [
+      "STAR"
+    ],
+    "views": [
+      {
+        "view": "base",
+        "frame_budget": "8",
+        "input_visual_frames": "8",
+        "rows": 500
+      },
+      {
+        "view": "invariant_nuisance",
+        "frame_budget": "8",
+        "input_visual_frames": "8",
+        "rows": 500
+      },
+      {
+        "view": "dense_acquisition",
+        "frame_budget": "16",
+        "input_visual_frames": "16",
+        "rows": 500
+      },
+      {
+        "view": "temporal_order_destruction",
+        "frame_budget": "8",
+        "input_visual_frames": "8",
+        "rows": 500
+      }
+    ]
+  },
+  {
+    "path": "/home/z5611125/sicr_route/results_fresh/public_inference/8900849.kman.restech.unsw.edu.au/star_three_model/internvl_predictions.jsonl",
+    "sha256": "0f124ac84328714042a91cc4b7b3302d322e33b712e199aa6707c2e14e56f240",
+    "bytes": 8058583,
+    "rows": 2000,
+    "questions": 500,
+    "duplicate_question_model_view_keys": 0,
+    "status_counts": {
+      "ok": 2000
+    },
+    "models": [
+      "OpenGVLab/InternVL3_5-4B-Instruct"
+    ],
+    "datasets": [
+      "STAR"
+    ],
+    "views": [
+      {
+        "view": "base",
+        "frame_budget": "8",
+        "input_visual_frames": "8",
+        "rows": 500
+      },
+      {
+        "view": "invariant_nuisance",
+        "frame_budget": "8",
+        "input_visual_frames": "8",
+        "rows": 500
+      },
+      {
+        "view": "dense_acquisition",
+        "frame_budget": "16",
+        "input_visual_frames": "16",
+        "rows": 500
+      },
+      {
+        "view": "temporal_order_destruction",
+        "frame_budget": "8",
+        "input_visual_frames": "8",
+        "rows": 500
+      }
+    ]
+  },
+  {
+    "path": "/home/z5611125/sicr_route/results_fresh/public_inference/8900849.kman.restech.unsw.edu.au/nextgqa_llava/llava_ov2_8b_predictions.jsonl",
+    "sha256": "1a1f6022cd07c93e52435e46f8f08bbdb409d33dae7910b31a967ed1038d963c",
+    "bytes": 8664926,
+    "rows": 2000,
+    "questions": 13,
+    "duplicate_question_model_view_keys": 1948,
+    "status_counts": {
+      "ok": 2000
+    },
+    "models": [
+      "lmms-lab-encoder/LLaVA-OneVision-2-8B-Instruct"
+    ],
+    "datasets": [
+      "NExT-GQA"
+    ],
+    "views": [
+      {
+        "view": "base",
+        "frame_budget": "16",
+        "input_visual_frames": "16",
+        "rows": 500
+      },
+      {
+        "view": "invariant_nuisance",
+        "frame_budget": "16",
+        "input_visual_frames": "16",
+        "rows": 500
+      },
+      {
+        "view": "temporal_evidence_sufficiency",
+        "frame_budget": "16",
+        "input_visual_frames": "16",
+        "rows": 500
+      },
+      {
+        "view": "evidence_removal",
+        "frame_budget": "16",
+        "input_visual_frames": "16",
+        "rows": 500
+      }
+    ]
+  },
+  {
+    "path": "/home/z5611125/sicr_route/results_fresh/multidataset_analysis/8906912.kman.restech.unsw.edu.au/multidataset_features.csv",
+    "sha256": "5b17dd2e1d25294f524be03e386c1b56b4c3a83c64ecd813d5fbe5c6e255b831",
+    "bytes": 3916377,
+    "columns": [
+      "model_id",
+      "model_family",
+      "model_revision",
+      "pilot_id",
+      "video_id",
+      "question_type",
+      "dataset",
+      "correct",
+      "raw_confidence",
+      "base_entropy_norm",
+      "gold_candidate_index",
+      "candidate_count",
+      "contract_dense_acquisition",
+      "contract_evidence_removal",
+      "contract_invariant_nuisance",
+      "contract_temporal_evidence_sufficiency",
+      "contract_temporal_order_destruction",
+      "cost_base_input_language_tokens",
+      "cost_base_input_language_tokens_observed",
+      "cost_base_latency_seconds",
+      "cost_base_latency_seconds_observed",
+      "cost_base_output_language_tokens",
+      "cost_base_output_language_tokens_observed",
+      "cost_base_peak_memory_gib",
+      "cost_base_peak_memory_gib_observed",
+      "cost_base_videollm_calls",
+      "cost_base_videollm_calls_observed",
+      "cost_base_visual_frames",
+      "cost_base_visual_frames_observed",
+      "cost_base_visual_tokens",
+      "cost_base_visual_tokens_observed",
+      "cost_dense_acquisition_input_language_tokens",
+      "cost_dense_acquisition_input_language_tokens_observed",
+      "cost_dense_acquisition_latency_seconds",
+      "cost_dense_acquisition_latency_seconds_observed",
+      "cost_dense_acquisition_output_language_tokens",
+      "cost_dense_acquisition_output_language_tokens_observed",
+      "cost_dense_acquisition_peak_memory_gib",
+      "cost_dense_acquisition_peak_memory_gib_observed",
+      "cost_dense_acquisition_videollm_calls",
+      "cost_dense_acquisition_videollm_calls_observed",
+      "cost_dense_acquisition_visual_frames",
+      "cost_dense_acquisition_visual_frames_observed",
+      "cost_dense_acquisition_visual_tokens",
+      "cost_dense_acquisition_visual_tokens_observed",
+      "cost_evidence_removal_input_language_tokens",
+      "cost_evidence_removal_input_language_tokens_observed",
+      "cost_evidence_removal_latency_seconds",
+      "cost_evidence_removal_latency_seconds_observed",
+      "cost_evidence_removal_output_language_tokens",
+      "cost_evidence_removal_output_language_tokens_observed",
+      "cost_evidence_removal_peak_memory_gib",
+      "cost_evidence_removal_peak_memory_gib_observed",
+      "cost_evidence_removal_videollm_calls",
+      "cost_evidence_removal_videollm_calls_observed",
+      "cost_evidence_removal_visual_frames",
+      "cost_evidence_removal_visual_frames_observed",
+      "cost_evidence_removal_visual_tokens",
+      "cost_evidence_removal_visual_tokens_observed",
+      "cost_invariant_nuisance_input_language_tokens",
+      "cost_invariant_nuisance_input_language_tokens_observed",
+      "cost_invariant_nuisance_latency_seconds",
+      "cost_invariant_nuisance_latency_seconds_observed",
+      "cost_invariant_nuisance_output_language_tokens",
+      "cost_invariant_nuisance_output_language_tokens_observed",
+      "cost_invariant_nuisance_peak_memory_gib",
+      "cost_invariant_nuisance_peak_memory_gib_observed",
+      "cost_invariant_nuisance_videollm_calls",
+      "cost_invariant_nuisance_videollm_calls_observed",
+      "cost_invariant_nuisance_visual_frames",
+      "cost_invariant_nuisance_visual_frames_observed",
+      "cost_invariant_nuisance_visual_tokens",
+      "cost_invariant_nuisance_visual_tokens_observed",
+      "cost_temporal_evidence_sufficiency_input_language_tokens",
+      "cost_temporal_evidence_sufficiency_input_language_tokens_observed",
+      "cost_temporal_evidence_sufficiency_latency_seconds",
+      "cost_temporal_evidence_sufficiency_latency_seconds_observed",
+      "cost_temporal_evidence_sufficiency_output_language_tokens",
+      "cost_temporal_evidence_sufficiency_output_language_tokens_observed",
+      "cost_temporal_evidence_sufficiency_peak_memory_gib",
+      "cost_temporal_evidence_sufficiency_peak_memory_gib_observed",
+      "cost_temporal_evidence_sufficiency_videollm_calls",
+      "cost_temporal_evidence_sufficiency_videollm_calls_observed",
+      "cost_temporal_evidence_sufficiency_visual_frames",
+      "cost_temporal_evidence_sufficiency_visual_frames_observed",
+      "cost_temporal_evidence_sufficiency_visual_tokens",
+      "cost_temporal_evidence_sufficiency_visual_tokens_observed",
+      "cost_temporal_order_destruction_input_language_tokens",
+      "cost_temporal_order_destruction_input_language_tokens_observed",
+      "cost_temporal_order_destruction_latency_seconds",
+      "cost_temporal_order_destruction_latency_seconds_observed",
+      "cost_temporal_order_destruction_output_language_tokens",
+      "cost_temporal_order_destruction_output_language_tokens_observed",
+      "cost_temporal_order_destruction_peak_memory_gib",
+      "cost_temporal_order_destruction_peak_memory_gib_observed",
+      "cost_temporal_order_destruction_videollm_calls",
+      "cost_temporal_order_destruction_videollm_calls_observed",
+      "cost_temporal_order_destruction_visual_frames",
+      "cost_temporal_order_destruction_visual_frames_observed",
+      "cost_temporal_order_destruction_visual_tokens",
+      "cost_temporal_order_destruction_visual_tokens_observed",
+      "residual_dense_acquisition_base_top_probability_delta",
+      "residual_dense_acquisition_centered_log_probability_delta_0",
+      "residual_dense_acquisition_centered_log_probability_delta_1",
+      "residual_dense_acquisition_centered_log_probability_delta_2",
+      "residual_dense_acquisition_centered_log_probability_delta_3",
+      "residual_dense_acquisition_entropy_delta_norm",
+      "residual_dense_acquisition_flip",
+      "residual_dense_acquisition_js_norm",
+      "residual_dense_acquisition_top_probability_delta",
+      "residual_evidence_removal_base_top_probability_delta",
+      "residual_evidence_removal_centered_log_probability_delta_0",
+      "residual_evidence_removal_centered_log_probability_delta_1",
+      "residual_evidence_removal_centered_log_probability_delta_2",
+      "residual_evidence_removal_centered_log_probability_delta_3",
+      "residual_evidence_removal_centered_log_probability_delta_4",
+      "residual_evidence_removal_entropy_delta_norm",
+      "residual_evidence_removal_flip",
+      "residual_evidence_removal_js_norm",
+      "residual_evidence_removal_top_probability_delta",
+      "residual_invariant_nuisance_base_top_probability_delta",
+      "residual_invariant_nuisance_centered_log_probability_delta_0",
+      "residual_invariant_nuisance_centered_log_probability_delta_1",
+      "residual_invariant_nuisance_centered_log_probability_delta_2",
+      "residual_invariant_nuisance_centered_log_probability_delta_3",
+      "residual_invariant_nuisance_centered_log_probability_delta_4",
+      "residual_invariant_nuisance_entropy_delta_norm",
+      "residual_invariant_nuisance_flip",
+      "residual_invariant_nuisance_js_norm",
+      "residual_invariant_nuisance_top_probability_delta",
+      "residual_temporal_evidence_sufficiency_base_top_probability_delta",
+      "residual_temporal_evidence_sufficiency_centered_log_probability_delta_0",
+      "residual_temporal_evidence_sufficiency_centered_log_probability_delta_1",
+      "residual_temporal_evidence_sufficiency_centered_log_probability_delta_2",
+      "residual_temporal_evidence_sufficiency_centered_log_probability_delta_3",
+      "residual_temporal_evidence_sufficiency_centered_log_probability_delta_4",
+      "residual_temporal_evidence_sufficiency_entropy_delta_norm",
+      "residual_temporal_evidence_sufficiency_flip",
+      "residual_temporal_evidence_sufficiency_js_norm",
+      "residual_temporal_evidence_sufficiency_top_probability_delta",
+      "residual_temporal_order_destruction_base_top_probability_delta",
+      "residual_temporal_order_destruction_centered_log_probability_delta_0",
+      "residual_temporal_order_destruction_centered_log_probability_delta_1",
+      "residual_temporal_order_destruction_centered_log_probability_delta_2",
+      "residual_temporal_order_destruction_centered_log_probability_delta_3",
+      "residual_temporal_order_destruction_entropy_delta_norm",
+      "residual_temporal_order_destruction_flip",
+      "residual_temporal_order_destruction_js_norm",
+      "residual_temporal_order_destruction_top_probability_delta",
+      "typed_dense_acquisition_acquisition_base_top_probability_delta",
+      "typed_dense_acquisition_acquisition_entropy_delta_norm",
+      "typed_dense_acquisition_acquisition_flip",
+      "typed_dense_acquisition_acquisition_js_norm",
+      "typed_dense_acquisition_acquisition_one_hot",
+      "typed_evidence_removal_evidence_removal_base_top_probability_delta",
+      "typed_evidence_removal_evidence_removal_entropy_delta_norm",
+      "typed_evidence_removal_evidence_removal_flip",
+      "typed_evidence_removal_evidence_removal_js_norm",
+      "typed_evidence_removal_evidence_removal_one_hot",
+      "typed_invariant_nuisance_invariant_base_top_probability_delta",
+      "typed_invariant_nuisance_invariant_entropy_delta_norm",
+      "typed_invariant_nuisance_invariant_flip",
+      "typed_invariant_nuisance_invariant_js_norm",
+      "typed_invariant_nuisance_invariant_one_hot",
+      "typed_temporal_evidence_sufficiency_evidence_sufficiency_base_top_probability_delta",
+      "typed_temporal_evidence_sufficiency_evidence_sufficiency_entropy_delta_norm",
+      "typed_temporal_evidence_sufficiency_evidence_sufficiency_flip",
+      "typed_temporal_evidence_sufficiency_evidence_sufficiency_js_norm",
+      "typed_temporal_evidence_sufficiency_evidence_sufficiency_one_hot",
+      "typed_temporal_order_destruction_evidence_removal_base_top_probability_delta",
+      "typed_temporal_order_destruction_evidence_removal_entropy_delta_norm",
+      "typed_temporal_order_destruction_evidence_removal_flip",
+      "typed_temporal_order_destruction_evidence_removal_js_norm",
+      "typed_temporal_order_destruction_evidence_removal_one_hot"
+    ],
+    "rows": 3000
+  },
+  {
+    "path": "/home/z5611125/sicr_route/results_fresh/prave_tempcompass_confirmation/8905479.kman.restech.unsw.edu.au/qwen_predictions.jsonl",
+    "sha256": "a2292ec0de436084e94473f1d38bbf15c146a07cae8c6cd6223776636b3f2e0d",
+    "bytes": 2878595,
+    "rows": 820,
+    "questions": 410,
+    "duplicate_question_model_view_keys": 0,
+    "status_counts": {
+      "ok": 820
+    },
+    "models": [
+      "Qwen/Qwen3-VL-4B-Instruct"
+    ],
+    "datasets": [
+      "TempCompass"
+    ],
+    "views": [
+      {
+        "view": "base",
+        "frame_budget": "6",
+        "input_visual_frames": "6",
+        "rows": 410
+      },
+      {
+        "view": "evidence_addition",
+        "frame_budget": "12",
+        "input_visual_frames": "12",
+        "rows": 410
+      }
+    ]
+  },
+  {
+    "path": "/home/z5611125/sicr_route/results_fresh/prave_tempcompass_confirmation/8905479.kman.restech.unsw.edu.au/llava_predictions.jsonl",
+    "sha256": "a7afb6da8c07d4bbe67a16ceba2e5d7d264f205e78eadde4596cdb65106a6be5",
+    "bytes": 2888667,
+    "rows": 820,
+    "questions": 410,
+    "duplicate_question_model_view_keys": 0,
+    "status_counts": {
+      "ok": 820
+    },
+    "models": [
+      "lmms-lab-encoder/LLaVA-OneVision-2-8B-Instruct"
+    ],
+    "datasets": [
+      "TempCompass"
+    ],
+    "views": [
+      {
+        "view": "base",
+        "frame_budget": "6",
+        "input_visual_frames": "6",
+        "rows": 410
+      },
+      {
+        "view": "evidence_addition",
+        "frame_budget": "12",
+        "input_visual_frames": "12",
+        "rows": 410
+      }
+    ]
+  },
+  {
+    "path": "/home/z5611125/sicr_route/results_fresh/prave_tempcompass_confirmation/8905479.kman.restech.unsw.edu.au/internvl_predictions.jsonl",
+    "sha256": "f1742226cd4b8acd1ed4cae07d9d1b1aa89ccaef9950c5b34fd20209c161d51b",
+    "bytes": 2857278,
+    "rows": 820,
+    "questions": 410,
+    "duplicate_question_model_view_keys": 0,
+    "status_counts": {
+      "ok": 820
+    },
+    "models": [
+      "OpenGVLab/InternVL3_5-4B-Instruct"
+    ],
+    "datasets": [
+      "TempCompass"
+    ],
+    "views": [
+      {
+        "view": "base",
+        "frame_budget": "6",
+        "input_visual_frames": "6",
+        "rows": 410
+      },
+      {
+        "view": "evidence_addition",
+        "frame_budget": "12",
+        "input_visual_frames": "12",
+        "rows": 410
+      }
+    ]
+  },
+  {
+    "path": "/home/z5611125/sicr_route/results_fresh/rava_vhd_confirmation/8905351.kman.restech.unsw.edu.au/qwen_predictions.jsonl",
+    "sha256": "df3536c84653316acbaf0c91076fa7184bc749354f92b9174e31234cc7a3a956",
+    "bytes": 5855460,
+    "rows": 1602,
+    "questions": 801,
+    "duplicate_question_model_view_keys": 0,
+    "status_counts": {
+      "ok": 1602
+    },
+    "models": [
+      "Qwen/Qwen3-VL-4B-Instruct"
+    ],
+    "datasets": [
+      "VHD"
+    ],
+    "views": [
+      {
+        "view": "base",
+        "frame_budget": "8",
+        "input_visual_frames": "8",
+        "rows": 801
+      },
+      {
+        "view": "evidence_addition",
+        "frame_budget": "16",
+        "input_visual_frames": "16",
+        "rows": 801
+      }
+    ]
+  },
+  {
+    "path": "/home/z5611125/sicr_route/results_fresh/rava_vhd_confirmation/8905351.kman.restech.unsw.edu.au/internvl_predictions.jsonl",
+    "sha256": "21c0be9a4da73786698f5528888678b09839cf839a59993c7c2f0164a3bbbbe9",
+    "bytes": 5818424,
+    "rows": 1602,
+    "questions": 801,
+    "duplicate_question_model_view_keys": 0,
+    "status_counts": {
+      "ok": 1602
+    },
+    "models": [
+      "OpenGVLab/InternVL3_5-4B-Instruct"
+    ],
+    "datasets": [
+      "VHD"
+    ],
+    "views": [
+      {
+        "view": "base",
+        "frame_budget": "8",
+        "input_visual_frames": "8",
+        "rows": 801
+      },
+      {
+        "view": "evidence_addition",
+        "frame_budget": "16",
+        "input_visual_frames": "16",
+        "rows": 801
+      }
+    ]
+  },
+  {
+    "path": "/home/z5611125/sicr_route/results_fresh/rava_vhd_confirmation/8905351.kman.restech.unsw.edu.au/llava_predictions.jsonl",
+    "sha256": "5e4491fd92274d5e709e39c4bce01bea9e2c3d33934f0bd8315a9d7347a918e7",
+    "bytes": 5879951,
+    "rows": 1602,
+    "questions": 801,
+    "duplicate_question_model_view_keys": 0,
+    "status_counts": {
+      "ok": 1602
+    },
+    "models": [
+      "lmms-lab-encoder/LLaVA-OneVision-2-8B-Instruct"
+    ],
+    "datasets": [
+      "VHD"
+    ],
+    "views": [
+      {
+        "view": "base",
+        "frame_budget": "8",
+        "input_visual_frames": "8",
+        "rows": 801
+      },
+      {
+        "view": "evidence_addition",
+        "frame_budget": "16",
+        "input_visual_frames": "16",
+        "rows": 801
+      }
+    ]
+  },
+  {
+    "path": "/home/z5611125/sicr_route/results_fresh/safe_sirc_confirmation/8901064.kman.restech.unsw.edu.au/multidataset_features.csv",
+    "sha256": "5b17dd2e1d25294f524be03e386c1b56b4c3a83c64ecd813d5fbe5c6e255b831",
+    "bytes": 3916377,
+    "columns": [
+      "model_id",
+      "model_family",
+      "model_revision",
+      "pilot_id",
+      "video_id",
+      "question_type",
+      "dataset",
+      "correct",
+      "raw_confidence",
+      "base_entropy_norm",
+      "gold_candidate_index",
+      "candidate_count",
+      "contract_dense_acquisition",
+      "contract_evidence_removal",
+      "contract_invariant_nuisance",
+      "contract_temporal_evidence_sufficiency",
+      "contract_temporal_order_destruction",
+      "cost_base_input_language_tokens",
+      "cost_base_input_language_tokens_observed",
+      "cost_base_latency_seconds",
+      "cost_base_latency_seconds_observed",
+      "cost_base_output_language_tokens",
+      "cost_base_output_language_tokens_observed",
+      "cost_base_peak_memory_gib",
+      "cost_base_peak_memory_gib_observed",
+      "cost_base_videollm_calls",
+      "cost_base_videollm_calls_observed",
+      "cost_base_visual_frames",
+      "cost_base_visual_frames_observed",
+      "cost_base_visual_tokens",
+      "cost_base_visual_tokens_observed",
+      "cost_dense_acquisition_input_language_tokens",
+      "cost_dense_acquisition_input_language_tokens_observed",
+      "cost_dense_acquisition_latency_seconds",
+      "cost_dense_acquisition_latency_seconds_observed",
+      "cost_dense_acquisition_output_language_tokens",
+      "cost_dense_acquisition_output_language_tokens_observed",
+      "cost_dense_acquisition_peak_memory_gib",
+      "cost_dense_acquisition_peak_memory_gib_observed",
+      "cost_dense_acquisition_videollm_calls",
+      "cost_dense_acquisition_videollm_calls_observed",
+      "cost_dense_acquisition_visual_frames",
+      "cost_dense_acquisition_visual_frames_observed",
+      "cost_dense_acquisition_visual_tokens",
+      "cost_dense_acquisition_visual_tokens_observed",
+      "cost_evidence_removal_input_language_tokens",
+      "cost_evidence_removal_input_language_tokens_observed",
+      "cost_evidence_removal_latency_seconds",
+      "cost_evidence_removal_latency_seconds_observed",
+      "cost_evidence_removal_output_language_tokens",
+      "cost_evidence_removal_output_language_tokens_observed",
+      "cost_evidence_removal_peak_memory_gib",
+      "cost_evidence_removal_peak_memory_gib_observed",
+      "cost_evidence_removal_videollm_calls",
+      "cost_evidence_removal_videollm_calls_observed",
+      "cost_evidence_removal_visual_frames",
+      "cost_evidence_removal_visual_frames_observed",
+      "cost_evidence_removal_visual_tokens",
+      "cost_evidence_removal_visual_tokens_observed",
+      "cost_invariant_nuisance_input_language_tokens",
+      "cost_invariant_nuisance_input_language_tokens_observed",
+      "cost_invariant_nuisance_latency_seconds",
+      "cost_invariant_nuisance_latency_seconds_observed",
+      "cost_invariant_nuisance_output_language_tokens",
+      "cost_invariant_nuisance_output_language_tokens_observed",
+      "cost_invariant_nuisance_peak_memory_gib",
+      "cost_invariant_nuisance_peak_memory_gib_observed",
+      "cost_invariant_nuisance_videollm_calls",
+      "cost_invariant_nuisance_videollm_calls_observed",
+      "cost_invariant_nuisance_visual_frames",
+      "cost_invariant_nuisance_visual_frames_observed",
+      "cost_invariant_nuisance_visual_tokens",
+      "cost_invariant_nuisance_visual_tokens_observed",
+      "cost_temporal_evidence_sufficiency_input_language_tokens",
+      "cost_temporal_evidence_sufficiency_input_language_tokens_observed",
+      "cost_temporal_evidence_sufficiency_latency_seconds",
+      "cost_temporal_evidence_sufficiency_latency_seconds_observed",
+      "cost_temporal_evidence_sufficiency_output_language_tokens",
+      "cost_temporal_evidence_sufficiency_output_language_tokens_observed",
+      "cost_temporal_evidence_sufficiency_peak_memory_gib",
+      "cost_temporal_evidence_sufficiency_peak_memory_gib_observed",
+      "cost_temporal_evidence_sufficiency_videollm_calls",
+      "cost_temporal_evidence_sufficiency_videollm_calls_observed",
+      "cost_temporal_evidence_sufficiency_visual_frames",
+      "cost_temporal_evidence_sufficiency_visual_frames_observed",
+      "cost_temporal_evidence_sufficiency_visual_tokens",
+      "cost_temporal_evidence_sufficiency_visual_tokens_observed",
+      "cost_temporal_order_destruction_input_language_tokens",
+      "cost_temporal_order_destruction_input_language_tokens_observed",
+      "cost_temporal_order_destruction_latency_seconds",
+      "cost_temporal_order_destruction_latency_seconds_observed",
+      "cost_temporal_order_destruction_output_language_tokens",
+      "cost_temporal_order_destruction_output_language_tokens_observed",
+      "cost_temporal_order_destruction_peak_memory_gib",
+      "cost_temporal_order_destruction_peak_memory_gib_observed",
+      "cost_temporal_order_destruction_videollm_calls",
+      "cost_temporal_order_destruction_videollm_calls_observed",
+      "cost_temporal_order_destruction_visual_frames",
+      "cost_temporal_order_destruction_visual_frames_observed",
+      "cost_temporal_order_destruction_visual_tokens",
+      "cost_temporal_order_destruction_visual_tokens_observed",
+      "residual_dense_acquisition_base_top_probability_delta",
+      "residual_dense_acquisition_centered_log_probability_delta_0",
+      "residual_dense_acquisition_centered_log_probability_delta_1",
+      "residual_dense_acquisition_centered_log_probability_delta_2",
+      "residual_dense_acquisition_centered_log_probability_delta_3",
+      "residual_dense_acquisition_entropy_delta_norm",
+      "residual_dense_acquisition_flip",
+      "residual_dense_acquisition_js_norm",
+      "residual_dense_acquisition_top_probability_delta",
+      "residual_evidence_removal_base_top_probability_delta",
+      "residual_evidence_removal_centered_log_probability_delta_0",
+      "residual_evidence_removal_centered_log_probability_delta_1",
+      "residual_evidence_removal_centered_log_probability_delta_2",
+      "residual_evidence_removal_centered_log_probability_delta_3",
+      "residual_evidence_removal_centered_log_probability_delta_4",
+      "residual_evidence_removal_entropy_delta_norm",
+      "residual_evidence_removal_flip",
+      "residual_evidence_removal_js_norm",
+      "residual_evidence_removal_top_probability_delta",
+      "residual_invariant_nuisance_base_top_probability_delta",
+      "residual_invariant_nuisance_centered_log_probability_delta_0",
+      "residual_invariant_nuisance_centered_log_probability_delta_1",
+      "residual_invariant_nuisance_centered_log_probability_delta_2",
+      "residual_invariant_nuisance_centered_log_probability_delta_3",
+      "residual_invariant_nuisance_centered_log_probability_delta_4",
+      "residual_invariant_nuisance_entropy_delta_norm",
+      "residual_invariant_nuisance_flip",
+      "residual_invariant_nuisance_js_norm",
+      "residual_invariant_nuisance_top_probability_delta",
+      "residual_temporal_evidence_sufficiency_base_top_probability_delta",
+      "residual_temporal_evidence_sufficiency_centered_log_probability_delta_0",
+      "residual_temporal_evidence_sufficiency_centered_log_probability_delta_1",
+      "residual_temporal_evidence_sufficiency_centered_log_probability_delta_2",
+      "residual_temporal_evidence_sufficiency_centered_log_probability_delta_3",
+      "residual_temporal_evidence_sufficiency_centered_log_probability_delta_4",
+      "residual_temporal_evidence_sufficiency_entropy_delta_norm",
+      "residual_temporal_evidence_sufficiency_flip",
+      "residual_temporal_evidence_sufficiency_js_norm",
+      "residual_temporal_evidence_sufficiency_top_probability_delta",
+      "residual_temporal_order_destruction_base_top_probability_delta",
+      "residual_temporal_order_destruction_centered_log_probability_delta_0",
+      "residual_temporal_order_destruction_centered_log_probability_delta_1",
+      "residual_temporal_order_destruction_centered_log_probability_delta_2",
+      "residual_temporal_order_destruction_centered_log_probability_delta_3",
+      "residual_temporal_order_destruction_entropy_delta_norm",
+      "residual_temporal_order_destruction_flip",
+      "residual_temporal_order_destruction_js_norm",
+      "residual_temporal_order_destruction_top_probability_delta",
+      "typed_dense_acquisition_acquisition_base_top_probability_delta",
+      "typed_dense_acquisition_acquisition_entropy_delta_norm",
+      "typed_dense_acquisition_acquisition_flip",
+      "typed_dense_acquisition_acquisition_js_norm",
+      "typed_dense_acquisition_acquisition_one_hot",
+      "typed_evidence_removal_evidence_removal_base_top_probability_delta",
+      "typed_evidence_removal_evidence_removal_entropy_delta_norm",
+      "typed_evidence_removal_evidence_removal_flip",
+      "typed_evidence_removal_evidence_removal_js_norm",
+      "typed_evidence_removal_evidence_removal_one_hot",
+      "typed_invariant_nuisance_invariant_base_top_probability_delta",
+      "typed_invariant_nuisance_invariant_entropy_delta_norm",
+      "typed_invariant_nuisance_invariant_flip",
+      "typed_invariant_nuisance_invariant_js_norm",
+      "typed_invariant_nuisance_invariant_one_hot",
+      "typed_temporal_evidence_sufficiency_evidence_sufficiency_base_top_probability_delta",
+      "typed_temporal_evidence_sufficiency_evidence_sufficiency_entropy_delta_norm",
+      "typed_temporal_evidence_sufficiency_evidence_sufficiency_flip",
+      "typed_temporal_evidence_sufficiency_evidence_sufficiency_js_norm",
+      "typed_temporal_evidence_sufficiency_evidence_sufficiency_one_hot",
+      "typed_temporal_order_destruction_evidence_removal_base_top_probability_delta",
+      "typed_temporal_order_destruction_evidence_removal_entropy_delta_norm",
+      "typed_temporal_order_destruction_evidence_removal_flip",
+      "typed_temporal_order_destruction_evidence_removal_js_norm",
+      "typed_temporal_order_destruction_evidence_removal_one_hot"
+    ],
+    "rows": 3000
+  },
+  {
+    "path": "/home/z5611125/sicr_route/results_fresh/safe_sirc_confirmation/8901064.kman.restech.unsw.edu.au/evaluation/safe_sirc_predictions.csv",
+    "sha256": "20e1cb537fe29c4f85c331984427467d1ace434e91f5287fb03c4f2c6e12b866",
+    "bytes": 474360,
+    "columns": [
+      "dataset",
+      "model_id",
+      "model_family",
+      "pilot_id",
+      "video_id",
+      "question_type",
+      "correct",
+      "evaluation_partition",
+      "q0_probability",
+      "q1_probability",
+      "safe_sirc_probability",
+      "selected_alpha"
+    ],
+    "rows": 3000
+  },
+  {
+    "path": "/home/z5611125/sicr_route/results/katana_phase2/phase2_features.csv",
+    "sha256": "e588fee3b542579bdccf36ac289af4f3cf8b8d3c2330eacd570a8287daad0d6e",
+    "bytes": 1303728,
+    "columns": [
+      "model_id",
+      "model_family",
+      "pilot_id",
+      "video_id",
+      "question_type",
+      "dataset",
+      "correct",
+      "raw_confidence",
+      "base_entropy_norm",
+      "gold_candidate_index",
+      "candidate_count",
+      "cost_base_videollm_calls",
+      "cost_base_videollm_calls_observed",
+      "cost_base_visual_frames",
+      "cost_base_visual_frames_observed",
+      "cost_base_input_language_tokens",
+      "cost_base_input_language_tokens_observed",
+      "cost_base_output_language_tokens",
+      "cost_base_output_language_tokens_observed",
+      "cost_base_latency_seconds",
+      "cost_base_latency_observed",
+      "cost_base_visual_tokens",
+      "cost_base_visual_tokens_observed",
+      "cost_base_peak_memory_gib",
+      "cost_base_peak_memory_observed",
+      "residual_invariant_nuisance_js_norm",
+      "residual_invariant_nuisance_entropy_delta_norm",
+      "residual_invariant_nuisance_base_top_probability_delta",
+      "residual_invariant_nuisance_top_probability_delta",
+      "residual_invariant_nuisance_flip",
+      "residual_invariant_nuisance_centered_log_probability_delta_0",
+      "residual_invariant_nuisance_centered_log_probability_delta_1",
+      "residual_invariant_nuisance_centered_log_probability_delta_2",
+      "residual_invariant_nuisance_centered_log_probability_delta_3",
+      "residual_invariant_nuisance_centered_log_probability_delta_4",
+      "typed_invariant_nuisance_invariant_one_hot",
+      "typed_invariant_nuisance_invariant_js_norm",
+      "typed_invariant_nuisance_invariant_entropy_delta_norm",
+      "typed_invariant_nuisance_invariant_base_top_probability_delta",
+      "typed_invariant_nuisance_invariant_flip",
+      "typed_invariant_nuisance_evidence_sufficiency_one_hot",
+      "typed_invariant_nuisance_evidence_sufficiency_js_norm",
+      "typed_invariant_nuisance_evidence_sufficiency_entropy_delta_norm",
+      "typed_invariant_nuisance_evidence_sufficiency_base_top_probability_delta",
+      "typed_invariant_nuisance_evidence_sufficiency_flip",
+      "typed_invariant_nuisance_evidence_removal_one_hot",
+      "typed_invariant_nuisance_evidence_removal_js_norm",
+      "typed_invariant_nuisance_evidence_removal_entropy_delta_norm",
+      "typed_invariant_nuisance_evidence_removal_base_top_probability_delta",
+      "typed_invariant_nuisance_evidence_removal_flip",
+      "cost_invariant_nuisance_videollm_calls",
+      "cost_invariant_nuisance_videollm_calls_observed",
+      "cost_invariant_nuisance_visual_frames",
+      "cost_invariant_nuisance_visual_frames_observed",
+      "cost_invariant_nuisance_input_language_tokens",
+      "cost_invariant_nuisance_input_language_tokens_observed",
+      "cost_invariant_nuisance_output_language_tokens",
+      "cost_invariant_nuisance_output_language_tokens_observed",
+      "cost_invariant_nuisance_latency_seconds",
+      "cost_invariant_nuisance_latency_observed",
+      "cost_invariant_nuisance_visual_tokens",
+      "cost_invariant_nuisance_visual_tokens_observed",
+      "cost_invariant_nuisance_peak_memory_gib",
+      "cost_invariant_nuisance_peak_memory_observed",
+      "residual_temporal_evidence_sufficiency_js_norm",
+      "residual_temporal_evidence_sufficiency_entropy_delta_norm",
+      "residual_temporal_evidence_sufficiency_base_top_probability_delta",
+      "residual_temporal_evidence_sufficiency_top_probability_delta",
+      "residual_temporal_evidence_sufficiency_flip",
+      "residual_temporal_evidence_sufficiency_centered_log_probability_delta_0",
+      "residual_temporal_evidence_sufficiency_centered_log_probability_delta_1",
+      "residual_temporal_evidence_sufficiency_centered_log_probability_delta_2",
+      "residual_temporal_evidence_sufficiency_centered_log_probability_delta_3",
+      "residual_temporal_evidence_sufficiency_centered_log_probability_delta_4",
+      "typed_temporal_evidence_sufficiency_invariant_one_hot",
+      "typed_temporal_evidence_sufficiency_invariant_js_norm",
+      "typed_temporal_evidence_sufficiency_invariant_entropy_delta_norm",
+      "typed_temporal_evidence_sufficiency_invariant_base_top_probability_delta",
+      "typed_temporal_evidence_sufficiency_invariant_flip",
+      "typed_temporal_evidence_sufficiency_evidence_sufficiency_one_hot",
+      "typed_temporal_evidence_sufficiency_evidence_sufficiency_js_norm",
+      "typed_temporal_evidence_sufficiency_evidence_sufficiency_entropy_delta_norm",
+      "typed_temporal_evidence_sufficiency_evidence_sufficiency_base_top_probability_delta",
+      "typed_temporal_evidence_sufficiency_evidence_sufficiency_flip",
+      "typed_temporal_evidence_sufficiency_evidence_removal_one_hot",
+      "typed_temporal_evidence_sufficiency_evidence_removal_js_norm",
+      "typed_temporal_evidence_sufficiency_evidence_removal_entropy_delta_norm",
+      "typed_temporal_evidence_sufficiency_evidence_removal_base_top_probability_delta",
+      "typed_temporal_evidence_sufficiency_evidence_removal_flip",
+      "cost_temporal_evidence_sufficiency_videollm_calls",
+      "cost_temporal_evidence_sufficiency_videollm_calls_observed",
+      "cost_temporal_evidence_sufficiency_visual_frames",
+      "cost_temporal_evidence_sufficiency_visual_frames_observed",
+      "cost_temporal_evidence_sufficiency_input_language_tokens",
+      "cost_temporal_evidence_sufficiency_input_language_tokens_observed",
+      "cost_temporal_evidence_sufficiency_output_language_tokens",
+      "cost_temporal_evidence_sufficiency_output_language_tokens_observed",
+      "cost_temporal_evidence_sufficiency_latency_seconds",
+      "cost_temporal_evidence_sufficiency_latency_observed",
+      "cost_temporal_evidence_sufficiency_visual_tokens",
+      "cost_temporal_evidence_sufficiency_visual_tokens_observed",
+      "cost_temporal_evidence_sufficiency_peak_memory_gib",
+      "cost_temporal_evidence_sufficiency_peak_memory_observed",
+      "residual_evidence_removal_js_norm",
+      "residual_evidence_removal_entropy_delta_norm",
+      "residual_evidence_removal_base_top_probability_delta",
+      "residual_evidence_removal_top_probability_delta",
+      "residual_evidence_removal_flip",
+      "residual_evidence_removal_centered_log_probability_delta_0",
+      "residual_evidence_removal_centered_log_probability_delta_1",
+      "residual_evidence_removal_centered_log_probability_delta_2",
+      "residual_evidence_removal_centered_log_probability_delta_3",
+      "residual_evidence_removal_centered_log_probability_delta_4",
+      "typed_evidence_removal_invariant_one_hot",
+      "typed_evidence_removal_invariant_js_norm",
+      "typed_evidence_removal_invariant_entropy_delta_norm",
+      "typed_evidence_removal_invariant_base_top_probability_delta",
+      "typed_evidence_removal_invariant_flip",
+      "typed_evidence_removal_evidence_sufficiency_one_hot",
+      "typed_evidence_removal_evidence_sufficiency_js_norm",
+      "typed_evidence_removal_evidence_sufficiency_entropy_delta_norm",
+      "typed_evidence_removal_evidence_sufficiency_base_top_probability_delta",
+      "typed_evidence_removal_evidence_sufficiency_flip",
+      "typed_evidence_removal_evidence_removal_one_hot",
+      "typed_evidence_removal_evidence_removal_js_norm",
+      "typed_evidence_removal_evidence_removal_entropy_delta_norm",
+      "typed_evidence_removal_evidence_removal_base_top_probability_delta",
+      "typed_evidence_removal_evidence_removal_flip",
+      "cost_evidence_removal_videollm_calls",
+      "cost_evidence_removal_videollm_calls_observed",
+      "cost_evidence_removal_visual_frames",
+      "cost_evidence_removal_visual_frames_observed",
+      "cost_evidence_removal_input_language_tokens",
+      "cost_evidence_removal_input_language_tokens_observed",
+      "cost_evidence_removal_output_language_tokens",
+      "cost_evidence_removal_output_language_tokens_observed",
+      "cost_evidence_removal_latency_seconds",
+      "cost_evidence_removal_latency_observed",
+      "cost_evidence_removal_visual_tokens",
+      "cost_evidence_removal_visual_tokens_observed",
+      "cost_evidence_removal_peak_memory_gib",
+      "cost_evidence_removal_peak_memory_observed"
+    ],
+    "rows": 1000
+  },
+  {
+    "path": "/home/z5611125/sicr_route/results/katana_phase2/internvl3_5_4b_predictions.jsonl",
+    "sha256": "92a03293109d7a92a353d6d9a1a2fbab21190cd3f3dba5b5afe556be03b2a1a5",
+    "bytes": 7188840,
+    "rows": 2000,
+    "questions": 500,
+    "duplicate_question_model_view_keys": 0,
+    "status_counts": {
+      "ok": 2000
+    },
+    "models": [
+      "OpenGVLab/InternVL3_5-4B-Instruct"
+    ],
+    "datasets": [
+      "NExT-GQA"
+    ],
+    "views": [
+      {
+        "view": "base",
+        "frame_budget": "16",
+        "input_visual_frames": "None",
+        "rows": 500
+      },
+      {
+        "view": "invariant_nuisance",
+        "frame_budget": "16",
+        "input_visual_frames": "None",
+        "rows": 500
+      },
+      {
+        "view": "temporal_evidence_sufficiency",
+        "frame_budget": "16",
+        "input_visual_frames": "None",
+        "rows": 500
+      },
+      {
+        "view": "evidence_removal",
+        "frame_budget": "16",
+        "input_visual_frames": "None",
+        "rows": 500
+      }
+    ]
+  },
+  {
+    "path": "/home/z5611125/sicr_route/results/katana_phase2/qwen3_vl_4b_predictions.jsonl",
+    "sha256": "99e7a876c27276f0b87f4adf6891260be7e818e4403659ba7f95819c0674da6a",
+    "bytes": 8640538,
+    "rows": 2000,
+    "questions": 13,
+    "duplicate_question_model_view_keys": 1948,
+    "status_counts": {
+      "ok": 2000
+    },
+    "models": [
+      "Qwen/Qwen3-VL-4B-Instruct"
+    ],
+    "datasets": [
+      "NExT-GQA"
+    ],
+    "views": [
+      {
+        "view": "base",
+        "frame_budget": "16",
+        "input_visual_frames": "16",
+        "rows": 500
+      },
+      {
+        "view": "invariant_nuisance",
+        "frame_budget": "16",
+        "input_visual_frames": "16",
+        "rows": 500
+      },
+      {
+        "view": "temporal_evidence_sufficiency",
+        "frame_budget": "16",
+        "input_visual_frames": "16",
+        "rows": 500
+      },
+      {
+        "view": "evidence_removal",
+        "frame_budget": "16",
+        "input_visual_frames": "16",
+        "rows": 500
+      }
+    ]
+  },
+  {
+    "path": "/home/z5611125/sicr_route/results/safe_sirc_development/safe_sirc_predictions.csv",
+    "sha256": "f2a312e71fcff9c0deaff2c9ebd23ac247d6b4a3c1d0ec40235f3cd28668454d",
+    "bytes": 162743,
+    "columns": [
+      "dataset",
+      "model_id",
+      "model_family",
+      "pilot_id",
+      "video_id",
+      "question_type",
+      "correct",
+      "evaluation_partition",
+      "q0_probability",
+      "q1_probability",
+      "safe_sirc_probability",
+      "selected_alpha"
+    ],
+    "rows": 1000
+  },
+  {
+    "path": "/home/z5611125/probe_route/input/development_scored/tempcompass_scored_predictions.csv",
+    "sha256": "133c8fcadaad18f0d10ecd7a9107e9e695723fc80e8df2a38bb063a2c7aafcbc",
+    "bytes": 525121,
+    "columns": [
+      "model_id",
+      "model_revision",
+      "question_id",
+      "media_id_x",
+      "semantic_group",
+      "base_selected_label",
+      "base_raw_confidence",
+      "base_probability_A",
+      "base_probability_B",
+      "addition_probability_A",
+      "addition_probability_B",
+      "base_expert_score",
+      "addition_expert_score",
+      "predicted_rank_repair_value",
+      "prave_acquired",
+      "uncertainty_acquired",
+      "random_acquired",
+      "base_score",
+      "prave_score",
+      "uncertainty_score",
+      "random_score",
+      "fixed_addition_score",
+      "request_id",
+      "media_id_y",
+      "gold_answer",
+      "correct"
+    ],
+    "rows": 1230
+  },
+  {
+    "path": "/home/z5611125/probe_route/input/development_scored/vhd_scored_predictions.csv",
+    "sha256": "b10e371afb6f21881e4b8b7a4b821c2a1531465fb5e0aae0d15607298e39fb08",
+    "bytes": 1054989,
+    "columns": [
+      "model_id",
+      "model_revision",
+      "question_id",
+      "video_id",
+      "semantic_group",
+      "base_selected_label",
+      "base_raw_confidence",
+      "base_probability_A",
+      "base_probability_B",
+      "addition_probability_A",
+      "addition_probability_B",
+      "base_expert_score",
+      "addition_expert_score",
+      "predicted_rank_repair_value",
+      "rava_acquired",
+      "uncertainty_acquired",
+      "random_acquired",
+      "base_score",
+      "rava_score",
+      "uncertainty_score",
+      "random_score",
+      "fixed_addition_score",
+      "clip_id",
+      "final_correct_answer",
+      "task",
+      "vhd_category",
+      "video_split",
+      "correct"
+    ],
+    "rows": 2403
+  },
+  {
+    "path": "/home/z5611125/caver_route/results_fresh/mvbench_inference/8904762.kman.restech.unsw.edu.au/qwen_predictions.jsonl",
+    "sha256": "ed2df49f3d95dd2345c14e9e1358a63ebfeb0601240a39a55cdea9840bd7cb6a",
+    "bytes": 26599955,
+    "rows": 7200,
+    "questions": 1800,
+    "duplicate_question_model_view_keys": 0,
+    "status_counts": {
+      "ok": 7200
+    },
+    "models": [
+      "Qwen/Qwen3-VL-4B-Instruct"
+    ],
+    "datasets": [
+      "MVBench"
+    ],
+    "views": [
+      {
+        "view": "base",
+        "frame_budget": "8",
+        "input_visual_frames": "8",
+        "rows": 1800
+      },
+      {
+        "view": "invariant_nuisance",
+        "frame_budget": "8",
+        "input_visual_frames": "8",
+        "rows": 1800
+      },
+      {
+        "view": "dense_acquisition",
+        "frame_budget": "16",
+        "input_visual_frames": "16",
+        "rows": 1800
+      },
+      {
+        "view": "temporal_order_destruction",
+        "frame_budget": "8",
+        "input_visual_frames": "8",
+        "rows": 1800
+      }
+    ]
+  },
+  {
+    "path": "/home/z5611125/caver_route/results_fresh/mvbench_inference/8904762.kman.restech.unsw.edu.au/internvl_predictions.jsonl",
+    "sha256": "698fd864284537bae956303f477b51f4772c0b0c819e3c77909503aa63dd96ea",
+    "bytes": 26473232,
+    "rows": 7200,
+    "questions": 1800,
+    "duplicate_question_model_view_keys": 0,
+    "status_counts": {
+      "ok": 7200
+    },
+    "models": [
+      "OpenGVLab/InternVL3_5-4B-Instruct"
+    ],
+    "datasets": [
+      "MVBench"
+    ],
+    "views": [
+      {
+        "view": "base",
+        "frame_budget": "8",
+        "input_visual_frames": "8",
+        "rows": 1800
+      },
+      {
+        "view": "invariant_nuisance",
+        "frame_budget": "8",
+        "input_visual_frames": "8",
+        "rows": 1800
+      },
+      {
+        "view": "dense_acquisition",
+        "frame_budget": "16",
+        "input_visual_frames": "16",
+        "rows": 1800
+      },
+      {
+        "view": "temporal_order_destruction",
+        "frame_budget": "8",
+        "input_visual_frames": "8",
+        "rows": 1800
+      }
+    ]
+  },
+  {
+    "path": "/home/z5611125/caver_route/results_fresh/mvbench_inference/8904762.kman.restech.unsw.edu.au/llava_predictions.jsonl",
+    "sha256": "5f064f3de2f2724be2d3d902de3dd737158a4732a26ba855aa7c52271c44f2fd",
+    "bytes": 26716923,
+    "rows": 7200,
+    "questions": 1800,
+    "duplicate_question_model_view_keys": 0,
+    "status_counts": {
+      "ok": 7200
+    },
+    "models": [
+      "lmms-lab-encoder/LLaVA-OneVision-2-8B-Instruct"
+    ],
+    "datasets": [
+      "MVBench"
+    ],
+    "views": [
+      {
+        "view": "base",
+        "frame_budget": "8",
+        "input_visual_frames": "8",
+        "rows": 1800
+      },
+      {
+        "view": "invariant_nuisance",
+        "frame_budget": "8",
+        "input_visual_frames": "8",
+        "rows": 1800
+      },
+      {
+        "view": "dense_acquisition",
+        "frame_budget": "16",
+        "input_visual_frames": "16",
+        "rows": 1800
+      },
+      {
+        "view": "temporal_order_destruction",
+        "frame_budget": "8",
+        "input_visual_frames": "8",
+        "rows": 1800
+      }
+    ]
+  },
+  {
+    "path": "/home/z5611125/caver_route/results_fresh/mvbench_confirmation/8904763.kman.restech.unsw.edu.au/mvbench_caver_features.csv",
+    "sha256": "2a2f223e904bf94f534768fcf97bbf37afbd2105389782891dcd37a80788e6f3",
+    "bytes": 6907195,
+    "columns": [
+      "model_id",
+      "model_family",
+      "model_revision",
+      "pilot_id",
+      "video_id",
+      "question_type",
+      "dataset",
+      "role",
+      "correct",
+      "raw_confidence",
+      "base_entropy_norm",
+      "gold_candidate_index",
+      "candidate_count",
+      "cost_base_videollm_calls",
+      "cost_base_videollm_calls_observed",
+      "cost_base_visual_frames",
+      "cost_base_visual_frames_observed",
+      "cost_base_input_language_tokens",
+      "cost_base_input_language_tokens_observed",
+      "cost_base_output_language_tokens",
+      "cost_base_output_language_tokens_observed",
+      "cost_base_latency_seconds",
+      "cost_base_latency_seconds_observed",
+      "cost_base_visual_tokens",
+      "cost_base_visual_tokens_observed",
+      "cost_base_peak_memory_gib",
+      "cost_base_peak_memory_gib_observed",
+      "cost_invariant_nuisance_videollm_calls",
+      "cost_invariant_nuisance_videollm_calls_observed",
+      "cost_invariant_nuisance_visual_frames",
+      "cost_invariant_nuisance_visual_frames_observed",
+      "cost_invariant_nuisance_input_language_tokens",
+      "cost_invariant_nuisance_input_language_tokens_observed",
+      "cost_invariant_nuisance_output_language_tokens",
+      "cost_invariant_nuisance_output_language_tokens_observed",
+      "cost_invariant_nuisance_latency_seconds",
+      "cost_invariant_nuisance_latency_seconds_observed",
+      "cost_invariant_nuisance_visual_tokens",
+      "cost_invariant_nuisance_visual_tokens_observed",
+      "cost_invariant_nuisance_peak_memory_gib",
+      "cost_invariant_nuisance_peak_memory_gib_observed",
+      "contract_invariant_nuisance",
+      "residual_invariant_nuisance_js_norm",
+      "residual_invariant_nuisance_entropy_delta_norm",
+      "residual_invariant_nuisance_base_top_probability_delta",
+      "residual_invariant_nuisance_top_probability_delta",
+      "residual_invariant_nuisance_flip",
+      "typed_invariant_nuisance_invariant_one_hot",
+      "typed_invariant_nuisance_invariant_js_norm",
+      "typed_invariant_nuisance_invariant_entropy_delta_norm",
+      "typed_invariant_nuisance_invariant_base_top_probability_delta",
+      "typed_invariant_nuisance_invariant_flip",
+      "residual_invariant_nuisance_centered_log_probability_delta_0",
+      "residual_invariant_nuisance_centered_log_probability_delta_1",
+      "residual_invariant_nuisance_centered_log_probability_delta_2",
+      "residual_invariant_nuisance_centered_log_probability_delta_3",
+      "cost_dense_acquisition_videollm_calls",
+      "cost_dense_acquisition_videollm_calls_observed",
+      "cost_dense_acquisition_visual_frames",
+      "cost_dense_acquisition_visual_frames_observed",
+      "cost_dense_acquisition_input_language_tokens",
+      "cost_dense_acquisition_input_language_tokens_observed",
+      "cost_dense_acquisition_output_language_tokens",
+      "cost_dense_acquisition_output_language_tokens_observed",
+      "cost_dense_acquisition_latency_seconds",
+      "cost_dense_acquisition_latency_seconds_observed",
+      "cost_dense_acquisition_visual_tokens",
+      "cost_dense_acquisition_visual_tokens_observed",
+      "cost_dense_acquisition_peak_memory_gib",
+      "cost_dense_acquisition_peak_memory_gib_observed",
+      "contract_dense_acquisition",
+      "residual_dense_acquisition_js_norm",
+      "residual_dense_acquisition_entropy_delta_norm",
+      "residual_dense_acquisition_base_top_probability_delta",
+      "residual_dense_acquisition_top_probability_delta",
+      "residual_dense_acquisition_flip",
+      "typed_dense_acquisition_acquisition_one_hot",
+      "typed_dense_acquisition_acquisition_js_norm",
+      "typed_dense_acquisition_acquisition_entropy_delta_norm",
+      "typed_dense_acquisition_acquisition_base_top_probability_delta",
+      "typed_dense_acquisition_acquisition_flip",
+      "residual_dense_acquisition_centered_log_probability_delta_0",
+      "residual_dense_acquisition_centered_log_probability_delta_1",
+      "residual_dense_acquisition_centered_log_probability_delta_2",
+      "residual_dense_acquisition_centered_log_probability_delta_3",
+      "cost_temporal_order_destruction_videollm_calls",
+      "cost_temporal_order_destruction_videollm_calls_observed",
+      "cost_temporal_order_destruction_visual_frames",
+      "cost_temporal_order_destruction_visual_frames_observed",
+      "cost_temporal_order_destruction_input_language_tokens",
+      "cost_temporal_order_destruction_input_language_tokens_observed",
+      "cost_temporal_order_destruction_output_language_tokens",
+      "cost_temporal_order_destruction_output_language_tokens_observed",
+      "cost_temporal_order_destruction_latency_seconds",
+      "cost_temporal_order_destruction_latency_seconds_observed",
+      "cost_temporal_order_destruction_visual_tokens",
+      "cost_temporal_order_destruction_visual_tokens_observed",
+      "cost_temporal_order_destruction_peak_memory_gib",
+      "cost_temporal_order_destruction_peak_memory_gib_observed",
+      "contract_temporal_order_destruction",
+      "residual_temporal_order_destruction_js_norm",
+      "residual_temporal_order_destruction_entropy_delta_norm",
+      "residual_temporal_order_destruction_base_top_probability_delta",
+      "residual_temporal_order_destruction_top_probability_delta",
+      "residual_temporal_order_destruction_flip",
+      "typed_temporal_order_destruction_evidence_removal_one_hot",
+      "typed_temporal_order_destruction_evidence_removal_js_norm",
+      "typed_temporal_order_destruction_evidence_removal_entropy_delta_norm",
+      "typed_temporal_order_destruction_evidence_removal_base_top_probability_delta",
+      "typed_temporal_order_destruction_evidence_removal_flip",
+      "residual_temporal_order_destruction_centered_log_probability_delta_0",
+      "residual_temporal_order_destruction_centered_log_probability_delta_1",
+      "residual_temporal_order_destruction_centered_log_probability_delta_2",
+      "residual_temporal_order_destruction_centered_log_probability_delta_3"
+    ],
+    "rows": 5400
+  }
+]

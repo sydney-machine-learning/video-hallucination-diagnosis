@@ -1,0 +1,22 @@
+{
+  "created_utc": "2026-11-19T11:35:23.889766+00:00",
+  "gpu": "none",
+  "fit_seed": 20260801,
+  "bootstrap_seed": 20261119,
+  "n_boot": 10000,
+  "methods": [
+    "raw_confidence",
+    "graph_lr",
+    "graph_hgb",
+    "lr_without_three_id",
+    "hgb_without_three_id"
+  ],
+  "holdout": "Entire dataset including all variants, no held-out labels used for fitting or selection",
+  "aurc": "Archived prefix-risk mean; stable input-order ties",
+  "risk50": "ceil(0.5*N) accepted; stable ties",
+  "shared_errors": "All three archived base-view answers wrong, computed within this response bank",
+  "bootstrap": "Paired source-video resamples with replacement; scorers fixed; percentile CI",
+  "weights": "Existing equal_domain_weights unchanged",
+  "identity_caveat": "Only three model_identity columns removed; is_self and named peer slots retained, so not model-identity-free",
+  "outputs": "Exploratory CPU reconstruction, not an archived evaluation result"
+}

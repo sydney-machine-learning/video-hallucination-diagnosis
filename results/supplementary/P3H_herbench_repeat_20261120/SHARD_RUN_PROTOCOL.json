@@ -1,0 +1,33 @@
+{
+  "manifest_sha256": "dbb2a58ed3354d5309ddb99cb14d88e9c7f97323d864573df51708e3617a0e3c",
+  "runner_sha256": "1b14e3a098cca2e5e33a3ea691d5965f0032536accb821e7d093bd052da00fb9",
+  "models": {
+    "qwen8": "Qwen/Qwen3-VL-8B-Instruct",
+    "internvl14": "OpenGVLab/InternVL3_5-14B-Instruct",
+    "llava8": "lmms-lab-encoder/LLaVA-OneVision-2-8B-Instruct"
+  },
+  "seed": 1234,
+  "phases": [
+    0,
+    2,
+    4,
+    6
+  ],
+  "frames_per_phase": {
+    "0": 16,
+    "2": 8,
+    "4": 24,
+    "6": 8
+  },
+  "gpu_job_cap_seconds": 12600,
+  "pilot_size_videos": 0,
+  "pipeline": "generation with normalized first-step legal-option token logits; shared by both scorers",
+  "sampling_source": "katana/herbench_multimodel_runner.py:sample_frame_indices",
+  "sampling_source_sha256": "d768649e14b5470ceee10ad119f175f35ee836a0784f8a3867eeab166dbdf641",
+  "guard_revision": "Full configured tokenizer CPU/GPU equality, assets and all 1971 question/option strings. Bare tokenizer.json is not a complete loader configuration.",
+  "partition": "Disjoint whole-video shards balanced on archived per-question scoring time and video duration; no labels.",
+  "target": "HERBench Lite v2, all 1971 questions and 68 videos; supplementary response bank for 30 repeated splits",
+  "fetch_sha256": "9b21d8ffd7b6939c03855a98fb8c5588f9e517fdfadb0bf8562f64f278510493",
+  "dataset_revision": "DanBenAmi/HERBench@30b42e97180f2c7c0fdc3f2aed412ae04f0366ca",
+  "derived_from": "P3B_view_crossed_20261119 SHARD_RUN_PROTOCOL.json; only video location and manifest changed"
+}

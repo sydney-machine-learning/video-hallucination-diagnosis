@@ -1,0 +1,15 @@
+{
+  "protocol": "original_views",
+  "model": "internvl14",
+  "job": "9829909.kman.restech.unsw.edu.au",
+  "bank_directory": "responses_internvl14",
+  "scheduler": {
+    "resources_used.walltime": "00:01:42",
+    "job_state": "F",
+    "Exit_status": "271"
+  },
+  "qstat_ok": true,
+  "complete": false,
+  "latest_logged_calls": null,
+  "error_tail": null
+}

@@ -1,0 +1,23 @@
+{
+  "prediction_source": "C:\\Users\\87385\\Desktop\\paper 3\\video-hallucination-diagnosis\\results\\supplementary\\P5_vhd_transfer_20261119\\predictions.csv",
+  "model_source": "C:\\Users\\87385\\Desktop\\paper 3\\video-hallucination-diagnosis\\results\\supplementary\\P5_vhd_transfer_20261119\\models\\VHD.joblib",
+  "holdout": {
+    "held_out": "VHD",
+    "train_datasets": [
+      "MVBench",
+      "NExT-GQA",
+      "STAR",
+      "TempCompass"
+    ],
+    "train_rows": 9630,
+    "test_rows": 2403,
+    "test_videos": 341
+  },
+  "refit": false,
+  "source": "Existing CPU reconstruction from archived probabilities; not a new VLM inference",
+  "models": [
+    "OpenGVLab/InternVL3_5-4B-Instruct",
+    "Qwen/Qwen3-VL-4B-Instruct",
+    "lmms-lab-encoder/LLaVA-OneVision-2-8B-Instruct"
+  ]
+}

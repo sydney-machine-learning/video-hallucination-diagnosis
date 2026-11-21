@@ -1,0 +1,221 @@
+{
+  "utc": "2026-11-18T11:47:13.545338+00:00",
+  "returncode": 0,
+  "stderr": "",
+  "command": [
+    "ssh.exe",
+    "-i",
+    "C:\\Users\\87385\\.ssh\\codex_katana_ed25519",
+    "-o",
+    "HostKeyAlias=katana.restech.unsw.edu.au",
+    "-o",
+    "BatchMode=yes",
+    "-o",
+    "ConnectTimeout=15",
+    "z5611125@129.94.146.61",
+    "python3 -"
+  ],
+  "roots": [
+    "/home/z5611125",
+    "/srv/scratch/z5611125"
+  ],
+  "pruned_directories": [
+    "hidden directories",
+    "envs",
+    "venv",
+    "site-packages",
+    "node_modules",
+    "huggingface",
+    "wandb",
+    "__pycache__"
+  ],
+  "files": [
+    {
+      "path": "/home/z5611125/sicr_route/results_fresh/public_inference/8900849.kman.restech.unsw.edu.au/star_three_model/qwen_predictions.jsonl",
+      "bytes": 8111541
+    },
+    {
+      "path": "/home/z5611125/sicr_route/results_fresh/public_inference/8900849.kman.restech.unsw.edu.au/star_three_model/llava_predictions.jsonl",
+      "bytes": 8133358
+    },
+    {
+      "path": "/home/z5611125/sicr_route/results_fresh/public_inference/8900849.kman.restech.unsw.edu.au/star_three_model/internvl_predictions.jsonl",
+      "bytes": 8058583
+    },
+    {
+      "path": "/home/z5611125/sicr_route/results_fresh/public_inference/8900849.kman.restech.unsw.edu.au/nextgqa_llava/llava_ov2_8b_predictions.jsonl",
+      "bytes": 8664926
+    },
+    {
+      "path": "/home/z5611125/sicr_route/results_fresh/multidataset_analysis/8906912.kman.restech.unsw.edu.au/multidataset_features.csv",
+      "bytes": 3916377
+    },
+    {
+      "path": "/home/z5611125/sicr_route/results_fresh/prave_tempcompass_confirmation/8905479.kman.restech.unsw.edu.au/qwen_predictions.jsonl",
+      "bytes": 2878595
+    },
+    {
+      "path": "/home/z5611125/sicr_route/results_fresh/prave_tempcompass_confirmation/8905479.kman.restech.unsw.edu.au/llava_predictions.jsonl",
+      "bytes": 2888667
+    },
+    {
+      "path": "/home/z5611125/sicr_route/results_fresh/prave_tempcompass_confirmation/8905479.kman.restech.unsw.edu.au/internvl_predictions.jsonl",
+      "bytes": 2857278
+    },
+    {
+      "path": "/home/z5611125/sicr_route/results_fresh/vhd_three_model/8903129.kman.restech.unsw.edu.au/llava_predictions.jsonl",
+      "bytes": 5535939
+    },
+    {
+      "path": "/home/z5611125/sicr_route/results_fresh/vhd_three_model/8903129.kman.restech.unsw.edu.au/qwen_predictions.jsonl",
+      "bytes": 5517512
+    },
+    {
+      "path": "/home/z5611125/sicr_route/results_fresh/vhd_three_model/8903129.kman.restech.unsw.edu.au/internvl_predictions.jsonl",
+      "bytes": 5476752
+    },
+    {
+      "path": "/home/z5611125/sicr_route/results_fresh/rava_vhd_confirmation/8905351.kman.restech.unsw.edu.au/qwen_predictions.jsonl",
+      "bytes": 5855460
+    },
+    {
+      "path": "/home/z5611125/sicr_route/results_fresh/rava_vhd_confirmation/8905351.kman.restech.unsw.edu.au/internvl_predictions.jsonl",
+      "bytes": 5818424
+    },
+    {
+      "path": "/home/z5611125/sicr_route/results_fresh/rava_vhd_confirmation/8905351.kman.restech.unsw.edu.au/llava_predictions.jsonl",
+      "bytes": 5879951
+    },
+    {
+      "path": "/home/z5611125/sicr_route/results_fresh/safe_sirc_confirmation/8901064.kman.restech.unsw.edu.au/multidataset_features.csv",
+      "bytes": 3916377
+    },
+    {
+      "path": "/home/z5611125/sicr_route/results_fresh/safe_sirc_confirmation/8901064.kman.restech.unsw.edu.au/evaluation/safe_sirc_predictions.csv",
+      "bytes": 474360
+    },
+    {
+      "path": "/home/z5611125/sicr_route/results/katana_phase2/phase2_features.csv",
+      "bytes": 1303728
+    },
+    {
+      "path": "/home/z5611125/sicr_route/results/katana_phase2/internvl3_5_4b_predictions.jsonl",
+      "bytes": 7188840
+    },
+    {
+      "path": "/home/z5611125/sicr_route/results/katana_phase2/qwen3_vl_4b_predictions.jsonl",
+      "bytes": 8640538
+    },
+    {
+      "path": "/home/z5611125/sicr_route/results/safe_sirc_development/safe_sirc_predictions.csv",
+      "bytes": 162743
+    },
+    {
+      "path": "/home/z5611125/trace_rc_route/results_fresh/herbench_confirmation/8918264.kman.restech.unsw.edu.au/test_scored_predictions.csv",
+      "bytes": 908318
+    },
+    {
+      "path": "/home/z5611125/trace_rc_route/results_fresh/perception_test_confirmation/8919110.kman.restech.unsw.edu.au/test_scored_predictions.csv",
+      "bytes": 821298
+    },
+    {
+      "path": "/home/z5611125/trace_rc_route/results/herbench_confirmation/8918264.kman.restech.unsw.edu.au/test_scored_predictions.csv",
+      "bytes": 908318
+    },
+    {
+      "path": "/home/z5611125/probe_route/results_fresh/egoschema_confirmation/8907792.kman.restech.unsw.edu.au/internvl_predictions.jsonl",
+      "bytes": 10919896
+    },
+    {
+      "path": "/home/z5611125/probe_route/results_fresh/egoschema_confirmation/8907792.kman.restech.unsw.edu.au/llava_predictions.jsonl",
+      "bytes": 10988545
+    },
+    {
+      "path": "/home/z5611125/probe_route/results_fresh/egoschema_confirmation/8907792.kman.restech.unsw.edu.au/qwen_predictions.jsonl",
+      "bytes": 10938945
+    },
+    {
+      "path": "/home/z5611125/probe_route/results_fresh/videomme_v2_confirmation/8909339.kman.restech.unsw.edu.au/internvl_predictions.jsonl",
+      "bytes": 80677883
+    },
+    {
+      "path": "/home/z5611125/probe_route/results_fresh/videomme_v2_confirmation/8909339.kman.restech.unsw.edu.au/qwen_predictions.jsonl",
+      "bytes": 80998122
+    },
+    {
+      "path": "/home/z5611125/probe_route/results_fresh/videomme_v2_confirmation/8909339.kman.restech.unsw.edu.au/llava_predictions.jsonl",
+      "bytes": 81122798
+    },
+    {
+      "path": "/home/z5611125/probe_route/results_fresh/videomme_v2_confirmation_analysis/8909339.kman.restech.unsw.edu.au/scored_predictions.csv",
+      "bytes": 11640578
+    },
+    {
+      "path": "/home/z5611125/probe_route/results_fresh/videomme_confirmation/8905633.kman.restech.unsw.edu.au/internvl_predictions.jsonl",
+      "bytes": 17057178
+    },
+    {
+      "path": "/home/z5611125/probe_route/results_fresh/videomme_confirmation/8905633.kman.restech.unsw.edu.au/qwen_predictions.jsonl",
+      "bytes": 17140289
+    },
+    {
+      "path": "/home/z5611125/probe_route/results_fresh/videomme_confirmation/8905633.kman.restech.unsw.edu.au/llava_predictions.jsonl",
+      "bytes": 17213495
+    },
+    {
+      "path": "/home/z5611125/probe_route/results_fresh/videomme_confirmation_analysis/8905649.kman.restech.unsw.edu.au/scored_predictions.csv",
+      "bytes": 3738304
+    },
+    {
+      "path": "/home/z5611125/probe_route/results_fresh/egoschema_confirmation_analysis/8907792.kman.restech.unsw.edu.au/scored_predictions.csv",
+      "bytes": 1881303
+    },
+    {
+      "path": "/home/z5611125/probe_route/input/development_scored/tempcompass_scored_predictions.csv",
+      "bytes": 525121
+    },
+    {
+      "path": "/home/z5611125/probe_route/input/development_scored/vhd_scored_predictions.csv",
+      "bytes": 1054989
+    },
+    {
+      "path": "/home/z5611125/caver_route/results_fresh/mvbench_inference/8904762.kman.restech.unsw.edu.au/qwen_predictions.jsonl",
+      "bytes": 26599955
+    },
+    {
+      "path": "/home/z5611125/caver_route/results_fresh/mvbench_inference/8904762.kman.restech.unsw.edu.au/internvl_predictions.jsonl",
+      "bytes": 26473232
+    },
+    {
+      "path": "/home/z5611125/caver_route/results_fresh/mvbench_inference/8904762.kman.restech.unsw.edu.au/llava_predictions.jsonl",
+      "bytes": 26716923
+    },
+    {
+      "path": "/home/z5611125/caver_route/results_fresh/mvbench_confirmation/8904763.kman.restech.unsw.edu.au/mvbench_test_predictions.csv",
+      "bytes": 3502602
+    },
+    {
+      "path": "/home/z5611125/caver_route/results_fresh/mvbench_confirmation/8904763.kman.restech.unsw.edu.au/mvbench_caver_features.csv",
+      "bytes": 6907195
+    },
+    {
+      "path": "/srv/scratch/z5611125/pilot_b21/outputs/training/R5_seed1/dev_predictions.jsonl",
+      "bytes": 2074619
+    },
+    {
+      "path": "/srv/scratch/z5611125/pilot_b21/outputs/training/R1_seed1/dev_predictions.jsonl",
+      "bytes": 2088629
+    },
+    {
+      "path": "/srv/scratch/z5611125/pilot_b21/outputs/training/R2_seed1/dev_predictions.jsonl",
+      "bytes": 1602120
+    },
+    {
+      "path": "/srv/scratch/z5611125/pilot_b21/outputs/training/R3_seed1/dev_predictions.jsonl",
+      "bytes": 1653641
+    }
+  ],
+  "errors": [],
+  "platform": "Linux-4.18.0-553.184.1.el8_10.x86_64-x86_64-with-centos-8.10-Green_Obsidian",
+  "python": "3.6.8"
+}

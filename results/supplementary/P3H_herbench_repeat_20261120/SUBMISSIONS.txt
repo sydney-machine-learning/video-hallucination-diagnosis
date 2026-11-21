@@ -1,0 +1,6 @@
+qwen8 9843045[].kman.restech.unsw.edu.au
+internvl14 9843046[].kman.restech.unsw.edu.au
+llava8 9843047[].kman.restech.unsw.edu.au
+qwen8 shard0 rerun 9844959[] (index 0 via -J 0-1:2) after fetch fix
+qwen8 shards 1-2 rerun 9844971[].kman.restech.unsw.edu.au after runner probe fix
+internvl14 shards 0-3 resume 9844985[].kman.restech.unsw.edu.au after parser fix

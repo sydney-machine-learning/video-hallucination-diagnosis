@@ -1,0 +1,43 @@
+{
+  "torch": "2.14.0+cu130",
+  "transformers": "4.57.6",
+  "av": "16.0.1",
+  "numpy": "2.3.5",
+  "gpu": "NVIDIA H200",
+  "gpu_memory": 150123511808,
+  "model_load_seconds": 8.910185022978112,
+  "token_groups": {
+    "A": [
+      32,
+      362,
+      22985
+    ],
+    "B": [
+      33,
+      425,
+      12791
+    ],
+    "C": [
+      34,
+      356,
+      6258
+    ],
+    "D": [
+      35,
+      422,
+      10957
+    ],
+    "E": [
+      36,
+      468,
+      22784
+    ]
+  },
+  "processor": {
+    "class": "archived InternVL frame adapter",
+    "adapter_sha256": "4b3ca4cb5d34767bed91edbd1661460c1ff7bf8a36fc69f45edfad63615b4f12"
+  },
+  "protocol_sha256": "3839fa624978fcb2058c36ad7947f032079e2a0bc5a26bf4f03c2a74db84e3b3",
+  "runner_sha256": "1b14e3a098cca2e5e33a3ea691d5965f0032536accb821e7d093bd052da00fb9",
+  "model_manifest_sha256": "fb5ff026e9d642c34e97a4935ddf1b553888adc4a7d7cc9a110eef1f72127df2"
+}

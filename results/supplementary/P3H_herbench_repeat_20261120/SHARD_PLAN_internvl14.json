@@ -1,0 +1,117 @@
+{
+  "model": "internvl14",
+  "labels_used": false,
+  "seed": "deterministic balancing of archived per-question scoring time and video duration, lexical ties",
+  "shards": [
+    {
+      "index": 0,
+      "video_ids": [
+        "Groundhog Day Trailer HD",
+        "Marvel Studios Avengers - Endgame - Official Trailer",
+        "P03-20240217-192543",
+        "P04-20240413-142619",
+        "P04-20240414-162242",
+        "P05-20240425-083515",
+        "P06-20240510-121619",
+        "P07-20240529-102652",
+        "Singin in the Rain 1952 Official Trailer - Gene Kelly Debbie Reynolds Movie HD",
+        "cam1_segment_7_360s_420s"
+      ],
+      "questions": 262,
+      "estimated_seconds": 3611
+    },
+    {
+      "index": 1,
+      "video_ids": [
+        "Furious 7 - Official Trailer HD",
+        "P01-20240203-184214",
+        "P01-20240204-120411",
+        "P01-20240204-152537",
+        "P04-20240414-064514",
+        "P09-20240622-162302",
+        "P09-20240624-160737",
+        "The Longest Ride Official Trailer HD 20th Century FOX",
+        "Titanic TBT Trailer 20th Century FOX",
+        "cam1_segment_6_300s_360s",
+        "cam3_segment_6_900s_1080s"
+      ],
+      "questions": 328,
+      "estimated_seconds": 3612
+    },
+    {
+      "index": 2,
+      "video_ids": [
+        "Into the Wild 2007 Trailer 1 Movieclips Classic Trailers",
+        "Marvel s Guardians of the Galaxy - Trailer 1 OFFICIAL",
+        "P01-20240203-130505",
+        "P06-20240510-100047",
+        "P07-20240530-102543",
+        "Se7en 1995 Official Trailer - Brad Pitt Morgan Freeman Movie HD",
+        "The Secret Life of Walter Mitty Official Trailer 1 2013 - Ben Stiller Movie HD",
+        "cam2_segment_10_540s_600s",
+        "cam5_segment_3_360s_540s",
+        "cam5_segment_5_720s_900s",
+        "cam7_segment_4_900s_1200s",
+        "uid_vid_00165"
+      ],
+      "questions": 360,
+      "estimated_seconds": 3683
+    },
+    {
+      "index": 3,
+      "video_ids": [
+        "A Quiet Place 2018 - Official Trailer - Paramount Pictures",
+        "Jurassic Park Trailer",
+        "P01-20240202-161354",
+        "P01-20240203-121517",
+        "P02-20240211-141313",
+        "P03-20240216-084005",
+        "P05-20240427-150402",
+        "P07-20240529-191007",
+        "There Will Be Blood 2007 Official Trailer - Daniel Day-Lewis Paul Dano Movie HD",
+        "cam2_segment_5_240s_300s",
+        "cam3_segment_1_0s_180s"
+      ],
+      "questions": 333,
+      "estimated_seconds": 3610
+    },
+    {
+      "index": 4,
+      "video_ids": [
+        "P01-20240204-142301",
+        "P02-20240211-100250",
+        "P02-20240211-104948",
+        "P04-20240415-175615",
+        "P07-20240529-194518",
+        "P09-20240623-153253",
+        "Thank You for Your Service Trailer 1 2017 Movieclips Trailers",
+        "cam2_segment_2_60s_120s",
+        "cam2_segment_8_420s_480s",
+        "cam3_segment_5_720s_900s",
+        "uid_vid_00105",
+        "uid_vid_00108"
+      ],
+      "questions": 343,
+      "estimated_seconds": 3665
+    },
+    {
+      "index": 5,
+      "video_ids": [
+        "Anchorman - The Legend of Ron Burgundy - Trailer",
+        "John Wick Official Trailer 1 2014 - Keanu Reeves Willem Dafoe Movie HD",
+        "P03-20240217-152152",
+        "P06-20240511-121048",
+        "P07-20240531-201703",
+        "P08-20240618-163547",
+        "Toy Story 3 Official Trailer HD",
+        "Werner Herzog Reads Curious George",
+        "cam4_segment_9_1440s_1620s",
+        "cam5_segment_4_540s_720s",
+        "cam6_segment_2_300s_600s",
+        "uid_vid_00102"
+      ],
+      "questions": 345,
+      "estimated_seconds": 3673
+    }
+  ]
+}

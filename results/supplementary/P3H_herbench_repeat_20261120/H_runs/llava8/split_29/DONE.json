@@ -1,0 +1,6 @@
+{
+  "model": "llava8",
+  "split": 29,
+  "selected": "target_logistic",
+  "gain": 12.574343339295488
+}

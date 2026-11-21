@@ -1,0 +1,11 @@
+{
+  "selection_sensitivity": "blocked_missing_target_pilot_scores",
+  "primary_test_CIs": "completed_prefix_with_identical_resampling",
+  "paired_CIs": "already_prefix_saved_quantiles_verified",
+  "archived_distribution_reconstruction_error": 0,
+  "P2": "31_video_splits_per_target_prepared_not_evaluated",
+  "P1_P3A_P4": "blocked_missing_inputs",
+  "gpu_jobs_submitted": 0,
+  "S2_reached": false,
+  "all_original_tracked_files_unchanged": true
+}

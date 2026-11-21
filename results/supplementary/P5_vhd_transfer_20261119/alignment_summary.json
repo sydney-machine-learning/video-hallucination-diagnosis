@@ -1,0 +1,26 @@
+{
+  "all_response_count": 2403,
+  "all_answer_matches": 2287,
+  "reversed_response_count": 534,
+  "reversed_answer_matches": 503,
+  "old_shared_wrong": 98,
+  "new_shared_wrong": 99,
+  "shared_wrong_intersection": 93,
+  "shared_wrong_only_old": [
+    "q_3b10cfafcdd14bb8",
+    "q_7cc92689d6ee145f",
+    "q_b75f709aed3b759f",
+    "q_dee927b3ef5383f3",
+    "q_f80aab1e29aab2e0"
+  ],
+  "shared_wrong_only_new": [
+    "q_074e02355f61311b",
+    "q_774e3eafc753c478",
+    "q_7e3edd11343d63f5",
+    "q_854d0894564d0376",
+    "q_8c04ee4ab725614d",
+    "q_aaa0aea453d132f4"
+  ],
+  "original_reversed_mean_accuracy": 0.2546816479400749,
+  "current_reversed_mean_accuracy": 0.24906367041198502
+}

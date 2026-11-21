@@ -1,0 +1,159 @@
+{
+  "model": "llava8",
+  "labels_used": false,
+  "seed": "deterministic balancing of archived per-question scoring time and video duration, lexical ties",
+  "shards": [
+    {
+      "index": 0,
+      "video_ids": [
+        "Furious 7 - Official Trailer HD",
+        "P04-20240415-175615",
+        "P06-20240510-100047",
+        "Se7en 1995 Official Trailer - Brad Pitt Morgan Freeman Movie HD",
+        "cam2_segment_10_540s_600s"
+      ],
+      "questions": 162,
+      "estimated_seconds": 3730
+    },
+    {
+      "index": 1,
+      "video_ids": [
+        "Into the Wild 2007 Trailer 1 Movieclips Classic Trailers",
+        "P04-20240413-142619",
+        "P07-20240531-201703",
+        "There Will Be Blood 2007 Official Trailer - Daniel Day-Lewis Paul Dano Movie HD",
+        "cam3_segment_1_0s_180s"
+      ],
+      "questions": 148,
+      "estimated_seconds": 3732
+    },
+    {
+      "index": 2,
+      "video_ids": [
+        "Anchorman - The Legend of Ron Burgundy - Trailer",
+        "P01-20240203-184214",
+        "P02-20240211-104948",
+        "P02-20240211-141313",
+        "P03-20240217-152152",
+        "cam3_segment_6_900s_1080s"
+      ],
+      "questions": 167,
+      "estimated_seconds": 4039
+    },
+    {
+      "index": 3,
+      "video_ids": [
+        "Marvel s Guardians of the Galaxy - Trailer 1 OFFICIAL",
+        "P03-20240217-192543",
+        "P04-20240414-162242",
+        "P06-20240510-121619",
+        "P08-20240618-163547",
+        "uid_vid_00165"
+      ],
+      "questions": 114,
+      "estimated_seconds": 3891
+    },
+    {
+      "index": 4,
+      "video_ids": [
+        "Groundhog Day Trailer HD",
+        "P03-20240216-084005",
+        "P07-20240529-194518",
+        "Thank You for Your Service Trailer 1 2017 Movieclips Trailers",
+        "cam2_segment_5_240s_300s"
+      ],
+      "questions": 157,
+      "estimated_seconds": 3731
+    },
+    {
+      "index": 5,
+      "video_ids": [
+        "John Wick Official Trailer 1 2014 - Keanu Reeves Willem Dafoe Movie HD",
+        "P01-20240204-142301",
+        "P07-20240529-102652",
+        "The Secret Life of Walter Mitty Official Trailer 1 2013 - Ben Stiller Movie HD",
+        "cam1_segment_6_300s_360s"
+      ],
+      "questions": 157,
+      "estimated_seconds": 3732
+    },
+    {
+      "index": 6,
+      "video_ids": [
+        "P01-20240202-161354",
+        "P05-20240427-150402",
+        "P07-20240529-191007",
+        "P09-20240622-162302",
+        "Werner Herzog Reads Curious George",
+        "cam2_segment_8_420s_480s"
+      ],
+      "questions": 168,
+      "estimated_seconds": 4103
+    },
+    {
+      "index": 7,
+      "video_ids": [
+        "Marvel Studios Avengers - Endgame - Official Trailer",
+        "P01-20240203-130505",
+        "P01-20240204-152537",
+        "P07-20240530-102543",
+        "cam3_segment_5_720s_900s",
+        "uid_vid_00108"
+      ],
+      "questions": 156,
+      "estimated_seconds": 3901
+    },
+    {
+      "index": 8,
+      "video_ids": [
+        "Jurassic Park Trailer",
+        "P02-20240211-100250",
+        "P06-20240511-121048",
+        "P09-20240624-160737",
+        "cam4_segment_9_1440s_1620s",
+        "cam7_segment_4_900s_1200s"
+      ],
+      "questions": 157,
+      "estimated_seconds": 3907
+    },
+    {
+      "index": 9,
+      "video_ids": [
+        "P09-20240623-153253",
+        "Singin in the Rain 1952 Official Trailer - Gene Kelly Debbie Reynolds Movie HD",
+        "Toy Story 3 Official Trailer HD",
+        "cam1_segment_7_360s_420s",
+        "cam5_segment_4_540s_720s",
+        "uid_vid_00102"
+      ],
+      "questions": 193,
+      "estimated_seconds": 3891
+    },
+    {
+      "index": 10,
+      "video_ids": [
+        "P01-20240203-121517",
+        "P05-20240425-083515",
+        "The Longest Ride Official Trailer HD 20th Century FOX",
+        "cam2_segment_2_60s_120s",
+        "cam5_segment_3_360s_540s",
+        "uid_vid_00105"
+      ],
+      "questions": 191,
+      "estimated_seconds": 3887
+    },
+    {
+      "index": 11,
+      "video_ids": [
+        "A Quiet Place 2018 - Official Trailer - Paramount Pictures",
+        "P01-20240204-120411",
+        "P04-20240414-064514",
+        "Titanic TBT Trailer 20th Century FOX",
+        "cam5_segment_5_720s_900s",
+        "cam6_segment_2_300s_600s"
+      ],
+      "questions": 201,
+      "estimated_seconds": 4114
+    }
+  ]
+}

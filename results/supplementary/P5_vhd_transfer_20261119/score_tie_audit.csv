@@ -1,0 +1,16 @@
+dataset,model_id,n,hgb_unique,lr_unique
+MVBench,OpenGVLab/InternVL3_5-4B-Instruct,1800,781,1800
+MVBench,Qwen/Qwen3-VL-4B-Instruct,1800,542,1800
+MVBench,lmms-lab-encoder/LLaVA-OneVision-2-8B-Instruct,1800,653,1800
+NExT-GQA,OpenGVLab/InternVL3_5-4B-Instruct,500,246,500
+NExT-GQA,Qwen/Qwen3-VL-4B-Instruct,500,195,500
+NExT-GQA,lmms-lab-encoder/LLaVA-OneVision-2-8B-Instruct,500,231,500
+STAR,OpenGVLab/InternVL3_5-4B-Instruct,500,203,500
+STAR,Qwen/Qwen3-VL-4B-Instruct,500,154,500
+STAR,lmms-lab-encoder/LLaVA-OneVision-2-8B-Instruct,500,190,500
+TempCompass,OpenGVLab/InternVL3_5-4B-Instruct,410,202,410
+TempCompass,Qwen/Qwen3-VL-4B-Instruct,410,145,410
+TempCompass,lmms-lab-encoder/LLaVA-OneVision-2-8B-Instruct,410,174,410
+VHD,OpenGVLab/InternVL3_5-4B-Instruct,801,442,801
+VHD,Qwen/Qwen3-VL-4B-Instruct,801,423,801
+VHD,lmms-lab-encoder/LLaVA-OneVision-2-8B-Instruct,801,432,801

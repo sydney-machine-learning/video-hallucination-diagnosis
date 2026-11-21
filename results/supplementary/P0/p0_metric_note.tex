@@ -1,0 +1,18 @@
+% P0 provenance note; preserve archived decisions and reported point results.
+The archived pilot selection and bootstrap bounds used a trapezoidal AURC
+computed at the endpoints of tied score groups. Reported test point estimates
+used the mean risk across all retained prefixes, with input order breaking score
+ties. Test bootstrap intervals followed the former definition. We retain the
+archived decisions and do not infer that replacing the metric would leave
+candidate selection unchanged.
+
+\begin{tabular}{lrr}
+\hline
+Dataset & Prefix mean gain (\%) & Trapezoidal gain (\%) \\
+\hline
+HERBench & 16.6446 & 16.6579 \\
+Perception & 18.8680 & 18.8898 \\
+\hline
+\end{tabular}
+% All gains retain the archived selections; these are not new selections.
+

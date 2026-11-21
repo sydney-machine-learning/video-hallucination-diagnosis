@@ -1,0 +1,60 @@
+{
+  "gpu": "none",
+  "A": {
+    "answers": "base option argmax; majority; ties use largest mean option probability; exact remaining tie first option",
+    "primary_accuracy": "reference split 0 test; all 30 test splits also reported; whole 500-video cohort descriptive",
+    "splits": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30
+    ],
+    "promotion": "existing promote robust_safe; prefix mean AURC patched in memory only",
+    "bootstrap": 2000,
+    "quantile": 0.025,
+    "thresholds": {
+      "target_logistic": 0,
+      "source_trace_hgb": 0.5
+    },
+    "seed": "20260803 + 1000003*split +1009*model_index; candidate offset 7919",
+    "accuracy_bootstrap": 10000,
+    "accuracy_seed": "20261120 + split; all cohort seed 20261119",
+    "support": "mean probability assigned to own fixed answer, across 3 bases or all 12 nodes"
+  },
+  "B": {
+    "predictions": "Existing P5 full-VHD holdout LR/HGB reused",
+    "bootstrap": 10000,
+    "seed": 20261119,
+    "resamples": "Reuse P5 exact saved source-video draws",
+    "vote": "base_vote_fraction; also report archived confidence tie-break as sensitivity",
+    "percentile": "100*midrank/N within each model and subset; high percentile means trusted; joint wrong defined from same base bank"
+  },
+  "C": "read-only source inspection; no experimental scripts run",
+  "D": "primary literature and model documents only; comparisons descriptive"
+}

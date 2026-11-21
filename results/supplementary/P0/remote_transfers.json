@@ -1,0 +1,34 @@
+[
+  {
+    "remote": "/home/z5611125/caver_route/results_fresh/mvbench_inference/8904762.kman.restech.unsw.edu.au/qwen_predictions.jsonl",
+    "local": "inputs/mvbench/qwen_predictions.jsonl",
+    "returncode": 0,
+    "stderr": "",
+    "bytes": 26599955,
+    "sha256": "ed2df49f3d95dd2345c14e9e1358a63ebfeb0601240a39a55cdea9840bd7cb6a"
+  },
+  {
+    "remote": "/home/z5611125/caver_route/results_fresh/mvbench_inference/8904762.kman.restech.unsw.edu.au/internvl_predictions.jsonl",
+    "local": "inputs/mvbench/internvl_predictions.jsonl",
+    "returncode": 0,
+    "stderr": "",
+    "bytes": 26473232,
+    "sha256": "698fd864284537bae956303f477b51f4772c0b0c819e3c77909503aa63dd96ea"
+  },
+  {
+    "remote": "/home/z5611125/caver_route/results_fresh/mvbench_inference/8904762.kman.restech.unsw.edu.au/llava_predictions.jsonl",
+    "local": "inputs/mvbench/llava_predictions.jsonl",
+    "returncode": 0,
+    "stderr": "",
+    "bytes": 26716923,
+    "sha256": "5f064f3de2f2724be2d3d902de3dd737158a4732a26ba855aa7c52271c44f2fd"
+  },
+  {
+    "remote": "/home/z5611125/sicr_route/katana/nextgqa_llava_ov2_runner.py",
+    "local": "inputs/remote_code/nextgqa_llava_ov2_runner.py",
+    "returncode": 0,
+    "stderr": "",
+    "bytes": 22050,
+    "sha256": "825623918bc0bc51c60a717f0034737ec411d1da05f106ec1ed80bc9870131c0"
+  }
+]

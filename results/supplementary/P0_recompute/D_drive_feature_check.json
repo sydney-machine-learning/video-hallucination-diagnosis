@@ -1,0 +1,388 @@
+{
+  "root": "D:/paper 3",
+  "binary_feature_or_model_containers": [],
+  "dataset_tables": [
+    {
+      "path": "D:\\paper 3\\caver_route\\results\\development_v2\\calibration_audit.csv",
+      "sha256": "de6c855e39cd5b3bf356204998014f946a704827994a1275129b3dd805a7308d",
+      "rows": 40,
+      "datasets": [
+        "NExT-GQA",
+        "STAR"
+      ]
+    },
+    {
+      "path": "D:\\paper 3\\caver_route\\results\\development_v2\\environment_metrics.csv",
+      "sha256": "ead83616192acd4c43e4d90134bf146f699ebac8a896626b8793a958041590c8",
+      "rows": 36,
+      "datasets": [
+        "NExT-GQA",
+        "STAR"
+      ]
+    },
+    {
+      "path": "D:\\paper 3\\caver_route\\results\\development_v2\\fold_assignments.csv",
+      "sha256": "20fd96b4f94bff59f4a56ed62392e171dc70b83eab26980823785cd9228e4d5c",
+      "rows": 1000,
+      "datasets": [
+        "NExT-GQA",
+        "STAR"
+      ]
+    },
+    {
+      "path": "D:\\paper 3\\caver_route\\results\\development_v2\\oof_predictions.csv",
+      "sha256": "3cf7df47788398a52b5371197dbfa171feed1357968f5876b1c428c9ca107ce3",
+      "rows": 18000,
+      "datasets": [
+        "NExT-GQA",
+        "STAR"
+      ]
+    },
+    {
+      "path": "D:\\paper 3\\caver_route\\results\\development_v2\\route_selections.csv",
+      "sha256": "026f980bcb4ed82f1b82e6db408a1df2f693dad17a5eec4f2389f15a6965b54d",
+      "rows": 40,
+      "datasets": [
+        "NExT-GQA",
+        "STAR"
+      ]
+    },
+    {
+      "path": "D:\\paper 3\\caver_route\\results_fresh\\mvbench_confirmation\\8904763.kman.restech.unsw.edu.au\\mvbench_caver_features.csv",
+      "sha256": "2a2f223e904bf94f534768fcf97bbf37afbd2105389782891dcd37a80788e6f3",
+      "rows": 5400,
+      "datasets": [
+        "MVBench"
+      ]
+    },
+    {
+      "path": "D:\\paper 3\\caver_route\\results_fresh\\mvbench_confirmation\\8904763.kman.restech.unsw.edu.au\\mvbench_environment_metrics.csv",
+      "sha256": "de0cc387cf00fdb532f0973e5d3444c23e33d80e1934030ba7f484b68e6224d6",
+      "rows": 33,
+      "datasets": [
+        "MVBench"
+      ]
+    },
+    {
+      "path": "D:\\paper 3\\caver_route\\results_fresh\\mvbench_confirmation\\8904763.kman.restech.unsw.edu.au\\mvbench_test_predictions.csv",
+      "sha256": "9b54e8e8b36acd61df292f168c4fa1bc4df4382cc0fe9ceceac6733224b51fb7",
+      "rows": 15048,
+      "datasets": [
+        "MVBench"
+      ]
+    },
+    {
+      "path": "D:\\paper 3\\sicr_route\\input\\nextgqa_pilot_questions.csv",
+      "sha256": "7e430c89d91b41069fa191d9c3049de1d776d9346cea3cedba2213b98cf334bc",
+      "rows": 500,
+      "datasets": [
+        "NExT-GQA"
+      ]
+    },
+    {
+      "path": "D:\\paper 3\\sicr_route\\input\\star_pilot_questions.csv",
+      "sha256": "fb888caa164221b61b3876182f77a591ff3fce4bb15d461f8c9dc49af9f7b257",
+      "rows": 500,
+      "datasets": [
+        "STAR"
+      ]
+    },
+    {
+      "path": "D:\\paper 3\\sicr_route\\input\\vhd_public_full_fresh_views.csv",
+      "sha256": "0ea3c1b8fe2f98a561510ec444047a17c328159fc63fe92e9b0d22d5167a1184",
+      "rows": 1513,
+      "datasets": [
+        "VHD"
+      ]
+    },
+    {
+      "path": "D:\\paper 3\\sicr_route\\input\\vhd_public_pdi_fresh_views.csv",
+      "sha256": "5a54e836a19396adabbc24232c56a03d3276ed3e7bc7a2d154b9bf87d2763f6b",
+      "rows": 890,
+      "datasets": [
+        "VHD"
+      ]
+    },
+    {
+      "path": "D:\\paper 3\\sicr_route\\paper_artifacts\\safe_sirc_ablation_250.csv",
+      "sha256": "1218366578cecdbf51417f96bd35a69a1accaf7a2e2020d7a365e58669f94ad4",
+      "rows": 36,
+      "datasets": [
+        "NExT-GQA",
+        "STAR"
+      ]
+    },
+    {
+      "path": "D:\\paper 3\\sicr_route\\paper_artifacts\\safe_sirc_budget_curves.csv",
+      "sha256": "699b5d0a14f4a9abd344952ba1aec91c00621fba2a278104aeed4a9e7820d53b",
+      "rows": 24,
+      "datasets": [
+        "NExT-GQA",
+        "STAR"
+      ]
+    },
+    {
+      "path": "D:\\paper 3\\sicr_route\\paper_artifacts\\safe_sirc_cost_summary.csv",
+      "sha256": "5785237ca2441287f4942bf978a9cbc233dc22cb2532217dad9ed3041486eab1",
+      "rows": 6,
+      "datasets": [
+        "NExT-GQA",
+        "STAR"
+      ]
+    },
+    {
+      "path": "D:\\paper 3\\sicr_route\\paper_artifacts\\safe_sirc_main_results.csv",
+      "sha256": "73e14ea4af1a52e1b8fcecf3ec100c58c582f0c7e99d82030a3d6872672cd569",
+      "rows": 6,
+      "datasets": [
+        "NExT-GQA",
+        "STAR"
+      ]
+    },
+    {
+      "path": "D:\\paper 3\\sicr_route\\results\\safe_sirc_ablation_smoke.csv",
+      "sha256": "3f95b21ea7aa3fef04492a1c3e609bbc97a348df4a5dbc160d31347b63a5517b",
+      "rows": 128,
+      "datasets": [
+        "NExT-GQA"
+      ]
+    },
+    {
+      "path": "D:\\paper 3\\sicr_route\\results\\katana_phase2\\phase2_features.csv",
+      "sha256": "e588fee3b542579bdccf36ac289af4f3cf8b8d3c2330eacd570a8287daad0d6e",
+      "rows": 1000,
+      "datasets": [
+        "NExT-GQA"
+      ]
+    },
+    {
+      "path": "D:\\paper 3\\sicr_route\\results\\phase2_live_verify\\phase2_features.csv",
+      "sha256": "e588fee3b542579bdccf36ac289af4f3cf8b8d3c2330eacd570a8287daad0d6e",
+      "rows": 1000,
+      "datasets": [
+        "NExT-GQA"
+      ]
+    },
+    {
+      "path": "D:\\paper 3\\sicr_route\\results\\safe_sirc_bench\\safe_sirc_metrics.csv",
+      "sha256": "6ac5caa3708692ed95fcbc7b0f38a76c3cbff0f809c87cad984e09e47a5ae14c",
+      "rows": 24,
+      "datasets": [
+        "NExT-GQA"
+      ]
+    },
+    {
+      "path": "D:\\paper 3\\sicr_route\\results\\safe_sirc_bench\\safe_sirc_split_manifest.csv",
+      "sha256": "d20caebe48e2fc4a0d7900a2c04a5e6396306404c594e7b924220e38c78c5975",
+      "rows": 1000,
+      "datasets": [
+        "NExT-GQA"
+      ]
+    },
+    {
+      "path": "D:\\paper 3\\sicr_route\\results\\safe_sirc_confirmation_lock\\safe_sirc_confirmation_splits.csv",
+      "sha256": "d4fc12685305305f33c2e0ccdc8b6b908a4a413342647fdcce78c0b51257ecdb",
+      "rows": 1000,
+      "datasets": [
+        "NExT-GQA",
+        "STAR"
+      ]
+    },
+    {
+      "path": "D:\\paper 3\\sicr_route\\results\\safe_sirc_development\\safe_sirc_ablations.csv",
+      "sha256": "3cb56eb2adf8acc62d957b2bd3092ac3795a3582dd031e3e13fa0868d3fdaf34",
+      "rows": 256,
+      "datasets": [
+        "NExT-GQA"
+      ]
+    },
+    {
+      "path": "D:\\paper 3\\sicr_route\\results\\safe_sirc_development\\safe_sirc_metrics.csv",
+      "sha256": "d98ebf812b0c6806d52d2acc7e25fef1a32894ffdd8a647b24085d2135502aa8",
+      "rows": 24,
+      "datasets": [
+        "NExT-GQA"
+      ]
+    },
+    {
+      "path": "D:\\paper 3\\sicr_route\\results\\safe_sirc_development\\safe_sirc_predictions.csv",
+      "sha256": "89fccb48b1717d14b850755faf82def43fd0333b16ea6c67bf9b6a18ef3b9e73",
+      "rows": 1000,
+      "datasets": [
+        "NExT-GQA"
+      ]
+    },
+    {
+      "path": "D:\\paper 3\\sicr_route\\results\\safe_sirc_development\\safe_sirc_split_manifest.csv",
+      "sha256": "cfed5872f4a6b17a51c713158002b52712b78fb8791ce5664c8130db903385d0",
+      "rows": 1000,
+      "datasets": [
+        "NExT-GQA"
+      ]
+    },
+    {
+      "path": "D:\\paper 3\\sicr_route\\results\\safe_sirc_manifest_verify\\safe_sirc_metrics.csv",
+      "sha256": "fbd3f77fcc53edc6019dac379d49bc7b443125721e5968a25ef191b5717f4216",
+      "rows": 24,
+      "datasets": [
+        "NExT-GQA"
+      ]
+    },
+    {
+      "path": "D:\\paper 3\\sicr_route\\results\\safe_sirc_manifest_verify\\safe_sirc_split_manifest.csv",
+      "sha256": "d3bf3a00de7c15deed9de1af35ab5a39eeb5de98934d41a9e9590462fdb49e29",
+      "rows": 1000,
+      "datasets": [
+        "NExT-GQA"
+      ]
+    },
+    {
+      "path": "D:\\paper 3\\sicr_route\\results\\safe_sirc_pipeline_smoke\\ablations.csv",
+      "sha256": "3dc1feecd78ab765fcbca7c29e2fb6cd4b041664b760a4f3da9627d6cd72a282",
+      "rows": 128,
+      "datasets": [
+        "NExT-GQA"
+      ]
+    },
+    {
+      "path": "D:\\paper 3\\sicr_route\\results\\safe_sirc_pipeline_smoke\\costs.csv",
+      "sha256": "7606ef0747b0ba2ca965e5b24dc5960a976df744a609a8dba410e018af14542c",
+      "rows": 2,
+      "datasets": [
+        "NExT-GQA"
+      ]
+    },
+    {
+      "path": "D:\\paper 3\\sicr_route\\results\\safe_sirc_pipeline_smoke\\multidataset_features.csv",
+      "sha256": "9f42f494bbf2c6b2299c43b9892055813af3566507fe18fea739e6afa92c5eb0",
+      "rows": 1000,
+      "datasets": [
+        "NExT-GQA"
+      ]
+    },
+    {
+      "path": "D:\\paper 3\\sicr_route\\results\\safe_sirc_pipeline_smoke\\evaluation\\safe_sirc_metrics.csv",
+      "sha256": "a63e4ccfb83cb6e36b43d282ab3ebb1de41b76b1adedf5c6c452b607e70af05e",
+      "rows": 24,
+      "datasets": [
+        "NExT-GQA"
+      ]
+    },
+    {
+      "path": "D:\\paper 3\\sicr_route\\results\\safe_sirc_pipeline_smoke\\evaluation\\safe_sirc_split_manifest.csv",
+      "sha256": "cfed5872f4a6b17a51c713158002b52712b78fb8791ce5664c8130db903385d0",
+      "rows": 1000,
+      "datasets": [
+        "NExT-GQA"
+      ]
+    },
+    {
+      "path": "D:\\paper 3\\sicr_route\\results\\safe_sirc_smoke\\safe_sirc_metrics.csv",
+      "sha256": "9254a3bc0262fcb9585d35a077b2cae5c385156bf5214284ede4dfcaa8ca2f66",
+      "rows": 24,
+      "datasets": [
+        "NExT-GQA"
+      ]
+    },
+    {
+      "path": "D:\\paper 3\\sicr_route\\results\\safe_sirc_smoke\\safe_sirc_split_manifest.csv",
+      "sha256": "d20caebe48e2fc4a0d7900a2c04a5e6396306404c594e7b924220e38c78c5975",
+      "rows": 1000,
+      "datasets": [
+        "NExT-GQA"
+      ]
+    },
+    {
+      "path": "D:\\paper 3\\sicr_route\\results\\sicr_v2\\multidataset_features.csv",
+      "sha256": "5bf8ad521d547656865c57455e7c6ff6d0b4a165c8231064231f162b46a6cefd",
+      "rows": 3000,
+      "datasets": [
+        "NExT-GQA",
+        "STAR"
+      ]
+    },
+    {
+      "path": "D:\\paper 3\\sicr_route\\results_fresh\\download_2026-07-31\\8900849.kman.restech.unsw.edu.au\\safe_sirc_confirmation_lock\\safe_sirc_confirmation_splits.csv",
+      "sha256": "d4fc12685305305f33c2e0ccdc8b6b908a4a413342647fdcce78c0b51257ecdb",
+      "rows": 1000,
+      "datasets": [
+        "NExT-GQA",
+        "STAR"
+      ]
+    },
+    {
+      "path": "D:\\paper 3\\sicr_route\\results_fresh\\download_2026-07-31\\8901064.kman.restech.unsw.edu.au\\multidataset_features.csv",
+      "sha256": "5b17dd2e1d25294f524be03e386c1b56b4c3a83c64ecd813d5fbe5c6e255b831",
+      "rows": 3000,
+      "datasets": [
+        "NExT-GQA",
+        "STAR"
+      ]
+    },
+    {
+      "path": "D:\\paper 3\\sicr_route\\results_fresh\\download_2026-07-31\\8901064.kman.restech.unsw.edu.au\\safe_sirc_ablations.csv",
+      "sha256": "3de97374536eebd50aa6b6e7d69405a20a991e9cb16f2dfc8fd19576f1be0135",
+      "rows": 768,
+      "datasets": [
+        "NExT-GQA",
+        "STAR"
+      ]
+    },
+    {
+      "path": "D:\\paper 3\\sicr_route\\results_fresh\\download_2026-07-31\\8901064.kman.restech.unsw.edu.au\\safe_sirc_costs.csv",
+      "sha256": "02bd717c67b81b0f08d9d910fe7b72ce6a34b46dc5085b7592c4d0bdfdf436cf",
+      "rows": 6,
+      "datasets": [
+        "NExT-GQA",
+        "STAR"
+      ]
+    },
+    {
+      "path": "D:\\paper 3\\sicr_route\\results_fresh\\download_2026-07-31\\8901064.kman.restech.unsw.edu.au\\evaluation\\safe_sirc_metrics.csv",
+      "sha256": "ee64e385d90032f84c7e53524d2c418b019315f2814e4f70fd2f3040c36f6301",
+      "rows": 72,
+      "datasets": [
+        "NExT-GQA",
+        "STAR"
+      ]
+    },
+    {
+      "path": "D:\\paper 3\\sicr_route\\results_fresh\\download_2026-07-31\\8901064.kman.restech.unsw.edu.au\\evaluation\\safe_sirc_predictions.csv",
+      "sha256": "20e1cb537fe29c4f85c331984427467d1ace434e91f5287fb03c4f2c6e12b866",
+      "rows": 3000,
+      "datasets": [
+        "NExT-GQA",
+        "STAR"
+      ]
+    },
+    {
+      "path": "D:\\paper 3\\sicr_route\\results_fresh\\download_2026-07-31\\8901064.kman.restech.unsw.edu.au\\evaluation\\safe_sirc_split_manifest.csv",
+      "sha256": "f51f67fce4dbe8eb5fc5b6a13cdac248cb577a5be3b612e8f9d866ad32e51d49",
+      "rows": 3000,
+      "datasets": [
+        "NExT-GQA",
+        "STAR"
+      ]
+    },
+    {
+      "path": "D:\\paper 3\\sicr_route\\results_fresh\\multidataset_analysis\\8906912.kman.restech.unsw.edu.au\\multidataset_features.csv",
+      "sha256": "5b17dd2e1d25294f524be03e386c1b56b4c3a83c64ecd813d5fbe5c6e255b831",
+      "rows": 3000,
+      "datasets": [
+        "NExT-GQA",
+        "STAR"
+      ]
+    },
+    {
+      "path": "D:\\paper 3\\sicr_route\\results_fresh\\multidataset_analysis\\8906912.kman.restech.unsw.edu.au\\routing_trajectories.csv",
+      "sha256": "de45302d1946612e110dd8cd624ac64e289173388b010448d3b913511d37a848",
+      "rows": 3000,
+      "datasets": [
+        "NExT-GQA",
+        "STAR"
+      ]
+    }
+  ],
+  "read_errors": [],
+  "target_tables": []
+}
