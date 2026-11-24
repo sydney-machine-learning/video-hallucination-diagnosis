@@ -1,0 +1,1 @@
+{"target": "Perception", "model": "llava8", "split": 20, "fraction": 0.2, "pilot_videos": 100, "pilot_questions": 384, "selected": "target_logistic", "checked_gain": 25.675292239127256, "unchecked_lr_gain": 25.675292239127256, "unchecked_hgb_gain": 22.76999957279954}

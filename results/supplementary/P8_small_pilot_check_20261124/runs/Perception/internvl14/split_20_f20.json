@@ -1,0 +1,1 @@
+{"target": "Perception", "model": "internvl14", "split": 20, "fraction": 0.2, "pilot_videos": 100, "pilot_questions": 384, "selected": "raw_fallback", "checked_gain": 0.0, "unchecked_lr_gain": -5.4450198395457505, "unchecked_hgb_gain": 4.662957961201883}

@@ -1,0 +1,1 @@
+{"target": "HERBench", "model": "internvl14", "split": 17, "fraction": 0.1, "pilot_videos": 7, "pilot_questions": 212, "selected": "source_trace_hgb", "checked_gain": 9.209330577710372, "unchecked_lr_gain": 10.780509603420956, "unchecked_hgb_gain": 9.209330577710372}
