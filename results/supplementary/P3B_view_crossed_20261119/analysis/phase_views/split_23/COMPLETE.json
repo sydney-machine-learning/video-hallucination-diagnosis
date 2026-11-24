@@ -1,7 +1,0 @@
-{
-  "policy": "phase_views",
-  "split": 23,
-  "selected_pg_scope": "full",
-  "selected_ours": "raw_fallback",
-  "seconds": 56.375
-}
